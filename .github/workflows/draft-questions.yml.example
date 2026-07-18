@@ -1,0 +1,51 @@
+# EXAMPLE — scheduled question drafting into a pull request (DISABLED).
+#
+# This is a template, not an active workflow. It sketches how you could have an
+# agent DRAFT new questions on a schedule and open a PR — never auto-publish.
+# To use it: rename to `draft-questions.yml`, supply an ANTHROPIC_API_KEY secret,
+# and replace the placeholder step with your actual Claude Code invocation.
+#
+# The human-review gate in CONTENT_WORKFLOW.md still applies: this opens a PR,
+# it does NOT merge. Do not add auto-merge.
+
+name: Draft questions (example, disabled)
+
+on:
+  # schedule:
+  #   - cron: '0 6 * * 1'   # Mondays 06:00 UTC — enable when you wire it up
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  draft:
+    if: false   # <-- safety: this job never runs until you remove this line
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Draft new questions with Claude Code
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "Replace this with your Claude Code invocation, e.g.:"
+          echo "  npx @anthropic-ai/claude-code --prompt-file docs/prompts/add-questions.md ..."
+          echo "The agent should follow CLAUDE.md: draft into a branch, run validate, and stop."
+
+      - name: Validate
+        run: npm run validate
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/draft-questions
+          title: "Draft: new questions for review"
+          body: |
+            Automated **draft** of new questions. Structure validated; medical accuracy NOT verified.
+            A human reviewer must check each item against the source before merging.
+          labels: needs-clinical-review

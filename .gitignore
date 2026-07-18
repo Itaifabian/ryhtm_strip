@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+*.log
+.env
+# dist/ is committed so GitHub Pages can serve it without a build step.
+# If you prefer CI-only builds, uncomment the next line:
+# dist/

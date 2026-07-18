@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>The Rhythm Strip — Study Platform</title>
+<meta name="description" content="Offline-capable active-recall study platform across cardiology, rheumatology, pulmonology, infectious diseases, allergy & immunology, geriatrics, radiology, endocrinology, nephrology, neurology, and hematology.">
+<!-- iOS: Add to Home Screen support — launches full-screen (standalone), no browser chrome. -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rhythm Strip">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#C1362B">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAI4ElEQVR4nOzdDWzU9R3H8W8fr+09tJQrvbtSisVCn6BOI6syHMsMzDmVZRi3ER0NAx3bHDhgqIwEnbLs2YkTR50gmJHMZFtkkCybIir4/ADXuwIKAqWlPJTSu9JeS4tfe7E57n/f4/730Lv8+nmFkOvv7hoC7/7+v9/vXyDz1ek1BBBKOgEIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIEAeIlI0j76ryjLw8ghhkknIyLZa6v24y2Oz8uH3H9mONT/d3dBDop+DMYZs7z18GK/7mt0rvaSCIioJxjPvGLYEfFt08hyAqqsWRVVCQ4xgfOJJhMhuKbQT6qRaHqapWO2hwlBDop1oc5upq7WCu3U6gn2q7FXNVjXbQYHcQ6KdaHKaqEDMH4oiOUnHklU3MMJq04zmIIypKxRFy2qDP48CCNBpKLUjN1TUhx7MKC9Oyswl0UioOY2WN9FSuA1cW3dSJI91gMF1dIT1rsOHKops6aw7j5CmULrZucOCoQzd14gh5wjEMa9IoqBOHqTp8HFhz6DZaZo7hm/gQOUXiyMzPD3/rNbd0AoFOiuxWLLXTwr+A9zIcEIEeisRhqqy+4msMtsuWHcarK+zz7sq/9joCgSKXFe3ZaH9HBx+MBo7k2O3dB9z+x0U3z65Yvdb/uPvjQ+5VP+87c5rgcsrOHGf+/9+gkcDdbGnDouHHPIXUPrkhu2gcweVGKA7LNdc67vp+4YyZlABDN2ONgSO9bSc8ze6gl+V88S0/eRMn5pSMv/wpx7SnG3EWEiThlxUOgr9MjV8cbPe0HHct/5nvZBvFj/aEw+tq4j6CBod3s+baOu0nybYW8fzRtHQJ/woJhiRw5hhTP2Paxs2Vj/3GGHDLI3d8ac0f18d3DteecHjcLm1/w99Jap4aemuTbbXW/nkDz0MEQ3TPHKULFkbyMi7DVFkV8imew2ufeMp5/5KgNWDhV27Ku6o8LSODItN3+vTZ3bsuerqMVSFmDl6QDvp60w05w4Pcpf+BuWaq9Dl5Dct9tP3zRaJLFIFLAwPdHx88t3cPxUP2WOuY+huzi4ooMY5velbX69NenV6j6w037tpL8cCzt/P++/x/F6349m+Pv/sHhqJi0q/zrb0FX74haHDv7K9e6uu75rkXuLbA8ffunDvY77v+XzsprjrfftO1chnFhpOtWve7TIuFEmbPrBt0vT5pW1n+Op765DPtO16y3TY3lrNtbRneZheXQZ8vS1uD4jDY7ZlmM8VbwfT6SSse+uS3j1O0eMXD19+ElhGFZG5lectQtuhHcb/r4XW7/A98rcFr0hyHw6w5S/U07aeYFd96W/Gtt1O0Kh9Zl1VQQClmJOLwuJyuFUuPPPUEjQiPu8n/oFe7JrU5LNOCtyotWzc1r/4FxWzSigeNU6r0v4/Kly0Pf0s5WRIbh/eAy73qgf1LFnW+81bbP7Z9umE9JR6vRv0PtDNHblmZdjXKM0fH67ubH1452NtDsal8dJ3eOzjj5txiu+M7lJJ0rzmcS38c4SsHu73eQwcDR1q3vZCWnl62eIn0ljOv/O/Uju2D/f0UVqbJzFsb66yvpefkBj3FC47hgwrtbrawfkbQyIVPj1zs8vCDjjde+2DBfF3XuAkLFvLhXuCIYVxx5drHI/8tMlVMLn8gxKR1ZP2f+FCfkk33biV2vBkuXfDDoMGzr+06/reNF44cJj3GzpxlnT2Hf/Z/yNta50/v4z9v/4fpubn1O18O/xlOvvTvw7//NUWFJ4m6xs3aTdaJv285+sxfrvx2i7nu2S3at7fyFDtSl+DwkrBb4d32pYHBCQsX+z/kL9njz22M7guFk+IffJgxduZNWWMK23f+Z8DrGX52sKenv7Mz/ELP6/yIonXx/PnmB1fUNT4fNF7yvbu9bvfZ3a+Ef/uUNb/SlnH+vXdSpAxKyszhZyyflGHJ72tv155zxxHfMTGF/Q6x9+fP6z0R0y/A+vXZk3+5NmiQu/zo3oaeY0eld/E2rWT+PUGDvPfet7iB5z9KDUk75+g+/AklHv92h4mDj+BiLIOGbv/y0sHx3fmBg3xFq/nD+t6WY6Hfk5ZmqftS0Nigz3fg4ZWpUwYp+W+CBfK1hbvD1xXDNSUQ78KMFZPzr7s+cJDv1PCPyD/JocfWjswXTOQU/6cmeeYI86zHGYfjL7/mNQ/5TrVTtFq2br7iGmXkjeo4uvZ9SHEy0O11r1zGlwbSj+/bHWvcQKlH8Th8J8U4+A8y6BgmRryFPvjoGtKpt7XlwCOrKSWpPnPI602vy0kDAxRXfNLqXrW87/SpCF9/bs/r+39yL29tKCUpviCloXPSkOeeXfFbcAQ69+Yb7955Bx/Sp2VlhX9lX/vJ8Fe9pBu9cXia9lHCxOVOb9Kp/w/j97SG/urs2heffazCRsXMoR3kE4WBCxcIwhoFcYQ6nvc6E3hNUYb6cfSGuqx0IY4IjII4Qs0cWHBEQv0FKd9d43vrgSN8DhHfv1WlqlHx33id2rk98MOWrc8TRCCjoUT9v0Dcc/SowW4zWK0XPZ6WLZvaXtxGEIGkfbMPpD7875AgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwgQhwg+gwAAP//MVdpjQAAAAZJREFUAwDywGSSFDJ/yQAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAABcUlEQVR4nOyV20vCUBjAz7zUTM2CwEmTpAeb+VBQDeopgp4y/QsKfAl6CAoJkuhGT730vxS9BEFGYUlEIV2wZFhkGHQZS9slt1oMxjChbSBE7PdwOHz79v3OOR+cY9nDg6CWmECNMQSGwBD8FQHsaXX14kAXqgTuUNg7HgW6sKhJcmCBesQDdKFWYLY7gMkEBAFopPKIbCiKjkUtzkZFxCuw3AdJukfC+Oa23Y8BLUDyezCQOBTHT75cIggYQcywDbJapU8vyYO6pmYIhgWGdnRgkPl730+7O9crC1JCe2wOGY0o6yYH+ysFStyhCJU+o+9uxXmDz8czbNvEZMvQ8OXsNHmcknI619ZLRPY1deTq6nb19F3MTImL+1mqeg8etzbk+XsuJ45M/l5sAHWeluOZ1SX//LIzEBQ4LrMYr1odqGyyCFsoFLM3Ak3LEb74dhWP/fqjWsHzfoJ+yAPtqBWUKYo6PQHaMW5TQ2AI/oPgCwAA//9wjRIsAAAABklEQVQDAL7bcgo3z3p8AAAAAElFTkSuQmCC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF6F2;
+  --paper-2:#F6EEE8;
+  --grid:#F0D8D1;
+  --grid-strong:#E9C4BB;
+  --ink:#211915;
+  --ink-soft:#6A5A52;
+  --ink-faint:#9C8A80;
+  --red:#C1362B;
+  --red-deep:#93261E;
+  --teal:#0E7C6B;
+  --teal-soft:#E3F1EE;
+  --amber:#B9722A;
+  --amber-soft:#F6E9D8;
+  --line:#E4D3CA;
+  --shadow:0 1px 2px rgba(60,30,20,.06),0 8px 24px rgba(120,50,35,.07);
+  --shadow-lg:0 12px 40px rgba(120,50,35,.14);
+  --r:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px),
+    linear-gradient(var(--grid-strong) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid-strong) 1px,transparent 1px);
+  background-size:12px 12px,12px 12px,60px 60px,60px 60px;
+  -webkit-font-smoothing:antialiased;
+  line-height:1.5;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left)) 0 max(20px,env(safe-area-inset-right))}
+.mono{font-family:'JetBrains Mono',monospace}
+.disp{font-family:'Space Grotesk',sans-serif}
+
+/* ---------- Header ---------- */
+/* iOS standalone (Add to Home Screen) with a translucent status bar draws under the
+   notch/Dynamic Island — pad the very top of the page and the sticky tab bar so
+   content clears it, and the footer so the last row clears the home-indicator area. */
+header{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  padding-top:env(safe-area-inset-top);
+  background:linear-gradient(180deg,rgba(251,246,242,.4),rgba(251,246,242,.94));backdrop-filter:blur(2px)}
+.ecg-band{height:74px;width:100%;display:block}
+.hero{padding:26px 0 30px;position:relative}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--red);font-weight:500;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--red);display:inline-block}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(30px,5vw,50px);
+  margin:.28em 0 .12em;letter-spacing:-.02em;line-height:1.02}
+.subtitle{color:var(--ink-soft);font-size:15px;max-width:52ch}
+.hero-meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:11.5px;padding:5px 11px;border:1px solid var(--line);
+  border-radius:100px;background:var(--paper);color:var(--ink-soft);display:flex;align-items:center;gap:6px}
+.chip b{color:var(--ink);font-weight:700}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
+
+/* ---------- Tabs ---------- */
+.tabs{position:sticky;top:0;z-index:40;background:rgba(251,246,242,.86);backdrop-filter:blur(8px);
+  padding-top:env(safe-area-inset-top);border-bottom:1px solid var(--line);margin-bottom:26px}
+.tabs-inner{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;border:none;background:none;font-family:'Space Grotesk',sans-serif;font-weight:600;
+  font-size:14px;color:var(--ink-faint);padding:15px 16px;cursor:pointer;position:relative;letter-spacing:-.01em;
+  display:flex;align-items:center;gap:7px;transition:color .18s}
+.tab:hover{color:var(--ink)}
+.tab.active{color:var(--ink)}
+.tab.active::after{content:"";position:absolute;left:16px;right:16px;bottom:-1px;height:2px;background:var(--red);border-radius:2px}
+.tab svg{width:16px;height:16px}
+
+/* ---------- Views ---------- */
+.view{display:none;animation:rise .32s ease}
+.view.active{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+section{margin-bottom:38px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.sec-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.01em}
+.sec-note{font-size:13px;color:var(--ink-soft)}
+
+/* ---------- Home: chapters + topic grid ---------- */
+.chapter-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin:30px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+.chapter-head:first-child{margin-top:0}
+.chapter-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:23px;letter-spacing:-.02em}
+.chapter-meta{font-size:12px;color:var(--ink-soft);display:flex;align-items:center;gap:14px}
+.mini-quiz{border:none;background:none;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;
+  color:var(--red);cursor:pointer;padding:4px 0}
+.mini-quiz:hover{color:var(--red-deep);text-decoration:underline}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:14px}
+.card.rheum .card-bar{background:var(--teal)}
+.card.rheum .card-idx{color:var(--teal)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;
+  cursor:pointer;transition:transform .16s,box-shadow .16s,border-color .16s;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--grid-strong)}
+.card:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.card-idx{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--red);font-weight:700;letter-spacing:.1em}
+.card-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;margin:8px 0 6px;letter-spacing:-.01em;line-height:1.2}
+.card-blurb{font-size:12.5px;color:var(--ink-soft);line-height:1.45;min-height:36px}
+.card-foot{margin-top:14px;display:flex;gap:14px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-faint)}
+.card-foot b{color:var(--ink);font-weight:700}
+.card-bar{position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--red);opacity:.85}
+.card .prog{position:absolute;right:14px;top:16px;font-family:'JetBrains Mono',monospace;font-size:10px;
+  color:var(--teal);font-weight:700;display:none}
+.card.has-prog .prog{display:block}
+
+/* ---------- Controls row ---------- */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.select-wrap{position:relative}
+select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:500;color:var(--ink);
+  background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:9px 34px 9px 13px;cursor:pointer;box-shadow:var(--shadow)}
+.select-wrap::after{content:"▾";position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--ink-faint);pointer-events:none;font-size:11px}
+.btn{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13.5px;border:1px solid var(--line);
+  background:var(--paper);color:var(--ink);border-radius:10px;padding:9px 15px;cursor:pointer;box-shadow:var(--shadow);
+  transition:transform .12s,border-color .14s;display:inline-flex;align-items:center;gap:7px}
+.btn:hover{transform:translateY(-1px);border-color:var(--grid-strong)}
+.btn:active{transform:translateY(0)}
+.btn.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn.primary:hover{background:#000}
+.btn.red{background:var(--red);color:#fff;border-color:var(--red)}
+.btn.red:hover{background:var(--red-deep)}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.btn svg{width:15px;height:15px}
+.spacer{flex:1}
+
+/* ---------- Flag (QC) ---------- */
+.flag-btn{width:32px;height:32px;flex:0 0 auto;border-radius:9px;border:1px solid var(--line);background:var(--paper);
+  color:var(--ink-faint);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:border-color .14s,color .14s,background .14s}
+.flag-btn:hover{border-color:var(--amber);color:var(--amber)}
+.flag-btn.flagged{border-color:var(--amber);background:var(--amber-soft);color:var(--amber)}
+.flag-btn svg{width:15px;height:15px}
+.flag-btn-float{position:absolute;top:14px;right:14px;z-index:6}
+.modal-overlay{position:fixed;inset:0;background:rgba(33,25,21,.5);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.modal-overlay.show{display:flex}
+.modal-box{background:var(--paper);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-lg);
+  padding:24px;max-width:480px;width:100%}
+.modal-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;display:flex;align-items:center;gap:8px}
+.modal-title svg{width:17px;height:17px;color:var(--amber)}
+.modal-sub{font-size:13px;color:var(--ink-soft);margin:8px 0 14px;line-height:1.5}
+.modal-box textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-family:inherit;
+  font-size:14px;line-height:1.5;resize:vertical;background:var(--paper-2);color:var(--ink)}
+.modal-actions{display:flex;align-items:center;gap:8px;margin-top:14px}
+
+/* ---------- Flashcard ---------- */
+.fc-stage{perspective:1600px;max-width:660px;margin:0 auto;position:relative}
+.flashcard{position:relative;width:100%;min-height:320px;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.7,.2,1);cursor:pointer}
+.flashcard.flipped{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:18px;border:1px solid var(--line);
+  background:var(--paper);box-shadow:var(--shadow-lg);padding:34px 34px 64px;display:flex;flex-direction:column}
+.fc-back{transform:rotateY(180deg);background:linear-gradient(180deg,#fff,var(--paper-2))}
+.fc-tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:700;color:var(--red)}
+.fc-tag.a{color:var(--teal)}
+.fc-q{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(19px,3vw,25px);line-height:1.3;
+  margin-top:auto;margin-bottom:auto;letter-spacing:-.01em}
+.fc-a{font-size:clamp(15px,2.4vw,17px);line-height:1.55;margin-top:16px;margin-bottom:auto;color:var(--ink)}
+.fc-hint{position:absolute;left:34px;bottom:22px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-faint);display:flex;align-items:center;gap:7px}
+.fc-hint svg{width:14px;height:14px}
+.fc-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:660px;margin:20px auto 0}
+.fc-count{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft)}
+.fc-count b{color:var(--ink)}
+.rate{display:flex;gap:8px;justify-content:center;max-width:660px;margin:16px auto 0}
+.rate .btn{flex:1;justify-content:center}
+.rate .again{border-color:var(--red);color:var(--red-deep)}
+.rate .again:hover{background:#F9E7E4}
+.rate .good{border-color:var(--amber);color:var(--amber)}
+.rate .good:hover{background:var(--amber-soft)}
+.rate .easy{border-color:var(--teal);color:var(--teal)}
+.rate .easy:hover{background:var(--teal-soft)}
+.strip{height:8px;border-radius:6px;background:var(--paper-2);border:1px solid var(--line);overflow:hidden;max-width:660px;margin:16px auto 0;position:relative}
+.strip-fill{height:100%;background:linear-gradient(90deg,var(--red),var(--red-deep));width:0;transition:width .4s}
+
+/* ---------- Quiz mix ---------- */
+.mix-box{max-width:720px;margin:0 auto 20px;border:1px dashed var(--line);border-radius:var(--r);background:var(--paper-2);padding:14px 16px}
+.mix-label{font-size:12.5px;color:var(--ink-soft);margin-bottom:10px}
+.mix-chapters{display:flex;flex-wrap:wrap;gap:8px}
+.mix-chip{display:flex;align-items:center;gap:6px;font-family:'Inter',sans-serif;font-size:12.5px;font-weight:500;
+  padding:7px 12px;border:1px solid var(--line);border-radius:100px;background:var(--paper);cursor:pointer;user-select:none}
+.mix-chip input{accent-color:var(--red)}
+
+/* ---------- Quiz ---------- */
+.quiz-wrap{max-width:720px;margin:0 auto}
+.q-progress{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.q-progline{flex:1;height:6px;background:var(--paper-2);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.q-progline-fill{height:100%;background:var(--teal);width:0;transition:width .4s}
+.q-progtext{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-soft)}
+.q-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-lg);padding:28px}
+.q-topic-row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.q-topic{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:700}
+.q-stem{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;line-height:1.34;margin:10px 0 20px;letter-spacing:-.01em}
+.q-img-wrap{margin:0 0 18px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#000}
+.q-img-wrap img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:#000}
+.q-img-cap{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.05em;color:var(--ink-faint);padding:6px 10px;background:var(--paper-2);border-top:1px solid var(--line)}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;align-items:flex-start;gap:12px;text-align:left;border:1px solid var(--line);background:var(--paper);
+  border-radius:12px;padding:14px 16px;cursor:pointer;font-size:15px;line-height:1.4;transition:border-color .14s,background .14s,transform .1s;width:100%;font-family:inherit;color:var(--ink)}
+.opt:hover:not(:disabled){border-color:var(--grid-strong);transform:translateX(2px)}
+.opt:disabled{cursor:default}
+.opt-key{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;color:var(--ink-faint);
+  border:1px solid var(--line);border-radius:7px;width:26px;height:26px;flex:0 0 26px;display:flex;align-items:center;justify-content:center}
+.opt.correct{border-color:var(--teal);background:var(--teal-soft)}
+.opt.correct .opt-key{background:var(--teal);color:#fff;border-color:var(--teal)}
+.opt.wrong{border-color:var(--red);background:#F9E7E4}
+.opt.wrong .opt-key{background:var(--red);color:#fff;border-color:var(--red)}
+.opt.dim{opacity:.55}
+.explain{margin-top:18px;border-left:3px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;
+  padding:13px 16px;font-size:14px;line-height:1.5;display:none}
+.explain.show{display:block;animation:rise .3s ease}
+.explain.miss{border-left-color:var(--red);background:#F9E7E4}
+.explain .lbl{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--teal);display:block;margin-bottom:4px}
+.explain.miss .lbl{color:var(--red)}
+.ref-jump-btn{display:flex;align-items:center;gap:5px;margin-top:11px;font-family:'Space Grotesk',sans-serif;
+  font-weight:600;font-size:12.5px;color:var(--ink-soft);background:none;border:none;padding:0;cursor:pointer;
+  text-decoration:underline;text-underline-offset:2px}
+.ref-jump-btn:hover{color:var(--ink)}
+.ref-jump-btn svg{width:13px;height:13px;flex:0 0 auto}
+.q-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:12px;flex-wrap:wrap}
+.score-tag{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft)}
+.score-tag b{color:var(--ink)}
+.conf-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.conf-label{font-size:12.5px;color:var(--ink-soft);margin-right:2px}
+.conf-btn{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;border-radius:8px;
+  padding:9px 14px;cursor:pointer;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+.conf-btn.low{border-color:var(--red);color:var(--red-deep)}
+.conf-btn.low:hover{background:#F9E7E4}
+.conf-btn.med{border-color:var(--amber);color:var(--amber)}
+.conf-btn.med:hover{background:var(--amber-soft)}
+.conf-btn.high{border-color:var(--teal);color:var(--teal)}
+.conf-btn.high:hover{background:var(--teal-soft)}
+
+/* ---------- Quiz results ---------- */
+.results{max-width:640px;margin:0 auto;text-align:center;background:var(--paper);border:1px solid var(--line);
+  border-radius:18px;box-shadow:var(--shadow-lg);padding:40px 30px}
+.res-ring{width:150px;height:150px;margin:0 auto 8px}
+.res-pct{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:34px;fill:var(--ink)}
+.res-sub{font-family:'JetBrains Mono',monospace;font-size:11px;fill:var(--ink-faint);letter-spacing:.1em}
+.res-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;margin:10px 0 4px}
+.res-msg{color:var(--ink-soft);font-size:15px;margin-bottom:24px}
+.res-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.res-break{margin-top:26px;text-align:left}
+.res-break h4{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px}
+.res-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.res-row:last-child{border-bottom:none}
+.res-row .name{font-weight:500}
+.res-row .val{font-family:'JetBrains Mono',monospace;font-size:13px}
+.res-row .val.hi{color:var(--teal);font-weight:700}
+.res-row .val.lo{color:var(--red);font-weight:700}
+
+/* ---------- Cases ---------- */
+.case-layout{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:1fr 280px;gap:20px;align-items:start}
+.case-card{padding:28px}
+.case-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-top:8px}
+.case-notes{position:sticky;top:16px;background:var(--paper-2);border:1px dashed var(--line);border-radius:var(--r);padding:14px 16px;max-height:70vh;overflow-y:auto}
+.case-notes-title{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
+.case-notes-empty{font-size:12.5px;color:var(--ink-faint);line-height:1.5}
+.case-note{border-left:2px solid var(--teal);padding:6px 0 6px 10px;margin-bottom:10px;font-size:12.5px;line-height:1.45}
+.case-note:last-child{margin-bottom:0}
+.case-note-front{font-weight:600;color:var(--ink)}
+.case-note-back{color:var(--ink-soft);margin-top:2px}
+.case-note-new{animation:rise .3s ease}
+.res-sub2{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);margin-bottom:2px}
+@media (max-width:760px){
+  .case-layout{grid-template-columns:1fr}
+  .case-notes{position:static;max-height:none}
+}
+
+/* ---------- Browse / reference ---------- */
+.ref-topic{margin-bottom:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}
+.ref-head{display:flex;align-items:center;gap:12px;padding:16px 18px;cursor:pointer;user-select:none}
+.ref-head:hover{background:var(--paper-2)}
+.ref-num{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:var(--red)}
+.ref-name{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;flex:1;letter-spacing:-.01em}
+.ref-tog{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-faint);transition:transform .2s}
+.ref-topic.open .ref-tog{transform:rotate(90deg)}
+.ref-body{display:none;padding:4px 18px 18px}
+.ref-topic.open .ref-body{display:block;animation:rise .25s ease}
+.ref-item{padding:12px 10px;margin:0 -10px;border-bottom:1px dashed var(--line);border-radius:8px;transition:background .3s ease,box-shadow .3s ease}
+.ref-item:last-child{border-bottom:none}
+.ref-item.ref-highlight{background:var(--amber-soft);box-shadow:0 0 0 1px var(--amber)}
+.ref-q{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14.5px;margin-bottom:4px}
+.ref-a{font-size:14px;color:var(--ink-soft);line-height:1.55}
+.ref-chapter{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:700;color:var(--ink);margin:22px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
+.ref-chapter:first-child{margin-top:0}
+
+/* ---------- Drugs ---------- */
+.drug-group-name{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin:16px 0 8px}
+.drug-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px;margin-bottom:6px}
+.drug-card{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:14px 15px;box-shadow:var(--shadow);
+  border-left:3px solid var(--red)}
+.drug-card.rh{border-left-color:var(--teal)}
+.drug-top{display:flex;flex-direction:column;gap:2px;margin-bottom:10px;padding-bottom:9px;border-bottom:1px dashed var(--line)}
+.drug-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:-.01em;line-height:1.2}
+.drug-cls{font-size:11px;color:var(--ink-soft)}
+.drug-row{display:grid;grid-template-columns:58px 1fr;gap:10px;font-size:13px;line-height:1.45;padding:3px 0}
+.drug-lbl{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;
+  padding-top:2px;text-align:right}
+.drug-lbl.moa{color:var(--ink-faint)}
+.drug-lbl.ind{color:var(--teal)}
+.drug-lbl.con{color:var(--red)}
+
+/* ---------- Classification ---------- */
+.class-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.class-card{border:1px solid var(--line);border-radius:14px;background:var(--paper);padding:16px 18px;box-shadow:var(--shadow)}
+.class-subj{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;letter-spacing:-.01em;margin-bottom:12px;
+  padding-bottom:8px;border-bottom:2px solid var(--ink)}
+.cl-scheme{margin-bottom:14px}
+.cl-scheme:last-child{margin-bottom:0}
+.cl-title{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-faint);font-weight:700;margin-bottom:6px}
+.cl-row{display:grid;grid-template-columns:132px 1fr;gap:10px;padding:5px 0;border-bottom:1px dashed var(--line);font-size:13px;line-height:1.4}
+.cl-row:last-child{border-bottom:none}
+.cl-label{font-weight:600;color:var(--red)}
+.cl-label.rh{color:var(--teal)}
+.cl-detail{color:var(--ink-soft)}
+@media (max-width:520px){.drug-row,.cl-row{grid-template-columns:1fr}.drug-lbl{text-align:left}}
+
+/* ---------- Progress ---------- */
+.stat-strip{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.stat-tile{flex:1;min-width:150px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:14px 16px;box-shadow:var(--shadow)}
+.stat-tile .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px;line-height:1.1}
+.stat-tile .l{font-size:11.5px;color:var(--ink-soft);margin-top:4px;letter-spacing:.02em}
+.prog-chapter{margin-bottom:10px}
+.prog-chapter-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;margin-bottom:2px}
+.prog-chapter-sub{font-size:12px;color:var(--ink-soft);margin-bottom:10px}
+.prog-row{display:grid;grid-template-columns:1fr 110px 110px;align-items:center;gap:14px;padding:10px 0;
+  border-bottom:1px dashed var(--line)}
+.prog-row:last-child{border-bottom:none}
+.prog-row .name{font-weight:500;font-size:13.5px}
+.prog-row .chap-tag{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink-faint);margin-left:8px}
+.meter{display:flex;flex-direction:column;gap:3px}
+.meter-track{height:7px;border-radius:5px;background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
+.meter-fill{height:100%;border-radius:5px;transition:width .4s}
+.meter-fill.ok{background:var(--teal)}
+.meter-fill.warn{background:var(--amber)}
+.meter-fill.crit{background:var(--red)}
+.meter-fill.na{background:var(--ink-faint);opacity:.3}
+.meter-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-soft)}
+.focus-box{margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
+.focus-box .txt{flex:1;min-width:220px;font-size:13.5px;color:var(--ink-soft)}
+.focus-box b{color:var(--ink)}
+@media (max-width:640px){.prog-row{grid-template-columns:1fr;gap:6px}}
+.flag-row{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.flag-row:last-child{border-bottom:none}
+.flag-row .flag-body{flex:1;min-width:0}
+.flag-row .flag-meta{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-faint);margin-bottom:3px}
+.flag-row .flag-excerpt{font-size:13.5px;font-weight:500;margin-bottom:3px}
+.flag-row .flag-note{font-size:13px;color:var(--ink-soft);line-height:1.45}
+.flag-row .flag-actions{display:flex;gap:6px;flex:0 0 auto}
+.flag-empty{font-size:13.5px;color:var(--ink-soft);padding:8px 0}
+
+/* ---------- Compare ---------- */
+.compare-modebar{display:flex;gap:8px;margin-bottom:16px}
+.compare-modebar .btn.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.compare-pickers{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;align-items:center}
+.compare-grid{display:grid;gap:14px;align-items:start}
+.compare-col{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);box-shadow:var(--shadow);
+  overflow:hidden;border-top:3px solid var(--red)}
+.compare-col.rh{border-top-color:var(--teal)}
+.compare-col-head{padding:14px 16px;border-bottom:1px dashed var(--line)}
+.compare-col-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15.5px;letter-spacing:-.01em}
+.compare-col-sub{font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+.compare-col-stats{display:flex;gap:10px;margin-top:8px}
+.compare-col-stats .meter{flex:1}
+.compare-row{padding:10px 16px;border-bottom:1px dashed var(--line);font-size:13px;line-height:1.45}
+.compare-row:last-child{border-bottom:none}
+.compare-row .lbl{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:700;color:var(--ink-faint);display:block;margin-bottom:3px}
+.compare-fact{padding:10px 16px;border-bottom:1px dashed var(--line)}
+.compare-fact:last-child{border-bottom:none}
+.compare-fact .q{font-weight:600;font-size:13px;margin-bottom:3px}
+.compare-fact .a{font-size:13px;color:var(--ink-soft);line-height:1.45}
+.compare-empty{text-align:center;padding:50px 20px;color:var(--ink-faint);font-size:13.5px}
+
+/* ---------- AI Studio ---------- */
+.ai-section{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);box-shadow:var(--shadow);
+  padding:18px 20px;margin-bottom:20px}
+.ai-section h3{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:0 0 10px;letter-spacing:-.01em}
+.ai-note{font-size:12.5px;color:var(--ink-soft);margin:6px 0 0}
+textarea.ai-ref{width:100%;min-height:150px;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--ink);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:12px;resize:vertical}
+textarea.ai-export{width:100%;min-height:160px;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink);
+  background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.ai-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.ai-status{font-size:12.5px;padding:9px 13px;border-radius:10px;margin-top:10px;display:none}
+.ai-status.show{display:block}
+.ai-status.err{background:#F9E7E4;color:var(--red-deep);border:1px solid var(--red)}
+.ai-status.ok{background:var(--teal-soft);color:var(--teal);border:1px solid var(--teal)}
+.ai-status.busy{background:var(--paper-2);color:var(--ink-soft);border:1px solid var(--line)}
+.draft-card{border:1px solid var(--line);border-radius:12px;background:var(--paper);padding:14px 16px;
+  box-shadow:var(--shadow);margin-bottom:10px}
+.draft-badge{display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;
+  letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--amber);background:var(--amber-soft);
+  border-radius:100px;padding:4px 10px;margin-bottom:10px}
+.draft-note{font-size:12px;color:var(--amber);background:var(--amber-soft);border-radius:8px;padding:8px 10px;margin:8px 0}
+.draft-field{width:100%;font-family:'Inter',sans-serif;font-size:13.5px;color:var(--ink);background:var(--paper-2);
+  border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:6px}
+.draft-opts{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.draft-opt-row{display:flex;align-items:center;gap:8px}
+.draft-actions{display:flex;gap:8px;margin-top:10px}
+
+.search-box{position:relative;flex:1;min-width:200px;max-width:420px}
+.search-box input{width:100%;font-family:'Inter',sans-serif;font-size:14px;color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:10px;padding:10px 12px 10px 38px;box-shadow:var(--shadow)}
+.search-box input:focus{outline:2px solid var(--red);outline-offset:1px;border-color:var(--red)}
+.search-box svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink-faint)}
+mark{background:#FCE7A6;color:var(--ink);border-radius:2px;padding:0 1px}
+
+.empty{text-align:center;padding:60px 20px;color:var(--ink-faint)}
+.empty svg{width:40px;height:40px;margin-bottom:12px;opacity:.5}
+
+footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 max(30px,env(safe-area-inset-bottom));color:var(--ink-faint);font-size:12px;line-height:1.6}
+footer .mono{font-size:11px}
+
+@media (max-width:640px){
+  .fc-face{padding:26px 22px 60px}
+  .q-card{padding:20px}
+  .hero{padding:20px 0 24px}
+  .tab{padding:14px 12px;font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .flashcard{transition:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <svg class="ecg-band" id="ecgBand" viewBox="0 0 1200 74" preserveAspectRatio="none" aria-hidden="true"></svg>
+  <div class="wrap hero">
+    <div class="eyebrow">Cardiology · Rheumatology · Pulmonology · Infectious Diseases · Allergy & Immunology · Geriatrics · Radiology · Endocrinology · Nephrology · Neurology · Hematology · Exam Prep</div>
+    <h1>The Rhythm Strip</h1>
+    <p class="subtitle">An active-recall platform built from your lecture summaries — flashcards, question banks, a drug reference, disease-classification maps, and a searchable index across all chapters.</p>
+    <div class="hero-meta" id="heroMeta"></div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="wrap">
+    <div class="tabs-inner" id="tabs">
+      <button class="tab active" data-view="home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Overview
+      </button>
+      <button class="tab" data-view="progress">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V9"/><path d="M12 19V5"/><path d="M20 19v-7"/></svg>
+        Progress
+      </button>
+      <button class="tab" data-view="flash">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+        Flashcards
+      </button>
+      <button class="tab" data-view="quiz">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.6 2.2c-.8.5-1.1 1-1.1 1.8"/><circle cx="12" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg>
+        Quiz
+      </button>
+      <button class="tab" data-view="cases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+        Cases
+      </button>
+      <button class="tab" data-view="browse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+        Reference
+      </button>
+      <button class="tab" data-view="drugs">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5 4 14a5 5 0 0 1 7-7l6.5 6.5a5 5 0 0 1-7 7Z"/><path d="m8.5 8.5 7 7"/></svg>
+        Drugs
+      </button>
+      <button class="tab" data-view="classify">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="7" cy="6" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="1.4" fill="currentColor" stroke="none"/></svg>
+        Classification
+      </button>
+      <button class="tab" data-view="compare">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/></svg>
+        Compare
+      </button>
+      <button class="tab" data-view="ai">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+        AI Studio
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <!-- HOME -->
+  <div class="view active" id="view-home">
+    <section>
+      <div class="sec-head">
+        <div class="sec-title">Topics</div>
+        <div class="sec-note">Tap a topic to drill its flashcards. Progress is saved on this device.</div>
+      </div>
+      <div class="grid" id="topicGrid"></div>
+    </section>
+    <section>
+      <div class="sec-head"><div class="sec-title">Jump in</div></div>
+      <div class="controls">
+        <button class="btn red" onclick="startQuiz('all')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Mixed quiz · all topics
+        </button>
+        <button class="btn primary" onclick="switchView('flash')">Study all flashcards</button>
+        <button class="btn" onclick="switchView('browse')">Browse reference</button>
+        <button class="btn" id="resetBtn" onclick="resetProgress()" style="margin-left:auto">Reset progress</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="view" id="view-progress">
+    <section>
+      <div class="sec-head">
+        <div class="sec-title">Your progress</div>
+        <div class="sec-note">Mastery and quiz accuracy, per chapter and per topic — stored on this device.</div>
+      </div>
+      <div class="stat-strip" id="progStats"></div>
+      <div id="progChapters"></div>
+      <div class="focus-box" id="progFocus" style="display:none">
+        <div class="txt" id="progFocusTxt"></div>
+        <button class="btn red" id="progFocusBtn">Quiz weakest topics →</button>
+      </div>
+    </section>
+    <section>
+      <div class="sec-head">
+        <div class="sec-title">Back up your progress</div>
+        <div class="sec-note">Progress lives in this browser's local storage — it's safe across app rebuilds, but tied to this exact browser/URL. Export a backup before clearing browser data, switching browsers, or moving to a new device.</div>
+      </div>
+      <div class="controls">
+        <button class="btn" onclick="exportProgressFile()">⬇ Export progress (.json)</button>
+        <label class="btn" style="cursor:pointer">
+          ⬆ Import progress
+          <input type="file" accept=".json" id="progressImportInput" style="display:none" onchange="importProgressFile(event)">
+        </label>
+        <div class="ai-status" id="progressBackupStatus"></div>
+      </div>
+    </section>
+    <section>
+      <div class="sec-head">
+        <div class="sec-title">Flagged for review <span class="mono" id="flagsCount" style="color:var(--ink-faint);font-weight:400"></span></div>
+        <div class="sec-note">Questions or flashcards you've tagged as wrong, unclear, or worth double-checking — with an optional note. Nothing here changes the app's content automatically; it's a queue for a future review pass.</div>
+      </div>
+      <div class="controls" id="flagsExportRow" style="display:none">
+        <button class="btn" onclick="exportFlagsFile()">⬇ Export flags (.json)</button>
+      </div>
+      <div id="flagsList"></div>
+    </section>
+  </div>
+
+  <!-- FLASHCARDS -->
+  <div class="view" id="view-flash">
+    <div class="controls">
+      <div class="select-wrap">
+        <select id="flashTopic" onchange="loadFlashSet()"></select>
+      </div>
+      <button class="btn" id="shuffleBtn" onclick="toggleShuffle()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>
+        Shuffle: off
+      </button>
+      <button class="btn" id="dueBtn" onclick="toggleDueOnly()">Due only: off</button>
+      <div class="spacer"></div>
+      <div class="fc-count" id="fcCounter"></div>
+    </div>
+    <div class="fc-stage">
+      <div class="flashcard" id="flashcard" onclick="flipCard()" tabindex="0" role="button" aria-label="Flashcard, click to flip">
+        <div class="fc-face fc-front">
+          <div class="fc-tag">Prompt</div>
+          <div class="fc-q" id="fcFront"></div>
+          <div class="fc-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 8v4l3 2"/></svg>Click, or press Space, to reveal</div>
+        </div>
+        <div class="fc-face fc-back">
+          <div class="fc-tag a">Answer</div>
+          <div class="fc-a" id="fcBack"></div>
+        </div>
+      </div>
+      <button class="flag-btn flag-btn-float" id="fcFlagBtn" onclick="openFlashcardFlagPanel();event.stopPropagation()" title="Flag this card for review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg></button>
+    </div>
+    <div class="strip"><div class="strip-fill" id="fcStrip"></div></div>
+    <div class="rate" id="fcRate">
+      <button class="btn again" onclick="rateCard('again');event.stopPropagation()">Again</button>
+      <button class="btn good" onclick="rateCard('good');event.stopPropagation()">Good</button>
+      <button class="btn easy" onclick="rateCard('easy');event.stopPropagation()">Easy</button>
+    </div>
+    <div class="fc-nav">
+      <button class="btn" onclick="prevCard()">← Prev</button>
+      <div class="fc-count" id="fcMastery"></div>
+      <button class="btn" onclick="nextCard()">Next →</button>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="view" id="view-quiz">
+    <div class="quiz-wrap" id="quizWrap">
+      <div class="controls" id="quizSetup">
+        <div class="select-wrap"><select id="quizTopic"></select></div>
+        <button class="btn red" onclick="startQuizFromSelect()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
+          Start quiz
+        </button>
+      </div>
+      <div class="mix-box" id="quizMixBox">
+        <div class="mix-label">Or build a custom mix — random questions from any chapters combined</div>
+        <div class="controls" style="margin-bottom:0">
+          <div class="mix-chapters" id="mixChapterChecks"></div>
+          <div class="select-wrap">
+            <select id="mixCount">
+              <option value="10">10 questions</option>
+              <option value="20" selected>20 questions</option>
+              <option value="30">30 questions</option>
+              <option value="50">50 questions</option>
+              <option value="100">100 questions</option>
+              <option value="all">All available</option>
+            </select>
+          </div>
+          <button class="btn primary" onclick="startMixedQuiz()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5"/><path d="M4 20L21 3"/><path d="M21 16v5h-5"/><path d="M15 15l6 6"/><path d="M4 4l5 5"/></svg>
+            Shuffle &amp; start
+          </button>
+        </div>
+      </div>
+      <div id="quizArea"></div>
+    </div>
+  </div>
+
+  <!-- CASES -->
+  <div class="view" id="view-cases">
+    <div class="quiz-wrap" id="caseWrap">
+      <div class="controls" id="caseSetup">
+        <div class="select-wrap"><select id="caseChapter"></select></div>
+        <button class="btn red" onclick="startCaseFromSelect()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
+          Start case walkthrough
+        </button>
+      </div>
+      <div class="sec-note" style="max-width:720px;margin:-10px auto 20px">Only clinical-vignette questions that ask which drug to use, or an important feature of the relevant drug, appear here — a curated subset of the quiz bank, not every quiz question. Each answer adds its supporting fact to the case notes panel, built entirely from that topic's own flashcards.</div>
+      <div id="caseArea"></div>
+    </div>
+  </div>
+
+  <!-- BROWSE -->
+  <div class="view" id="view-browse">
+    <div class="controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="refSearch" placeholder="Search facts, drugs, criteria…" oninput="renderBrowse()">
+      </div>
+      <button class="btn" onclick="setAllRef(true)">Expand all</button>
+      <button class="btn" onclick="setAllRef(false)">Collapse all</button>
+    </div>
+    <div id="refList"></div>
+  </div>
+
+  <!-- DRUGS -->
+  <div class="view" id="view-drugs">
+    <div class="controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="drugSearch" placeholder="Search a drug, class, or mechanism…" oninput="renderDrugs()">
+      </div>
+      <div class="select-wrap"><select id="drugChapter" onchange="renderDrugs()"></select></div>
+    </div>
+    <p class="sec-note" style="margin:-6px 0 18px">Mechanism, indications, and key cautions. A study aid drawn from your notes — always confirm doses and contraindications against a formulary.</p>
+    <div id="drugList"></div>
+  </div>
+
+  <!-- CLASSIFICATION -->
+  <div class="view" id="view-classify">
+    <div class="controls">
+      <div class="select-wrap"><select id="classChapter" onchange="renderClassify()"></select></div>
+    </div>
+    <div id="classList"></div>
+  </div>
+
+  <!-- COMPARE (Learning Hub) -->
+  <div class="view" id="view-compare">
+    <div class="sec-head">
+      <div class="sec-title">Compare</div>
+      <div class="sec-note">Side-by-side infographic view — pick items to line up.</div>
+    </div>
+    <div class="compare-modebar">
+      <button class="btn active" id="compareModeDrugs" onclick="setCompareMode('drugs')">Drugs</button>
+      <button class="btn" id="compareModeTopics" onclick="setCompareMode('topics')">Diseases / Topics</button>
+    </div>
+    <div class="compare-pickers" id="comparePickers"></div>
+    <div class="controls" id="compareSearchRow" style="display:none">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="compareSearch" placeholder="Filter facts across selected topics…" oninput="renderCompare()">
+      </div>
+    </div>
+    <div class="compare-grid" id="compareGrid"></div>
+  </div>
+
+  <!-- AI STUDIO -->
+  <div class="view" id="view-ai">
+    <div class="sec-head">
+      <div class="sec-title">AI Studio</div>
+      <div class="sec-note">Draft flashcards/quiz questions from your own reference text, grounded only in what you paste in.</div>
+    </div>
+
+    <div class="ai-section">
+      <h3>1 · Upload references</h3>
+      <textarea class="ai-ref" id="aiRefText" placeholder="Paste lecture notes or reference text here…"></textarea>
+      <div class="ai-controls">
+        <input type="file" id="aiFileInput" accept=".txt,.md,.pdf,.docx" multiple>
+        <span class="ai-note">.txt / .md / .pdf / .docx — content is appended to the box above. PDF and Word need the local dev server (npm run dev).</span>
+      </div>
+    </div>
+
+    <div class="ai-section">
+      <h3>2 · Generate drafts</h3>
+      <div class="ai-controls">
+        <div class="select-wrap"><select id="aiTopicSelect"></select></div>
+        <input type="text" class="draft-field" id="aiNewTopicName" placeholder="…or type a new topic name" style="width:220px;margin:0">
+        <div class="select-wrap">
+          <select id="aiKind"><option value="flashcards">Flashcards</option><option value="quiz">Quiz questions</option></select>
+        </div>
+        <div class="select-wrap">
+          <select id="aiCount"><option>3</option><option>5</option><option selected>8</option><option>12</option></select>
+        </div>
+        <button class="btn red" id="aiGenerateBtn" onclick="generateDrafts()">Generate</button>
+      </div>
+      <div class="ai-status" id="aiStatus"></div>
+    </div>
+
+    <div class="ai-section">
+      <h3>3 · Review drafts <span class="ai-note" style="margin:0">(nothing here is added to the app automatically)</span></h3>
+      <div id="aiDraftsList"></div>
+    </div>
+
+    <div class="ai-section">
+      <h3>4 · Export for PR</h3>
+      <p class="ai-note" style="margin:0 0 10px">Copies kept drafts as a paste-ready snippet for <code>src/data/*.js</code>. Paste it in, run <code>npm run check</code>, and open a PR — per this repo's review workflow.</p>
+      <div class="ai-controls">
+        <button class="btn" onclick="exportDrafts()">Build export snippet</button>
+        <button class="btn" id="aiCopyBtn" onclick="copyExport()" style="display:none">Copy</button>
+      </div>
+      <textarea class="ai-export" id="aiExportBox" readonly style="display:none;margin-top:10px"></textarea>
+    </div>
+  </div>
+</main>
+
+<!-- FLAG (QC) MODAL -->
+<div class="modal-overlay" id="flagOverlay" onclick="if(event.target===this)closeFlagPanel()">
+  <div class="modal-box">
+    <div class="modal-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>Flag for review</div>
+    <div class="modal-sub" id="flagExcerpt"></div>
+    <textarea id="flagNote" rows="4" placeholder="Optional note — what's wrong, unclear, or worth double-checking? Leave blank to just flag it."></textarea>
+    <div class="modal-actions">
+      <button class="btn" id="flagRemoveBtn" onclick="removeFlagPanel()" style="display:none">Remove flag</button>
+      <div class="spacer"></div>
+      <button class="btn" onclick="closeFlagPanel()">Cancel</button>
+      <button class="btn primary" onclick="saveFlagPanel()">Save flag</button>
+    </div>
+  </div>
+</div>
+
+<footer class="wrap">
+  <div>Built from your uploaded cardiology lecture summary · organized against standard Harrison's-consistent framing.</div>
+  <div class="mono" style="margin-top:6px" id="footStats"></div>
+</footer>
+
+<script>
+/* ====== DATA INJECTED BELOW ====== */
+/*__DATA__*/
+
+/* ====== ASSEMBLE CHAPTERS ====== */
+// Merge extra cardiology questions into the base cardiology topics.
+if(typeof EXTRA_CARDIO_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_CARDIO_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_CARDIO_QUIZ[t.id]);}
+    t.chapter='Cardiology';
+  });
+}
+// Append the rheumatology chapter (push to keep TOPICS const-safe).
+if(typeof RHEUM_TOPICS!=='undefined'){
+  RHEUM_TOPICS.forEach(function(t){t.chapter='Rheumatology';TOPICS.push(t);});
+}
+// Append the extra rheumatology topic(s), e.g. septic arthritis.
+if(typeof RHEUM_EXTRA_TOPICS!=='undefined'){
+  RHEUM_EXTRA_TOPICS.forEach(function(t){t.chapter='Rheumatology';TOPICS.push(t);});
+}
+// Merge extra rheumatology questions into their topics.
+if(typeof EXTRA_RHEUM_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_RHEUM_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_RHEUM_QUIZ[t.id]);}
+  });
+}
+// Append the pulmonology chapter (push to keep TOPICS const-safe).
+if(typeof PULM_TOPICS!=='undefined'){
+  PULM_TOPICS.forEach(function(t){t.chapter='Pulmonology';TOPICS.push(t);});
+}
+// Append the infectious diseases chapter (push to keep TOPICS const-safe).
+if(typeof ID_TOPICS!=='undefined'){
+  ID_TOPICS.forEach(function(t){t.chapter='Infectious Diseases';TOPICS.push(t);});
+}
+// Append extra infectious diseases topics (e.g. skin/soft-tissue/bone/joint, resistant gram-negatives).
+if(typeof ID_EXTRA_TOPICS!=='undefined'){
+  ID_EXTRA_TOPICS.forEach(function(t){t.chapter='Infectious Diseases';TOPICS.push(t);});
+}
+// Merge extra infectious diseases questions (from an external USMLE-style question bank) into their topics.
+if(typeof EXTRA_ID_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_ID_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_ID_QUIZ[t.id]);}
+  });
+}
+// Append the allergy & immunology chapter (push to keep TOPICS const-safe).
+if(typeof ALLERGY_TOPICS!=='undefined'){
+  ALLERGY_TOPICS.forEach(function(t){t.chapter='Allergy & Immunology';TOPICS.push(t);});
+}
+// Append the geriatrics chapter (push to keep TOPICS const-safe).
+if(typeof GERIATRIC_TOPICS!=='undefined'){
+  GERIATRIC_TOPICS.forEach(function(t){t.chapter='Geriatrics';TOPICS.push(t);});
+}
+// Append the radiology chapter (push to keep TOPICS const-safe).
+if(typeof RADIOLOGY_TOPICS!=='undefined'){
+  RADIOLOGY_TOPICS.forEach(function(t){t.chapter='Radiology';TOPICS.push(t);});
+}
+// Append the endocrinology chapter (push to keep TOPICS const-safe).
+if(typeof ENDO_TOPICS!=='undefined'){
+  ENDO_TOPICS.forEach(function(t){t.chapter='Endocrinology';TOPICS.push(t);});
+}
+// Append the nephrology chapter (push to keep TOPICS const-safe).
+if(typeof NEPHRO_TOPICS!=='undefined'){
+  NEPHRO_TOPICS.forEach(function(t){t.chapter='Nephrology';TOPICS.push(t);});
+}
+// Merge extra nephrology questions (from the USMLE-style question bank) into their topics.
+if(typeof EXTRA_NEPHRO_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_NEPHRO_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_NEPHRO_QUIZ[t.id]);}
+  });
+}
+// Append the neurology chapter (push to keep TOPICS const-safe).
+if(typeof NEURO_TOPICS!=='undefined'){
+  NEURO_TOPICS.forEach(function(t){t.chapter='Neurology';TOPICS.push(t);});
+}
+// Append the hematology chapter (push to keep TOPICS const-safe).
+if(typeof HEMATOLOGY_TOPICS!=='undefined'){
+  HEMATOLOGY_TOPICS.forEach(function(t){t.chapter='Hematology';TOPICS.push(t);});
+}
+// Merge extra hematology questions (from an external USMLE-style question bank) into their topics.
+if(typeof EXTRA_HEMATOLOGY_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_HEMATOLOGY_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_HEMATOLOGY_QUIZ[t.id]);}
+  });
+}
+// Ordered list of chapters for grouping.
+var CHAPTERS=[];
+TOPICS.forEach(function(t){if(CHAPTERS.indexOf(t.chapter)<0)CHAPTERS.push(t.chapter);});
+
+/* ====== STATE ====== */
+var LS_KEY='cardio_platform_v1';
+var DAY_MS=86400000;
+var FC_INTERVALS=[1,3,7,16,35,90]; // days, indexed by box level — Leitner-style spaced repetition for flashcards
+var progress=loadProgress();
+function loadProgress(){
+  var p;try{p=JSON.parse(localStorage.getItem(LS_KEY))}catch(e){p=null}
+  if(!p)p={};
+  if(!p.cards)p.cards={};
+  if(!p.quiz)p.quiz={};
+  if(!p.topicStats)p.topicStats={};   // tid -> {correct,total}
+  if(!p.quizLog)p.quizLog=[];         // [{ts,scope,score,total,perTopic}]
+  if(!p.questionStats)p.questionStats={}; // "tid::idx" -> {status:'wrong'|'correct',confidence:'low'|'medium'|'high'|null,correctCount,wrongCount,lastTs}
+  // Migrate legacy card records (known/ts only, no schedule yet) to the spaced-repetition schedule.
+  Object.keys(p.cards).forEach(function(k){
+    var c=p.cards[k];
+    if(c&&c.dueAt===undefined){
+      c.box=c.known?1:0;
+      c.reps=c.known?1:0;
+      c.lapses=0;
+      c.dueAt=c.known?(c.ts||Date.now())+FC_INTERVALS[0]*DAY_MS:(c.ts||Date.now());
+    }
+  });
+  return p;
+}
+function saveProgress(){try{localStorage.setItem(LS_KEY,JSON.stringify(progress))}catch(e){}}
+
+var AI_LS_KEY='rhythm_ai_drafts_v1';
+var aiDrafts=loadAIDrafts();
+function loadAIDrafts(){try{return JSON.parse(localStorage.getItem(AI_LS_KEY))||[]}catch(e){return[]}}
+function saveAIDrafts(){try{localStorage.setItem(AI_LS_KEY,JSON.stringify(aiDrafts))}catch(e){}}
+
+/* ====== CONTENT FLAGS (QC) ======
+   Optional per-question/per-card notes flagging content for a future review pass.
+   Never edits src/data/*.js itself — just a queue for a human (or later, an agent) to act on. */
+var FLAGS_LS_KEY='rhythm_flags_v1';
+var flags=loadFlags();
+function loadFlags(){try{return JSON.parse(localStorage.getItem(FLAGS_LS_KEY))||{}}catch(e){return{}}}
+function saveFlags(){try{localStorage.setItem(FLAGS_LS_KEY,JSON.stringify(flags))}catch(e){}}
+function flagKey(type,tid,idx){return type+'::'+tid+'::'+idx}
+function isFlagged(type,tid,idx){return !!flags[flagKey(type,tid,idx)]}
+var FLAG_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>';
+var flagCtx=null;
+function openFlagPanel(type,tid,idx,excerpt,topicName,chapter){
+  flagCtx={type:type,tid:tid,idx:idx,excerpt:excerpt,topicName:topicName,chapter:chapter};
+  var existing=flags[flagKey(type,tid,idx)];
+  el('flagExcerpt').textContent=(topicName?topicName+' — ':'')+excerpt;
+  el('flagNote').value=existing?existing.note:'';
+  el('flagRemoveBtn').style.display=existing?'inline-flex':'none';
+  el('flagOverlay').classList.add('show');
+  setTimeout(function(){el('flagNote').focus()},50);
+}
+function closeFlagPanel(){el('flagOverlay').classList.remove('show');flagCtx=null}
+function saveFlagPanel(){
+  if(!flagCtx)return;
+  var note=el('flagNote').value.trim();
+  flags[flagKey(flagCtx.type,flagCtx.tid,flagCtx.idx)]={
+    type:flagCtx.type,tid:flagCtx.tid,idx:flagCtx.idx,note:note,
+    topicName:flagCtx.topicName,chapter:flagCtx.chapter,excerpt:flagCtx.excerpt,ts:Date.now()
+  };
+  saveFlags();closeFlagPanel();refreshFlagButtons();
+  if(el('view-progress').classList.contains('active'))renderFlagsList();
+}
+function removeFlagPanel(){
+  if(!flagCtx)return;
+  delete flags[flagKey(flagCtx.type,flagCtx.tid,flagCtx.idx)];
+  saveFlags();closeFlagPanel();refreshFlagButtons();
+  if(el('view-progress').classList.contains('active'))renderFlagsList();
+}
+function refreshFlagButtons(){
+  var qb=document.getElementById('quizFlagBtn');
+  if(qb&&quiz.list[quiz.pos]){var q=quiz.list[quiz.pos];qb.classList.toggle('flagged',isFlagged('quiz',q.tid,q.qidx))}
+  var cb=document.getElementById('caseFlagBtn');
+  if(cb&&caseState.list[caseState.pos]){var cq=caseState.list[caseState.pos];cb.classList.toggle('flagged',isFlagged('quiz',cq.tid,cq.qidx))}
+  var fb=document.getElementById('fcFlagBtn');
+  if(fb){var pool=fc._pool||[];var idx=fc.order[fc.pos];var c=pool[idx];if(c)fb.classList.toggle('flagged',isFlagged('flashcard',c.tid,c.i))}
+}
+function openQuizFlagPanel(){
+  var q=quiz.list[quiz.pos];if(!q)return;
+  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
+  openFlagPanel('quiz',q.tid,q.qidx,q.q,q.tname,t?t.chapter:'');
+}
+function openFlashcardFlagPanel(){
+  var pool=fc._pool||[];var idx=fc.order[fc.pos];var c=pool[idx];if(!c)return;
+  var t=TOPICS.filter(function(x){return x.id===c.tid})[0];
+  openFlagPanel('flashcard',c.tid,c.i,c.front,c.tname,t?t.chapter:'');
+}
+function renderFlagsList(){
+  var host=el('flagsList');if(!host)return;
+  var items=Object.keys(flags).map(function(k){return flags[k]}).sort(function(a,b){return b.ts-a.ts});
+  el('flagsCount').textContent=items.length;
+  el('flagsExportRow').style.display=items.length?'flex':'none';
+  if(!items.length){host.innerHTML='<div class="flag-empty">No flags yet — click the flag icon on any question or flashcard to mark it for review.</div>';return}
+  host.innerHTML=items.map(function(f){
+    return '<div class="flag-row"><div class="flag-body">'+
+      '<div class="flag-meta">'+esc(f.chapter||'')+' · '+esc(f.topicName||f.tid)+' · '+(f.type==='quiz'?'Quiz':'Flashcard')+' · '+new Date(f.ts).toLocaleDateString()+'</div>'+
+      '<div class="flag-excerpt">'+esc((f.excerpt||'').slice(0,140))+((f.excerpt||'').length>140?'…':'')+'</div>'+
+      (f.note?'<div class="flag-note">'+esc(f.note)+'</div>':'<div class="flag-note" style="font-style:italic">No note — just flagged</div>')+
+      '</div><div class="flag-actions"><button class="btn" onclick="removeFlagFromList(\''+f.type+'\',\''+f.tid+'\','+f.idx+')">Remove</button></div></div>';
+  }).join('');
+}
+function removeFlagFromList(type,tid,idx){
+  delete flags[flagKey(type,tid,idx)];saveFlags();renderFlagsList();refreshFlagButtons();
+}
+function exportFlagsFile(){
+  var payload=JSON.stringify({version:1,exportedAt:new Date().toISOString(),flags:flags},null,2);
+  var blob=new Blob([payload],{type:'application/json'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;a.download='rhythm-strip-flags-'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+/* ====== ECG HEADER ANIMATION ====== */
+function buildECG(){
+  var band=document.getElementById('ecgBand');
+  var W=1200,H=74,mid=H/2;
+  var beat=[[0,0],[14,0],[20,-3],[26,3],[32,0],[46,0],[52,2],[58,-26],[64,20],[70,-6],[76,0],[92,0],[100,10],[112,10],[120,0],[150,0]];
+  var d='M0 '+mid,x=0;
+  while(x<W){for(var i=1;i<beat.length;i++){var px=x+beat[i][0]-beat[0][0];d+=' L'+px.toFixed(1)+' '+(mid+beat[i][1])}x+=150}
+  band.innerHTML='<path d="'+d+'" fill="none" stroke="#C1362B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="0.85" style="stroke-dasharray:'+ (W*1.4) +';stroke-dashoffset:'+(W*1.4)+';animation:draw 3.4s ease forwards"/>'
+    +'<style>@keyframes draw{to{stroke-dashoffset:0}}@media (prefers-reduced-motion:reduce){path{stroke-dashoffset:0!important;animation:none!important}}</style>';
+}
+
+/* ====== HELPERS ====== */
+function el(id){return document.getElementById(id)}
+function totalCards(){return TOPICS.reduce(function(s,t){return s+t.flashcards.length},0)}
+function totalQuiz(){return TOPICS.reduce(function(s,t){return s+t.quiz.length},0)}
+function cardKey(tid,i){return tid+':'+i}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function escAttr(s){return esc(s||'').replace(/"/g,'&quot;')}
+
+/* ====== NAV ====== */
+function switchView(v){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t.dataset.view===v)});
+  document.querySelectorAll('.view').forEach(function(x){x.classList.remove('active')});
+  el('view-'+v).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(v==='browse')renderBrowse();
+  if(v==='drugs')renderDrugs();
+  if(v==='classify')renderClassify();
+  if(v==='progress')renderProgress();
+  if(v==='compare')renderCompare();
+  if(v==='ai')renderAIStudio();
+}
+document.getElementById('tabs').addEventListener('click',function(e){
+  var b=e.target.closest('.tab'); if(b)switchView(b.dataset.view);
+});
+
+/* ====== HOME ====== */
+function renderHome(){
+  el('heroMeta').innerHTML=
+    '<div class="chip"><span class="dot"></span><b>'+TOPICS.length+'</b> topics</div>'+
+    '<div class="chip"><b>'+totalCards()+'</b> flashcards</div>'+
+    '<div class="chip"><b>'+totalQuiz()+'</b> exam questions</div>';
+  el('footStats').textContent=TOPICS.length+' topics · '+totalCards()+' flashcards · '+totalQuiz()+' questions · progress stored locally';
+  var host=el('topicGrid');host.innerHTML='';host.className='';
+  CHAPTERS.forEach(function(chapter){
+    var chapTopics=TOPICS.filter(function(t){return t.chapter===chapter;});
+    var cCards=chapTopics.reduce(function(s,t){return s+t.flashcards.length},0);
+    var cQ=chapTopics.reduce(function(s,t){return s+t.quiz.length},0);
+    var head=document.createElement('div');
+    head.className='chapter-head';
+    head.innerHTML='<div class="chapter-name">'+chapter+'</div>'+
+      '<div class="chapter-meta mono">'+chapTopics.length+' topics · '+cCards+' cards · '+cQ+' Q'+
+      '<button class="mini-quiz" data-ch="'+chapter+'">Quiz this chapter →</button></div>';
+    host.appendChild(head);
+    head.querySelector('.mini-quiz').onclick=function(){startQuiz('chapter:'+chapter);};
+    var g=document.createElement('div');g.className='grid';
+    chapTopics.forEach(function(t){
+      var idx=TOPICS.indexOf(t);
+      var mastered=t.flashcards.reduce(function(s,c,i){var p=progress.cards[cardKey(t.id,i)];return s+(p&&p.known?1:0)},0);
+      var pct=Math.round(mastered/t.flashcards.length*100);
+      var d=document.createElement('div');
+      d.className='card'+(mastered>0?' has-prog':'')+(chapter==='Rheumatology'?' rheum':'');
+      d.tabIndex=0;d.setAttribute('role','button');
+      d.innerHTML='<div class="card-bar"></div>'+
+        '<div class="prog">'+pct+'%</div>'+
+        '<div class="card-idx">'+String(idx+1).padStart(2,'0')+'</div>'+
+        '<div class="card-title">'+t.name+'</div>'+
+        '<div class="card-blurb">'+t.blurb+'</div>'+
+        '<div class="card-foot"><span><b>'+t.flashcards.length+'</b> cards</span><span><b>'+t.quiz.length+'</b> Q</span>'+(mastered>0?'<span style="color:var(--teal)"><b>'+mastered+'</b> known</span>':'')+'</div>';
+      d.onclick=function(){openTopicFlash(t.id)};
+      d.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openTopicFlash(t.id)}};
+      g.appendChild(d);
+    });
+    host.appendChild(g);
+  });
+}
+function openTopicFlash(tid){switchView('flash');el('flashTopic').value=tid;loadFlashSet()}
+
+/* ====== FLASHCARDS ====== */
+var fc={topic:'all',order:[],pos:0,flipped:false,shuffle:false,dueOnly:false};
+function buildFlashOptions(){
+  var s=el('flashTopic');s.innerHTML='<option value="all">All topics · '+totalCards()+' cards</option>';
+  CHAPTERS.forEach(function(chapter){
+    var og=document.createElement('optgroup');og.label=chapter;
+    var cCards=0;
+    TOPICS.filter(function(t){return t.chapter===chapter}).forEach(function(t){
+      var o=document.createElement('option');o.value=t.id;o.textContent=t.name+' · '+t.flashcards.length;og.appendChild(o);cCards+=t.flashcards.length;
+    });
+    var all=document.createElement('option');all.value='chapter:'+chapter;all.textContent='▸ All '+chapter+' · '+cCards+' cards';
+    og.insertBefore(all,og.firstChild);
+    s.appendChild(og);
+  });
+}
+function fullFlashPool(){
+  var pool=[];
+  var chapMode=fc.topic.indexOf('chapter:')===0;
+  var chap=chapMode?fc.topic.slice(8):null;
+  TOPICS.forEach(function(t){
+    if(chapMode){if(t.chapter!==chap)return;}
+    else if(fc.topic!=='all'&&t.id!==fc.topic)return;
+    t.flashcards.forEach(function(c,i){pool.push({tid:t.id,i:i,tname:t.name,front:c.front,back:c.back})});
+  });
+  return pool;
+}
+function flashPool(){
+  var pool=fullFlashPool();
+  if(fc.dueOnly){pool=pool.filter(function(c){return cardIsDue(c.tid,c.i)});}
+  return pool;
+}
+function cardIsDue(tid,i){
+  var p=progress.cards[cardKey(tid,i)];
+  return !p||p.dueAt<=Date.now();
+}
+function cardDueCount(pool){return pool.reduce(function(s,c){return s+(cardIsDue(c.tid,c.i)?1:0)},0)}
+/* Flashcard priority: 0=never reviewed, 1=overdue (sorted oldest-due first),
+   2=not yet due (sorted soonest-due first) — mirrors the quiz question priority scheme. */
+function fcPriority(tid,i){
+  var p=progress.cards[cardKey(tid,i)];
+  if(!p)return 0;
+  return p.dueAt<=Date.now()?1:2;
+}
+function prioritizeFlashPool(pool){
+  var buckets=[[],[],[]];
+  pool.forEach(function(c){buckets[fcPriority(c.tid,c.i)].push(c)});
+  shuffleArr(buckets[0]); // never-reviewed cards: shuffled, always first
+  var byDueAt=function(a,b){
+    var pa=progress.cards[cardKey(a.tid,a.i)],pb=progress.cards[cardKey(b.tid,b.i)];
+    return (pa?pa.dueAt:0)-(pb?pb.dueAt:0);
+  };
+  buckets[1].sort(byDueAt); // overdue: most-overdue (oldest dueAt) first
+  buckets[2].sort(byDueAt); // not yet due: soonest-due first
+  var order=buckets[0].concat(buckets[1],buckets[2]);
+  return order.map(function(c){return pool.indexOf(c)});
+}
+function loadFlashSet(){
+  fc.topic=el('flashTopic').value;
+  var pool=flashPool();
+  fc._pool=pool;
+  if(fc.shuffle){
+    fc.order=pool.map(function(_,i){return i});
+    shuffleArr(fc.order);
+  }else{
+    fc.order=prioritizeFlashPool(pool);
+  }
+  fc.pos=0;fc.flipped=false;
+  renderCard();
+}
+function shuffleArr(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}}
+/* Quiz question priority: 0=never answered, 1=answered wrong, 2=correct/low confidence,
+   3=correct/medium confidence (or unset), 4=correct/high confidence. Lower = more urgent. */
+function qPriority(qid){
+  var s=progress.questionStats[qid];
+  if(!s)return 0;
+  if(s.status==='wrong')return 1;
+  if(s.status==='correct'){
+    if(s.confidence==='low')return 2;
+    if(s.confidence==='high')return 4;
+    return 3;
+  }
+  return 0;
+}
+function prioritizeList(list){
+  var buckets=[[],[],[],[],[]];
+  list.forEach(function(item){buckets[qPriority(item.qid)].push(item)});
+  buckets.forEach(shuffleArr);
+  return buckets[0].concat(buckets[1],buckets[2],buckets[3],buckets[4]);
+}
+function renderCard(){
+  var pool=fc._pool||[];
+  var dueCount=cardDueCount(fullFlashPool());
+  el('dueBtn').textContent='Due only: '+(fc.dueOnly?'on':'off')+' · '+dueCount+' due';
+  if(!pool.length){
+    el('fcFront').textContent=fc.dueOnly?'Nothing due right now — you\'re caught up.':'No cards in this set.';
+    el('fcBack').textContent=fc.dueOnly?'Turn off "Due only" to review ahead of schedule, or check back later.':'';
+    el('fcCounter').textContent='0 / 0';el('fcMastery').textContent='';el('fcStrip').style.width='0%';
+    el('fcFlagBtn').style.display='none';
+    return;
+  }
+  el('fcFlagBtn').style.display='flex';
+  var idx=fc.order[fc.pos];var c=pool[idx];
+  var card=el('flashcard');card.classList.remove('flipped');fc.flipped=false;
+  el('fcFront').textContent=c.front;
+  el('fcBack').textContent=c.back;
+  el('fcCounter').textContent=(fc.pos+1)+' / '+pool.length+(fc.topic==='all'?' · '+c.tname:'');
+  el('fcStrip').style.width=((fc.pos+1)/pool.length*100)+'%';
+  var known=pool.reduce(function(s,x){var p=progress.cards[cardKey(x.tid,x.i)];return s+(p&&p.known?1:0)},0);
+  el('fcMastery').innerHTML='<b>'+known+'</b> / '+pool.length+' known';
+  el('fcFlagBtn').classList.toggle('flagged',isFlagged('flashcard',c.tid,c.i));
+}
+function flipCard(){var card=el('flashcard');fc.flipped=!fc.flipped;card.classList.toggle('flipped',fc.flipped)}
+function nextCard(){var pool=fc._pool||[];if(!pool.length)return;fc.pos=(fc.pos+1)%pool.length;renderCard()}
+function prevCard(){var pool=fc._pool||[];if(!pool.length)return;fc.pos=(fc.pos-1+pool.length)%pool.length;renderCard()}
+function rateCard(rating){
+  var pool=fc._pool||[];if(!pool.length)return;
+  var idx=fc.order[fc.pos];var c=pool[idx];
+  var key=cardKey(c.tid,c.i);
+  var prev=progress.cards[key];
+  var box=(prev&&prev.box)||0,reps=(prev&&prev.reps)||0,lapses=(prev&&prev.lapses)||0;
+  var known,dueAt;
+  if(rating==='again'){
+    box=0;known=false;lapses++;dueAt=Date.now();
+  }else{
+    box=Math.min(box+(rating==='easy'?2:1),FC_INTERVALS.length-1);
+    known=true;reps++;dueAt=Date.now()+FC_INTERVALS[box]*DAY_MS;
+  }
+  progress.cards[key]={known:known,ts:Date.now(),box:box,reps:reps,lapses:lapses,dueAt:dueAt};
+  saveProgress();renderHome();
+  if(fc.dueOnly&&rating!=='again'){loadFlashSet();return}
+  nextCard();
+}
+function toggleShuffle(){fc.shuffle=!fc.shuffle;el('shuffleBtn').childNodes[el('shuffleBtn').childNodes.length-1].textContent='Shuffle: '+(fc.shuffle?'on':'off');loadFlashSet()}
+function toggleDueOnly(){fc.dueOnly=!fc.dueOnly;loadFlashSet()}
+
+/* ====== QUIZ ====== */
+var quiz={list:[],pos:0,score:0,answered:false,perTopic:{}};
+function buildQuizOptions(){
+  var s=el('quizTopic');s.innerHTML='<option value="all">All topics · '+totalQuiz()+' questions</option>';
+  CHAPTERS.forEach(function(chapter){
+    var og=document.createElement('optgroup');og.label=chapter;
+    var cQ=0;
+    TOPICS.filter(function(t){return t.chapter===chapter}).forEach(function(t){
+      var o=document.createElement('option');o.value=t.id;o.textContent=t.name+' · '+t.quiz.length+' Q';og.appendChild(o);cQ+=t.quiz.length;
+    });
+    var all=document.createElement('option');all.value='chapter:'+chapter;all.textContent='▸ All '+chapter+' · '+cQ+' Q';
+    og.insertBefore(all,og.firstChild);
+    s.appendChild(og);
+  });
+}
+function buildMixControls(){
+  var host=el('mixChapterChecks');host.innerHTML='';
+  CHAPTERS.forEach(function(chapter){
+    var cQ=TOPICS.filter(function(t){return t.chapter===chapter}).reduce(function(s,t){return s+t.quiz.length},0);
+    var label=document.createElement('label');label.className='mix-chip';
+    label.innerHTML='<input type="checkbox" checked value="'+esc(chapter)+'"> '+esc(chapter)+' <span class="mono" style="color:var(--ink-faint)">'+cQ+'</span>';
+    host.appendChild(label);
+  });
+}
+function startMixedQuiz(){
+  var checked=Array.prototype.slice.call(document.querySelectorAll('#mixChapterChecks input:checked')).map(function(c){return c.value});
+  if(!checked.length){alert('Pick at least one chapter to mix.');return}
+  var pool=[];
+  TOPICS.forEach(function(t){
+    if(checked.indexOf(t.chapter)<0)return;
+    t.quiz.forEach(function(q,i){pool.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption})});
+  });
+  if(!pool.length){alert('No questions available for the selected chapters.');return}
+  pool=prioritizeList(pool);
+  var countVal=el('mixCount').value;
+  var n=countVal==='all'?pool.length:Math.min(+countVal,pool.length);
+  switchView('quiz');
+  el('quizSetup').style.display='flex';
+  quiz={list:pool.slice(0,n),pos:0,score:0,answered:false,perTopic:{}};
+  renderQuestion();
+}
+function startQuizFromSelect(){startQuiz(el('quizTopic').value)}
+function startQuiz(tid){
+  switchView('quiz');
+  var idSet=(tid&&typeof tid==='object'&&tid.ids)?tid.ids:null;
+  if(!idSet){
+    var opt=el('quizTopic').querySelector('option[value="'+tid+'"]');
+    if(opt)el('quizTopic').value=tid;
+  }
+  el('quizSetup').style.display='flex';
+  var chapMode=!idSet&&(''+tid).indexOf('chapter:')===0;
+  var chap=chapMode?tid.slice(8):null;
+  var list=[];
+  TOPICS.forEach(function(t){
+    if(idSet){if(idSet.indexOf(t.id)<0)return;}
+    else if(chapMode){if(t.chapter!==chap)return;}
+    else if(tid!=='all'&&t.id!==tid)return;
+    t.quiz.forEach(function(q,i){list.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption})});
+  });
+  list=prioritizeList(list);
+  quiz={list:list,pos:0,score:0,answered:false,perTopic:{}};
+  renderQuestion();
+}
+function renderQuestion(){
+  var q=quiz.list[quiz.pos];
+  var pct=Math.round(quiz.pos/quiz.list.length*100);
+  var keys=['A','B','C','D','E'];
+  var html='<div class="q-progress">'+
+    '<div class="q-progline"><div class="q-progline-fill" style="width:'+pct+'%"></div></div>'+
+    '<div class="q-progtext">'+(quiz.pos+1)+' / '+quiz.list.length+'</div></div>'+
+    '<div class="q-card">'+
+      '<div class="q-topic-row"><div class="q-topic">'+q.tname+'</div>'+
+      '<button class="flag-btn'+(isFlagged('quiz',q.tid,q.qidx)?' flagged':'')+'" id="quizFlagBtn" onclick="openQuizFlagPanel();event.stopPropagation()" title="Flag this question for review">'+FLAG_SVG+'</button></div>'+
+      '<div class="q-stem">'+esc(q.q)+'</div>'+
+      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="Imaging study for this question" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap">'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
+      '<div class="opts" id="opts">';
+  q.options.forEach(function(o,i){
+    html+='<button class="opt" data-i="'+i+'" onclick="answer('+i+')"><span class="opt-key">'+keys[i]+'</span><span>'+esc(o)+'</span></button>';
+  });
+  html+='</div>'+
+      '<div class="explain" id="explain"><span class="lbl"></span><span id="explainText"></span>'+
+      '<button class="ref-jump-btn" onclick="jumpToReference()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>View in Reference — '+q.tname+'</button></div>'+
+      '<div class="q-foot"><div class="score-tag">Score <b>'+quiz.score+'</b> / '+quiz.pos+'</div>'+
+      '<div id="qActions"><button class="btn primary" id="nextQ" onclick="nextQuestion()" disabled>Next →</button></div></div>'+
+    '</div>';
+  el('quizArea').innerHTML=html;
+  quiz.answered=false;
+}
+function answer(i){
+  if(quiz.answered)return;quiz.answered=true;
+  var q=quiz.list[quiz.pos];
+  var opts=document.querySelectorAll('#opts .opt');
+  opts.forEach(function(b){
+    b.disabled=true;var bi=+b.dataset.i;
+    if(bi===q.answer)b.classList.add('correct');
+    else if(bi===i)b.classList.add('wrong');
+    else b.classList.add('dim');
+  });
+  var correct=i===q.answer;
+  if(correct)quiz.score++;
+  if(!quiz.perTopic[q.tid])quiz.perTopic[q.tid]={name:q.tname,c:0,n:0};
+  quiz.perTopic[q.tid].n++;if(correct)quiz.perTopic[q.tid].c++;
+  if(!progress.topicStats[q.tid])progress.topicStats[q.tid]={correct:0,total:0};
+  progress.topicStats[q.tid].total++;if(correct)progress.topicStats[q.tid].correct++;
+  var ex=el('explain');ex.className='explain show'+(correct?'':' miss');
+  ex.querySelector('.lbl').textContent=correct?'Correct':'Not quite';
+  el('explainText').textContent=q.explain;
+  if(correct){
+    saveProgress();
+    el('qActions').innerHTML='<div class="conf-row"><span class="conf-label">How well did you know it?</span>'+
+      '<button class="conf-btn low" onclick="answerConfidence(\'low\')">Low</button>'+
+      '<button class="conf-btn med" onclick="answerConfidence(\'medium\')">Medium</button>'+
+      '<button class="conf-btn high" onclick="answerConfidence(\'high\')">High</button></div>';
+  }else{
+    var prev=progress.questionStats[q.qid];
+    progress.questionStats[q.qid]={status:'wrong',confidence:null,
+      correctCount:(prev&&prev.correctCount)||0,wrongCount:((prev&&prev.wrongCount)||0)+1,lastTs:Date.now()};
+    saveProgress();
+    el('nextQ').disabled=false;
+    el('nextQ').textContent=(quiz.pos===quiz.list.length-1)?'See results →':'Next →';
+  }
+}
+function answerConfidence(level){
+  var q=quiz.list[quiz.pos];
+  var prev=progress.questionStats[q.qid];
+  progress.questionStats[q.qid]={status:'correct',confidence:level,
+    correctCount:((prev&&prev.correctCount)||0)+1,wrongCount:(prev&&prev.wrongCount)||0,lastTs:Date.now()};
+  saveProgress();
+  nextQuestion();
+}
+function nextQuestion(){
+  if(!quiz.answered)return;
+  if(quiz.pos===quiz.list.length-1){showResults();return}
+  quiz.pos++;renderQuestion();
+}
+function showResults(){
+  el('quizSetup').style.display='none';
+  var pct=Math.round(quiz.score/quiz.list.length*100);
+  var r=52,c=2*Math.PI*r,off=c*(1-pct/100);
+  var msg=pct>=85?'Exam-ready on this set.':pct>=70?'Solid — tighten the misses below.':pct>=50?'Getting there. Re-drill the weak topics.':'Worth another pass through the flashcards.';
+  var rows='';
+  Object.keys(quiz.perTopic).forEach(function(k){
+    var p=quiz.perTopic[k];var tp=Math.round(p.c/p.n*100);
+    rows+='<div class="res-row"><span class="name">'+p.name+'</span><span class="val '+(tp>=70?'hi':'lo')+'">'+p.c+'/'+p.n+' · '+tp+'%</span></div>';
+  });
+  el('quizArea').innerHTML='<div class="results">'+
+    '<svg class="res-ring" viewBox="0 0 120 120">'+
+      '<circle cx="60" cy="60" r="'+r+'" fill="none" stroke="#F0D8D1" stroke-width="10"/>'+
+      '<circle cx="60" cy="60" r="'+r+'" fill="none" stroke="'+(pct>=70?'#0E7C6B':'#C1362B')+'" stroke-width="10" stroke-linecap="round" stroke-dasharray="'+c+'" stroke-dashoffset="'+off+'" transform="rotate(-90 60 60)" style="transition:stroke-dashoffset 1s ease"/>'+
+      '<text x="60" y="58" text-anchor="middle" class="res-pct">'+pct+'%</text>'+
+      '<text x="60" y="76" text-anchor="middle" class="res-sub">'+quiz.score+'/'+quiz.list.length+'</text>'+
+    '</svg>'+
+    '<div class="res-title">'+(pct>=85?'Strong work':pct>=70?'Nicely done':'Keep going')+'</div>'+
+    '<div class="res-msg">'+msg+'</div>'+
+    '<div class="res-actions">'+
+      '<button class="btn red" onclick="startQuiz(\''+(el('quizTopic').value)+'\')">Retake</button>'+
+      '<button class="btn primary" onclick="startQuiz(\'all\')">Mixed quiz</button>'+
+      '<button class="btn" onclick="switchView(\'flash\')">Review flashcards</button>'+
+    '</div>'+
+    (rows?'<div class="res-break"><h4>By topic</h4>'+rows+'</div>':'')+
+  '</div>';
+  progress.quiz['last']={pct:pct,ts:Date.now()};
+  progress.quizLog.push({ts:Date.now(),scope:el('quizTopic').value,score:quiz.score,total:quiz.list.length,perTopic:quiz.perTopic});
+  if(progress.quizLog.length>100)progress.quizLog=progress.quizLog.slice(-100);
+  saveProgress();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ====== CASES ======
+   Pulls ONLY quiz items explicitly authored with `caseQ:true` — a clinical
+   vignette that asks which drug to use, or an important feature of the
+   relevant drug (see docs/AUTHORING_GUIDE.md). This is a small, curated
+   subset of the full quiz bank, not every vignette-style question, so the
+   pool is combined across chapters rather than browsed topic-by-topic.
+   Every teaching point shown is the linked flashcard (via the quiz item's
+   `ref`, or the same keyword-match fallback used by "View in Reference") —
+   no facts beyond what's already authored in src/data/. */
+var caseState={list:[],pos:0,score:0,answered:false,points:[]};
+function allCaseItems(){
+  var list=[];
+  TOPICS.forEach(function(t){
+    (t.quiz||[]).forEach(function(q,i){
+      if(!q.caseQ)return;
+      list.push({tid:t.id,tname:t.name,chapter:t.chapter,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption});
+    });
+  });
+  return list;
+}
+function buildCaseOptions(){
+  var s=el('caseChapter');
+  var all=allCaseItems();
+  var counts={};
+  all.forEach(function(c){counts[c.chapter]=(counts[c.chapter]||0)+1});
+  s.innerHTML='<option value="all">All chapters · '+all.length+' case questions</option>';
+  CHAPTERS.forEach(function(chapter){
+    if(!counts[chapter])return;
+    var o=document.createElement('option');o.value=chapter;o.textContent=chapter+' · '+counts[chapter]+' Q';s.appendChild(o);
+  });
+}
+function startCaseFromSelect(){startCaseWalkthrough(el('caseChapter').value)}
+function startCaseWalkthrough(chapterFilter){
+  var list=allCaseItems();
+  if(chapterFilter&&chapterFilter!=='all')list=list.filter(function(c){return c.chapter===chapterFilter});
+  if(!list.length){alert('No case questions available for this selection.');return}
+  list=prioritizeList(list);
+  el('caseSetup').style.display='none';
+  caseState={list:list,pos:0,score:0,answered:false,points:[]};
+  renderCaseQuestion();
+}
+function caseTeachingPoint(q){
+  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
+  if(!t)return null;
+  var idx=(typeof q.ref==='number')?q.ref:findBestMatchingCard(t,q.q+' '+q.explain);
+  if(idx<0||!t.flashcards[idx])return null;
+  return {tid:t.id,idx:idx,front:t.flashcards[idx].front,back:t.flashcards[idx].back};
+}
+function renderCaseNotesHTML(){
+  if(!caseState.points.length)return '<div class="case-notes-empty">Teaching points collected as you answer will appear here.</div>';
+  return caseState.points.map(function(p){
+    return '<div class="case-note"><div class="case-note-front">'+esc(p.front)+'</div><div class="case-note-back">'+esc(p.back)+'</div></div>';
+  }).join('');
+}
+function renderCaseQuestion(){
+  var q=caseState.list[caseState.pos];
+  var pct=Math.round(caseState.pos/caseState.list.length*100);
+  var keys=['A','B','C','D','E'];
+  var html='<div class="q-progress">'+
+    '<div class="q-progline"><div class="q-progline-fill" style="width:'+pct+'%"></div></div>'+
+    '<div class="q-progtext">Case '+(caseState.pos+1)+' / '+caseState.list.length+'</div></div>'+
+    '<div class="case-layout">'+
+    '<div class="q-card case-card">'+
+      '<div class="q-topic-row"><div class="q-topic">'+esc(q.tname)+'</div>'+
+      '<button class="flag-btn'+(isFlagged('quiz',q.tid,q.qidx)?' flagged':'')+'" id="caseFlagBtn" onclick="openCaseFlagPanel();event.stopPropagation()" title="Flag this question for review">'+FLAG_SVG+'</button></div>'+
+      '<div class="case-label">Case vignette</div>'+
+      '<div class="q-stem">'+esc(q.q)+'</div>'+
+      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="Imaging study for this question" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap">'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
+      '<div class="opts" id="caseOpts">';
+  q.options.forEach(function(o,i){
+    html+='<button class="opt" data-i="'+i+'" onclick="answerCase('+i+')"><span class="opt-key">'+keys[i]+'</span><span>'+esc(o)+'</span></button>';
+  });
+  html+='</div>'+
+      '<div class="explain" id="caseExplain"><span class="lbl"></span><span id="caseExplainText"></span></div>'+
+      '<div class="q-foot"><div class="score-tag">Score <b>'+caseState.score+'</b> / '+caseState.pos+'</div>'+
+      '<div id="caseActions"><button class="btn primary" id="nextCaseBtn" onclick="nextCaseQuestion()" disabled>Next case →</button></div></div>'+
+    '</div>'+
+    '<aside class="case-notes" id="caseNotes"><div class="case-notes-title">Case notes</div>'+renderCaseNotesHTML()+'</aside>'+
+    '</div>';
+  el('caseArea').innerHTML=html;
+  caseState.answered=false;
+}
+function answerCase(i){
+  if(caseState.answered)return;caseState.answered=true;
+  var q=caseState.list[caseState.pos];
+  var opts=document.querySelectorAll('#caseOpts .opt');
+  opts.forEach(function(b){
+    b.disabled=true;var bi=+b.dataset.i;
+    if(bi===q.answer)b.classList.add('correct');
+    else if(bi===i)b.classList.add('wrong');
+    else b.classList.add('dim');
+  });
+  var correct=i===q.answer;
+  if(correct)caseState.score++;
+  if(!progress.topicStats[q.tid])progress.topicStats[q.tid]={correct:0,total:0};
+  progress.topicStats[q.tid].total++;if(correct)progress.topicStats[q.tid].correct++;
+  var prevQS=progress.questionStats[q.qid];
+  if(correct){
+    progress.questionStats[q.qid]={status:'correct',confidence:(prevQS&&prevQS.confidence)||null,
+      correctCount:((prevQS&&prevQS.correctCount)||0)+1,wrongCount:(prevQS&&prevQS.wrongCount)||0,lastTs:Date.now()};
+  }else{
+    progress.questionStats[q.qid]={status:'wrong',confidence:null,
+      correctCount:(prevQS&&prevQS.correctCount)||0,wrongCount:((prevQS&&prevQS.wrongCount)||0)+1,lastTs:Date.now()};
+  }
+  saveProgress();
+  var ex=el('caseExplain');ex.className='explain show'+(correct?'':' miss');
+  ex.querySelector('.lbl').textContent=correct?'Correct':'Not quite';
+  el('caseExplainText').textContent=q.explain;
+  var point=caseTeachingPoint(q);
+  if(point&&!caseState.points.some(function(p){return p.tid===point.tid&&p.idx===point.idx})){
+    caseState.points.push(point);
+    var notes=el('caseNotes');
+    if(notes)notes.innerHTML='<div class="case-notes-title">Case notes</div>'+renderCaseNotesHTML();
+  }
+  el('nextCaseBtn').disabled=false;
+  el('nextCaseBtn').textContent=(caseState.pos===caseState.list.length-1)?'Finish case series →':'Next case →';
+}
+function nextCaseQuestion(){
+  if(!caseState.answered)return;
+  if(caseState.pos===caseState.list.length-1){showCaseResults();return}
+  caseState.pos++;renderCaseQuestion();
+}
+function showCaseResults(){
+  var pct=Math.round(caseState.score/caseState.list.length*100);
+  var msg=pct>=85?'Exam-ready on this set.':pct>=70?'Solid work through this case series.':pct>=50?'Getting there — revisit the misses below.':'Worth another pass through the flashcards.';
+  el('caseArea').innerHTML='<div class="results">'+
+    '<div class="res-title">Case series complete</div>'+
+    '<div class="res-sub2">Score '+caseState.score+' / '+caseState.list.length+' · '+pct+'%</div>'+
+    '<div class="res-msg">'+msg+'</div>'+
+    '<div class="res-actions">'+
+      '<button class="btn red" onclick="startCaseWalkthrough(el(\'caseChapter\').value)">Retake</button>'+
+      '<button class="btn" onclick="switchView(\'flash\')">Review flashcards</button>'+
+    '</div>'+
+    (caseState.points.length?('<div class="res-break"><h4>Teaching points from this series ('+caseState.points.length+')</h4>'+renderCaseNotesHTML()+'</div>'):'')+
+  '</div>';
+  el('caseSetup').style.display='flex';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function openCaseFlagPanel(){
+  var q=caseState.list[caseState.pos];if(!q)return;
+  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
+  openFlagPanel('quiz',q.tid,q.qidx,q.q,q.tname,t?t.chapter:'');
+}
+
+/* ====== PROGRESS ====== */
+function topicMasteryPct(t){
+  var known=t.flashcards.reduce(function(s,c,i){var p=progress.cards[cardKey(t.id,i)];return s+(p&&p.known?1:0)},0);
+  return t.flashcards.length?Math.round(known/t.flashcards.length*100):null;
+}
+function topicQuizPct(t){
+  var s=progress.topicStats[t.id];
+  return (s&&s.total)?Math.round(s.correct/s.total*100):null;
+}
+function meterClass(pct){
+  if(pct===null)return 'na';
+  return pct>=70?'ok':(pct>=40?'warn':'crit');
+}
+function meter(pct,label){
+  var cls=meterClass(pct);
+  var w=pct===null?100:pct;
+  return '<div class="meter"><div class="meter-track"><div class="meter-fill '+cls+'" style="width:'+w+'%"></div></div>'+
+    '<div class="meter-label">'+label+' · '+(pct===null?'—':pct+'%')+'</div></div>';
+}
+function dueForReviewCount(){
+  var due=0,total=0;
+  TOPICS.forEach(function(t){
+    t.quiz.forEach(function(q,i){total++;if(qPriority(t.id+'::'+i)<=2)due++});
+  });
+  return {due:due,total:total};
+}
+function renderProgress(){
+  var cardsKnown=0,cardsTotal=0,quizCorrect=0,quizTotal=0;
+  TOPICS.forEach(function(t){
+    cardsTotal+=t.flashcards.length;
+    cardsKnown+=t.flashcards.reduce(function(s,c,i){var p=progress.cards[cardKey(t.id,i)];return s+(p&&p.known?1:0)},0);
+    var s=progress.topicStats[t.id];
+    if(s){quizCorrect+=s.correct;quizTotal+=s.total}
+  });
+  var fcPct=cardsTotal?Math.round(cardsKnown/cardsTotal*100):0;
+  var qPct=quizTotal?Math.round(quizCorrect/quizTotal*100):null;
+  var due=dueForReviewCount();
+  var cardsDue=cardDueCount(TOPICS.reduce(function(a,t){t.flashcards.forEach(function(c,i){a.push({tid:t.id,i:i})});return a},[]));
+  el('progStats').innerHTML=
+    '<div class="stat-tile"><div class="n">'+fcPct+'%</div><div class="l">Flashcards known · '+cardsKnown+' / '+cardsTotal+'</div></div>'+
+    '<div class="stat-tile"><div class="n">'+(qPct===null?'—':qPct+'%')+'</div><div class="l">Quiz accuracy · '+quizCorrect+' / '+quizTotal+' answered</div></div>'+
+    '<div class="stat-tile"><div class="n">'+TOPICS.filter(function(t){return progress.topicStats[t.id]}).length+' / '+TOPICS.length+'</div><div class="l">Topics quizzed</div></div>'+
+    '<div class="stat-tile"><div class="n">'+due.due+'</div><div class="l">Quiz Qs due · new, wrong, or low-confidence</div></div>'+
+    '<div class="stat-tile"><div class="n">'+cardsDue+' / '+cardsTotal+'</div><div class="l">Flashcards due for review now</div></div>';
+
+  var host=el('progChapters');host.innerHTML='';
+  var allRows=[];
+  CHAPTERS.forEach(function(chapter){
+    var chapTopics=TOPICS.filter(function(t){return t.chapter===chapter});
+    var rows=chapTopics.map(function(t){return {t:t,fc:topicMasteryPct(t),q:topicQuizPct(t)}});
+    rows.sort(function(a,b){var av=a.q===null?101:a.q,bv=b.q===null?101:b.q;return av-bv});
+    rows.forEach(function(r){allRows.push(r)});
+    var cFc=chapTopics.length?Math.round(rows.reduce(function(s,r){return s+(r.fc||0)},0)/rows.length):0;
+    var attempted=rows.filter(function(r){return r.q!==null});
+    var cQ=attempted.length?Math.round(attempted.reduce(function(s,r){return s+r.q},0)/attempted.length):null;
+    var block=document.createElement('div');block.className='prog-chapter';
+    var rowsHtml=rows.map(function(r){
+      return '<div class="prog-row"><div class="name">'+r.t.name+'</div>'+meter(r.fc,'Cards')+meter(r.q,'Quiz')+'</div>';
+    }).join('');
+    block.innerHTML='<div class="prog-chapter-name">'+chapter+'</div>'+
+      '<div class="prog-chapter-sub">Avg cards known '+cFc+'% · avg quiz accuracy '+(cQ===null?'—':cQ+'%')+'</div>'+
+      rowsHtml;
+    host.appendChild(block);
+  });
+
+  var weak=allRows.filter(function(r){return r.q!==null}).sort(function(a,b){return a.q-b.q}).slice(0,3);
+  var focusBox=el('progFocus');
+  if(weak.length){
+    focusBox.style.display='flex';
+    el('progFocusTxt').innerHTML='Weakest so far: '+weak.map(function(r){return '<b>'+r.t.name+'</b> ('+r.q+'%)'}).join(', ');
+    el('progFocusBtn').onclick=function(){startQuiz({ids:weak.map(function(r){return r.t.id})})};
+  }else{
+    focusBox.style.display='none';
+  }
+  renderFlagsList();
+}
+
+/* ====== PROGRESS BACKUP (export/import) ====== */
+function setProgressBackupStatus(kind,text){
+  var box=el('progressBackupStatus');box.className='ai-status show '+kind;box.textContent=text;
+}
+function exportProgressFile(){
+  var payload=JSON.stringify({version:1,exportedAt:new Date().toISOString(),progress:progress,aiDrafts:aiDrafts,flags:flags},null,2);
+  var blob=new Blob([payload],{type:'application/json'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;
+  a.download='rhythm-strip-progress-'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  setProgressBackupStatus('ok','Downloaded — keep this file somewhere safe.');
+}
+function importProgressFile(e){
+  var file=e.target.files&&e.target.files[0];
+  if(!file)return;
+  var reader=new FileReader();
+  reader.onload=function(){
+    var data;
+    try{data=JSON.parse(reader.result)}catch(err){setProgressBackupStatus('err','That file is not valid JSON.');return}
+    if(!data||typeof data!=='object'||!data.progress){setProgressBackupStatus('err','That file does not look like a Rhythm Strip progress export.');return}
+    if(!confirm('Import this backup? It will replace your current progress on this device.'))return;
+    progress=Object.assign({cards:{},quiz:{},topicStats:{},quizLog:[],questionStats:{}},data.progress);
+    if(!progress.topicStats)progress.topicStats={};
+    if(!progress.quizLog)progress.quizLog=[];
+    if(!progress.questionStats)progress.questionStats={};
+    saveProgress();
+    if(data.aiDrafts&&Array.isArray(data.aiDrafts)){aiDrafts=data.aiDrafts;saveAIDrafts();}
+    if(data.flags&&typeof data.flags==='object'){flags=data.flags;saveFlags();}
+    renderHome();loadFlashSet();renderProgress();
+    setProgressBackupStatus('ok','Progress imported.');
+  };
+  reader.onerror=function(){setProgressBackupStatus('err','Could not read that file.')};
+  reader.readAsText(file);
+  e.target.value='';
+}
+
+/* ====== BROWSE / REFERENCE ====== */
+var refOpen={};
+function renderBrowse(){
+  var term=(el('refSearch').value||'').trim().toLowerCase();
+  var list=el('refList');list.innerHTML='';
+  var anyHit=false;
+  CHAPTERS.forEach(function(chapter){
+    var chapTopics=TOPICS.filter(function(t){return t.chapter===chapter});
+    var chapterHasHit=false;var frag=document.createDocumentFragment();
+    chapTopics.forEach(function(t){
+      var idx=TOPICS.indexOf(t);
+      var items=t.flashcards.filter(function(c){
+        if(!term)return true;
+        return (c.front+' '+c.back).toLowerCase().indexOf(term)>=0;
+      });
+      if(!items.length)return;
+      anyHit=true;chapterHasHit=true;
+      var isOpen=term?true:(refOpen[t.id]||false);
+      var box=document.createElement('div');
+      box.className='ref-topic'+(isOpen?' open':'');
+      box.dataset.tid=t.id;
+      var body=items.map(function(c){
+        return '<div class="ref-item"><div class="ref-q">'+hl(c.front,term)+'</div><div class="ref-a">'+hl(c.back,term)+'</div></div>';
+      }).join('');
+      box.innerHTML='<div class="ref-head"><span class="ref-num">'+String(idx+1).padStart(2,'0')+'</span><span class="ref-name">'+t.name+'</span><span class="ref-tog">▶ '+items.length+'</span></div><div class="ref-body">'+body+'</div>';
+      box.querySelector('.ref-head').onclick=function(){refOpen[t.id]=!box.classList.contains('open');box.classList.toggle('open')};
+      frag.appendChild(box);
+    });
+    if(chapterHasHit){
+      var h=document.createElement('div');h.className='ref-chapter';h.textContent=chapter;
+      list.appendChild(h);list.appendChild(frag);
+    }
+  });
+  if(!anyHit){
+    list.innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><div>No matches for "'+esc(term)+'"</div></div>';
+  }
+}
+function hl(text,term){
+  var e=esc(text);
+  if(!term)return e;
+  try{var re=new RegExp('('+term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','ig');return e.replace(re,'<mark>$1</mark>')}catch(x){return e}
+}
+function setAllRef(open){
+  TOPICS.forEach(function(t){refOpen[t.id]=open});
+  el('refSearch').value='';
+  renderBrowse();
+}
+var REF_STOPWORDS={the:1,and:1,for:1,with:1,that:1,this:1,from:1,are:1,was:1,were:1,has:1,have:1,not:1,but:1,can:1,which:1,what:1,when:1,who:1,how:1,its:1,into:1,than:1,then:1,also:1,most:1,more:1,less:1,per:1,due:1,use:1,used:1,uses:1,case:1,patient:1,shows:1,show:1,likely:1,following:1,answer:1,option:1,options:1,best:1,next:1,step:1,true:1,false:1,only:1};
+function refWords(s){return (s||'').toLowerCase().replace(/[^a-z0-9%\s-]/g,' ').split(/\s+/).filter(function(w){return w.length>3&&!REF_STOPWORDS[w]})}
+function findBestMatchingCard(t,searchText){
+  var qWords=refWords(searchText);
+  if(!qWords.length)return -1;
+  var bestIdx=-1,bestScore=0;
+  t.flashcards.forEach(function(c,i){
+    var set={};refWords(c.front+' '+c.back).forEach(function(w){set[w]=1});
+    var score=0;qWords.forEach(function(w){if(set[w])score++});
+    if(score>bestScore){bestScore=score;bestIdx=i}
+  });
+  return bestScore>=2?bestIdx:-1; // require at least 2 shared significant words to trust the match
+}
+function jumpToReference(){
+  var q=quiz.list[quiz.pos];if(!q)return;
+  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
+  if(!t)return;
+  var idx=(typeof q.ref==='number')?q.ref:findBestMatchingCard(t,q.q+' '+q.explain);
+  refOpen[q.tid]=true;
+  el('refSearch').value='';
+  switchView('browse');
+  setTimeout(function(){
+    var box=document.querySelector('.ref-topic[data-tid="'+q.tid+'"]');
+    if(!box)return;
+    var items=box.querySelectorAll('.ref-item');
+    var target=(idx>=0&&items[idx])?items[idx]:box;
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+    if(idx>=0&&items[idx]){
+      items[idx].classList.add('ref-highlight');
+      setTimeout(function(){items[idx].classList.remove('ref-highlight')},2600);
+    }
+  },220);
+}
+
+/* ====== DRUGS ====== */
+function buildDrugChapters(){
+  if(typeof DRUGS==='undefined')return;
+  var s=el('drugChapter');s.innerHTML='<option value="all">All chapters</option>';
+  Object.keys(DRUGS).forEach(function(ch){var o=document.createElement('option');o.value=ch;o.textContent=ch;s.appendChild(o)});
+}
+function renderDrugs(){
+  if(typeof DRUGS==='undefined')return;
+  var term=(el('drugSearch').value||'').trim().toLowerCase();
+  var chFilter=el('drugChapter').value;
+  var host=el('drugList');host.innerHTML='';var any=false;
+  Object.keys(DRUGS).forEach(function(ch){
+    if(chFilter!=='all'&&ch!==chFilter)return;
+    var groupsHtml='';
+    DRUGS[ch].forEach(function(g){
+      var cards=g.items.filter(function(d){
+        if(!term)return true;
+        return (d.name+' '+d.cls+' '+d.moa+' '+d.ind+' '+d.contra).toLowerCase().indexOf(term)>=0;
+      });
+      if(!cards.length)return;
+      var inner=cards.map(function(d){
+        return '<div class="drug-card '+(ch==='Rheumatology'?'rh':'cd')+'">'+
+          '<div class="drug-top"><span class="drug-name">'+hl(d.name,term)+'</span><span class="drug-cls mono">'+hl(d.cls,term)+'</span></div>'+
+          '<div class="drug-row"><span class="drug-lbl moa">MOA</span><span>'+hl(d.moa,term)+'</span></div>'+
+          '<div class="drug-row"><span class="drug-lbl ind">Uses</span><span>'+hl(d.ind,term)+'</span></div>'+
+          (d.contra&&d.contra!=='—'?'<div class="drug-row"><span class="drug-lbl con">Caution</span><span>'+hl(d.contra,term)+'</span></div>':'')+
+        '</div>';
+      }).join('');
+      groupsHtml+='<div class="drug-group-name mono">'+g.group+'</div><div class="drug-grid">'+inner+'</div>';
+    });
+    if(groupsHtml){any=true;
+      var h=document.createElement('div');h.className='ref-chapter';h.textContent=ch;host.appendChild(h);
+      var wrap=document.createElement('div');wrap.innerHTML=groupsHtml;host.appendChild(wrap);
+    }
+  });
+  if(!any)host.innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><div>No drugs match "'+esc(term)+'"</div></div>';
+}
+
+/* ====== CLASSIFICATION ====== */
+function buildClassChapters(){
+  if(typeof CLASSIFICATIONS==='undefined')return;
+  var s=el('classChapter');s.innerHTML='<option value="all">All chapters</option>';
+  Object.keys(CLASSIFICATIONS).forEach(function(ch){var o=document.createElement('option');o.value=ch;o.textContent=ch;s.appendChild(o)});
+}
+function renderClassify(){
+  if(typeof CLASSIFICATIONS==='undefined')return;
+  var chFilter=el('classChapter').value;
+  var host=el('classList');host.innerHTML='';
+  Object.keys(CLASSIFICATIONS).forEach(function(ch){
+    if(chFilter!=='all'&&ch!==chFilter)return;
+    var h=document.createElement('div');h.className='ref-chapter';h.textContent=ch;host.appendChild(h);
+    var grid=document.createElement('div');grid.className='class-grid';
+    CLASSIFICATIONS[ch].forEach(function(subj){
+      var schemes=subj.schemes.map(function(sc){
+        var rows=sc.rows.map(function(r){
+          return '<div class="cl-row"><span class="cl-label '+(ch==='Rheumatology'?'rh':'cd')+'">'+esc(r.label)+'</span><span class="cl-detail">'+esc(r.detail)+'</span></div>';
+        }).join('');
+        return '<div class="cl-scheme"><div class="cl-title">'+esc(sc.title)+'</div>'+rows+'</div>';
+      }).join('');
+      var card=document.createElement('div');card.className='class-card';
+      card.innerHTML='<div class="class-subj">'+esc(subj.subject)+'</div>'+schemes;
+      grid.appendChild(card);
+    });
+    host.appendChild(grid);
+  });
+}
+
+/* ====== COMPARE (Learning Hub) ====== */
+var compareState={mode:'drugs'};
+function allDrugsFlat(){
+  var out=[];
+  if(typeof DRUGS==='undefined')return out;
+  Object.keys(DRUGS).forEach(function(ch){
+    DRUGS[ch].forEach(function(g){
+      g.items.forEach(function(d){out.push({chapter:ch,group:g.group,name:d.name,cls:d.cls,moa:d.moa,ind:d.ind,contra:d.contra})});
+    });
+  });
+  return out;
+}
+function setCompareMode(m){
+  compareState.mode=m;
+  el('compareModeDrugs').classList.toggle('active',m==='drugs');
+  el('compareModeTopics').classList.toggle('active',m==='topics');
+  el('compareSearchRow').style.display=m==='topics'?'flex':'none';
+  buildComparePickers();
+  renderCompare();
+}
+function buildComparePickers(){
+  var host=el('comparePickers');host.innerHTML='';
+  var mode=compareState.mode;
+  var n=mode==='drugs'?4:3;
+  var letters=['A','B','C','D'];
+  for(var i=0;i<n;i++){
+    var wrap=document.createElement('div');wrap.className='select-wrap';
+    var sel=document.createElement('select');sel.id='cmp'+mode+i;
+    sel.innerHTML='<option value="">— '+letters[i]+' —</option>';
+    if(mode==='drugs'){
+      allDrugsFlat().forEach(function(d,idx){
+        var o=document.createElement('option');o.value=idx;o.textContent=d.name+' — '+d.cls;sel.appendChild(o);
+      });
+    }else{
+      TOPICS.forEach(function(t){
+        var o=document.createElement('option');o.value=t.id;o.textContent=t.name;sel.appendChild(o);
+      });
+    }
+    sel.onchange=renderCompare;
+    wrap.appendChild(sel);host.appendChild(wrap);
+  }
+}
+function renderCompare(){
+  var host=el('compareGrid');
+  var mode=compareState.mode;
+  if(mode==='drugs'){
+    var flat=allDrugsFlat();
+    var selDrugs=[];
+    for(var i=0;i<4;i++){var s=el('cmpdrugs'+i);if(s&&s.value!=='')selDrugs.push(flat[+s.value])}
+    if(!selDrugs.length){host.innerHTML='<div class="compare-empty">Pick two or more drugs above to compare mechanism, indications, and cautions side by side.</div>';return}
+    host.style.gridTemplateColumns='repeat('+selDrugs.length+',minmax(220px,1fr))';
+    host.innerHTML=selDrugs.map(function(d){
+      return '<div class="compare-col '+(d.chapter==='Rheumatology'?'rh':'')+'">'+
+        '<div class="compare-col-head"><div class="compare-col-name">'+esc(d.name)+'</div><div class="compare-col-sub">'+esc(d.cls)+' · '+esc(d.chapter)+'</div></div>'+
+        '<div class="compare-row"><span class="lbl">Mechanism</span>'+esc(d.moa)+'</div>'+
+        '<div class="compare-row"><span class="lbl">Indications</span>'+esc(d.ind)+'</div>'+
+        (d.contra&&d.contra!=='—'?'<div class="compare-row"><span class="lbl">Cautions</span>'+esc(d.contra)+'</div>':'')+
+      '</div>';
+    }).join('');
+  }else{
+    var selTopics=[];
+    for(var j=0;j<3;j++){var s2=el('cmptopics'+j);if(s2&&s2.value!=='')selTopics.push(TOPICS.filter(function(t){return t.id===s2.value})[0])}
+    if(!selTopics.length){host.innerHTML='<div class="compare-empty">Pick two or more topics above to line up their flashcards side by side.</div>';return}
+    var term=(el('compareSearch').value||'').trim().toLowerCase();
+    host.style.gridTemplateColumns='repeat('+selTopics.length+',minmax(240px,1fr))';
+    host.innerHTML=selTopics.map(function(t){
+      var fc=topicMasteryPct(t),q=topicQuizPct(t);
+      var items=t.flashcards.filter(function(c){return !term||(c.front+' '+c.back).toLowerCase().indexOf(term)>=0});
+      var body=items.length?items.map(function(c){
+        return '<div class="compare-fact"><div class="q">'+hl(c.front,term)+'</div><div class="a">'+hl(c.back,term)+'</div></div>';
+      }).join(''):'<div class="compare-fact"><div class="a">No facts match the filter.</div></div>';
+      return '<div class="compare-col '+(t.chapter==='Rheumatology'?'rh':'')+'">'+
+        '<div class="compare-col-head"><div class="compare-col-name">'+esc(t.name)+'</div><div class="compare-col-sub">'+esc(t.blurb)+'</div>'+
+        '<div class="compare-col-stats">'+meter(fc,'Cards')+meter(q,'Quiz')+'</div></div>'+
+        body+
+      '</div>';
+    }).join('');
+  }
+}
+
+/* ====== AI STUDIO ====== */
+document.getElementById('aiFileInput').addEventListener('change', function(e){
+  var files=Array.prototype.slice.call(e.target.files||[]);
+  if(!files.length)return;
+  var box=el('aiRefText');
+  files.reduce(function(chain,f){
+    return chain.then(function(){return loadReferenceFile(f)})
+      .then(function(text){if(text)box.value=(box.value?box.value+'\n\n':'')+text})
+      .catch(function(err){setAIStatus('err',f.name+': '+(err&&err.message?err.message:err))});
+  },Promise.resolve());
+  e.target.value='';
+});
+function loadReferenceFile(f){
+  var ext=(f.name||'').toLowerCase().slice(((f.name||'').lastIndexOf('.'))>=0?(f.name||'').lastIndexOf('.'):0);
+  if(ext==='.txt'||ext==='.md'){
+    return new Promise(function(resolve,reject){
+      var reader=new FileReader();
+      reader.onload=function(){resolve(reader.result)};
+      reader.onerror=function(){reject(new Error('Could not read file.'))};
+      reader.readAsText(f);
+    });
+  }
+  if(ext==='.pdf'||ext==='.docx'){
+    setAIStatus('busy','Extracting text from '+f.name+'…');
+    return new Promise(function(resolve,reject){
+      var reader=new FileReader();
+      reader.onload=function(){
+        var dataUrl=reader.result;
+        var b64=dataUrl.slice(dataUrl.indexOf(',')+1);
+        fetch('/api/extract-text',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({filename:f.name,dataBase64:b64})})
+          .then(function(r){return r.json().then(function(data){return {ok:r.ok,data:data}})})
+          .then(function(res){
+            if(!res.ok)return reject(new Error(res.data.error||'Extraction failed.'));
+            setAIStatus('ok','Extracted text from '+f.name+'.');
+            resolve(res.data.text);
+          })
+          .catch(function(){reject(new Error('local dev server needed for PDF/Word — run `npm run dev`'))});
+      };
+      reader.onerror=function(){reject(new Error('Could not read file.'))};
+      reader.readAsDataURL(f);
+    });
+  }
+  return Promise.reject(new Error('Unsupported file type — use .txt, .md, .pdf, or .docx.'));
+}
+function buildAITopicOptions(){
+  var s=el('aiTopicSelect');s.innerHTML='';
+  CHAPTERS.forEach(function(chapter){
+    var og=document.createElement('optgroup');og.label=chapter;
+    TOPICS.filter(function(t){return t.chapter===chapter}).forEach(function(t){
+      var o=document.createElement('option');o.value=t.id;o.textContent=t.name;og.appendChild(o);
+    });
+    s.appendChild(og);
+  });
+}
+function renderAIStudio(){renderDraftsQueue()}
+function slugify(s){
+  var v='draft-'+(s||'topic').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-+|-+$)/g,'');
+  return v.slice(0,44)||'draft-topic';
+}
+function setAIStatus(kind,text){
+  var box=el('aiStatus');box.className='ai-status show '+kind;box.textContent=text;
+}
+function generateDrafts(){
+  var referenceText=(el('aiRefText').value||'').trim();
+  if(!referenceText){setAIStatus('err','Paste or upload some reference text first.');return}
+  var newName=(el('aiNewTopicName').value||'').trim();
+  var topicId,topicName;
+  if(newName){topicId=slugify(newName);topicName=newName}
+  else{
+    topicId=el('aiTopicSelect').value;
+    var t=TOPICS.filter(function(x){return x.id===topicId})[0];
+    topicName=t?t.name:topicId;
+  }
+  var kind=el('aiKind').value;
+  var count=+el('aiCount').value||8;
+  setAIStatus('busy','Generating '+count+' '+(kind==='quiz'?'quiz questions':'flashcards')+'…');
+  el('aiGenerateBtn').disabled=true;
+  fetch('/api/generate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({referenceText:referenceText,topicName:topicName,kind:kind,count:count})})
+    .then(function(r){return r.json().then(function(data){return {ok:r.ok,data:data}})})
+    .then(function(res){
+      el('aiGenerateBtn').disabled=false;
+      if(!res.ok){setAIStatus('err',res.data.error||'Generation failed.');return}
+      var items=res.data.items||[];
+      items.forEach(function(it){
+        aiDrafts.push(Object.assign({id:'d'+Date.now()+Math.random().toString(36).slice(2),topicId:topicId,topicName:topicName,kind:kind,kept:true},it));
+      });
+      saveAIDrafts();renderDraftsQueue();
+      setAIStatus('ok','Generated '+items.length+' draft item(s) — review below before exporting.');
+    })
+    .catch(function(e){
+      el('aiGenerateBtn').disabled=false;
+      setAIStatus('err','Request failed — is the local dev server running with ANTHROPIC_API_KEY set? ('+e.message+')');
+    });
+}
+function renderDraftsQueue(){
+  var host=el('aiDraftsList');
+  if(!aiDrafts.length){host.innerHTML='<div class="compare-empty">No drafts yet — generate some above.</div>';return}
+  host.innerHTML=aiDrafts.map(function(d){
+    var badge='<div class="draft-badge">⚠ AI-drafted · '+esc(d.topicName)+' · '+(d.kind==='quiz'?'quiz':'flashcard')+'</div>';
+    var note=(d.uncertain&&d.note)?'<div class="draft-note">⚠ '+esc(d.note)+'</div>':'';
+    var fields;
+    if(d.kind==='quiz'){
+      var optsHtml=(d.options||[]).map(function(o,i){
+        return '<div class="draft-opt-row"><input type="radio" name="ans-'+d.id+'" '+(d.answer===i?'checked':'')+' onchange="updateDraft(\''+d.id+'\',\'answer\','+i+')">'+
+          '<input type="text" class="draft-field" style="margin:0" value="'+escAttr(o)+'" oninput="updateDraftOption(\''+d.id+'\','+i+',this.value)"></div>';
+      }).join('');
+      fields='<textarea class="draft-field" rows="2" oninput="updateDraft(\''+d.id+'\',\'q\',this.value)">'+esc(d.q||'')+'</textarea>'+
+        '<div class="draft-opts">'+optsHtml+'</div>'+
+        '<textarea class="draft-field" rows="2" placeholder="Explanation" oninput="updateDraft(\''+d.id+'\',\'explain\',this.value)">'+esc(d.explain||'')+'</textarea>';
+    }else{
+      fields='<input type="text" class="draft-field" value="'+escAttr(d.front)+'" oninput="updateDraft(\''+d.id+'\',\'front\',this.value)">'+
+        '<textarea class="draft-field" rows="2" oninput="updateDraft(\''+d.id+'\',\'back\',this.value)">'+esc(d.back||'')+'</textarea>';
+    }
+    return '<div class="draft-card">'+badge+note+fields+
+      '<div class="draft-actions"><label style="display:flex;align-items:center;gap:6px;font-size:12.5px">'+
+      '<input type="checkbox" '+(d.kept?'checked':'')+' onchange="updateDraft(\''+d.id+'\',\'kept\',this.checked)"> Include in export</label>'+
+      '<button class="btn" onclick="discardDraft(\''+d.id+'\')">Discard</button></div></div>';
+  }).join('');
+}
+function updateDraft(id,field,value){
+  var d=aiDrafts.filter(function(x){return x.id===id})[0];if(!d)return;
+  d[field]=value;saveAIDrafts();
+}
+function updateDraftOption(id,idx,value){
+  var d=aiDrafts.filter(function(x){return x.id===id})[0];if(!d)return;
+  d.options=d.options||[];d.options[idx]=value;saveAIDrafts();
+}
+function discardDraft(id){
+  aiDrafts=aiDrafts.filter(function(x){return x.id!==id});saveAIDrafts();renderDraftsQueue();
+}
+function jsStr(s){
+  return '"'+String(s||'').replace(/"/g,"'").replace(/\\/g,'\\\\').replace(/\n/g,' ')+'"';
+}
+function exportDrafts(){
+  var kept=aiDrafts.filter(function(d){return d.kept});
+  if(!kept.length){setAIStatus('err','No drafts are marked "Include in export".');return}
+  var groups={};
+  kept.forEach(function(d){
+    if(!groups[d.topicId])groups[d.topicId]={name:d.topicName,flashcards:[],quiz:[]};
+    if(d.kind==='quiz')groups[d.topicId].quiz.push(d);else groups[d.topicId].flashcards.push(d);
+  });
+  var out='// AI-drafted study material — verify against source before merging into src/data/*.js.\n'+
+    '// Paste the relevant block(s) below, run `npm run check`, then open a PR (see CLAUDE.md / docs/CONTENT_WORKFLOW.md).\n\n';
+  Object.keys(groups).forEach(function(tid){
+    var g=groups[tid];
+    out+='// ---- Topic: '+tid+' ('+g.name+') ----\n';
+    if(g.flashcards.length){
+      out+='// Append to this topic\'s `flashcards` array:\n[\n';
+      g.flashcards.forEach(function(d){out+='  { front: '+jsStr(d.front)+', back: '+jsStr(d.back)+' },\n'});
+      out+='],\n\n';
+    }
+    if(g.quiz.length){
+      out+='// Append to this topic\'s `quiz` array (or an EXTRA_*_QUIZ["'+tid+'"] entry):\n[\n';
+      g.quiz.forEach(function(d){
+        var optsStr='['+(d.options||[]).map(jsStr).join(', ')+']';
+        out+='  { q: '+jsStr(d.q)+', options: '+optsStr+', answer: '+(d.answer|0)+', explain: '+jsStr(d.explain)+' },\n';
+      });
+      out+='],\n\n';
+    }
+  });
+  el('aiExportBox').value=out;
+  el('aiExportBox').style.display='block';
+  el('aiCopyBtn').style.display='inline-flex';
+}
+function copyExport(){
+  var box=el('aiExportBox');
+  box.style.display='block';box.select();
+  try{document.execCommand('copy')}catch(e){}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(box.value).catch(function(){});
+  setAIStatus('ok','Copied to clipboard.');
+}
+
+/* ====== RESET ====== */
+function resetProgress(){
+  if(!confirm('Clear all saved flashcard progress on this device?'))return;
+  progress={cards:{},quiz:{},topicStats:{},quizLog:[],questionStats:{}};saveProgress();renderHome();loadFlashSet();
+  if(el('view-progress').classList.contains('active'))renderProgress();
+}
+
+/* ====== KEYBOARD ====== */
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&el('flagOverlay').classList.contains('show')){closeFlagPanel();return}
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT'||e.target.tagName==='TEXTAREA')return;
+  if(!el('view-flash').classList.contains('active'))return;
+  if(e.key===' '||e.key==='Enter'){e.preventDefault();flipCard()}
+  else if(e.key==='ArrowRight')nextCard();
+  else if(e.key==='ArrowLeft')prevCard();
+  else if(e.key.toLowerCase()==='j')rateCard('again');
+  else if(e.key.toLowerCase()==='k')rateCard('good');
+  else if(e.key.toLowerCase()==='l')rateCard('easy');
+});
+
+/* ====== INIT ====== */
+buildECG();
+renderHome();
+buildFlashOptions();
+buildQuizOptions();
+buildCaseOptions();
+buildMixControls();
+buildDrugChapters();
+buildClassChapters();
+buildComparePickers();
+buildAITopicOptions();
+loadFlashSet();
+
+/* Offline support (iOS/Android "Add to Home Screen"): registers only over a
+   secure context (HTTPS, or localhost for local dev) — silently does nothing
+   on plain HTTP (e.g. a LAN dev URL), which is fine, the app just stays
+   online-only there. See src/sw.js for the caching strategy. */
+if('serviceWorker' in navigator){
+  window.addEventListener('load',function(){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  });
+}
+</script>
+</body>
+</html>

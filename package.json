@@ -1,0 +1,23 @@
+{
+  "name": "rhythm-strip",
+  "version": "1.0.0",
+  "description": "Active-recall study platform for cardiology, rheumatology, pulmonology, infectious diseases, allergy/immunology, geriatrics & radiology — flashcards, question banks, a drug reference, and disease-classification maps, built as a single self-contained HTML file.",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "validate": "node scripts/validate.js",
+    "check": "npm run validate && npm run build",
+    "dev": "npm run build && node scripts/serve.js",
+    "serve": "node scripts/serve.js"
+  },
+  "keywords": ["medical-education", "flashcards", "cardiology", "rheumatology", "spaced-repetition"],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "mammoth": "^1.9.1",
+    "pdf-parse": "^1.1.4"
+  }
+}
