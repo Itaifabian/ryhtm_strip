@@ -90,6 +90,7 @@ function main() {
   countTopics(S.NEPHRO_TOPICS, 'NEPHRO_TOPICS');
   countTopics(S.NEURO_TOPICS, 'NEURO_TOPICS');
   countTopics(S.HEMATOLOGY_TOPICS, 'HEMATOLOGY_TOPICS');
+  countTopics(S.GASTRO_TOPICS, 'GASTRO_TOPICS');
 
   // extra-quiz maps must key into existing topic ids
   const checkExtra = (map, label, validIds) => {
@@ -141,6 +142,33 @@ function main() {
     });
   } else warn('CLASSIFICATIONS table not found');
 
+  // past exams
+  const KNOWN_CHAPTERS = new Set(['Cardiology', 'Rheumatology', 'Pulmonology', 'Infectious Diseases',
+    'Allergy & Immunology', 'Geriatrics', 'Radiology', 'Endocrinology', 'Nephrology', 'Neurology',
+    'Hematology', 'Gastroenterology']);
+  let examCount = 0, examQCount = 0;
+  if (S.PAST_EXAMS) {
+    S.PAST_EXAMS.forEach(exam => {
+      examCount++;
+      if (!exam.id) err('PAST_EXAMS: exam missing id');
+      if (!exam.name) err(`PAST_EXAMS[${exam.id}]: missing name`);
+      const nums = new Set();
+      (exam.questions || []).forEach(q => {
+        examQCount++;
+        const label = `PAST_EXAMS[${exam.id}] Q${q.num}`;
+        if (typeof q.num !== 'number') err(`${label}: missing/invalid num`);
+        if (nums.has(q.num)) err(`${label}: duplicate question number`);
+        nums.add(q.num);
+        if (!q.stem) err(`${label}: missing stem`);
+        if (!Array.isArray(q.options) || q.options.length < 2 || q.options.length > 5) err(`${label}: options must have 2-5 items`);
+        if (typeof q.answer !== 'number' || q.answer < 0 || q.answer >= (q.options || []).length) err(`${label}: answer index out of range`);
+        if (!q.chapter) err(`${label}: missing chapter tag`);
+        else if (!KNOWN_CHAPTERS.has(q.chapter)) err(`${label}: chapter '${q.chapter}' is not a known chapter`);
+        if (q.img !== undefined && !q.img) err(`${label}: img present but empty/unresolved (check PAST_EXAM_IMAGES key)`);
+      });
+    });
+  }
+
   /* ---- report ---- */
   console.log('— Rhythm Strip content validation —');
   console.log(`  topics:         ${topicCount}`);
@@ -148,6 +176,7 @@ function main() {
   console.log(`  quiz questions: ${qCount}`);
   console.log(`  drugs:          ${drugCount}`);
   console.log(`  classification schemes: ${schemeCount}`);
+  console.log(`  past exams:     ${examCount} (${examQCount} questions)`);
 
   if (warnings.length) {
     console.log(`\n⚠️  ${warnings.length} warning(s):`);

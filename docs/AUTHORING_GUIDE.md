@@ -79,6 +79,45 @@ The build merges these into the matching topic's `quiz` at load time. `validate.
 
 ---
 
+## Past exams
+
+A **Past Exams** array holds one or more full historical exams, shown as-is in their original language (right-to-left where applicable), distinct from the topic/quiz system: no flashcards, no fabricated `explain` text (only transcribe a rationale if the source actually provides one — most exam answer keys don't), and each question carries a `chapter` tag from the app's existing chapter list rather than living inside a specific topic.
+
+- Exams live in `21-past-exams.js` → `const PAST_EXAMS = [ … ]`
+- Any embedded images (ECGs, photos, gram stains, etc.) live in an earlier-sorting file, `20-past-exam-images.js` → `const PAST_EXAM_IMAGES = { … }`, following the same image-file-loads-before-data-file convention as `11-radiology-images.js`.
+
+```js
+const PAST_EXAMS = [
+{
+  id: "im-2024-01-moed-a",           // unique, kebab-case, stable
+  name: "פנימית יק\"ר — מועד א' תשפ\"ד", // shown in the exam picker
+  dateLabel: "24.1.24",
+  source: "One-line provenance note — cite the source file/reconstruction status",
+  timeLimitMin: 210,                 // informational only; the app times elapsed, it does not enforce a countdown
+  questions: [
+    { num: 1,                        // sequential, 1-based, unique within the exam
+      stem: "...",                   // verbatim from the source, original language
+      options: ["...", "...", "...", "..."], // verbatim, original order (2-5 items)
+      answer: 2,                     // 0-based index — must come from the source's own marked/confirmed key, never inferred from general knowledge
+      chapter: "Cardiology",         // must be one of the app's existing CHAPTERS values (see src/shell.html's ASSEMBLE CHAPTERS block) — a first-pass classification, editable in-app
+      img: PAST_EXAM_IMAGES.q1ecg,   // optional
+      imgCaption: "אק\"ג" }          // optional, required if img is set
+    // …
+  ]
+}
+];
+```
+
+Rules:
+- **Never infer the correct answer from clinical knowledge alone.** If a source doesn't clearly mark which option is correct (e.g. ambiguous or missing highlighting), don't guess — ask the human for a reliable answer key rather than fabricating one, per CLAUDE.md's sourcing rule.
+- No `explain` field — the in-app UI shows only which option was correct, since inventing a rationale the source doesn't provide would violate CLAUDE.md's "don't invent facts" rule. If a future source *does* include real rationale text, it's fine to add an `explain` field and update the renderer to show it.
+- `chapter` must match an existing chapter exactly (case-sensitive) — it's the same taxonomy already used across `TOPICS`/`RHEUM_TOPICS`/etc., not a new one. The in-app subject-tag dropdown on each question lets the user correct a wrong classification; corrections are stored client-side (`progress.examTagOverrides`) and exportable via the results screen's "Copy corrections" button, for a human to fold back into this file in a later PR.
+- Preserve source anomalies (a missing option letter, a duplicated/ambiguous highlight) rather than silently fixing them — flag them in the PR/CHANGELOG instead.
+
+`validate.js` checks: unique sequential-looking `num`s, 2-5 options, `answer` in range, and `chapter` against the known chapter list.
+
+---
+
 ## Drugs
 
 `05-drugs.js` → `const DRUGS = { Chapter: [ group, … ] }`.
