@@ -450,7 +450,7 @@ footer .mono{font-size:11px}
 <header>
   <svg class="ecg-band" id="ecgBand" viewBox="0 0 1200 74" preserveAspectRatio="none" aria-hidden="true"></svg>
   <div class="wrap hero">
-    <div class="eyebrow">Cardiology · Rheumatology · Pulmonology · Infectious Diseases · Allergy & Immunology · Geriatrics · Radiology · Endocrinology · Nephrology · Neurology · Hematology · Exam Prep</div>
+    <div class="eyebrow">Cardiology · Rheumatology · Pulmonology · Infectious Diseases · Allergy & Immunology · Geriatrics · Radiology · Endocrinology · Nephrology · Neurology · Hematology · Gastroenterology · Emergency Medicine · Oncology · Exam Prep</div>
     <h1>The Rhythm Strip</h1>
     <p class="subtitle">An active-recall platform built from your lecture summaries — flashcards, question banks, a drug reference, disease-classification maps, and a searchable index across all chapters.</p>
     <div class="hero-meta" id="heroMeta"></div>
@@ -889,6 +889,20 @@ if(typeof EXTRA_HEMATOLOGY_QUIZ!=='undefined'){
 // Append the gastroenterology chapter (push to keep TOPICS const-safe).
 if(typeof GASTRO_TOPICS!=='undefined'){
   GASTRO_TOPICS.forEach(function(t){t.chapter='Gastroenterology';TOPICS.push(t);});
+}
+// Merge extra gastroenterology questions (from an external USMLE-style question bank) into their topics.
+if(typeof EXTRA_GASTRO_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_GASTRO_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_GASTRO_QUIZ[t.id]);}
+  });
+}
+// Append the Emergency Medicine chapter (push to keep TOPICS const-safe).
+if(typeof EM_TOPICS!=='undefined'){
+  EM_TOPICS.forEach(function(t){t.chapter='Emergency Medicine';TOPICS.push(t);});
+}
+// Append the Oncology chapter (push to keep TOPICS const-safe).
+if(typeof ONCOLOGY_TOPICS!=='undefined'){
+  ONCOLOGY_TOPICS.forEach(function(t){t.chapter='Oncology';TOPICS.push(t);});
 }
 // Ordered list of chapters for grouping.
 var CHAPTERS=[];

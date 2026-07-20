@@ -91,6 +91,8 @@ function main() {
   countTopics(S.NEURO_TOPICS, 'NEURO_TOPICS');
   countTopics(S.HEMATOLOGY_TOPICS, 'HEMATOLOGY_TOPICS');
   countTopics(S.GASTRO_TOPICS, 'GASTRO_TOPICS');
+  countTopics(S.EM_TOPICS, 'EM_TOPICS');
+  countTopics(S.ONCOLOGY_TOPICS, 'ONCOLOGY_TOPICS');
 
   // extra-quiz maps must key into existing topic ids
   const checkExtra = (map, label, validIds) => {
@@ -110,6 +112,8 @@ function main() {
   checkExtra(S.EXTRA_ID_QUIZ, 'EXTRA_ID_QUIZ', idIds);
   const hematologyIds = new Set((S.HEMATOLOGY_TOPICS || []).map(t => t.id));
   checkExtra(S.EXTRA_HEMATOLOGY_QUIZ, 'EXTRA_HEMATOLOGY_QUIZ', hematologyIds);
+  const gastroIds = new Set((S.GASTRO_TOPICS || []).map(t => t.id));
+  checkExtra(S.EXTRA_GASTRO_QUIZ, 'EXTRA_GASTRO_QUIZ', gastroIds);
 
   // drugs
   let drugCount = 0;
