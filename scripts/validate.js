@@ -149,7 +149,7 @@ function main() {
   // past exams
   const KNOWN_CHAPTERS = new Set(['Cardiology', 'Rheumatology', 'Pulmonology', 'Infectious Diseases',
     'Allergy & Immunology', 'Geriatrics', 'Radiology', 'Endocrinology', 'Nephrology', 'Neurology',
-    'Hematology', 'Gastroenterology']);
+    'Hematology', 'Gastroenterology', 'Emergency Medicine', 'Oncology']);
   let examCount = 0, examQCount = 0;
   if (S.PAST_EXAMS) {
     S.PAST_EXAMS.forEach(exam => {
@@ -173,6 +173,41 @@ function main() {
     });
   }
 
+  // diagnostic trees (the "Cases" tab's interactive walk-the-workup mode)
+  let treeCount = 0, treeLeafCount = 0;
+  if (S.DIAGNOSTIC_TREES) {
+    const treeIds = new Set();
+    const walkNode = (node, label, depth) => {
+      if (depth > 20) { err(`${label}: node nesting too deep (possible cycle)`); return; }
+      if (!node) { err(`${label}: missing node`); return; }
+      if (node.leaf) {
+        treeLeafCount++;
+        if (!node.diagnosis) err(`${label}: leaf missing diagnosis`);
+        if (!Array.isArray(node.treatment) || !node.treatment.length) err(`${label}: leaf needs a non-empty treatment array`);
+        if (node.notes !== undefined && (!Array.isArray(node.notes) || !node.notes.length)) err(`${label}: notes, if present, must be a non-empty array`);
+      } else {
+        if (!node.q) err(`${label}: decision node missing 'q'`);
+        if (node.clues !== undefined && (!Array.isArray(node.clues) || !node.clues.length)) err(`${label}: clues, if present, must be a non-empty array`);
+        if (!Array.isArray(node.options) || node.options.length < 2) err(`${label}: decision node needs at least 2 options`);
+        else node.options.forEach((o, i) => {
+          if (!o.label) err(`${label} option #${i + 1}: missing label`);
+          walkNode(o.next, `${label} > "${o.label || '?'}"`, depth + 1);
+        });
+      }
+    };
+    S.DIAGNOSTIC_TREES.forEach(t => {
+      treeCount++;
+      const label = `DIAGNOSTIC_TREES[${t.id || '?'}]`;
+      if (!t.id) err(`${label}: missing id`);
+      else if (treeIds.has(t.id)) err(`${label}: duplicate id`);
+      else treeIds.add(t.id);
+      if (!t.chapter) err(`${label}: missing chapter`);
+      if (!t.group) err(`${label}: missing group`);
+      if (!t.name) err(`${label}: missing name`);
+      walkNode(t.root, label, 0);
+    });
+  }
+
   /* ---- report ---- */
   console.log('— Rhythm Strip content validation —');
   console.log(`  topics:         ${topicCount}`);
@@ -181,6 +216,7 @@ function main() {
   console.log(`  drugs:          ${drugCount}`);
   console.log(`  classification schemes: ${schemeCount}`);
   console.log(`  past exams:     ${examCount} (${examQCount} questions)`);
+  console.log(`  diagnostic trees: ${treeCount} (${treeLeafCount} outcomes)`);
 
   if (warnings.length) {
     console.log(`\n⚠️  ${warnings.length} warning(s):`);

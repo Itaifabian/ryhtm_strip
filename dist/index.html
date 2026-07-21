@@ -266,23 +266,50 @@ select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weig
 .res-row .val.hi{color:var(--teal);font-weight:700}
 .res-row .val.lo{color:var(--red);font-weight:700}
 
-/* ---------- Cases ---------- */
-.case-layout{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:1fr 280px;gap:20px;align-items:start}
-.case-card{padding:28px}
-.case-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-top:8px}
-.case-notes{position:sticky;top:16px;background:var(--paper-2);border:1px dashed var(--line);border-radius:var(--r);padding:14px 16px;max-height:70vh;overflow-y:auto}
-.case-notes-title{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
-.case-notes-empty{font-size:12.5px;color:var(--ink-faint);line-height:1.5}
-.case-note{border-left:2px solid var(--teal);padding:6px 0 6px 10px;margin-bottom:10px;font-size:12.5px;line-height:1.45}
-.case-note:last-child{margin-bottom:0}
-.case-note-front{font-weight:600;color:var(--ink)}
-.case-note-back{color:var(--ink-soft);margin-top:2px}
-.case-note-new{animation:rise .3s ease}
+/* ---------- Cases (diagnostic tree nav) ---------- */
+.cg-layout{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:250px 1fr;gap:20px;align-items:start}
+.cg-nav{position:sticky;top:16px;max-height:80vh;overflow-y:auto;padding-right:4px}
+.cg-nav-group{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:16px 0 6px;padding-left:2px}
+.cg-nav-group:first-child{margin-top:0}
+.cg-nav-btn{display:block;width:100%;text-align:left;background:none;border:none;border-left:2px solid transparent;padding:7px 10px;font-size:13px;color:var(--ink-soft);cursor:pointer;border-radius:0 8px 8px 0;line-height:1.35}
+.cg-nav-btn:hover{background:var(--paper-2);color:var(--ink)}
+.cg-nav-btn.active{border-left-color:var(--red);background:var(--paper-2);color:var(--ink);font-weight:600}
+.cg-nav-empty{font-size:12.5px;color:var(--ink-faint);padding:8px 2px}
+@media (max-width:760px){.cg-layout{grid-template-columns:1fr}.cg-nav{position:static;max-height:none}}
+
+/* ---------- Diagnostic tree walker ---------- */
+.cgt-detail{min-width:0}
+.cgt-header-group{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700}
+.cgt-header-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;letter-spacing:-.01em;margin:6px 0 18px}
+.cgt-empty{padding:40px 20px;text-align:center;color:var(--ink-faint);font-size:13.5px}
+.cgt-toolbar{margin:0 0 16px}
+.cgt-flow{width:100%;display:flex;align-items:flex-start;gap:0;overflow-x:auto;padding:4px 4px 16px}
+.cgt-connector{flex:0 0 auto;align-self:flex-start;margin-top:26px;color:var(--line-strong,var(--grid-strong));padding:0 6px}
+.cgt-connector svg{width:20px;height:20px;display:block}
+.cgt-col{flex:0 0 240px;background:var(--paper);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);padding:16px}
+.cgt-col-leaf{flex:0 0 260px;border-color:var(--teal);border-width:1.5px}
+.cgt-q-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:10px}
+.cgt-q-icon{flex:0 0 auto;width:20px;height:20px;color:var(--red);margin-top:1px}
+.cgt-q-icon svg{width:20px;height:20px;display:block}
+.cgt-q{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;line-height:1.3;letter-spacing:-.005em}
+.cgt-clues{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.cgt-clue-chip{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.02em;color:var(--ink-faint);background:var(--paper-2);border:1px solid var(--line);border-radius:100px;padding:3px 8px}
+.cgt-col-opts{display:flex;flex-direction:column;gap:7px}
+.cgt-col-opts .opt{padding:9px 12px;font-size:13px}
+.cgt-chosen{border-color:var(--teal)!important;background:var(--teal-soft)!important;font-weight:600}
+.cgt-dx-row{display:flex;align-items:center;gap:7px;margin-bottom:12px}
+.cgt-dx-icon{flex:0 0 auto;width:18px;height:18px;color:var(--teal)}
+.cgt-dx-icon svg{width:18px;height:18px;display:block}
+.cgt-dx{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);font-weight:700;line-height:1.3}
+.cgt-tx-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.cgt-tx-item{display:flex;align-items:flex-start;gap:7px;font-size:12.5px;line-height:1.4;color:var(--ink)}
+.cgt-tx-icon{flex:0 0 auto;width:14px;height:14px;color:var(--teal);margin-top:2px}
+.cgt-tx-icon svg{width:14px;height:14px;display:block}
+.cgt-notes{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px;display:flex;flex-direction:column;gap:5px}
+.cgt-notes-item{display:flex;align-items:flex-start;gap:6px;font-size:11px;line-height:1.4;color:var(--ink-faint)}
+.cgt-notes-icon{flex:0 0 auto;width:12px;height:12px;color:var(--amber);margin-top:2px}
+.cgt-notes-icon svg{width:12px;height:12px;display:block}
 .res-sub2{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink-soft);margin-bottom:2px}
-@media (max-width:760px){
-  .case-layout{grid-template-columns:1fr}
-  .case-notes{position:static;max-height:none}
-}
 
 /* ---------- Browse / reference ---------- */
 .ref-topic{margin-bottom:14px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}
@@ -649,16 +676,23 @@ footer .mono{font-size:11px}
 
   <!-- CASES -->
   <div class="view" id="view-cases">
-    <div class="quiz-wrap" id="caseWrap">
-      <div class="controls" id="caseSetup">
-        <div class="select-wrap"><select id="caseChapter"></select></div>
-        <button class="btn red" onclick="startCaseFromSelect()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M9 8h6M9 12h6M9 16h3"/></svg>
-          Start case walkthrough
-        </button>
+    <div class="controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="caseSearch" placeholder="Search a presentation or disease…" oninput="renderCaseTreeNav()">
       </div>
-      <div class="sec-note" style="max-width:720px;margin:-10px auto 20px">Only clinical-vignette questions that ask which drug to use, or an important feature of the relevant drug, appear here — a curated subset of the quiz bank, not every quiz question. Each answer adds its supporting fact to the case notes panel, built entirely from that topic's own flashcards.</div>
-      <div id="caseArea"></div>
+      <div class="select-wrap"><select id="caseChapterFilter" onchange="renderCaseTreeNav()"></select></div>
+    </div>
+    <div class="sec-note" style="max-width:760px;margin:-6px auto 20px">Walk the workup yourself — pick an answer at each step and the path continues to the right, down to a diagnosis and its treatment. Click any earlier step to try a different answer and branch off from there.</div>
+    <div class="cg-layout">
+      <nav id="caseTreeNav" class="cg-nav"></nav>
+      <div class="cgt-detail">
+        <div id="caseTreeHeader"></div>
+        <div class="cgt-toolbar" id="caseTreeToolbar" style="display:none">
+          <button class="btn" onclick="restartCaseTree()">Restart this tree</button>
+        </div>
+        <div id="caseTreeArea"></div>
+      </div>
     </div>
   </div>
 
@@ -7410,6 +7444,663 @@ const EXTRA_GASTRO_QUIZ = {
   ],
 };
 
+/* ---- 26-diagnostic-trees.js ---- */
+// Diagnostic Trees — the Cases tab's sole interactive mode: "walk the workup yourself."
+// Each tree starts from a presenting problem and branches on real test results/clinical findings
+// (not a quiz — no distractors) until it reaches a specific diagnosis and its treatment.
+// Content is condensed from this app's former CASE_GUIDES reference (same Cardiology source
+// material, since removed as redundant — every fact below traces back to it) into short bullet
+// fragments for at-a-glance scanning. `group` mirrors the disease-family grouping used throughout
+// the rest of the app, so the Cases tab nav can be browsed/searched by chapter → group → tree,
+// the same way Browse/Reference are. See docs/AUTHORING_GUIDE.md for the schema.
+//
+// Node shape — a node is EITHER:
+//   { q: "test/finding, phrased as a question", clues: ["short tag", …] (optional),
+//     options: [ {label:"short answer", next: <node>}, … ] }
+//   { leaf: true, diagnosis: "...", treatment: ["short bullet", …], notes: ["short bullet", …] (optional) }
+const DIAGNOSTIC_TREES = [
+{
+  id: "dtree-acs",
+  chapter: "Cardiology",
+  group: "Acute Coronary Syndrome",
+  name: "Suspected ACS (Chest Pain)",
+  root: {
+    q: "ST elevation ≥1mm in ≥2 contiguous leads?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "STEMI",
+        treatment: [
+          "Primary PCI ASAP (<90 min)",
+          "Thrombolysis only if PCI delayed",
+          "DAPT: aspirin + P2Y12 inhibitor",
+          "Anticoagulation (UFH/LMWH)",
+          "GP IIb/IIIa if high thrombus burden"
+        ],
+        notes: [
+          "Shock → urgent PCI + IABP/Impella + pressors",
+          "RV infarction: IV fluids for preload, avoid nitrates/diuretics; dobutamine if needed",
+          "Ensure DAPT adherence — prevents stent thrombosis",
+          "Reinfarction: urgent reassessment and reperfusion",
+          "Post-MI: statin, DAPT ~1yr, ACEi/ARB, beta-blocker, MRA if EF<40%"
+        ]
+      }},
+      { label: "No", next: {
+        q: "Troponin elevated?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "NSTEMI",
+            treatment: [
+              "Anti-ischemic: nitrates, analgesia, beta-blocker",
+              "DAPT + anticoagulation (UFH/LMWH)",
+              "Fondaparinux/bivalirudin if HIT history",
+              "Early invasive strategy if high-risk/unstable",
+              "Else: serial ECG/troponin or elective cath"
+            ],
+            notes: ["Shock → urgent PCI + IABP/Impella + pressors"]
+          }},
+          { label: "No", next: {
+            q: "Ischemic symptoms consistent with ACS?",
+            clues: ["Rest angina", "Crescendo pattern", "High-risk features"],
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Unstable Angina",
+                treatment: [
+                  "Same anti-ischemic regimen as NSTEMI",
+                  "DAPT + anticoagulation",
+                  "Early invasive strategy if high-risk"
+                ]
+              }},
+              { label: "No", next: {
+                leaf: true, diagnosis: "Low likelihood of ACS",
+                treatment: [
+                  "Reconsider non-cardiac causes",
+                  "Risk-stratify further before excluding ACS"
+                ]
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-valvular",
+  chapter: "Cardiology",
+  group: "Valvular Disease",
+  name: "Suspected Valvular Disease (Aortic)",
+  root: {
+    q: "Which lesion, on echo?",
+    options: [
+      { label: "Aortic stenosis", next: {
+        q: "Severe AS? (valve area <1cm², peak velocity >4m/s, or mean gradient >40mmHg)",
+        options: [
+          { label: "No", next: {
+            leaf: true, diagnosis: "Mild/moderate AS",
+            treatment: ["Serial echo follow-up", "Treat cardiovascular risk factors"]
+          }},
+          { label: "Yes", next: {
+            q: "Symptomatic?",
+            options: [
+              { label: "No", next: {
+                leaf: true, diagnosis: "Asymptomatic severe AS",
+                treatment: [
+                  "Surveillance",
+                  "Consider stress echo/BNP + valve-team eval if high-risk features",
+                  "If low-flow, low-gradient: dobutamine stress echo to confirm true severity vs pseudo-severe"
+                ]
+              }},
+              { label: "Yes", next: {
+                q: "Age / surgical risk?",
+                options: [
+                  { label: "Younger, low surgical risk", next: {
+                    leaf: true, diagnosis: "Symptomatic severe AS — younger/low risk",
+                    treatment: ["Aortic valve replacement", "Often SAVR (valve durability)", "Mechanical valve possible but needs lifelong anticoagulation"],
+                    notes: ["Heart Team decision: age, anatomy, surgical risk, life expectancy, preference"]
+                  }},
+                  { label: "Older, high surgical risk", next: {
+                    leaf: true, diagnosis: "Symptomatic severe AS — older/high risk",
+                    treatment: ["Aortic valve replacement", "TAVI/TAVR often favored"],
+                    notes: ["Heart Team decision: age, anatomy, surgical risk, life expectancy, preference"]
+                  }}
+                ]
+              }}
+            ]
+          }}
+        ]
+      }},
+      { label: "Aortic regurgitation", next: {
+        q: "Severe AR?",
+        options: [
+          { label: "No", next: {
+            leaf: true, diagnosis: "Mild/moderate AR",
+            treatment: ["Echo surveillance", "Treat hypertension/underlying cause"]
+          }},
+          { label: "Yes", next: {
+            q: "Symptomatic, or asymptomatic with LV dysfunction (EF<50% or LVESD>50mm)?",
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Severe AR — intervention indicated",
+                treatment: ["SAVR/TAVI depending on anatomy/risk", "Threshold for asymptomatic: EF<50% or LVESD>50mm"],
+                notes: ["If due to a dilated aorta: treat the aortic pathology; surgery if diameter/severity thresholds are met"]
+              }},
+              { label: "No", next: {
+                leaf: true, diagnosis: "Severe AR, compensated",
+                treatment: ["Continue echo surveillance", "Medical therapy alone is not definitive — treat risk factors while monitoring for decompensation"]
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-syncope",
+  chapter: "Cardiology",
+  group: "Syncope",
+  name: "Syncope",
+  root: {
+    q: "High-risk features present?",
+    clues: ["Exertional syncope", "Syncope while supine", "No prodrome", "Abnormal ECG", "Structural heart disease", "FHx sudden death"],
+    options: [
+      { label: "Yes", next: {
+        q: "VT/VF documented?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Cardiac Syncope — malignant arrhythmia",
+            treatment: ["ACLS acutely", "ICD if 2° prevention indication met"]
+          }},
+          { label: "No", next: {
+            q: "Complete AV block or severe bradycardia?",
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Cardiac Syncope — conduction disease",
+                treatment: ["Pacing"]
+              }},
+              { label: "No", next: {
+                q: "Severe AS, HOCM, or PE?",
+                options: [
+                  { label: "Yes", next: {
+                    leaf: true, diagnosis: "Cardiac Syncope — structural cause",
+                    treatment: ["Treat the underlying structural/obstructive cause"]
+                  }},
+                  { label: "No", next: {
+                    leaf: true, diagnosis: "Cardiac syncope, cause unclear",
+                    treatment: ["Continue cardiac monitoring", "Further workup before calling it reflex syncope"]
+                  }}
+                ]
+              }}
+            ]
+          }}
+        ]
+      }},
+      { label: "No", next: {
+        q: "Situational trigger with prodrome?",
+        clues: ["Prolonged standing", "Heat", "Emotional stress", "Warmth/nausea beforehand"],
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Reflex / Vasovagal Syncope",
+            treatment: ["Trigger avoidance, hydration, counter-pressure maneuvers", "Midodrine if recurrent (2nd line)"]
+          }},
+          { label: "No", next: {
+            q: "Drop in BP on standing?",
+            clues: ["Volume depletion", "Causative drug"],
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Orthostatic Syncope",
+                treatment: [
+                  "Stop causative drugs, rise slowly",
+                  "Hydration, salt, compression stockings",
+                  "Midodrine (2nd line)",
+                  "Treat underlying cause (neuropathy, Parkinson, B12 deficiency, etc.)"
+                ]
+              }},
+              { label: "No", next: {
+                q: "Triggered by carotid sinus pressure?",
+                clues: ["Tight collar", "Head-turning", "Shaving"],
+                options: [
+                  { label: "Yes", next: {
+                    leaf: true, diagnosis: "Carotid Sinus Hypersensitivity",
+                    treatment: ["Confirm via carotid sinus massage (after excluding carotid stenosis/stroke)", "Pacemaker in selected cardioinhibitory cases"]
+                  }},
+                  { label: "No", next: {
+                    leaf: true, diagnosis: "Cause not yet clear",
+                    treatment: ["Re-evaluate history and exam", "Consider prolonged monitoring"]
+                  }}
+                ]
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-ohca",
+  chapter: "Cardiology",
+  group: "Resuscitation",
+  name: "Cardiac Arrest (OHCA)",
+  root: {
+    q: "Rhythm on the monitor?",
+    options: [
+      { label: "Shockable (VF/pulseless VT)", next: {
+        leaf: true, diagnosis: "Shockable arrest",
+        treatment: ["High-quality BLS/CPR", "Early defibrillation", "ACLS per protocol"],
+        notes: [
+          "Post-ROSC: temperature control, airway/O2, hemodynamic support",
+          "PCI if STEMI, persistent arrhythmia, or cardiogenic shock",
+          "ICD for 2° prevention if indicated (idiopathic VT/VF, incomplete revascularization, high-risk cardiomyopathy)",
+          "Shock/severe dysfunction: inotropes, IABP, LVAD, or ECMO"
+        ]
+      }},
+      { label: "Torsades de pointes", next: {
+        leaf: true, diagnosis: "Torsades de Pointes arrest",
+        treatment: ["High-dose magnesium", "BLS/CPR + ACLS as needed"],
+        notes: [
+          "Post-ROSC: temperature control, airway/O2, hemodynamic support",
+          "PCI if STEMI, persistent arrhythmia, or cardiogenic shock",
+          "ICD for 2° prevention if indicated"
+        ]
+      }},
+      { label: "Bradyarrhythmic / PEA / asystole", next: {
+        leaf: true, diagnosis: "Bradyarrhythmic arrest / PEA-asystole",
+        treatment: ["High-quality BLS/CPR", "ACLS per protocol", "Pacing when indicated"],
+        notes: [
+          "Post-ROSC: temperature control, airway/O2, hemodynamic support",
+          "PCI if STEMI, persistent arrhythmia, or cardiogenic shock",
+          "ICD for 2° prevention if indicated"
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-af",
+  chapter: "Cardiology",
+  group: "Atrial Fibrillation",
+  name: "Atrial Fibrillation",
+  root: {
+    q: "Hemodynamically unstable (shock, ischemia, or severe pulmonary edema)?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "Unstable AF",
+        treatment: ["Immediate synchronized electrical cardioversion"],
+        notes: ["Anticoagulate per stroke risk once stabilized — not based on rhythm alone"]
+      }},
+      { label: "No", next: {
+        q: "Rate control or rhythm control strategy?",
+        options: [
+          { label: "Rate control", next: {
+            leaf: true, diagnosis: "Stable AF — rate control",
+            treatment: [
+              "Beta-blocker or non-DHP CCB if EF preserved",
+              "Digoxin, especially in HF or sedentary patients",
+              "Escalation: AV-node ablation + pacemaker if drug-refractory"
+            ],
+            notes: [
+              "Anticoagulate per stroke risk (CHA₂DS₂-VASc), independent of strategy",
+              "DOAC preferred except mechanical valve or significant mitral stenosis (→ warfarin, INR 2–3)",
+              "LAA closure if high bleeding risk but stroke-prevention need continues"
+            ]
+          }},
+          { label: "Rhythm control", next: {
+            leaf: true, diagnosis: "Stable AF — rhythm control",
+            treatment: [
+              "Electrical or pharmacologic cardioversion, or antiarrhythmic (e.g. amiodarone)",
+              "Escalation: pulmonary vein isolation/catheter ablation (can be first-line in selected paroxysmal AF)"
+            ],
+            notes: [
+              "Anticoagulate per stroke risk (CHA₂DS₂-VASc), independent of strategy",
+              "DOAC preferred except mechanical valve or significant mitral stenosis (→ warfarin, INR 2–3)",
+              "LAA closure if high bleeding risk but stroke-prevention need continues"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-wct",
+  chapter: "Cardiology",
+  group: "Arrhythmia",
+  name: "Wide Complex Tachycardia",
+  root: {
+    q: "Hemodynamically unstable?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "Unstable WCT",
+        treatment: ["Synchronized cardioversion"]
+      }},
+      { label: "No", next: {
+        q: "Prior MI or cardiomyopathy?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Treat as VT until proven otherwise",
+            treatment: ["Antiarrhythmic (amiodarone/procainamide)", "Expert evaluation"]
+          }},
+          { label: "No", next: {
+            leaf: true, diagnosis: "Stable monomorphic VT (default)",
+            treatment: ["Antiarrhythmic (amiodarone/procainamide)", "Expert evaluation"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-wpw",
+  chapter: "Cardiology",
+  group: "Arrhythmia",
+  name: "WPW / Pre-excited Tachyarrhythmia",
+  root: {
+    q: "Pre-excited atrial fibrillation present?",
+    options: [
+      { label: "Yes", next: {
+        q: "Hemodynamically unstable?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Pre-excited AF — unstable",
+            treatment: ["DC cardioversion"],
+            notes: ["Avoid AV-nodal blockers (adenosine, beta-blockers, verapamil, diltiazem, digoxin) — can worsen pre-excited AF"]
+          }},
+          { label: "No", next: {
+            leaf: true, diagnosis: "Pre-excited AF — stable",
+            treatment: ["Procainamide"],
+            notes: ["Avoid AV-nodal blockers (adenosine, beta-blockers, verapamil, diltiazem, digoxin) — can worsen pre-excited AF"]
+          }}
+        ]
+      }},
+      { label: "No — AVRT or asymptomatic pathway", next: {
+        q: "Symptomatic WPW / recurrent AVRT?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Symptomatic WPW / AVRT",
+            treatment: ["Catheter ablation (high success)"]
+          }},
+          { label: "No", next: {
+            leaf: true, diagnosis: "Asymptomatic WPW",
+            treatment: ["Individualized decision after risk stratification", "Exercise test or EP study to assess pathway risk"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-hf",
+  chapter: "Cardiology",
+  group: "Heart Failure",
+  name: "Heart Failure by EF",
+  root: {
+    q: "EF category, on echo?",
+    options: [
+      { label: "Reduced (HFrEF, EF≤40%)", next: {
+        q: "Refractory symptoms despite optimal GDMT?",
+        options: [
+          { label: "No", next: {
+            leaf: true, diagnosis: "HFrEF",
+            treatment: [
+              "Foundational 4 drugs together: beta-blocker + ACEi/ARB/ARNI + MRA + SGLT2 inhibitor",
+              "ARNI preferred if tolerated; ACEi if not; ARB if ACEi-intolerant",
+              "Loop diuretics for congestion",
+              "ICD if EF<35%, ischemic history, or post-ventricular arrhythmia",
+              "CRT if LBBB/dyssynchrony"
+            ],
+            notes: [
+              "Persistent sinus tachycardia on beta-blocker: ivabradine (selected NYHA II, EF<35%, HR>75)",
+              "Vericiguat if still failing on optimal therapy"
+            ]
+          }},
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Advanced / end-stage HF",
+            treatment: ["Advanced HF referral", "LVAD (bridge or destination therapy)", "Heart transplant in selected candidates"],
+            notes: ["LVAD: warfarin + aspirin chronically", "Severe RV failure is a major LVAD contraindication"]
+          }}
+        ]
+      }},
+      { label: "Mildly reduced (HFmrEF, 41–49%)", next: {
+        leaf: true, diagnosis: "HFmrEF",
+        treatment: ["Similar direction to HFrEF — SGLT2 inhibitor + diuretics", "Evidence base less strong than HFrEF"]
+      }},
+      { label: "Preserved (HFpEF, ≥50%)", next: {
+        leaf: true, diagnosis: "HFpEF",
+        treatment: [
+          "SGLT2 inhibitor — strongest evidence among drug options",
+          "Treat underlying drivers: HTN, obesity, AF, ischemia, valvular disease, pulmonary hypertension, infiltrative/restrictive disease",
+          "Diuretics for congestion"
+        ]
+      }},
+      { label: "Previously reduced, now improved", next: {
+        leaf: true, diagnosis: "HF with improved EF",
+        treatment: ["Continue optimal therapy — do not stop GDMT once EF normalizes"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-amyloid",
+  chapter: "Cardiology",
+  group: "Heart Failure",
+  name: "Cardiac Amyloidosis",
+  root: {
+    q: "Monoclonal light chains / plasma-cell dyscrasia present?",
+    options: [
+      { label: "Yes (suggests AL)", next: {
+        leaf: true, diagnosis: "AL Cardiac Amyloidosis",
+        treatment: ["Hematology-directed plasma-cell-targeted therapy"],
+        notes: ["Diurese carefully; avoid over-reducing preload"]
+      }},
+      { label: "No — bone scintigraphy positive (suggests ATTR)", next: {
+        leaf: true, diagnosis: "ATTR Cardiac Amyloidosis",
+        treatment: ["Tafamidis — stabilizes transthyretin, slows progression (does not remove existing deposits)"],
+        notes: ["Diurese carefully; avoid over-reducing preload"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-mr",
+  chapter: "Cardiology",
+  group: "Mitral Regurgitation",
+  name: "Mitral Regurgitation",
+  root: {
+    q: "Onset?",
+    options: [
+      { label: "Acute (e.g. post-MI papillary muscle rupture)", next: {
+        leaf: true, diagnosis: "Acute Severe MR",
+        treatment: ["Immediate stabilization: O2/intubation if needed, afterload reduction, IABP in severe cases", "Urgent surgery — repair preferred over replacement"]
+      }},
+      { label: "Chronic", next: {
+        q: "Primary (structural valve) or secondary (functional, from LV remodeling)?",
+        options: [
+          { label: "Primary", next: {
+            q: "Symptomatic severe MR, or asymptomatic with LV dysfunction?",
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Chronic Primary MR — intervention indicated",
+                treatment: ["Surgery, preferably repair when feasible", "TEER if high surgical risk + suitable anatomy"]
+              }},
+              { label: "No", next: {
+                leaf: true, diagnosis: "Chronic Primary MR — surveillance",
+                treatment: ["Continue echo surveillance until intervention criteria are met"]
+              }}
+            ]
+          }},
+          { label: "Secondary", next: {
+            leaf: true, diagnosis: "Secondary / Functional MR",
+            treatment: [
+              "Optimize HFrEF GDMT and treat ventricular remodeling first",
+              "Surgical/transcatheter intervention if undergoing CABG or symptoms persist despite GDMT",
+              "TEER if criteria met: NYHA II, moderate–severe FMR, EF 20–50%, LVESD<70mm, SPAP<70mmHg, no severe RV dysfunction/TR"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-myopericarditis",
+  chapter: "Cardiology",
+  group: "Myocarditis & Pericardial Disease",
+  name: "Myocarditis & Pericardial Disease",
+  root: {
+    q: "Primary presentation?",
+    options: [
+      { label: "Suspected myocarditis (troponin ↑, normal coronaries)", next: {
+        q: "Severe (HF, shock, or arrhythmias)?",
+        options: [
+          { label: "No", next: {
+            leaf: true, diagnosis: "Mild/stable myocarditis",
+            treatment: ["Follow-up", "Avoid strenuous exercise for several months"],
+            notes: ["Avoid NSAIDs; aspirin may be used for pain if needed"]
+          }},
+          { label: "Yes", next: {
+            q: "Giant cell / severe immune-mediated myocarditis?",
+            options: [
+              { label: "Yes", next: {
+                leaf: true, diagnosis: "Giant cell / immune-mediated myocarditis",
+                treatment: ["Intense immunosuppression", "Selected cases: prednisone + cyclosporine/azathioprine"]
+              }},
+              { label: "No", next: {
+                leaf: true, diagnosis: "Severe myocarditis (HF/shock/arrhythmias)",
+                treatment: ["Supportive care; treat the trigger if identified", "Inotropes/mechanical circulatory support (IABP, Impella, ECMO)"]
+              }}
+            ]
+          }}
+        ]
+      }},
+      { label: "Acute pericarditis (pleuritic pain, friction rub)", next: {
+        leaf: true, diagnosis: "Acute Pericarditis",
+        treatment: [
+          "High-dose NSAID/aspirin + colchicine (first line)",
+          "Steroids only if NSAIDs fail/contraindicated, after excluding infection",
+          "IL-1 blockade (rilonacept, anakinra) for recurrent/refractory disease"
+        ],
+        notes: ["Treat the cause if identified: TB, bacterial infection, malignancy, autoimmune disease, CKD, post-MI, drug-induced"]
+      }},
+      { label: "Pericardial effusion, hemodynamic compromise", next: {
+        leaf: true, diagnosis: "Cardiac Tamponade",
+        treatment: ["Supportive fluids/pressors — bridge only", "Urgent pericardiocentesis/pericardial drainage (definitive)"]
+      }},
+      { label: "Chronic constrictive physiology", next: {
+        q: "Chronic/established (>6 months)?",
+        options: [
+          { label: "No", next: {
+            leaf: true, diagnosis: "Early/inflammatory constriction",
+            treatment: ["Treat like pericarditis — anti-inflammatory therapy"]
+          }},
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Chronic Constrictive Pericarditis",
+            treatment: ["Surgical pericardiectomy"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-cardiomyopathy",
+  chapter: "Cardiology",
+  group: "Cardiomyopathy",
+  name: "Cardiomyopathy",
+  root: {
+    q: "Predominant pattern, on echo/MRI?",
+    options: [
+      { label: "Dilated, reduced EF (DCM)", next: {
+        leaf: true, diagnosis: "Dilated Cardiomyopathy",
+        treatment: [
+          "Treat as HFrEF: beta-blocker, ACEi/ARB/ARNI, MRA, SGLT2 inhibitor, diuretics",
+          "Remove/treat the cause: ischemia, alcohol/drug toxicity, myocarditis, nutritional deficiency, peripartum disease",
+          "ICD/CRT depending on EF, arrhythmia risk, QRS/LBBB pattern"
+        ],
+        notes: ["Genetic counseling if inherited", "End-stage disease: LVAD/transplant evaluation"]
+      }},
+      { label: "Hypertrophied, outflow concern (HCM/HOCM)", next: {
+        leaf: true, diagnosis: "Hypertrophic Cardiomyopathy / HOCM",
+        treatment: [
+          "Beta-blocker (first line)",
+          "Non-DHP CCB if beta-blocker not tolerated/effective",
+          "Disopyramide or cardiac myosin inhibitor for additional obstruction control",
+          "Septal reduction therapy (myectomy or alcohol ablation) if refractory obstruction",
+          "ICD if high SCD risk"
+        ],
+        notes: ["Avoid high-intensity competitive exercise if high-risk", "Family screening if a mutation is identified"]
+      }},
+      { label: "RV-predominant fibrosis/arrhythmia (ARVC)", next: {
+        leaf: true, diagnosis: "Arrhythmogenic RV Cardiomyopathy",
+        treatment: [
+          "Beta-blocker/antiarrhythmic strategy with EP evaluation for ventricular arrhythmias",
+          "ICD if high-risk or secondary-prevention indication",
+          "Manage as cardiomyopathy/HF if progressing to RV/LV failure"
+        ],
+        notes: ["Avoid high-intensity exercise"]
+      }},
+      { label: "Restrictive/stiff ventricle (RCM)", next: {
+        q: "Cause?",
+        options: [
+          { label: "Amyloidosis", next: {
+            leaf: true, diagnosis: "Restrictive CM — Amyloidosis",
+            treatment: ["ATTR: tafamidis", "AL: hematology-directed therapy", "Diurese cautiously in both"]
+          }},
+          { label: "Sarcoidosis", next: {
+            leaf: true, diagnosis: "Restrictive CM — Sarcoidosis",
+            treatment: ["Immunosuppression when active", "Rhythm/conduction monitoring", "ICD/pacing if indicated"]
+          }},
+          { label: "Other/idiopathic", next: {
+            leaf: true, diagnosis: "Restrictive CM — general",
+            treatment: ["Treat the underlying cause", "Diuretics carefully", "Advanced HF referral when severe"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-pe",
+  chapter: "Cardiology",
+  group: "Pulmonary Embolism",
+  name: "Pulmonary Embolism",
+  root: {
+    q: "Risk category?",
+    options: [
+      { label: "High-risk (hypotension/shock/RV failure)", next: {
+        leaf: true, diagnosis: "High-risk PE",
+        treatment: [
+          "Immediate anticoagulation",
+          "Reperfusion — usually systemic thrombolysis if no contraindication",
+          "If contraindicated/failed: surgical embolectomy or catheter-directed therapy"
+        ],
+        notes: [
+          "IVC filter if anticoagulation contraindicated or recurrent emboli despite it",
+          "DOAC preferred after initial phase unless APS, mechanical valve, or severe CKD (→ warfarin)",
+          "Duration often 3–6 months; extended therapy for unprovoked PE, persistent risk factors, recurrent VTE, or thrombophilia/cancer"
+        ]
+      }},
+      { label: "Intermediate-risk", next: {
+        leaf: true, diagnosis: "Intermediate-risk PE",
+        treatment: ["Anticoagulation with close monitoring", "Thrombolysis only if deterioration or high-risk features develop"],
+        notes: [
+          "DOAC preferred after initial phase unless APS, mechanical valve, or severe CKD (→ warfarin)",
+          "Duration often 3–6 months; extended therapy for unprovoked PE, persistent risk factors, recurrent VTE, or thrombophilia/cancer"
+        ]
+      }},
+      { label: "Low-risk", next: {
+        leaf: true, diagnosis: "Low-risk PE",
+        treatment: ["Anticoagulation — often a DOAC/NOAC if eligible", "Outpatient treatment possible if Hestia/PESI low-risk and no exclusions"],
+        notes: [
+          "DOAC preferred after initial phase unless APS, mechanical valve, or severe CKD (→ warfarin)",
+          "Duration often 3–6 months; extended therapy for unprovoked PE, persistent risk factors, recurrent VTE, or thrombophilia/cancer"
+        ]
+      }}
+    ]
+  }
+},
+];
+
 /* ====== ASSEMBLE CHAPTERS ====== */
 // Merge extra cardiology questions into the base cardiology topics.
 if(typeof EXTRA_CARDIO_QUIZ!=='undefined'){
@@ -7586,8 +8277,6 @@ function removeFlagPanel(){
 function refreshFlagButtons(){
   var qb=document.getElementById('quizFlagBtn');
   if(qb&&quiz.list[quiz.pos]){var q=quiz.list[quiz.pos];qb.classList.toggle('flagged',isFlagged('quiz',q.tid,q.qidx))}
-  var cb=document.getElementById('caseFlagBtn');
-  if(cb&&caseState.list[caseState.pos]){var cq=caseState.list[caseState.pos];cb.classList.toggle('flagged',isFlagged('quiz',cq.tid,cq.qidx))}
   var fb=document.getElementById('fcFlagBtn');
   if(fb){var pool=fc._pool||[];var idx=fc.order[fc.pos];var c=pool[idx];if(c)fb.classList.toggle('flagged',isFlagged('flashcard',c.tid,c.i))}
 }
@@ -8009,148 +8698,134 @@ function showResults(){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-/* ====== CASES ======
-   Pulls ONLY quiz items explicitly authored with `caseQ:true` — a clinical
-   vignette that asks which drug to use, or an important feature of the
-   relevant drug (see docs/AUTHORING_GUIDE.md). This is a small, curated
-   subset of the full quiz bank, not every vignette-style question, so the
-   pool is combined across chapters rather than browsed topic-by-topic.
-   Every teaching point shown is the linked flashcard (via the quiz item's
-   `ref`, or the same keyword-match fallback used by "View in Reference") —
-   no facts beyond what's already authored in src/data/. */
-var caseState={list:[],pos:0,score:0,answered:false,points:[]};
-function allCaseItems(){
-  var list=[];
-  TOPICS.forEach(function(t){
-    (t.quiz||[]).forEach(function(q,i){
-      if(!q.caseQ)return;
-      list.push({tid:t.id,tname:t.name,chapter:t.chapter,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption});
+/* ====== CASES: DIAGNOSTIC TREE WALKER ======
+   The Cases tab's sole mode: an interactive "walk the workup yourself" tool
+   built from DIAGNOSTIC_TREES (src/data/26-diagnostic-trees.js). A nav
+   sidebar (searchable, grouped by chapter → disease group — the same
+   system→subject organization used elsewhere in the app) lists every tree;
+   picking one starts it in the detail pane. The user picks an answer at
+   each step and the path grows one column to the right, down to a leaf
+   node (diagnosis + treatment). Clicking an option in an EARLIER column
+   (even one already chosen) truncates every column after it and re-derives
+   the path from there — that's how a different diagnostic path is
+   unlocked, without a separate "back" action. Not a quiz — no scoring, no
+   distractors. `choices` holds one option-index per decision level along
+   the current path. */
+var caseTreeState={treeId:null,choices:[]};
+function allDiagnosticTrees(){return typeof DIAGNOSTIC_TREES!=='undefined'?DIAGNOSTIC_TREES:[]}
+function buildCaseChapterFilter(){
+  var s=el('caseChapterFilter');if(!s)return;
+  var chapters=[];
+  allDiagnosticTrees().forEach(function(t){if(chapters.indexOf(t.chapter)<0)chapters.push(t.chapter)});
+  s.innerHTML='<option value="all">All chapters</option>';
+  chapters.forEach(function(ch){
+    var o=document.createElement('option');o.value=ch;o.textContent=ch;s.appendChild(o);
+  });
+}
+function renderCaseTreeNav(){
+  var nav=el('caseTreeNav');if(!nav)return;
+  var chapterFilter=el('caseChapterFilter')?el('caseChapterFilter').value:'all';
+  var term=(el('caseSearch')?el('caseSearch').value:'').trim().toLowerCase();
+  var trees=allDiagnosticTrees().filter(function(t){
+    if(chapterFilter!=='all'&&t.chapter!==chapterFilter)return false;
+    if(!term)return true;
+    var hay=(t.name+' '+t.group+' '+t.chapter).toLowerCase();
+    return hay.indexOf(term)>=0;
+  });
+  if(!trees.length){
+    nav.innerHTML='<div class="cg-nav-empty">No matches.</div>';
+    el('caseTreeHeader').innerHTML='';
+    el('caseTreeToolbar').style.display='none';
+    el('caseTreeArea').innerHTML='<div class="cgt-empty">No presentations match this search.</div>';
+    return;
+  }
+  var chapters=[];
+  trees.forEach(function(t){if(chapters.indexOf(t.chapter)<0)chapters.push(t.chapter)});
+  var html='';
+  chapters.forEach(function(chapter){
+    var groups=[];
+    trees.filter(function(t){return t.chapter===chapter}).forEach(function(t){if(groups.indexOf(t.group)<0)groups.push(t.group)});
+    groups.forEach(function(group){
+      html+='<div class="cg-nav-group">'+esc(chapters.length>1?chapter+' · '+group:group)+'</div>';
+      trees.filter(function(t){return t.chapter===chapter&&t.group===group}).forEach(function(t){
+        html+='<button class="cg-nav-btn'+(t.id===caseTreeState.treeId?' active':'')+'" data-id="'+t.id+'" onclick="selectCaseTree(\''+t.id+'\')">'+esc(t.name)+'</button>';
+      });
     });
   });
-  return list;
+  nav.innerHTML=html;
+  if(!trees.some(function(t){return t.id===caseTreeState.treeId})){
+    el('caseTreeHeader').innerHTML='';
+    el('caseTreeToolbar').style.display='none';
+    el('caseTreeArea').innerHTML='<div class="cgt-empty">Select a presentation from the list to begin.</div>';
+  }
 }
-function buildCaseOptions(){
-  var s=el('caseChapter');
-  var all=allCaseItems();
-  var counts={};
-  all.forEach(function(c){counts[c.chapter]=(counts[c.chapter]||0)+1});
-  s.innerHTML='<option value="all">All chapters · '+all.length+' case questions</option>';
-  CHAPTERS.forEach(function(chapter){
-    if(!counts[chapter])return;
-    var o=document.createElement('option');o.value=chapter;o.textContent=chapter+' · '+counts[chapter]+' Q';s.appendChild(o);
-  });
+function selectCaseTree(id){
+  var tree=allDiagnosticTrees().filter(function(t){return t.id===id})[0];
+  if(!tree)return;
+  caseTreeState={treeId:id,choices:[]};
+  document.querySelectorAll('.cg-nav-btn').forEach(function(b){b.classList.toggle('active',b.dataset.id===id)});
+  el('caseTreeHeader').innerHTML='<div class="cgt-header-group">'+esc(tree.group)+'</div><div class="cgt-header-name">'+esc(tree.name)+'</div>';
+  el('caseTreeToolbar').style.display='flex';
+  renderCaseTreeFlow();
 }
-function startCaseFromSelect(){startCaseWalkthrough(el('caseChapter').value)}
-function startCaseWalkthrough(chapterFilter){
-  var list=allCaseItems();
-  if(chapterFilter&&chapterFilter!=='all')list=list.filter(function(c){return c.chapter===chapterFilter});
-  if(!list.length){alert('No case questions available for this selection.');return}
-  list=prioritizeList(list);
-  el('caseSetup').style.display='none';
-  caseState={list:list,pos:0,score:0,answered:false,points:[]};
-  renderCaseQuestion();
+function restartCaseTree(){
+  caseTreeState.choices=[];
+  renderCaseTreeFlow();
 }
-function caseTeachingPoint(q){
-  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
-  if(!t)return null;
-  var idx=(typeof q.ref==='number')?q.ref:findBestMatchingCard(t,q.q+' '+q.explain);
-  if(idx<0||!t.flashcards[idx])return null;
-  return {tid:t.id,idx:idx,front:t.flashcards[idx].front,back:t.flashcards[idx].back};
+function chooseCaseTreeOption(level,i){
+  caseTreeState.choices=caseTreeState.choices.slice(0,level);
+  caseTreeState.choices[level]=i;
+  renderCaseTreeFlow();
 }
-function renderCaseNotesHTML(){
-  if(!caseState.points.length)return '<div class="case-notes-empty">Teaching points collected as you answer will appear here.</div>';
-  return caseState.points.map(function(p){
-    return '<div class="case-note"><div class="case-note-front">'+esc(p.front)+'</div><div class="case-note-back">'+esc(p.back)+'</div></div>';
-  }).join('');
-}
-function renderCaseQuestion(){
-  var q=caseState.list[caseState.pos];
-  var pct=Math.round(caseState.pos/caseState.list.length*100);
-  var keys=['A','B','C','D','E'];
-  var html='<div class="q-progress">'+
-    '<div class="q-progline"><div class="q-progline-fill" style="width:'+pct+'%"></div></div>'+
-    '<div class="q-progtext">Case '+(caseState.pos+1)+' / '+caseState.list.length+'</div></div>'+
-    '<div class="case-layout">'+
-    '<div class="q-card case-card">'+
-      '<div class="q-topic-row"><div class="q-topic">'+esc(q.tname)+'</div>'+
-      '<button class="flag-btn'+(isFlagged('quiz',q.tid,q.qidx)?' flagged':'')+'" id="caseFlagBtn" onclick="openCaseFlagPanel();event.stopPropagation()" title="Flag this question for review">'+FLAG_SVG+'</button></div>'+
-      '<div class="case-label">Case vignette</div>'+
-      '<div class="q-stem">'+esc(q.q)+'</div>'+
-      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="Imaging study for this question" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap">'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
-      '<div class="opts" id="caseOpts">';
-  q.options.forEach(function(o,i){
-    html+='<button class="opt" data-i="'+i+'" onclick="answerCase('+i+')"><span class="opt-key">'+keys[i]+'</span><span>'+esc(o)+'</span></button>';
-  });
-  html+='</div>'+
-      '<div class="explain" id="caseExplain"><span class="lbl"></span><span id="caseExplainText"></span></div>'+
-      '<div class="q-foot"><div class="score-tag">Score <b>'+caseState.score+'</b> / '+caseState.pos+'</div>'+
-      '<div id="caseActions"><button class="btn primary" id="nextCaseBtn" onclick="nextCaseQuestion()" disabled>Next case →</button></div></div>'+
-    '</div>'+
-    '<aside class="case-notes" id="caseNotes"><div class="case-notes-title">Case notes</div>'+renderCaseNotesHTML()+'</aside>'+
+function renderCaseTreeFlow(){
+  var tree=allDiagnosticTrees().filter(function(t){return t.id===caseTreeState.treeId})[0];
+  if(!tree)return;
+  var cols=[];
+  var node=tree.root;
+  var level=0;
+  while(true){
+    if(node.leaf){cols.push({leaf:true,node:node});break}
+    var chosen=caseTreeState.choices[level];
+    cols.push({leaf:false,node:node,level:level,chosen:chosen});
+    if(chosen===undefined)break;
+    node=node.options[chosen].next;
+    level++;
+  }
+  var ICON_Q='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>';
+  var ICON_DX='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="0.5" fill="currentColor"/></svg>';
+  var ICON_CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>';
+  var ICON_WARN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>';
+  var ICON_ARROW='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  var html=cols.map(function(col){
+    if(col.leaf){
+      var n=col.node;
+      var txItems=n.treatment.map(function(t){
+        return '<li class="cgt-tx-item"><span class="cgt-tx-icon">'+ICON_CHECK+'</span><span>'+esc(t)+'</span></li>';
+      }).join('');
+      var notesItems=(n.notes||[]).map(function(nt){
+        return '<div class="cgt-notes-item"><span class="cgt-notes-icon">'+ICON_WARN+'</span><span>'+esc(nt)+'</span></div>';
+      }).join('');
+      return '<div class="cgt-col cgt-col-leaf">'+
+        '<div class="cgt-dx-row"><span class="cgt-dx-icon">'+ICON_DX+'</span><span class="cgt-dx">'+esc(n.diagnosis)+'</span></div>'+
+        '<ul class="cgt-tx-list">'+txItems+'</ul>'+
+        (notesItems?'<div class="cgt-notes">'+notesItems+'</div>':'')+
+      '</div>';
+    }
+    var n=col.node;
+    var clues=(n.clues||[]).map(function(c){return '<span class="cgt-clue-chip">'+esc(c)+'</span>'}).join('');
+    var opts=n.options.map(function(o,i){
+      var cls='opt'+(col.chosen===i?' cgt-chosen':'');
+      return '<button class="'+cls+'" onclick="chooseCaseTreeOption('+col.level+','+i+')"><span>'+esc(o.label)+'</span></button>';
+    }).join('');
+    return '<div class="cgt-col">'+
+      '<div class="cgt-q-row"><span class="cgt-q-icon">'+ICON_Q+'</span><span class="cgt-q">'+esc(n.q)+'</span></div>'+
+      (clues?'<div class="cgt-clues">'+clues+'</div>':'')+
+      '<div class="cgt-col-opts">'+opts+'</div>'+
     '</div>';
-  el('caseArea').innerHTML=html;
-  caseState.answered=false;
-}
-function answerCase(i){
-  if(caseState.answered)return;caseState.answered=true;
-  var q=caseState.list[caseState.pos];
-  var opts=document.querySelectorAll('#caseOpts .opt');
-  opts.forEach(function(b){
-    b.disabled=true;var bi=+b.dataset.i;
-    if(bi===q.answer)b.classList.add('correct');
-    else if(bi===i)b.classList.add('wrong');
-    else b.classList.add('dim');
-  });
-  var correct=i===q.answer;
-  if(correct)caseState.score++;
-  if(!progress.topicStats[q.tid])progress.topicStats[q.tid]={correct:0,total:0};
-  progress.topicStats[q.tid].total++;if(correct)progress.topicStats[q.tid].correct++;
-  var prevQS=progress.questionStats[q.qid];
-  if(correct){
-    progress.questionStats[q.qid]={status:'correct',confidence:(prevQS&&prevQS.confidence)||null,
-      correctCount:((prevQS&&prevQS.correctCount)||0)+1,wrongCount:(prevQS&&prevQS.wrongCount)||0,lastTs:Date.now()};
-  }else{
-    progress.questionStats[q.qid]={status:'wrong',confidence:null,
-      correctCount:(prevQS&&prevQS.correctCount)||0,wrongCount:((prevQS&&prevQS.wrongCount)||0)+1,lastTs:Date.now()};
-  }
-  saveProgress();
-  var ex=el('caseExplain');ex.className='explain show'+(correct?'':' miss');
-  ex.querySelector('.lbl').textContent=correct?'Correct':'Not quite';
-  el('caseExplainText').textContent=q.explain;
-  var point=caseTeachingPoint(q);
-  if(point&&!caseState.points.some(function(p){return p.tid===point.tid&&p.idx===point.idx})){
-    caseState.points.push(point);
-    var notes=el('caseNotes');
-    if(notes)notes.innerHTML='<div class="case-notes-title">Case notes</div>'+renderCaseNotesHTML();
-  }
-  el('nextCaseBtn').disabled=false;
-  el('nextCaseBtn').textContent=(caseState.pos===caseState.list.length-1)?'Finish case series →':'Next case →';
-}
-function nextCaseQuestion(){
-  if(!caseState.answered)return;
-  if(caseState.pos===caseState.list.length-1){showCaseResults();return}
-  caseState.pos++;renderCaseQuestion();
-}
-function showCaseResults(){
-  var pct=Math.round(caseState.score/caseState.list.length*100);
-  var msg=pct>=85?'Exam-ready on this set.':pct>=70?'Solid work through this case series.':pct>=50?'Getting there — revisit the misses below.':'Worth another pass through the flashcards.';
-  el('caseArea').innerHTML='<div class="results">'+
-    '<div class="res-title">Case series complete</div>'+
-    '<div class="res-sub2">Score '+caseState.score+' / '+caseState.list.length+' · '+pct+'%</div>'+
-    '<div class="res-msg">'+msg+'</div>'+
-    '<div class="res-actions">'+
-      '<button class="btn red" onclick="startCaseWalkthrough(el(\'caseChapter\').value)">Retake</button>'+
-      '<button class="btn" onclick="switchView(\'flash\')">Review flashcards</button>'+
-    '</div>'+
-    (caseState.points.length?('<div class="res-break"><h4>Teaching points from this series ('+caseState.points.length+')</h4>'+renderCaseNotesHTML()+'</div>'):'')+
-  '</div>';
-  el('caseSetup').style.display='flex';
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-function openCaseFlagPanel(){
-  var q=caseState.list[caseState.pos];if(!q)return;
-  var t=TOPICS.filter(function(x){return x.id===q.tid})[0];
-  openFlagPanel('quiz',q.tid,q.qidx,q.q,q.tname,t?t.chapter:'');
+  }).join('<div class="cgt-connector">'+ICON_ARROW+'</div>');
+  el('caseTreeArea').innerHTML='<div class="cgt-flow">'+html+'</div>';
+  var flow=el('caseTreeArea').querySelector('.cgt-flow');
+  if(flow)flow.scrollLeft=flow.scrollWidth;
 }
 
 /* ====== PAST EXAMS ======
@@ -8893,7 +9568,8 @@ buildECG();
 renderHome();
 buildFlashOptions();
 buildQuizOptions();
-buildCaseOptions();
+buildCaseChapterFilter();
+renderCaseTreeNav();
 buildExamOptions();
 buildMixControls();
 buildDrugChapters();

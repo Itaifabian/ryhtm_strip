@@ -43,17 +43,67 @@ Rules:
 
 A quiz item may include `img` (a data URI or URL) and `imgCaption` (a short caption string) to show an image above the answer options — used for "identify the finding" style questions (see `src/data/11-radiology.js` for examples). Keep embedded images as small, tightly-cropped, compressed JPEGs (base64 data URIs) in their own numerically-earlier data file (e.g. `11-radiology-images.js`, which sorts before `11-radiology.js`) so the image constants are defined before the topic file references them — the app has no bundler, so load order is plain filename order. Only use real or clearly-sourced illustrative images; note any provenance uncertainty in the PR description per CLAUDE.md.
 
-### Optional: `caseQ` (Cases tab eligibility)
+### Deprecated: `caseQ`
 
-A quiz item may include `caseQ: true` to mark it as a **case question** for the Cases tab — a clinical vignette that asks either which drug to use, or an important feature of the relevant drug (e.g. a toxicity, a contraindication, a pharmacokinetic quirk). This is a small, deliberately curated subset: most quiz items (definitional questions, non-drug management questions, "which lab/imaging finding" questions) should NOT be tagged. When authoring a new vignette question that fits this pattern, add `caseQ: true`; otherwise omit the field entirely (it defaults to not shown in Cases).
+Some older quiz items carry `caseQ: true`. This field previously marked a question for the old Cases-tab vignette-quiz walkthrough. **The Cases tab no longer reads this field** — it now shows `DIAGNOSTIC_TREES` (see below). `caseQ: true` still appears on existing quiz items but is inert; don't add it to new questions.
+
+---
+
+## Diagnostic trees (the "Cases" tab)
+
+The Cases tab is a single interactive mode: **"walk the workup yourself."** The user answers one
+test/finding at a time; each answer adds a new step to the right, building a visible left-to-right
+path down to a specific diagnosis and its treatment (e.g. ACS: "ST elevation on ECG?" → yes → STEMI
+→ PCI; no → "troponin elevated?" → …). Clicking an option in an *earlier* step re-branches the path
+from there (everything after it is replaced) — there's no separate "back" action. This is **not a
+quiz** — there are no distractors.
+
+A nav sidebar (searchable, grouped by chapter → disease `group`) lists every tree so it stays
+navigable as more are added — pick one to start it. Text is deliberately terse: `treatment`/`notes`
+are short bullet fragments (3–6 words each where possible), not sentences, since each card is read
+at a glance mid-flow.
+
+- Trees live in `26-diagnostic-trees.js` → `const DIAGNOSTIC_TREES = [ … ]`
+
+Each tree is `{ id, chapter, group, name, root }`, where `root` is a **node**. A node is either a
+decision node (a test/finding with 2+ possible answers) or a leaf (a diagnosis + its treatment):
 
 ```js
-{ q: "A patient with MRSA pneumonia needs treatment. Which agent should specifically be AVOIDED for this indication despite covering MRSA well in other infections?",
-  options: ["Vancomycin", "Linezolid", "Daptomycin", "Ceftaroline"],
-  answer: 2,
-  explain: "Daptomycin is inactivated by pulmonary surfactant and should never be used for pneumonia.",
-  caseQ: true }
+{
+  id: "dtree-wct",             // unique, kebab-case, stable
+  chapter: "Cardiology",       // an existing app chapter
+  group: "Arrhythmia",         // groups related trees in the nav sidebar (system → subject)
+  name: "Wide Complex Tachycardia", // shown as the nav entry / detail header
+  root: {
+    q: "Hemodynamically unstable?",
+    options: [
+      { label: "Yes", next: { leaf: true, diagnosis: "Unstable WCT", treatment: ["Synchronized cardioversion"] } },
+      { label: "No", next: {
+        q: "Prior MI or cardiomyopathy?",
+        options: [
+          { label: "Yes", next: { leaf: true, diagnosis: "Treat as VT until proven otherwise", treatment: ["Antiarrhythmic (amiodarone/procainamide)", "Expert evaluation"] } },
+          { label: "No",  next: { leaf: true, diagnosis: "Stable monomorphic VT (default)", treatment: ["Antiarrhythmic (amiodarone/procainamide)", "Expert evaluation"] } }
+        ]
+      } }
+    ]
+  }
+}
 ```
+
+A decision node can also carry an optional `clues` array — short tags shown as chips under the
+question, for a finding with several recognizable features (see `dtree-syncope`'s root: `clues:
+["Exertional syncope", "Syncope while supine", "No prodrome", …]`), instead of stuffing them all into
+the `q` sentence itself.
+
+Rules:
+- `id` must be unique across `DIAGNOSTIC_TREES`.
+- `group` is purely for nav organization (mirrors the disease-family groupings used elsewhere in the app, e.g. `"Acute Coronary Syndrome"`, `"Heart Failure"`, `"Pulmonary Embolism"`) — pick an existing group when a new tree belongs with others, or introduce a new group name for a new disease family.
+- A decision node has `q` (the test/finding, phrased as a short question), an optional `clues` array (short recognition tags, not full sentences), and `options` (2+ items, each `{label, next}`); `next` is itself a node (nested arbitrarily deep).
+- A leaf node has `leaf: true`, `diagnosis`, a `treatment` array (short bullet fragments, most important first), and an optional `notes` array (short escalation/caveat bullets, e.g. "Shock → urgent PCI + IABP/Impella + pressors" — a good place for a related complication or cross-cutting rule, like anticoagulation choice, that doesn't need its own branch point).
+- Keep every bullet short — a few words, not a clause-laden sentence.
+- Order branches the way a clinician would actually sequence the workup (most specific/urgent test first), not alphabetically. When a disease group's topics form a real differential (e.g. STEMI vs NSTEMI vs unstable angina), branch on the test/finding that actually separates them; when a group is really one disease staged by severity/risk (e.g. aortic stenosis), branch on the situational factors that change management instead.
+- Ground every question, clue, and leaf bullet in an actual source (lecture material, or a previously-reviewed PR) — never invent a diagnostic threshold, dose, or recommendation.
+- `validate.js` walks the tree recursively and checks: unique tree ids, required `chapter`/`group`/`name`, every decision node has `q` + 2+ labeled options (+ non-empty `clues` array if present), every leaf has `diagnosis` + a non-empty `treatment` array (+ non-empty `notes` array if present).
 
 ---
 
