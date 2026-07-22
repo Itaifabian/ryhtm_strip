@@ -1,11 +1,12 @@
 // Diagnostic Trees — the Cases tab's sole interactive mode: "walk the workup yourself."
 // Each tree starts from a presenting problem and branches on real test results/clinical findings
 // (not a quiz — no distractors) until it reaches a specific diagnosis and its treatment.
-// Content is condensed from this app's former CASE_GUIDES reference (same Cardiology source
-// material, since removed as redundant — every fact below traces back to it) into short bullet
-// fragments for at-a-glance scanning. `group` mirrors the disease-family grouping used throughout
-// the rest of the app, so the Cases tab nav can be browsed/searched by chapter → group → tree,
-// the same way Browse/Reference are. See docs/AUTHORING_GUIDE.md for the schema.
+// Cardiology entries are condensed from this app's former CASE_GUIDES reference (since removed as
+// redundant — every fact traces back to it); Rheumatology entries are condensed from a
+// clinician-supplied rheumatology summary. All content is short bullet fragments for at-a-glance
+// scanning. `group` mirrors the disease-family grouping used throughout the rest of the app, so the
+// Cases tab nav can be browsed/searched by chapter → group → tree. See docs/AUTHORING_GUIDE.md for
+// the schema.
 //
 // Node shape — a node is EITHER:
 //   { q: "test/finding, phrased as a question", clues: ["short tag", …] (optional),
@@ -647,6 +648,459 @@ const DIAGNOSTIC_TREES = [
         notes: [
           "DOAC preferred after initial phase unless APS, mechanical valve, or severe CKD (→ warfarin)",
           "Duration often 3–6 months; extended therapy for unprovoked PE, persistent risk factors, recurrent VTE, or thrombophilia/cancer"
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-pattern",
+  chapter: "Rheumatology",
+  group: "General Approach",
+  name: "Joint Pain — What Pattern Is This?",
+  root: {
+    q: "One joint, a few joints, or many joints?",
+    options: [
+      { label: "One joint (acute monoarthritis)", next: {
+        leaf: true, diagnosis: "Acute Monoarthritis",
+        treatment: [
+          "Treat as septic arthritis until proven otherwise",
+          "Arthrocentesis immediately — don't decide on serum tests alone",
+          "Send synovial fluid: WBC + differential, Gram stain, culture, crystals"
+        ],
+        notes: [
+          "WBC>50,000 with PMN predominance → septic likely (crystals can coexist)",
+          "Crystals present → gout/CPPD, but infection still possible until cultures return",
+          "Gram stain/culture positive → septic arthritis confirmed"
+        ]
+      }},
+      { label: "A few joints, esp. lower limb (oligoarthritis)", next: {
+        leaf: true, diagnosis: "Oligoarthritis",
+        treatment: ["Consider: reactive arthritis, psoriatic arthritis, IBD-associated arthritis, crystal disease, gonococcal arthritis, early spondyloarthritis"]
+      }},
+      { label: "Many joints, symmetric small-joint (polyarthritis)", next: {
+        q: "Mechanical or inflammatory pain pattern?",
+        clues: ["Mechanical: worse with use, better with rest, stiffness <30min", "Inflammatory: rest/night pain, better with activity, stiffness >30–60min"],
+        options: [
+          { label: "Mechanical", next: {
+            leaf: true, diagnosis: "Mechanical pattern — think OA",
+            treatment: ["Consider osteoarthritis"]
+          }},
+          { label: "Inflammatory", next: {
+            leaf: true, diagnosis: "Inflammatory pattern",
+            treatment: ["Consider: RA, SpA/PsA, SLE arthritis, PMR, vasculitis-associated arthralgia, or a crystal-arthritis flare"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-hot-joint",
+  chapter: "Rheumatology",
+  group: "Crystal & Septic Arthritis",
+  name: "Acute Hot Swollen Joint",
+  root: {
+    q: "Aspirate synovial fluid first — what does it show?",
+    options: [
+      { label: "Gram stain/culture positive", next: {
+        leaf: true, diagnosis: "Septic Arthritis",
+        treatment: ["IV antibiotics after cultures — often ceftriaxone initially", "Add vancomycin if MRSA risk", "Joint drainage/washout, often repeated"]
+      }},
+      { label: "WBC >50,000, PMN-dominant, culture pending", next: {
+        leaf: true, diagnosis: "Septic arthritis likely (crystals still possible)",
+        treatment: ["Treat empirically as septic until cultures return: IV antibiotics (e.g. ceftriaxone ± vancomycin) + joint drainage", "Send crystal analysis regardless — crystals can coexist with infection"]
+      }},
+      { label: "Needle-shaped, negatively birefringent crystals", next: {
+        leaf: true, diagnosis: "Gout",
+        treatment: ["Acute: NSAID, colchicine, or steroid", "Long-term: allopurinol if recurrent/tophi/CKD/stones", "Start colchicine prophylaxis when initiating allopurinol"],
+        notes: ["Serum urate supports but does not diagnose — synovial urate crystals do"]
+      }},
+      { label: "Rhomboid, weakly positive birefringent crystals", next: {
+        leaf: true, diagnosis: "CPPD",
+        treatment: ["Drainage", "Intra-articular steroids", "NSAIDs/colchicine if appropriate"],
+        notes: ["No disease-specific antibody — consider metabolic workup if young/unusual: calcium, magnesium, phosphate, PTH, iron studies, TSH"]
+      }},
+      { label: "Young, sexually active, migratory arthralgia, tenosynovitis, dermatitis", next: {
+        leaf: true, diagnosis: "Gonococcal Arthritis",
+        treatment: ["Ceftriaxone", "Treat chlamydia if not excluded", "Treat partners"],
+        notes: ["Synovial culture often negative", "Arthroscopic lavage usually not required, unlike typical septic arthritis"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-polyarthritis",
+  chapter: "Rheumatology",
+  group: "Inflammatory Polyarthritis",
+  name: "Symmetric Small-Joint Polyarthritis",
+  root: {
+    q: "True synovitis on exam (swollen/tender joints, inflammatory stiffness)?",
+    options: [
+      { label: "No — diffuse pain, normal exam/CRP/ESR", next: {
+        leaf: true, diagnosis: "Fibromyalgia / central sensitization",
+        treatment: ["No immunologic escalation — this is a central pain disorder, not synovitis"],
+        notes: ["Look for fatigue, insomnia, cognitive symptoms, allodynia"]
+      }},
+      { label: "Yes — true synovitis", next: {
+        q: "Which joints, and any systemic clues?",
+        options: [
+          { label: "MCP/PIP/wrists, DIP spared", next: {
+            leaf: true, diagnosis: "Rheumatoid Arthritis",
+            treatment: [
+              "Confirm: RF + anti-CCP (anti-CCP more specific; predicts future RA even with arthralgia alone)",
+              "Confirm inflammatory arthritis >6 weeks",
+              "Start methotrexate unless contraindicated",
+              "NSAIDs/low-dose steroids as bridge only",
+              "If inadequate response: biologic/JAK — anti-TNF, abatacept, tocilizumab, rituximab, or a JAK inhibitor"
+            ],
+            notes: ["Screen TB, hepatitis, and vaccination status before biologics — anti-TNF especially can reactivate TB"]
+          }},
+          { label: "DIP/PIP with bony enlargement, activity-related pain", next: {
+            leaf: true, diagnosis: "Osteoarthritis",
+            treatment: [
+              "No specific serology — RF/anti-CCP negative, ESR/CRP usually normal",
+              "X-ray: joint-space narrowing, osteophytes, subchondral sclerosis, subchondral cysts",
+              "Exercise, weight loss, physiotherapy",
+              "Topical NSAIDs/paracetamol; oral NSAIDs if safe",
+              "Intra-articular steroids for short-term relief",
+              "Joint replacement for severe end-stage large-joint disease"
+            ]
+          }},
+          { label: "Malar/photosensitive rash, cytopenias, serositis", next: {
+            leaf: true, diagnosis: "SLE",
+            treatment: [
+              "Confirm: ANA (sensitive) + anti-dsDNA (nephritis/activity) + anti-Sm (specific) + C3/C4 (low = active)",
+              "Check urine protein/hematuria/RBC casts for nephritis",
+              "All patients: hydroxychloroquine lifelong unless contraindicated",
+              "Mild skin/joint disease: hydroxychloroquine ± NSAIDs/topical steroids",
+              "Moderate systemic disease: steroid bridge + methotrexate/azathioprine/MMF",
+              "Lupus nephritis: hydroxychloroquine + steroids + mycophenolate mofetil",
+              "Severe/refractory organ disease: cyclophosphamide/biologics depending on organ"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-spa",
+  chapter: "Rheumatology",
+  group: "Spondyloarthritis",
+  name: "Inflammatory Back Pain / Seronegative Arthritis",
+  root: {
+    q: "Inflammatory back pain pattern?",
+    clues: ["Onset before 40–45", "Chronic >3 months", "Better with exercise", "Worse with rest/night", "Morning stiffness"],
+    options: [
+      { label: "No", next: {
+        leaf: true, diagnosis: "Not typical inflammatory back pain",
+        treatment: ["Reconsider mechanical back pain or another cause"]
+      }},
+      { label: "Yes", next: {
+        q: "Which additional feature/domain dominates?",
+        clues: ["Uveitis", "Psoriasis", "IBD", "Recent GU/GI infection", "Enthesitis", "Dactylitis", "Family history", "HLA-B27"],
+        options: [
+          { label: "Axial only — no psoriasis/IBD/preceding infection", next: {
+            leaf: true, diagnosis: "Pure Axial SpA",
+            treatment: [
+              "Confirm: RF/anti-CCP negative; HLA-B27 supportive (not diagnostic); ESR/CRP may be elevated",
+              "Imaging: SI joint x-ray; MRI SI joints if early/non-radiographic",
+              "NSAIDs + exercise/physiotherapy (response usually rapid)",
+              "If not controlled: TNF inhibitor (typically first biologic after NSAID failure)",
+              "Second-line: IL-17 inhibitor or JAK inhibitor"
+            ]
+          }},
+          { label: "Psoriasis, nail pitting, dactylitis, DIP disease", next: {
+            leaf: true, diagnosis: "Psoriatic Arthritis",
+            treatment: [
+              "Confirm: RF/anti-CCP usually negative; HLA-B27 if axial disease",
+              "Peripheral polyarthritis: methotrexate",
+              "Axial disease: treat like axial SpA",
+              "Severe skin/nails: IL-17/IL-23/TNF inhibitor depending on IBD and comorbidities"
+            ],
+            notes: ["Treat by domain — peripheral arthritis, axial disease, enthesitis, dactylitis, skin, and nails may each need separate consideration"]
+          }},
+          { label: "1–4 weeks after chlamydia or GI infection, lower-limb oligoarthritis", next: {
+            leaf: true, diagnosis: "Reactive Arthritis",
+            treatment: [
+              "Confirm: RF/anti-CCP negative; HLA-B27 supportive; test/treat chlamydia if relevant",
+              "NSAIDs",
+              "Intra-articular steroids",
+              "Treat the active infection",
+              "DMARD/biologic only if chronic"
+            ],
+            notes: ["Not septic arthritis — a reaction to infection elsewhere; usually self-limited"]
+          }},
+          { label: "Crohn's/UC with peripheral or axial joint disease", next: {
+            leaf: true, diagnosis: "IBD-Associated Arthritis",
+            treatment: [
+              "Confirm: seronegative; HLA-B27 if axial",
+              "Peripheral disease: treat the IBD — usually parallels bowel activity",
+              "Axial disease: NSAIDs cautiously, TNF inhibitor often useful"
+            ],
+            notes: ["Avoid IL-17 inhibitors — not suitable in IBD-associated disease"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-vasculitis",
+  chapter: "Rheumatology",
+  group: "Vasculitis",
+  name: "Suspected Vasculitis",
+  root: {
+    q: "Predominant vessel size / pattern?",
+    clues: ["Palpable purpura", "Glomerulonephritis", "Pulmonary hemorrhage", "Mononeuritis multiplex", "Skin ulcers/nodules"],
+    options: [
+      { label: "Small vessel — ANCA features (ENT, lung, kidney)", next: {
+        q: "Which ANCA pattern / organ combination?",
+        options: [
+          { label: "ENT disease + lung nodules/cavitation + RPGN", next: {
+            leaf: true, diagnosis: "GPA (Granulomatosis with Polyangiitis)",
+            treatment: [
+              "Confirm: PR3-ANCA/c-ANCA most classic",
+              "Organ-threatening disease: high-dose steroids + rituximab or cyclophosphamide",
+              "Maintenance: rituximab, azathioprine, methotrexate, or MMF",
+              "Avacopan can be steroid-sparing"
+            ]
+          }},
+          { label: "Pulmonary hemorrhage + RPGN, no granulomatous ENT disease", next: {
+            leaf: true, diagnosis: "MPA (Microscopic Polyangiitis)",
+            treatment: [
+              "Confirm: MPO-ANCA/p-ANCA most classic",
+              "Organ-threatening disease: high-dose steroids + rituximab or cyclophosphamide",
+              "Maintenance: rituximab, azathioprine, methotrexate, or MMF"
+            ]
+          }},
+          { label: "Asthma + eosinophilia + neuropathy/pulmonary infiltrates", next: {
+            leaf: true, diagnosis: "EGPA (Eosinophilic Granulomatosis with Polyangiitis)",
+            treatment: [
+              "Confirm: MPO/p-ANCA sometimes positive — can be ANCA-negative; eosinophilia is key",
+              "Organ-threatening disease: high-dose steroids + rituximab or cyclophosphamide",
+              "Eosinophilic disease: anti-IL5 (mepolizumab/benralizumab)"
+            ],
+            notes: ["ANCA-negative patients tend toward more lung/cardiac disease; ANCA-positive toward more renal/neuropathy"]
+          }}
+        ]
+      }},
+      { label: "Small vessel — immune-complex features", next: {
+        q: "Which clinical/serologic pattern?",
+        options: [
+          { label: "HCV+, purpura, arthralgia, neuropathy, kidney disease", next: {
+            leaf: true, diagnosis: "Cryoglobulinemic Vasculitis",
+            treatment: [
+              "Confirm: HCV positive, low C4 (often very low), RF positive, cryoglobulins positive",
+              "Treat the HCV",
+              "Rituximab + steroids if significant",
+              "Plasmapheresis if life-threatening"
+            ]
+          }},
+          { label: "Child, post-URI, palpable purpura, abdominal pain, hematuria", next: {
+            leaf: true, diagnosis: "IgA Vasculitis",
+            treatment: [
+              "No standard serum antibody — IgA deposition on biopsy if needed",
+              "Usually supportive",
+              "Steroids for severe GI/joint symptoms",
+              "Nephrology/immunosuppression if severe nephritis"
+            ]
+          }}
+        ]
+      }},
+      { label: "Medium vessel — abdominal pain, neuropathy, renal ischemia, no GN", next: {
+        leaf: true, diagnosis: "Polyarteritis Nodosa (PAN)",
+        treatment: [
+          "Confirm: ANCA negative; HBV positive sometimes; no glomerulonephritis; angiography shows microaneurysms/stenoses; biopsy shows necrotizing medium-vessel vasculitis",
+          "Mild: steroids + methotrexate/azathioprine",
+          "Severe: high-dose steroids + cyclophosphamide",
+          "HBV-associated: antiviral therapy"
+        ]
+      }},
+      { label: "Large vessel, age >50, headache/jaw claudication/visual symptoms", next: {
+        leaf: true, diagnosis: "Giant Cell Arteritis (GCA)",
+        treatment: [
+          "Start high-dose steroids immediately — do not wait for biopsy",
+          "Temporal artery ultrasound (halo sign) or biopsy to confirm",
+          "CTA/MRA/PET-CT if large-vessel disease suspected",
+          "Tocilizumab for steroid-sparing/relapse"
+        ],
+        notes: ["ESR/CRP high; thrombocytosis/anemia common; no specific antibody"]
+      }},
+      { label: "Large vessel, young woman, limb claudication, asymmetric BP/pulses", next: {
+        leaf: true, diagnosis: "Takayasu Arteritis",
+        treatment: ["Imaging: MRA/CTA/PET-CT", "High-dose steroids", "Steroid-sparing immunosuppression/biologics if needed"],
+        notes: ["No specific antibody; ESR/CRP often high"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-myositis",
+  chapter: "Rheumatology",
+  group: "Myositis",
+  name: "Proximal Muscle Weakness (Myositis)",
+  root: {
+    q: "True myopathy? (rising from a chair, climbing stairs, lifting arms, neck weakness, dysphagia — not just pain)",
+    options: [
+      { label: "No — pain without true weakness", next: {
+        leaf: true, diagnosis: "Not a true myopathy",
+        treatment: ["Reconsider PMR, fibromyalgia, or another cause of pain without objective weakness"]
+      }},
+      { label: "Yes", next: {
+        q: "Check CK/aldolase — which clinical/serologic pattern?",
+        clues: ["CK/CPK", "Aldolase", "AST/ALT/LDH (can rise from muscle)", "Troponin if cardiac involvement possible"],
+        options: [
+          { label: "Heliotrope rash, Gottron papules, shawl sign", next: {
+            leaf: true, diagnosis: "Dermatomyositis",
+            treatment: ["Confirm: anti-Mi-2 (classic); ANA may be positive", "High-dose steroids", "Methotrexate/azathioprine", "IVIG/rituximab if refractory"]
+          }},
+          { label: "ILD + mechanic's hands/Raynaud/arthritis", next: {
+            leaf: true, diagnosis: "Anti-Synthetase Syndrome",
+            treatment: ["Confirm: anti-Jo-1 most common (other anti-tRNA synthetase antibodies possible)", "Steroids + a steroid-sparing agent", "If ILD prominent: MMF/tacrolimus/azathioprine/rituximab depending on severity"]
+          }},
+          { label: "Minimal muscle disease, hand ulcers, rapidly progressive ILD, high ferritin", next: {
+            leaf: true, diagnosis: "Anti-MDA5 (Amyopathic) Dermatomyositis",
+            treatment: ["Confirm: anti-MDA5", "Aggressive combination immunosuppression started early"],
+            notes: ["Relatively rare but can be lethal — rapid pulmonary deterioration despite mild muscle disease"]
+          }},
+          { label: "Severe necrotizing weakness, very high CK, statin history", next: {
+            leaf: true, diagnosis: "Immune-Mediated Necrotizing Myopathy",
+            treatment: ["Confirm: anti-HMGCR if statin-associated; anti-SRP if severe dysphagia/cardiac involvement", "Stop the statin if relevant", "High-dose steroids + IVIG/rituximab or other immunosuppression"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-sle-nephritis",
+  chapter: "Rheumatology",
+  group: "SLE & APS",
+  name: "SLE, Nephritis & Complement",
+  root: {
+    q: "ANA ≥1:80 present? (entry criterion)",
+    options: [
+      { label: "No", next: {
+        leaf: true, diagnosis: "SLE unlikely by current classification",
+        treatment: ["ANA ≥1:80 is the required entry gate — reconsider another diagnosis if persistently negative"]
+      }},
+      { label: "Yes", next: {
+        q: "Active nephritis suspected? (abnormal urinalysis, rising creatinine, RBC casts, low complement, anti-dsDNA positive)",
+        options: [
+          { label: "No — skin/joints/serositis/cytopenias only", next: {
+            leaf: true, diagnosis: "SLE — no organ-threatening disease",
+            treatment: [
+              "Hydroxychloroquine (all patients, lifelong unless contraindicated)",
+              "NSAIDs/topical steroids for mild skin/joint disease",
+              "Short steroid course if needed",
+              "Methotrexate/azathioprine if persistent arthritis/skin/systemic symptoms"
+            ]
+          }},
+          { label: "Yes — active nephritis", next: {
+            leaf: true, diagnosis: "Lupus Nephritis",
+            treatment: [
+              "Check urine protein/creatinine ratio, creatinine, RBC casts, C3/C4, anti-dsDNA",
+              "Kidney biopsy if active sediment/proteinuria (\"full-house\" IgG/IgA/IgM/C3/C1q supports lupus nephritis)",
+              "Hydroxychloroquine + steroids as induction/bridge",
+              "Mycophenolate mofetil first-line commonly",
+              "Add/consider a calcineurin inhibitor, especially in class V/membranous",
+              "Cyclophosphamide if severe/refractory/emergency"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-aps",
+  chapter: "Rheumatology",
+  group: "SLE & APS",
+  name: "Thrombosis, Pregnancy Loss & Prolonged PTT (APS)",
+  root: {
+    q: "Which clinical scenario points to antiphospholipid syndrome?",
+    clues: ["Recurrent DVT/PE", "Stroke/MI at young age", "Recurrent pregnancy loss", "Livedo reticularis", "Thrombocytopenia", "Prolonged PTT but clotting clinically"],
+    options: [
+      { label: "First venous thrombosis", next: {
+        leaf: true, diagnosis: "APS — first venous event",
+        treatment: ["Confirm: lupus anticoagulant, anticardiolipin, anti-β2GP1 — repeat positive ≥12 weeks apart", "Warfarin", "Avoid DOACs in high-risk APS"]
+      }},
+      { label: "Arterial thrombosis or recurrent event", next: {
+        leaf: true, diagnosis: "APS — arterial/recurrent",
+        treatment: ["Confirm serology as above; triple positivity = highest risk", "Higher-intensity anticoagulation and/or aspirin addition depending on case", "Avoid DOACs in high-risk APS"]
+      }},
+      { label: "Recurrent pregnancy loss", next: {
+        leaf: true, diagnosis: "APS — pregnancy",
+        treatment: ["Confirm serology as above", "LMWH + aspirin during pregnancy", "Avoid DOACs in high-risk APS"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-raynaud",
+  chapter: "Rheumatology",
+  group: "Systemic Sclerosis",
+  name: "Raynaud / Skin Thickening",
+  root: {
+    q: "Primary or secondary Raynaud?",
+    clues: ["1°: young, symmetric, mild, normal capillaroscopy, no ulcers, negative serology", "2°: later onset, painful/asymmetric, digital ulcers/pitting scars, abnormal capillaroscopy, positive ANA"],
+    options: [
+      { label: "Primary", next: {
+        leaf: true, diagnosis: "Primary Raynaud",
+        treatment: ["Reassurance, cold avoidance", "CCB if symptomatic"]
+      }},
+      { label: "Secondary — systemic sclerosis suspected", next: {
+        q: "Antibody pattern?",
+        options: [
+          { label: "Anti-centromere", next: {
+            leaf: true, diagnosis: "Limited SSc / CREST",
+            treatment: ["Raynaud: CCB", "GERD: PPI", "Screen for pulmonary arterial hypertension — higher risk with this antibody"]
+          }},
+          { label: "Anti-topoisomerase I (Scl-70)", next: {
+            leaf: true, diagnosis: "Diffuse SSc",
+            treatment: ["Raynaud: CCB", "GERD: PPI", "Screen for ILD — higher risk with this antibody; treat with MMF/rituximab/cyclophosphamide/nintedanib depending on severity"]
+          }},
+          { label: "Anti-RNA polymerase III", next: {
+            leaf: true, diagnosis: "SSc — renal crisis risk",
+            treatment: ["Raynaud: CCB", "GERD: PPI", "Renal crisis: ACE inhibitor immediately if it occurs"],
+            notes: ["Do not give prophylactic ACEi without a crisis — routine use is not recommended"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-rheum-fmf",
+  chapter: "Rheumatology",
+  group: "Autoinflammatory Disease",
+  name: "Recurrent Fever / Serositis",
+  root: {
+    q: "Recurrent self-limited attacks with symptom-free intervals, and no autoantibodies?",
+    options: [
+      { label: "No", next: {
+        leaf: true, diagnosis: "Consider classic autoimmune disease instead",
+        treatment: ["Autoinflammatory pattern not met — reconsider an autoantibody-driven diagnosis"]
+      }},
+      { label: "Yes", next: {
+        q: "Mediterranean background, 1–3 day attacks, family history, colchicine-responsive?",
+        clues: ["Fever + peritonitis/pleuritis", "Lower-limb monoarthritis", "Erysipelas-like erythema"],
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Familial Mediterranean Fever (FMF)",
+            treatment: [
+              "Diagnosis is clinical (genetic testing supportive, not always diagnostic)",
+              "Colchicine lifelong — prevents attacks and AA amyloidosis",
+              "Monitor proteinuria for AA amyloidosis",
+              "Anti-IL1 therapy if colchicine-resistant"
+            ]
+          }},
+          { label: "No", next: {
+            leaf: true, diagnosis: "Other autoinflammatory syndrome",
+            treatment: ["Diagnosis is clinical/inflammatory-marker/genetics-based — no specific autoantibody test", "Specialist referral for further genetic workup"]
+          }}
         ]
       }}
     ]

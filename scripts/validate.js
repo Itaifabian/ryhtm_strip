@@ -202,6 +202,7 @@ function main() {
       else if (treeIds.has(t.id)) err(`${label}: duplicate id`);
       else treeIds.add(t.id);
       if (!t.chapter) err(`${label}: missing chapter`);
+      else if (!KNOWN_CHAPTERS.has(t.chapter)) err(`${label}: chapter '${t.chapter}' is not a known chapter`);
       if (!t.group) err(`${label}: missing group`);
       if (!t.name) err(`${label}: missing name`);
       walkNode(t.root, label, 0);
