@@ -97,13 +97,14 @@ the `q` sentence itself.
 
 Rules:
 - `id` must be unique across `DIAGNOSTIC_TREES`.
+- `chapter` must be one of the app's existing chapters (same `KNOWN_CHAPTERS` list `validate.js` checks Past Exams against).
 - `group` is purely for nav organization (mirrors the disease-family groupings used elsewhere in the app, e.g. `"Acute Coronary Syndrome"`, `"Heart Failure"`, `"Pulmonary Embolism"`) — pick an existing group when a new tree belongs with others, or introduce a new group name for a new disease family.
 - A decision node has `q` (the test/finding, phrased as a short question), an optional `clues` array (short recognition tags, not full sentences), and `options` (2+ items, each `{label, next}`); `next` is itself a node (nested arbitrarily deep).
 - A leaf node has `leaf: true`, `diagnosis`, a `treatment` array (short bullet fragments, most important first), and an optional `notes` array (short escalation/caveat bullets, e.g. "Shock → urgent PCI + IABP/Impella + pressors" — a good place for a related complication or cross-cutting rule, like anticoagulation choice, that doesn't need its own branch point).
 - Keep every bullet short — a few words, not a clause-laden sentence.
 - Order branches the way a clinician would actually sequence the workup (most specific/urgent test first), not alphabetically. When a disease group's topics form a real differential (e.g. STEMI vs NSTEMI vs unstable angina), branch on the test/finding that actually separates them; when a group is really one disease staged by severity/risk (e.g. aortic stenosis), branch on the situational factors that change management instead.
 - Ground every question, clue, and leaf bullet in an actual source (lecture material, or a previously-reviewed PR) — never invent a diagnostic threshold, dose, or recommendation.
-- `validate.js` walks the tree recursively and checks: unique tree ids, required `chapter`/`group`/`name`, every decision node has `q` + 2+ labeled options (+ non-empty `clues` array if present), every leaf has `diagnosis` + a non-empty `treatment` array (+ non-empty `notes` array if present).
+- `validate.js` walks the tree recursively and checks: unique tree ids, required `chapter` (must be a known chapter) / `group` / `name`, every decision node has `q` + 2+ labeled options (+ non-empty `clues` array if present), every leaf has `diagnosis` + a non-empty `treatment` array (+ non-empty `notes` array if present).
 
 ---
 

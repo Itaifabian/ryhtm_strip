@@ -1461,6 +1461,20 @@ function buildCaseChapterFilter(){
     var o=document.createElement('option');o.value=ch;o.textContent=ch;s.appendChild(o);
   });
 }
+function caseTreeSearchText(tree){
+  var parts=[tree.name,tree.group,tree.chapter];
+  var walk=function(node){
+    if(!node)return;
+    if(node.leaf){parts.push(node.diagnosis)}
+    else{
+      parts.push(node.q);
+      if(node.clues)parts.push(node.clues.join(' '));
+      (node.options||[]).forEach(function(o){parts.push(o.label);walk(o.next)});
+    }
+  };
+  walk(tree.root);
+  return parts.join(' ').toLowerCase();
+}
 function renderCaseTreeNav(){
   var nav=el('caseTreeNav');if(!nav)return;
   var chapterFilter=el('caseChapterFilter')?el('caseChapterFilter').value:'all';
@@ -1468,8 +1482,7 @@ function renderCaseTreeNav(){
   var trees=allDiagnosticTrees().filter(function(t){
     if(chapterFilter!=='all'&&t.chapter!==chapterFilter)return false;
     if(!term)return true;
-    var hay=(t.name+' '+t.group+' '+t.chapter).toLowerCase();
-    return hay.indexOf(term)>=0;
+    return caseTreeSearchText(t).indexOf(term)>=0;
   });
   if(!trees.length){
     nav.innerHTML='<div class="cg-nav-empty">No matches.</div>';
