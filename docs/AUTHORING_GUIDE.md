@@ -128,11 +128,21 @@ const EXTRA_RHEUM_QUIZ = {
 
 The build merges these into the matching topic's `quiz` at load time. `validate.js` errors if a key isn't a real topic id.
 
+### `EXTRA_PASTEXAM_QUIZ` — generated, don't hand-edit
+
+`27-exam-practice-quiz.js` is a special extra-quiz map: every question from `PAST_EXAMS` (see below), scattered round-robin across the existing topics in that question's tagged chapter, so exam questions surface naturally in per-topic Quiz and Mixed Quiz alongside authored questions. It's generated from `PAST_EXAMS`, not hand-authored — if a past exam changes, regenerate this file rather than editing it directly (add a script under `scripts/` if this needs to happen more than once).
+
+Two schema differences from a normal extra-quiz entry:
+- `rtl: true` on every item — these are Hebrew stems/options, and the Quiz view uses this flag to render that specific question's stem/options/image caption with `dir="rtl"` (per-question, since it's mixed into topics that are otherwise English/LTR).
+- No `explain` field, ever — the source exams provide no rationale. The Quiz view hides the explain panel gracefully when `explain` is absent (checked before rendering) instead of showing a blank or `"undefined"` box.
+
 ---
 
 ## Past exams
 
 A **Past Exams** array holds one or more full historical exams, shown as-is in their original language (right-to-left where applicable), distinct from the topic/quiz system: no flashcards, no fabricated `explain` text (only transcribe a rationale if the source actually provides one — most exam answer keys don't), and each question carries a `chapter` tag from the app's existing chapter list rather than living inside a specific topic.
+
+Unlike the regular Quiz view, the exam UI never reveals correct/wrong per question — picking an option just locks it in with a neutral highlight (real exam conditions: you don't find out how you did until you're done). The results screen shows the score/subject breakdown plus a **per-question navigator grid** (green = correct, red = incorrect); tapping any number opens a read-only review of that question (correct option highlighted, your pick highlighted if wrong), with Prev/Next to flip through the whole exam and a link back to the results screen.
 
 - Exams live in `21-past-exams.js` → `const PAST_EXAMS = [ … ]`
 - Any embedded images (ECGs, photos, gram stains, etc.) live in an earlier-sorting file, `20-past-exam-images.js` → `const PAST_EXAM_IMAGES = { … }`, following the same image-file-loads-before-data-file convention as `11-radiology-images.js`.
