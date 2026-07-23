@@ -2,8 +2,8 @@
 // Each tree starts from a presenting problem and branches on real test results/clinical findings
 // (not a quiz — no distractors) until it reaches a specific diagnosis and its treatment.
 // Cardiology entries are condensed from this app's former CASE_GUIDES reference (since removed as
-// redundant — every fact traces back to it); Rheumatology entries are condensed from a
-// clinician-supplied rheumatology summary. All content is short bullet fragments for at-a-glance
+// redundant — every fact traces back to it); Rheumatology and Nephrology entries are condensed from
+// clinician-supplied chapter summaries. All content is short bullet fragments for at-a-glance
 // scanning. `group` mirrors the disease-family grouping used throughout the rest of the app, so the
 // Cases tab nav can be browsed/searched by chapter → group → tree. See docs/AUTHORING_GUIDE.md for
 // the schema.
@@ -1102,6 +1102,603 @@ const DIAGNOSTIC_TREES = [
             treatment: ["Diagnosis is clinical/inflammatory-marker/genetics-based — no specific autoantibody test", "Specialist referral for further genetic workup"]
           }}
         ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-triage",
+  chapter: "Nephrology",
+  group: "General Approach",
+  name: "Nephrology Triage — What's the Main Problem?",
+  root: {
+    q: "Which pattern fits best?",
+    options: [
+      { label: "Electrolyte / osmolality problem", next: {
+        leaf: true, diagnosis: "Electrolyte / Osmolality Problem",
+        treatment: ["Check: Na, K, osmolality, urine osmolality, urine Na"]
+      }},
+      { label: "Kidney injury", next: {
+        leaf: true, diagnosis: "Kidney Injury",
+        treatment: ["Check: creatinine trend, oliguria/anuria, urine sediment, renal ultrasound"]
+      }},
+      { label: "Glomerular problem", next: {
+        leaf: true, diagnosis: "Glomerular Problem",
+        treatment: ["Check: proteinuria, hematuria, RBC casts, dysmorphic RBCs, edema, HTN"]
+      }},
+      { label: "Hypertension", next: {
+        leaf: true, diagnosis: "Hypertension",
+        treatment: ["Determine primary vs secondary, and emergency vs chronic"]
+      }},
+      { label: "Acid-base problem", next: {
+        leaf: true, diagnosis: "Acid-Base Problem",
+        treatment: ["Check: pH, HCO3, PCO2, anion gap, compensation"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-hypernatremia",
+  chapter: "Nephrology",
+  group: "Sodium & Water",
+  name: "Hypernatremia",
+  root: {
+    q: "Volume status? (Na >145)",
+    options: [
+      { label: "Hypovolemic", next: {
+        leaf: true, diagnosis: "Hypovolemic Hypernatremia",
+        treatment: [
+          "Most common pattern",
+          "Dehydration/loss of hypotonic fluids: sweating, GI/respiratory water loss, vomiting, osmotic diarrhea, osmotic diuresis (glucose/urea)",
+          "Treatment: fluids"
+        ],
+        notes: ["Acute (<48h): correct over ~24h. Chronic: correct slowly, up to ~10 mEq/day, to avoid cerebral edema"]
+      }},
+      { label: "Euvolemic", next: {
+        q: "Urine osmolality?",
+        options: [
+          { label: "<300", next: {
+            q: "Responds to desmopressin?",
+            options: [
+              { label: "Yes — central", next: {
+                leaf: true, diagnosis: "Central Diabetes Insipidus",
+                treatment: ["Cause: low ADH secretion — trauma, malignancy, granuloma, infection, toxins", "Treatment: desmopressin, low-salt diet"],
+                notes: ["Acute (<48h): correct over ~24h. Chronic: correct slowly, up to ~10 mEq/day, to avoid cerebral edema"]
+              }},
+              { label: "No — nephrogenic", next: {
+                leaf: true, diagnosis: "Nephrogenic Diabetes Insipidus",
+                treatment: ["Cause: renal resistance to ADH — congenital, lithium, hypercalcemia", "Treatment: low-salt diet, thiazide, NSAID"],
+                notes: ["Acute (<48h): correct over ~24h. Chronic: correct slowly, up to ~10 mEq/day, to avoid cerebral edema"]
+              }}
+            ]
+          }},
+          { label: "300–600", next: {
+            leaf: true, diagnosis: "Partial DI or Osmotic Diuresis",
+            treatment: ["Look for a specific cause — partial DI vs osmotic diuresis (glucose, urea, mannitol)"]
+          }},
+          { label: ">600", next: {
+            leaf: true, diagnosis: "Dehydration with Intact ADH Response",
+            treatment: ["Appropriate ADH response to volume depletion", "Treatment: free water repletion"]
+          }}
+        ]
+      }},
+      { label: "Hypervolemic", next: {
+        leaf: true, diagnosis: "Hypervolemic Hypernatremia",
+        treatment: ["Rare — sodium gain (iatrogenic sodium/fluids)", "Treatment: treat the root cause, diuretics, hypotonic fluids"],
+        notes: ["Acute (<48h): correct over ~24h. Chronic: correct slowly, up to ~10 mEq/day, to avoid cerebral edema"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-hyponatremia",
+  chapter: "Nephrology",
+  group: "Sodium & Water",
+  name: "Hyponatremia",
+  root: {
+    q: "Serum osmolality? (Na <135)",
+    options: [
+      { label: "Normal (isotonic)", next: {
+        leaf: true, diagnosis: "Pseudohyponatremia",
+        treatment: ["Cause: hypertriglyceridemia, high proteins (e.g. multiple myeloma)", "No true water excess — treat the underlying cause, not with fluid restriction"]
+      }},
+      { label: "High (hypertonic)", next: {
+        leaf: true, diagnosis: "Hyperglycemia-Induced Hyponatremia",
+        treatment: ["Glucose pulls water out of cells, lowering measured Na", "Correct/normalize as glucose is treated — not true hyponatremia"]
+      }},
+      { label: "Low (hypotonic)", next: {
+        q: "Severe neurologic symptoms (seizures, severe confusion)?",
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "Symptomatic Severe Hyponatremia",
+            treatment: ["3% hypertonic saline, carefully", "Goal: avoid osmotic demyelination syndrome from overly rapid correction"],
+            notes: ["In high-risk hypovolemic hyponatremia, may aim for only 4–6 mEq rise in 24h"]
+          }},
+          { label: "No", next: {
+            q: "Urine osmolality?",
+            options: [
+              { label: "Very low (~50–100)", next: {
+                leaf: true, diagnosis: "Primary Polydipsia",
+                treatment: ["Excessive water intake overwhelms free water excretion", "Treatment: fluid restriction; address the drive to drink"]
+              }},
+              { label: "High (ADH active)", next: {
+                q: "Volume status?",
+                options: [
+                  { label: "Hypervolemic", next: {
+                    leaf: true, diagnosis: "Hypervolemic Hyponatremia",
+                    treatment: ["Causes: heart failure, cirrhosis, nephrotic syndrome", "Mechanism: low effective arterial blood volume → RAAS/ADH activation", "Treatment: fluid restriction, loop diuretic"]
+                  }},
+                  { label: "Euvolemic", next: {
+                    leaf: true, diagnosis: "Euvolemic Hyponatremia (SIADH and other causes)",
+                    treatment: [
+                      "SIADH causes: CNS disease, lung infections, nausea, malignancy, drugs",
+                      "Other causes: CKD, hypothyroidism, Addison's disease, MDMA",
+                      "SIADH treatment: treat the cause, fluid restriction, PO/IV salt, furosemide, vaptans in selected cases"
+                    ],
+                    notes: ["Avoid isotonic saline in SIADH if urine osmolality >300 — it can worsen the hyponatremia"]
+                  }},
+                  { label: "Hypovolemic", next: {
+                    leaf: true, diagnosis: "Hypovolemic Hyponatremia",
+                    treatment: ["Causes: vomiting, diarrhea, diuretics (especially thiazides), renal salt wasting/kidney disease", "Treatment: isotonic saline"]
+                  }}
+                ]
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-hypokalemia",
+  chapter: "Nephrology",
+  group: "Potassium",
+  name: "Hypokalemia",
+  root: {
+    q: "Redistribution into cells, or true potassium loss? (K <3.5)",
+    clues: ["Danger: K<2.5–3", "Severe weakness/paralysis", "Arrhythmia", "ECG: low T waves, U waves, ST depression"],
+    options: [
+      { label: "Redistribution", next: {
+        leaf: true, diagnosis: "Hypokalemia from Redistribution",
+        treatment: [
+          "Causes: insulin, beta-adrenergic stimulation, alkalosis, hypokalemic periodic paralysis, high proliferative states, post-B12/folate/G-CSF treatment",
+          "Treat the trigger; repletion often needed only if severe"
+        ]
+      }},
+      { label: "True loss", next: {
+        q: "Acid-base pattern?",
+        options: [
+          { label: "Metabolic alkalosis", next: {
+            leaf: true, diagnosis: "Hypokalemia + Metabolic Alkalosis",
+            treatment: [
+              "Causes: vomiting, diuretics, Bartter syndrome, Gitelman syndrome, hyperaldosteronism/mineralocorticoid excess",
+              "Check urine K: high = renal wasting, low = extrarenal loss",
+              "Replete potassium (PO if mild/moderate, IV if severe); replete magnesium if low"
+            ]
+          }},
+          { label: "Metabolic acidosis", next: {
+            leaf: true, diagnosis: "Hypokalemia + Metabolic Acidosis",
+            treatment: [
+              "Causes: diarrhea, renal tubular acidosis (RTA)",
+              "Check urine K: high = renal wasting (RTA), low = extrarenal (diarrhea)",
+              "Replete potassium (PO if mild/moderate, IV if severe); replete magnesium if low"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-hyperkalemia",
+  chapter: "Nephrology",
+  group: "Potassium",
+  name: "Hyperkalemia",
+  root: {
+    q: "Real hyperkalemia, or pseudohyperkalemia? (K >5)",
+    clues: ["Pseudo: hemolysis/cell lysis in the tube", "Thrombocytosis/leukocytosis", "Difficult blood draw"],
+    options: [
+      { label: "Pseudohyperkalemia", next: {
+        leaf: true, diagnosis: "Pseudohyperkalemia",
+        treatment: ["Repeat the sample properly before treating", "No treatment needed once confirmed artifactual"]
+      }},
+      { label: "Real hyperkalemia", next: {
+        q: "Dangerous ECG changes or symptoms?",
+        clues: ["Severe weakness/paralysis", "Conduction defects: LBBB, RBBB, AV block", "Peaked/hyperacute T waves", "VT/VF"],
+        options: [
+          { label: "Yes — unstable", next: {
+            leaf: true, diagnosis: "Hyperkalemia — Unstable",
+            treatment: [
+              "1) Stabilize the myocardium: calcium gluconate/chloride",
+              "2) Shift K into cells: insulin + glucose, beta-agonist inhalation, bicarbonate if metabolic acidosis",
+              "3) Remove K from the body: saline + furosemide if kidneys work, potassium binders, dialysis if severe/refractory"
+            ]
+          }},
+          { label: "No — stable", next: {
+            leaf: true, diagnosis: "Hyperkalemia — Stable",
+            treatment: [
+              "Shift K into cells: insulin + glucose, beta-agonist inhalation",
+              "Remove K from the body: saline + furosemide if kidneys work, potassium binders, dialysis if severe/refractory"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-aki",
+  chapter: "Nephrology",
+  group: "AKI",
+  name: "Acute Kidney Injury",
+  root: {
+    q: "Obstruction present?",
+    clues: ["Anuria", "Urinary retention", "BPH", "Renal colic", "Malignancy", "Neurogenic bladder", "Hydronephrosis on imaging"],
+    options: [
+      { label: "Yes — post-renal", next: {
+        leaf: true, diagnosis: "Post-Renal AKI",
+        treatment: ["Renal/bladder ultrasound ± urinary catheter to relieve obstruction", "Treat the underlying obstructive cause"],
+        notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+      }},
+      { label: "No obstruction", next: {
+        q: "Pre-renal or intrinsic?",
+        options: [
+          { label: "Pre-renal", next: {
+            leaf: true, diagnosis: "Pre-Renal AKI",
+            treatment: [
+              "Causes: hypovolemia, shock, cardiorenal syndrome, hepatorenal syndrome, NSAIDs (afferent arteriole constriction), ACEi/ARB (efferent arteriole dilation)",
+              "Findings: hypotension/orthostasis/tachycardia, bland sediment, low urine Na, low FENa, high urine osmolality, high urea",
+              "Fluid-responsiveness test: GFR/creatinine should improve with fluids"
+            ],
+            notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+          }},
+          { label: "Intrinsic", next: {
+            q: "Urine sediment / clinical clue?",
+            options: [
+              { label: "Muddy brown casts", next: {
+                leaf: true, diagnosis: "Acute Tubular Necrosis (ATN)",
+                treatment: [
+                  "Causes: prolonged ischemia, sepsis, nephrotoxins (aminoglycosides, antivirals/antifungals, cisplatin, contrast)",
+                  "Findings: muddy brown casts, oliguria/anuria, low urine osmolality, FENa >2%, urine Na >40",
+                  "Treatment: supportive; remove the offending nephrotoxin"
+                ],
+                notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+              }},
+              { label: "Fever/rash/eosinophilia, WBC casts", next: {
+                leaf: true, diagnosis: "Acute Interstitial Nephritis (AIN)",
+                treatment: [
+                  "Drug hypersensitivity, usually days to weeks after exposure",
+                  "Causes: antibiotics, PPIs, NSAIDs, infections, granulomatous disease",
+                  "Findings: fever, rash, eosinophilia, malaise, uveitis/TINU, leukocyturia, WBC casts, mild proteinuria",
+                  "Treatment: stop the offending drug; steroids if persistent"
+                ],
+                notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+              }},
+              { label: "RBC casts, dysmorphic RBCs, proteinuria, HTN", next: {
+                leaf: true, diagnosis: "Acute GN / RPGN",
+                treatment: [
+                  "Categories: immune complex GN, anti-GBM disease, ANCA vasculitis, lupus nephritis, IgA nephropathy, post-infectious GN",
+                  "See the Nephritic Syndrome tree for the specific differential and treatment"
+                ],
+                notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+              }},
+              { label: "Thrombocytopenia, MAHA, high LDH", next: {
+                leaf: true, diagnosis: "Thrombotic Microangiopathy (TMA)",
+                treatment: [
+                  "Findings: AKI, thrombocytopenia, microangiopathic hemolytic anemia, high LDH/bilirubin, severe HTN",
+                  "Urgent hematology/nephrology involvement — treat the specific TMA syndrome (e.g. TTP, HUS, malignant HTN)"
+                ],
+                notes: ["Dialysis indications (AEIOU): severe Acidosis, Electrolyte derangement (esp. hyperkalemia), Intoxication, volume Overload, Uremia — also drug-resistant HTN and pH <7.1"]
+              }}
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-nephrotic",
+  chapter: "Nephrology",
+  group: "Glomerular Disease",
+  name: "Nephrotic Syndrome",
+  root: {
+    q: "Which clue best fits?",
+    clues: ["Proteinuria >3.5g/day", "Hypoalbuminemia", "Edema", "Hypercholesterolemia", "Urine: lipid droplets, oval fat bodies, fatty casts, Maltese cross crystals"],
+    options: [
+      { label: "Children, or 2° to hematologic cancer/drugs/autoimmune", next: {
+        leaf: true, diagnosis: "Minimal Change Disease",
+        treatment: ["Most common in children; can be secondary to hematologic malignancy, drugs, or autoimmune disease", "Treatment: steroids first-line"],
+        notes: ["General nephrotic principles: ACEi/ARB to reduce proteinuria, low-salt diet + furosemide for edema, statin for hyperlipidemia, immunization (infection risk)"]
+      }},
+      { label: "Most common cause overall; 2° to obesity/HIV/heroin/interferon", next: {
+        leaf: true, diagnosis: "FSGS",
+        treatment: ["Primary (idiopathic), or secondary to obesity, HIV, heroin, interferon, chronic kidney disease", "Treatment: steroids/immunosuppression (primary); treat the cause (secondary)"],
+        notes: ["General nephrotic principles: ACEi/ARB to reduce proteinuria, low-salt diet + furosemide for edema, statin for hyperlipidemia, immunization (infection risk)"]
+      }},
+      { label: "Adult nephrotic, associated with malignancy/infection/NSAIDs", next: {
+        leaf: true, diagnosis: "Membranous Nephropathy",
+        treatment: ["Classic adult nephrotic syndrome cause", "Associations: malignancy, infections, NSAIDs — screen for these", "Anticoagulation if very low albumin — high thrombosis risk"],
+        notes: ["General nephrotic principles: ACEi/ARB to reduce proteinuria, low-salt diet + furosemide for edema, statin for hyperlipidemia, immunization (infection risk)"]
+      }},
+      { label: "Chronic inflammatory or hematologic disease", next: {
+        leaf: true, diagnosis: "Amyloidosis (AL/AA)",
+        treatment: ["AL (plasma-cell dyscrasia) or AA (chronic inflammatory disease)", "Treat the underlying plasma-cell or inflammatory disease"],
+        notes: ["General nephrotic principles: ACEi/ARB to reduce proteinuria, low-salt diet + furosemide for edema, statin for hyperlipidemia, immunization (infection risk)"]
+      }},
+      { label: "Long-standing diabetes, albuminuria", next: {
+        leaf: true, diagnosis: "Diabetic Nephropathy",
+        treatment: ["Most common adult cause of nephrotic-range proteinuria overall", "Treatment: ACEi/ARB, SGLT2 inhibitor, glycemic control"],
+        notes: ["General nephrotic principles: low-salt diet + furosemide for edema, statin for hyperlipidemia, low-protein diet in selected patients"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-nephritic",
+  chapter: "Nephrology",
+  group: "Glomerular Disease",
+  name: "Nephritic Syndrome",
+  root: {
+    q: "Which clue best fits?",
+    clues: ["Hematuria", "Oliguria", "HTN", "Proteinuria (usually 1.5–3g/day)", "Edema", "RBC casts + dysmorphic RBCs = glomerular disease"],
+    options: [
+      { label: "Repeated post-infectious hematuria (esp. with URI)", next: {
+        leaf: true, diagnosis: "IgA Nephropathy",
+        treatment: ["Classic: gross hematuria episodes concurrent with or shortly after a URI", "Treatment: supportive (ACEi/ARB, BP control) ± steroids/immunosuppression if progressive"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }},
+      { label: "ASLO/anti-DNase B positive, often self-limited", next: {
+        leaf: true, diagnosis: "Post-Infectious GN",
+        treatment: ["Follows streptococcal (or other) infection", "Usually self-limited — supportive care"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }},
+      { label: "ANA, anti-dsDNA, anti-Sm, anti-cardiolipin positive", next: {
+        leaf: true, diagnosis: "Lupus Nephritis",
+        treatment: ["Treatment: steroids + immunosuppression (e.g. mycophenolate mofetil)"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }},
+      { label: "GPA/MPA/EGPA, pauci-immune", next: {
+        leaf: true, diagnosis: "ANCA Vasculitis",
+        treatment: ["Treatment: steroids + immunosuppression (e.g. rituximab or cyclophosphamide)"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }},
+      { label: "RPGN ± pulmonary hemorrhage", next: {
+        leaf: true, diagnosis: "Anti-GBM Disease (Goodpasture)",
+        treatment: ["Treatment: steroids + immunosuppression + plasmapheresis"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }},
+      { label: "HCV+, RF+, low complement", next: {
+        leaf: true, diagnosis: "Cryoglobulinemia",
+        treatment: ["Often mild renal disease", "Treatment: treat the underlying HCV"],
+        notes: ["General nephritic support: low-salt diet, ACEi/ARB, diuretics"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-htn",
+  chapter: "Nephrology",
+  group: "Hypertension",
+  name: "Hypertension",
+  root: {
+    q: "Hypertensive emergency? (severe BP + acute target-organ damage)",
+    clues: ["Encephalopathy", "Stroke", "Pulmonary edema", "ACS", "AKI", "Aortic dissection", "Papilledema", "TMA/hemolysis"],
+    options: [
+      { label: "Yes — emergency", next: {
+        leaf: true, diagnosis: "Hypertensive Emergency",
+        treatment: ["IV BP-lowering, tailored to the specific syndrome (e.g. stroke, dissection, pulmonary edema)", "Identify and treat the specific target-organ process driving urgency"]
+      }},
+      { label: "No acute organ damage", next: {
+        q: "Primary or secondary HTN?",
+        clues: ["Suspect secondary: young patient, resistant HTN, acute severe onset, hypokalemia, renal dysfunction after ACEi/ARB, episodic headache/sweating/palpitations, renal bruit, OSA, pregnancy/eclampsia, drug-induced"],
+        options: [
+          { label: "Primary (essential) HTN", next: {
+            leaf: true, diagnosis: "Primary Hypertension",
+            treatment: [
+              "Lifestyle: self-monitoring, weight/diet control, physical activity",
+              "Drug choice by phenotype: young/proteinuric/diabetic → ACEi/ARB; older → CCB or diuretic; ischemic heart disease/tachycardia → beta-blocker; HF/volume overload → diuretics plus HF regimen"
+            ]
+          }},
+          { label: "Suspected renovascular disease", next: {
+            leaf: true, diagnosis: "Renovascular Hypertension",
+            treatment: [
+              "Clues: severe/resistant HTN, acute presentation, renal artery bruit, renal asymmetry, worsening renal function after ACEi/ARB, high renin",
+              "Causes: renal artery stenosis, fibromuscular dysplasia (esp. young women/smokers)",
+              "Diagnosis: renal artery imaging (Doppler US, CTA/MRA)"
+            ]
+          }},
+          { label: "Suspected primary hyperaldosteronism", next: {
+            leaf: true, diagnosis: "Primary Hyperaldosteronism",
+            treatment: [
+              "Clues: severe/resistant HTN; hypokalemia may be absent; high aldosterone:renin ratio",
+              "Confirm: saline loading — aldosterone should suppress; failure to suppress confirms the diagnosis",
+              "Then: imaging + adrenal venous sampling",
+              "Surgery if unilateral; mineralocorticoid receptor antagonist if bilateral"
+            ]
+          }},
+          { label: "Suspected pheochromocytoma", next: {
+            leaf: true, diagnosis: "Pheochromocytoma",
+            treatment: [
+              "Clues: paroxysmal headache, sweating, tachycardia",
+              "Test: plasma/urine metanephrine and normetanephrine",
+              "Treatment: surgery after alpha-blockade, then beta-blockade if needed — never beta-block first"
+            ]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-ckd",
+  chapter: "Nephrology",
+  group: "CKD",
+  name: "Chronic Kidney Disease",
+  root: {
+    q: "Confirm chronicity — persistent low eGFR (<60) for >3 months, or a structural/functional abnormality?",
+    clues: ["Albuminuria", "Pathological casts", "Abnormal imaging", "Abnormal biopsy"],
+    options: [
+      { label: "Not confirmed chronic", next: {
+        leaf: true, diagnosis: "Not Yet CKD",
+        treatment: ["Re-check GFR/urine findings — CKD requires persistence beyond 3 months, or a clear structural/functional abnormality"]
+      }},
+      { label: "CKD confirmed", next: {
+        q: "GFR stage?",
+        options: [
+          { label: "Stage I–II (GFR >60, pathological finding)", next: {
+            leaf: true, diagnosis: "CKD Stage I–II",
+            treatment: ["Identify and treat the cause (diabetes, hypertension, chronic GN, ADPKD/cystic disease, cardiorenal syndrome)", "BP control, ACEi/ARB if proteinuric, low-salt diet, SGLT2 inhibitor for proteinuria/progression"],
+            notes: ["Renal biopsy generally recommended unless there's a known cause with typical presentation, small cystic kidneys, longstanding severe HTN, or active UTI"]
+          }},
+          { label: "Stage III (GFR 30–60)", next: {
+            leaf: true, diagnosis: "CKD Stage III",
+            treatment: ["Same management as I–II, plus avoid/adjust nephrotoxic drugs (NSAIDs, contrast, gadolinium caution below GFR 30, metformin caution below GFR 45)", "Monitor for early complications: anemia, mild acid-base/electrolyte changes"],
+            notes: ["Renal biopsy generally recommended unless there's a known cause with typical presentation, small cystic kidneys, longstanding severe HTN, or active UTI"]
+          }},
+          { label: "Stage IV (GFR 15–30)", next: {
+            leaf: true, diagnosis: "CKD Stage IV",
+            treatment: ["Intensify complication management: anemia (ESA/iron), CKD-MBD (phosphate control), acidosis correction", "Refer for dialysis/transplant planning"],
+            notes: ["Renal biopsy generally recommended unless there's a known cause with typical presentation, small cystic kidneys, longstanding severe HTN, or active UTI"]
+          }},
+          { label: "Stage V (GFR <15)", next: {
+            leaf: true, diagnosis: "CKD Stage V (ESRD range)",
+            treatment: ["Dialysis/transplant range", "Manage uremic symptoms and prepare access/transplant workup"]
+          }}
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-ckd-complications",
+  chapter: "Nephrology",
+  group: "CKD",
+  name: "CKD Complications",
+  root: {
+    q: "Which complication?",
+    options: [
+      { label: "Anemia", next: {
+        leaf: true, diagnosis: "CKD-Associated Anemia",
+        treatment: ["Pattern: normocytic normochromic, from low erythropoietin ± iron deficiency", "Treatment: iron repletion if needed, ESA, target Hb ~10–11 (higher targets cause harm)"]
+      }},
+      { label: "Bone/mineral disease", next: {
+        leaf: true, diagnosis: "CKD-MBD",
+        treatment: [
+          "Mechanism: low vitamin D → high FGF23, hyperphosphatemia, hypocalcemia, high PTH",
+          "Patterns: osteitis fibrosa cystica (high PTH/turnover), adynamic bone disease (low PTH/turnover), osteomalacia (mineralization defect)",
+          "Treatment: reduce phosphate (diet, binders), vitamin D analogs, cinacalcet, dialysis, parathyroidectomy if refractory"
+        ]
+      }},
+      { label: "Acidosis", next: {
+        leaf: true, diagnosis: "CKD-Associated Acidosis",
+        treatment: ["Usually mild until advanced CKD/ESRD", "Treat with sodium bicarbonate when HCO3 is low (e.g. <18)"]
+      }},
+      { label: "Hyperkalemia", next: {
+        leaf: true, diagnosis: "CKD-Associated Hyperkalemia",
+        treatment: ["Often iatrogenic — RAAS inhibitors, beta-blockers", "Dietary potassium restriction; GI potassium binders if needed"]
+      }},
+      { label: "Uremia / dialysis planning", next: {
+        leaf: true, diagnosis: "Uremic Syndrome",
+        treatment: [
+          "Features: anorexia/malnutrition, GI ulcers, bleeding tendency, neuropathy, encephalopathy, pericarditis, pleuritis, systemic inflammation",
+          "Acute dialysis indications: persistent HTN, hyperkalemia, acidosis, uremic pericarditis/pleuritis, neuropathy/encephalopathy, or GFR <5–7"
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-metabolic-acidosis",
+  chapter: "Nephrology",
+  group: "Acid-Base",
+  name: "Metabolic Acidosis",
+  root: {
+    q: "Anion gap?",
+    clues: ["AG = Na − (Cl + HCO3), normal 5–12", "Correct for albumin: each 1g/dL drop ≈ +2.5 to expected AG"],
+    options: [
+      { label: "Normal AG (NAGMA)", next: {
+        q: "Urine anion gap (= urine Na + urine K − urine Cl)?",
+        options: [
+          { label: "Negative (< −20)", next: {
+            leaf: true, diagnosis: "NAGMA — Extrarenal Bicarbonate Loss",
+            treatment: ["Think: diarrhea (GI bicarbonate loss)", "Treat the underlying GI cause; replace bicarbonate/potassium as needed"]
+          }},
+          { label: "Positive (>20)", next: {
+            q: "Which RTA pattern?",
+            options: [
+              { label: "Low K, urine pH >5.3", next: {
+                leaf: true, diagnosis: "Type 1 (Distal) RTA",
+                treatment: ["Clues: nephrocalcinosis, hypercalciuria, low potassium", "Treatment: alkali (bicarbonate/citrate) replacement, correct hypokalemia"]
+              }},
+              { label: "Low K, HCO3 >15, Fanconi/MM/amyloid", next: {
+                leaf: true, diagnosis: "Type 2 (Proximal) RTA",
+                treatment: ["Clues: Fanconi syndrome, multiple myeloma, amyloidosis", "Treatment: alkali replacement (often larger doses), correct hypokalemia, treat the underlying cause"]
+              }},
+              { label: "High K, urine pH <5.3", next: {
+                leaf: true, diagnosis: "Type 4 RTA",
+                treatment: ["Mechanism: hypoaldosteronism (or resistance)", "Treatment: treat hyperkalemia, fludrocortisone if hypoaldosteronism confirmed, loop diuretic"]
+              }}
+            ]
+          }}
+        ]
+      }},
+      { label: "High AG (HAGMA)", next: {
+        leaf: true, diagnosis: "HAGMA (MUDPILES)",
+        treatment: [
+          "Causes: Methanol, Uremia, Diabetic ketoacidosis, Paraldehyde, Iron/Isoniazid, Lactic acidosis, Ethylene glycol, Salicylates",
+          "Workup: lactate (shock/ischemia/toxin), ketones (DKA/alcoholic ketoacidosis), GFR (uremia), osmolal gap (toxic alcohols)"
+        ],
+        notes: ["Delta ratio (24−HCO3)/(AG−12): <1 → combined HAGMA+NAGMA; 1–2 → isolated HAGMA; >2 → HAGMA + metabolic alkalosis"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-metabolic-alkalosis",
+  chapter: "Nephrology",
+  group: "Acid-Base",
+  name: "Metabolic Alkalosis",
+  root: {
+    q: "Chloride responsive or unresponsive?",
+    clues: ["pH >7.45, HCO3 >28"],
+    options: [
+      { label: "Chloride responsive", next: {
+        leaf: true, diagnosis: "Chloride-Responsive Metabolic Alkalosis",
+        treatment: ["Causes: vomiting (HCl loss; hypovolemia worsens renal K loss), diuretics, contraction alkalosis", "Treatment: chloride repletion — normal saline ± KCl as appropriate"]
+      }},
+      { label: "Chloride unresponsive, hypertensive", next: {
+        leaf: true, diagnosis: "Hyperaldosteronism-Related Alkalosis",
+        treatment: ["Consider primary hyperaldosteronism or a mineralocorticoid-excess/Liddle-like state", "See the Hypertension tree for the hyperaldosteronism workup"]
+      }},
+      { label: "Chloride unresponsive, normotensive", next: {
+        leaf: true, diagnosis: "Bartter or Gitelman Syndrome",
+        treatment: [
+          "Bartter (mimics a loop diuretic): hypokalemic hypochloremic metabolic alkalosis, polyuria, polydipsia",
+          "Gitelman (mimics a thiazide): salt wasting, RAAS activation, hypocalciuria, hypomagnesemia",
+          "Treatment: potassium and magnesium repletion, salt supplementation"
+        ]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-nephro-respiratory-acidbase",
+  chapter: "Nephrology",
+  group: "Acid-Base",
+  name: "Respiratory Acid-Base Disorders",
+  root: {
+    q: "Primary process?",
+    options: [
+      { label: "Respiratory acidosis (high PCO2, low pH)", next: {
+        leaf: true, diagnosis: "Respiratory Acidosis",
+        treatment: ["Causes: CNS depression (trauma, drugs, edema), neuromuscular disorders, restrictive breathing disorders, iatrogenic ventilation problems, airway/lung disease (pneumonia, ARDS, pulmonary edema)", "Treatment: assisted ventilation (invasive or non-invasive)"]
+      }},
+      { label: "Respiratory alkalosis (low PCO2, high pH)", next: {
+        leaf: true, diagnosis: "Respiratory Alkalosis",
+        treatment: ["Causes: psychogenic/CNS stimulation, hypoxemia, drug-induced (e.g. salicylates)", "Symptoms: seizures, deep/fast breathing, tachycardia, hypotension, hypokalemia"],
+        notes: ["Salicylate toxicity classically causes respiratory alkalosis PLUS a high-anion-gap metabolic acidosis together"]
       }}
     ]
   }

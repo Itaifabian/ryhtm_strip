@@ -282,6 +282,16 @@ select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weig
 .cg-nav-btn:hover{background:var(--paper-2);color:var(--ink)}
 .cg-nav-btn.active{border-left-color:var(--red);background:var(--paper-2);color:var(--ink);font-weight:600}
 .cg-nav-empty{font-size:12.5px;color:var(--ink-faint);padding:8px 2px}
+.cg-nav-chapter{border-bottom:1px solid var(--line)}
+.cg-nav-chapter:last-child{border-bottom:none}
+.cg-nav-chapter-head{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:none;padding:10px 2px;cursor:pointer;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13.5px;color:var(--ink)}
+.cg-nav-chapter-head:hover{color:var(--red)}
+.cg-nav-chapter-tog{font-size:10px;color:var(--ink-faint);transition:transform .2s;flex:0 0 auto}
+.cg-nav-chapter.open .cg-nav-chapter-tog{transform:rotate(90deg)}
+.cg-nav-chapter-name{flex:1}
+.cg-nav-chapter-count{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink-faint);font-weight:400}
+.cg-nav-chapter-body{display:none;padding-bottom:8px}
+.cg-nav-chapter.open .cg-nav-chapter-body{display:block}
 @media (max-width:760px){.cg-layout{grid-template-columns:1fr}.cg-nav{position:static;max-height:none}}
 
 /* ---------- Diagnostic tree walker ---------- */
@@ -1470,7 +1480,7 @@ function showResults(){
    unlocked, without a separate "back" action. Not a quiz — no scoring, no
    distractors. `choices` holds one option-index per decision level along
    the current path. */
-var caseTreeState={treeId:null,choices:[]};
+var caseTreeState={treeId:null,choices:[],expandedChapters:{}};
 function allDiagnosticTrees(){return typeof DIAGNOSTIC_TREES!=='undefined'?DIAGNOSTIC_TREES:[]}
 function buildCaseChapterFilter(){
   var s=el('caseChapterFilter');if(!s)return;
@@ -1499,6 +1509,7 @@ function renderCaseTreeNav(){
   var nav=el('caseTreeNav');if(!nav)return;
   var chapterFilter=el('caseChapterFilter')?el('caseChapterFilter').value:'all';
   var term=(el('caseSearch')?el('caseSearch').value:'').trim().toLowerCase();
+  var searching=!!term;
   var trees=allDiagnosticTrees().filter(function(t){
     if(chapterFilter!=='all'&&t.chapter!==chapterFilter)return false;
     if(!term)return true;
@@ -1511,18 +1522,32 @@ function renderCaseTreeNav(){
     el('caseTreeArea').innerHTML='<div class="cgt-empty">No presentations match this search.</div>';
     return;
   }
+  var activeTree=allDiagnosticTrees().filter(function(t){return t.id===caseTreeState.treeId})[0];
   var chapters=[];
   trees.forEach(function(t){if(chapters.indexOf(t.chapter)<0)chapters.push(t.chapter)});
   var html='';
   chapters.forEach(function(chapter){
+    var chapterTrees=trees.filter(function(t){return t.chapter===chapter});
+    // Expanded when: the user toggled it open, a search/single-chapter filter is narrowing
+    // results (so collapsing would hide what you're looking for), or it holds the active tree.
+    var expanded=!!caseTreeState.expandedChapters[chapter]||searching||chapterFilter!=='all'||
+      (activeTree&&activeTree.chapter===chapter);
     var groups=[];
-    trees.filter(function(t){return t.chapter===chapter}).forEach(function(t){if(groups.indexOf(t.group)<0)groups.push(t.group)});
+    chapterTrees.forEach(function(t){if(groups.indexOf(t.group)<0)groups.push(t.group)});
+    var bodyHtml='';
     groups.forEach(function(group){
-      html+='<div class="cg-nav-group">'+esc(chapters.length>1?chapter+' · '+group:group)+'</div>';
-      trees.filter(function(t){return t.chapter===chapter&&t.group===group}).forEach(function(t){
-        html+='<button class="cg-nav-btn'+(t.id===caseTreeState.treeId?' active':'')+'" data-id="'+t.id+'" onclick="selectCaseTree(\''+t.id+'\')">'+esc(t.name)+'</button>';
+      bodyHtml+='<div class="cg-nav-group">'+esc(group)+'</div>';
+      chapterTrees.filter(function(t){return t.group===group}).forEach(function(t){
+        bodyHtml+='<button class="cg-nav-btn'+(t.id===caseTreeState.treeId?' active':'')+'" data-id="'+t.id+'" onclick="selectCaseTree(\''+t.id+'\')">'+esc(t.name)+'</button>';
       });
     });
+    html+='<div class="cg-nav-chapter'+(expanded?' open':'')+'">'+
+      '<button class="cg-nav-chapter-head" onclick="toggleCaseChapterExpand(\''+esc(chapter)+'\')">'+
+        '<span class="cg-nav-chapter-tog">▸</span><span class="cg-nav-chapter-name">'+esc(chapter)+'</span>'+
+        '<span class="cg-nav-chapter-count">'+chapterTrees.length+'</span>'+
+      '</button>'+
+      '<div class="cg-nav-chapter-body">'+bodyHtml+'</div>'+
+    '</div>';
   });
   nav.innerHTML=html;
   if(!trees.some(function(t){return t.id===caseTreeState.treeId})){
@@ -1531,11 +1556,17 @@ function renderCaseTreeNav(){
     el('caseTreeArea').innerHTML='<div class="cgt-empty">Select a presentation from the list to begin.</div>';
   }
 }
+function toggleCaseChapterExpand(chapter){
+  caseTreeState.expandedChapters[chapter]=!caseTreeState.expandedChapters[chapter];
+  renderCaseTreeNav();
+}
 function selectCaseTree(id){
   var tree=allDiagnosticTrees().filter(function(t){return t.id===id})[0];
   if(!tree)return;
-  caseTreeState={treeId:id,choices:[]};
-  document.querySelectorAll('.cg-nav-btn').forEach(function(b){b.classList.toggle('active',b.dataset.id===id)});
+  caseTreeState.treeId=id;
+  caseTreeState.choices=[];
+  caseTreeState.expandedChapters[tree.chapter]=true;
+  renderCaseTreeNav();
   el('caseTreeHeader').innerHTML='<div class="cgt-header-group">'+esc(tree.group)+'</div><div class="cgt-header-name">'+esc(tree.name)+'</div>';
   el('caseTreeToolbar').style.display='flex';
   renderCaseTreeFlow();
