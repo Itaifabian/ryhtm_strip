@@ -2,11 +2,11 @@
 // Each tree starts from a presenting problem and branches on real test results/clinical findings
 // (not a quiz — no distractors) until it reaches a specific diagnosis and its treatment.
 // Cardiology entries are condensed from this app's former CASE_GUIDES reference (since removed as
-// redundant — every fact traces back to it); Rheumatology and Nephrology entries are condensed from
-// clinician-supplied chapter summaries. All content is short bullet fragments for at-a-glance
-// scanning. `group` mirrors the disease-family grouping used throughout the rest of the app, so the
-// Cases tab nav can be browsed/searched by chapter → group → tree. See docs/AUTHORING_GUIDE.md for
-// the schema.
+// redundant — every fact traces back to it); Rheumatology, Nephrology, and Infectious Diseases
+// entries are condensed from clinician-supplied chapter summaries. All content is short bullet
+// fragments for at-a-glance scanning. `group` mirrors the disease-family grouping used throughout
+// the rest of the app, so the Cases tab nav can be browsed/searched by chapter → group → tree.
+// See docs/AUTHORING_GUIDE.md for the schema.
 //
 // Node shape — a node is EITHER:
 //   { q: "test/finding, phrased as a question", clues: ["short tag", …] (optional),
@@ -1699,6 +1699,712 @@ const DIAGNOSTIC_TREES = [
         leaf: true, diagnosis: "Respiratory Alkalosis",
         treatment: ["Causes: psychogenic/CNS stimulation, hypoxemia, drug-induced (e.g. salicylates)", "Symptoms: seizures, deep/fast breathing, tachycardia, hypotension, hypokalemia"],
         notes: ["Salicylate toxicity classically causes respiratory alkalosis PLUS a high-anion-gap metabolic acidosis together"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-workflow",
+  chapter: "Infectious Diseases",
+  group: "General Approach",
+  name: "ID Master Workflow — Site, Stability & Source Control",
+  root: {
+    q: "What's the site/syndrome?",
+    options: [
+      { label: "Lung", next: {
+        leaf: true, diagnosis: "Pulmonary Source",
+        treatment: ["Likely organisms depend on CAP vs HAP/VAP — see the Pneumonia trees", "Check stability and need for source control (e.g. empyema drainage) before narrowing"]
+      }},
+      { label: "Urine", next: {
+        leaf: true, diagnosis: "Urinary Source",
+        treatment: ["See the Urinary Tract Infection tree for cystitis vs pyelonephritis vs catheter-associated"]
+      }},
+      { label: "CNS", next: {
+        leaf: true, diagnosis: "CNS Source",
+        treatment: ["See the Meningitis & Encephalitis tree", "CT-before-LP decision and empiric antibiotics/dexamethasone should not be delayed"]
+      }},
+      { label: "Abdomen/pelvis", next: {
+        leaf: true, diagnosis: "Abdominal/Pelvic Source",
+        treatment: ["Enteric gram-negatives + anaerobes ± Enterococcus — ensure anaerobic coverage", "Source control (drain/debride/relieve obstruction) is often required, not antibiotics alone"]
+      }},
+      { label: "Skin/soft tissue/bone", next: {
+        leaf: true, diagnosis: "Skin/Soft Tissue/Bone Source",
+        treatment: ["Think Staph/Strep first", "Consider necrotizing fasciitis red flags: pain out of proportion, bullae, necrosis — see the Necrotizing Fasciitis tree"]
+      }},
+      { label: "Blood/catheter/valve", next: {
+        leaf: true, diagnosis: "Bloodstream/Catheter/Valve Source",
+        treatment: ["See the Central Line Infection & MDRO and Infective Endocarditis trees"]
+      }},
+      { label: "Neutropenic fever", next: {
+        leaf: true, diagnosis: "Neutropenic Fever",
+        treatment: ["Emergency — see the Febrile Neutropenia tree", "Start an antipseudomonal β-lactam immediately"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-coverage",
+  chapter: "Infectious Diseases",
+  group: "Antibiotic Selection",
+  name: "Antibiotic Coverage Gaps — Which Agent Covers What?",
+  root: {
+    q: "Which coverage gap are you checking?",
+    options: [
+      { label: "MRSA coverage", next: {
+        leaf: true, diagnosis: "MRSA Coverage",
+        treatment: [
+          "Severe MRSA/bacteremia/sepsis: vancomycin or daptomycin",
+          "MRSA pneumonia: vancomycin or linezolid (daptomycin is inactivated by pulmonary surfactant — do not use for pneumonia)",
+          "Mild/moderate CA-MRSA skin infection: TMP-SMX, doxycycline, or clindamycin if susceptible",
+          "Need a β-lactam with MRSA activity: ceftaroline"
+        ],
+        notes: ["Add MRSA coverage for: severe sepsis with MRSA risk, HAP/VAP with MRSA risk, catheter infection, purulent SSTI with systemic toxicity, prior MRSA, post-influenza severe pneumonia, endocarditis risk"]
+      }},
+      { label: "Pseudomonas coverage", next: {
+        leaf: true, diagnosis: "Antipseudomonal Coverage",
+        treatment: [
+          "Penicillin/BLI: piperacillin-tazobactam",
+          "Cephalosporins: cefepime, ceftazidime",
+          "Carbapenems: meropenem, imipenem, doripenem (NOT ertapenem)",
+          "Monobactam: aztreonam",
+          "Fluoroquinolones: ciprofloxacin, levofloxacin",
+          "Aminoglycosides: amikacin, tobramycin, gentamicin"
+        ],
+        notes: ["Think Pseudomonas: HAP/VAP, neutropenic fever, severe complicated UTI, prior Pseudomonas, structural lung disease/bronchiectasis, severe healthcare-associated infection, ecthyma gangrenosum", "Ertapenem does NOT cover Pseudomonas"]
+      }},
+      { label: "Anaerobic coverage", next: {
+        leaf: true, diagnosis: "Anaerobic Coverage",
+        treatment: [
+          "Metronidazole (anaerobes/protozoa only — no aerobic gram-positive/negative activity)",
+          "Piperacillin-tazobactam, carbapenems",
+          "Amoxicillin-clavulanate / ampicillin-sulbactam",
+          "Cefoxitin/cefotetan",
+          "Clindamycin, especially for oral anaerobes"
+        ],
+        notes: ["Think anaerobes: intra-abdominal infection, abscess, aspiration with abscess/empyema, diabetic foot, pelvic infection, necrotizing polymicrobial infection, human/animal bites, oral/dental source"]
+      }},
+      { label: "Atypical/intracellular coverage", next: {
+        leaf: true, diagnosis: "Atypical/Intracellular Coverage",
+        treatment: [
+          "Mycoplasma/Chlamydophila/Legionella: macrolide, doxycycline, respiratory fluoroquinolone",
+          "Rickettsia: doxycycline",
+          "Chlamydia trachomatis: doxycycline (azithromycin in selected settings)",
+          "Brucella: doxycycline + rifampin, or doxycycline + an aminoglycoside"
+        ],
+        notes: ["Think atypicals: CAP with dry cough, Legionella clues (diarrhea, hyponatremia, severe pneumonia), travel/exposure, rickettsial disease, chlamydia, brucella"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-cap",
+  chapter: "Infectious Diseases",
+  group: "Pneumonia",
+  name: "Community-Acquired Pneumonia (CAP)",
+  root: {
+    q: "Severity / clinical scenario?",
+    clues: ["CURB-65: Confusion, Urea↑, RR>30, BP<90/60, Age>65 — 0–1 ambulatory, 1–2 admit, >2 ICU", "IDSA ICU: 1 major (septic shock/resp failure) or ≥3 minor (RR>30, PaO2/FiO2<250, multilobar, thrombocytopenia, hypotension, confusion, uremia, leukopenia, hypothermia)"],
+    options: [
+      { label: "Outpatient, no comorbidities", next: {
+        leaf: true, diagnosis: "CAP — outpatient, healthy",
+        treatment: ["Amoxicillin or doxycycline; macrolide if local resistance is low"]
+      }},
+      { label: "Outpatient with comorbidities", next: {
+        leaf: true, diagnosis: "CAP — outpatient with comorbidities",
+        treatment: ["Amoxicillin-clavulanate or oral cephalosporin + azithromycin/doxycycline", "Or a respiratory fluoroquinolone alone"]
+      }},
+      { label: "Inpatient, non-severe", next: {
+        leaf: true, diagnosis: "CAP — inpatient, non-severe",
+        treatment: ["Ceftriaxone/cefotaxime/ampicillin-sulbactam + azithromycin", "Or a respiratory fluoroquinolone alone"],
+        notes: ["De-escalate once cultures return; switch IV→PO when stable; reassess for failure at 48–72h"]
+      }},
+      { label: "Severe CAP / ICU", next: {
+        leaf: true, diagnosis: "Severe CAP",
+        treatment: ["β-lactam + azithromycin, or β-lactam + respiratory fluoroquinolone", "Add vancomycin/linezolid if MRSA risk", "Add an antipseudomonal agent (cefepime/pip-tazo/meropenem) if Pseudomonas risk"],
+        notes: ["De-escalate once cultures return; switch IV→PO when stable; reassess for failure at 48–72h"]
+      }},
+      { label: "Aspiration with abscess/empyema/necrotizing pneumonia", next: {
+        leaf: true, diagnosis: "Aspiration Pneumonia with Abscess",
+        treatment: ["Rule out TB/cancer", "Ampicillin-sulbactam or ceftriaxone + clindamycin for 3–4 weeks", "Surgery if abscess >6–7cm"],
+        notes: ["Simple aspiration pneumonitis without abscess may not need antibiotics"]
+      }},
+      { label: "Suspected influenza", next: {
+        leaf: true, diagnosis: "Influenza",
+        treatment: ["Diagnosis: antigen/PCR", "Treatment: oseltamivir (PO/IV), zanamivir, or baloxavir for outpatients"],
+        notes: ["Can be complicated by secondary bacterial pneumonia, especially S. aureus"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-hap-vap",
+  chapter: "Infectious Diseases",
+  group: "Pneumonia",
+  name: "Hospital-Acquired / Ventilator-Associated Pneumonia",
+  root: {
+    q: "Which risk factors are present?",
+    options: [
+      { label: "No MRSA/MDR risk", next: {
+        leaf: true, diagnosis: "HAP/VAP — standard risk",
+        treatment: ["Cefepime, piperacillin-tazobactam, or meropenem"]
+      }},
+      { label: "MRSA risk", next: {
+        leaf: true, diagnosis: "HAP/VAP — MRSA risk",
+        treatment: ["Add vancomycin or linezolid to a gram-negative backbone (cefepime/pip-tazo/meropenem)"]
+      }},
+      { label: "High mortality / MDR gram-negative risk", next: {
+        leaf: true, diagnosis: "HAP/VAP — MDR risk",
+        treatment: ["Consider 2 antipseudomonal agents from different classes", "Add MRSA coverage per local risk"]
+      }},
+      { label: "Aspiration with abscess/empyema", next: {
+        leaf: true, diagnosis: "HAP/VAP — aspiration with abscess",
+        treatment: ["Ensure anaerobic coverage (piperacillin-tazobactam, carbapenem, or add metronidazole/clindamycin)"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-uti",
+  chapter: "Infectious Diseases",
+  group: "UTI",
+  name: "Urinary Tract Infection",
+  root: {
+    q: "Which clinical picture?",
+    options: [
+      { label: "Uncomplicated cystitis", next: {
+        leaf: true, diagnosis: "Acute Uncomplicated Cystitis",
+        treatment: ["Nitrofurantoin, TMP-SMX (if local resistance acceptable), or fosfomycin"],
+        notes: ["Clues: dysuria, lower abdominal pain, no fever, no flank pain, no gynecologic involvement", "Nitrofurantoin/fosfomycin: cystitis only — not pyelonephritis, prostatitis, or bacteremia"]
+      }},
+      { label: "Pyelonephritis", next: {
+        q: "Outpatient-suitable? (healthy, non-pregnant, tolerates PO, no resistant-strain history, good response expected)",
+        options: [
+          { label: "Yes — outpatient", next: {
+            leaf: true, diagnosis: "Pyelonephritis — outpatient",
+            treatment: ["Fluoroquinolone if susceptible; or an initial ceftriaxone/aminoglycoside dose then oral step-down"]
+          }},
+          { label: "No — inpatient", next: {
+            leaf: true, diagnosis: "Pyelonephritis — inpatient",
+            treatment: ["IV β-lactam ± aminoglycoside", "High-risk: piperacillin-tazobactam, amikacin, or a carbapenem", "Pregnancy: β-lactams ± aminoglycoside depending on context"],
+            notes: ["No response after 72h → look for obstruction, need for source control, resistance, or misdiagnosis"]
+          }}
+        ]
+      }},
+      { label: "Complicated UTI / urosepsis", next: {
+        leaf: true, diagnosis: "Complicated UTI / Urosepsis",
+        treatment: ["Ceftriaxone, cefepime, or piperacillin-tazobactam", "Carbapenem if ESBL risk"],
+        notes: ["Complicated: male with prostatitis, pyelonephritis, bacteremia, catheter-associated, obstruction/stone, pregnancy, resistant organisms, structural abnormality"]
+      }},
+      { label: "Catheter-associated UTI", next: {
+        leaf: true, diagnosis: "Catheter-Associated UTI",
+        treatment: ["Key organisms: Pseudomonas, Enterococcus, Candida, ESBL organisms", "Remove/replace the catheter before culturing, then use the narrowest effective antibiotic"]
+      }},
+      { label: "Asymptomatic bacteriuria", next: {
+        leaf: true, diagnosis: "Asymptomatic Bacteriuria",
+        treatment: ["Treat only in pregnancy or before a urologic procedure — otherwise no treatment"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-urethritis",
+  chapter: "Infectious Diseases",
+  group: "STI & Pelvic Infection",
+  name: "Urethritis & Common STIs",
+  root: {
+    q: "Which organism/presentation?",
+    clues: ["Dysuria + genital discharge → think STI", "Diagnosis: urethral/genital sample or urine PCR (first-catch urine for urethritis, midstream for cystitis)"],
+    options: [
+      { label: "Gonorrhea", next: {
+        leaf: true, diagnosis: "Gonorrhea",
+        treatment: ["Ceftriaxone", "Inform partners, avoid sex for 1 week, repeat STI screen"],
+        notes: ["Presentations: urethritis/proctitis/pharyngitis (men); PID/infertility/ectopic pregnancy (women); disseminated: pustular rash, asymmetric polyarthralgia, tenosynovitis, septic arthritis"]
+      }},
+      { label: "Chlamydia", next: {
+        leaf: true, diagnosis: "Chlamydia",
+        treatment: ["Doxycycline for 7 days", "Azithromycin single dose as an alternative in selected contexts"],
+        notes: ["Presentations: asymptomatic/urethritis/orchiepididymitis (men); urethritis/vaginitis (women); complications: PID, infertility, ectopic pregnancy"]
+      }},
+      { label: "Mycoplasma genitalium", next: {
+        leaf: true, diagnosis: "Mycoplasma genitalium",
+        treatment: ["Doxycycline + moxifloxacin or azithromycin"]
+      }},
+      { label: "Trichomonas", next: {
+        leaf: true, diagnosis: "Trichomoniasis (urethritis)",
+        treatment: ["Metronidazole or tinidazole"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-vaginitis",
+  chapter: "Infectious Diseases",
+  group: "STI & Pelvic Infection",
+  name: "Vaginitis",
+  root: {
+    q: "Discharge characteristics?",
+    options: [
+      { label: "Yellow/green, foul-smelling, strawberry cervix", next: {
+        leaf: true, diagnosis: "Trichomoniasis",
+        treatment: ["Diagnosis: PCR/microscopy showing a motile parasite", "Treatment: metronidazole or tinidazole"]
+      }},
+      { label: "Foul smell, watery discharge", next: {
+        leaf: true, diagnosis: "Bacterial Vaginosis",
+        treatment: ["Diagnosis: pH >4.5, clue cells", "Treatment: metronidazole or topical clindamycin"]
+      }},
+      { label: "Intense irritation, cottage-cheese odorless discharge", next: {
+        leaf: true, diagnosis: "Candida Vaginitis",
+        treatment: ["Diagnosis: pH <4.5, positive KOH", "Treatment: vaginal azole; fluconazole if needed"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-pid",
+  chapter: "Infectious Diseases",
+  group: "STI & Pelvic Infection",
+  name: "Pelvic Inflammatory Disease (PID)",
+  root: {
+    q: "Admission criteria met?",
+    clues: ["Think PID: lower abdominal/pelvic pain, cervical motion tenderness, fever/leukocytosis/CRP", "Admit if: uncertain diagnosis, pregnancy, abscess, severe symptoms, HIV-positive"],
+    options: [
+      { label: "No — outpatient", next: {
+        leaf: true, diagnosis: "PID — outpatient",
+        treatment: ["Ceftriaxone IM single dose + doxycycline 14 days + metronidazole 14 days"],
+        notes: ["No response in 72h → admit/reassess", "Complications: tubo-ovarian abscess, peritonitis, perihepatitis"]
+      }},
+      { label: "Yes — inpatient", next: {
+        leaf: true, diagnosis: "PID — inpatient",
+        treatment: ["Ceftriaxone IV + doxycycline + metronidazole"],
+        notes: ["Complications: tubo-ovarian abscess, peritonitis, perihepatitis"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-diarrhea",
+  chapter: "Infectious Diseases",
+  group: "GI Infection",
+  name: "Acute Diarrhea / GI Infection",
+  root: {
+    q: "Watery, inflammatory/bloody, or traveler's?",
+    clues: ["Acute <2wk, persistent 2–4wk, chronic >4wk"],
+    options: [
+      { label: "Watery", next: {
+        leaf: true, diagnosis: "Watery (Secretory) Diarrhea",
+        treatment: ["Think: ETEC, cholera, viral gastroenteritis, food toxin", "Pattern: large-volume, persists with fasting, low fecal osmotic gap", "Treatment: rehydration/electrolytes"]
+      }},
+      { label: "Inflammatory/bloody", next: {
+        leaf: true, diagnosis: "Inflammatory Diarrhea",
+        treatment: ["Think: Shigella, Campylobacter, Salmonella, invasive E. coli, C. difficile, amoebiasis", "Marker: stool leukocytes or calprotectin"],
+        notes: [
+          "Bloody stool WITHOUT fecal leukocytes → think Shiga toxin/EHEC — avoid antibiotics and antimotility drugs unless another invasive/septic picture dominates",
+          "Fever → invasive disease; hypotension → severe dehydration or bacteremia; rice-water stool → cholera",
+          "Systemic complications: reactive arthritis (Salmonella/Campylobacter/Shigella), HUS (EHEC/Shigella), postinfectious IBD (Campylobacter), Yersinia (thyroiditis/pericarditis/GN)",
+          "Incubation clues: very fast → S. aureus/B. cereus emetic toxin; 8–16h → C. perfringens/B. cereus; >16h → cholera, ETEC/EHEC, Salmonella, Campylobacter, Shigella"
+        ]
+      }},
+      { label: "Traveler's diarrhea", next: {
+        leaf: true, diagnosis: "Traveler's Diarrhea",
+        treatment: ["Typical: onset 3–5 days to 2 weeks, duration 1–5 days, usually self-limited", "Common causes: E. coli, Shigella, norovirus, rotavirus, Giardia", "Treatment: rehydration/electrolytes"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-fever-rash",
+  chapter: "Infectious Diseases",
+  group: "Fever & Rash",
+  name: "Fever + Rash Pattern Recognition",
+  root: {
+    q: "Which pattern fits?",
+    options: [
+      { label: "Cough, coryza, conjunctivitis, Koplik spots, cephalocaudal spread", next: {
+        leaf: true, diagnosis: "Measles",
+        treatment: ["Supportive care; airborne isolation", "Report to public health"]
+      }},
+      { label: "High fever 3–4 days, rash after fever subsides", next: {
+        leaf: true, diagnosis: "Roseola",
+        treatment: ["Supportive care"]
+      }},
+      { label: "Slapped cheek, reticular rash", next: {
+        leaf: true, diagnosis: "Parvovirus B19",
+        treatment: ["Supportive care"],
+        notes: ["Risk in pregnancy (hydrops fetalis) and hemolytic disease (aplastic crisis)"]
+      }},
+      { label: "Vesicles on palms/soles/mouth", next: {
+        leaf: true, diagnosis: "Coxsackie / Enterovirus (Hand-Foot-Mouth)",
+        treatment: ["Supportive care"]
+      }},
+      { label: "Abrupt fever, lethargy, petechiae/purpura, shock", next: {
+        leaf: true, diagnosis: "Meningococcemia",
+        treatment: ["Immediate ceftriaxone", "Droplet precautions"],
+        notes: ["Fever + nonblanching petechiae/purpura + toxicity = meningococcemia until proven otherwise"]
+      }},
+      { label: "Palpable purpura on legs/buttocks + abdominal pain/joint swelling", next: {
+        leaf: true, diagnosis: "IgA Vasculitis (HSP)",
+        treatment: ["Usually supportive; steroids for severe GI/joint symptoms"]
+      }},
+      { label: "Lesions in different stages simultaneously", next: {
+        leaf: true, diagnosis: "Varicella",
+        treatment: ["Supportive care; antivirals if severe/immunocompromised", "Airborne + contact isolation"]
+      }},
+      { label: "Grouped vesicles in one dermatome, not crossing midline", next: {
+        leaf: true, diagnosis: "Herpes Zoster",
+        treatment: ["Antiviral therapy (e.g. valacyclovir)"]
+      }},
+      { label: "Diffuse erythematous rash, strawberry tongue, Pastia lines", next: {
+        leaf: true, diagnosis: "Scarlet Fever",
+        treatment: ["Penicillin or amoxicillin"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-cns",
+  chapter: "Infectious Diseases",
+  group: "CNS Infection",
+  name: "Meningitis & Encephalitis",
+  root: {
+    q: "Meningitis or encephalitis pattern?",
+    clues: ["Meningitis: fever, photophobia/phonophobia, nuchal rigidity, Kernig/Brudzinski", "Encephalitis: confusion, coma, memory loss, seizures, focal deficits"],
+    options: [
+      { label: "Suspected bacterial meningitis", next: {
+        q: "CT needed before LP?",
+        clues: ["CT-first if: immunodeficiency, focal CNS disease, lateralizing/cranial nerve signs, decreased consciousness, new seizures, papilledema"],
+        options: [
+          { label: "Yes", next: {
+            leaf: true, diagnosis: "CT Before LP",
+            treatment: ["Do NOT delay antibiotics/dexamethasone while awaiting CT — give empiric therapy first, then LP after CT if safe"]
+          }},
+          { label: "No — proceed to LP", next: {
+            q: "Patient group?",
+            options: [
+              { label: "Adult, community-acquired", next: {
+                leaf: true, diagnosis: "Bacterial Meningitis — Adult",
+                treatment: ["Vancomycin + ceftriaxone/cefotaxime", "Add dexamethasone before or with the first antibiotic dose (especially pneumococcal)"],
+                notes: ["CSF — bacterial: WBC often >1000, low glucose, high protein; viral: WBC 100–1000, normal glucose, mildly high protein; TB/fungal: WBC 5–1000, low glucose, high protein, often high opening pressure"]
+              }},
+              { label: "Age >50, pregnant, or immunocompromised", next: {
+                leaf: true, diagnosis: "Bacterial Meningitis — Listeria Risk",
+                treatment: ["Vancomycin + ceftriaxone/cefotaxime + ampicillin (for Listeria)", "Add dexamethasone before or with the first antibiotic dose"]
+              }},
+              { label: "Post-neurosurgery / head trauma / shunt", next: {
+                leaf: true, diagnosis: "Healthcare-Associated Meningitis",
+                treatment: ["Vancomycin + cefepime/ceftazidime/meropenem"]
+              }},
+              { label: "Suspected meningococcemia", next: {
+                leaf: true, diagnosis: "Suspected Meningococcemia",
+                treatment: ["Immediate ceftriaxone/cefotaxime", "Droplet precautions"]
+              }}
+            ]
+          }}
+        ]
+      }},
+      { label: "Suspected encephalitis", next: {
+        leaf: true, diagnosis: "Encephalitis",
+        treatment: ["Empiric acyclovir for HSV/VZV while workup is pending", "CSF PCR for HSV, VZV, West Nile; consider autoimmune workup if infectious workup is negative"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-endocarditis",
+  chapter: "Infectious Diseases",
+  group: "Endocarditis",
+  name: "Infective Endocarditis",
+  root: {
+    q: "Valve context or confirmed organism?",
+    clues: ["Obtain 3 sets of blood cultures before antibiotics unless the patient is crashing", "Diagnosis: TTE/TEE, Duke criteria", "Duration usually 4–6 weeks after negative cultures", "Surgery if: CHF, persistent bacteremia >7–10 days, spread/abscess, high embolic risk (vegetation >10mm), prosthetic valve infection"],
+    options: [
+      { label: "Native valve, subacute, stable", next: {
+        leaf: true, diagnosis: "Native Valve IE — subacute/stable",
+        treatment: ["Empiric: vancomycin + ceftriaxone while cultures pending"],
+        notes: ["Likely organisms: viridans/bovis strep, E. faecalis, HACEK, S. aureus/lugdunensis"]
+      }},
+      { label: "Acute severe native valve / healthcare-associated", next: {
+        leaf: true, diagnosis: "Native Valve IE — acute/severe",
+        treatment: ["Empiric: vancomycin + cefepime"]
+      }},
+      { label: "Early prosthetic valve (<2 months)", next: {
+        leaf: true, diagnosis: "Early Prosthetic Valve Endocarditis",
+        treatment: ["Empiric: vancomycin + cefepime ± gentamicin/rifampin depending on institution"],
+        notes: ["Likely organisms: S. aureus, CoNS, gram-negatives, Corynebacterium, Candida, Enterococcus"]
+      }},
+      { label: "Prosthetic valve, 2–12 months", next: {
+        leaf: true, diagnosis: "Prosthetic Valve Endocarditis (2–12mo)",
+        treatment: ["Likely organisms: CoNS, Enterococcus, Candida, Strep — treat per confirmed organism"]
+      }},
+      { label: "Prosthetic valve, >12 months", next: {
+        leaf: true, diagnosis: "Prosthetic Valve Endocarditis (>12mo)",
+        treatment: ["Likely organisms: viridans strep, S. aureus — behaves more like native valve IE"]
+      }},
+      { label: "Confirmed: Enterococcus", next: {
+        leaf: true, diagnosis: "Enterococcal IE",
+        treatment: ["Ampicillin + ceftriaxone, or ampicillin + gentamicin"]
+      }},
+      { label: "Confirmed: MSSA", next: {
+        leaf: true, diagnosis: "MSSA IE",
+        treatment: ["Nafcillin/oxacillin or cefazolin"]
+      }},
+      { label: "Confirmed: MRSA", next: {
+        leaf: true, diagnosis: "MRSA IE",
+        treatment: ["Vancomycin or daptomycin"]
+      }},
+      { label: "Culture-negative", next: {
+        leaf: true, diagnosis: "Culture-Negative IE",
+        treatment: ["Consider: prior antibiotics, HACEK, Brucella, Coxiella, Bartonella, or a noninfectious mimic"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-transplant",
+  chapter: "Infectious Diseases",
+  group: "Immunocompromised Host",
+  name: "Immunocompromised Host — Transplant Timeline",
+  root: {
+    q: "Transplant type and timing?",
+    clues: ["Diagnosis is harder in immunocompromised hosts: ~40% may not have fever, multiple simultaneous infections can occur, presentation can be advanced, resistance risk is high, drug toxicity can mimic infection"],
+    options: [
+      { label: "Solid organ, first 4 weeks", next: {
+        leaf: true, diagnosis: "SOT — First 4 Weeks",
+        treatment: ["Think: surgical/technical complications, nosocomial infection, donor-derived infection"]
+      }},
+      { label: "Solid organ, 2–12 months", next: {
+        leaf: true, diagnosis: "SOT — 2–12 Months",
+        treatment: ["Think: opportunistic infections (herpesviruses, toxoplasma, PJP), latent infection reactivation"],
+        notes: ["Prophylaxis (TMP-SMX for PJP, antivirals) typically covers this window"]
+      }},
+      { label: "Solid organ, >1 year", next: {
+        leaf: true, diagnosis: "SOT — Beyond 1 Year",
+        treatment: ["Think: common community infections, as in immunocompetent hosts"],
+        notes: ["Any rejection/increased immunosuppression restarts the timeline"]
+      }},
+      { label: "Bone marrow/HCT, first 4 weeks (neutropenic)", next: {
+        leaf: true, diagnosis: "HCT — First 4 Weeks",
+        treatment: ["Think: bacterial and fungal infections during neutropenia — see the Febrile Neutropenia tree"]
+      }},
+      { label: "Bone marrow/HCT, day 28–100", next: {
+        leaf: true, diagnosis: "HCT — Day 28–100",
+        treatment: ["Think: opportunistic infections, especially with acute GVHD"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-hiv-oi",
+  chapter: "Infectious Diseases",
+  group: "HIV/Opportunistic",
+  name: "HIV Opportunistic Infections by CD4",
+  root: {
+    q: "CD4 count / clinical clue?",
+    options: [
+      { label: "CD4 <200, subacute dyspnea/dry cough/hypoxemia", next: {
+        leaf: true, diagnosis: "Pneumocystis jirovecii Pneumonia (PJP)",
+        treatment: ["Diagnosis: DFA/PCR from induced sputum or BAL", "Treatment: TMP-SMX; add steroids if PaO2<70 or A-a gradient ≥35", "Primary prophylaxis with TMP-SMX if CD4 <200"]
+      }},
+      { label: "CD4 <100, subacute meningitis/headache", next: {
+        leaf: true, diagnosis: "Cryptococcal Meningitis",
+        treatment: [
+          "Diagnosis: serum/CSF cryptococcal antigen; LP shows high opening pressure, lymphocytes, high protein, low/normal glucose; India ink may show budding yeast",
+          "Induction: liposomal amphotericin B + flucytosine",
+          "Consolidation then maintenance: fluconazole",
+          "Manage intracranial pressure with therapeutic LPs"
+        ],
+        notes: ["Defer ART 4–6 weeks after starting antifungal therapy"]
+      }},
+      { label: "CD4 <50, fever/night sweats/wasting/diarrhea", next: {
+        leaf: true, diagnosis: "Disseminated MAC",
+        treatment: ["Diagnosis: AFB from blood/lymph node/bone marrow", "Treatment: macrolide + ethambutol"]
+      }},
+      { label: "Worsening after starting/restarting ART", next: {
+        leaf: true, diagnosis: "IRIS",
+        treatment: ["Continue ART and treat the unmasked/worsening infection", "Consider steroids in severe cases"],
+        notes: ["Paradoxical worsening of a known infection, or unmasking of a subclinical one — usually CD4 <50, usually 4–8 weeks after starting ART"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-clabsi",
+  chapter: "Infectious Diseases",
+  group: "Nosocomial Infection",
+  name: "Central Line Infection & MDRO",
+  root: {
+    q: "Central line patient with fever/sepsis/bacteremia and no better source, or known MDRO?",
+    options: [
+      { label: "Suspected CLABSI", next: {
+        leaf: true, diagnosis: "CLABSI",
+        treatment: [
+          "Diagnosis: same organism from central and peripheral cultures; differential time-to-positivity >2h faster from the catheter; higher CFU from the central line; catheter tip culture if removed",
+          "Likely organisms: S. aureus, coagulase-negative staph, Candida, Pseudomonas, E. coli, Klebsiella",
+          "Treatment: empiric coverage per organism risk; remove the line when appropriate"
+        ]
+      }},
+      { label: "Known/suspected MDRO", next: {
+        leaf: true, diagnosis: "MDRO (Multi-Drug-Resistant Organism)",
+        treatment: ["Definition: resistant to >3 antibiotic groups", "Key organisms: MRSA, VRE, CRE/ESBL Enterobacterales, CRAB (Acinetobacter), CRPA (Pseudomonas)", "Prevention: equipment disinfection, hand hygiene, isolation"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-cdiff",
+  chapter: "Infectious Diseases",
+  group: "Nosocomial Infection",
+  name: "C. difficile Infection",
+  root: {
+    q: "Diarrhea after antibiotics/hospitalization, with fever/abdominal pain/leukocytosis?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "C. difficile Infection",
+        treatment: ["Diagnosis: stool toxin EIA, GDH antigen, PCR", "Treatment: fidaxomicin or ORAL vancomycin"],
+        notes: ["IV vancomycin does NOT treat C. difficile colitis — oral vancomycin stays in the gut where it's needed"]
+      }},
+      { label: "No", next: {
+        leaf: true, diagnosis: "Consider Alternative Diagnosis",
+        treatment: ["Reconsider other causes of diarrhea — see the Acute Diarrhea tree"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-travel-fever",
+  chapter: "Infectious Diseases",
+  group: "Travel Medicine",
+  name: "Travel-Associated Fever",
+  root: {
+    q: "Which pattern fits?",
+    clues: ["Take a TRAVEL history: Time, Routine/risky exposure, Adherence to prophylaxis, Vaccines, Epidemiology, Local outbreaks"],
+    options: [
+      { label: "Fever, thrombocytopenia, splenomegaly", next: {
+        leaf: true, diagnosis: "Malaria",
+        treatment: ["Diagnosis: thick/thin smear, rapid antigen test, PCR", "Treatment: artemisinin/artesunate/artemether"],
+        notes: ["Do not miss malaria — a leading cause of fever in returning travelers", "Severe/falciparum malaria is an ID emergency: cerebral malaria, ARDS, AKI, severe hemolysis, DIC, hypoglycemia"]
+      }},
+      { label: "Severe myalgia, rash (\"islands of white in a sea of red\"), pancytopenia", next: {
+        leaf: true, diagnosis: "Dengue",
+        treatment: ["Supportive care only — no NSAIDs"],
+        notes: ["Severe dengue: capillary leak, shock"]
+      }},
+      { label: "Prolonged fever, relative bradycardia, rose spots, hepatosplenomegaly", next: {
+        leaf: true, diagnosis: "Enteric (Typhoid) Fever",
+        treatment: ["Diagnosis: blood culture / bone marrow culture", "Treatment: azithromycin, ceftriaxone, or a quinolone depending on context"]
+      }},
+      { label: "Unpasteurized dairy, undulating fever, sacroiliitis", next: {
+        leaf: true, diagnosis: "Brucellosis",
+        treatment: ["Diagnosis: blood cultures, Rose-Bengal serology", "Treatment: doxycycline + rifampin, or doxycycline + gentamicin/streptomycin"]
+      }},
+      { label: "Flu-like illness, atypical pneumonia, hepatitis, no rash (farm/animal exposure)", next: {
+        leaf: true, diagnosis: "Q Fever (Coxiella) — Acute",
+        treatment: ["Treatment: doxycycline for 14 days"],
+        notes: ["Chronic Q fever: endocarditis risk with valve disease/grafts, Phase 1 IgG >1:800, treat with doxycycline + hydroxychloroquine for 1.5–2 years"]
+      }},
+      { label: "Tick exposure, eschar, rash on palms/soles day 3–5", next: {
+        leaf: true, diagnosis: "Rickettsial Spotted Fever",
+        treatment: ["Treatment: doxycycline immediately on suspicion — do not wait for confirmation"],
+        notes: ["Delayed treatment can be fatal"]
+      }},
+      { label: "Contaminated water/rodent urine, severe calf myalgia, conjunctival suffusion", next: {
+        leaf: true, diagnosis: "Leptospirosis",
+        treatment: ["Mild: doxycycline", "Severe (Weil syndrome — jaundice + AKI + bleeding): IV penicillin"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-neutropenic-fever",
+  chapter: "Infectious Diseases",
+  group: "Emergencies",
+  name: "Febrile Neutropenia",
+  root: {
+    q: "ANC <500 with fever (single temp >38.3°C, or sustained >38.0°C for 1 hour)?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "Febrile Neutropenia",
+        treatment: [
+          "Blood cultures; assess hemodynamics",
+          "Start an antipseudomonal β-lactam immediately: cefepime, piperacillin-tazobactam, meropenem, or imipenem",
+          "Add vancomycin if: catheter infection, skin/soft-tissue infection, pneumonia, hemodynamic instability, known MRSA colonization",
+          "Add an antifungal if fever persists after several days or with prolonged high-risk neutropenia"
+        ],
+        notes: ["Ecthyma gangrenosum = Pseudomonas bacteremia until proven otherwise"]
+      }},
+      { label: "No — doesn't meet the definition", next: {
+        leaf: true, diagnosis: "Not Febrile Neutropenia",
+        treatment: ["Re-check ANC and temperature criteria — this pathway applies specifically to ANC <500 with a qualifying fever"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-sepsis",
+  chapter: "Infectious Diseases",
+  group: "Emergencies",
+  name: "Sepsis / Septic Shock",
+  root: {
+    q: "Likely source?",
+    clues: ["Septic shock = persistent hypotension needing vasopressors for MAP>65, plus lactate>2 despite adequate fluids", "Workflow: recognize shock → cultures if no delay → broad antibiotics immediately → fluids → vasopressors if needed → source control → reassess daily and narrow"],
+    options: [
+      { label: "Unknown source, unstable", next: {
+        leaf: true, diagnosis: "Sepsis — unknown source",
+        treatment: ["Vancomycin + cefepime, or vancomycin + piperacillin-tazobactam"]
+      }},
+      { label: "ESBL/MDR risk", next: {
+        leaf: true, diagnosis: "Sepsis — ESBL/MDR risk",
+        treatment: ["Vancomycin + meropenem"]
+      }},
+      { label: "Possible intra-abdominal source", next: {
+        leaf: true, diagnosis: "Sepsis — intra-abdominal source",
+        treatment: ["Piperacillin-tazobactam; or cefepime + metronidazole; or meropenem"]
+      }},
+      { label: "Possible catheter source", next: {
+        leaf: true, diagnosis: "Sepsis — catheter source",
+        treatment: ["Vancomycin + gram-negative coverage"]
+      }},
+      { label: "Possible urinary source", next: {
+        leaf: true, diagnosis: "Sepsis — urinary source",
+        treatment: ["Ceftriaxone if stable/low MDR risk", "Cefepime, piperacillin-tazobactam, or meropenem if severe/resistant risk"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-necfasc",
+  chapter: "Infectious Diseases",
+  group: "Emergencies",
+  name: "Necrotizing Fasciitis",
+  root: {
+    q: "Pain out of proportion + rapidly progressive erythema/bullae/necrosis/late anesthesia + systemic toxicity?",
+    options: [
+      { label: "Yes — suspected GAS type II", next: {
+        leaf: true, diagnosis: "Necrotizing Fasciitis — GAS Type II",
+        treatment: ["Urgent surgical debridement — primary life-saving treatment", "Penicillin + clindamycin", "IVIG in selected cases"]
+      }},
+      { label: "Yes — polymicrobial (type I)", next: {
+        leaf: true, diagnosis: "Necrotizing Fasciitis — Polymicrobial (Type I)",
+        treatment: ["Urgent surgical debridement — primary life-saving treatment", "Vancomycin + piperacillin-tazobactam/carbapenem + clindamycin (for toxin suppression)"]
+      }}
+    ]
+  }
+},
+{
+  id: "dtree-id-asplenia",
+  chapter: "Infectious Diseases",
+  group: "Emergencies",
+  name: "Asplenia / OPSI",
+  root: {
+    q: "Asplenic/hyposplenic patient with fever?",
+    options: [
+      { label: "Yes", next: {
+        leaf: true, diagnosis: "Fever in Asplenia (OPSI risk)",
+        treatment: ["Emergency — treat immediately: IV ceftriaxone + amoxicillin-clavulanate"],
+        notes: ["High risk for fulminant sepsis from encapsulated organisms: S. pneumoniae, H. influenzae, N. meningitidis", "Pneumococcus causes 40–70% of OPSI cases"]
+      }},
+      { label: "No — spleen intact", next: {
+        leaf: true, diagnosis: "Not Asplenia-Related",
+        treatment: ["Evaluate fever through the standard workup — the OPSI emergency pathway applies specifically to asplenic/hyposplenic patients"]
       }}
     ]
   }
