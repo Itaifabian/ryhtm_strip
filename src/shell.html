@@ -223,6 +223,13 @@ select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weig
 .opt.wrong{border-color:var(--red);background:#F9E7E4}
 .opt.wrong .opt-key{background:var(--red);color:#fff;border-color:var(--red)}
 .opt.dim{opacity:.55}
+.opt.selected{border-color:var(--ink);background:var(--paper-2)}
+.opt.selected .opt-key{background:var(--ink);color:#fff;border-color:var(--ink)}
+.examnav-grid{display:flex;flex-wrap:wrap;gap:8px}
+.examnav-btn{width:36px;height:36px;border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;cursor:pointer;transition:transform .1s}
+.examnav-btn:hover{transform:translateY(-1px)}
+.examnav-btn.correct{background:var(--teal-soft);border:1px solid var(--teal);color:var(--teal)}
+.examnav-btn.wrong{background:#F9E7E4;border:1px solid var(--red);color:var(--red-deep)}
 .explain{margin-top:18px;border-left:3px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;
   padding:13px 16px;font-size:14px;line-height:1.5;display:none}
 .explain.show{display:block;animation:rise .3s ease}
@@ -938,6 +945,13 @@ if(typeof EM_TOPICS!=='undefined'){
 if(typeof ONCOLOGY_TOPICS!=='undefined'){
   ONCOLOGY_TOPICS.forEach(function(t){t.chapter='Oncology';TOPICS.push(t);});
 }
+// Merge scattered Past Exam practice questions into their matching topics, across every
+// chapter — must run last, after every chapter above has been appended to TOPICS.
+if(typeof EXTRA_PASTEXAM_QUIZ!=='undefined'){
+  TOPICS.forEach(function(t){
+    if(EXTRA_PASTEXAM_QUIZ[t.id]){t.quiz=t.quiz.concat(EXTRA_PASTEXAM_QUIZ[t.id]);}
+  });
+}
 // Ordered list of chapters for grouping.
 var CHAPTERS=[];
 TOPICS.forEach(function(t){if(CHAPTERS.indexOf(t.chapter)<0)CHAPTERS.push(t.chapter);});
@@ -1299,7 +1313,7 @@ function startMixedQuiz(){
   var pool=[];
   TOPICS.forEach(function(t){
     if(checked.indexOf(t.chapter)<0)return;
-    t.quiz.forEach(function(q,i){pool.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption})});
+    t.quiz.forEach(function(q,i){pool.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
   });
   if(!pool.length){alert('No questions available for the selected chapters.');return}
   pool=prioritizeList(pool);
@@ -1326,7 +1340,7 @@ function startQuiz(tid){
     if(idSet){if(idSet.indexOf(t.id)<0)return;}
     else if(chapMode){if(t.chapter!==chap)return;}
     else if(tid!=='all'&&t.id!==tid)return;
-    t.quiz.forEach(function(q,i){list.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption})});
+    t.quiz.forEach(function(q,i){list.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
   });
   list=prioritizeList(list);
   quiz={list:list,pos:0,score:0,answered:false,perTopic:{}};
@@ -1336,17 +1350,18 @@ function renderQuestion(){
   var q=quiz.list[quiz.pos];
   var pct=Math.round(quiz.pos/quiz.list.length*100);
   var keys=['A','B','C','D','E'];
+  var rtl=q.rtl?' dir="rtl"':'';
   var html='<div class="q-progress">'+
     '<div class="q-progline"><div class="q-progline-fill" style="width:'+pct+'%"></div></div>'+
     '<div class="q-progtext">'+(quiz.pos+1)+' / '+quiz.list.length+'</div></div>'+
     '<div class="q-card">'+
-      '<div class="q-topic-row"><div class="q-topic">'+q.tname+'</div>'+
+      '<div class="q-topic-row"><div class="q-topic">'+q.tname+(q.rtl?' <span class="mono" style="color:var(--ink-faint);font-weight:400;letter-spacing:.05em">· PAST EXAM</span>':'')+'</div>'+
       '<button class="flag-btn'+(isFlagged('quiz',q.tid,q.qidx)?' flagged':'')+'" id="quizFlagBtn" onclick="openQuizFlagPanel();event.stopPropagation()" title="Flag this question for review">'+FLAG_SVG+'</button></div>'+
-      '<div class="q-stem">'+esc(q.q)+'</div>'+
-      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="Imaging study for this question" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap">'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
+      '<div class="q-stem"'+rtl+'>'+esc(q.q)+'</div>'+
+      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="Imaging study for this question" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap"'+rtl+'>'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
       '<div class="opts" id="opts">';
   q.options.forEach(function(o,i){
-    html+='<button class="opt" data-i="'+i+'" onclick="answer('+i+')"><span class="opt-key">'+keys[i]+'</span><span>'+esc(o)+'</span></button>';
+    html+='<button class="opt" data-i="'+i+'" onclick="answer('+i+')"'+rtl+'><span class="opt-key">'+keys[i]+'</span><span>'+esc(o)+'</span></button>';
   });
   html+='</div>'+
       '<div class="explain" id="explain"><span class="lbl"></span><span id="explainText"></span>'+
@@ -1373,9 +1388,14 @@ function answer(i){
   quiz.perTopic[q.tid].n++;if(correct)quiz.perTopic[q.tid].c++;
   if(!progress.topicStats[q.tid])progress.topicStats[q.tid]={correct:0,total:0};
   progress.topicStats[q.tid].total++;if(correct)progress.topicStats[q.tid].correct++;
-  var ex=el('explain');ex.className='explain show'+(correct?'':' miss');
-  ex.querySelector('.lbl').textContent=correct?'Correct':'Not quite';
-  el('explainText').textContent=q.explain;
+  var ex=el('explain');
+  if(q.explain){
+    ex.className='explain show'+(correct?'':' miss');
+    ex.querySelector('.lbl').textContent=correct?'Correct':'Not quite';
+    el('explainText').textContent=q.explain;
+  }else{
+    ex.className='explain';
+  }
   if(correct){
     saveProgress();
     el('qActions').innerHTML='<div class="conf-row"><span class="conf-label">How well did you know it?</span>'+
@@ -1592,7 +1612,7 @@ function renderCaseTreeFlow(){
    a plain stopwatch (no countdown/pressure), to help identify which subject
    is both weakest and slowest. See CHANGELOG.md for known source anomalies. */
 var HEB_LETTERS=['א','ב','ג','ד','ה'];
-var examState={exam:null,list:[],pos:0,score:0,answered:false,startTs:0,qStartTs:0,times:{},correctness:{},tagChanges:{}};
+var examState={exam:null,list:[],pos:0,score:0,answered:false,startTs:0,qStartTs:0,times:{},correctness:{},answers:{},tagChanges:{},finalStats:null};
 var examTimerInterval=null;
 function buildExamOptions(){
   var s=el('examSelect');if(!s)return;
@@ -1610,7 +1630,8 @@ function startExam(examId){
   el('examSetup').style.display='none';
   var savedTags=(progress.examTagOverrides&&progress.examTagOverrides[examId])||{};
   examState={exam:exam,list:exam.questions.slice(),pos:0,score:0,answered:false,
-    startTs:Date.now(),qStartTs:Date.now(),times:{},correctness:{},tagChanges:Object.assign({},savedTags)};
+    startTs:Date.now(),qStartTs:Date.now(),times:{},correctness:{},answers:{},
+    tagChanges:Object.assign({},savedTags),finalStats:null};
   renderExamQuestion();
   startExamTimer();
 }
@@ -1649,7 +1670,7 @@ function renderExamQuestion(){
     html+='<button class="opt" data-i="'+i+'" onclick="answerExam('+i+')" dir="rtl"><span class="opt-key">'+HEB_LETTERS[i]+'</span><span>'+esc(o)+'</span></button>';
   });
   html+='</div>'+
-      '<div class="q-foot"><div class="score-tag">Score <b>'+examState.score+'</b> / '+examState.pos+'</div>'+
+      '<div class="q-foot"><div></div>'+
       '<div id="examActions"><button class="btn primary" id="nextExamBtn" onclick="nextExamQuestion()" disabled>Next question →</button></div></div>'+
     '</div>';
   el('examArea').innerHTML=html;
@@ -1676,12 +1697,13 @@ function answerExam(i){
   if(examState.answered)return;examState.answered=true;
   var q=examState.list[examState.pos];
   examState.times[q.num]=Date.now()-examState.qStartTs;
+  examState.answers[q.num]=i;
+  // Deliberately no correct/wrong reveal here — real exam conditions. Just lock in the
+  // choice with a neutral highlight; grading happens all at once on the results screen.
   var opts=document.querySelectorAll('#examOpts .opt');
   opts.forEach(function(b){
     b.disabled=true;var bi=+b.dataset.i;
-    if(bi===q.answer)b.classList.add('correct');
-    else if(bi===i)b.classList.add('wrong');
-    else b.classList.add('dim');
+    if(bi===i)b.classList.add('selected');
   });
   var correct=i===q.answer;
   examState.correctness[q.num]=correct;
@@ -1712,11 +1734,18 @@ function showExamResults(){
     progress.examTagOverrides[examState.exam.id][num]=examState.tagChanges[num];
   });
   saveProgress();
+  // Cache once — totalMs/perChapter must not be recomputed later (the timer has already
+  // stopped, and re-deriving from Date.now() on a later "back to results" visit would inflate it).
+  examState.finalStats={totalMs:totalMs,perChapter:perChapter};
+  renderExamResultsScreen();
+}
+function renderExamResultsScreen(){
+  var stats=examState.finalStats;if(!stats)return;
   var pct=Math.round(examState.score/examState.list.length*100);
-  var rows=Object.keys(perChapter).sort(function(a,b){
-    return (perChapter[a].correct/perChapter[a].total)-(perChapter[b].correct/perChapter[b].total);
+  var rows=Object.keys(stats.perChapter).sort(function(a,b){
+    return (stats.perChapter[a].correct/stats.perChapter[a].total)-(stats.perChapter[b].correct/stats.perChapter[b].total);
   }).map(function(ch){
-    var c=perChapter[ch];var acc=Math.round(c.correct/c.total*100);var avgSec=Math.round(c.timeMs/c.total/1000);
+    var c=stats.perChapter[ch];var acc=Math.round(c.correct/c.total*100);var avgSec=Math.round(c.timeMs/c.total/1000);
     return '<tr><td style="padding:6px;text-align:left">'+esc(ch)+'</td><td style="padding:6px;text-align:center">'+c.correct+'/'+c.total+'</td>'+
       '<td style="padding:6px;text-align:center">'+acc+'%</td><td style="padding:6px;text-align:center">'+fmtExamTime(c.timeMs)+'</td>'+
       '<td style="padding:6px;text-align:center">'+avgSec+'s</td></tr>';
@@ -1732,17 +1761,51 @@ function showExamResults(){
       '<pre class="mono" style="white-space:pre-wrap;font-size:12px;background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:12px">'+esc(lines.join('\n'))+'</pre>'+
       '<button class="btn" onclick="copyExamTagChanges()">Copy corrections</button></div>';
   }
-  el('examArea').innerHTML='<div class="results">'+
+  var navGrid=examState.list.map(function(q,idx){
+    var cls='examnav-btn '+(examState.correctness[q.num]?'correct':'wrong');
+    return '<button class="'+cls+'" onclick="reviewExamQuestion('+idx+')" title="Q'+q.num+'">'+q.num+'</button>';
+  }).join('');
+  el('examArea').innerHTML='<div class="results" style="max-width:760px">'+
     '<div class="res-title">Exam complete</div>'+
-    '<div class="res-sub2">Score '+examState.score+' / '+examState.list.length+' · '+pct+'% · Total time '+fmtExamTime(totalMs)+' (exam budget was '+examState.exam.timeLimitMin+' min)</div>'+
+    '<div class="res-sub2">Score '+examState.score+' / '+examState.list.length+' · '+pct+'% · Total time '+fmtExamTime(stats.totalMs)+' (exam budget was '+examState.exam.timeLimitMin+' min)</div>'+
     '<div class="res-break"><h4>By subject (weakest first)</h4>'+
     '<div style="overflow-x:auto"><table class="mono" style="width:100%;border-collapse:collapse;font-size:12.5px">'+
     '<thead><tr><th style="padding:6px;text-align:left">Subject</th><th style="padding:6px">Score</th><th style="padding:6px">Accuracy</th><th style="padding:6px">Time</th><th style="padding:6px">Avg/Q</th></tr></thead>'+
     '<tbody>'+rows+'</tbody></table></div></div>'+
+    '<div class="res-break"><h4>Review by question — tap any to see the correct answer</h4>'+
+    '<div class="examnav-grid">'+navGrid+'</div></div>'+
     tagChangesHtml+
     '<div class="res-actions"><button class="btn red" onclick="startExam(\''+examState.exam.id+'\')">Retake</button></div>'+
   '</div>';
   el('examSetup').style.display='flex';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function reviewExamQuestion(idx){
+  examState.pos=idx;
+  renderExamReview();
+}
+function renderExamReview(){
+  var q=examState.list[examState.pos];
+  var userAns=examState.answers[q.num];
+  var correct=examState.correctness[q.num];
+  var atFirst=examState.pos===0,atLast=examState.pos===examState.list.length-1;
+  var html='<div class="controls" style="margin-bottom:16px">'+
+      '<button class="btn" onclick="renderExamResultsScreen()">← Back to results</button>'+
+      '<button class="btn"'+(atFirst?' disabled':'')+' onclick="reviewExamQuestion('+(examState.pos-1)+')">← Prev</button>'+
+      '<button class="btn"'+(atLast?' disabled':'')+' onclick="reviewExamQuestion('+(examState.pos+1)+')">Next →</button>'+
+    '</div>'+
+    '<div class="q-card">'+
+      '<div class="q-topic-row"><div class="q-topic" style="color:'+(correct?'var(--teal)':'var(--red)')+'">Q'+q.num+' · '+(correct?'Correct':'Incorrect')+'</div></div>'+
+      '<div class="q-stem" dir="rtl">'+esc(q.stem)+'</div>'+
+      (q.img?('<div class="q-img-wrap"><img src="'+q.img+'" alt="תמונה קלינית" loading="lazy">'+(q.imgCaption?'<div class="q-img-cap" dir="rtl">'+esc(q.imgCaption)+'</div>':'')+'</div>'):'')+
+      '<div class="opts">';
+  q.options.forEach(function(o,i){
+    var cls='opt';
+    if(i===q.answer)cls+=' correct';else if(i===userAns)cls+=' wrong';else cls+=' dim';
+    html+='<button class="'+cls+'" disabled dir="rtl"><span class="opt-key">'+HEB_LETTERS[i]+'</span><span>'+esc(o)+'</span></button>';
+  });
+  html+='</div></div>';
+  el('examArea').innerHTML=html;
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function copyExamTagChanges(){

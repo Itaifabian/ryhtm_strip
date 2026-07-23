@@ -114,6 +114,8 @@ function main() {
   checkExtra(S.EXTRA_HEMATOLOGY_QUIZ, 'EXTRA_HEMATOLOGY_QUIZ', hematologyIds);
   const gastroIds = new Set((S.GASTRO_TOPICS || []).map(t => t.id));
   checkExtra(S.EXTRA_GASTRO_QUIZ, 'EXTRA_GASTRO_QUIZ', gastroIds);
+  // Spans every chapter, so validate against the full topic-id set built by countTopics(...) above.
+  checkExtra(S.EXTRA_PASTEXAM_QUIZ, 'EXTRA_PASTEXAM_QUIZ', ids);
 
   // drugs
   let drugCount = 0;
