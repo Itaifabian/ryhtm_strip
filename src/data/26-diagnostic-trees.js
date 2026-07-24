@@ -4352,4 +4352,3160 @@ const DIAGNOSTIC_TREES = [
   }
 },
 
+{
+  "id": "dtree-gastro-gib",
+  "chapter": "Gastroenterology",
+  "group": "GI Bleeding",
+  "name": "GI Bleeding — Source and Stability",
+  "root": {
+    "q": "Bleeding pattern?",
+    "options": [
+      {
+        "label": "Unstable (shock/orthostatic hypotension, Hb drop >2g/dL, or needing >2 units RBC)",
+        "next": {
+          "q": "Resuscitate first — vitals + orthostatics, 2 large-bore IVs, CBC/chemistry/liver tests/coagulation/crossmatch, fluids to keep SBP>100 and pulse<100, transfuse if Hb<7 (or <9 with ischemic heart disease). Suspected source?",
+          "options": [
+            {
+              "label": "Suspected ulcer bleed",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Upper GI bleed — suspected ulcer",
+                "treatment": [
+                  "PPI + EGD within 24 hours"
+                ]
+              }
+            },
+            {
+              "label": "Suspected variceal bleed",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Upper GI bleed — suspected varices",
+                "treatment": [
+                  "Band ligation/glue/coils",
+                  "Octreotide or terlipressin",
+                  "IV antibiotics",
+                  "EGD within 6-12 hours for portal hypertensive bleeding"
+                ]
+              }
+            },
+            {
+              "label": "Unstable lower GI bleeding",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Unstable LGIB",
+                "treatment": [
+                  "Suspect UGIB too and resuscitate the same way",
+                  "CTA or endoscopy ± embolization"
+                ],
+                "notes": [
+                  "Melena is upper GI until proven otherwise; hematochezia can still represent a massive UGIB"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Stable",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Stable GI bleed",
+          "treatment": [
+            "Stable LGIB may be managed as an outpatient if low-risk; consider colonoscopy",
+            "Work up occult bleeding (iron-deficiency anemia/positive FOBT) or obscure bleeding (overt bleeding, no source on endoscopy) with further imaging/capsule endoscopy as appropriate"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Hematemesis/coffee-ground vomiting/melena → upper GI (severe UGIB can still present as hematochezia)",
+      "Hematochezia (bright red/maroon stool) → usually lower GI",
+      "Iron-deficiency anemia or positive FOBT with no overt bleeding → occult",
+      "Overt bleeding with no source found on endoscopy → obscure"
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-diarrhea",
+  "chapter": "Gastroenterology",
+  "group": "Chronic Diarrhea, IBS & Celiac",
+  "name": "Chronic Diarrhea — Mechanism and Red Flags",
+  "root": {
+    "q": ">3 stools/day or >200g/day for ≥4 weeks (chronic, not acute/infectious) — any red flags?",
+    "options": [
+      {
+        "label": "Red flags present",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Organic chronic diarrhea — full workup",
+          "treatment": [
+            "Do not diagnose IBS — proceed to colonoscopy and inflammatory/malignant workup",
+            "Classify further by mechanism (see below) alongside structural workup"
+          ]
+        }
+      },
+      {
+        "label": "No red flags — classify mechanism",
+        "next": {
+          "q": "Fecal osmotic gap = 290 - 2(Na+K). Result / pattern?",
+          "options": [
+            {
+              "label": "Gap >125, improves with fasting",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Osmotic diarrhea",
+                "treatment": [
+                  "Consider magnesium ingestion, lactose/other sugar intolerance",
+                  "Improves with fasting — a key distinguishing feature from secretory diarrhea"
+                ]
+              }
+            },
+            {
+              "label": "Continues despite fasting",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Secretory diarrhea",
+                "treatment": [
+                  "Consider enterotoxins, neuroendocrine tumor/carcinoid, mucosal disease, ischemia"
+                ]
+              }
+            },
+            {
+              "label": "Elevated fecal calprotectin/leukocytes, blood or systemic signs",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Inflammatory diarrhea",
+                "treatment": [
+                  "Consider infection or IBD — proceed to the IBD workflow if inflammatory markers or blood are present"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Red flags: melena/hematochezia, weight loss, nocturnal symptoms, age >50 — these push toward colonoscopy/inflammatory/malignant workup, away from IBS"
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-ibs-celiac",
+  "chapter": "Gastroenterology",
+  "group": "Chronic Diarrhea, IBS & Celiac",
+  "name": "IBS vs Celiac Disease",
+  "root": {
+    "q": "Which pattern fits?",
+    "options": [
+      {
+        "label": "Chronic abdominal pain >1 day/week for 3 months, associated with defecation or a change in stool frequency/form, red flags absent",
+        "next": {
+          "q": "Dominant symptom?",
+          "options": [
+            {
+              "label": "Diarrhea-predominant (IBS-D)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "IBS-D",
+                "treatment": [
+                  "Loperamide, cholestyramine, or rifaximin"
+                ]
+              }
+            },
+            {
+              "label": "Constipation-predominant (IBS-C)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "IBS-C",
+                "treatment": [
+                  "Laxatives or linaclotide"
+                ]
+              }
+            },
+            {
+              "label": "Pain/bloating-predominant (mixed/IBS-A)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "IBS-A / mixed",
+                "treatment": [
+                  "Peppermint oil, antidepressants, or antispasmodics"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Iron-deficiency anemia, osteopenia/osteoporosis, arthralgia, chronic fatigue, ataxia, amenorrhea, aphthous ulcers, or chronic diarrhea/malabsorption",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suspected celiac disease",
+          "treatment": [
+            "Serology: anti-tTG",
+            "Gold standard: endoscopy with villous/brush-border flattening and crypt lymphocytic infiltration"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-ibd",
+  "chapter": "Gastroenterology",
+  "group": "Inflammatory Bowel Disease",
+  "name": "Ulcerative Colitis vs Crohn Disease",
+  "root": {
+    "q": "Disease pattern?",
+    "options": [
+      {
+        "label": "Continuous inflammation starting at the rectum/anus with proximal spread, limited to mucosa/submucosa, bloody diarrhea/tenesmus, pANCA",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Ulcerative colitis",
+          "treatment": [
+            "Assess severity: symptoms, CRP/ESR/platelets, fecal calprotectin (100-300 intermediate inflammation, >300 severe), endoscopy",
+            "Mild disease: 5-ASA induction + maintenance",
+            "Moderate-severe flare: systemic steroids for INDUCTION ONLY, not maintenance",
+            "Maintenance: azathioprine, biologics/small molecules (anti-TNF, vedolizumab, ustekinumab, anti-IL23, JAK inhibitors, S1P modulators)"
+          ],
+          "notes": [
+            "Complications: toxic megacolon, colorectal cancer, PSC",
+            "Exam trap: steroid response is not a maintenance plan — you must transition off steroids to a maintenance agent"
+          ]
+        }
+      },
+      {
+        "label": "Segmental/skip lesions anywhere in the GI tract (terminal ileum common), transmural, rectal sparing possible, RLQ pain/diarrhea/malabsorption/fistulas, cANCA",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Crohn disease",
+          "treatment": [
+            "Assess severity: symptoms, CRP/ESR/platelets, fecal calprotectin, endoscopy",
+            "Moderate-severe flare: systemic steroids for INDUCTION ONLY",
+            "Maintenance: azathioprine, methotrexate, biologics/small molecules (anti-TNF, vedolizumab, ustekinumab, anti-IL23, JAK inhibitors, S1P modulators)"
+          ],
+          "notes": [
+            "5-ASA is used for mild UC and is NOT effective in Crohn",
+            "Complications: fistulas, strictures, malabsorption, gallstones, renal stones"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-liver-injury",
+  "chapter": "Gastroenterology",
+  "group": "Liver Disease",
+  "name": "Acute Liver Injury — Pattern and Severity",
+  "root": {
+    "q": "Liver test pattern?",
+    "options": [
+      {
+        "label": "AST/ALT high (hepatocellular)",
+        "next": {
+          "q": "Magnitude of AST/ALT elevation?",
+          "options": [
+            {
+              "label": "50-100x",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Toxin- or ischemia-related hepatocellular injury",
+                "treatment": [
+                  "Identify and remove the toxin/ischemic insult",
+                  "Supportive care"
+                ]
+              }
+            },
+            {
+              "label": "5-50x with bilirubin elevation",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Viral hepatitis pattern",
+                "treatment": [
+                  "Proceed to viral hepatitis serology workup"
+                ]
+              }
+            },
+            {
+              "label": "2-5x, usually <400",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Alcohol-related pattern",
+                "treatment": [
+                  "AST typically exceeds ALT in alcohol-related injury — counsel on cessation"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "ALP/GGT high (cholestatic)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cholestatic pattern",
+          "treatment": [
+            "Consider cancer, TB, granulomatous disease, or other cholestatic disease",
+            "Proceed to the cholestatic-disease workflow (obstruction vs PBC vs PSC vs AIH)"
+          ]
+        }
+      },
+      {
+        "label": "PT/INR/albumin abnormal (synthetic dysfunction)",
+        "next": {
+          "q": "INR >1.5 with encephalopathy, within 26 weeks of a major liver insult, and no chronic liver disease?",
+          "options": [
+            {
+              "label": "Yes",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Acute liver failure",
+                "treatment": [
+                  "ICU care at a transplant center",
+                  "Supportive care",
+                  "Identify the trigger and treat infection/secondary complications",
+                  "N-acetylcysteine for acetaminophen",
+                  "Penicillin for Amanita phalloides poisoning",
+                  "Tenofovir for HBV"
+                ]
+              }
+            },
+            {
+              "label": "No — synthetic dysfunction without meeting full ALF criteria",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Synthetic dysfunction, not yet acute liver failure",
+                "treatment": [
+                  "Continue close monitoring for progression to encephalopathy/coagulopathy meeting ALF criteria",
+                  "Treat the underlying cause"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-hepatitis",
+  "chapter": "Gastroenterology",
+  "group": "Viral Hepatitis",
+  "name": "Viral Hepatitis — Which Virus, Which Marker",
+  "root": {
+    "q": "Suspected virus?",
+    "options": [
+      {
+        "label": "HAV or HEV (fecal-oral)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HAV/HEV",
+          "treatment": [
+            "HAV: anti-HAV IgM = acute infection, anti-HAV IgG = immunity",
+            "HEV: anti-HEV IgM with ALT elevation = acute infection; chronic disease is rare, mainly in immunocompromised/transplant patients"
+          ]
+        }
+      },
+      {
+        "label": "HCV",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HCV",
+          "treatment": [
+            "Anti-HCV = exposure, NOT immunity and not necessarily active infection",
+            "Active infection requires HCV RNA PCR",
+            "Chronic HCV can progress to fibrosis, cirrhosis, portal hypertension, and HCC",
+            "Treatment is DAA-based"
+          ]
+        }
+      },
+      {
+        "label": "HBV",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HBV",
+          "treatment": [
+            "HBsAg = active disease (chronic if >6 months); anti-HBs = recovery/immunity; HBeAg = active replication; anti-HBc IgM = acute/recent infection (window period); anti-HBc IgG = lifetime evidence of exposure; HBV DNA = viral load",
+            "Treatment goal: suppress HBV DNA and normalize ALT, mainly with tenofovir or entecavir",
+            "Screen anti-HBc before chemotherapy/immunosuppression — reactivation risk requires prophylaxis"
+          ]
+        }
+      },
+      {
+        "label": "HDV",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HDV",
+          "treatment": [
+            "HDV requires HBV/HBsAg to replicate — check HDV specifically in HBsAg-positive patients"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-cholestasis",
+  "chapter": "Gastroenterology",
+  "group": "Cholestatic & Autoimmune Liver Disease",
+  "name": "Cholestatic Enzymes + Jaundice/Pruritus",
+  "root": {
+    "q": "Extrahepatic obstruction or intrahepatic cholestasis?",
+    "options": [
+      {
+        "label": "Extrahepatic obstruction (gallstones or malignancy — pancreatic head/distal bile duct)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Extrahepatic biliary obstruction",
+          "treatment": [
+            "Gallstone obstruction/cholangitis can present with Charcot triad (RUQ pain + jaundice + fever/chills) — treat with antibiotics + ERCP",
+            "An older patient with cholestasis + jaundice + weight loss needs malignancy excluded before assuming an autoimmune cause"
+          ]
+        }
+      },
+      {
+        "label": "Intrahepatic — cholestatic + antimitochondrial antibody (AMA/M2)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary biliary cholangitis (PBC)",
+          "treatment": [
+            "Diagnosis requires 2 of 3: prolonged ALP >1.5x ULN for >6 months (after ruling out obstruction/viral/fatty liver), positive AMA (especially M2), biopsy showing granulomatous destruction of intrahepatic bile ducts",
+            "Treatment: UDCA",
+            "Pruritus: bile-acid therapies, fibrates, or opioid antagonists; refractory pruritus can indicate need for transplant"
+          ]
+        }
+      },
+      {
+        "label": "Intrahepatic — strictures on MRCP/ERCP, strong UC/IBD association, no specific autoantibody",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary sclerosing cholangitis (PSC)",
+          "treatment": [
+            "Diagnosis relies on MRCP/ERCP, NOT biopsy",
+            "Poor response to immunosuppression; transplant is the definitive cure",
+            "High cholangiocarcinoma risk — colonoscopy for every PSC patient given the UC association"
+          ]
+        }
+      },
+      {
+        "label": "Young woman, hepatocellular pattern, arthralgia, high IgG, ANA/ASMA/LKM positive",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Autoimmune hepatitis",
+          "treatment": [
+            "Diagnosis requires autoantibodies, elevated IgG, biopsy with interface hepatitis/rosettes, and exclusion of viral/other liver disease",
+            "Treatment: prednisone ± azathioprine"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-pancreas",
+  "chapter": "Gastroenterology",
+  "group": "Pancreatic & Biliary Disease",
+  "name": "Pancreatic Disease — Acute, Chronic, or Malignant",
+  "root": {
+    "q": "Presentation?",
+    "options": [
+      {
+        "label": "Acute severe epigastric pain, elevated pancreatic enzymes, or characteristic CT/MRI findings (2 of 3 needed for diagnosis)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acute pancreatitis",
+          "treatment": [
+            "Etiologies: gallstones, alcohol, hypertriglyceridemia >1000, hypercalcemia, drugs, post-ERCP, trauma, tumors",
+            "Aggressive IV fluids in the first 24-48h, opioids for pain, monitor urine/electrolytes/glucose",
+            "Enteral feeding in severe disease",
+            "Antibiotics ONLY if clear infection — not prophylactic",
+            "Debridement/drainage for necrotic complications"
+          ]
+        }
+      },
+      {
+        "label": "Chronic epigastric pain worse after meals and relieved leaning forward, weight loss, steatorrhea, fat-soluble vitamin deficiency, late diabetes",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Chronic pancreatitis",
+          "treatment": [
+            "Diagnosis: CT calcifications/atrophy, MRI/MRCP, EUS; fecal elastase low in chronic exocrine failure",
+            "Treatment: pancreatic enzymes with meals + PPI, pain control, celiac plexus block or surgery if needed"
+          ]
+        }
+      },
+      {
+        "label": "Weight loss + abdominal/back pain, painless jaundice, Courvoisier sign, Trousseau thrombophlebitis, new diabetes, or acute pancreatitis as the presenting event",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pancreatic cancer",
+          "treatment": [
+            "Gold standard: tri-phase CT for diagnosis/staging",
+            "EUS for biopsy or uncertain cases",
+            "CA19-9 tracks response but has low specificity for diagnosis"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-gastro-biliary-emergency",
+  "chapter": "Gastroenterology",
+  "group": "Pancreatic & Biliary Disease",
+  "name": "Ascending Cholangitis vs Acute Cholecystitis",
+  "root": {
+    "q": "Presentation?",
+    "options": [
+      {
+        "label": "Charcot triad (RUQ pain + fever + jaundice), ± hypotension/confusion (Reynolds pentad)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Ascending cholangitis",
+          "treatment": [
+            "Reynolds pentad (Charcot triad + hypotension + confusion) needs IMMEDIATE ERCP",
+            "US first line; MRCP/EUS diagnostic; ERCP is therapeutic (stone extraction)",
+            "Treatment: fluids + antibiotics + ERCP"
+          ]
+        }
+      },
+      {
+        "label": "RUQ pain + Murphy sign + fever/nausea",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acute cholecystitis",
+          "treatment": [
+            "US: gallbladder wall >4mm, pericholecystic fluid, stones",
+            "Treatment: early laparoscopic cholecystectomy within 72 hours",
+            "Cholecystostomy for high-risk surgical patients"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-anemia",
+  "chapter": "Hematology",
+  "group": "Red Cell Disorders",
+  "name": "Anemia Workup by MCV",
+  "root": {
+    "q": "MCV?",
+    "options": [
+      {
+        "label": "Microcytic (<80)",
+        "next": {
+          "q": "Iron studies and RDW?",
+          "options": [
+            {
+              "label": "Very low MCV (<70), high RBC, normal RDW",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Beta-thalassemia",
+                "treatment": [
+                  "Diagnose with hemoglobin electrophoresis"
+                ]
+              }
+            },
+            {
+              "label": "Low iron/transferrin saturation/ferritin, high RDW, pencil cells, thrombocytosis",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Iron-deficiency anemia",
+                "treatment": [
+                  "Causes: chronic bleeding, poor intake, pregnancy, or malabsorption (celiac, atrophic gastritis, H. pylori, IBD, post-bariatric surgery)",
+                  "Treat the underlying cause and replace iron"
+                ]
+              }
+            },
+            {
+              "label": "Inflammatory disease, high hepcidin",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Anemia of chronic disease",
+                "treatment": [
+                  "Treat the underlying inflammatory/chronic disease"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Macrocytic (>100)",
+        "next": {
+          "q": "Which deficiency pattern?",
+          "options": [
+            {
+              "label": "Neuropathy, dementia/psychiatric change, optic atrophy, high MMA + high homocysteine",
+              "next": {
+                "leaf": true,
+                "diagnosis": "B12 deficiency",
+                "treatment": [
+                  "Replace B12; the neuropsychiatric findings distinguish it from folate deficiency"
+                ]
+              }
+            },
+            {
+              "label": "Hypersegmented neutrophils, severe macrocytosis, pancytopenia/glossitis, isolated high homocysteine",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Folate deficiency",
+                "treatment": [
+                  "Replace folate — always exclude B12 deficiency first since replacing folate alone can mask/worsen B12 neuropathy"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Normocytic with evidence of hemolysis",
+        "next": {
+          "q": "Coombs test?",
+          "options": [
+            {
+              "label": "Positive — IgG + spherocytes",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Warm autoimmune hemolytic anemia",
+                "treatment": [
+                  "Coombs-positive; treat the autoimmune process"
+                ]
+              }
+            },
+            {
+              "label": "Positive — IgM/C3 + intravascular hemolysis",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Cold autoimmune hemolytic anemia",
+                "treatment": [
+                  "Coombs-positive via complement; avoid cold exposure"
+                ]
+              }
+            },
+            {
+              "label": "Negative — schistocytes on smear",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Microangiopathic hemolytic anemia (MAHA)",
+                "treatment": [
+                  "Consider HUS, TTP, or DIC"
+                ]
+              }
+            },
+            {
+              "label": "Negative — HS/elliptocytosis/G6PD/sickle features",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Congenital hemolytic anemia",
+                "treatment": [
+                  "Consider hereditary spherocytosis, elliptocytosis, G6PD deficiency, or sickle cell disease"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Anemia: Hb<13 men/<12 women, Hct<40% men/<36% women, low RBC count",
+      "Reticulocytes >2% suggest a proliferative anemia"
+    ]
+  }
+},
+{
+  "id": "dtree-heme-thrombocytopenia",
+  "chapter": "Hematology",
+  "group": "Platelet Disorders",
+  "name": "Thrombocytopenia Workup",
+  "root": {
+    "q": "Confirm it's real — repeat with a non-EDTA tube or check the smear for pseudo-thrombocytopenia. Confirmed real — production or destruction/consumption problem?",
+    "options": [
+      {
+        "label": "Decreased production",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Production-related thrombocytopenia",
+          "treatment": [
+            "Consider bone marrow failure/infiltration, drugs, B12/folate/zinc/cobalt deficiency, or CMV/HIV"
+          ]
+        }
+      },
+      {
+        "label": "Peripheral destruction/consumption — isolated thrombocytopenia, high MPV, normal PT/PTT, no smear pathology, negative Coombs",
+        "next": {
+          "leaf": true,
+          "diagnosis": "ITP",
+          "treatment": [
+            "Steroids, IVIG, rituximab, or anti-D",
+            "Splenectomy or TPO agonists if refractory"
+          ]
+        }
+      },
+      {
+        "label": "Peripheral destruction/consumption — other pattern (schistocytes, coagulopathy, pregnancy, recent heparin)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Consider DIC/TTP/HUS/HELLP/APLA/HIT/VITT, or pregnancy-related thrombocytopenia",
+          "treatment": [
+            "Direct further workup by the specific clue (schistocytes → TTP/HUS/DIC; recent heparin → HIT; pregnancy → HELLP/pregnancy thrombocytopenia)"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Severity: 50-150k often asymptomatic; 20-50k mild bleeding/procedure risk; 10-20k spontaneous mucocutaneous bleeding; <10k life-threatening bleeding risk"
+    ]
+  }
+},
+{
+  "id": "dtree-heme-erythrocytosis",
+  "chapter": "Hematology",
+  "group": "Red Cell Disorders",
+  "name": "Erythrocytosis / Polycythemia",
+  "root": {
+    "q": "Relative or absolute?",
+    "options": [
+      {
+        "label": "Relative (dehydration, vomiting, diarrhea, burns, fever, DKA, chronic diuretics/Gaisbock)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Relative erythrocytosis",
+          "treatment": [
+            "Correct the volume-depletion cause rather than treating as a primary blood disorder"
+          ]
+        }
+      },
+      {
+        "label": "Absolute — check EPO",
+        "next": {
+          "q": "EPO level?",
+          "options": [
+            {
+              "label": "Low EPO",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Polycythemia vera",
+                "treatment": [
+                  "Criteria: high Hb/Hct or RBC mass, hypercellular marrow, JAK2 mutation, low EPO as a minor criterion",
+                  "Treatment: phlebotomy to Hct <45% + low-dose aspirin; hydroxyurea or interferon if high-risk"
+                ]
+              }
+            },
+            {
+              "label": "High, appropriate for hypoxia",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Secondary erythrocytosis — chronic hypoxia",
+                "treatment": [
+                  "Treat the underlying hypoxic condition"
+                ]
+              }
+            },
+            {
+              "label": "High, inappropriate for oxygen status",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Secondary erythrocytosis — tumor/renal source",
+                "treatment": [
+                  "Consider RCC, HCC, renal cysts/hydronephrosis/renal artery stenosis, or meningioma"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-thrombocytosis",
+  "chapter": "Hematology",
+  "group": "Platelet Disorders",
+  "name": "Thrombocytosis",
+  "root": {
+    "q": "Category?",
+    "options": [
+      {
+        "label": "Reactive (anemia, infection, inflammation, trauma, drugs, post-splenectomy, smoking)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Reactive thrombocytosis",
+          "treatment": [
+            "Workup: smear, ESR/CRP",
+            "Treat the underlying reactive cause"
+          ]
+        }
+      },
+      {
+        "label": "Spurious (artifacts, cryoglobulins, cell fragments)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Spurious thrombocytosis",
+          "treatment": [
+            "Repeat the count and review the smear to confirm before further workup"
+          ]
+        }
+      },
+      {
+        "label": "Primary/persistent (MPN/CML/congenital)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary thrombocytosis",
+          "treatment": [
+            "Persistent cases warrant molecular testing and marrow biopsy"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-wbc",
+  "chapter": "Hematology",
+  "group": "White Cell Disorders",
+  "name": "Leukopenia / Leukocytosis",
+  "root": {
+    "q": "Direction of the abnormality?",
+    "options": [
+      {
+        "label": "Chronic isolated neutropenia (>3 months)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Chronic neutropenia",
+          "treatment": [
+            "Causes: constitutional/ethnic neutropenia, cyclic neutropenia, severe congenital neutropenia, autoimmune neutropenia, Felty syndrome/LGL, postinfectious, drug-induced, chronic idiopathic"
+          ]
+        }
+      },
+      {
+        "label": "Reactive neutrophilia (bacterial infection, stress/epinephrine, smoking, steroids)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Reactive leukocytosis",
+          "treatment": [
+            "Treat the underlying reactive trigger"
+          ]
+        }
+      },
+      {
+        "label": "Malignant-pattern leukocytosis",
+        "next": {
+          "q": "Which pattern?",
+          "options": [
+            {
+              "label": "Lymphocytosis with smudge/basket cells",
+              "next": {
+                "leaf": true,
+                "diagnosis": "CLL",
+                "treatment": [
+                  "Diagnose by FACS; proceed to the lymphoid-malignancy workflow"
+                ]
+              }
+            },
+            {
+              "label": "Blasts with marrow failure",
+              "next": {
+                "leaf": true,
+                "diagnosis": "AML",
+                "treatment": [
+                  "Proceed to the myeloid-neoplasm workflow"
+                ]
+              }
+            },
+            {
+              "label": "BCR-ABL positive, anemia, B symptoms",
+              "next": {
+                "leaf": true,
+                "diagnosis": "CML",
+                "treatment": [
+                  "Proceed to molecular/genetic confirmation and treatment planning"
+                ]
+              }
+            },
+            {
+              "label": "Leukoerythroblastosis (marrow infiltration pattern)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Leukoerythroblastic reaction",
+                "treatment": [
+                  "Suggests marrow infiltration — investigate for marrow-space disease"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-lymphadenopathy-splenomegaly",
+  "chapter": "Hematology",
+  "group": "Lymphadenopathy & Splenomegaly",
+  "name": "Lymphadenopathy and Splenomegaly",
+  "root": {
+    "q": "Which finding?",
+    "options": [
+      {
+        "label": "Lymphadenopathy",
+        "next": {
+          "q": "Location?",
+          "options": [
+            {
+              "label": "Supraclavicular",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Suggests lung or gastric cancer",
+                "treatment": [
+                  "FNB preferred in adults for pathology; biopsy usually precedes treatment"
+                ]
+              }
+            },
+            {
+              "label": "Axillary",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Consider Bartonella, skin infection, breast cancer, or melanoma",
+                "treatment": [
+                  "FNB preferred in adults for pathology"
+                ]
+              }
+            },
+            {
+              "label": "Epitrochlear",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Consider lymphoma, mononucleosis, or syphilis",
+                "treatment": [
+                  "FNB preferred in adults for pathology; FNA more cytologic/metastasis-oriented"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Splenomegaly",
+        "next": {
+          "q": "Degree and context?",
+          "options": [
+            {
+              "label": "Mild-moderate",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Splenomegaly — common causes",
+                "treatment": [
+                  "Consider infection/infective endocarditis/mononucleosis, RBC disease (hereditary spherocytosis, thalassemia), extramedullary hematopoiesis (myelofibrosis/MPN), or cirrhosis/right heart failure/ascites"
+                ]
+              }
+            },
+            {
+              "label": "Massive",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Massive splenomegaly",
+                "treatment": [
+                  "Consider myelofibrosis, CML, lymphoma, beta-thalassemia major, Gaucher disease, malaria, or AIDS"
+                ],
+                "notes": [
+                  "Post-splenectomy risks include VTE and OPSI — prevent with vaccines and prophylactic antibiotics"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-bleeding",
+  "chapter": "Hematology",
+  "group": "Bleeding Disorders",
+  "name": "Bleeding Disorder Workup",
+  "root": {
+    "q": "Bleeding phenotype?",
+    "options": [
+      {
+        "label": "Mucocutaneous (epistaxis, gum bleeding, petechiae)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suggests platelet/vWF problem",
+          "treatment": [
+            "Check platelet count/function and vWF studies"
+          ]
+        }
+      },
+      {
+        "label": "Deep soft tissue/joint bleeding",
+        "next": {
+          "q": "PT/PTT pattern?",
+          "options": [
+            {
+              "label": "Isolated PT prolonged",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Factor VII deficiency or early warfarin/vitamin K deficiency",
+                "treatment": [
+                  "Correlate with vitamin K status and anticoagulant use"
+                ]
+              }
+            },
+            {
+              "label": "Isolated PTT prolonged",
+              "next": {
+                "q": "Mixing study?",
+                "options": [
+                  {
+                    "label": "Corrects with mixing",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Factor deficiency (hemophilia A/B, vWD)",
+                      "treatment": [
+                        "Confirm with specific factor assays"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Does not correct after incubation",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Inhibitor present (e.g. acquired hemophilia A)",
+                      "treatment": [
+                        "Acquired hemophilia A is anti-factor VIII and can be autoimmune/malignancy-associated"
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Both PT and PTT prolonged, with bleeding",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Liver disease, vitamin K deficiency, DIC, or a common-pathway factor deficiency",
+                "treatment": [
+                  "Direct workup by clinical context (liver disease, malnutrition, sepsis/malignancy for DIC)"
+                ]
+              }
+            },
+            {
+              "label": "Normal PT/PTT, with bleeding",
+              "next": {
+                "leaf": true,
+                "diagnosis": "vWD, thrombocytopenia/platelet dysfunction, factor XIII deficiency, or telangiectasia",
+                "treatment": [
+                  "vWD is usually mild mucocutaneous bleeding; treat with desmopressin or cryoprecipitate/vWF-containing products"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Thrombosis AND bleeding together, with schistocytes, low fibrinogen, high D-dimer, in a sepsis/trauma/malignancy/transfusion/toxin context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "DIC",
+          "treatment": [
+            "Treat the underlying trigger",
+            "Support with platelets/plasma/fibrinogen as needed for active bleeding"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-vte",
+  "chapter": "Hematology",
+  "group": "Thrombosis",
+  "name": "Venous Thromboembolism",
+  "root": {
+    "q": "Suspected DVT — unilateral leg pain/cramping, redness, warmth, edema, superficial vein dilation. Diagnostic approach?",
+    "options": [
+      {
+        "label": "Low pretest probability",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Use D-dimer to rule out",
+          "treatment": [
+            "A negative D-dimer in a low-risk patient effectively excludes VTE"
+          ]
+        }
+      },
+      {
+        "label": "Higher pretest probability, or D-dimer positive",
+        "next": {
+          "q": "Doppler ultrasound (gold standard) result?",
+          "options": [
+            {
+              "label": "Proximal DVT (up to popliteal)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Proximal DVT — high PE risk",
+                "treatment": [
+                  "DOAC or LMWH; edoxaban/dabigatran require an LMWH lead-in",
+                  "IVC filter only if acute VTE with active bleeding precluding anticoagulation",
+                  "Duration: at least 3 months; shorter for a major transient risk factor; longer/indefinite for persistent risk (malignancy, APLA, systemic disease, IBD, prior VTE, thrombophilia)"
+                ]
+              }
+            },
+            {
+              "label": "Distal DVT (below the knee)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Distal DVT",
+                "treatment": [
+                  "Can propagate proximally — anticoagulate (DOAC/LMWH) or monitor closely per risk profile, same duration principles as proximal DVT"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-myeloid-neoplasm",
+  "chapter": "Hematology",
+  "group": "Hematologic Malignancy",
+  "name": "Suspected Myeloid Neoplasm — MDS, AML, or APL",
+  "root": {
+    "q": "Blast percentage and features?",
+    "options": [
+      {
+        "label": "t(15;17), PML-RARA, high DIC risk",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acute promyelocytic leukemia (APL)",
+          "treatment": [
+            "Start ATRA even BEFORE genetic confirmation given the DIC risk, plus aggressive blood product support",
+            "ATO ± anthracycline depending on risk"
+          ]
+        }
+      },
+      {
+        "label": "≥20% blasts",
+        "next": {
+          "q": "Cytogenetic/molecular risk group?",
+          "options": [
+            {
+              "label": "Favorable (NPM1/CEBPA, t(8;21), inv(16))",
+              "next": {
+                "leaf": true,
+                "diagnosis": "AML — favorable risk",
+                "treatment": [
+                  "Fit patients: daunorubicin + cytarabine induction",
+                  "Fragile patients: azacitidine + venetoclax"
+                ]
+              }
+            },
+            {
+              "label": "Intermediate (FLT3-ITD)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "AML — intermediate risk",
+                "treatment": [
+                  "Standard induction (fit) or azacitidine + venetoclax (fragile)",
+                  "Consider transplant"
+                ]
+              }
+            },
+            {
+              "label": "Adverse (TP53, chromosome 3 inversion, aneuploidy)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "AML — adverse risk",
+                "treatment": [
+                  "Consider transplant",
+                  "Fragile patients: azacitidine + venetoclax"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "<20% blasts, dysplasia in ≥1 lineage, ineffective hematopoiesis, cytopenia, clonal HSC proliferation",
+        "next": {
+          "q": "Risk category?",
+          "options": [
+            {
+              "label": "Low risk",
+              "next": {
+                "leaf": true,
+                "diagnosis": "MDS — low risk",
+                "treatment": [
+                  "Manage anemia/cytopenias with supportive care"
+                ]
+              }
+            },
+            {
+              "label": "High risk (pancytopenia/blasts)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "MDS — high risk",
+                "treatment": [
+                  "Hypomethylating agent (HMA) therapy",
+                  "Consider allogeneic transplant"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-lymphoid-malignancy",
+  "chapter": "Hematology",
+  "group": "Hematologic Malignancy",
+  "name": "Leukemia (Blood/Marrow) vs Lymphoma (Nodes)",
+  "root": {
+    "q": "Where is the disease predominantly found?",
+    "options": [
+      {
+        "label": "Blood/marrow — lymphocytosis with smudge/basket cells",
+        "next": {
+          "leaf": true,
+          "diagnosis": "CLL",
+          "treatment": [
+            "Diagnosed by FACS",
+            "Treat only if symptomatic: BTK inhibitor, BCL2 inhibitor, or rituximab"
+          ],
+          "notes": [
+            "Richter transformation = CLL transforming to DLBCL, presenting with B symptoms and worse prognosis"
+          ]
+        }
+      },
+      {
+        "label": "Lymph nodes/lymphatic tissue — biopsy shows diffuse large B-cell lymphoma (DLBCL)",
+        "next": {
+          "q": "Ann Arbor stage?",
+          "options": [
+            {
+              "label": "I — one region, one side of the diaphragm",
+              "next": {
+                "leaf": true,
+                "diagnosis": "DLBCL Stage I",
+                "treatment": [
+                  "R-CHOP-21"
+                ]
+              }
+            },
+            {
+              "label": "II — >2 regions, same side of the diaphragm",
+              "next": {
+                "leaf": true,
+                "diagnosis": "DLBCL Stage II",
+                "treatment": [
+                  "R-CHOP-21"
+                ]
+              }
+            },
+            {
+              "label": "III — both sides of the diaphragm",
+              "next": {
+                "leaf": true,
+                "diagnosis": "DLBCL Stage III",
+                "treatment": [
+                  "R-CHOP-21"
+                ]
+              }
+            },
+            {
+              "label": "IV — disseminated/bilateral",
+              "next": {
+                "leaf": true,
+                "diagnosis": "DLBCL Stage IV",
+                "treatment": [
+                  "R-CHOP-21",
+                  "Recurrence: CAR-T or intensive chemo + autologous transplant"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-myeloma",
+  "chapter": "Hematology",
+  "group": "Hematologic Malignancy",
+  "name": "Suspected Multiple Myeloma",
+  "root": {
+    "q": "SLiM-CRAB features present?",
+    "options": [
+      {
+        "label": "Yes — any SLiM-CRAB criterion met",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Multiple myeloma",
+          "treatment": [
+            "SPEP detects the monoclonal gammopathy",
+            "Treatment: induction therapy, transplant/maintenance, proteasome inhibitors, immunomodulators, anti-CD38 antibodies"
+          ]
+        }
+      },
+      {
+        "label": "No — monoclonal protein without SLiM-CRAB criteria",
+        "next": {
+          "leaf": true,
+          "diagnosis": "MGUS or smoldering myeloma (not active myeloma)",
+          "treatment": [
+            "Monitor without treatment unless SLiM-CRAB criteria develop"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "CRAB: hyperCalcemia, Renal failure, Anemia, Bone lesions",
+      "SLiM: ≥60% marrow plasma cells, light-chain ratio ≥100, >1 MRI focal lesion"
+    ]
+  }
+},
+{
+  "id": "dtree-heme-transfusion",
+  "chapter": "Hematology",
+  "group": "Transfusion Medicine",
+  "name": "Transfusion Reaction",
+  "root": {
+    "q": "Timing and clinical pattern?",
+    "options": [
+      {
+        "label": "Immediate — sense of doom, flank pain, hypotension, hemoglobinuria",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acute hemolytic transfusion reaction (AHTR)",
+          "treatment": [
+            "Stop the transfusion immediately",
+            "Fluids/diuretics",
+            "Full hemolysis workup"
+          ]
+        }
+      },
+      {
+        "label": "2-6h — hypoxemia, bilateral pulmonary edema, hypotension/fever",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TRALI",
+          "treatment": [
+            "Stop the transfusion",
+            "Respiratory support",
+            "Avoid diuretics"
+          ]
+        }
+      },
+      {
+        "label": "Volume overload — hypertension, JVD, dyspnea",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TACO",
+          "treatment": [
+            "Stop the transfusion",
+            "Sit the patient up",
+            "Oxygen and diuretics"
+          ]
+        }
+      },
+      {
+        "label": "Fever/rigors/septic shock",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Bacterial contamination",
+          "treatment": [
+            "Fluids",
+            "Broad-spectrum IV antibiotics",
+            "Culture the donor blood unit"
+          ]
+        }
+      },
+      {
+        "label": "Seconds to minutes — bronchospasm/angioedema/hypotension",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Anaphylactic transfusion reaction",
+          "treatment": [
+            "Antihistamines plus adrenaline"
+          ]
+        }
+      },
+      {
+        "label": "5-12 days — fever/rash/diarrhea/pancytopenia",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TA-GVHD",
+          "treatment": [
+            "Prevented by irradiating blood products — treatment is largely supportive once it occurs"
+          ]
+        }
+      },
+      {
+        "label": "Hypocalcemia, long QT, spasms during massive transfusion",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Citrate toxicity",
+          "treatment": [
+            "IV calcium"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-heme-emergencies",
+  "chapter": "Hematology",
+  "group": "Hematologic Emergencies",
+  "name": "Hematologic Oncology Emergency",
+  "root": {
+    "q": "Which emergency pattern?",
+    "options": [
+      {
+        "label": "Fever ≥38.3 once (or ≥38.0 for 1h) with ANC <500 or expected to fall",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Febrile neutropenia",
+          "treatment": [
+            "Cultures first",
+            "Empiric cefepime, a carbapenem, or piperacillin-tazobactam",
+            "Add vancomycin if hemodynamic instability, catheter infection, or MRSA risk",
+            "Persistent fever: CT chest/sinus and add antifungal coverage if prolonged"
+          ]
+        }
+      },
+      {
+        "label": "Uric acid >8, K >6, phosphate >4.5, or corrected Ca <7 (lab TLS), especially with AKI/arrhythmia/seizure",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Tumor lysis syndrome",
+          "treatment": [
+            "Aggressive hydration",
+            "Allopurinol prophylactically",
+            "Rasburicase if uric acid is high — CONTRAINDICATED in G6PD deficiency",
+            "Treat hyperkalemia/hyperphosphatemia",
+            "Usually do not treat asymptomatic hypocalcemia"
+          ],
+          "notes": [
+            "Clinical TLS = lab TLS plus AKI, arrhythmia, or seizure"
+          ]
+        }
+      },
+      {
+        "label": "WBC >100k (mostly AML/ALL) with dyspnea/hypoxemia, pulmonary infiltrates, CNS symptoms, visual symptoms, or AKI",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hyperleukocytosis / leukostasis",
+          "treatment": [
+            "Fluids",
+            "Prevent TLS and DIC",
+            "Hydroxyurea, cytarabine, or leukapheresis",
+            "Transfuse RBC only if Hb <7 or severely symptomatic — raising hematocrit can worsen viscosity/leukostasis"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-atopic",
+  "chapter": "Allergy & Immunology",
+  "group": "Atopic Disease",
+  "name": "Atopic Disease — Which Presentation",
+  "root": {
+    "q": "Presentation? (Atopy = a tendency to make IgE after allergen exposure — not automatically clinical allergy; typical atopic march: food allergy/atopic dermatitis in childhood → asthma/allergic rhinitis later)",
+    "options": [
+      {
+        "label": "Episodic itchy eczematous rash in flexural areas (wrists, behind the knees, neck), itch-scratch cycle",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Atopic dermatitis",
+          "treatment": [
+            "Moisturizers are sufficient in most cases",
+            "Topical steroids for flares",
+            "Severe/refractory: methotrexate, cyclosporine, phototherapy, or dupilumab"
+          ]
+        }
+      },
+      {
+        "label": "Symmetric symptoms, clear/white rhinorrhea, allergic salute, allergic conjunctivitis, pale mucosa/enlarged turbinates",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Allergic rhinitis",
+          "treatment": [
+            "Skin test positive if >3mm response",
+            "Allergen avoidance, second-generation antihistamines",
+            "Nasal steroids for chronic/severe disease",
+            "Immunotherapy for allergic rhinitis, asthma, or bee-venom allergy"
+          ]
+        }
+      },
+      {
+        "label": "Poorly controlled asthma (≥2 flares/week, nocturnal symptoms, ≥2 reliever uses/week, exercise limitation)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Uncontrolled asthma",
+          "treatment": [
+            "Check for reversible causes first: inhaler misuse, chronic allergen exposure/smoking, beta-blockers, stress, pollution, reflux",
+            "Preferred reliever from step 1 is ICS-formoterol, not SABA-only, since every reliever use then also delivers anti-inflammatory therapy",
+            "Biologics for refractory disease: anti-IL5, anti-IgE, dupilumab, anti-TSLP"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-anaphylaxis",
+  "chapter": "Allergy & Immunology",
+  "group": "Anaphylaxis",
+  "name": "Anaphylaxis",
+  "root": {
+    "q": "Acute skin/mucosal involvement plus respiratory compromise or hypotension/syncope — OR, with a known exposure, ≥2 systems involved (respiratory, hypotension, rash, GI)?",
+    "options": [
+      {
+        "label": "Criteria met",
+        "next": {
+          "q": "Severity — confusion, collapse, unconsciousness, or incontinence present?",
+          "options": [
+            {
+              "label": "Yes — severe",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Severe anaphylaxis",
+                "treatment": [
+                  "IM epinephrine in the mid-anterolateral thigh — first-line, life-saving, given immediately",
+                  "Supine position with legs elevated, oxygen, IV fluids, inhaled beta-agonist",
+                  "Antihistamines are second-tier only — never given before epinephrine when anaphylaxis criteria are met"
+                ]
+              }
+            },
+            {
+              "label": "No — meets criteria but not severe",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Anaphylaxis (non-severe)",
+                "treatment": [
+                  "Still treat with IM epinephrine as first-line immediately — do not substitute antihistamines",
+                  "Supine position, oxygen, fluids, inhaled beta-agonist as needed"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Isolated urticaria after a food exposure, no other system involved",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Allergic urticaria without anaphylaxis",
+          "treatment": [
+            "Antihistamines and monitoring — epinephrine is reserved for when anaphylaxis criteria (respiratory/hypotension/multi-system) are met"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-drug",
+  "chapter": "Allergy & Immunology",
+  "group": "Drug Allergy",
+  "name": "Drug Allergy Workup",
+  "root": {
+    "q": "Reaction type and drug?",
+    "options": [
+      {
+        "label": "Predictable, dose/mechanism-related reaction (Type A)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Type A drug reaction",
+          "treatment": [
+            "Most drug reactions are this type — manage by adjusting dose or discontinuing if the mechanism-related effect is intolerable"
+          ]
+        }
+      },
+      {
+        "label": "Unpredictable hypersensitivity reaction (Type B) — penicillin history",
+        "next": {
+          "q": "History detail?",
+          "options": [
+            {
+              "label": "Adverse effect only (e.g. GI upset), not a true allergy",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Not a true penicillin allergy",
+                "treatment": [
+                  "Continue penicillin unless the reaction was severe"
+                ]
+              }
+            },
+            {
+              "label": "Delayed mild rash",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Low-risk penicillin allergy history",
+                "treatment": [
+                  "Graded oral challenge"
+                ]
+              }
+            },
+            {
+              "label": "Immediate reaction",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Possible IgE-mediated penicillin allergy",
+                "treatment": [
+                  "Skin testing; if negative, proceed to challenge"
+                ]
+              }
+            },
+            {
+              "label": "SJS/TEN/DRESS",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Severe delayed reaction (SCAR)",
+                "treatment": [
+                  "Avoid the drug forever — no desensitization"
+                ],
+                "notes": [
+                  "Penicillin-allergic patients can often still receive cephalosporins and vice versa, depending on the severity of the original reaction"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Unpredictable hypersensitivity — NSAID",
+        "next": {
+          "leaf": true,
+          "diagnosis": "NSAID hypersensitivity",
+          "treatment": [
+            "Usually non-IgE, 'anaphylactoid', mediated via a leukotriene shift",
+            "Consider challenge testing or a COX-2-selective alternative; weak COX inhibitors may be tolerated"
+          ]
+        }
+      },
+      {
+        "label": "Unpredictable hypersensitivity — IV contrast",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Contrast reaction",
+          "treatment": [
+            "Can be chemotoxic or anaphylactoid",
+            "Prior reaction: premedicate with prednisone + antihistamines; low-osmolar contrast reduces recurrence risk"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-mastcell",
+  "chapter": "Allergy & Immunology",
+  "group": "Mast Cell Disease",
+  "name": "Mast Cell Disease / Chronic Urticaria",
+  "root": {
+    "q": "Presentation?",
+    "options": [
+      {
+        "label": "Episodic systemic symptoms in ≥2 organ systems (hypotension, hives, abdominal cramping, wheezing) with an acute rise in baseline tryptase and response to mast-cell-directed medications",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Mast cell activation syndrome (MCAS)",
+          "treatment": [
+            "Treat with mast-cell-directed medications (antihistamines, mast cell stabilizers) and avoid triggers"
+          ]
+        }
+      },
+      {
+        "label": "Dense mast-cell aggregates (>15 cells) on bone marrow biopsy, often KIT D816V",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Systemic mastocytosis",
+          "treatment": [
+            "Can be indolent or aggressive",
+            "Advanced forms: TKIs such as avapritinib or midostaurin"
+          ]
+        }
+      },
+      {
+        "label": "Daily hives/angioedema for >6 weeks",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Chronic spontaneous urticaria",
+          "treatment": [
+            "Second-generation antihistamines up to 4x standard dose",
+            "Omalizumab",
+            "Cyclosporine for refractory disease"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-eosinophilia",
+  "chapter": "Allergy & Immunology",
+  "group": "Eosinophilia & Immunodeficiency",
+  "name": "Hypereosinophilia",
+  "root": {
+    "q": "Secondary/reactive cause identified (allergy, drugs, parasites)?",
+    "options": [
+      {
+        "label": "Yes",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Secondary/reactive eosinophilia",
+          "treatment": [
+            "Treat the underlying allergy, discontinue the causative drug, or treat the parasitic infection"
+          ],
+          "notes": [
+            "Always rule out Strongyloides before giving systemic steroids — steroids can cause fatal disseminated strongyloidiasis"
+          ]
+        }
+      },
+      {
+        "label": "No — no secondary cause found",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Consider primary/neoplastic hypereosinophilic syndrome (HES)",
+          "treatment": [
+            "Still rule out Strongyloides before starting steroids, given the risk of fatal dissemination if missed"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-allergy-immunodeficiency",
+  "chapter": "Allergy & Immunology",
+  "group": "Eosinophilia & Immunodeficiency",
+  "name": "Suspected Inborn Error of Immunity",
+  "root": {
+    "q": "Which clue is present — recurrent pneumonias (>2/year), deep abscesses, failure to thrive, persistent thrush, family history, need for IV antibiotics, or severe/early autoimmune disease?",
+    "options": [
+      {
+        "label": "Suspected B-cell defect",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Antibody deficiency workup",
+          "treatment": [
+            "Check IgG/IgA/IgM and vaccine responses"
+          ]
+        }
+      },
+      {
+        "label": "Suspected T-cell defect",
+        "next": {
+          "leaf": true,
+          "diagnosis": "T-cell deficiency workup",
+          "treatment": [
+            "Check CD3/CD4/CD8 counts and mitogen proliferation assays"
+          ]
+        }
+      },
+      {
+        "label": "Suspected phagocyte defect",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Phagocyte deficiency workup",
+          "treatment": [
+            "DHR (dihydrorhodamine) test"
+          ]
+        }
+      },
+      {
+        "label": "Suspected complement defect",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Complement deficiency workup",
+          "treatment": [
+            "CH50/AH50"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-pituitary-axis",
+  "chapter": "Endocrinology",
+  "group": "Pituitary & Hypothalamic Axes",
+  "name": "Primary vs Secondary Gland Failure",
+  "root": {
+    "q": "Which axis, and pattern?",
+    "options": [
+      {
+        "label": "Thyroid axis — low T3/T4 + high TSH",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary hypothyroidism",
+          "treatment": [
+            "Proceed to the thyroid workflow"
+          ]
+        }
+      },
+      {
+        "label": "Thyroid axis — low T3/T4 + low/inappropriately normal TSH",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Secondary (central) hypothyroidism",
+          "treatment": [
+            "Evaluate the pituitary/hypothalamus as the source"
+          ]
+        }
+      },
+      {
+        "label": "Adrenal axis — low cortisol + high ACTH + hyperpigmentation",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary adrenal insufficiency",
+          "treatment": [
+            "Proceed to the adrenal insufficiency workflow"
+          ]
+        }
+      },
+      {
+        "label": "Adrenal axis — low cortisol + low ACTH",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Secondary adrenal insufficiency",
+          "treatment": [
+            "Evaluate for pituitary disease or exogenous steroid suppression"
+          ]
+        }
+      },
+      {
+        "label": "Gonadal axis — delayed puberty, amenorrhea, infertility, osteoporosis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Gonadal axis dysfunction (central or primary)",
+          "treatment": [
+            "Localize with LH/FSH pattern and correlate with the clinical context"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-di-polydipsia",
+  "chapter": "Endocrinology",
+  "group": "Pituitary & Hypothalamic Axes",
+  "name": "Diabetes Insipidus vs Primary Polydipsia",
+  "root": {
+    "q": "Water deprivation test, then desmopressin — response pattern?",
+    "options": [
+      {
+        "label": "Urine osmolality stays low/stable on deprivation, responds to desmopressin",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Central DI",
+          "treatment": [
+            "Desmopressin replacement"
+          ]
+        }
+      },
+      {
+        "label": "Urine osmolality stays low on deprivation, no response to desmopressin",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Nephrogenic DI",
+          "treatment": [
+            "Treat the underlying renal cause; desmopressin will not work"
+          ]
+        }
+      },
+      {
+        "label": "Urine osmolality rises on deprivation, no desmopressin response needed",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary polydipsia",
+          "treatment": [
+            "Address the excess fluid intake/behavioral driver"
+          ]
+        }
+      },
+      {
+        "label": "Partial rise on deprivation, further rise with desmopressin",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Partial DI",
+          "treatment": [
+            "Desmopressin trial with close monitoring"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Also rule out adrenal insufficiency and hypothyroidism before attributing polyuria/polydipsia to SIADH"
+    ]
+  }
+},
+{
+  "id": "dtree-endo-pituitary-tumor",
+  "chapter": "Endocrinology",
+  "group": "Pituitary Tumors",
+  "name": "Pituitary Tumor — Which Hormone Excess",
+  "root": {
+    "q": "Presenting hormone pattern?",
+    "options": [
+      {
+        "label": "High prolactin, young woman with oligo/amenorrhea and sexual dysfunction (macroprolactinoma more common in men)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Prolactinoma",
+          "treatment": [
+            "Exclude other causes of hyperprolactinemia first: pregnancy, stress, antipsychotics/antidepressants/antiemetics, cocaine/opiates, stalk effect/malignancy",
+            "Treatment: dopamine agonist (bromocriptine or cabergoline)"
+          ]
+        }
+      },
+      {
+        "label": "Soft tissue enlargement, hypertension/CVD, OSA, colon polyps, thyroid cysts",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acromegaly",
+          "treatment": [
+            "Diagnosis: IGF-1 and failure of GH suppression after glucose",
+            "Treatment: transsphenoidal surgery; somatostatin analogs are first-line medical therapy"
+          ]
+        }
+      },
+      {
+        "label": "Moon face, weight gain, proximal muscle weakness, new/worsening diabetes, hypertension",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cushing disease/syndrome",
+          "treatment": [
+            "Workup: establish hypercortisolism (dexamethasone testing), determine ACTH dependence, imaging",
+            "IPSS is the gold standard for confirming a central ACTH gradient",
+            "Treatment: surgery; radiation/adrenalectomy/drugs in severe cases"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-adrenal-insufficiency",
+  "chapter": "Endocrinology",
+  "group": "Adrenal Disease",
+  "name": "Adrenal Insufficiency — Primary vs Secondary",
+  "root": {
+    "q": "ACTH level and hyperpigmentation?",
+    "options": [
+      {
+        "label": "High ACTH + hyperpigmentation + salt craving/aldosterone deficiency",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary adrenal insufficiency (Addison disease)",
+          "treatment": [
+            "Etiologies: autoimmune, TB/HIV, malignancy, ketoconazole",
+            "Diagnosis: ACTH stimulation test (morning cortisol alone is nonspecific); normal stimulated cortisol >18-20mcg/dL",
+            "Treatment: hydrocortisone first line, prednisone second line, fludrocortisone if mineralocorticoid deficiency; increase dose during physiologic stress"
+          ]
+        }
+      },
+      {
+        "label": "Low ACTH, no hyperpigmentation",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Secondary adrenal insufficiency",
+          "treatment": [
+            "Etiologies: pituitary/hypothalamic disease, chronic exogenous steroid suppression",
+            "Same diagnostic (ACTH stimulation test) and treatment (hydrocortisone/prednisone) approach, but mineralocorticoid deficiency is usually absent"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Symptoms: weakness/fatigue, anorexia, weight loss, abdominal symptoms, hyponatremia"
+    ]
+  }
+},
+{
+  "id": "dtree-endo-adrenal-incidentaloma",
+  "chapter": "Endocrinology",
+  "group": "Adrenal Disease",
+  "name": "Adrenal Incidentaloma",
+  "root": {
+    "q": "Every adrenal nodule >10mm needs assessment, even if asymptomatic. Imaging/functional pattern?",
+    "options": [
+      {
+        "label": "Homogeneous, low density pre-contrast, fast washout",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Benign adenoma",
+          "treatment": [
+            "Still assess cortisol secretion, catecholamines, and aldosterone (if hypertensive/hypokalemic) even for an imaging-benign nodule"
+          ]
+        }
+      },
+      {
+        "label": ">4cm, heterogeneous, necrosis/calcification, irregular borders, high density",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suspected adrenocortical carcinoma (ACC)",
+          "treatment": [
+            "Full functional workup plus surgical planning given malignancy risk"
+          ]
+        }
+      },
+      {
+        "label": "Episodic hypertension, headaches, palpitations, sweating/anxiety",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pheochromocytoma",
+          "treatment": [
+            "Test: 24h urine catecholamines + metanephrines",
+            "Treatment: surgery, hydration, and alpha blockade BEFORE beta blockade"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-thyroid-function",
+  "chapter": "Endocrinology",
+  "group": "Thyroid Disease",
+  "name": "Thyroid Function — TSH First",
+  "root": {
+    "q": "TSH?",
+    "options": [
+      {
+        "label": "Low",
+        "next": {
+          "q": "Thyroid uptake scan pattern?",
+          "options": [
+            {
+              "label": "No uptake",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Thyroiditis",
+                "treatment": [
+                  "NSAIDs or steroids",
+                  "Beta-blocker for symptom control"
+                ]
+              }
+            },
+            {
+              "label": "Diffuse high uptake",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Graves disease",
+                "treatment": [
+                  "Confirm with anti-TSHR antibody",
+                  "Beta-blocker for symptoms; methimazole, PTU, RAI, or surgery depending on the case"
+                ]
+              }
+            },
+            {
+              "label": "One hot nodule, rest suppressed",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Toxic adenoma",
+                "treatment": [
+                  "Beta-blocker for symptoms; methimazole, RAI, or surgery"
+                ]
+              }
+            },
+            {
+              "label": "On amiodarone, rapid resolution within 2-3 weeks",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Amiodarone-induced thyrotoxicosis, type II (destructive thyroiditis)",
+                "treatment": [
+                  "Steroids"
+                ]
+              }
+            },
+            {
+              "label": "On amiodarone, overproduction in an abnormal gland",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Amiodarone-induced thyrotoxicosis, type I",
+                "treatment": [
+                  "Methimazole"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "High",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Primary hypothyroidism",
+          "treatment": [
+            "Causes: Hashimoto thyroiditis, post-RAI/thyroidectomy, drugs, transient post-thyroiditis/Wolff-Chaikoff effect",
+            "Treatment: levothyroxine with monitoring"
+          ]
+        }
+      },
+      {
+        "label": "Low TSH + low T3/T4 in the setting of acute illness",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Euthyroid sick syndrome",
+          "treatment": [
+            "Reflects acute illness rather than true thyroid disease — recheck after the acute illness resolves rather than treating as hyperthyroidism"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-thyroid-nodule",
+  "chapter": "Endocrinology",
+  "group": "Thyroid Disease",
+  "name": "Thyroid Nodule",
+  "root": {
+    "q": "TSH result?",
+    "options": [
+      {
+        "label": "Low",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Get a thyroid scan first",
+          "treatment": [
+            "A low TSH raises the possibility of an autonomously functioning ('hot') nodule — characterize with a scan before biopsy"
+          ]
+        }
+      },
+      {
+        "label": "Normal/high — proceed to ultrasound",
+        "next": {
+          "q": "Ultrasound risk features (hypoechoic, calcifications, irregular borders)?",
+          "options": [
+            {
+              "label": "Present",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Suspicious nodule",
+                "treatment": [
+                  "FNA/cytology"
+                ],
+                "notes": [
+                  "Papillary carcinoma is the most common thyroid cancer; medullary carcinoma produces calcitonin and is associated with MEN2"
+                ]
+              }
+            },
+            {
+              "label": "Absent",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Low-risk nodule",
+                "treatment": [
+                  "Routine surveillance per nodule-size guidelines rather than immediate FNA"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-net-hypoglycemia",
+  "chapter": "Endocrinology",
+  "group": "Neuroendocrine Tumors & Hypoglycemia",
+  "name": "Neuroendocrine Tumor Syndrome or Hypoglycemia",
+  "root": {
+    "q": "Presentation?",
+    "options": [
+      {
+        "label": "Flushing, diarrhea, abdominal pain, right-sided heart disease",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Carcinoid syndrome",
+          "treatment": [
+            "5-HIAA",
+            "Ga-DOTATATE PET-CT is the gold-standard imaging test",
+            "Surgery when possible; metastatic disease: somatostatin analogs, everolimus/sunitinib, PRRT, hepatic-directed therapy"
+          ]
+        }
+      },
+      {
+        "label": "Hypoglycemia",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Insulinoma",
+          "treatment": [
+            "Confirm with Whipple triad: low glucose + adrenergic/neuroglycopenic symptoms + resolution with glucose correction"
+          ]
+        }
+      },
+      {
+        "label": "Ulcers + diarrhea",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Gastrinoma",
+          "treatment": [
+            "Chromogranin A, imaging (CT/MRI/EUS), Ga-DOTATATE PET-CT"
+          ]
+        }
+      },
+      {
+        "label": "Diabetes + diarrhea + rash",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Glucagonoma",
+          "treatment": [
+            "Chromogranin A, imaging, Ga-DOTATATE PET-CT"
+          ]
+        }
+      },
+      {
+        "label": "Watery diarrhea/fluid loss",
+        "next": {
+          "leaf": true,
+          "diagnosis": "VIPoma",
+          "treatment": [
+            "Chromogranin A, imaging, Ga-DOTATATE PET-CT"
+          ]
+        }
+      },
+      {
+        "label": "Hypoglycemia — need to determine insulin source",
+        "next": {
+          "q": "Insulin and C-peptide levels?",
+          "options": [
+            {
+              "label": "High insulin + high C-peptide",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Endogenous hyperinsulinism",
+                "treatment": [
+                  "Consider insulinoma or sulfonylurea use"
+                ]
+              }
+            },
+            {
+              "label": "High insulin + low C-peptide",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Exogenous insulin administration",
+                "treatment": [
+                  "Investigate for surreptitious or accidental insulin use"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-calcium",
+  "chapter": "Endocrinology",
+  "group": "Calcium Disorders",
+  "name": "Hypercalcemia Workup",
+  "root": {
+    "q": "PTH level?",
+    "options": [
+      {
+        "label": "High or inappropriately normal",
+        "next": {
+          "leaf": true,
+          "diagnosis": "PTH-dependent hypercalcemia",
+          "treatment": [
+            "Consider primary hyperparathyroidism or FHH/lithium-induced",
+            "Complications: osteoporosis/osteopenia, renal colic",
+            "Young/symptomatic patients: surgery after localization",
+            "Non-surgical options: bisphosphonates, denosumab, or cinacalcet"
+          ]
+        }
+      },
+      {
+        "label": "Low",
+        "next": {
+          "leaf": true,
+          "diagnosis": "PTH-independent hypercalcemia",
+          "treatment": [
+            "Consider malignancy, vitamin D excess, granulomatous disease, hyperthyroidism, thiazides, or neuroendocrine tumors",
+            "Workup includes vitamin D and a urine calcium/creatinine collection",
+            "Treatment: hydration, loop diuretics, anti-osteoclast therapy, calcitonin, steroids for granulomatous disease, dialysis if severe"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Severe hypercalcemia: >14",
+      "Symptoms: polyuria/polydipsia, renal colic, GI symptoms, weakness, attention deficits, hypertension"
+    ]
+  }
+},
+{
+  "id": "dtree-endo-t2dm-diagnosis",
+  "chapter": "Endocrinology",
+  "group": "Diabetes Mellitus",
+  "name": "Type 2 Diabetes — Screening, Diagnosis, and Acute Hyperglycemic Emergencies",
+  "root": {
+    "q": "Screening high-risk group (age ≥35, gestational diabetes history, HIV, prediabetes, overweight) or acute presentation?",
+    "options": [
+      {
+        "label": "Screening — diagnostic testing",
+        "next": {
+          "leaf": true,
+          "diagnosis": "T2DM diagnosis",
+          "treatment": [
+            "Fasting glucose, 2h OGTT, or HbA1c",
+            "Diagnosis requires two abnormal tests, OR one glucose >200 with hyperglycemic symptoms"
+          ]
+        }
+      },
+      {
+        "label": "Acute — hyperglycemia + acidosis + ketones (more common in T1D)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "DKA",
+          "treatment": [
+            "Fluids, potassium management, insulin",
+            "Maintain glucose around 250 during acute correction to avoid rapid osmotic shifts",
+            "Correct sodium for the glucose level"
+          ]
+        }
+      },
+      {
+        "label": "Acute — very high glucose/osmolarity/sodium, no ketoacidosis (more common in T2D)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HHS",
+          "treatment": [
+            "Fluids, potassium management, insulin",
+            "Same correction principles as DKA (avoid overly rapid glucose/sodium correction)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-t2dm-complications",
+  "chapter": "Endocrinology",
+  "group": "Diabetes Mellitus",
+  "name": "Type 2 Diabetes — Chronic Complications and Targets",
+  "root": {
+    "q": "Complication category, or inpatient setting?",
+    "options": [
+      {
+        "label": "Macrovascular",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Macrovascular complications",
+          "treatment": [
+            "Screen for/manage ischemic heart disease, TIA/CVA, and peripheral artery disease/amputation risk"
+          ]
+        }
+      },
+      {
+        "label": "Microvascular",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Microvascular complications",
+          "treatment": [
+            "Screen for retinopathy, neuropathy, autonomic neuropathy, and nephropathy/albuminuria/CKD",
+            "Treatment targets: HbA1c <7 if achievable, fasting glucose 80-130, plus diet/exercise",
+            "ACEi/ARB, SGLT2 inhibitor, and GLP-1 agonist for nephropathy/cardiovascular-risk reduction"
+          ]
+        }
+      },
+      {
+        "label": "Inpatient hyperglycemia",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Inpatient glucose management",
+          "treatment": [
+            "Stress hyperglycemia >140 correlates with complications",
+            "Target 140-180 in most inpatients",
+            "Basal-bolus insulin is preferred over sliding-scale-only regimens"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-endo-obesity",
+  "chapter": "Endocrinology",
+  "group": "Obesity",
+  "name": "Obesity Treatment",
+  "root": {
+    "q": "BMI category?",
+    "options": [
+      {
+        "label": "BMI >27 with comorbidities, or >30",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Candidate for pharmacotherapy",
+          "treatment": [
+            "Goal: 5-10% weight loss via diet, aerobic activity, and medication",
+            "Options: orlistat, or GLP-1 agonists (liraglutide, semaglutide)"
+          ]
+        }
+      },
+      {
+        "label": "BMI >35 with comorbidities, or >40",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Candidate for bariatric surgery",
+          "treatment": [
+            "Combine with the same lifestyle foundation (diet, aerobic activity); medication can still be used adjunctively"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-lung-cancer",
+  "chapter": "Oncology",
+  "group": "Lung Cancer",
+  "name": "Lung Cancer — NSCLC vs SCLC",
+  "root": {
+    "q": "Clinical/pathologic pattern?",
+    "options": [
+      {
+        "label": "Central/main-bronchus location, smoker, hemoptysis/airway obstruction",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Squamous cell carcinoma (NSCLC)",
+          "treatment": [
+            "CT for diagnosis, biopsy of the suspected site, genetic profiling, PET-CT for staging, brain MRI if metastatic disease is suspected",
+            "Treatment: target driver mutation if present, or immunotherapy (e.g. pembrolizumab/nivolumab)"
+          ]
+        }
+      },
+      {
+        "label": "Peripheral/parenchymal location, weaker smoking link, KRAS/EGFR",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Adenocarcinoma (NSCLC)",
+          "treatment": [
+            "Same workup: CT, biopsy, genetic profiling (KRAS/EGFR and others), PET-CT staging, brain MRI if metastatic",
+            "Treatment: targeted therapy against the driver mutation if present, otherwise immunotherapy"
+          ]
+        }
+      },
+      {
+        "label": "Aggressive course, strongly smoking-linked, ~15% of lung cancers",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Small cell lung cancer (SCLC)",
+          "treatment": [
+            "Same imaging/staging workup",
+            "Treatment: chemotherapy + immunotherapy given the aggressive, typically disseminated presentation"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-cord-compression",
+  "chapter": "Oncology",
+  "group": "Oncologic Emergencies",
+  "name": "Malignant Spinal Cord Compression",
+  "root": {
+    "q": "Severe new back pain + motor/sensory deficits or incontinence, in a patient with breast, lung, prostate, lymphoma, or myeloma cancer?",
+    "options": [
+      {
+        "label": "Yes",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Malignant spinal cord compression",
+          "treatment": [
+            "MRI if high suspicion (CT if MRI unavailable)",
+            "High-dose dexamethasone 16-40mg",
+            "Opioids for pain",
+            "Surgery if spinal instability, a focal resectable lesion, neurologic symptoms, and prognosis >3-4 months",
+            "Radiotherapy if nonresectable or as an adjuvant to surgery"
+          ],
+          "notes": [
+            "This is a time-critical oncologic emergency — delay risks permanent paralysis"
+          ]
+        }
+      },
+      {
+        "label": "No — back pain without cord-compression features",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cord compression unlikely",
+          "treatment": [
+            "Continue standard back-pain workup, but re-examine urgently if any new motor/sensory deficit or incontinence develops"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-breast-cancer",
+  "chapter": "Oncology",
+  "group": "Breast Cancer",
+  "name": "Breast Cancer Workup and Treatment",
+  "root": {
+    "q": "Workup stage: imaging (mammography screening, ultrasound for suspicious findings, MRI for neoadjuvant planning) → core needle biopsy → ER/PR/HER2 classification. Subtype?",
+    "options": [
+      {
+        "label": "HR+, localized",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HR+ localized breast cancer",
+          "treatment": [
+            "Surgery + adjuvant SERM"
+          ]
+        }
+      },
+      {
+        "label": "HER2+",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HER2+ breast cancer",
+          "treatment": [
+            "Trastuzumab + chemotherapy"
+          ]
+        }
+      },
+      {
+        "label": "Triple-negative (TNBC)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TNBC",
+          "treatment": [
+            "Chemotherapy + immunotherapy",
+            "PARP inhibitor if BRCA-mutated"
+          ]
+        }
+      },
+      {
+        "label": "HR+, metastatic",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HR+ metastatic breast cancer",
+          "treatment": [
+            "Endocrine therapy + CDK4/6, AKT, or PI3K inhibitor",
+            "Chemotherapy after endocrine resistance develops"
+          ]
+        }
+      },
+      {
+        "label": "HER2+, metastatic",
+        "next": {
+          "leaf": true,
+          "diagnosis": "HER2+ metastatic breast cancer",
+          "treatment": [
+            "Trastuzumab + pertuzumab",
+            "Antibody-drug conjugates"
+          ]
+        }
+      },
+      {
+        "label": "Triple-negative, metastatic",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TNBC metastatic",
+          "treatment": [
+            "Chemotherapy ± immunotherapy if PD-L1 positive"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-melanoma",
+  "chapter": "Oncology",
+  "group": "Melanoma",
+  "name": "Melanoma — Diagnosis and Staging by Depth",
+  "root": {
+    "q": "ABCDE features (asymmetry, border irregularity, color variation, diameter >6mm, evolution) present — depth on biopsy?",
+    "options": [
+      {
+        "label": "<0.8mm, no ulceration",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Thin melanoma, low risk",
+          "treatment": [
+            "Local excision with 1-2cm margins"
+          ]
+        }
+      },
+      {
+        "label": "≥0.8mm",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Melanoma requiring nodal assessment",
+          "treatment": [
+            "Assess lymph nodes; biopsy + sentinel lymph node biopsy (SLNB)"
+          ]
+        }
+      },
+      {
+        "label": "Metastatic disease",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Metastatic melanoma",
+          "treatment": [
+            "Immunotherapy",
+            "BRAF/MEK inhibitors if the tumor carries an appropriate mutation"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-gyn-cancer",
+  "chapter": "Oncology",
+  "group": "Gynecologic Cancer",
+  "name": "Gynecologic Cancer — Symptom Anchors",
+  "root": {
+    "q": "Presenting symptom?",
+    "options": [
+      {
+        "label": "Bloating, early satiety, abdominal swelling",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Ovarian cancer",
+          "treatment": [
+            "Often presents late, typically age 60-70",
+            "CA-125 tracks tumor burden/response",
+            "BRCA-mutated tumors respond to PARP inhibitors"
+          ]
+        }
+      },
+      {
+        "label": "Postmenopausal bleeding or heavy bleeding",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Endometrial cancer",
+          "treatment": [
+            "Risk factors: estrogen exposure, obesity, inactivity, Lynch syndrome"
+          ]
+        }
+      },
+      {
+        "label": "Postcoital bleeding/discharge",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cervical cancer",
+          "treatment": [
+            "Correlate with HPV/screening history"
+          ]
+        }
+      },
+      {
+        "label": "Itching, burning, discharge",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Vaginal cancer",
+          "treatment": [
+            "Less common — evaluate with biopsy of the suspicious lesion"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-urologic-cancer",
+  "chapter": "Oncology",
+  "group": "Urologic Cancer",
+  "name": "Urologic Cancer — Key Clues and Workflow",
+  "root": {
+    "q": "Presentation?",
+    "options": [
+      {
+        "label": "Elevated PSA or abnormal DRE",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suspected prostate cancer",
+          "treatment": [
+            "PSA + DRE/MRI/biopsy, Gleason score for risk stratification",
+            "Low-risk Gleason 6 can be managed with active surveillance"
+          ]
+        }
+      },
+      {
+        "label": "Painless/palpable testicular lump, age 20-40",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suspected testicular cancer",
+          "treatment": [
+            "Ultrasound, then radical orchiectomy — NOT biopsy (biopsy risks tumor seeding)"
+          ]
+        }
+      },
+      {
+        "label": "Hematuria, older male smoker",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suspected bladder cancer",
+          "treatment": [
+            "Cystoscopy and imaging workup for a smoker with hematuria"
+          ]
+        }
+      },
+      {
+        "label": "Renal mass, clear-cell histology most common",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Renal cell carcinoma",
+          "treatment": [
+            "Localized/resectable disease: surgery",
+            "Metastatic disease: biologics/immunotherapy — NOT conventional chemotherapy"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-pancreatic-treatment",
+  "chapter": "Oncology",
+  "group": "Pancreatic Cancer Treatment",
+  "name": "Pancreatic Cancer — Treatment by Performance Status",
+  "root": {
+    "q": "ECOG performance status?",
+    "options": [
+      {
+        "label": "ECOG 0-1",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Good performance status",
+          "treatment": [
+            "Intensive multi-agent chemotherapy: FOLFIRINOX or NALIRIFOX"
+          ]
+        }
+      },
+      {
+        "label": "ECOG 2",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Intermediate performance status",
+          "treatment": [
+            "Gentler regimen: gemcitabine + nab-paclitaxel"
+          ]
+        }
+      },
+      {
+        "label": "ECOG >3",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Poor performance status",
+          "treatment": [
+            "Supportive/palliative care only — intensive chemotherapy is not appropriate"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-onco-radiation",
+  "chapter": "Oncology",
+  "group": "Radiation Oncology",
+  "name": "Radiation Therapy Principles",
+  "root": {
+    "q": "Planning consideration?",
+    "options": [
+      {
+        "label": "Mechanism of cell kill",
+        "next": {
+          "leaf": true,
+          "diagnosis": "DNA double-strand breaks",
+          "treatment": [
+            "Radiation damages tumor cells mainly via double-strand DNA breaks"
+          ]
+        }
+      },
+      {
+        "label": "Why fractionate?",
+        "next": {
+          "leaf": true,
+          "diagnosis": "The 4 R's of fractionation",
+          "treatment": [
+            "Repair, repopulation, redistribution, reoxygenation — fractionation exploits differences between tumor and normal tissue in each of these"
+          ]
+        }
+      },
+      {
+        "label": "Target volume definition",
+        "next": {
+          "leaf": true,
+          "diagnosis": "GTV / CTV / PTV",
+          "treatment": [
+            "Gross tumor volume, clinical target volume, and planning target volume are defined while protecting organs at risk"
+          ]
+        }
+      },
+      {
+        "label": "Precision delivery technique",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Modern precision techniques",
+          "treatment": [
+            "Proton therapy exploits the Bragg peak for depth-limited dose deposition",
+            "IMRT, SBRT, SRS, and IGRT are modern photon-based precision approaches"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-em-approach",
+  "chapter": "Emergency Medicine",
+  "group": "Emergency Medicine Approach",
+  "name": "Emergency Medicine — Master Approach",
+  "root": {
+    "q": "Core principle: rule out immediate life threats and stabilize FIRST, then refine the diagnosis. Which timeline applies?",
+    "options": [
+      {
+        "label": "Trauma",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Golden hour",
+          "treatment": [
+            "Rapid primary survey and stabilization within the first hour is the priority over a complete diagnostic workup"
+          ]
+        }
+      },
+      {
+        "label": "Suspected stroke",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Door-to-needle <60 minutes for thrombolysis",
+          "treatment": [
+            "Prioritize rapid NCCT and tPA-eligibility assessment"
+          ]
+        }
+      },
+      {
+        "label": "Suspected STEMI",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Door-to-cath <90 minutes",
+          "treatment": [
+            "Prioritize ECG and cath lab activation over a complete history"
+          ]
+        }
+      },
+      {
+        "label": "Suspected sepsis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Antibiotics within 1 hour",
+          "treatment": [
+            "Do not delay empiric antibiotics for a complete workup once sepsis is suspected"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-em-ams-coma",
+  "chapter": "Emergency Medicine",
+  "group": "Toxicology & Altered Mental Status",
+  "name": "Altered Mental Status — AEIOU TIPS",
+  "root": {
+    "q": "ABC first, then glucose check within 10 minutes. Consider AEIOU TIPS: Alcohol/acidosis, Epilepsy/electrolytes, Infection, Overdose/opiates, Uremia, Temperature/trauma, Insulin, Poisoning/psychiatric, Stroke/seizure. Empiric treatment (DONT) given?",
+    "options": [
+      {
+        "label": "Not yet given",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Give empiric DONT before further workup",
+          "treatment": [
+            "Dextrose, Oxygen, Naloxone, Thiamine — given empirically for undifferentiated altered mental status before structural imaging"
+          ]
+        }
+      },
+      {
+        "label": "Given, pupils now assessed",
+        "next": {
+          "q": "Pupil finding?",
+          "options": [
+            {
+              "label": "Pinpoint",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Suggests opioid or cholinergic toxicity",
+                "treatment": [
+                  "Naloxone if opioid toxidrome suspected; reassess response"
+                ]
+              }
+            },
+            {
+              "label": "Fixed, mid-size",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Can indicate midbrain damage",
+                "treatment": [
+                  "Proceed urgently to structural imaging"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-em-toxicology",
+  "chapter": "Emergency Medicine",
+  "group": "Toxicology & Altered Mental Status",
+  "name": "Toxidrome and Specific Poison Recognition",
+  "root": {
+    "q": "Toxidrome pattern?",
+    "options": [
+      {
+        "label": "Tachycardia, hypertension, hyperthermia, mydriasis, agitation",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Sympathomimetic (e.g. cocaine)",
+          "treatment": [
+            "Benzodiazepines + cooling",
+            "Avoid beta-blockers"
+          ]
+        }
+      },
+      {
+        "label": "Bradypnea, bradycardia, hypotension, miosis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Opioid toxidrome",
+          "treatment": [
+            "Naloxone"
+          ]
+        }
+      },
+      {
+        "label": "Hot, blind, dry, red, mad",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Anticholinergic toxidrome",
+          "treatment": [
+            "Supportive care ± specific antidotal care"
+          ]
+        }
+      },
+      {
+        "label": "SLUDGE plus bronchorrhea/bronchospasm/bradycardia",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cholinergic toxidrome",
+          "treatment": [
+            "Atropine + pralidoxime"
+          ]
+        }
+      },
+      {
+        "label": "Liver injury pattern (NAPQI), nomogram-guided at 4 hours post-ingestion",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acetaminophen toxicity",
+          "treatment": [
+            "N-acetylcysteine (NAC)"
+          ]
+        }
+      },
+      {
+        "label": "High-anion-gap metabolic acidosis + osmolar gap + visual disturbance/blindness",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Methanol toxicity",
+          "treatment": [
+            "Fomepizole or ethanol"
+          ]
+        }
+      },
+      {
+        "label": "High-anion-gap metabolic acidosis + osmolar gap + renal failure + calcium oxalate crystals",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Ethylene glycol toxicity",
+          "treatment": [
+            "Fomepizole or ethanol"
+          ]
+        }
+      },
+      {
+        "label": "Wide QRS with arrhythmias",
+        "next": {
+          "leaf": true,
+          "diagnosis": "TCA overdose",
+          "treatment": [
+            "Sodium bicarbonate"
+          ]
+        }
+      },
+      {
+        "label": "Respiratory alkalosis + metabolic acidosis + tinnitus",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Salicylate toxicity",
+          "treatment": [
+            "Urinary alkalinization"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-em-shock",
+  "chapter": "Emergency Medicine",
+  "group": "Shock",
+  "name": "Shock — Type and Management",
+  "root": {
+    "q": "Shock = cellular hypoxia from oxygen demand exceeding delivery (anaerobic metabolism, rising lactate). RUSH exam (pump/tank/pipes) and IVC/passive-leg-raise findings point to which type?",
+    "options": [
+      {
+        "label": "Distributive (sepsis/anaphylaxis)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Distributive shock",
+          "treatment": [
+            "Balanced crystalloids",
+            "Norepinephrine as the first vasopressor if fluids insufficient",
+            "Treat the underlying cause (source control for sepsis, epinephrine for anaphylaxis)"
+          ]
+        }
+      },
+      {
+        "label": "Hypovolemic",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hypovolemic shock",
+          "treatment": [
+            "Balanced crystalloids for non-hemorrhagic hypovolemia",
+            "Blood products if hemorrhagic"
+          ]
+        }
+      },
+      {
+        "label": "Cardiogenic",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cardiogenic shock",
+          "treatment": [
+            "Dobutamine for contractility support",
+            "Avoid excessive fluids"
+          ]
+        }
+      },
+      {
+        "label": "Obstructive (e.g. tension pneumothorax, tamponade)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Obstructive shock",
+          "treatment": [
+            "Relieve the mechanical obstruction directly (needle decompression, pericardiocentesis) — fluids/pressors alone will not fix the underlying problem"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Target MAP ≥65",
+      "Avoid bicarbonate in lactic acidosis except in severe acidemia (pH <7.1)"
+    ]
+  }
+},
+{
+  "id": "dtree-em-chest-pain",
+  "chapter": "Emergency Medicine",
+  "group": "Chest Pain & Dyspnea",
+  "name": "ER Chest Pain / Dyspnea — Must-Not-Miss",
+  "root": {
+    "q": "Which pattern?",
+    "options": [
+      {
+        "label": "ST elevation on ECG",
+        "next": {
+          "leaf": true,
+          "diagnosis": "STEMI",
+          "treatment": [
+            "ECG within 10 minutes of arrival",
+            "Aspirin, heparin, and cath lab activation immediately"
+          ]
+        }
+      },
+      {
+        "label": "No ST elevation, troponin/risk-factor assessment needed",
+        "next": {
+          "leaf": true,
+          "diagnosis": "NSTEMI / unstable angina",
+          "treatment": [
+            "Risk-stratify with the HEART score (history, ECG, age, risk factors, troponin)"
+          ],
+          "notes": [
+            "Ischemia can present atypically in women, diabetics, and the elderly — maintain a high index of suspicion"
+          ]
+        }
+      },
+      {
+        "label": "Sudden tearing pain, severe hypertension, pulse/BP differential between limbs",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Aortic dissection",
+          "treatment": [
+            "Urgent imaging (CTA) and blood-pressure/heart-rate control — do not treat as ACS alone"
+          ]
+        }
+      },
+      {
+        "label": "Dyspnea/chest pain/syncope with VTE risk factors",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pulmonary embolism",
+          "treatment": [
+            "Risk-stratify and proceed to CTA/V-Q per standard PE workup"
+          ]
+        }
+      },
+      {
+        "label": "Shock with unilateral absent breath sounds/hyperresonance",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Tension pneumothorax",
+          "treatment": [
+            "Immediate needle decompression — do not wait for imaging"
+          ]
+        }
+      },
+      {
+        "label": "Obstructive shock with JVD, hypotension, muffled heart sounds",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cardiac tamponade",
+          "treatment": [
+            "Urgent pericardiocentesis"
+          ]
+        }
+      }
+    ]
+  }
+},
+
 ];
