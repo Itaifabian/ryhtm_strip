@@ -19,7 +19,7 @@
  *  - Non-GET requests (AI Studio's /api/generate, /api/extract-text POSTs)
  *    are left untouched — they only make sense online anyway.
  */
-const CACHE_NAME = 'rhythm-strip-36f80d1ff5fd';
+const CACHE_NAME = 'rhythm-strip-37c3355431d3';
 
 self.addEventListener('install', function (event) {
   self.skipWaiting();
