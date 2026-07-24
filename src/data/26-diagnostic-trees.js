@@ -2409,4 +2409,1947 @@ const DIAGNOSTIC_TREES = [
     ]
   }
 },
+{
+  "id": "dtree-ger-cga-entry",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "CGA Entry — Screen or Full Assessment?",
+  "root": {
+    "q": "Any CGA trigger present?",
+    "options": [
+      {
+        "label": "Yes — trigger present",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Proceed to full Comprehensive Geriatric Assessment",
+          "treatment": [
+            "Assess all 4 CGA domains: function/ability, mental health/cognition, disease severity & comorbidity, support network",
+            "Actively screen for under-recognized geriatric syndromes: depression, dementia, incontinence, sexual dysfunction, recurrent falls, hearing loss, alcohol use",
+            "Work through: function (ADL/IADL) → falls → cognition → depression → nutrition → polypharmacy → delirium risk"
+          ],
+          "notes": [
+            "Geriatrics starts with function, not a single disease — frame every finding against baseline functional status"
+          ]
+        }
+      },
+      {
+        "label": "No obvious trigger",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Screening first, CGA only if abnormal",
+          "treatment": [
+            "Two-step approach: screening test first, then full CGA only if screening is abnormal",
+            "Still actively ask about the under-recognized syndromes (depression, incontinence, falls, hearing loss, alcohol use) even without an obvious trigger — they are often not volunteered"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Advanced age",
+      "Comorbidities: CHF/cancer/recent surgery",
+      "Depression/social isolation",
+      "Change in living situation"
+    ]
+  }
+},
+{
+  "id": "dtree-ger-frailty",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Suspected Frailty",
+  "root": {
+    "q": "Did a relatively small stressor cause a major decline?",
+    "options": [
+      {
+        "label": "Yes",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Frailty syndrome",
+          "treatment": [
+            "Rehabilitation and physiotherapy can improve frailty and help recover function",
+            "Address the precipitating stressor directly (infection, iatrogenic drug effect, immobility, etc.)"
+          ],
+          "notes": [
+            "Frailty raises risk of increased care needs, repeated hospitalization, and long-term care placement — plan proactively, not just reactively"
+          ]
+        }
+      },
+      {
+        "label": "No — stable despite stressor",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Not frailty at this time",
+          "treatment": [
+            "Continue routine CGA screening — frailty risk can still emerge later with a bigger stressor or cumulative decline"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Infection",
+      "Surgery",
+      "Hospitalization",
+      "Immobility",
+      "Incontinence",
+      "Cognitive decline",
+      "Iatrogenic event"
+    ]
+  }
+},
+{
+  "id": "dtree-ger-function",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Functional Assessment — ADL vs IADL",
+  "root": {
+    "q": "Which functions are impaired?",
+    "options": [
+      {
+        "label": "Basic daily survival tasks (ADL)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "ADL impairment",
+          "treatment": [
+            "ADL = bathing, dressing, toileting, transferring, grooming, feeding",
+            "ADL impairment reflects more severe dependency — plan for higher level of care/support"
+          ]
+        }
+      },
+      {
+        "label": "Independent-living tasks (IADL)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "IADL impairment",
+          "treatment": [
+            "IADL = telephone use, shopping, food preparation, housekeeping, laundry, transportation, taking medications, finances",
+            "IADL impairment is often an early sign of functional decline — frequently the first sign of dementia or frailty",
+            "Trigger cognition and dementia screening if IADL decline is new"
+          ]
+        }
+      },
+      {
+        "label": "Neither impaired",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Functionally independent",
+          "treatment": [
+            "No ADL/IADL intervention needed now — re-screen at future CGA visits, since IADL decline is often the earliest clue to worsening cognition or frailty"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-ger-falls",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Falls Assessment",
+  "root": {
+    "q": "Get up and go test: rise from chair, walk 10 feet, turn, return, sit — time taken?",
+    "options": [
+      {
+        "label": ">14 seconds",
+        "next": {
+          "q": "After the fall — pain, inability to stand/walk, and a shortened/asymmetric leg?",
+          "options": [
+            {
+              "label": "Yes",
+              "next": {
+                "leaf": true,
+                "diagnosis": "High fall risk + suspected proximal hip fracture",
+                "treatment": [
+                  "X-ray of the hip",
+                  "Surgery for confirmed hip fracture"
+                ],
+                "notes": [
+                  "A shortened/externally rotated leg after a fall is a hip fracture until proven otherwise"
+                ]
+              }
+            },
+            {
+              "label": "No",
+              "next": {
+                "leaf": true,
+                "diagnosis": "High fall risk (get up and go >14 sec)",
+                "treatment": [
+                  "Falls differential: prior falls (strongest predictor), vestibular decline, proprioceptive decline, visual impairment, cardiovascular disease, neurologic disease, rheumatologic disease, diabetes, infection, psychoactive drugs (sleep pills, anti-anxiety drugs, antidepressants)",
+                  "Prevention: lower-limb strengthening, balance training, walking exercises, regular physical activity",
+                  "Review psychoactive medications for reduction/discontinuation"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "≤14 seconds",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Low fall risk on get-up-and-go screen",
+          "treatment": [
+            "Still ask about prior falls specifically — a prior fall is the single strongest predictor of a future fall regardless of the timed test",
+            "Reinforce general prevention: lower-limb strengthening, balance training, regular activity"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-ger-cognition",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Cognitive Screening",
+  "root": {
+    "q": "Mini-Cog: recall 3 words + draw a clock set to 11:10 — result?",
+    "options": [
+      {
+        "label": "Fails recall and/or clock drawing",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Positive cognitive screen — proceed to fuller evaluation",
+          "treatment": [
+            "Follow with MMSE: orientation, registration, attention/calculation, recall, language",
+            "Distinguish from delirium (acute/fluctuating/inattention) and depression (mood/anhedonia) before labeling as dementia — all three can impair cognitive testing"
+          ],
+          "notes": [
+            "IADL decline is often the earliest real-world sign of the same process — cross-check functional history"
+          ]
+        }
+      },
+      {
+        "label": "Passes both",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Negative cognitive screen",
+          "treatment": [
+            "No further cognitive workup needed now — re-screen at future visits, especially if IADL decline or new behavioral change appears"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-ger-depression",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Depression Screening",
+  "root": {
+    "q": "Two-question screen: (1) feeling down/depressed/hopeless? (2) little interest or pleasure?",
+    "options": [
+      {
+        "label": "Either answer positive",
+        "next": {
+          "q": "GDS-15 score?",
+          "options": [
+            {
+              "label": "> 5",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Probable depression (GDS-15 > 5)",
+                "treatment": [
+                  "Formal evaluation and treatment for depression",
+                  "Recheck the medication list — steroids, beta-blockers, and methyldopa can cause or worsen depression"
+                ]
+              }
+            },
+            {
+              "label": "≤ 5",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Screen positive but GDS-15 not confirmatory",
+                "treatment": [
+                  "Reassess clinically and consider repeating screening at follow-up rather than dismissing the initial positive answers"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Both negative",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Negative depression screen",
+          "treatment": [
+            "No further action needed now; re-screen periodically, especially after new functional decline or major life stressor"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Elderly depression may present atypically: fatigue, anorexia, weight loss, sleep disturbance, functional decline — not just sadness"
+    ]
+  }
+},
+{
+  "id": "dtree-ger-nutrition",
+  "chapter": "Geriatrics",
+  "group": "Comprehensive Geriatric Assessment",
+  "name": "Suspected Malnutrition",
+  "root": {
+    "q": "Weight loss >5% in 1 month, or >10% in 6 months?",
+    "options": [
+      {
+        "label": "Yes",
+        "next": {
+          "q": "Likely contributor?",
+          "options": [
+            {
+              "label": "Identifiable cause found",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Malnutrition with identified cause",
+                "treatment": [
+                  "Treat/address the specific contributor (dental/swallowing referral, social support, thyroid workup, etc.)",
+                  "Use MNA to grade severity and track: intake decline, weight loss, mobility, stress/acute disease, neuropsychological problems, BMI, calf circumference"
+                ]
+              }
+            },
+            {
+              "label": "No clear single cause",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Malnutrition, cause unclear",
+                "treatment": [
+                  "Complete the MNA (intake decline, weight loss, mobility, stress/acute disease, neuropsychological problems, BMI, calf circumference) to grade severity",
+                  "Broaden workup — malnutrition in the elderly is frequently multifactorial"
+                ]
+              }
+            }
+          ],
+          "clues": [
+            "Chewing/swallowing difficulty",
+            "Bed/chair bound",
+            "Living alone",
+            "Illness",
+            "Socioeconomic factors",
+            "Hypothyroidism"
+          ]
+        }
+      },
+      {
+        "label": "No",
+        "next": {
+          "leaf": true,
+          "diagnosis": "No malnutrition by weight-loss criteria",
+          "treatment": [
+            "Still consider MNA screening if other risk factors present (living alone, chewing difficulty, chronic illness)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-ger-polypharmacy",
+  "chapter": "Geriatrics",
+  "group": "Medication Safety",
+  "name": "New Symptom in an Elderly Patient — Is It a Drug Effect?",
+  "root": {
+    "q": "Consider every new symptom a drug side effect until proven otherwise. What is the pattern?",
+    "options": [
+      {
+        "label": "Urinary retention, constipation, dry mouth, dysphagia, mental status change, vision change, orthostasis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Anticholinergic effect",
+          "treatment": [
+            "Review for anticholinergic drugs and stop/substitute where possible",
+            "Ask the 4 prescribing questions: Is the drug necessary? Is there a non-pharmacologic alternative? Can the dose be reduced? Is the patient taking it correctly?"
+          ],
+          "notes": [
+            "A new drug started to treat this side effect (rather than stopping the causative drug) is a prescribing cascade — actively avoid it"
+          ]
+        }
+      },
+      {
+        "label": "Falls or fractures",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Psychoactive drug effect",
+          "treatment": [
+            "Review sleep pills, anti-anxiety drugs, and antidepressants specifically",
+            "Combine with formal falls assessment (get-up-and-go, falls differential)"
+          ]
+        }
+      },
+      {
+        "label": "Delirium",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Drug-induced delirium",
+          "treatment": [
+            "Culprits: antidepressants, anticholinergics, steroids, H2 blockers, theophylline",
+            "Work up as delirium (CAM) and stop/taper the causative agent"
+          ]
+        }
+      },
+      {
+        "label": "New depression",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Drug-induced depression",
+          "treatment": [
+            "Culprits: steroids, beta-blockers, methyldopa",
+            "Reassess necessity/dose before starting a separate antidepressant"
+          ]
+        }
+      },
+      {
+        "label": "Rising creatinine / nephrotoxicity",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Drug-induced nephrotoxicity",
+          "treatment": [
+            "Culprits: aminoglycosides, NSAIDs, diuretics, ACE inhibitors, amphotericin B, vancomycin",
+            "Review dosing, hydration status, and necessity of each nephrotoxic agent"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-ger-delirium",
+  "chapter": "Geriatrics",
+  "group": "Frailty & Delirium",
+  "name": "Suspected Delirium",
+  "root": {
+    "q": "Acute cognitive decline over hours-days, with a fluctuating course and impaired attention/consciousness?",
+    "options": [
+      {
+        "label": "Yes — matches CAM (Acute onset/fluctuation + Inattention + Disorganized thinking or altered Consciousness)",
+        "next": {
+          "q": "Distinguishing from dementia or depression — which fits best?",
+          "options": [
+            {
+              "label": "Acute/fluctuating with an attention problem",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Delirium",
+                "treatment": [
+                  "Find and treat the trigger (infection, drug effect, electrolyte, retention/impaction, pain, withdrawal, etc.)",
+                  "Calm, familiar environment; maintain sleep-wake cycle; adequate analgesia",
+                  "Antipsychotics only for severe delusional/agitated states — not routine",
+                  "Prevention: orientation, hydration, sleep schedule, mobility, glasses/hearing aids — no drug has been shown to prevent delirium"
+                ],
+                "notes": [
+                  "Risk factors: older age, baseline dementia, sensory deprivation, immobility, restraints",
+                  "Can be hyperactive or hypoactive — hypoactive delirium is easily missed",
+                  "Avoid benzodiazepines unless the cause is alcohol withdrawal/delirium tremens"
+                ]
+              }
+            },
+            {
+              "label": "Chronic decline in memory/language/calculation/learning",
+              "next": {
+                "leaf": true,
+                "diagnosis": "More consistent with dementia than delirium",
+                "treatment": [
+                  "Proceed with formal cognitive screening (Mini-Cog/MMSE) and dementia workup rather than acute delirium management"
+                ]
+              }
+            },
+            {
+              "label": "Mood change, anhedonia, apathy predominate",
+              "next": {
+                "leaf": true,
+                "diagnosis": "More consistent with depression than delirium",
+                "treatment": [
+                  "Proceed with depression screening (GDS-15) rather than acute delirium management"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "No — chronic/stable course",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Delirium unlikely",
+          "treatment": [
+            "Reconsider dementia (chronic decline) or depression (mood/anhedonia) as the better fit for a chronic presentation"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-cxr-quality",
+  "chapter": "Radiology",
+  "group": "Chest Imaging",
+  "name": "Chest X-Ray — Quality Check and Systematic Read",
+  "root": {
+    "q": "Technical quality check first — PA vs AP, inspiration vs expiration, rotation, penetration. Any quality issue?",
+    "options": [
+      {
+        "label": "Expiratory film",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Expiration artifact",
+          "treatment": [
+            "Expiration enlarges the heart shadow and can mimic pneumonic/edema-like findings — repeat on inspiration or interpret with caution",
+            "Do not diagnose cardiomegaly or infiltrate from an expiratory film alone"
+          ]
+        }
+      },
+      {
+        "label": "Rotated or under/over-penetrated",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suboptimal technical quality",
+          "treatment": [
+            "Correct positioning/exposure and repeat if a confident read is not possible",
+            "Do not over-call mediastinal widening or asymmetry on a rotated film"
+          ]
+        }
+      },
+      {
+        "label": "Good quality (PA, adequate inspiration, not rotated, well penetrated)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Proceed with systematic read",
+          "treatment": [
+            "Read in order: soft tissue and bones → pleura → trachea → hilum → heart shadow → lungs and fissures → lateral film if available",
+            "Key signs to actively check for: silhouette sign (adjacent structures of similar density obscuring a border, e.g. pneumonia/edema obscuring the heart border), air bronchogram (alveolar filling: inflammation/hemorrhage/edema), enlarged hilum (lymphoma/sarcoidosis/metastasis)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-chest-path",
+  "chapter": "Radiology",
+  "group": "Chest Imaging",
+  "name": "Chest X-Ray — Which Pathology?",
+  "root": {
+    "q": "Dominant CXR pattern?",
+    "options": [
+      {
+        "label": "Parenchymal density, no volume shift, air bronchogram present",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pneumonia",
+          "treatment": [
+            "Correlate clinically (fever, productive cough, elevated inflammatory markers) and treat per standard CAP/HAP pathways"
+          ]
+        }
+      },
+      {
+        "label": "Increased density with volume loss, mediastinum pulled toward the opacity",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Atelectasis",
+          "treatment": [
+            "Look for and treat the underlying cause of collapse (mucus plug, obstructing lesion, compression) — mediastinal shift is TOWARD the lesion, distinguishing it from effusion"
+          ]
+        }
+      },
+      {
+        "label": "Blunted costophrenic angle, meniscus convex toward the lung, no air bronchogram",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pleural effusion",
+          "treatment": [
+            "Ultrasound to confirm and guide diagnostic/therapeutic aspiration",
+            "Proceed to the pleural-effusion workflow for transudate/exudate classification"
+          ]
+        }
+      },
+      {
+        "label": "Effusion with concave margin, air bubbles, contrast enhancement, split-pleura sign on CT",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Empyema",
+          "treatment": [
+            "These CT features (concave effusion, air bubbles, split pleural sign, enhancement) indicate infected/loculated fluid, not simple effusion — drainage is typically required"
+          ]
+        }
+      },
+      {
+        "label": "Pleural line separation, air-filled pleural cavity, small/dense lung, mediastinal shift AWAY from the side",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pneumothorax",
+          "treatment": [
+            "Mediastinal shift away from the affected side with hemodynamic compromise = tension physiology — needs emergent decompression",
+            "Otherwise manage per size/stability (observation, aspiration, or chest tube)"
+          ]
+        }
+      },
+      {
+        "label": "Hilar blurring → interstitial lines → Kerley B lines → gravity-dependent cloudy lungs",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Pulmonary edema",
+          "treatment": [
+            "This is the classic radiographic progression of cardiogenic pulmonary edema — treat the underlying cardiac cause alongside diuresis/afterload reduction"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-gi-imaging",
+  "chapter": "Radiology",
+  "group": "Abdominal Imaging",
+  "name": "Suspected Small-Bowel Inflammatory Disease — Imaging Choice",
+  "root": {
+    "q": "Patient population?",
+    "options": [
+      {
+        "label": "Children, young adults, or pregnancy",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Prefer MR Enterography (MRE)",
+          "treatment": [
+            "Very good resolution for the small intestine without ionizing radiation — preferred specifically in these groups"
+          ]
+        }
+      },
+      {
+        "label": "General adult population",
+        "next": {
+          "leaf": true,
+          "diagnosis": "CT Enterography (CTE) — gold standard for enteric imaging",
+          "treatment": [
+            "Preparation includes fasting, antiperistaltic agents, and IV contrast",
+            "Interpret Crohn-like findings by: proximal vs distal location; focal (<5cm) vs segmental (5-40cm) vs diffuse (>40cm) extent; mucosal/submucosal/serosal vs transmural involvement; presence of lymphadenopathy; wall thickness (mild 3-5mm, intermediate 5-9mm, typical >10mm)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-hepatobiliary",
+  "chapter": "Radiology",
+  "group": "Abdominal Imaging",
+  "name": "RUQ Pain / Hepatobiliary-Pancreatic Imaging",
+  "root": {
+    "q": "Clinical question?",
+    "options": [
+      {
+        "label": "RUQ pain, suspected gallstones/cholecystitis, or cirrhosis/portal hypertension assessment",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Ultrasound — first line",
+          "treatment": [
+            "Gallstones appear hyperechoic",
+            "Biliary colic: RUQ pain after a fatty meal",
+            "Obstruction pattern: jaundice + RUQ pain + fever",
+            "Murphy sign (pain on inspiration while pressing the RUQ) supports acute cholecystitis",
+            "Also used for gallbladder assessment, cirrhosis, Budd-Chiari, and portal hypertension evaluation"
+          ]
+        }
+      },
+      {
+        "label": "Suspected PSC, pancreatic cysts, or bile-duct evaluation (e.g. post-transplant)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "MRCP",
+          "treatment": [
+            "T2-based sequence, no gadolinium needed",
+            "Used for PSC, pancreatic cysts, and transplant biliary assessment"
+          ]
+        }
+      },
+      {
+        "label": "Suspected acute pancreatitis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Diagnose clinically — imaging mainly for complications",
+          "treatment": [
+            "CT is reserved mainly for detecting complications: necrosis, infection, pseudocyst",
+            "ERCP if gallstone pancreatitis is suspected (biliary obstruction)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-brain-stroke",
+  "chapter": "Radiology",
+  "group": "Neuroimaging",
+  "name": "Acute Focal Neurologic Deficit — Imaging Sequence",
+  "root": {
+    "q": "First test: non-contrast CT brain. Purpose achieved (rule out hemorrhage, rule out thrombolysis contraindication, detect large established infarct) — next step?",
+    "options": [
+      {
+        "label": "No hemorrhage, ischemic stroke still suspected — need vessel/perfusion detail",
+        "next": {
+          "leaf": true,
+          "diagnosis": "CTA + CT perfusion",
+          "treatment": [
+            "CTA: higher sensitivity, confirms arterial blockage/large-vessel occlusion",
+            "Perfusion: identifies the penumbra, helps extend the treatment time window, and selects patients for endovascular intervention"
+          ]
+        }
+      },
+      {
+        "label": "Need higher soft-tissue resolution, or stroke mimic/tumor/venous sinus thrombosis/tumefactive demyelination suspected",
+        "next": {
+          "leaf": true,
+          "diagnosis": "MRI",
+          "treatment": [
+            "Preferred when soft-tissue detail is needed beyond what CT/CTA/perfusion provide, or when the differential includes stroke mimics, tumor, cerebral venous sinus thrombosis, or tumefactive demyelination"
+          ]
+        }
+      },
+      {
+        "label": "Hemorrhage identified on NCCT",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hemorrhagic stroke confirmed on NCCT",
+          "treatment": [
+            "Do not proceed to thrombolysis/CTA-for-thrombectomy pathway",
+            "Localize the bleed: deep (basal ganglia/thalamus/pons) suggests hypertensive arteriopathy; lobar in an elderly patient suggests cerebral amyloid angiopathy"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-ir",
+  "chapter": "Radiology",
+  "group": "Interventional Radiology",
+  "name": "When to Think Interventional Radiology",
+  "root": {
+    "q": "What does the problem need?",
+    "options": [
+      {
+        "label": "Biopsy, abscess drainage, central line placement, or invasive oncology treatment",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Interventional Radiology referral",
+          "treatment": [
+            "IR uses image guidance for biopsy, abscess drainage, central line placement, and invasive oncology procedures (e.g. ablation, embolization)"
+          ]
+        }
+      },
+      {
+        "label": "GI bleeding not controlled by initial measures",
+        "next": {
+          "q": "Where in the GI-bleed pathway?",
+          "options": [
+            {
+              "label": "Just presenting — not yet endoscoped",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Stabilize and endoscope first",
+                "treatment": [
+                  "Stabilize with fluids/vasopressors as needed",
+                  "Endoscopy to identify and treat the source first"
+                ]
+              }
+            },
+            {
+              "label": "No source found on endoscopy, or bleeding continues",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Angiography ± embolization",
+                "treatment": [
+                  "Angiography to localize the bleeding vessel; embolize if found",
+                  "TIPS for severe esophageal variceal bleeding not controlled by endoscopic/pharmacologic measures"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-rad-lung-nodule",
+  "chapter": "Radiology",
+  "group": "Lung Nodule & Cancer Staging",
+  "name": "Lung Nodule or Mass — Benign or Malignant?",
+  "root": {
+    "q": "Size and morphology?",
+    "options": [
+      {
+        "label": "Solid nodule <6mm, low-risk nonsmoker, no suspicious features",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Benign — no follow-up needed",
+          "treatment": [
+            "A solid nodule under 6mm without suspicious features in a low-risk nonsmoker does not require follow-up imaging"
+          ]
+        }
+      },
+      {
+        "label": "Calcified granuloma, or hamartoma with fat density/'popcorn' calcification",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Benign pattern",
+          "treatment": [
+            "These are classic benign imaging patterns — routine follow-up per standard nodule guidelines rather than urgent biopsy"
+          ]
+        }
+      },
+      {
+        "label": "Spiculated margins, pleural indentation, upper-lobe location, cystic/bubble lucencies, heterogeneous ground-glass, or interval growth",
+        "next": {
+          "q": "Malignancy suspected — nodal staging needed?",
+          "options": [
+            {
+              "label": "Yes, assessing nodal spread",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Proceed to PET-CT for nodal staging",
+                "treatment": [
+                  "PET-CT is the gold-standard test for evaluating nodal malignant risk",
+                  "T-stage by size/invasion: T1 <3cm; T2 3-5cm or involves main bronchus/atelectasis/obstructive pneumonia; T3 5-7cm or pleura/chest-wall invasion; T4 >7cm or mediastinal/aortic invasion/multiple tumors in the same lung",
+                  "N-stage: N1 ipsilateral peripheral/hilar; N2 ipsilateral mediastinal/subcarinal; N3 contralateral/supraclavicular/scalene"
+                ]
+              }
+            },
+            {
+              "label": "Not yet — first characterizing the primary lesion",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Malignant-pattern nodule/mass — biopsy for tissue diagnosis",
+                "treatment": [
+                  "Tissue diagnosis needed before formal staging; proceed to PET-CT and staging once malignancy is confirmed"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Nodule: rounded opacity <3cm",
+      "Mass: rounded opacity >3cm"
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-localize",
+  "chapter": "Neurology",
+  "group": "Localization & Approach",
+  "name": "Localizing a Neurologic Deficit",
+  "root": {
+    "q": "Which pattern is present?",
+    "options": [
+      {
+        "label": "Contralateral face/limb deficits",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hemisphere lesion",
+          "treatment": [
+            "Localize further with cortical vs subcortical signs and imaging"
+          ]
+        }
+      },
+      {
+        "label": "Cognitive/mental changes, seizures, movement disorder",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cerebral/cortical lesion",
+          "treatment": [
+            "Consider structural imaging and EEG if seizures are part of the picture"
+          ]
+        }
+      },
+      {
+        "label": "Ipsilateral cranial nerve findings + contralateral body signs (crossed signs)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Brainstem lesion",
+          "treatment": [
+            "Crossed findings (face on one side, body on the other) localize to the brainstem — correlate with the specific cranial nerves involved"
+          ]
+        }
+      },
+      {
+        "label": "Lower-limb deficit + sensory level + incontinence",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Spinal cord lesion",
+          "treatment": [
+            "A clear sensory level plus bladder/bowel involvement strongly localizes to the cord — urgent imaging to assess for compression"
+          ]
+        }
+      },
+      {
+        "label": "Single limb, single dermatome, or specific muscle group",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Root or peripheral nerve lesion",
+          "treatment": [
+            "Correlate the specific distribution with a dermatomal/myotomal map or named nerve"
+          ]
+        }
+      },
+      {
+        "label": "Distal weakness with reflex loss",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Peripheral nerve lesion",
+          "treatment": [
+            "Consider nerve conduction studies/EMG"
+          ]
+        }
+      },
+      {
+        "label": "Symmetric glove-and-stocking pattern",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Polyneuropathy",
+          "treatment": [
+            "Screen for the common causes: diabetes, B12 deficiency, alcohol, toxins, hereditary neuropathy"
+          ]
+        }
+      },
+      {
+        "label": "Symmetric proximal weakness",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Myopathy",
+          "treatment": [
+            "Check CK and consider EMG/muscle biopsy; proceed to the UMN vs LMN vs myopathy tree for the full feature comparison"
+          ]
+        }
+      },
+      {
+        "label": "Fatigable weakness that worsens with sustained activity",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Neuromuscular junction disorder",
+          "treatment": [
+            "Consider myasthenia gravis (repetitive nerve stimulation, antibody testing) or Lambert-Eaton"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-umn-lmn",
+  "chapter": "Neurology",
+  "group": "Localization & Approach",
+  "name": "Weakness — UMN vs LMN vs Myopathy",
+  "root": {
+    "q": "Exam findings — atrophy/fasciculations, tone, reflexes, Babinski?",
+    "options": [
+      {
+        "label": "No atrophy/fasciculations, spastic/increased tone, hyperactive reflexes, positive Babinski, pyramidal/regional weakness pattern",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Upper motor neuron (UMN) pattern",
+          "treatment": [
+            "Localizes to brain or spinal cord above the anterior horn cell — proceed with CNS imaging"
+          ]
+        }
+      },
+      {
+        "label": "Common atrophy/fasciculations, decreased tone, hypoactive reflexes, negative Babinski, distal/segmental weakness pattern",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Lower motor neuron (LMN) pattern",
+          "treatment": [
+            "Localizes to anterior horn cell, root, plexus, or peripheral nerve — consider EMG/nerve conduction studies"
+          ]
+        }
+      },
+      {
+        "label": "Mild/absent atrophy, normal/decreased tone, normal/decreased reflexes, negative Babinski, proximal weakness pattern",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Myopathy pattern",
+          "treatment": [
+            "Check CK; consider EMG and muscle biopsy if the cause is not clear from history/medications (e.g. statins, steroids)"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-emergency",
+  "chapter": "Neurology",
+  "group": "Altered Mental Status",
+  "name": "Initial Neurologic Emergency Assessment",
+  "root": {
+    "q": "Start with ABC2 (Airway, Breathing, Circulation, Cognitive status) — stable?",
+    "options": [
+      {
+        "label": "Unstable ABCs",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Stabilize before further neurologic workup",
+          "treatment": [
+            "Secure airway/breathing/circulation first — neurologic exam and imaging follow stabilization"
+          ]
+        }
+      },
+      {
+        "label": "Stable — proceed with neuro exam",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Proceed to detailed neurologic assessment",
+          "treatment": [
+            "Check GCS, pupils, vestibulo-ocular reflex, meningeal signs",
+            "Mental status assessment: orientation, attention, speech, memory, judgment"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-ams-coma",
+  "chapter": "Neurology",
+  "group": "Altered Mental Status",
+  "name": "Altered Mental Status / Coma",
+  "root": {
+    "q": "Systemic causes first — hypoxia, hypotension, hypoglycemia ruled out?",
+    "options": [
+      {
+        "label": "Not yet ruled out",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Stabilize and rule out systemic causes first",
+          "treatment": [
+            "Airway, breathing, circulation",
+            "Check and correct hypoxia, hypotension, hypoglycemia before attributing the picture to a primary neurologic cause"
+          ]
+        }
+      },
+      {
+        "label": "Ruled out — pupils asymmetric (anisocoria)?",
+        "next": {
+          "q": "Which pupil is abnormal, and is it worse in the dark or in the light?",
+          "options": [
+            {
+              "label": "Worse in the dark (small pupil is abnormal)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Sympathetic lesion (e.g. Horner syndrome)",
+                "treatment": [
+                  "The abnormally small pupil fails to dilate in the dark — localize the sympathetic pathway lesion"
+                ]
+              }
+            },
+            {
+              "label": "Worse in the light (large pupil is abnormal)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Parasympathetic lesion (e.g. CN III compression)",
+                "treatment": [
+                  "The abnormally large pupil fails to constrict in the light — urgent evaluation for CN III compression (e.g. uncal herniation, PCom aneurysm)"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-vertigo",
+  "chapter": "Neurology",
+  "group": "Dizziness & Vertigo",
+  "name": "Vertigo — Peripheral or Central?",
+  "root": {
+    "q": "True vertigo (illusion of spinning/motion) with other neurologic signs, cranial nerve deficits, ataxia, or focal weakness/sensory symptoms?",
+    "options": [
+      {
+        "label": "Yes — other neurologic signs present",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Central vertigo (brainstem/cerebellar lesion)",
+          "treatment": [
+            "Urgent neuroimaging — central vertigo with focal signs needs to be worked up as a possible posterior-circulation stroke or other structural lesion"
+          ]
+        }
+      },
+      {
+        "label": "No — isolated vertigo, positional or with ear symptoms",
+        "next": {
+          "q": "Which pattern?",
+          "options": [
+            {
+              "label": "Recurrent, triggered by head position",
+              "next": {
+                "leaf": true,
+                "diagnosis": "BPPV",
+                "treatment": [
+                  "Epley maneuver"
+                ]
+              }
+            },
+            {
+              "label": "Acute, continuous",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Vestibular neuritis",
+                "treatment": [
+                  "Supportive care / vestibular rehabilitation"
+                ]
+              }
+            },
+            {
+              "label": "Vertigo + hearing loss + tinnitus + ear fullness",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Meniere disease",
+                "treatment": [
+                  "Diuretics + sodium restriction"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-stroke",
+  "chapter": "Neurology",
+  "group": "Stroke",
+  "name": "Acute Stroke — Recognition and Treatment",
+  "root": {
+    "q": "Abrupt focal neurologic deficit of vascular origin — imaging shows?",
+    "options": [
+      {
+        "label": "Ischemic (no hemorrhage on NCCT)",
+        "next": {
+          "q": "Within 4.5 hours of symptom onset, or large-vessel occlusion (LVO) confirmed on CTA?",
+          "options": [
+            {
+              "label": "Within 4.5h window",
+              "next": {
+                "leaf": true,
+                "diagnosis": "IV tPA candidate",
+                "treatment": [
+                  "Administer IV tPA if within the 4.5-hour window and no contraindication",
+                  "Goal is to save the penumbra — time is brain"
+                ]
+              }
+            },
+            {
+              "label": "LVO confirmed (any eligible time window)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Endovascular thrombectomy candidate",
+                "treatment": [
+                  "Endovascular thrombectomy for confirmed large-vessel occlusion — benefit demonstrated beyond the tPA-only window in appropriately selected patients"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Hemorrhagic (blood on NCCT)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hemorrhagic stroke",
+          "treatment": [
+            "Do NOT give tPA or thrombectomy — manage as intracerebral hemorrhage",
+            "Localize by imaging: deep (basal ganglia/thalamus/pons) → hypertensive arteriopathy; lobar in the elderly → cerebral amyloid angiopathy"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-stroke-artery",
+  "chapter": "Neurology",
+  "group": "Stroke",
+  "name": "Stroke — Which Artery, by Syndrome",
+  "root": {
+    "q": "Predominant deficit pattern?",
+    "options": [
+      {
+        "label": "Leg weakness > arm weakness, abulia, incontinence",
+        "next": {
+          "leaf": true,
+          "diagnosis": "ACA territory",
+          "treatment": [
+            "Correlate with anterior cerebral artery territory on imaging"
+          ]
+        }
+      },
+      {
+        "label": "Face/arm weakness, aphasia (if dominant hemisphere), neglect (if nondominant hemisphere)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "MCA territory",
+          "treatment": [
+            "Most common large-vessel stroke syndrome — assess LVO/thrombectomy eligibility"
+          ]
+        }
+      },
+      {
+        "label": "Hemianopia",
+        "next": {
+          "leaf": true,
+          "diagnosis": "PCA territory",
+          "treatment": [
+            "Correlate with posterior cerebral artery/occipital lobe territory"
+          ]
+        }
+      },
+      {
+        "label": "Cranial nerve palsies, ataxia, vertigo, or locked-in syndrome",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Vertebrobasilar territory",
+          "treatment": [
+            "Posterior circulation stroke — has a broader symptom overlap with peripheral vertigo, so a careful exam for other neurologic signs is essential"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-stroke-secondary-prevention",
+  "chapter": "Neurology",
+  "group": "Stroke",
+  "name": "Secondary Stroke Prevention — What Caused It?",
+  "root": {
+    "q": "Suspected mechanism?",
+    "options": [
+      {
+        "label": "Pure motor or pure sensory syndrome, no cortical signs, chronic hypertension",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Lacunar / small-vessel disease",
+          "treatment": [
+            "Prevention centers on intensive blood-pressure control"
+          ]
+        }
+      },
+      {
+        "label": "Symptomatic severe extracranial carotid stenosis (>70%)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Large-artery / carotid disease",
+          "treatment": [
+            "Carotid endarterectomy, ideally within 2 weeks of the event",
+            "Carotid stenting if high surgical risk"
+          ]
+        }
+      },
+      {
+        "label": "Non-valvular atrial fibrillation identified",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cardioembolic (AF)",
+          "treatment": [
+            "DOACs preferred over warfarin",
+            "LAA closure if anticoagulation is not tolerated"
+          ]
+        }
+      },
+      {
+        "label": "No clear source identified (cryptogenic / ESUS)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cryptogenic / embolic stroke of undetermined source",
+          "treatment": [
+            "Suspect occult AF — prolonged cardiac monitoring/implantable loop recorder improves AF detection",
+            "In younger patients, consider PFO/paradoxical embolism; PFO closure + antiplatelet therapy may be appropriate depending on context"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-neuro-ich",
+  "chapter": "Neurology",
+  "group": "Stroke",
+  "name": "Intracerebral Hemorrhage — Location Suggests Cause",
+  "root": {
+    "q": "Location of the hemorrhage on imaging?",
+    "options": [
+      {
+        "label": "Deep — basal ganglia, thalamus, or pons",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hypertensive arteriopathy",
+          "treatment": [
+            "Aggressive blood-pressure control is central to management and secondary prevention"
+          ]
+        }
+      },
+      {
+        "label": "Lobar, in an elderly patient",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cerebral amyloid angiopathy",
+          "treatment": [
+            "Consider this diagnosis specifically in elderly patients with lobar (rather than deep) hemorrhage — has implications for future anticoagulation decisions"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-dyspnea",
+  "chapter": "Pulmonology",
+  "group": "Dyspnea & Hypoxemia",
+  "name": "Dyspnea — Acute or Chronic?",
+  "root": {
+    "q": "Onset?",
+    "options": [
+      {
+        "label": "Acute",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Acute dyspnea — assess urgency/severity immediately",
+          "treatment": [
+            "Think: pneumonia, pulmonary embolism, ACS, pulmonary edema",
+            "Red flags: cyanosis/pallor, inability to speak in full sentences (marks severe dyspnea) — treat as an emergency"
+          ]
+        }
+      },
+      {
+        "label": "Chronic / progressive",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Chronic dyspnea — broaden the differential by system",
+          "treatment": [
+            "Cardiovascular: CHF",
+            "Airway: COPD/asthma",
+            "Parenchymal: ILD/fibrosis",
+            "Vascular: pulmonary hypertension",
+            "Also consider: anemia, neuromuscular disease, chest-wall disease, systemic causes",
+            "Clubbing on exam points toward chronic lung disease, cancer, chronic infection, fibrosis, infective endocarditis, shunt, or IBD"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "History: duration, progression, worse with exertion or rest, flares, orthopnea, platypnea, cough, hemoptysis, chest pain, presyncope, fever, smoking/exposures"
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-hypoxemia",
+  "chapter": "Pulmonology",
+  "group": "Dyspnea & Hypoxemia",
+  "name": "Hypoxemia — Mechanism",
+  "root": {
+    "q": "A-a gradient (normal ≈ age/4 + 4) and response to supplemental O2?",
+    "options": [
+      {
+        "label": "Normal A-a gradient, improves with O2, high-altitude context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Low FiO2",
+          "treatment": [
+            "Correct the environmental/inspired-oxygen problem"
+          ]
+        }
+      },
+      {
+        "label": "Normal A-a gradient, improves with O2, high PaCO2",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hypoventilation",
+          "treatment": [
+            "PaCO2 directly reflects ventilation — address the cause of reduced minute ventilation (drugs, neuromuscular weakness, obstruction)"
+          ]
+        }
+      },
+      {
+        "label": "High A-a gradient, often improves with O2 (worse with exertion) — ILD/fibrosis picture",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Diffusion limitation",
+          "treatment": [
+            "Classic for ILD/pulmonary fibrosis — correlate with HRCT and DLCO"
+          ]
+        }
+      },
+      {
+        "label": "High A-a gradient, poor response to O2 — consolidation, AVM, or cardiac shunt",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Shunt",
+          "treatment": [
+            "Poor oxygen responsiveness is the key distinguishing feature from V/Q mismatch",
+            "Consider consolidation, arteriovenous malformation, or intracardiac shunt"
+          ]
+        }
+      },
+      {
+        "label": "High A-a gradient, improves with O2 — most common pattern",
+        "next": {
+          "leaf": true,
+          "diagnosis": "V/Q mismatch",
+          "treatment": [
+            "The most common cause of hypoxemia and it is oxygen-responsive",
+            "Consider PE, pneumonia, COPD"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-pft",
+  "chapter": "Pulmonology",
+  "group": "Pulmonary Function Tests",
+  "name": "Pulmonary Function Test Interpretation",
+  "root": {
+    "q": "Spirometry FEV1/FVC ratio?",
+    "options": [
+      {
+        "label": "< 0.7 (normal ≈ 0.8)",
+        "next": {
+          "q": "Bronchodilator response?",
+          "options": [
+            {
+              "label": "Improves >200mL and >12%, or provocation/exercise worsening",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Obstructive pattern supporting asthma",
+                "treatment": [
+                  "Significant bronchodilator reversibility supports asthma over COPD"
+                ]
+              }
+            },
+            {
+              "label": "Fixed, irreversible decrease, no major bronchodilator response",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Obstructive pattern supporting COPD",
+                "treatment": [
+                  "Fixed obstruction without major reversibility is the classic COPD pattern"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Normal or high ratio, but low volumes",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Suggests restriction — confirm with plethysmography",
+          "treatment": [
+            "TLC <80% on plethysmography confirms a truly restrictive pattern"
+          ]
+        }
+      },
+      {
+        "label": "Need to characterize gas exchange further (DLCO)",
+        "next": {
+          "q": "DLCO result?",
+          "options": [
+            {
+              "label": "Low DLCO + restriction",
+              "next": {
+                "leaf": true,
+                "diagnosis": "ILD",
+                "treatment": [
+                  "Correlate with HRCT pattern"
+                ]
+              }
+            },
+            {
+              "label": "Low DLCO + obstruction",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Emphysema",
+                "treatment": [
+                  "Correlate with COPD severity and imaging"
+                ]
+              }
+            },
+            {
+              "label": "Isolated low DLCO",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Consider pulmonary hypertension, anemia, or early ILD",
+                "treatment": [
+                  "Isolated DLCO reduction without a clear obstructive/restrictive pattern warrants this broader differential"
+                ]
+              }
+            },
+            {
+              "label": "High DLCO",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Consider Goodpasture/anti-GBM, shunt, or erythrocytosis",
+                "treatment": [
+                  "An elevated DLCO is itself a diagnostic clue, not just a normal variant"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-airway-obstruction",
+  "chapter": "Pulmonology",
+  "group": "Obstructive Lung Disease",
+  "name": "Airway Obstruction — Upper vs Lower, and Which Disease",
+  "root": {
+    "q": "Stridor present (suggesting glottic/subglottic narrowing)?",
+    "options": [
+      {
+        "label": "Yes — stridor",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Upper airway obstruction",
+          "treatment": [
+            "Consider foreign body, tumor, or post-intubation granulation tissue as causes",
+            "Inspiratory or expiratory narrowing pattern helps localize the lesion further"
+          ]
+        }
+      },
+      {
+        "label": "No — lower airway pattern",
+        "next": {
+          "q": "Which lower-airway disease?",
+          "options": [
+            {
+              "label": "Episodic/paroxysmal obstruction, triggers (seasonal, allergens, exercise), usually onset <40",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Asthma",
+                "treatment": [
+                  "ICS is the central treatment",
+                  "Stepwise: primary diagnosis → ICS + LABA; progressive disease → ICS + LABA + LAMA; severe disease → biologics, azithromycin, roflumilast, dupilumab",
+                  "Biologics: anti-IgE (omalizumab), anti-IL4/13 (dupilumab), anti-IL5 (mepolizumab/reslizumab)"
+                ]
+              }
+            },
+            {
+              "label": "Chronic bronchitis/emphysema picture, smoking history, fixed obstruction",
+              "next": {
+                "leaf": true,
+                "diagnosis": "COPD",
+                "treatment": [
+                  "Baseline: LAMA/LABA without ICS",
+                  "GOLD group A: LAMA or LABA; group B: combination LAMA+LABA; group E: LAMA+LABA, consider adding ICS if exacerbation-prone",
+                  "Exacerbation treatment: SABA, systemic steroids for 5 days, consider antibiotics, respiratory support while trying to avoid intubation"
+                ]
+              }
+            },
+            {
+              "label": "Chronic productive cough, recurrent infections, COPD-like symptoms, diagnosed on CT",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Bronchiectasis",
+                "treatment": [
+                  "Causes: chronic obstruction/foreign body, immunodeficiency, cystic fibrosis, primary ciliary dyskinesia, ABPA",
+                  "Treatment: airway clearance physiotherapy, infection prevention, active mucus clearance, hypertonic saline/acetylcysteine/azithromycin"
+                ]
+              }
+            },
+            {
+              "label": "COPD symptoms at a young age, limited smoking history, family history, liver disease, panniculitis",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Alpha-1 antitrypsin deficiency",
+                "treatment": [
+                  "CT typically shows lower-lobe emphysema (vs. upper-lobe predominance in typical smoking-related COPD)",
+                  "Treatment: enzyme replacement"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-pleural-effusion",
+  "chapter": "Pulmonology",
+  "group": "Pleural Disease",
+  "name": "Pleural Effusion Workflow",
+  "root": {
+    "q": "Known heart failure with a symmetric effusion?",
+    "options": [
+      {
+        "label": "Yes — known HF, symmetric effusion",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Presumed transudative HF effusion — tap not required",
+          "treatment": [
+            "Pleural puncture is done for all effusions EXCEPT known HF with a symmetric effusion",
+            "High BNP supports the HF diagnosis if confirmation is needed"
+          ]
+        }
+      },
+      {
+        "label": "No — perform diagnostic tap and apply Light's criteria",
+        "next": {
+          "q": "Exudate by Light's criteria (any of: pleural/serum protein ratio >0.5; pleural/serum LDH ratio >0.6; pleural LDH >2/3 upper limit of normal serum LDH)?",
+          "options": [
+            {
+              "label": "No — transudate",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Transudative effusion",
+                "treatment": [
+                  "Causes: heart failure (most common, high BNP), cirrhosis, nephrotic syndrome, peritoneal dialysis, SVC stenosis"
+                ]
+              }
+            },
+            {
+              "label": "Yes — exudate",
+              "next": {
+                "q": "Special exudate pattern?",
+                "options": [
+                  {
+                    "label": "Low pH <7.2, low glucose, positive culture, pus",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Parapneumonic effusion / empyema",
+                      "treatment": [
+                        "Requires drainage; do not treat as simple exudate"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Lung/breast/lymphoma history, abnormal cytology",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Malignant effusion",
+                      "treatment": [
+                        "Cytology and/or pleural biopsy for diagnosis"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Lymphocytic exudate, high ADA/IFN-gamma",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Tuberculous effusion",
+                      "treatment": [
+                        "Proceed to the tuberculosis workflow"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Triglycerides >110",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Chylothorax",
+                      "treatment": [
+                        "Search for thoracic duct disruption (trauma, malignancy, lymphatic disease)"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Post-CABG or post-MI context",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Dressler syndrome / post-cardiac injury syndrome",
+                      "treatment": [
+                        "Treat with NSAIDs"
+                      ]
+                    }
+                  },
+                  {
+                    "label": "None of the above — general exudate",
+                    "next": {
+                      "leaf": true,
+                      "diagnosis": "Exudative effusion, general causes",
+                      "treatment": [
+                        "Consider malignancy, infection, PE, GI disease, connective tissue disease, drug-induced, post-radiation"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-ild",
+  "chapter": "Pulmonology",
+  "group": "Interstitial Lung Disease",
+  "name": "Suspected Interstitial Lung Disease",
+  "root": {
+    "q": "HRCT pattern?",
+    "options": [
+      {
+        "label": "Peripheral, basal, subpleural honeycombing with traction bronchiectasis (UIP pattern)",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Idiopathic pulmonary fibrosis (IPF) / UIP pattern",
+          "treatment": [
+            "Antifibrotics: pirfenidone or nintedanib",
+            "Smoking cessation and supportive care"
+          ]
+        }
+      },
+      {
+        "label": "Allergen exposure (e.g. birds), upper-lobe involvement, ground-glass opacity + bronchiolitis",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Hypersensitivity pneumonitis",
+          "treatment": [
+            "Remove the causative exposure",
+            "Prednisone"
+          ]
+        }
+      },
+      {
+        "label": "Intra-alveolar granulation tissue / Masson bodies on biopsy",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Cryptogenic organizing pneumonia (COP)",
+          "treatment": [
+            "Steroids"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Symptoms: progressive dyspnea, dry cough, systemic symptoms (fever/weight loss)",
+      "Exam: dry Velcro crackles at the bases, sometimes wheeze, clubbing in IPF/asbestosis"
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-pht",
+  "chapter": "Pulmonology",
+  "group": "Pulmonary Vascular Disease",
+  "name": "Pulmonary Hypertension (mPAP >20mmHg)",
+  "root": {
+    "q": "Right-heart catheterization: wedge pressure and PVR (PVR = (mPAP - wedge)/CO, elevated if >3)?",
+    "options": [
+      {
+        "label": "Wedge <15 (pre-capillary), PVR elevated — idiopathic, genetic, drug-induced, HIV, connective tissue disease, or portal hypertension context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Group 1 — Pulmonary arterial hypertension (PAH)",
+          "treatment": [
+            "Combine prostacyclin analogs, endothelin receptor antagonists, and NO/PDE5/cGMP-pathway drugs",
+            "CCBs only if formally vasoreactive on testing"
+          ]
+        }
+      },
+      {
+        "label": "Wedge ≥15 (post-capillary) — left heart failure context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Group 2 — Due to left heart disease",
+          "treatment": [
+            "Treat the primary left-heart disease"
+          ]
+        }
+      },
+      {
+        "label": "Pre-capillary, chronic lung disease/hypoxia context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Group 3 — Due to lung disease/chronic hypoxia",
+          "treatment": [
+            "Treat the primary lung disease/hypoxia"
+          ]
+        }
+      },
+      {
+        "label": "Thromboembolic disease/CTEPH context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Group 4 — Chronic thromboembolic pulmonary hypertension (CTEPH)",
+          "treatment": [
+            "Pulmonary endarterectomy if the disease is surgically accessible (proximal)",
+            "Balloon pulmonary angioplasty if not amenable to surgery",
+            "cGMP-pathway activator (riociguat) as medical therapy"
+          ]
+        }
+      },
+      {
+        "label": "Hematologic/systemic/metabolic disease or congenital heart defect context",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Group 5 — Multifactorial/unclear mechanisms",
+          "treatment": [
+            "Treat the underlying systemic/hematologic/metabolic condition"
+          ]
+        }
+      },
+      {
+        "label": "Severe and refractory to group-specific therapy",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Consider lung transplantation",
+          "treatment": [
+            "Reserved for severe, refractory disease across groups"
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-hemoptysis",
+  "chapter": "Pulmonology",
+  "group": "Hemoptysis",
+  "name": "Hemoptysis Workflow",
+  "root": {
+    "q": "True hemoptysis (blood from the lower airways, not pseudohemoptysis from the upper airway) — life-threatening?",
+    "options": [
+      {
+        "label": "Yes — life-threatening",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Life-threatening hemoptysis",
+          "treatment": [
+            "Place the bleeding side down",
+            "Respiratory and hemodynamic support",
+            "Intubate with a large-bore tube if needed to allow bronchoscopy",
+            "Bronchoscopic interventions: cold saline, adrenaline, balloon occlusion; ablation if needed",
+            "Common causes at this severity: bronchiectasis, TB, malignancy",
+            "HRCT, bronchoscopy, and angiography (especially if chronic/recurrent) for diagnosis"
+          ]
+        }
+      },
+      {
+        "label": "No — non-life-threatening",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Non-life-threatening hemoptysis",
+          "treatment": [
+            "Broad differential: bronchitis, bronchiectasis, tumor, vascular malformation, heart failure/mitral stenosis/AVM/PE, pneumonia, connective tissue disease, coagulopathy, trauma, cryptogenic",
+            "HRCT and bronchoscopy for diagnosis; angiography if chronic/recurrent"
+          ]
+        }
+      }
+    ],
+    "clues": [
+      "Life-threatening is about risk, not just volume: airway obstruction, gas-exchange disruption, or hemodynamic instability",
+      "Older volume definitions: 150cc/24h or >100cc/hour"
+    ]
+  }
+},
+{
+  "id": "dtree-pulm-tb",
+  "chapter": "Pulmonology",
+  "group": "Tuberculosis",
+  "name": "Tuberculosis — Latent vs Active",
+  "root": {
+    "q": "Symptomatic with prolonged fever, weight loss, night sweats, and organ-specific symptoms, or abnormal imaging?",
+    "options": [
+      {
+        "label": "Yes — suspected active TB",
+        "next": {
+          "q": "Site of disease?",
+          "options": [
+            {
+              "label": "Pulmonary — upper-lobe cavitation, hilar lymphadenopathy, granulomas (early disease can affect lower lobes and cause pleural effusion; HIV patients can have normal imaging)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Active pulmonary TB",
+                "treatment": [
+                  "Diagnose with sputum culture and PCR — need 3 negative tests to rule out due to low single-test sensitivity",
+                  "PCR also detects rifampin resistance",
+                  "Treatment: intensive phase isoniazid + rifampin + pyrazinamide + ethambutol for 2 months, then continuation phase isoniazid + rifampin for 4 months",
+                  "Extend to 9 months total if early cavitation or sputum still positive after initiation; 1 year for meningeal TB",
+                  "Sputum still positive after 4 months of treatment = treatment failure",
+                  "Watch for: liver enzyme elevation, isoniazid-induced peripheral neuropathy, ethambutol-induced optic neuritis"
+                ]
+              }
+            },
+            {
+              "label": "Pleural involvement",
+              "next": {
+                "leaf": true,
+                "diagnosis": "TB pleural effusion",
+                "treatment": [
+                  "Usually noninfectious/paucibacillary",
+                  "Pleural fluid: exudate, lymphocyte-predominant, very low glucose, high ADA"
+                ]
+              }
+            },
+            {
+              "label": "Non-pulmonary (extrapulmonary) site",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Extrapulmonary TB",
+                "treatment": [
+                  "Diagnose via biopsy showing granulomas and Ziehl-Neelsen stain",
+                  "Treat with the same RIPE/continuation regimen, extending duration for site-specific disease (e.g. 1 year for meningeal TB)"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "No active symptoms — testing for latent infection",
+        "next": {
+          "q": "Test used?",
+          "options": [
+            {
+              "label": "TST (tuberculin skin test, read at 48-72h)",
+              "next": {
+                "leaf": true,
+                "diagnosis": "Interpret by risk-based threshold",
+                "treatment": [
+                  "5mm positive: HIV, close contact, immunosuppressed",
+                  "10mm positive: healthcare workers",
+                  "15mm positive: general population",
+                  "False negative: children, early TB, immunosuppression",
+                  "False positive: BCG vaccination, non-TB mycobacteria",
+                  "Close contact is defined as >15 hours/week or 180 total hours"
+                ]
+              }
+            },
+            {
+              "label": "IGRA",
+              "next": {
+                "leaf": true,
+                "diagnosis": "More specific than TST",
+                "treatment": [
+                  "Measures IFN-gamma response to TB-specific antigens — not confounded by prior BCG vaccination",
+                  "Screen: healthcare workers, close contacts, before immunosuppression, new HIV diagnosis, silicosis"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "label": "Latent TB confirmed — treatment choice",
+        "next": {
+          "leaf": true,
+          "diagnosis": "Latent TB treatment",
+          "treatment": [
+            "Isoniazid for 6-9 months, or rifampin for 4 months",
+            "Most primary infections become latent; progression years to decades later is more likely with HIV, immunosuppression, malignancy, diabetes, CKD, silicosis, or severe malnutrition"
+          ]
+        }
+      }
+    ]
+  }
+},
+
 ];
