@@ -211,6 +211,24 @@ function main() {
     });
   }
 
+  // exam pearls (the "Pearls" tab's chapter-grouped list of exam takeaways)
+  let pearlCount = 0;
+  if (S.EXAM_PEARLS) {
+    const pearlIds = new Set();
+    S.EXAM_PEARLS.forEach(p => {
+      pearlCount++;
+      const label = `EXAM_PEARLS[${p.id || '?'}]`;
+      if (!p.id) err(`${label}: missing id`);
+      else if (pearlIds.has(p.id)) err(`${label}: duplicate id`);
+      else pearlIds.add(p.id);
+      if (!p.chapter) err(`${label}: missing chapter`);
+      else if (!KNOWN_CHAPTERS.has(p.chapter)) err(`${label}: chapter '${p.chapter}' is not a known chapter`);
+      if (!p.text) err(`${label}: missing text`);
+      if (!p.session) err(`${label}: missing session (source citation)`);
+      if (p.flag !== undefined && !p.flag) err(`${label}: flag present but empty`);
+    });
+  }
+
   /* ---- report ---- */
   console.log('— Rhythm Strip content validation —');
   console.log(`  topics:         ${topicCount}`);
@@ -220,6 +238,7 @@ function main() {
   console.log(`  classification schemes: ${schemeCount}`);
   console.log(`  past exams:     ${examCount} (${examQCount} questions)`);
   console.log(`  diagnostic trees: ${treeCount} (${treeLeafCount} outcomes)`);
+  console.log(`  exam pearls:    ${pearlCount}`);
 
   if (warnings.length) {
     console.log(`\n⚠️  ${warnings.length} warning(s):`);

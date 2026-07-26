@@ -179,6 +179,32 @@ Rules:
 
 ---
 
+## Pearls (the "Pearls" tab)
+
+A flat, searchable list of short clinical takeaways (usually one or two sentences), distinct from flashcards/quiz/diagnostic-trees: no front/back, no options, no diagnosis/treatment structure — just a statement grouped by chapter. Good source material is a clinician-supplied "lessons learned" or "high-yield facts" summary (e.g. distilled from past-exam review) rather than a structured lecture.
+
+- Pearls live in `28-pearls.js` → `const EXAM_PEARLS = [ … ]`
+
+```js
+const EXAM_PEARLS = [
+  { id: "pearl-001",                 // unique, kebab-case, stable
+    chapter: "Nephrology",           // must be one of the app's existing CHAPTERS values
+    text: "Dysmorphic RBCs on a urine sample indicate a nephritic syndrome — etiologies include ANCA-associated GN, IgA nephropathy, PSGN, MPGN, and RPGN.",
+    session: "גשר קל 23א",           // short citation back to the source batch/session — shown as a small tag, not used for grouping
+    flag: "..." }                    // optional — set ONLY when the source itself is ambiguous, internally inconsistent, or conflicts with standard teaching as printed; shown as an amber reviewer-attention note. Never silently "fix" a pearl's clinical content to what you believe is correct — flag it instead.
+  // …
+];
+```
+
+Rules:
+- **The tab groups by chapter, not by source session/batch** — that's the point of the tab, even if the source document is organized by exam/lecture. Keep `session` as per-item metadata for traceability, not as a UI grouping axis.
+- Write each pearl as a clean, declarative statement — fix obvious OCR/transcription artifacts (e.g. a systematic ligature substitution garbling "ff" throughout a source PDF) silently, since those are transcription noise, not content. Do not silently fix anything that changes or could change the clinical meaning — flag it instead (see `flag` above) per CLAUDE.md's "flag uncertainty, don't paper over it" rule.
+- No fabricated elaboration — if the source states a fact tersely with no further explanation, keep it terse; don't pad it with unstated mechanism/detail.
+
+`validate.js` checks: unique `id`s, `chapter` against the known chapter list, non-empty `text`/`session`, and that `flag` (if present) is non-empty.
+
+---
+
 ## Drugs
 
 `05-drugs.js` → `const DRUGS = { Chapter: [ group, … ] }`.
