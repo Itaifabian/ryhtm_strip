@@ -346,6 +346,8 @@ select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weig
 .ref-chapter{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;
   font-weight:700;color:var(--ink);margin:22px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--ink)}
 .ref-chapter:first-child{margin-top:0}
+.pearl-src{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-faint);margin-top:6px}
+.pearl-flag{font-size:12.5px;color:var(--amber);background:var(--amber-soft);border-radius:6px;padding:6px 9px;margin:6px 0;line-height:1.4}
 
 /* ---------- Drugs ---------- */
 .drug-group-name{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin:16px 0 8px}
@@ -527,6 +529,10 @@ footer .mono{font-size:11px}
       <button class="tab" data-view="pastexam">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
         Past Exams
+      </button>
+      <button class="tab" data-view="pearls">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.8L21 11l-6.6 2.2L12 20l-2.4-6.8L3 11l6.6-2.2L12 2Z"/></svg>
+        Pearls
       </button>
       <button class="tab" data-view="browse">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
@@ -728,6 +734,21 @@ footer .mono{font-size:11px}
       <div id="examRefSheet" style="display:none"></div>
       <div id="examArea"></div>
     </div>
+  </div>
+
+  <!-- PEARLS -->
+  <div class="view" id="view-pearls">
+    <div class="controls">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        <input type="text" id="pearlSearch" placeholder="Search high-yield pearls…" oninput="renderPearls()">
+      </div>
+      <div class="select-wrap"><select id="pearlChapterFilter" onchange="renderPearls()"></select></div>
+      <button class="btn" onclick="setAllPearls(true)">Expand all</button>
+      <button class="btn" onclick="setAllPearls(false)">Collapse all</button>
+    </div>
+    <div class="sec-note" style="max-width:760px;margin:-6px auto 20px">High-yield takeaways distilled from past-exam reconstructions, grouped by subject. No explanations beyond what the source states — a few items carry a flagged note where the source itself looked ambiguous or inconsistent; verify those against the original before relying on them.</div>
+    <div id="pearlList"></div>
   </div>
 
   <!-- BROWSE -->
@@ -1111,6 +1132,7 @@ function switchView(v){
   if(v==='progress')renderProgress();
   if(v==='compare')renderCompare();
   if(v==='ai')renderAIStudio();
+  if(v==='pearls')renderPearls();
 }
 document.getElementById('tabs').addEventListener('click',function(e){
   var b=e.target.closest('.tab'); if(b)switchView(b.dataset.view);
@@ -2036,6 +2058,58 @@ function setAllRef(open){
   el('refSearch').value='';
   renderBrowse();
 }
+
+/* ====== PEARLS (src/data/28-pearls.js) ======
+   Flat list of exam-derived clinical pearls, grouped by chapter using the
+   same collapsible-accordion pattern as Browse. Unlike Browse there's no
+   per-topic sub-grouping — each chapter opens directly onto its pearls. */
+var pearlOpen={};
+function allExamPearls(){return typeof EXAM_PEARLS!=='undefined'?EXAM_PEARLS:[]}
+function buildPearlChapterFilter(){
+  var s=el('pearlChapterFilter');if(!s)return;
+  var chapters=[];
+  allExamPearls().forEach(function(p){if(chapters.indexOf(p.chapter)<0)chapters.push(p.chapter)});
+  s.innerHTML='<option value="all">All chapters</option>';
+  chapters.forEach(function(ch){
+    var o=document.createElement('option');o.value=ch;o.textContent=ch;s.appendChild(o);
+  });
+}
+function renderPearls(){
+  var list=el('pearlList');if(!list)return;
+  var term=(el('pearlSearch').value||'').trim().toLowerCase();
+  var chapterFilter=el('pearlChapterFilter')?el('pearlChapterFilter').value:'all';
+  list.innerHTML='';
+  var anyHit=false;
+  CHAPTERS.forEach(function(chapter){
+    if(chapterFilter!=='all'&&chapter!==chapterFilter)return;
+    var items=allExamPearls().filter(function(p){
+      if(p.chapter!==chapter)return false;
+      if(!term)return true;
+      return (p.text+' '+(p.flag||'')).toLowerCase().indexOf(term)>=0;
+    });
+    if(!items.length)return;
+    anyHit=true;
+    var isOpen=term?true:(pearlOpen[chapter]||false);
+    var box=document.createElement('div');
+    box.className='ref-topic'+(isOpen?' open':'');
+    var body=items.map(function(p){
+      return '<div class="ref-item"><div class="ref-q">'+hl(p.text,term)+'</div>'+
+        (p.flag?'<div class="pearl-flag">⚠ '+esc(p.flag)+'</div>':'')+
+        '<div class="pearl-src" dir="rtl">'+esc(p.session)+'</div></div>';
+    }).join('');
+    box.innerHTML='<div class="ref-head"><span class="ref-name">'+esc(chapter)+'</span><span class="ref-tog">▶ '+items.length+'</span></div><div class="ref-body">'+body+'</div>';
+    box.querySelector('.ref-head').onclick=function(){pearlOpen[chapter]=!box.classList.contains('open');box.classList.toggle('open')};
+    list.appendChild(box);
+  });
+  if(!anyHit){
+    list.innerHTML='<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><div>No matches'+(term?' for "'+esc(term)+'"':'')+'</div></div>';
+  }
+}
+function setAllPearls(open){
+  CHAPTERS.forEach(function(ch){pearlOpen[ch]=open});
+  el('pearlSearch').value='';
+  renderPearls();
+}
 var REF_STOPWORDS={the:1,and:1,for:1,with:1,that:1,this:1,from:1,are:1,was:1,were:1,has:1,have:1,not:1,but:1,can:1,which:1,what:1,when:1,who:1,how:1,its:1,into:1,than:1,then:1,also:1,most:1,more:1,less:1,per:1,due:1,use:1,used:1,uses:1,case:1,patient:1,shows:1,show:1,likely:1,following:1,answer:1,option:1,options:1,best:1,next:1,step:1,true:1,false:1,only:1};
 function refWords(s){return (s||'').toLowerCase().replace(/[^a-z0-9%\s-]/g,' ').split(/\s+/).filter(function(w){return w.length>3&&!REF_STOPWORDS[w]})}
 function findBestMatchingCard(t,searchText){
@@ -2416,6 +2490,8 @@ buildFlashOptions();
 buildQuizOptions();
 buildCaseChapterFilter();
 renderCaseTreeNav();
+buildPearlChapterFilter();
+renderPearls();
 buildExamOptions();
 buildMixControls();
 buildDrugChapters();
