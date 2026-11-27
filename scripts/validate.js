@@ -93,6 +93,7 @@ function main() {
   countTopics(S.GASTRO_TOPICS, 'GASTRO_TOPICS');
   countTopics(S.EM_TOPICS, 'EM_TOPICS');
   countTopics(S.ONCOLOGY_TOPICS, 'ONCOLOGY_TOPICS');
+  countTopics(S.HARRISON_TOPICS, 'HARRISON_TOPICS');
 
   // extra-quiz maps must key into existing topic ids
   const checkExtra = (map, label, validIds) => {
