@@ -2962,4 +2962,914 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0023-syncope",
+ "name": "Syncope (Harrison Ch 23)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 23: Syncope.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Definition of syncope?",
+   "back": "Transient, self-limited loss of consciousness from acute global cerebral hypoperfusion; rapid onset, brief, spontaneous complete recovery"
+  },
+  {
+   "front": "Three categories of syncope?",
+   "back": "Neurally mediated (reflex/vasovagal), orthostatic hypotension, cardiac"
+  },
+  {
+   "front": "Most common cause of syncope overall?",
+   "back": "Neurally mediated syncope"
+  },
+  {
+   "front": "Duration of cerebral flow cessation that causes loss of consciousness?",
+   "back": "6-8 seconds"
+  },
+  {
+   "front": "Systolic BP at which syncope usually occurs?",
+   "back": "~50 mmHg or lower"
+  },
+  {
+   "front": "Syncope ECG findings that indicate admission (Table 23-1)?",
+   "back": "QT >500 ms, bi/trifascicular block or QRS >=120 ms, sinus pauses or SA block, persistent sinus bradycardia, AF, NSVT, preexcitation, Brugada pattern, ischemia"
+  },
+  {
+   "front": "Syncope history features that indicate admission (Table 23-1)?",
+   "back": "Ischemic chest pain, CHF, moderate-severe valvular/structural disease, ventricular arrhythmia history, family history of sudden death, palpitations at syncope, syncope at rest or during exercise"
+  },
+  {
+   "front": "High-risk exam findings in syncope?",
+   "back": "Unexplained SBP <90, signs of GI bleeding, persistent HR <40, undiagnosed systolic murmur"
+  },
+  {
+   "front": "Neurally mediated syncope: tilt-table pattern?",
+   "back": "Abrupt fall in both blood pressure and heart rate"
+  },
+  {
+   "front": "Orthostatic hypotension from autonomic failure: tilt-table pattern?",
+   "back": "Gradual fall in blood pressure without a compensatory heart rate rise"
+  },
+  {
+   "front": "First-line management of vasovagal syncope?",
+   "back": "Reassurance, education, trigger avoidance, fluid and salt, isometric counterpressure maneuvers"
+  },
+  {
+   "front": "Most effective counterpressure maneuver?",
+   "back": "Abdominal and leg muscle tensing"
+  },
+  {
+   "front": "Only drug with multicenter RCT support for refractory vasovagal syncope?",
+   "back": "Midodrine"
+  },
+  {
+   "front": "Who may benefit from pacing for vasovagal syncope?",
+   "back": "Age >40, frequent recurrences, cardioinhibitory response on tilt (dual-chamber closed-loop pacing)"
+  },
+  {
+   "front": "Definition of orthostatic hypotension?",
+   "back": "SBP fall >=20 or DBP fall >=10 mmHg within 3 min of standing or head-up tilt"
+  },
+  {
+   "front": "Initial orthostatic hypotension?",
+   "back": "BP fall within 15 s of standing resolving by 45 s; not autonomic failure"
+  },
+  {
+   "front": "Coat-hanger headache?",
+   "back": "Suboccipital, posterior neck and shoulder pain from neck muscle ischemia in orthostatic hypotension"
+  },
+  {
+   "front": "Synucleinopathies causing primary autonomic failure?",
+   "back": "Parkinson disease, dementia with Lewy bodies, pure autonomic failure, multiple system atrophy"
+  },
+  {
+   "front": "Peripheral neuropathies causing orthostatic hypotension?",
+   "back": "Diabetes, hereditary and AL amyloidosis, HSAN III (familial dysautonomia), autoimmune ganglionopathy, Sjogren, paraneoplastic, HIV"
+  },
+  {
+   "front": "Drug classes causing orthostatic hypotension?",
+   "back": "Alpha-blockers, diuretics, nitrates and vasodilators, other antihypertensives, tricyclics, phenothiazines"
+  },
+  {
+   "front": "Treatment sequence for orthostatic hypotension?",
+   "back": "Remove offending drugs; nonpharmacologic measures (staged rising, counterpressure, head-of-bed elevation, fluid and salt); then fludrocortisone, midodrine or droxidopa"
+  },
+  {
+   "front": "Why raise the head of the bed in orthostatic hypotension?",
+   "back": "Reduces supine hypertension and nocturnal diuresis"
+  },
+  {
+   "front": "Stokes-Adams attack?",
+   "back": "Syncope due to bradycardia or asystole"
+  },
+  {
+   "front": "Common cause of syncope in tachycardia-bradycardia syndrome?",
+   "back": "Prolonged pause after a tachycardia ends"
+  },
+  {
+   "front": "Gene most often linked to Brugada syndrome?",
+   "back": "SCN5A (Na+ channel alpha subunit)"
+  },
+  {
+   "front": "Syncope vs seizure: recovery?",
+   "back": "Syncope: reorientation almost immediate. Seizure: prolonged postictal drowsiness and disorientation"
+  },
+  {
+   "front": "How often do myoclonic movements occur in syncope?",
+   "back": "Up to 90% of episodes; arrhythmic, <30 s"
+  },
+  {
+   "front": "Incontinence type that is very rare in syncope?",
+   "back": "Fecal incontinence"
+  },
+  {
+   "front": "Cataplexy vs syncope?",
+   "back": "Cataplexy: emotion-triggered (laughter, anger) loss of tone with consciousness preserved, 30 s-2 min"
+  },
+  {
+   "front": "ECG monitor choice by syncope frequency?",
+   "back": "Daily: Holter. >1/month: external loop recorder. Less often: implantable loop recorder"
+  },
+  {
+   "front": "Ideal duration of ECG monitoring in syncope?",
+   "back": "At least twice the interval between episodes"
+  },
+  {
+   "front": "Indications for carotid sinus massage?",
+   "back": "Suspected carotid sinus syncope, or age >40 with recurrent unexplained syncope"
+  },
+  {
+   "front": "Contraindications to carotid sinus massage?",
+   "back": "Carotid bruit, known or possible plaque, or stenosis"
+  },
+  {
+   "front": "Syncope during or after exercise: test?",
+   "back": "Treadmill exercise test with ECG and BP monitoring"
+  },
+  {
+   "front": "Yield of initial history, exam, orthostatic vitals and ECG in syncope?",
+   "back": "Identifies a cause in ~50%"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 68-year-old man is brought to the emergency department after losing consciousness while sitting at dinner. He had palpitations immediately beforehand and recovered within a minute without confusion. ECG shows sinus rhythm with right bundle branch block and left anterior fascicular block (QRS 136 ms). Blood pressure is 128/76 mm Hg with no orthostatic change. Which of the following is the most appropriate next step?",
+   "options": [
+    "Discharge with outpatient Holter monitoring",
+    "Tilt-table testing",
+    "EEG",
+    "Hospital admission with continuous ECG monitoring",
+    "Reassurance and increased salt intake"
+   ],
+   "answer": 3,
+   "explain": "Syncope while seated, with palpitations and bifascicular block (QRS ≥120 ms), carries several Table 23-1 high-risk features. It warrants hospital admission and inpatient ECG monitoring for a life-threatening arrhythmia. (A: Outpatient Holter suits frequent episodes in low-risk patients, not high-risk ones.) (B: Tilt testing evaluates reflex syncope and autonomic failure, not suspected conduction disease.) (C: The history (brief, no postictal confusion) fits syncope, not seizure.) (E: Fluid and salt are for vasovagal or orthostatic syncope.) Source: Ch 0023, Table 23-1 and Cardiac Evaluation"
+  },
+  {
+   "q": "A 17-year-old girl fainted while having blood drawn. She felt warm, nauseated and lightheaded, became pale and sweaty, and then lost consciousness for about 20 seconds with a few brief jerks of her arms. She was fully oriented immediately on waking. Examination, orthostatic vital signs and ECG are normal. She has had two similar episodes in stressful situations. Which of the following is the most appropriate management?",
+   "options": [
+    "Reassurance, education, trigger avoidance, increased fluid and salt intake, and counterpressure maneuvers",
+    "Start a β-blocker",
+    "Start levetiracetam",
+    "Refer for dual-chamber pacemaker placement",
+    "Implantable loop recorder"
+   ],
+   "answer": 0,
+   "explain": "Typical vasovagal syncope with a normal workup is managed with reassurance, education, trigger avoidance, fluid and salt expansion, and isometric counterpressure maneuvers. (B: β-blockers are used by experts for refractory cases but lack strong evidence, and they aren't first line.) (C: Brief myoclonic jerks occur in up to 90% of syncopal episodes and don't indicate epilepsy.) (D: Pacing is limited to older patients (>40) with a cardioinhibitory tilt response and frequent recurrences.) (E: Loop recorders are for suspected arrhythmia; this history is classic reflex syncope.) Source: Ch 0023, Treatment: Neurally Mediated Syncope"
+  },
+  {
+   "q": "A 59-year-old woman has had near-daily episodes of brief lightheadedness with two syncopal events over the past 3 weeks. Examination, orthostatic vital signs, echocardiogram and resting ECG are normal. She has no high-risk features. Which of the following is the most appropriate test?",
+   "options": [
+    "Implantable loop recorder",
+    "Invasive electrophysiologic study",
+    "Continuous ambulatory (Holter) ECG monitoring",
+    "Coronary angiography",
+    "Brain MRI"
+   ],
+   "answer": 2,
+   "explain": "Holter monitoring is recommended for patients with frequent (daily or near-daily) episodes. (A: Implantable loop recorders are for episodes too infrequent to capture with shorter monitoring.) (B: Electrophysiologic study has low sensitivity and specificity. It is reserved for structural disease with ECG abnormalities after a nondiagnostic noninvasive workup.) (D: There's no suggestion of ischemia.) (E: Neuroimaging doesn't evaluate arrhythmic syncope.) Source: Ch 0023, Cardiac Evaluation"
+  },
+  {
+   "q": "A 76-year-old man with benign prostatic hyperplasia started terazosin 2 weeks ago. Since then he has had lightheadedness on standing and fainted once after getting out of bed at night. Blood pressure is 138/80 mm Hg supine and 112/68 mm Hg after 3 minutes standing. ECG is normal. Which of the following is the most appropriate first step?",
+   "options": [
+    "Start fludrocortisone",
+    "Start midodrine",
+    "Order tilt-table testing",
+    "Admit for telemetry",
+    "Discontinue terazosin"
+   ],
+   "answer": 4,
+   "explain": "A 26 mm Hg systolic fall on standing after starting an α-blocker is drug-induced orthostatic hypotension. The first step is removing the reversible cause, usually a vasoactive medication. (A: Fludrocortisone is used only after removing causes and failing nonpharmacologic measures.) (B: Midodrine follows the same rule.) (C: The cause is already evident, so tilt testing adds nothing.) (D: He has no high-risk features requiring telemetry.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  },
+  {
+   "q": "A 24-year-old woman has recurrent vasovagal syncope that has continued despite reassurance, trigger avoidance, increased fluid and salt intake, and correctly performed leg-crossing and muscle-tensing maneuvers. Examination and ECG are normal. Which of the following medications has the best randomized-trial evidence for preventing her episodes?",
+   "options": [
+    "Fludrocortisone",
+    "Midodrine",
+    "Metoprolol",
+    "Sertraline",
+    "Hydrochlorothiazide"
+   ],
+   "answer": 1,
+   "explain": "Of the drugs used for refractory neurally mediated syncope, only midodrine has been shown effective in international multicenter randomized controlled trials. (A: Fludrocortisone is widely used but lacks that level of evidence.) (C: β-blockers are widely used but lack that level of evidence.) (D: SSRIs aren't among the agents the source lists for this purpose.) (E: A diuretic would worsen volume depletion.) Source: Ch 0023, Treatment: Neurally Mediated Syncope"
+  },
+  {
+   "q": "A 72-year-old man has had three episodes of unexplained syncope over a year. ECG, echocardiogram and Holter monitoring are unrevealing. Carotid sinus massage is being considered. On examination, a bruit is heard over the right carotid artery. Which of the following is the most appropriate action?",
+   "options": [
+    "Avoid carotid sinus massage",
+    "Perform carotid sinus massage on the left side only",
+    "Perform carotid sinus massage without monitoring",
+    "Perform bilateral simultaneous carotid sinus massage",
+    "Perform carotid sinus massage after a dose of atropine"
+   ],
+   "answer": 0,
+   "explain": "Carotid sinus massage should be avoided in patients with carotid bruits or known or possible plaque or stenosis. (B: A bruit on one side signals vascular disease, so massaging the other side is still unsafe.) (C: When performed, massage needs continuous ECG and blood pressure monitoring.) (D: Bilateral simultaneous massage is never appropriate.) (E: Premedication doesn't remove the embolic risk of plaque.) Source: Ch 0023, Autonomic Nervous System Testing"
+  },
+  {
+   "q": "A 19-year-old college basketball player collapsed during practice and regained consciousness within seconds. He has no prodrome and no prior episodes. A systolic murmur is heard at the left sternal border that increases with Valsalva. ECG shows left ventricular hypertrophy. Which of the following is the most appropriate next step?",
+   "options": [
+    "Tilt-table testing",
+    "Reassurance and return to play",
+    "Increase fluid and salt intake",
+    "Echocardiography",
+    "EEG"
+   ],
+   "answer": 3,
+   "explain": "Exertional syncope with a murmur that increases with Valsalva and LVH suggests hypertrophic cardiomyopathy. Echocardiography is indicated for an abnormal exam or ECG, and an exercise test with monitoring should follow exercise-related syncope. (A: Tilt testing evaluates reflex syncope, not structural heart disease.) (B: Syncope during exercise is a high-risk feature, so return to play is unsafe.) (C: Volume expansion treats reflex syncope.) (E: The event has no seizure features.) Source: Ch 0023, Cardiac Evaluation; Table 23-1"
+  },
+  {
+   "q": "A 35-year-old woman lost consciousness while standing in a hot, crowded room. A witness describes pallor and sweating beforehand, eyes open and turned upward, a few irregular jerks lasting about 10 seconds, and urinary incontinence. She was fully oriented within a minute. Which of the following features would most strongly suggest a seizure rather than syncope?",
+   "options": [
+    "Eyes open during the event",
+    "Urinary incontinence",
+    "Prolonged disorientation lasting many minutes after the event",
+    "Brief multifocal myoclonic jerks",
+    "Pallor and diaphoresis before the event"
+   ],
+   "answer": 2,
+   "explain": "Reorientation is almost immediate after syncope. Prolonged postictal drowsiness and disorientation favor a seizure. (A: Eyes typically stay open and deviate upward in neurally mediated syncope.) (B: Urinary incontinence occurs with both syncope and seizures.) (D: Brief, arrhythmic multifocal myoclonus occurs in up to 90% of syncopal episodes.) (E: Pallor and diaphoresis are premonitory autonomic features of syncope.) Source: Ch 0023, Differential Diagnosis"
+  },
+  {
+   "q": "A 64-year-old man with Parkinson disease has disabling lightheadedness on standing. Blood pressure falls from 132/80 mm Hg supine to 96/60 mm Hg after 3 minutes standing, with no change in heart rate. He has stopped all vasoactive medications, rises in stages, increased his fluid and salt intake, and uses counterpressure maneuvers, but symptoms persist. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start a β-blocker",
+    "Start hydrochlorothiazide",
+    "Implant a pacemaker",
+    "Start tamsulosin",
+    "Start midodrine"
+   ],
+   "answer": 4,
+   "explain": "Neurogenic orthostatic hypotension (Parkinson disease, no compensatory heart-rate rise) that persists after drug removal and nonpharmacologic measures is treated with fludrocortisone or vasoconstrictors such as midodrine or droxidopa. (A: A β-blocker would lower blood pressure further.) (B: A diuretic causes volume depletion and worsens orthostatic hypotension.) (C: Pacing doesn't correct vasoconstrictor failure.) (D: An α-blocker is itself a cause of orthostatic hypotension.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  },
+  {
+   "q": "A 55-year-old man has had two syncopal episodes 7 months apart, each preceded by sudden palpitations. ECG, echocardiogram, exercise test and a 48-hour Holter monitor are normal. He has no high-risk features. Which of the following is the most appropriate next step?",
+   "options": [
+    "Implantable loop recorder",
+    "Repeat 48-hour Holter monitoring",
+    "Invasive electrophysiologic study",
+    "Tilt-table testing",
+    "Reassurance without further testing"
+   ],
+   "answer": 0,
+   "explain": "Episodes months apart in a low-risk patient with suspected arrhythmia call for an implantable loop recorder. Monitoring should ideally last at least twice the interval between episodes. (B: A repeat short Holter is unlikely to capture an event that happens every few months.) (C: Electrophysiologic study needs structural disease with ECG abnormalities and has low yield.) (D: The palpitation prodrome points to arrhythmia, not reflex syncope.) (E: Palpitations before syncope are a high-risk feature and should be investigated.) Source: Ch 0023, Cardiac Evaluation"
+  },
+  {
+   "q": "A 70-year-old woman has lightheadedness on standing. Blood pressure is measured supine and after 3 minutes standing. Which of the following findings meets the definition of orthostatic hypotension?",
+   "options": [
+    "Fall in systolic blood pressure from 130 to 118 mm Hg",
+    "Fall in systolic blood pressure from 142 to 120 mm Hg",
+    "Fall in diastolic blood pressure from 80 to 74 mm Hg",
+    "Fall in systolic blood pressure that begins within 15 seconds of standing and resolves by 45 seconds",
+    "Rise in heart rate of 15/min without a change in blood pressure"
+   ],
+   "answer": 1,
+   "explain": "Orthostatic hypotension is a fall of at least 20 mm Hg systolic or at least 10 mm Hg diastolic within 3 minutes of standing. A 22 mm Hg systolic fall qualifies. (A: A 12 mm Hg systolic fall is below threshold.) (C: A 6 mm Hg diastolic fall is below threshold.) (D: Initial orthostatic hypotension (within 15 s, resolving by 45 s) reflects a transient mismatch, not autonomic failure.) (E: No blood pressure fall means no orthostatic hypotension.) Source: Ch 0023, Orthostatic Hypotension"
+  },
+  {
+   "q": "A 22-year-old man reports sudden episodes in which his knees buckle and he slumps to the floor when he laughs hard. He remains aware throughout, and each episode lasts about a minute. He also has excessive daytime sleepiness. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Vasovagal syncope",
+    "Absence seizures",
+    "Orthostatic hypotension",
+    "Cataplexy",
+    "Psychogenic pseudosyncope"
+   ],
+   "answer": 3,
+   "explain": "Cataplexy is abrupt loss of muscle tone triggered by strong emotion (laughter, anger), with consciousness preserved, lasting 30 s to 2 min. It occurs in 60–75% of patients with narcolepsy. (A: Syncope involves loss of consciousness.) (B: Absence seizures impair awareness and aren't triggered by laughter.) (C: Orthostatic hypotension is triggered by posture and causes presyncope or loss of consciousness.) (E: Psychogenic episodes involve apparent loss of consciousness and aren't tied to daytime sleepiness.) Source: Ch 0023, Differential Diagnosis"
+  },
+  {
+   "q": "A 61-year-old man has progressive orthostatic lightheadedness, erectile dysfunction, urinary urgency, reduced sweating, gait unsteadiness and slurred speech. Tilt-table testing shows a gradual fall in blood pressure with no compensatory rise in heart rate. Which of the following is the most likely cause of his orthostatic hypotension?",
+   "options": [
+    "Vasovagal syncope",
+    "Carotid sinus hypersensitivity",
+    "Multiple system atrophy",
+    "Brugada syndrome",
+    "Volume depletion"
+   ],
+   "answer": 2,
+   "explain": "Orthostatic hypotension without a compensatory heart-rate rise, plus bladder, sexual and sudomotor dysfunction and cerebellar signs, indicates primary autonomic failure. Multiple system atrophy (Shy-Drager) is a synucleinopathy causing this picture. (A: Vasovagal syncope requires an intact autonomic nervous system and causes abrupt BP and HR falls.) (B: Carotid sinus hypersensitivity is a reflex syncope triggered by neck stimulation.) (D: Brugada syndrome causes arrhythmic syncope, not progressive autonomic failure.) (E: Volume depletion doesn't explain the progressive multisystem autonomic and cerebellar findings.) Source: Ch 0023, Causes of Neurogenic Orthostatic Hypotension; Table 23-2; Fig 23-3"
+  },
+  {
+   "q": "A 66-year-old woman with pure autonomic failure is treated with fludrocortisone and midodrine for orthostatic hypotension. Her supine blood pressure at night is 182/96 mm Hg, and she reports frequent nighttime urination. Which of the following is the most appropriate nonpharmacologic measure?",
+   "options": [
+    "Sleep flat with legs elevated",
+    "Raise the head of the bed",
+    "Drink 500 mL of water at bedtime",
+    "Eat a large carbohydrate-rich meal in the evening",
+    "Stop all salt intake"
+   ],
+   "answer": 1,
+   "explain": "Raising the head of the bed reduces supine hypertension and nocturnal diuresis in patients with orthostatic hypotension. (A: Lying flat worsens supine hypertension.) (C: A water bolus gives a short-term pressor response, which is unwanted at night with supine hypertension.) (D: Large carbohydrate meals worsen postprandial hypotension.) (E: Salt and fluid expansion is part of orthostatic hypotension treatment.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0024-dizziness-and-vertigo",
+ "name": "Dizziness and Vertigo (Harrison Ch 24)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 24: Dizziness and Vertigo.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Three key questions when evaluating dizziness?",
+   "back": "Is it dangerous (arrhythmia, TIA/stroke)? Is it vestibular? If vestibular, peripheral or central?"
+  },
+  {
+   "front": "What does vertigo imply physiologically?",
+   "back": "Acute asymmetry of vestibular inputs from the two labyrinths or their central pathways"
+  },
+  {
+   "front": "Symptoms of symmetric bilateral vestibular loss?",
+   "back": "Imbalance and oscillopsia, but no vertigo"
+  },
+  {
+   "front": "Dizziness lasting seconds, positional?",
+   "back": "BPPV or orthostatic hypotension"
+  },
+  {
+   "front": "Dizziness lasting minutes?",
+   "back": "Posterior circulation TIA (also migraine)"
+  },
+  {
+   "front": "Vertigo attacks lasting hours?",
+   "back": "Vestibular migraine or Meniere disease"
+  },
+  {
+   "front": "Peripheral nystagmus characteristics?",
+   "back": "Unidirectional horizontal, fast phase away from the lesioned ear, suppressed by visual fixation"
+  },
+  {
+   "front": "Nystagmus patterns that indicate a central lesion?",
+   "back": "Direction-changing with gaze, downbeat, pure vertical or pure torsional, not suppressed by fixation"
+  },
+  {
+   "front": "Acute prolonged vertigo with a normal head impulse test suggests?",
+   "back": "A central cause (e.g., cerebellar or brainstem stroke)"
+  },
+  {
+   "front": "Head impulse test: abnormal result?",
+   "back": "Catch-up saccade after rapid head rotation toward the weak side (deficient VOR)"
+  },
+  {
+   "front": "Symptoms that suggest central vertigo?",
+   "back": "Diplopia, dysarthria, limb ataxia, numbness, weakness"
+  },
+  {
+   "front": "Dix-Hallpike finding in posterior canal BPPV?",
+   "back": "Transient upbeat-torsional nystagmus, upper poles beating toward the lower (affected) ear"
+  },
+  {
+   "front": "BPPV episode duration and triggers?",
+   "back": "<1 min (typically 15-20 s); change in head position: lying down, rising, looking up, rolling over in bed"
+  },
+  {
+   "front": "Cause of BPPV?",
+   "back": "Otoconia dislodged from the utricle into a semicircular canal, usually the posterior canal"
+  },
+  {
+   "front": "Treatment of posterior canal BPPV?",
+   "back": "Epley repositioning maneuver"
+  },
+  {
+   "front": "Vestibular neuritis: role of antivirals?",
+   "back": "No proven benefit unless herpes zoster oticus (Ramsay Hunt)"
+  },
+  {
+   "front": "Vestibular suppressants in vestibular neuritis: how long?",
+   "back": "First several days only; later they impede central compensation"
+  },
+  {
+   "front": "Acute vestibular syndrome in an older patient with vascular risk factors and no focal signs?",
+   "back": "Still evaluate for stroke"
+  },
+  {
+   "front": "Meniere disease triad plus audiogram?",
+   "back": "Vertigo attacks, ear fullness/pressure/tinnitus, low-frequency sensorineural hearing loss"
+  },
+  {
+   "front": "Pathology of Meniere disease?",
+   "back": "Endolymphatic hydrops (excess endolymph)"
+  },
+  {
+   "front": "Initial treatment of Meniere disease?",
+   "back": "Diuretics and sodium restriction; then intratympanic glucocorticoids or gentamicin"
+  },
+  {
+   "front": "Vestibular migraine features?",
+   "back": "Vertigo minutes to hours, often without headache; motion and visual-motion sensitivity, photophobia"
+  },
+  {
+   "front": "Vestibular migraine treatment?",
+   "back": "Migraine prophylactic medications; antiemetics for attacks"
+  },
+  {
+   "front": "Why does vestibular schwannoma rarely cause vertigo?",
+   "back": "Slow vestibular loss is compensated centrally"
+  },
+  {
+   "front": "Unexplained unilateral sensorineural hearing loss: imaging?",
+   "back": "MRI of the internal auditory canals with gadolinium"
+  },
+  {
+   "front": "Most common iatrogenic cause of bilateral vestibular hypofunction?",
+   "back": "Aminoglycosides, especially gentamicin"
+  },
+  {
+   "front": "Bilateral vestibular hypofunction exam findings?",
+   "back": "Reduced dynamic visual acuity, abnormal head impulse both directions, Romberg sign, reduced calorics"
+  },
+  {
+   "front": "Treatment of bilateral vestibular hypofunction?",
+   "back": "Vestibular rehabilitation; avoid suppressants"
+  },
+  {
+   "front": "Abnormal dynamic visual acuity?",
+   "back": "Drop of more than one line with 1-2 Hz head rotation"
+  },
+  {
+   "front": "PPPD definition?",
+   "back": "Fluctuating dizziness >=3 months, worse standing and in complex visual environments; normal or compensated vestibular testing"
+  },
+  {
+   "front": "PPPD treatment?",
+   "back": "SSRIs, cognitive-behavioral therapy, vestibular rehabilitation"
+  },
+  {
+   "front": "Suspected central vertigo: imaging?",
+   "back": "Brain MRI and full neurologic evaluation"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 63-year-old woman has had 2 weeks of brief spinning sensations, each lasting about 15 seconds. They occur when she rolls over in bed, lies down, or looks up at a high shelf. She has no hearing loss, tinnitus, or other neurologic symptoms, and orthostatic vital signs are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Brain MRI",
+    "Start meclizine daily",
+    "Dix-Hallpike maneuver",
+    "Audiometry",
+    "Start a diuretic and sodium restriction"
+   ],
+   "answer": 2,
+   "explain": "Brief positional vertigo triggered by rolling over in bed is typical of BPPV. All patients with positionally provoked episodic dizziness should have the Dix-Hallpike maneuver. (A: Nothing suggests a central cause.) (B: Suppressants don't treat BPPV, and treatment should target the diagnosis.) (D: She has no aural symptoms.) (E: Diuretics and sodium restriction are for Ménière disease.) Source: Ch 0024, Positioning Maneuvers; Benign Paroxysmal Positional Vertigo"
+  },
+  {
+   "q": "A 58-year-old man has brief positional vertigo. With his head turned 45 degrees to the right and lowered into the head-hanging position, he develops transient upbeating-torsional nystagmus with the upper poles of the eyes beating toward the right ear, along with vertigo. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Oral glucocorticoids",
+    "Daily vestibular suppressant medication",
+    "Valacyclovir",
+    "Referral for vestibular nerve section",
+    "Epley repositioning maneuver for the right posterior canal"
+   ],
+   "answer": 4,
+   "explain": "Upbeat-torsional nystagmus toward the lower (right) ear on Dix-Hallpike confirms right posterior canal BPPV, which is treated with the Epley maneuver. (A: Glucocorticoids have no role in BPPV.) (B: Suppressants don't remove otoconia.) (C: Antivirals are for herpes zoster oticus.) (D: Ablative surgery is seldom needed even in Ménière disease and isn't BPPV therapy.) Source: Ch 0024, Benign Paroxysmal Positional Vertigo; Fig 24-1"
+  },
+  {
+   "q": "A 71-year-old man with hypertension, diabetes and atrial fibrillation presents with 10 hours of continuous vertigo, nausea and vomiting. He has spontaneous horizontal nystagmus. The head impulse test is normal in both directions. He has no hearing loss. Which of the following is the most appropriate next step?",
+   "options": [
+    "Brain MRI",
+    "Discharge with meclizine",
+    "Epley maneuver",
+    "Oral glucocorticoids for vestibular neuritis",
+    "Outpatient audiometry"
+   ],
+   "answer": 0,
+   "explain": "In acute prolonged vertigo, a normal head impulse test argues against a peripheral lesion and suggests a central cause. An older patient with vascular risk factors needs evaluation for stroke, and suspected central lesions need brain MRI. (B: Discharging a possible cerebellar stroke is dangerous.) (C: Epley treats BPPV, not continuous vertigo.) (D: A normal head impulse test makes vestibular neuritis unlikely.) (E: Outpatient audiometry would delay evaluation of a possible stroke.) Source: Ch 0024, Acute Prolonged Vertigo; Table 24-1; Central Vestibular Disorders"
+  },
+  {
+   "q": "A 42-year-old woman was diagnosed with vestibular neuritis 9 days ago. The acute vertigo has resolved, but she still feels unsteady with head movement. She has stayed in bed and continues taking a vestibular suppressant three times daily. Neurologic examination is otherwise normal. Which of the following is the most appropriate management?",
+   "options": [
+    "Increase the suppressant dose",
+    "Add oral acyclovir",
+    "Order brain MRI",
+    "Stop the suppressant, resume normal activity and begin vestibular rehabilitation",
+    "Add a benzodiazepine at night"
+   ],
+   "answer": 3,
+   "explain": "Vestibular suppressants should be avoided after the first several days because they impede central compensation. Patients should resume activity as soon as possible, and vestibular rehabilitation may speed improvement. (A: Higher doses further delay compensation.) (B: Antivirals have no proven benefit without herpes zoster oticus.) (C: The course and normal neurologic exam fit a resolving peripheral lesion.) (E: Benzodiazepines are suppressants with the same drawback.) Source: Ch 0024, Acute Prolonged Vertigo: Treatment"
+  },
+  {
+   "q": "A 45-year-old woman has recurrent attacks of vertigo lasting several hours, with fullness and roaring tinnitus in the left ear. Audiometry during an attack shows asymmetric low-frequency sensorineural hearing loss on the left that improves between attacks. Neurologic examination is normal. Which of the following is the most appropriate initial treatment?",
+   "options": [
+    "Intratympanic gentamicin",
+    "Diuretic therapy and sodium restriction",
+    "Labyrinthectomy",
+    "Epley maneuver",
+    "Migraine prophylaxis"
+   ],
+   "answer": 1,
+   "explain": "Vertigo, aural fullness and fluctuating low-frequency hearing loss indicate Ménière disease. Diuretics and sodium restriction are the usual initial treatment, with ENT referral. (A: Intratympanic gentamicin is considered if attacks persist.) (C: Ablative procedures are seldom required.) (D: Epley treats BPPV.) (E: Migraine prophylaxis treats vestibular migraine, which lacks low-frequency hearing loss.) Source: Ch 0024, Ménière's Disease"
+  },
+  {
+   "q": "A 54-year-old man has gradually worsening hearing in his right ear over 18 months. He has no vertigo. Audiometry shows right-sided sensorineural hearing loss. The head impulse test shows a catch-up saccade when the head is turned to the right. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance and repeat audiometry in 1 year",
+    "Noncontrast head CT",
+    "MRI of the internal auditory canals with gadolinium",
+    "Vestibular suppressant therapy",
+    "Hearing aid fitting without further testing"
+   ],
+   "answer": 2,
+   "explain": "Unexplained unilateral sensorineural hearing loss or vestibular hypofunction requires MRI of the internal auditory canals with gadolinium to exclude vestibular schwannoma. (A: Watchful waiting would miss a tumor.) (B: Noncontrast CT doesn't adequately image the internal auditory canal.) (D: He has no vertigo to suppress.) (E: The cause must be found first.) Source: Ch 0024, Ancillary Testing; Vestibular Schwannoma"
+  },
+  {
+   "q": "A 50-year-old woman presents with acute vertigo. Which of the following examination findings most strongly indicates a central rather than peripheral cause?",
+   "options": [
+    "Horizontal nystagmus that changes direction with the direction of gaze",
+    "Unidirectional horizontal nystagmus that is suppressed by visual fixation",
+    "Catch-up saccade after head rotation toward one side",
+    "Transient upbeat-torsional nystagmus on Dix-Hallpike testing",
+    "Unilateral hearing loss with ear fullness"
+   ],
+   "answer": 0,
+   "explain": "Nystagmus that changes direction with gaze is due to a central lesion, characteristically of the cerebellar pathways. (B: Unidirectional, fixation-suppressed nystagmus is peripheral.) (C: A catch-up saccade indicates a peripheral vestibular deficit.) (D: Transient mixed vertical-torsional nystagmus on positioning is BPPV.) (E: Unilateral hearing loss suggests a peripheral cause.) Source: Ch 0024, Table 24-1; Ocular Motility"
+  },
+  {
+   "q": "A 67-year-old man treated with gentamicin for endocarditis 2 months ago now has unsteadiness, especially walking at night, and a sensation that the visual scene bounces when he walks or rides in a car. He has no vertigo. Head impulse testing shows catch-up saccades in both directions, dynamic visual acuity drops by three lines, and Romberg testing is positive. Which of the following is the most appropriate management?",
+   "options": [
+    "Daily meclizine",
+    "Epley maneuver",
+    "Oral glucocorticoids",
+    "Diuretic and sodium restriction",
+    "Vestibular rehabilitation therapy"
+   ],
+   "answer": 4,
+   "explain": "Gentamicin is the most common iatrogenic cause of bilateral vestibular hypofunction. It causes imbalance worse in the dark, oscillopsia, bilateral head-impulse abnormalities, reduced dynamic visual acuity and a Romberg sign. Treatment is vestibular rehabilitation. (A: Suppressants increase the imbalance and shouldn't be used.) (B: Epley treats BPPV.) (C: Glucocorticoids don't reverse ototoxicity.) (D: Diuretics and sodium restriction treat Ménière disease.) Source: Ch 0024, Bilateral Vestibular Hypofunction"
+  },
+  {
+   "q": "A 38-year-old woman had vestibular neuritis 8 months ago. Since then she has had fluctuating dizziness and unsteadiness that is present at rest, worse when standing, and especially bad in supermarkets and while watching action movies. Neuro-otologic examination and vestibular testing show only a compensated vestibular deficit. She is anxious about going out. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Long-term vestibular suppressant",
+    "Repeat Epley maneuvers",
+    "Intratympanic glucocorticoids",
+    "An SSRI with cognitive-behavioral therapy and vestibular rehabilitation",
+    "Vestibular nerve section"
+   ],
+   "answer": 3,
+   "explain": "Persistent postural-perceptual dizziness (≥3 months, worse standing and in complex visual environments, normal or compensated testing) is treated with SSRIs, cognitive-behavioral therapy and vestibular rehabilitation. (A: Suppressants should generally be avoided.) (B: Nothing suggests BPPV.) (C: Intratympanic therapy is for refractory Ménière disease.) (E: Vestibular testing shows no ongoing primary vestibular disorder.) Source: Ch 0024, Functional Dizziness"
+  },
+  {
+   "q": "A 36-year-old woman with a long history of migraine headaches has recurrent episodes of vertigo lasting 30 minutes to several hours, usually without headache. During episodes she has photophobia and sensitivity to visual motion. Hearing and audiometry are normal, and neurologic examination between episodes is normal. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Ménière disease",
+    "Vestibular migraine",
+    "Benign paroxysmal positional vertigo",
+    "Vestibular schwannoma",
+    "Bilateral vestibular hypofunction"
+   ],
+   "answer": 1,
+   "explain": "Vestibular migraine causes episodic vertigo lasting minutes to hours, often without headache, with photophobia and visual-motion sensitivity in someone with a migraine history. (A: Ménière disease features low-frequency hearing loss and aural symptoms.) (C: BPPV episodes last under a minute and are positional.) (D: Schwannoma causes progressive unilateral hearing loss, usually without vertigo.) (E: Bilateral loss causes imbalance and oscillopsia without vertigo.) Source: Ch 0024, Vestibular Migraine"
+  },
+  {
+   "q": "A 60-year-old man has 1 day of severe continuous vertigo with nausea. Examination shows unidirectional horizontal nystagmus suppressed by fixation, an abnormal head impulse test to the left, vesicles in the left external auditory canal, and left facial weakness. Which of the following is the most appropriate addition to his treatment?",
+   "options": [
+    "No antiviral; antivirals have no proven benefit in acute vestibular syndromes",
+    "Long-term vestibular suppressant therapy",
+    "Antiviral therapy",
+    "Epley maneuver",
+    "Diuretic and sodium restriction"
+   ],
+   "answer": 2,
+   "explain": "Antivirals aren't routinely given for vestibular neuritis but are indicated with evidence of herpes zoster oticus (Ramsay Hunt syndrome), suggested here by ear-canal vesicles and facial weakness. (A: The \"no proven benefit\" statement applies to vestibular neuritis without zoster.) (B: Suppressants should be limited to the first few days.) (D: Epley treats BPPV.) (E: Diuretics and sodium restriction are for Ménière disease.) Source: Ch 0024, Acute Prolonged Vertigo: Treatment"
+  },
+  {
+   "q": "A 49-year-old man has a slowly progressive left-sided sensorineural hearing loss due to a cerebellopontine angle tumor. Which of the following best explains why he doesn't have vertigo?",
+   "options": [
+    "The gradual vestibular deficit is compensated centrally as it develops",
+    "The tumor affects only the cochlear nerve",
+    "Vertigo occurs only with bilateral lesions",
+    "The tumor causes bilateral symmetric vestibular loss",
+    "Visual fixation permanently suppresses vertigo in all unilateral lesions"
+   ],
+   "answer": 0,
+   "explain": "Vestibular schwannomas cause slowly progressive unilateral hypofunction that is compensated centrally as it develops, so vertigo is typically absent. (B: The vestibular examination shows a deficient head impulse response toward the affected side.) (C: Vertigo comes from acute asymmetry; bilateral symmetric loss causes imbalance without vertigo.) (D: A unilateral tumor causes unilateral loss (bilateral tumors occur in NF2).) (E: Fixation suppresses peripheral nystagmus; it doesn't explain the lack of vertigo.) Source: Ch 0024, Vestibular Schwannoma"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0029-confusion-and-delirium",
+ "name": "Confusion and Delirium (Harrison Ch 29)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 29: Confusion and Delirium.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Definition of delirium?",
+   "back": "Relatively acute decline in cognition that fluctuates over hours or days"
+  },
+  {
+   "front": "Neuropsychological hallmark of delirium?",
+   "back": "Deficit of attention"
+  },
+  {
+   "front": "Hyperactive vs hypoactive delirium examples?",
+   "back": "Hyperactive: delirium tremens. Hypoactive: benzodiazepine intoxication"
+  },
+  {
+   "front": "Which delirium subtype is most often missed?",
+   "back": "Hypoactive"
+  },
+  {
+   "front": "Two strongest risk factors for delirium?",
+   "back": "Older age and baseline cognitive dysfunction"
+  },
+  {
+   "front": "In-hospital risk factors for delirium?",
+   "back": "Physical restraints, bladder catheter, sleep and sensory deprivation, >=3 new medications"
+  },
+  {
+   "front": "Delirium rate in older ICU patients?",
+   "back": "Approaches 75%"
+  },
+  {
+   "front": "Fraction of delirious inpatients not recognized?",
+   "back": "Up to one-third"
+  },
+  {
+   "front": "In-hospital mortality of delirium?",
+   "back": "25-33% (similar to sepsis)"
+  },
+  {
+   "front": "Post-discharge mortality after in-hospital delirium?",
+   "back": "Fivefold higher in the following months vs nondelirious patients"
+  },
+  {
+   "front": "Proportion of delirium in patients with underlying dementia?",
+   "back": "At least two-thirds"
+  },
+  {
+   "front": "Dementia that mimics delirium?",
+   "back": "Dementia with Lewy bodies: fluctuations, visual hallucinations, parkinsonism, attentional deficit"
+  },
+  {
+   "front": "Delirium as a 'stress test for the brain'?",
+   "back": "Delirium after a minor insult unmasks low cerebral reserve; screen for underlying neurologic disease after recovery"
+  },
+  {
+   "front": "Typical EEG in delirium?",
+   "back": "Symmetric slowing (nonspecific)"
+  },
+  {
+   "front": "Focal lesions that can cause delirium?",
+   "back": "Right (nondominant) parietal and medial dorsal thalamic"
+  },
+  {
+   "front": "Key neurotransmitter deficiency in delirium?",
+   "back": "Acetylcholine"
+  },
+  {
+   "front": "CAM criteria for delirium?",
+   "back": "Acute onset and fluctuating course AND inattention, PLUS disorganized thinking OR altered level of consciousness"
+  },
+  {
+   "front": "Three most important history items in delirium?",
+   "back": "Baseline cognitive function, time course, current medications"
+  },
+  {
+   "front": "Fraction of delirium caused by medications?",
+   "back": "Nearly one-third"
+  },
+  {
+   "front": "Drug classes most often causing delirium?",
+   "back": "Anticholinergics, narcotics, benzodiazepines"
+  },
+  {
+   "front": "Digit span forward: normal and abnormal?",
+   "back": "Normal 5-7 digits; <=4 suggests an attentional deficit"
+  },
+  {
+   "front": "Why is the MMSE unreliable in delirium?",
+   "back": "Inattention impairs tasks like serial subtraction and spelling 'world' backward"
+  },
+  {
+   "front": "Asterixis or multifocal myoclonus in delirium suggests?",
+   "back": "Metabolic or toxic etiology"
+  },
+  {
+   "front": "Initial labs for all delirium patients?",
+   "back": "CBC, electrolytes with Ca/Mg/phosphorus, liver function with albumin, renal function"
+  },
+  {
+   "front": "Delirium workup: when to do toxicology early?",
+   "back": "Younger patients"
+  },
+  {
+   "front": "Delirium in the elderly: key screen beyond basic labs?",
+   "back": "Systemic infection: UA and culture, chest x-ray, possibly blood cultures"
+  },
+  {
+   "front": "Preferred brain imaging in delirium?",
+   "back": "MRI with diffusion and gadolinium (CT finds only large masses and hemorrhage)"
+  },
+  {
+   "front": "Delirium with suspected CNS infection: sequence?",
+   "back": "Brain imaging followed immediately by lumbar puncture"
+  },
+  {
+   "front": "Delirium with unexplained cause after workup: key test?",
+   "back": "EEG (nonconvulsive status epilepticus or recurrent seizures)"
+  },
+  {
+   "front": "First principle of delirium treatment?",
+   "back": "Treat the underlying cause; blind symptomatic drugs prolong delirium"
+  },
+  {
+   "front": "Safer alternative to physical restraints in delirium?",
+   "back": "Bed alarms and personal sitters"
+  },
+  {
+   "front": "Role of antipsychotics in delirium?",
+   "back": "Very low dose as needed only for severe agitation with risk of harm; ineffective for prevention or treatment; increase mortality in elderly"
+  },
+  {
+   "front": "When are benzodiazepines appropriate in delirium?",
+   "back": "Only for alcohol or benzodiazepine withdrawal"
+  },
+  {
+   "front": "ICU strategies to reduce delirium?",
+   "back": "Dexmedetomidine instead of more deliriogenic sedatives; daily sedation interruption with reorientation"
+  },
+  {
+   "front": "Drugs proven to prevent delirium?",
+   "back": "None; cholinesterase inhibitors and antipsychotics failed; melatonin and ramelteon promising"
+  },
+  {
+   "front": "Nighttime delirium-prevention measures?",
+   "back": "Dark, quiet room; cluster nighttime tasks; eye mask and earplugs; limit caffeine; consider melatonin"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "An 82-year-old woman is hospitalized for pneumonia and is receiving appropriate antibiotics. On the second night she becomes agitated and disoriented and repeatedly tries to pull out her IV line. She has no history of alcohol or sedative use. Which of the following is the most appropriate initial measure for her safety?",
+   "options": [
+    "Wrist restraints",
+    "Scheduled haloperidol every 6 hours",
+    "Intravenous lorazepam",
+    "Prophylactic donepezil",
+    "A personal sitter or bed alarm with frequent reorientation"
+   ],
+   "answer": 4,
+   "explain": "Bed alarms and personal sitters are more effective and much less disorienting than physical restraints. Supportive reorientation is the cornerstone of delirium management. (A: Physical restraints are themselves a risk factor for delirium.) (B: Antipsychotics don't prevent or treat delirium, raise mortality in the elderly, and are a last resort given only as needed.) (C: Benzodiazepines worsen confusion and are for alcohol or sedative withdrawal.) (D: Cholinesterase inhibitors haven't been shown to prevent or treat delirium.) Source: Ch 0029, Treatment: Delirium"
+  },
+  {
+   "q": "An 85-year-old man is evaluated on hospital day 3 because the nurses say he seems different. Using the Confusion Assessment Method, which of the following combinations establishes a diagnosis of delirium?",
+   "options": [
+    "Acute onset and fluctuating course, disorganized thinking, and visual hallucinations",
+    "Acute onset and fluctuating course, inattention, and an altered level of consciousness",
+    "Inattention, disorganized thinking, and an altered level of consciousness with gradual onset over 2 years",
+    "Memory impairment and disorientation to date",
+    "Hallucinations, agitation, and insomnia"
+   ],
+   "answer": 1,
+   "explain": "The CAM requires (1) acute onset and fluctuating course and (2) inattention, plus either (3) disorganized thinking or (4) an altered level of consciousness. (A: Inattention, the required core feature, is missing.) (C: Gradual onset over years suggests dementia rather than delirium.) (D: Memory loss and disorientation alone don't meet the criteria.) (E: Hallucinations and agitation are associated features, not CAM criteria.) Source: Ch 0029, Approach to the Patient: Delirium"
+  },
+  {
+   "q": "A 79-year-old woman with mild dementia is brought from her assisted-living facility because of 2 days of new confusion and drowsiness. Her medications haven't changed. Temperature is 37.9°C (100.2°F). She has no focal neurologic deficits or meningismus. CBC, electrolytes, calcium, magnesium, phosphorus, liver and renal function have been sent. Which of the following is the most appropriate additional initial evaluation?",
+   "options": [
+    "Lumbar puncture",
+    "EEG",
+    "Paraneoplastic antibody panel",
+    "Urinalysis with urine culture and chest radiograph",
+    "Brain MRI with gadolinium as the sole next test"
+   ],
+   "answer": 3,
+   "explain": "Besides the basic labs, screening for systemic infection (urinalysis and culture, chest radiograph, possibly blood cultures) is important in elderly patients with delirium. UTI in a patient with dementia is a classic scenario. (A: LP is for suspected CNS infection or a negative workup. She has no meningismus, and LP should follow imaging.) (B: EEG is for suspected seizures or an unexplained cause after the initial workup.) (C: Autoimmune and paraneoplastic testing is reserved for an unclear diagnosis after initial testing.) (E: Imaging is often unhelpful in delirium and shouldn't replace the infection screen.) Source: Ch 0029, Table 29-2; Laboratory and Diagnostic Evaluation"
+  },
+  {
+   "q": "A 23-year-old man is brought to the emergency department by friends because he is agitated, disoriented and seeing things that are not there. He has no medical history. Vital signs show tachycardia. Which of the following is most appropriate to obtain early in his evaluation?",
+   "options": [
+    "Serum and urine toxicology screen",
+    "Cortisol level",
+    "Paraneoplastic antibody panel",
+    "Vitamin B12 level",
+    "Antinuclear antibodies"
+   ],
+   "answer": 0,
+   "explain": "Illicit drugs and toxins are common causes of delirium in younger patients, so serum and urine toxicology screening belongs earlier in their workup. (B: Endocrine tests are second-tier.) (C: Paraneoplastic testing is second-tier.) (D: Vitamin testing is second-tier.) (E: Autoimmune serologies are second-tier, reserved for an unclear diagnosis.) Source: Ch 0029, Etiology; Table 29-2"
+  },
+  {
+   "q": "A 74-year-old man has had 5 days of fluctuating confusion during hospitalization for a hip fracture. There have been periods of staring with subtle eyelid twitching. Medication review, basic laboratory studies, infection screening, and brain MRI are unrevealing. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start a scheduled antipsychotic",
+    "Repeat the brain MRI",
+    "EEG",
+    "Discharge to a nursing home",
+    "Start a cholinesterase inhibitor"
+   ],
+   "answer": 2,
+   "explain": "Nonconvulsive status epilepticus and recurrent seizures can cause fluctuating delirium. EEG is essential and should be done whenever the cause remains unclear after the initial workup, immediately if suspicion is high. (A: Antipsychotics don't treat delirium and would miss the cause.) (B: MRI was just unrevealing.) (D: A treatable cause hasn't been excluded.) (E: Cholinesterase inhibitors aren't effective for delirium.) Source: Ch 0029, Etiology (seizures); Table 29-2"
+  },
+  {
+   "q": "An 80-year-old woman becomes acutely confused and inattentive on hospital day 2. The day before, she was started on diphenhydramine at night for sleep and oxybutynin for urinary urgency. Vital signs, examination, and basic laboratory tests are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Add lorazepam at night",
+    "Order brain MRI and lumbar puncture",
+    "Start quetiapine",
+    "Add donepezil",
+    "Discontinue diphenhydramine and oxybutynin"
+   ],
+   "answer": 4,
+   "explain": "Anticholinergic drugs are common precipitants, and medications cause about one-third of delirium in the elderly. With a clear precipitant, the offending drugs should be stopped, and further testing may not be required. (A: Benzodiazepines worsen confusion.) (B: Extensive testing isn't needed when a clear precipitant explains the delirium.) (C: Antipsychotics don't treat delirium.) (D: Cholinesterase inhibitors haven't been proven for delirium.) Source: Ch 0029, Etiology; Laboratory and Diagnostic Evaluation; Treatment"
+  },
+  {
+   "q": "A 66-year-old man is admitted for elective knee replacement. On postoperative day 2 he develops tremor, diaphoresis, tachycardia, hypertension, agitation and visual hallucinations. His wife reports he drinks four glasses of wine every evening. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Low-dose haloperidol alone",
+    "A benzodiazepine",
+    "Physical restraints and observation",
+    "Dexmedetomidine as sole therapy for withdrawal",
+    "Avoid all sedating medication because benzodiazepines worsen delirium"
+   ],
+   "answer": 1,
+   "explain": "This is hyperactive delirium from alcohol withdrawal. Even a few daily drinks can cause significant withdrawal on admission. Benzodiazepine use in delirium is appropriate only when it is caused by alcohol or benzodiazepine withdrawal. (A: Antipsychotics don't treat the underlying withdrawal.) (C: Restraints don't treat the cause and worsen delirium.) (D: The source discusses dexmedetomidine as an ICU sedative less likely to cause delirium, not as withdrawal treatment.) (E: Withdrawal is the exception to the rule against benzodiazepines.) Source: Ch 0029, Etiology; Treatment: Delirium"
+  },
+  {
+   "q": "A 77-year-old man in the hospital is alert but has tangential speech and loses track of the conversation. When asked to repeat random strings of digits said at one per second, he can correctly repeat only 3 digits. His hearing and language are normal. This finding most directly indicates which of the following?",
+   "options": [
+    "Aphasia",
+    "Short-term memory loss",
+    "Executive dysfunction",
+    "An attentional deficit",
+    "Visuospatial impairment"
+   ],
+   "answer": 3,
+   "explain": "Forward digit span is a quick, fairly sensitive bedside test of attention. Healthy adults repeat 5–7 digits. A span of 4 or fewer indicates an attentional deficit, the neuropsychological hallmark of delirium. (A: Aphasia is a language disorder, and his language is normal.) (B: Digit span forward tests attention, not memory storage.) (C: Executive function isn't what this test measures.) (E: Visuospatial impairment isn't tested by digit repetition.) Source: Ch 0029, Physical Examination"
+  },
+  {
+   "q": "A hospital is designing a delirium-prevention protocol for patients aged 70 years and older admitted to medical wards. Which of the following interventions is supported?",
+   "options": [
+    "Ensure glasses and hearing aids are worn, mobilize patients out of bed for meals, and remove unnecessary catheters and monitoring tethers",
+    "Give scheduled low-dose haloperidol to all high-risk patients",
+    "Start a cholinesterase inhibitor on admission",
+    "Give nighttime benzodiazepines to protect sleep",
+    "Leave room lights on at night so patients can orient themselves"
+   ],
+   "answer": 0,
+   "explain": "Prevention protocols target sensory impairment, immobility, sleep and dehydration. Glasses and hearing aids, getting out of bed for meals, and removing unnecessary tethers (Foley, telemetry, nasal cannula, continuous oximetry) are part of the delirium-reduction checklist. (B: Antipsychotics haven't prevented delirium in trials.) (C: Cholinesterase inhibitors failed in prevention trials.) (D: Benzodiazepines worsen confusion.) (E: Nights should be dark and quiet to preserve the sleep-wake cycle.) Source: Ch 0029, Prevention; Fig 29-1"
+  },
+  {
+   "q": "A 70-year-old man is mechanically ventilated in the ICU for septic shock and needs continuous sedation. Which of the following strategies is most likely to reduce his risk of delirium?",
+   "options": [
+    "Continuous midazolam infusion without interruption",
+    "Scheduled prophylactic haloperidol",
+    "Dexmedetomidine with daily interruption of sedation and reorientation by staff",
+    "Constant lighting and 24-hour activity in the room to keep him oriented",
+    "Prophylactic rivastigmine"
+   ],
+   "answer": 2,
+   "explain": "ICU strategies include sedatives less likely to cause delirium, such as dexmedetomidine, and protocols for daily sedation interruption with reorientation. (A: Benzodiazepines promote delirium.) (B: Antipsychotics don't prevent delirium.) (D: Constant 24-hour activity commonly provokes delirium.) (E: Cholinesterase inhibitors haven't been shown to prevent delirium.) Source: Ch 0029, Prevention"
+  },
+  {
+   "q": "A 68-year-old woman is brought in with 1 day of fever to 39.2°C (102.6°F), headache and confusion. On examination she is inattentive and has neck stiffness. There is no papilledema. Which of the following is the most appropriate sequence of evaluation?",
+   "options": [
+    "EEG first, then outpatient MRI",
+    "Urinalysis only, and observe",
+    "Toxicology screen, then reassess in 24 hours",
+    "Thyroid function and cortisol levels, then lumbar puncture if abnormal",
+    "Brain imaging followed immediately by lumbar puncture"
+   ],
+   "answer": 4,
+   "explain": "When CNS infection is suspected, lumbar puncture must be done immediately after neuroimaging. (A: Delaying CSF analysis in suspected meningitis is dangerous.) (B: Meningismus and fever require CNS evaluation.) (C: Observation delays treatment of a possible CNS infection.) (D: Endocrine testing is second-tier and must not delay LP.) Source: Ch 0029, Laboratory and Diagnostic Evaluation; Table 29-2"
+  },
+  {
+   "q": "A previously healthy 64-year-old man developed delirium after an uncomplicated inguinal hernia repair. It resolved within 3 days once his pain medication was adjusted. His wife had noticed no cognitive problems before surgery. Which of the following is the most appropriate follow-up?",
+   "options": [
+    "No follow-up; postoperative delirium is benign and self-limited",
+    "Outpatient cognitive screening for an unrecognized underlying neurologic disorder",
+    "Long-term low-dose antipsychotic",
+    "Avoid all future surgery",
+    "Start a cholinesterase inhibitor indefinitely"
+   ],
+   "answer": 1,
+   "explain": "Delirium after a minor insult in a previously healthy person may unmask decreased cerebral reserve (\"stress test for the brain\"). After the episode clears, careful outpatient screening for an underlying condition should follow. (A: Delirium isn't benign; it carries morbidity and may herald neurodegeneration.) (C: Antipsychotics aren't indicated.) (D: Future surgery isn't contraindicated.) (E: There's no diagnosis to justify a cholinesterase inhibitor.) Source: Ch 0029, Pathogenesis; Risk Factors"
+  },
+  {
+   "q": "A 58-year-old man with cirrhosis is confused and lethargic. When he holds his arms outstretched with wrists extended, there are brief, irregular lapses in posture. Multifocal myoclonic jerks are also seen. These motor findings most suggest which category of delirium?",
+   "options": [
+    "Focal ischemic stroke",
+    "Primary psychiatric disorder",
+    "Nonconvulsive status epilepticus",
+    "A metabolic or toxic etiology",
+    "Dementia with Lewy bodies"
+   ],
+   "answer": 3,
+   "explain": "Asterixis and multifocal myoclonus are nonspecific but usually indicate a metabolic or toxic cause of delirium, such as hepatic encephalopathy here. (A: Focal strokes rarely cause delirium and produce focal deficits, not asterixis.) (B: Psychiatric disorders don't cause asterixis.) (C: EEG is needed to diagnose nonconvulsive status, and asterixis doesn't suggest it.) (E: Dementia with Lewy bodies features parkinsonism and visual hallucinations.) Source: Ch 0029, Physical Examination"
+  }
+ ]
+},
 ];

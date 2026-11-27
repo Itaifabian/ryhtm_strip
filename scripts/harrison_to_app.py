@@ -20,7 +20,7 @@ OUT = ROOT / "src/data/29-harrison.js"
 CHAPTER_MAP = {
     15: "Cardiology",
     16: "Gastroenterology",
-    17: "Neurology",
+    17: "Neurology", 23: "Neurology", 24: "Neurology", 29: "Neurology",
     20: "Infectious Diseases", 21: "Infectious Diseases", 22: "Infectious Diseases",
 }
 DEFAULT_CHAPTER = "General Medicine"
