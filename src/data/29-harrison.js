@@ -6538,4 +6538,1396 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0052-jaundice",
+ "name": "Jaundice (Harrison Ch 52)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 52: Jaundice.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "Bilirubin level at which scleral icterus appears?",
+   "back": "At least 3 mg/dL (51 umol/L)"
+  },
+  {
+   "front": "Carotenoderma vs jaundice?",
+   "back": "Carotenoderma: palms, soles, forehead, nasolabial folds; sclerae spared"
+  },
+  {
+   "front": "Drugs causing yellow skin without jaundice?",
+   "back": "Quinacrine, sunitinib, sorafenib"
+  },
+  {
+   "front": "Which bilirubin appears in urine?",
+   "back": "Only conjugated bilirubin (unconjugated is albumin-bound)"
+  },
+  {
+   "front": "Enzymes converting heme to bilirubin?",
+   "back": "Heme oxygenase (heme to biliverdin + CO + iron), then biliverdin reductase"
+  },
+  {
+   "front": "Enzyme that conjugates bilirubin and the canalicular transporter?",
+   "back": "UDP-glucuronosyl transferase; MRP2"
+  },
+  {
+   "front": "Definition of unconjugated hyperbilirubinemia?",
+   "back": "Direct fraction <15% of total bilirubin"
+  },
+  {
+   "front": "Delta bilirubin?",
+   "back": "Conjugated bilirubin covalently bound to albumin; half-life 18-20 days; not in urine"
+  },
+  {
+   "front": "Why does bilirubin fall slowly during recovery from cholestasis?",
+   "back": "Delta bilirubin persists with albumin's long half-life"
+  },
+  {
+   "front": "Usual bilirubin ceiling in chronic hemolysis?",
+   "back": "Rarely >5 mg/dL unless liver/renal dysfunction or acute crisis"
+  },
+  {
+   "front": "Drugs causing unconjugated hyperbilirubinemia?",
+   "back": "Rifampin, probenecid, atazanavir, cephalosporins, penicillins"
+  },
+  {
+   "front": "Gilbert syndrome features?",
+   "back": "UDPGT 10-35%; bilirubin almost always <6 mg/dL; worse with fasting, stress, illness; benign; 3-7% of population"
+  },
+  {
+   "front": "Crigler-Najjar type I vs II?",
+   "back": "I: no UDPGT, bilirubin >20, kernicterus in infancy. II: UDPGT <=10%, bilirubin 6-25, responds to phenobarbital"
+  },
+  {
+   "front": "Dubin-Johnson vs Rotor defects?",
+   "back": "Dubin-Johnson: MRP2 mutation. Rotor: OATP1B1/1B3 deficiency; both benign conjugated hyperbilirubinemia"
+  },
+  {
+   "front": "Initial labs in unexplained jaundice?",
+   "back": "Total and direct bilirubin, ALT, AST, alkaline phosphatase, albumin, prothrombin time"
+  },
+  {
+   "front": "Hepatocellular vs cholestatic pattern?",
+   "back": "Hepatocellular: aminotransferases out of proportion to ALP. Cholestatic: ALP out of proportion"
+  },
+  {
+   "front": "Low vs normal albumin in jaundice?",
+   "back": "Low: chronic process (cirrhosis, cancer). Normal: acute (viral hepatitis, stones)"
+  },
+  {
+   "front": "PT not correcting with parenteral vitamin K?",
+   "back": "Severe hepatocellular injury"
+  },
+  {
+   "front": "Alcoholic hepatitis aminotransferase pattern?",
+   "back": "AST:ALT >=2:1, AST rarely >300"
+  },
+  {
+   "front": "Aminotransferases in jaundiced viral or toxic hepatitis?",
+   "back": ">500 with ALT >= AST; >=25x normal suggests acute hepatocellular disease"
+  },
+  {
+   "front": "Acute viral hepatitis panel?",
+   "back": "HAV IgM, HBsAg and anti-HBc IgM, HCV RNA (+/- HEV IgM)"
+  },
+  {
+   "front": "Why test HCV RNA rather than antibody in suspected acute HCV?",
+   "back": "Antibody may take up to 6 weeks to appear"
+  },
+  {
+   "front": "Screening test for Wilson disease?",
+   "back": "Ceruloplasmin (if age <40 with hepatocellular injury)"
+  },
+  {
+   "front": "Environmental hepatotoxins?",
+   "back": "Vinyl chloride, Jamaica bush tea (pyrrolizidine alkaloids), kava, Amanita mushrooms"
+  },
+  {
+   "front": "First test for cholestatic jaundice?",
+   "back": "Right upper quadrant ultrasound (dilated ducts = extrahepatic)"
+  },
+  {
+   "front": "False-negative ultrasound for obstruction?",
+   "back": "Partial CBD obstruction, cirrhosis, PSC (ducts can't dilate)"
+  },
+  {
+   "front": "Initial test after US shows dilated ducts without cause?",
+   "back": "MRCP (has replaced ERCP as initial test); EUS allows biopsy"
+  },
+  {
+   "front": "Gold standard and therapeutic test for choledocholithiasis?",
+   "back": "ERCP"
+  },
+  {
+   "front": "Most common cause of extrahepatic cholestasis?",
+   "back": "Choledocholithiasis"
+  },
+  {
+   "front": "Tumor causing painless jaundice with highest surgical cure rate?",
+   "back": "Ampullary carcinoma"
+  },
+  {
+   "front": "Why distinguish IgG4 cholangitis from PSC?",
+   "back": "IgG4 cholangitis responds to glucocorticoids"
+  },
+  {
+   "front": "AIDS cholangiopathy labs?",
+   "back": "Very high ALP (mean ~800) with near-normal bilirubin; CMV or Cryptosporidium"
+  },
+  {
+   "front": "Primary biliary cholangitis diagnosis?",
+   "back": "Antimitochondrial antibody (positive in 95%); mostly women"
+  },
+  {
+   "front": "PSC diagnosis and IBD association?",
+   "back": "MRCP with segmental strictures; ~75% have IBD"
+  },
+  {
+   "front": "Drugs causing pure cholestasis?",
+   "back": "Anabolic and contraceptive steroids"
+  },
+  {
+   "front": "BRIC vs PFIC?",
+   "back": "BRIC: episodic, normal GGT, no chronic disease. PFIC: progressive from childhood; type 3 has high GGT"
+  },
+  {
+   "front": "Cholestasis in the ICU: main causes?",
+   "back": "Sepsis, ischemic hepatitis (shock liver), TPN"
+  },
+  {
+   "front": "Jaundice after bone marrow transplant?",
+   "back": "Veno-occlusive disease or graft-versus-host disease"
+  },
+  {
+   "front": "Weil disease?",
+   "back": "Severe leptospirosis: jaundice, renal failure, fever, headache, myalgia"
+  },
+  {
+   "front": "Jaundice with encephalopathy and coagulopathy, no prior liver disease?",
+   "back": "Acute liver failure; urgent transplant evaluation"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 24-year-old man notices yellow eyes after 3 days of fasting during a religious holiday. Total bilirubin is 3.2 mg/dL with direct bilirubin 0.3 mg/dL. CBC, reticulocyte count, LDH, ALT, AST and alkaline phosphatase are normal. He takes no medications. Which of the following is the most appropriate management?",
+   "options": [
+    "Liver biopsy",
+    "Reassurance; no treatment is needed",
+    "MRCP",
+    "Start phenobarbital",
+    "Hemolysis workup with Coombs test and haptoglobin, then splenectomy referral"
+   ],
+   "answer": 1,
+   "explain": "Mild indirect hyperbilirubinemia (<6 mg/dL) triggered by fasting, with no hemolysis and normal liver tests, is typical of Gilbert syndrome. It affects 3–7% of the population and is of no clinical consequence. (A: Biopsy is unnecessary in a benign condition.) (C: MRCP is unnecessary in a benign condition.) (D: Phenobarbital is used in Crigler-Najjar type II.) (E: Hemolysis markers are normal.) Source: Ch 0052, Unconjugated Hyperbilirubinemia; Table 52-1"
+  },
+  {
+   "q": "A 62-year-old woman has jaundice and pruritus. Total bilirubin is 6.8 mg/dL (mostly direct), alkaline phosphatase is 690 U/L, and ALT is 110 U/L. Which of the following is the most appropriate next step?",
+   "options": [
+    "Liver biopsy",
+    "ERCP",
+    "Right upper quadrant ultrasound",
+    "Hepatitis serologies only",
+    "Antimitochondrial antibody only"
+   ],
+   "answer": 2,
+   "explain": "With a cholestatic pattern (ALP out of proportion to aminotransferases), the first step is to separate intra- from extrahepatic cholestasis by ultrasound, which detects biliary dilation with high sensitivity and specificity. (A: Biopsy is for intrahepatic cholestasis after serology.) (B: ERCP follows imaging that suggests obstruction.) (D: Serologies alone skip the key imaging step.) (E: AMA alone skips the key imaging step.) Source: Ch 0052, Cholestatic Conditions; Fig 52-1"
+  },
+  {
+   "q": "A 70-year-old man has painless jaundice. Ultrasound shows dilated intra- and extrahepatic bile ducts, but the distal common bile duct isn't seen well because of bowel gas. No stone or mass is identified. Which of the following is the most appropriate next diagnostic test in most cases?",
+   "options": [
+    "MRCP",
+    "Repeat ultrasound in 3 months",
+    "Liver biopsy",
+    "HIDA scan",
+    "Antimitochondrial antibody"
+   ],
+   "answer": 0,
+   "explain": "Ultrasound rarely identifies the site or cause of obstruction, and the distal CBD is hard to see. MRCP has replaced ERCP as the initial diagnostic test in most cases; CT and EUS are alternatives. (B: Delay risks missing a malignancy.) (C: Biopsy is for intrahepatic cholestasis.) (D: HIDA assesses cholecystitis.) (E: AMA is for intrahepatic cholestasis (PBC).) Source: Ch 0052, Cholestatic Conditions"
+  },
+  {
+   "q": "A 29-year-old woman has 5 days of nausea, malaise and jaundice. ALT is 2,400 U/L, AST 1,900 U/L, alkaline phosphatase 160 U/L, and bilirubin 7 mg/dL. Which set of tests is most appropriate for acute viral hepatitis?",
+   "options": [
+    "Hepatitis C antibody alone",
+    "Hepatitis B surface antibody and hepatitis A IgG",
+    "Antimitochondrial antibody and MRCP",
+    "Hepatitis A IgM, hepatitis B surface antigen and core IgM, hepatitis C RNA, and an acetaminophen level",
+    "Liver biopsy"
+   ],
+   "answer": 3,
+   "explain": "For hepatocellular jaundice, test for acute viral hepatitis with HAV IgM, HBsAg and anti-HBc IgM, and HCV RNA. HCV antibody can take up to 6 weeks to appear. Add a toxicology screen with acetaminophen level. (A: HCV antibody may be negative early.) (B: These markers reflect immunity, not acute infection.) (C: These are cholestatic tests.) (E: Serologic testing comes first.) Source: Ch 0052, Hepatocellular Conditions; Fig 52-1"
+  },
+  {
+   "q": "A 48-year-old man who drinks heavily has jaundice, fever and tender hepatomegaly. AST is 260 U/L, ALT is 105 U/L, and bilirubin is 9 mg/dL. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Acute hepatitis A",
+    "Acetaminophen hepatotoxicity",
+    "Alcoholic hepatitis",
+    "Ischemic hepatitis",
+    "Acute hepatitis C"
+   ],
+   "answer": 2,
+   "explain": "Alcoholic hepatitis typically shows an AST:ALT ratio of at least 2:1, with AST rarely above 300 U/L. (A: Jaundiced viral hepatitis usually has aminotransferases >500 with ALT ≥ AST.) (B: Toxic injury causing jaundice shows aminotransferases >500.) (D: Ischemic hepatitis causes dramatic aminotransferase elevation.) (E: Same pattern as A.) Source: Ch 0052, Hepatocellular Conditions"
+  },
+  {
+   "q": "A 54-year-old woman has 1 year of fatigue and pruritus, and is now jaundiced. Alkaline phosphatase is 520 U/L with modestly elevated aminotransferases. Ultrasound shows no biliary dilation. She takes no medications. Which of the following is the most appropriate next test?",
+   "options": [
+    "ERCP",
+    "Antimitochondrial antibody",
+    "CT angiography",
+    "Ceruloplasmin",
+    "Serum protein electrophoresis alone"
+   ],
+   "answer": 1,
+   "explain": "Intrahepatic cholestasis (no ductal dilation) in a middle-aged woman suggests primary biliary cholangitis, diagnosed by antimitochondrial antibody (positive in 95%). (A: ERCP is for extrahepatic obstruction.) (C: CT angiography isn't indicated.) (D: Ceruloplasmin screens for Wilson disease in younger patients with hepatocellular injury.) (E: SPEP alone isn't diagnostic.) Source: Ch 0052, Cholestatic Conditions"
+  },
+  {
+   "q": "A 32-year-old man with ulcerative colitis has a persistently elevated alkaline phosphatase and new mild jaundice. Ultrasound shows no ductal dilation. Which of the following is the most appropriate next step?",
+   "options": [
+    "Antimitochondrial antibody",
+    "Repeat ultrasound",
+    "Liver biopsy as the first test",
+    "Ceruloplasmin",
+    "MRCP"
+   ],
+   "answer": 4,
+   "explain": "PSC is diagnosed by cholangiography (MRCP) showing pathognomonic segmental strictures. About 75% of PSC patients have IBD. Ultrasound may miss it because scarring prevents duct dilation. (A: AMA tests for PBC.) (B: Repeat ultrasound can be falsely negative in PSC.) (C: Cholangiography is the diagnostic test.) (D: Ceruloplasmin tests for Wilson disease.) Source: Ch 0052, Cholestatic Conditions"
+  },
+  {
+   "q": "A 66-year-old man with jaundice has a prothrombin time of 22 seconds. After parenteral vitamin K, the PT doesn't change. What does this most likely indicate?",
+   "options": [
+    "Severe hepatocellular injury",
+    "Vitamin K malabsorption from prolonged cholestasis",
+    "Laboratory error",
+    "Warfarin ingestion",
+    "Hemolysis"
+   ],
+   "answer": 0,
+   "explain": "A prolonged PT reflects vitamin K deficiency or hepatocellular dysfunction. Failure to correct with parenteral vitamin K indicates severe hepatocellular injury. (B: Malabsorption-related deficiency would correct with parenteral vitamin K.) (C: Nothing suggests a lab error.) (D: Warfarin effect would also correct with vitamin K.) (E: Hemolysis doesn't prolong the PT.) Source: Ch 0052, Laboratory Tests"
+  },
+  {
+   "q": "A 35-year-old woman with no prior liver disease took a large amount of acetaminophen 3 days ago. She is now jaundiced and confused with asterixis, and her INR is 4.1. Which of the following is the most appropriate step?",
+   "options": [
+    "Outpatient follow-up in 1 week",
+    "MRCP",
+    "Liver biopsy before any other step",
+    "Urgent liver transplant evaluation",
+    "Start glucocorticoids"
+   ],
+   "answer": 3,
+   "explain": "Encephalopathy and coagulopathy in a jaundiced patient without preexisting liver disease signify acute liver failure, which warrants urgent transplant evaluation. (A: Delay is dangerous.) (B: MRCP doesn't address hepatocellular failure.) (C: Biopsy doesn't take priority.) (E: Steroids aren't indicated for acetaminophen toxicity.) Source: Ch 0052, Global Considerations; Table 52-2"
+  },
+  {
+   "q": "A 50-year-old man is recovering from an episode of obstructive jaundice that was relieved by stone extraction. His bilirubin is falling much more slowly than expected, and his urine is now negative for bilirubin even though the serum direct fraction is still high. What best explains these findings?",
+   "options": [
+    "New hemolysis",
+    "Gilbert syndrome",
+    "Dubin-Johnson syndrome",
+    "Recurrent stone obstruction",
+    "Delta bilirubin (conjugated bilirubin covalently bound to albumin)"
+   ],
+   "answer": 4,
+   "explain": "Delta bilirubin is conjugated bilirubin covalently bound to albumin. Its half-life matches albumin's (18–20 days), so levels fall slowly, and it isn't filtered by the glomerulus, so urine bilirubin can be negative. (A: Hemolysis raises indirect bilirubin.) (B: Gilbert causes unconjugated hyperbilirubinemia.) (C: Dubin-Johnson is inherited and lifelong.) (D: Recurrent obstruction would raise enzymes and bilirubin again.) Source: Ch 0052, Measurement of Serum Bilirubin; Measurement of Urine Bilirubin"
+  },
+  {
+   "q": "A 30-year-old vegetarian woman with diabetes notices yellow palms and soles. Her sclerae are white, and bilirubin and liver tests are normal. Which of the following is the most likely cause?",
+   "options": [
+    "Gilbert syndrome",
+    "Carotenoderma",
+    "Early hepatitis",
+    "Hemolysis",
+    "Dubin-Johnson syndrome"
+   ],
+   "answer": 1,
+   "explain": "Carotenoderma concentrates on the palms, soles, forehead and nasolabial folds and spares the sclerae. It's associated with high carotene intake, diabetes, hypothyroidism and anorexia. (A: Gilbert raises bilirubin and causes scleral icterus.) (C: Hepatitis raises bilirubin and causes scleral icterus.) (D: Hemolysis raises bilirubin and causes scleral icterus.) (E: Dubin-Johnson raises bilirubin and causes scleral icterus.) Source: Ch 0052, introduction"
+  },
+  {
+   "q": "A 27-year-old woman with sickle cell disease and a usual bilirubin of 3 mg/dL presents with RUQ pain and a bilirubin of 9 mg/dL, now mostly direct, with an elevated alkaline phosphatase. Which of the following is the most important diagnosis to evaluate?",
+   "options": [
+    "Gilbert syndrome",
+    "Crigler-Najjar syndrome",
+    "Rotor syndrome",
+    "Worsening hemolysis alone",
+    "Choledocholithiasis from pigment gallstones"
+   ],
+   "answer": 4,
+   "explain": "Chronic hemolysis rarely raises bilirubin above 5 mg/dL, and pigment gallstones are common. A rise in direct bilirubin with ALP elevation and pain suggests choledocholithiasis. (A: Gilbert causes mild indirect hyperbilirubinemia.) (B: Crigler-Najjar causes indirect hyperbilirubinemia.) (C: Rotor causes isolated direct hyperbilirubinemia without pain or ALP rise.) (D: Hemolysis raises indirect, not direct, bilirubin.) Source: Ch 0052, Unconjugated Hyperbilirubinemia"
+  },
+  {
+   "q": "A 22-year-old man has lifelong jaundice with unconjugated bilirubin levels of 12–18 mg/dL, normal liver enzymes, and no hemolysis. Genetic testing shows a UDPGT mutation with markedly reduced activity. Which medication can lower his bilirubin?",
+   "options": [
+    "Phenobarbital",
+    "Rifampin",
+    "Probenecid",
+    "Ursodeoxycholic acid",
+    "Prednisone"
+   ],
+   "answer": 0,
+   "explain": "In Crigler-Najjar type II (UDPGT ≤10%, bilirubin 6–25 mg/dL, survival into adulthood), phenobarbital induces UDPGT and lowers serum bilirubin. (B: Rifampin decreases hepatic bilirubin uptake.) (C: Probenecid also decreases uptake.) (D: Ursodeoxycholic acid isn't the source's therapy.) (E: Prednisone isn't the source's therapy.) Source: Ch 0052, Unconjugated Hyperbilirubinemia"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0053-abdominal-swelling-and-ascites",
+ "name": "Abdominal Swelling and Ascites (Harrison Ch 53)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 53: Abdominal Swelling and Ascites.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "Six Fs of abdominal swelling?",
+   "back": "Flatus, fat, fluid, fetus, feces, fatal growth"
+  },
+  {
+   "front": "Ascites grades 1-3?",
+   "back": "1: ultrasound only. 2: detectable on exam. 3: marked distention"
+  },
+  {
+   "front": "Minimum ascites detectable by exam vs ultrasound?",
+   "back": "Exam ~1500 mL; ultrasound ~100 mL"
+  },
+  {
+   "front": "Abdominophrenic dyssynergia?",
+   "back": "Distention from diaphragmatic contraction with anterior wall relaxation; diet, microbiota or biofeedback may help"
+  },
+  {
+   "front": "Umbilical venous hum suggests?",
+   "back": "Portal hypertension"
+  },
+  {
+   "front": "Cardiac exam clues to cardiac ascites?",
+   "back": "Elevated JVP, Kussmaul sign, pericardial knock (constriction), TR murmur, pulsatile liver"
+  },
+  {
+   "front": "Proportion of ascites due to cirrhosis?",
+   "back": "84%"
+  },
+  {
+   "front": "Mechanisms of portal hypertension in cirrhosis?",
+   "back": "Fibrosis, stellate cell contraction, decreased intrahepatic NO (vasoconstriction)"
+  },
+  {
+   "front": "Why do cirrhotics retain sodium?",
+   "back": "Splanchnic vasodilation lowers effective volume, activating ADH, SNS and RAAS"
+  },
+  {
+   "front": "Preferred paracentesis site and safety?",
+   "back": "Left lower quadrant; safe even with coagulopathy"
+  },
+  {
+   "front": "Milky ascites?",
+   "back": "Chylous ascites; triglycerides >200 mg/dL (often >1000)"
+  },
+  {
+   "front": "Dark brown ascites?",
+   "back": "High bilirubin; biliary tract perforation"
+  },
+  {
+   "front": "Black ascites?",
+   "back": "Pancreatic necrosis or metastatic melanoma"
+  },
+  {
+   "front": "How to culture ascitic fluid?",
+   "back": "Inoculate blood culture bottles at the bedside"
+  },
+  {
+   "front": "SAAG calculation and meaning?",
+   "back": "Serum albumin - ascitic albumin; >=1.1 g/dL = portal hypertension; unchanged by diuresis"
+  },
+  {
+   "front": "High SAAG, ascitic protein <2.5?",
+   "back": "Cirrhosis, late Budd-Chiari, massive liver metastases"
+  },
+  {
+   "front": "High SAAG, ascitic protein >=2.5?",
+   "back": "Heart failure/constriction, early Budd-Chiari, IVC obstruction, sinusoidal obstruction syndrome"
+  },
+  {
+   "front": "Low SAAG (<1.1) causes?",
+   "back": "Peritoneal carcinomatosis, TB, pancreatitis, nephrotic syndrome, biliary leak"
+  },
+  {
+   "front": "Ascitic findings of secondary peritonitis?",
+   "back": "Glucose <50, ascitic LDH > serum LDH, multiple organisms"
+  },
+  {
+   "front": "Pancreatic ascites marker?",
+   "back": "Ascitic amylase >1000"
+  },
+  {
+   "front": "TB peritonitis diagnostic yields?",
+   "back": "AFB smear 0-3%, culture 35-50%, ADA >30-45 U/L >90% sensitive (noncirrhotic)"
+  },
+  {
+   "front": "Gold standard for ascites of uncertain cause?",
+   "back": "Laparoscopy or laparotomy with peritoneal biopsy"
+  },
+  {
+   "front": "Initial treatment of cirrhotic ascites?",
+   "back": "Sodium restriction 2 g/day; add spironolactone + furosemide (100:40)"
+  },
+  {
+   "front": "Maximum spironolactone and furosemide doses?",
+   "back": "400 mg and 160 mg per day"
+  },
+  {
+   "front": "Spironolactone alternative for gynecomastia?",
+   "back": "Amiloride 5-40 mg/day"
+  },
+  {
+   "front": "When to restrict fluid in cirrhotic ascites?",
+   "back": "Serum sodium <125"
+  },
+  {
+   "front": "Drugs to avoid in cirrhotic ascites?",
+   "back": "NSAIDs, ACE inhibitors, ARBs"
+  },
+  {
+   "front": "Pharmacologic add-ons for refractory ascites?",
+   "back": "Midodrine +/- clonidine"
+  },
+  {
+   "front": "Albumin with large-volume paracentesis?",
+   "back": "6-8 g IV per liter removed (>5 L taps)"
+  },
+  {
+   "front": "TIPS vs LVP for refractory ascites?",
+   "back": "TIPS: less reaccumulation, more encephalopathy, no mortality difference"
+  },
+  {
+   "front": "Malignant ascites treatment?",
+   "back": "Serial LVP or drainage catheter; doesn't respond to sodium restriction or diuretics"
+  },
+  {
+   "front": "SBP diagnostic criterion?",
+   "back": "Ascitic PMN >=250/uL"
+  },
+  {
+   "front": "How often is abdominal tenderness present in SBP?",
+   "back": "Only ~40%"
+  },
+  {
+   "front": "Paracentesis timing in admitted cirrhotics with ascites?",
+   "back": "Within 12 h (reduces mortality)"
+  },
+  {
+   "front": "Multiple organisms with normal PMN count?",
+   "back": "Bowel perforation by the paracentesis needle"
+  },
+  {
+   "front": "SBP treatment?",
+   "back": "Cefotaxime 2 g IV q12h for 5 days; repeat tap at 48 h (PMN fall >=25%); carbapenem if nosocomial/critical"
+  },
+  {
+   "front": "SBP prophylaxis indications?",
+   "back": "Prior SBP, ascitic protein <1 g/dL, active GI bleeding"
+  },
+  {
+   "front": "Hepatic hydrothorax management?",
+   "back": "Sodium restriction, diuretics, thoracentesis or TIPS; avoid chest tube"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 57-year-old man with heavy alcohol use has 6 weeks of increasing abdominal girth. Exam shows shifting dullness, spider angiomata and palmar erythema. Ultrasound confirms moderate ascites. Which of the following is the most appropriate next step to determine the cause?",
+   "options": [
+    "Start spironolactone and furosemide without further testing",
+    "CT of the abdomen",
+    "Diagnostic paracentesis with ascitic albumin, total protein and cell count, and a simultaneous serum albumin",
+    "Liver biopsy",
+    "Laparoscopy with peritoneal biopsy"
+   ],
+   "answer": 2,
+   "explain": "The cause of ascites is best determined by paracentesis. Send ascitic albumin, total protein and cell count, with a simultaneous serum albumin to calculate the SAAG. (A: Treating before diagnosis skips the evaluation.) (B: CT doesn't characterize the fluid.) (D: Biopsy isn't the first step.) (E: Laparoscopy is reserved for an uncertain diagnosis.) Source: Ch 0053, Evaluation"
+  },
+  {
+   "q": "A 63-year-old woman with cirrhosis and ascites is admitted with new confusion and low-grade fever. She has no abdominal tenderness. Which of the following is the most appropriate step?",
+   "options": [
+    "Diagnostic paracentesis within 12 hours of admission",
+    "Lactulose only, with paracentesis if fever persists after 72 hours",
+    "CT of the head first, then paracentesis in 2 days",
+    "Empiric antibiotics without paracentesis",
+    "Large-volume paracentesis only after the encephalopathy resolves"
+   ],
+   "answer": 0,
+   "explain": "Paracentesis within 12 hours of admission reduces mortality by detecting SBP early. SBP may present only with fever or worsening encephalopathy, and tenderness occurs in just 40%. (B: Delaying paracentesis is the error.) (C: Delaying paracentesis is the error.) (D: Antibiotics without paracentesis skip the diagnosis.) (E: Delaying paracentesis is the error.) Source: Ch 0053, Complications"
+  },
+  {
+   "q": "A 58-year-old man with cirrhotic ascites has an ascitic PMN count of 410/µL. Gram stain is negative, and culture in blood culture bottles later grows E. coli alone. He acquired the infection in the community and isn't critically ill. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Oral ciprofloxacin prophylaxis only",
+    "Exploratory laparotomy",
+    "Observation and repeat paracentesis in 1 week",
+    "Vancomycin alone",
+    "IV cefotaxime for 5 days, with repeat paracentesis at 48 hours"
+   ],
+   "answer": 4,
+   "explain": "SBP (PMN ≥250/µL, single organism) is treated with a third-generation cephalosporin such as cefotaxime 2 g IV q12h. Five days suffices if the patient improves, with repeat paracentesis at 48 hours to confirm a ≥25% PMN fall. (A: Prophylaxis doesn't treat active infection.) (B: Surgery is for secondary peritonitis.) (C: Observation is inadequate.) (D: Vancomycin alone doesn't cover gram-negative rods.) Source: Ch 0053, Complications"
+  },
+  {
+   "q": "A 66-year-old woman has ascites and elevated jugular venous pressure. Ascitic fluid shows a serum-ascites albumin gradient of 1.7 g/dL and total protein of 3.4 g/dL. Which of the following is the most likely cause?",
+   "options": [
+    "Cirrhosis",
+    "Heart failure",
+    "Peritoneal carcinomatosis",
+    "Nephrotic syndrome",
+    "Tuberculous peritonitis"
+   ],
+   "answer": 1,
+   "explain": "A SAAG ≥1.1 indicates portal hypertension. Ascitic protein ≥2.5 g/dL shows normal sinusoids, as in heart failure or constrictive pericarditis. BNP can help confirm it. (A: Cirrhosis has protein <2.5.) (C: Carcinomatosis has SAAG <1.1.) (D: Nephrotic syndrome has SAAG <1.1.) (E: TB has SAAG <1.1.) Source: Ch 0053, Evaluation; Fig 53-3"
+  },
+  {
+   "q": "A 61-year-old man with cirrhotic ascites has abdominal pain and fever. Ascitic fluid shows a PMN count of 2,400/µL, glucose 28 mg/dL, and an LDH higher than the serum LDH. Gram stain shows multiple organisms. Which of the following is the most appropriate next step?",
+   "options": [
+    "Cefotaxime alone and repeat paracentesis in 48 hours, as for routine SBP",
+    "Start SBP prophylaxis",
+    "Evaluate urgently for a ruptured viscus or abscess (secondary peritonitis)",
+    "Large-volume paracentesis with albumin",
+    "Discharge with oral antibiotics"
+   ],
+   "answer": 2,
+   "explain": "Ascitic glucose <50 mg/dL, ascitic LDH above serum, and multiple organisms suggest secondary peritonitis from a ruptured viscus or abscess, not SBP. (A: Treating as routine SBP misses a surgical cause.) (B: Prophylaxis doesn't address active infection.) (D: Large-volume paracentesis doesn't address the cause.) (E: Discharge is inappropriate.) Source: Ch 0053, Evaluation; Complications"
+  },
+  {
+   "q": "A 55-year-old woman with newly diagnosed cirrhotic ascites (SAAG 1.8, protein 1.2 g/dL) has moderate ascites. Serum sodium is 134 mEq/L and creatinine is normal. Which of the following is the most appropriate initial management?",
+   "options": [
+    "Fluid restriction to 1 L/day",
+    "Furosemide monotherapy",
+    "TIPS",
+    "Sodium restriction to 2 g/day with spironolactone and furosemide (about 100:40)",
+    "Lisinopril to reduce portal pressure"
+   ],
+   "answer": 3,
+   "explain": "Start with moderate sodium restriction (2 g/day). Add oral spironolactone and furosemide, usually about 100:40, when sodium restriction alone is inadequate. (A: Fluid restriction is for sodium <125.) (B: Furosemide alone isn't the recommended regimen.) (C: TIPS is for refractory ascites.) (E: ACE inhibitors should be avoided in cirrhotic ascites.) Source: Ch 0053, Treatment: Ascites"
+  },
+  {
+   "q": "A 60-year-old man on spironolactone 200 mg and furosemide 80 mg for cirrhotic ascites develops painful gynecomastia. His ascites is well controlled. Which of the following is the most appropriate change?",
+   "options": [
+    "Substitute amiloride for spironolactone",
+    "Stop all diuretics",
+    "Add an ACE inhibitor",
+    "Switch to hydrochlorothiazide",
+    "Increase spironolactone"
+   ],
+   "answer": 0,
+   "explain": "If spironolactone-related gynecomastia is distressing, amiloride (5–40 mg/day) may be substituted. (B: Stopping diuretics would let ascites reaccumulate.) (C: ACE inhibitors should be avoided.) (D: Thiazides aren't the recommended substitute.) (E: More spironolactone worsens gynecomastia.) Source: Ch 0053, Treatment: Ascites"
+  },
+  {
+   "q": "A 62-year-old woman with refractory cirrhotic ascites undergoes large-volume paracentesis removing 6 L. What should accompany this procedure to reduce the risk of post-paracentesis circulatory dysfunction?",
+   "options": [
+    "IV normal saline 1 L",
+    "No additional therapy",
+    "IV furosemide",
+    "Oral midodrine only",
+    "IV albumin, about 6–8 g per liter removed"
+   ],
+   "answer": 4,
+   "explain": "IV albumin with large-volume paracentesis (>5 L) reduces post-paracentesis circulatory dysfunction and death. Give 6–8 g per liter removed. (A: Saline isn't the recommended agent.) (B: Omitting replacement raises risk.) (C: Furosemide doesn't prevent circulatory dysfunction.) (D: Midodrine is an adjunct for refractory ascites, not a replacement for albumin.) Source: Ch 0053, Treatment: Ascites"
+  },
+  {
+   "q": "Which of the following patients with cirrhosis and ascites should receive prophylactic antibiotics against spontaneous bacterial peritonitis?",
+   "options": [
+    "Ascitic protein 2.1 g/dL, no prior SBP, no bleeding",
+    "Ascitic fluid total protein 0.7 g/dL",
+    "Well-controlled ascites on diuretics, protein 1.8 g/dL",
+    "Recent TIPS with resolved ascites",
+    "Hepatic encephalopathy controlled on lactulose, ascitic protein 2.5 g/dL"
+   ],
+   "answer": 1,
+   "explain": "Prophylaxis is indicated for prior SBP, ascitic total protein <1 g/dL, or active GI bleeding. (A: No criterion is met.) (C: No criterion is met.) (D: No criterion is met.) (E: No criterion is met.) Source: Ch 0053, Complications"
+  },
+  {
+   "q": "A 34-year-old man who recently immigrated from a TB-endemic country has ascites without cirrhosis. Ascitic fluid shows a SAAG of 0.7 g/dL, high protein, and predominantly lymphocytes. AFB smear is negative. Ascitic adenosine deaminase is 68 U/L. If the diagnosis remains uncertain, which of the following is the gold standard?",
+   "options": [
+    "Repeat AFB smear",
+    "Ascitic amylase",
+    "Ascitic cytology",
+    "Laparoscopy with peritoneal biopsy for histology and culture",
+    "Serum BNP"
+   ],
+   "answer": 3,
+   "explain": "TB peritonitis gives low-SAAG, lymphocytic ascites. AFB smear sensitivity is 0–3%. ADA above 30–45 U/L is >90% sensitive in noncirrhotic patients. When the cause remains uncertain, laparoscopy or laparotomy with peritoneal biopsy is the gold standard. (A: Smear sensitivity is too low.) (B: Amylase is for pancreatic ascites.) (C: Cytology is for carcinomatosis.) (E: BNP is for heart failure.) Source: Ch 0053, Evaluation"
+  },
+  {
+   "q": "A 49-year-old man has abdominal distention after retroperitoneal lymph node dissection. Paracentesis yields white, milky fluid. Which ascitic finding confirms the suspected diagnosis?",
+   "options": [
+    "Triglycerides >200 mg/dL",
+    "Amylase >1000 U/L",
+    "Bilirubin greater than serum",
+    "Adenosine deaminase >40 U/L",
+    "PMN ≥250/µL"
+   ],
+   "answer": 0,
+   "explain": "White, milky fluid with triglycerides >200 mg/dL (often >1000) is the hallmark of chylous ascites from lymphatic disruption (trauma, surgery, tumor, TB, cirrhosis). (B: Amylase >1000 indicates pancreatic ascites.) (C: High bilirubin indicates biliary perforation.) (D: ADA suggests TB.) (E: PMN ≥250 indicates SBP.) Source: Ch 0053, Evaluation"
+  },
+  {
+   "q": "A 59-year-old woman with cirrhosis has a large right pleural effusion and minimal ascites. Pleural fluid shows a serum-to-pleural albumin gradient of 1.4 g/dL with no infection. Which of the following should be avoided?",
+   "options": [
+    "Sodium restriction",
+    "Diuretics",
+    "Therapeutic thoracentesis",
+    "TIPS evaluation",
+    "Chest tube placement"
+   ],
+   "answer": 4,
+   "explain": "Hepatic hydrothorax is treated like cirrhotic ascites (sodium restriction, diuretics, thoracentesis or TIPS as needed). Chest tube placement should be avoided. (A: Sodium restriction is part of treatment.) (B: Diuretics are part of treatment.) (C: Thoracentesis is part of treatment.) (D: TIPS is an option for refractory cases.) Source: Ch 0053, Complications"
+  },
+  {
+   "q": "A 64-year-old woman with known metastatic ovarian cancer has new ascites. Ascitic fluid shows a SAAG of 0.6 g/dL. Which of the following is true about managing malignant ascites?",
+   "options": [
+    "It responds well to 2 g sodium restriction and spironolactone",
+    "It is best treated with TIPS",
+    "It doesn't respond to sodium restriction or diuretics; serial large-volume paracentesis or a drainage catheter is used",
+    "SAAG ≥1.1 is expected",
+    "IV albumin is required with every tap of any size"
+   ],
+   "answer": 2,
+   "explain": "Malignant ascites doesn't respond to sodium restriction or diuretics. Serial large-volume paracentesis, a transcutaneous drainage catheter, rarely a peritoneovenous shunt, or the Alfapump are used. (A: Sodium restriction and diuretics don't work.) (B: TIPS treats portal hypertensive ascites.) (D: Carcinomatosis gives SAAG <1.1.) (E: The albumin recommendation is specific to large-volume paracentesis in cirrhosis.) Source: Ch 0053, Treatment: Ascites; Evaluation"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0055-azotemia-and-urinary-abnormalities",
+ "name": "Azotemia and Urinary Abnormalities (Harrison Ch 55)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 55: Azotemia and Urinary Abnormalities.",
+ "chapter": "Nephrology",
+ "flashcards": [
+  {
+   "front": "Azotemia definition?",
+   "back": "Retention of nitrogenous wastes (e.g., urea) from reduced GFR"
+  },
+  {
+   "front": "Why does creatinine overestimate GFR in advanced CKD?",
+   "back": "Tubular secretion of creatinine increases"
+  },
+  {
+   "front": "Why does urea clearance underestimate GFR?",
+   "back": "Tubular reabsorption of urea"
+  },
+  {
+   "front": "Adequate 24-h creatinine excretion (age 20-50)?",
+   "back": "Men 18.5-25 mg/kg; women 16.5-22.4 mg/kg"
+  },
+  {
+   "front": "Cockcroft-Gault formula?",
+   "back": "(140 - age) x weight / (72 x Cr), x 0.85 if female"
+  },
+  {
+   "front": "Key assumption of all creatinine-based GFR estimates?",
+   "back": "Steady state (creatinine not changing rapidly)"
+  },
+  {
+   "front": "Advantages and confounders of cystatin C?",
+   "back": "Less affected by muscle mass and race; affected by sex, diabetes, smoking, inflammation"
+  },
+  {
+   "front": "Most accurate eGFR approach?",
+   "back": "Combined creatinine + cystatin C equation"
+  },
+  {
+   "front": "GFR at which uremic symptoms usually appear?",
+   "back": "<15 mL/min"
+  },
+  {
+   "front": "Initial tests for azotemia?",
+   "back": "Urinalysis and renal ultrasound"
+  },
+  {
+   "front": "Ultrasound features of CKD?",
+   "back": "Small kidneys, increased echogenicity, cortical thinning"
+  },
+  {
+   "front": "Proportion of AKI that is prerenal?",
+   "back": "40-80%"
+  },
+  {
+   "front": "How is GFR maintained in low perfusion?",
+   "back": "Prostaglandin afferent dilation + angiotensin II efferent constriction"
+  },
+  {
+   "front": "MAP below which GFR falls steeply?",
+   "back": "80 mmHg"
+  },
+  {
+   "front": "Who loses GFR abruptly on ACE inhibitors/ARBs?",
+   "back": "Bilateral renal artery stenosis or stenosis in a solitary kidney; volume depletion"
+  },
+  {
+   "front": "Prerenal indices?",
+   "back": "BUN:Cr >20, UNa <20, Uosm >500, FENa <1%, U/P Cr >40, bland or hyaline casts"
+  },
+  {
+   "front": "ATN indices?",
+   "back": "BUN:Cr 10-15, UNa >40, Uosm <350, FENa >2%, U/P Cr <20, muddy brown casts"
+  },
+  {
+   "front": "ATN with FENa <1%?",
+   "back": "Nonoliguric ATN (rhabdomyolysis) or ATN with CHF, cirrhosis, hepatorenal syndrome"
+  },
+  {
+   "front": "Proportion of AKI that is postrenal?",
+   "back": "<5% (but reversible; rule out early)"
+  },
+  {
+   "front": "Requirements for obstructive AKI?",
+   "back": "Urethral/bladder outlet, bilateral ureteral, or unilateral with solitary kidney"
+  },
+  {
+   "front": "When can ultrasound miss obstruction?",
+   "back": "Early obstruction or encasement (retroperitoneal fibrosis, tumor); use MAG3 furosemide renogram"
+  },
+  {
+   "front": "Share of intrinsic AKI due to ATN?",
+   "back": "~90%"
+  },
+  {
+   "front": "Common drug causes of interstitial nephritis?",
+   "back": "Antibiotics, NSAIDs, PPIs"
+  },
+  {
+   "front": "Urine eosinophils in AKI workup?",
+   "back": "No diagnostic utility; no longer recommended"
+  },
+  {
+   "front": "Atheroembolic renal disease clues?",
+   "back": "Recent aortic instrumentation, livedo reticularis, distal infarcts, eosinophilia"
+  },
+  {
+   "front": "Renal artery vs renal vein thrombosis urine?",
+   "back": "Artery: mild proteinuria and hematuria. Vein: heavy proteinuria and hematuria"
+  },
+  {
+   "front": "RBC casts indicate?",
+   "back": "Glomerulonephritis; early renal biopsy"
+  },
+  {
+   "front": "Oliguria and anuria definitions?",
+   "back": "Oliguria <400 mL/day; anuria <100 mL/day"
+  },
+  {
+   "front": "Why is oliguria never normal?",
+   "back": "At least 400 mL of maximally concentrated urine is needed to excrete the daily solute load"
+  },
+  {
+   "front": "Dipstick protein limitations?",
+   "back": "Detects only albumin; false positive at pH >7, concentrated or bloody urine; misses light chains"
+  },
+  {
+   "front": "Test detecting all urinary proteins?",
+   "back": "Sulfosalicylic or trichloroacetic acid precipitation"
+  },
+  {
+   "front": "Normal urinary protein and albumin?",
+   "back": "Total protein <150 mg/day; albumin <30 mg/day"
+  },
+  {
+   "front": "Mechanisms of hypercoagulability in nephrotic syndrome?",
+   "back": "Urinary antithrombin III loss, low protein S and C, hyperfibrinogenemia, platelet aggregation"
+  },
+  {
+   "front": "Hypertension in primary nephrotic syndrome?",
+   "back": "Uncommon"
+  },
+  {
+   "front": "Positive blood dipstick with no RBCs on microscopy?",
+   "back": "Myoglobinuria (rhabdomyolysis)"
+  },
+  {
+   "front": "Definition of significant hematuria and lesion rate?",
+   "back": ">3 RBC/HPF on 3 UAs, >100 RBC once, or gross; 9.1% have significant lesions"
+  },
+  {
+   "front": "Most common causes of isolated glomerular hematuria?",
+   "back": "IgA nephropathy, hereditary nephritis, thin basement membrane disease"
+  },
+  {
+   "front": "Sterile pyuria suggests?",
+   "back": "Urogenital tuberculosis"
+  },
+  {
+   "front": "Polyuria with urine osm <250 vs >300?",
+   "back": "<250: water diuresis (polydipsia, DI). >300: solute diuresis (glucose, mannitol, urea)"
+  },
+  {
+   "front": "Best test to distinguish central vs nephrogenic DI?",
+   "back": "Plasma AVP or copeptin level (also water deprivation + DDAVP)"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 69-year-old man is found to have a serum creatinine of 3.1 mg/dL on routine labs. One year ago it was 1.0 mg/dL. He has no prior records in between. Which of the following is the most appropriate initial evaluation?",
+   "options": [
+    "Renal biopsy",
+    "Renal angiography",
+    "24-hour urine protein only",
+    "Urinalysis and renal ultrasound",
+    "CT with IV contrast"
+   ],
+   "answer": 3,
+   "explain": "Urinalysis and renal ultrasound help separate acute from chronic disease and identify obstruction, the first branch of the azotemia algorithm. (A: Biopsy is for specific indications such as RBC casts.) (B: Angiography is for suspected vascular occlusion.) (C: A protein measurement alone doesn't stage the problem.) (E: Contrast adds nephrotoxic risk without first-line benefit.) Source: Ch 0055, Approach to the Patient: Azotemia; Fig 55-1"
+  },
+  {
+   "q": "A 78-year-old woman has 4 days of vomiting and diarrhea. Creatinine is 2.4 mg/dL (baseline 0.9). BUN:creatinine ratio is 32:1, urine sodium 12 mEq/L, urine osmolality 640 mosm/kg, and FENa 0.3%. Urine sediment is bland. Which of the following is the most appropriate management?",
+   "options": [
+    "IV volume repletion",
+    "Renal biopsy",
+    "Start furosemide",
+    "Urgent dialysis",
+    "Start an ACE inhibitor"
+   ],
+   "answer": 0,
+   "explain": "Volume loss with BUN:Cr >20:1, urine Na <20, urine osmolality >500, FENa <1% and bland sediment indicates prerenal azotemia, which reverses with restored perfusion. (B: Biopsy isn't needed.) (C: A diuretic worsens volume depletion.) (D: Dialysis is unnecessary.) (E: An ACE inhibitor worsens prerenal AKI.) Source: Ch 0055, Prerenal Failure; Table 55-2"
+  },
+  {
+   "q": "A 59-year-old man had prolonged hypotension during emergency surgery 2 days ago and now has rising creatinine and oliguria. Which of the following urine findings is most predictive of acute tubular necrosis?",
+   "options": [
+    "Urine osmolality 620 mosm/kg",
+    "FENa 0.4%",
+    "Hyaline casts only",
+    "Urine sodium 10 mEq/L",
+    "Muddy brown granular casts and renal tubular epithelial cells"
+   ],
+   "answer": 4,
+   "explain": "Dark (muddy brown) granular casts and tubular epithelial cells are highly predictive of ATN. (A: Concentrated urine suggests prerenal azotemia.) (B: A low FENa suggests prerenal azotemia.) (C: Hyaline casts suggest prerenal azotemia.) (D: A low urine sodium suggests prerenal azotemia.) Source: Ch 0055, Prerenal Failure; Table 55-2"
+  },
+  {
+   "q": "A 72-year-old man with hypertension, diffuse atherosclerosis and bilateral abdominal bruits starts lisinopril. Two weeks later his creatinine has risen from 1.1 to 2.6 mg/dL. Which of the following is the most appropriate next step?",
+   "options": [
+    "Double the lisinopril dose",
+    "Stop lisinopril and evaluate for bilateral renal artery stenosis",
+    "Add an NSAID for pain",
+    "Renal biopsy",
+    "Add an ARB"
+   ],
+   "answer": 1,
+   "explain": "Patients with bilateral renal artery stenosis depend on angiotensin II–mediated efferent constriction to maintain filtration and can lose GFR precipitously with ACE inhibitors or ARBs. (A: More drug worsens the hemodynamic injury.) (C: NSAIDs block prostaglandin afferent dilation and worsen it.) (D: The mechanism is hemodynamic.) (E: An ARB has the same effect.) Source: Ch 0055, Prerenal Failure"
+  },
+  {
+   "q": "A 74-year-old woman develops acute kidney injury 3 weeks after cardiac catheterization. She has livedo reticularis on her legs, painful blue toes and peripheral eosinophilia. Urinalysis is nearly normal. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Contrast-associated ATN",
+    "Prerenal azotemia",
+    "Atheroembolic renal disease",
+    "Acute glomerulonephritis",
+    "Bilateral ureteral obstruction"
+   ],
+   "answer": 2,
+   "explain": "Atheroembolic renal failure usually follows aortic instrumentation. Cholesterol emboli cause an eosinophil-rich reaction with livedo reticularis, distal infarcts and eosinophilia. The urinalysis is often normal, and biopsy is often unnecessary when these stigmata are present. (A: Contrast ATN occurs soon after exposure, without livedo or eosinophilia.) (B: The systemic findings point to emboli.) (D: GN would show an active sediment.) (E: Obstruction isn't suggested.) Source: Ch 0055, Intrinsic Renal Disease"
+  },
+  {
+   "q": "A 54-year-old woman taking omeprazole for 3 months has a creatinine rise from 0.8 to 2.0 mg/dL. Urinalysis shows pyuria, mild proteinuria, and occasional WBC casts. Urine culture is negative. Which of the following is the most appropriate next step?",
+   "options": [
+    "Order urine eosinophils to confirm the diagnosis",
+    "Start empiric antibiotics",
+    "Increase omeprazole",
+    "Discontinue omeprazole (renal biopsy if the diagnosis remains uncertain)",
+    "Start an ACE inhibitor"
+   ],
+   "answer": 3,
+   "explain": "Drug-induced acute interstitial nephritis (antibiotics, NSAIDs, PPIs) shows pyuria, mild proteinuria, hematuria and sometimes WBC casts. Stop the drug. Biopsy distinguishes it from other causes if needed. (A: Urine eosinophils have no diagnostic utility and are no longer recommended.) (B: The culture is negative.) (C: Continuing the drug worsens the injury.) (E: An ACE inhibitor isn't indicated.) Source: Ch 0055, Intrinsic Renal Disease"
+  },
+  {
+   "q": "A 41-year-old man has new hypertension, edema and a creatinine of 1.3 mg/dL. Urinalysis shows dysmorphic red cells, red cell casts and protein of 1.8 g/day. Which of the following is the most appropriate next step?",
+   "options": [
+    "Serologic evaluation (ANCA, anti-GBM, complement, hepatitis serologies, etc.) and renal biopsy",
+    "Repeat urinalysis in 6 months",
+    "Cystoscopy",
+    "CT urography alone",
+    "Start empiric antibiotics"
+   ],
+   "answer": 0,
+   "explain": "Dysmorphic RBCs, RBC casts and proteinuria >500 mg/day are virtually diagnostic of glomerulonephritis. Even without azotemia, serologic evaluation and early renal biopsy are indicated. (B: Delay risks progression.) (C: The source is glomerular, not urologic.) (D: Imaging alone misses the glomerular cause.) (E: Antibiotics don't treat GN.) Source: Ch 0055, Hematuria, Pyuria, and Casts; Fig 55-2"
+  },
+  {
+   "q": "A 23-year-old man has dark urine after an intense workout. Urine dipstick is strongly positive for blood, but microscopy shows 0–1 RBC/HPF. Creatine kinase is 52,000 U/L. Which of the following best explains the dipstick result?",
+   "options": [
+    "Glomerulonephritis",
+    "Kidney stone",
+    "Hemolysis from exercise only",
+    "Laboratory error",
+    "Myoglobinuria"
+   ],
+   "answer": 4,
+   "explain": "A positive blood dipstick without RBCs on microscopy can result from myoglobinuria, often with rhabdomyolysis. (A: GN would show RBCs on microscopy.) (B: A stone would show RBCs on microscopy.) (C: Hemoglobinuria from hemolysis is possible, but the very high CK points to muscle.) (D: The pattern is classic, not an error.) Source: Ch 0055, Hematuria, Pyuria, and Casts"
+  },
+  {
+   "q": "A 63-year-old man who smokes has painless microscopic hematuria with 15 RBCs/HPF on three separate urinalyses. RBCs aren't dysmorphic, and there's no proteinuria or casts. Urine culture is negative. Which of the following is the most appropriate evaluation?",
+   "options": [
+    "Reassurance and repeat in 1 year",
+    "Urine cytology, renal imaging, and cystoscopy",
+    "Renal biopsy",
+    "ANCA and anti-GBM antibodies",
+    "Treat empirically with antibiotics"
+   ],
+   "answer": 1,
+   "explain": "Persistent hematuria (>3 RBC/HPF on three urinalyses) carries a 9.1% rate of significant lesions. Suspicion for urogenital cancer rises with age. Nondysmorphic isolated hematuria calls for cytology, imaging and cystoscopy. (A: Reassurance is inappropriate for persistent hematuria at this age.) (C: Biopsy is for glomerular features.) (D: Serologies are for glomerular features.) (E: The culture is negative.) Source: Ch 0055, Hematuria, Pyuria, and Casts; Fig 55-2"
+  },
+  {
+   "q": "A 67-year-old woman with anemia, hypercalcemia and back pain has acute kidney injury. Her urine dipstick is negative for protein, but she is suspected of having multiple myeloma. Which test is most appropriate to detect urinary light chains?",
+   "options": [
+    "Repeat dipstick on a concentrated sample",
+    "Urine albumin-to-creatinine ratio",
+    "Sulfosalicylic acid precipitation or urine protein electrophoresis",
+    "Urine eosinophils",
+    "Urine culture"
+   ],
+   "answer": 2,
+   "explain": "Dipsticks detect only albumin and miss Bence Jones proteins. Total urine protein needs sulfosalicylic or trichloroacetic acid precipitation; UPEP characterizes light chains. (A: The dipstick still won't detect light chains.) (B: ACR measures albumin only.) (D: Urine eosinophils aren't relevant.) (E: Culture doesn't detect protein.) Source: Ch 0055, Proteinuria"
+  },
+  {
+   "q": "A 61-year-old woman with known retroperitoneal fibrosis has acute kidney injury. Renal ultrasound shows no hydronephrosis. Obstruction is still suspected. Which of the following is the most appropriate next test?",
+   "options": [
+    "Furosemide renogram (MAG3)",
+    "Repeat ultrasound in 6 months",
+    "Renal biopsy",
+    "Urine eosinophils",
+    "No further testing; a normal ultrasound excludes obstruction"
+   ],
+   "answer": 0,
+   "explain": "Ultrasound can be falsely negative early in obstruction or when the ureters can't dilate (retroperitoneal fibrosis, tumor encasement). A furosemide renogram (MAG3) may be needed. (B: Delay risks irreversible damage.) (C: Biopsy doesn't assess obstruction.) (D: Urine eosinophils aren't helpful.) (E: A normal ultrasound doesn't exclude obstruction in this setting.) Source: Ch 0055, Postrenal Azotemia"
+  },
+  {
+   "q": "A 35-year-old woman has 4 L/day of urine output and thirst. Urine osmolality is 90 mosm/kg. Blood glucose is normal. Which of the following is the most appropriate next step to distinguish the cause?",
+   "options": [
+    "Search for a nonabsorbed solute such as glucose or mannitol",
+    "Renal biopsy",
+    "Start a thiazide empirically",
+    "Water deprivation test with desmopressin, or a plasma AVP or copeptin level",
+    "CT of the abdomen"
+   ],
+   "answer": 3,
+   "explain": "Urine output >3 L/day with dilute urine (<250 mosm/L) is a water diuresis: primary polydipsia, central DI or nephrogenic DI. Plasma AVP or copeptin, or water deprivation with desmopressin, separates them. (A: Solute diuresis has urine osmolality >300.) (B: Biopsy isn't indicated.) (C: Empiric treatment skips the diagnosis.) (E: CT isn't indicated.) Source: Ch 0055, Polyuria; Fig 55-4"
+  },
+  {
+   "q": "A 28-year-old professional bodybuilder has a serum creatinine of 1.6 mg/dL and a creatinine-based eGFR of 58. Urinalysis and blood pressure are normal. Which of the following is the best next step to estimate his GFR?",
+   "options": [
+    "Renal biopsy",
+    "Cystatin C–based eGFR (or combined creatinine–cystatin C)",
+    "Repeat creatinine after a meat-rich meal",
+    "Diagnose stage 3 CKD",
+    "Start an ACE inhibitor"
+   ],
+   "answer": 1,
+   "explain": "Creatinine-based eGFR underestimates GFR in people with high muscle mass. Cystatin C is less affected by muscle mass, and combined equations are more accurate. (A: Biopsy is premature.) (C: Cooked meat raises creatinine further.) (D: The diagnosis may be wrong.) (E: Treatment isn't indicated yet.) Source: Ch 0055, Assessment of GFR"
+  },
+  {
+   "q": "A 39-year-old man with nephrotic syndrome (proteinuria 9 g/day, albumin 1.9 g/dL) develops renal vein thrombosis. Which mechanism contributes to his hypercoagulable state?",
+   "options": [
+    "Increased antithrombin III",
+    "Urinary loss of antithrombin III, low proteins S and C, and hyperfibrinogenemia",
+    "Thrombocytopenia",
+    "Low fibrinogen",
+    "Excess protein C"
+   ],
+   "answer": 1,
+   "explain": "The hypercoagulable state of nephrotic syndrome comes from urinary loss of antithrombin III, reduced proteins S and C, hyperfibrinogenemia and enhanced platelet aggregation. (A: Antithrombin III is lost, not increased.) (C: Platelet aggregation is enhanced, not reduced.) (D: Fibrinogen is high.) (E: Protein C is low.) Source: Ch 0055, Proteinuria (nephrotic syndrome)"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0056-fluid-and-electrolyte-disturbances",
+ "name": "Fluid and Electrolyte Disturbances (Harrison Ch 56)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 56: Fluid and Electrolyte Disturbances.",
+ "chapter": "Nephrology",
+ "flashcards": [
+  {
+   "front": "Most reliable bedside signs of hypovolemia?",
+   "back": "Low JVP, orthostatic tachycardia (>15-20 bpm), orthostatic hypotension (>10-20 mmHg)"
+  },
+  {
+   "front": "Volume marker in hypovolemia with metabolic alkalosis?",
+   "back": "Urine Cl <25 (urine Na may be >20 due to bicarbonaturia)"
+  },
+  {
+   "front": "Resuscitation fluid for severe hypovolemia with normal or low Na?",
+   "back": "Normal saline (albumin not superior)"
+  },
+  {
+   "front": "Hypovolemic hyponatremia with urine Na >20: causes?",
+   "back": "Diuretics, adrenal insufficiency, salt-losing nephropathy, osmotic diuresis, bicarbonaturia, cerebral salt wasting"
+  },
+  {
+   "front": "Why do thiazides cause hyponatremia more than loops?",
+   "back": "Thiazides preserve urinary concentrating ability; loops blunt the countercurrent mechanism"
+  },
+  {
+   "front": "Cerebral salt wasting vs SIAD?",
+   "back": "Salt wasting: clinical hypovolemia with natriuresis after CNS insult; treat with aggressive NaCl"
+  },
+  {
+   "front": "Urine Na in hyponatremia from HF, cirrhosis, nephrosis?",
+   "back": "Very low (<10), unless on diuretics"
+  },
+  {
+   "front": "Euvolemic hyponatremia causes?",
+   "back": "SIAD, hypothyroidism, secondary (pituitary) adrenal insufficiency"
+  },
+  {
+   "front": "Serum uric acid in SIAD vs hypovolemia?",
+   "back": "SIAD: low (<4 mg/dL). Hypovolemia: often high"
+  },
+  {
+   "front": "Most common malignancy causing SIAD?",
+   "back": "Small cell lung cancer (75% of malignant SIAD)"
+  },
+  {
+   "front": "Most common drug class causing SIAD?",
+   "back": "SSRIs"
+  },
+  {
+   "front": "Beer potomania labs?",
+   "back": "Urine osm <100-200, urine Na <10-20; high ODS risk"
+  },
+  {
+   "front": "Settings of acute hyponatremia?",
+   "back": "Postop premenopausal women with hypotonic fluids, glycine irrigation, colonoscopy prep, new thiazide, polydipsia, MDMA, marathons"
+  },
+  {
+   "front": "Time defining chronic hyponatremia?",
+   "back": ">48 h (brain osmolyte adaptation complete)"
+  },
+  {
+   "front": "ODS correction thresholds?",
+   "back": ">8-10 mEq/L in 24 h or >18 mEq/L in 48 h"
+  },
+  {
+   "front": "ODS risk factors?",
+   "back": "Alcoholism, malnutrition, hypokalemia, liver transplantation"
+  },
+  {
+   "front": "Sodium correction for hyperglycemia?",
+   "back": "Na falls 1.6-2.4 mEq/L per 100 mg/dL glucose rise"
+  },
+  {
+   "front": "Gold standard for hypovolemic hyponatremia?",
+   "back": "Sodium corrects with normal saline"
+  },
+  {
+   "front": "Urine osm <100 vs >400 in hyponatremia?",
+   "back": "<100: polydipsia. >400: AVP excess dominant"
+  },
+  {
+   "front": "Treatment of severe symptomatic hyponatremia?",
+   "back": "3% saline 100 mL bolus (repeat) to raise Na 4-6 mEq/L; check Na q2-4h"
+  },
+  {
+   "front": "Chronic hyponatremia correction target?",
+   "back": "<6-8 mEq/L in first 24 h; <6 each subsequent day"
+  },
+  {
+   "front": "Fluid restriction by (UNa + UK)/PNa?",
+   "back": ">1: <500 mL/d; ~1: 500-700 mL/d; <1: <1 L/d"
+  },
+  {
+   "front": "Tolvaptan precautions?",
+   "back": "Start in hospital, liberalize fluids >2 L/d, limit to 1-2 months (liver toxicity); ~10% overcorrect"
+  },
+  {
+   "front": "Overcorrected chronic hyponatremia?",
+   "back": "Relower with DDAVP and/or D5W"
+  },
+  {
+   "front": "Free water deficit formula?",
+   "back": "[(Na - 140)/140] x TBW (60% men, 50% women); replace over 48-72 h, <=10 mEq/L/day"
+  },
+  {
+   "front": "Appropriate renal response to extrarenal water loss?",
+   "back": "<500 mL/day of urine with osmolality >800"
+  },
+  {
+   "front": "Water deprivation test in hypernatremia?",
+   "back": "Contraindicated; use DDAVP response plus AVP/copeptin"
+  },
+  {
+   "front": "Central vs nephrogenic DI DDAVP response?",
+   "back": "Central: urine osm rises, AVP low. Nephrogenic: rises <50%, AVP/copeptin high"
+  },
+  {
+   "front": "Acquired nephrogenic DI causes?",
+   "back": "Lithium, hypercalcemia, hypokalemia, ifosfamide, antivirals"
+  },
+  {
+   "front": "Lithium nephrogenic DI chronic treatment?",
+   "back": "Amiloride (blocks lithium entry via ENaC)"
+  },
+  {
+   "front": "Gestational DI treatment?",
+   "back": "DDAVP (resistant to placental vasopressinase)"
+  },
+  {
+   "front": "Drugs shifting K into cells?",
+   "back": "Insulin, beta2-agonists, theophylline/caffeine; also alkalosis"
+  },
+  {
+   "front": "Thyrotoxic periodic paralysis features and treatment?",
+   "back": "Asian/Latin men, attacks 1-6 am, low K/Phos/Mg; propranolol 3 mg/kg"
+  },
+  {
+   "front": "Why is hypomagnesemia associated with refractory hypokalemia?",
+   "back": "Less muscle K uptake and increased ROMK K secretion"
+  },
+  {
+   "front": "ECG changes of hypokalemia?",
+   "back": "Broad flat T waves, ST depression, QT prolongation (marked <2.7)"
+  },
+  {
+   "front": "24-h urine K suggesting extrarenal loss?",
+   "back": "<15 mmol/day"
+  },
+  {
+   "front": "Bulimia vs Gitelman urine chloride?",
+   "back": "Bulimia: urine Cl <10. Gitelman: persistently high Na, K, Cl"
+  },
+  {
+   "front": "Aldosterone:renin screen for primary aldosteronism?",
+   "back": "Ratio >50; non-interfering drugs: verapamil, alpha-blockers, hydralazine, low-dose amiloride"
+  },
+  {
+   "front": "Liddle vs SAME response to drugs?",
+   "back": "Liddle: responds to amiloride, not spironolactone. SAME/licorice: responds to spironolactone"
+  },
+  {
+   "front": "Bartter vs Gitelman urinary calcium?",
+   "back": "Bartter: hypercalciuria. Gitelman: hypocalciuria plus hypomagnesemia"
+  },
+  {
+   "front": "How to give IV KCl?",
+   "back": "In saline (not dextrose); 20-40 mmol/L peripherally; 10-20 mmol/h centrally with monitoring"
+  },
+  {
+   "front": "Causes of pseudohyperkalemia?",
+   "back": "Fist clenching, hemolysis, thrombocytosis/leukocytosis/erythrocytosis, cooled sample"
+  },
+  {
+   "front": "Does lactic acidosis or ketoacidosis cause shift hyperkalemia?",
+   "back": "No; shift occurs with non-anion gap (and respiratory) acidosis"
+  },
+  {
+   "front": "Succinylcholine contraindications for hyperkalemia risk?",
+   "back": "Burns, neuromuscular injury, disuse atrophy, mucositis, prolonged immobilization"
+  },
+  {
+   "front": "Drugs blocking ENaC causing hyperkalemia?",
+   "back": "Amiloride, triamterene, trimethoprim, pentamidine"
+  },
+  {
+   "front": "Hyporeninemic hypoaldosteronism patients?",
+   "back": "Diabetics, elderly, CKD; ~50% acidosis with urine pH <5.5"
+  },
+  {
+   "front": "Heparin and hyperkalemia mechanism?",
+   "back": "Inhibits aldosterone synthesis by zona glomerulosa"
+  },
+  {
+   "front": "Hyperkalemia ECG progression?",
+   "back": "Peaked T (5.5-6.5), loss of P (6.5-7.5), wide QRS (7-8), sine wave (>8); insensitive"
+  },
+  {
+   "front": "First treatment for hyperkalemia with ECG changes?",
+   "back": "IV calcium gluconate 10 mL of 10% over 2-3 min; repeat if ECG persists"
+  },
+  {
+   "front": "Calcium in hyperkalemia on digoxin?",
+   "back": "Give slowly: 10 mL 10% in 100 mL D5W over 20-30 min"
+  },
+  {
+   "front": "Insulin regimen for hyperkalemia?",
+   "back": "10 U regular IV + 50 mL D50, then D10 infusion; insulin alone if glucose >=200-250"
+  },
+  {
+   "front": "Why not use albuterol alone for hyperkalemia?",
+   "back": "~20% of ESRD patients don't respond"
+  },
+  {
+   "front": "Risk of sodium polystyrene sulfonate?",
+   "back": "Intestinal necrosis (worse with ileus, opioids); slow onset"
+  },
+  {
+   "front": "Preferred potassium binders and side effect?",
+   "back": "Patiromer (hypomagnesemia) and sodium zirconium cyclosilicate"
+  },
+  {
+   "front": "Most effective method to remove potassium?",
+   "back": "Hemodialysis"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 34-year-old woman is on postoperative day 1 after laparoscopic surgery and has been receiving hypotonic IV fluids. She develops headache and vomiting, then has a generalized seizure. Serum sodium is 119 mEq/L (preoperative 139). Which of the following is the most appropriate immediate treatment?",
+   "options": [
+    "100 mL bolus of 3% saline, repeated as needed to raise sodium by 4–6 mEq/L",
+    "Fluid restriction to 800 mL/day",
+    "Oral tolvaptan",
+    "Normal saline at 75 mL/h",
+    "Demeclocycline"
+   ],
+   "answer": 0,
+   "explain": "Acute symptomatic hyponatremia is an emergency. A 100 mL bolus of 3% saline is more effective than an infusion and raises sodium by 4–6 mEq/L to relieve severe symptoms, with sodium checked every 2–4 hours. (B: Fluid restriction is far too slow for seizures.) (C: Vaptans have no approved role in acute hyponatremia.) (D: Isotonic saline won't correct this quickly.) (E: Demeclocycline is for chronic SIAD.) Source: Ch 0056, Treatment: Hyponatremia; Table 56-2"
+  },
+  {
+   "q": "A 66-year-old man with chronic hyponatremia (sodium 112 mEq/L, present for weeks) is treated with normal saline for presumed volume depletion. Eighteen hours later his sodium is 127 mEq/L and he is producing large volumes of dilute urine. Which of the following is the most appropriate step?",
+   "options": [
+    "Continue normal saline",
+    "Start 3% saline",
+    "Give desmopressin and D5W to relower the sodium",
+    "Start tolvaptan",
+    "No change; neurologic symptoms would have appeared already"
+   ],
+   "answer": 2,
+   "explain": "Chronic hyponatremia corrected more than 8–10 mEq/L in 24 hours risks osmotic demyelination. Overcorrection, common when AVP falls after saline for hypovolemia, should be reversed with desmopressin and/or D5W. (A: Continued saline worsens the overcorrection.) (B: Hypertonic saline worsens the overcorrection.) (D: A vaptan worsens the overcorrection.) (E: ODS appears a day or more later, so absent symptoms aren't reassuring.) Source: Ch 0056, Treatment: Hyponatremia; Clinical Features"
+  },
+  {
+   "q": "A 63-year-old man with a 50-pack-year smoking history has a sodium of 124 mEq/L. He is clinically euvolemic. Serum osmolality is 258, urine osmolality 560, urine sodium 62 mEq/L, and serum uric acid 2.8 mg/dL. TSH and cortisol are normal. He takes no medications. Chest radiograph is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Normal saline infusion",
+    "Brain MRI only",
+    "Repeat chest radiograph in 6 months",
+    "Oral salt and observation with no further evaluation",
+    "Chest CT"
+   ],
+   "answer": 4,
+   "explain": "Euvolemic hyponatremia with concentrated urine, urine Na >30 and low uric acid indicates SIAD. A radiograph may miss small cell lung cancer, so chest CT should be considered in high-risk smokers. (A: Saline doesn't treat SIAD and may worsen it.) (B: Brain MRI alone skips the most likely cause.) (C: Delay could miss a tumor.) (D: The cause must be sought.) Source: Ch 0056, Diagnostic Approach to Hyponatremia; Table 56-1"
+  },
+  {
+   "q": "A 70-year-old woman with SIAD has a sodium of 126 mEq/L. Urine sodium is 110 mEq/L and urine potassium 60 mEq/L. Which fluid restriction is most appropriate?",
+   "options": [
+    "<1.5 L/day",
+    "<500 mL/day",
+    "500–700 mL/day",
+    "<1 L/day",
+    "No restriction is needed"
+   ],
+   "answer": 1,
+   "explain": "The urine-to-plasma electrolyte ratio is (110 + 60)/126 ≈ 1.35. A ratio >1 means minimal free water excretion, so restrict aggressively to <500 mL/day. (A: Too liberal for a ratio >1.) (C: 500–700 mL/day is for a ratio of about 1.) (D: <1 L/day is for a ratio <1.) (E: Restriction is needed.) Source: Ch 0056, Treatment: Hyponatremia; Table 56-3"
+  },
+  {
+   "q": "A 42-year-old woman has fatigue, weight loss and hyperpigmentation. Blood pressure is 88/56 mm Hg. Sodium is 125 mEq/L, potassium 5.9 mEq/L, and urine sodium 68 mEq/L. Which of the following is the most appropriate diagnostic test?",
+   "options": [
+    "Water deprivation test",
+    "Chest CT",
+    "Serum uric acid",
+    "Cosyntropin stimulation test",
+    "Plasma renin and aldosterone ratio only"
+   ],
+   "answer": 3,
+   "explain": "Hyperkalemia and hyponatremia in a hypotensive patient with high urine sodium strongly suggest primary adrenal insufficiency. A cosyntropin stimulation test is needed. (A: Water deprivation evaluates DI.) (B: Chest CT evaluates SIAD causes.) (C: Uric acid helps with SIAD vs hypovolemia but doesn't diagnose adrenal failure.) (E: A renin-aldosterone ratio alone doesn't confirm adrenal failure.) Source: Ch 0056, Hypovolemic Hyponatremia; Diagnostic Approach"
+  },
+  {
+   "q": "A 52-year-old man who drinks only beer for several weeks presents with sodium 108 mEq/L, potassium 2.6 mEq/L, urine osmolality 70 mOsm/kg and urine sodium <10 mEq/L. Which statement about his management is correct?",
+   "options": [
+    "He is at very high risk of osmotic demyelination because of hypokalemia, alcoholism, malnutrition and rapid self-correction",
+    "He should receive tolvaptan",
+    "He needs strict fluid restriction of <500 mL/day as the main therapy",
+    "Potassium repletion won't affect his serum sodium",
+    "Correction to 130 mEq/L within 24 hours is safe"
+   ],
+   "answer": 0,
+   "explain": "Beer potomania (low solute intake: urine osmolality <100–200, urine Na <10–20) corrects rapidly with saline and diet. These patients are at very high ODS risk from hypokalemia, alcoholism, malnutrition and overcorrection. (B: Vaptans aren't indicated.) (C: Restriction isn't the main therapy.) (D: Potassium repletion raises serum sodium.) (E: That rate would cause ODS.) Source: Ch 0056, Low Solute Intake; Treatment: Hyponatremia"
+  },
+  {
+   "q": "A 70-kg man has a serum sodium of 160 mEq/L from inadequate water intake. Using total body water of 60% of weight, what is his approximate free water deficit, and how fast should it be replaced?",
+   "options": [
+    "2 L over 6 hours",
+    "3 L over 24 hours without monitoring",
+    "6 L over 48–72 hours, lowering sodium by no more than 10 mEq/L per day",
+    "10 L over 12 hours",
+    "6 L over 6 hours"
+   ],
+   "answer": 2,
+   "explain": "TBW = 0.6 × 70 = 42 L. Deficit = [(160 − 140)/140] × 42 ≈ 6 L. Give it over 48–72 hours without lowering sodium more than 10 mEq/L per day. (A: Wrong volume and too fast.) (B: Too fast, and monitoring is required.) (D: Wrong volume and too fast.) (E: Correct volume but far too fast.) Source: Ch 0056, Table 56-3; Treatment: Hypernatremia"
+  },
+  {
+   "q": "A 45-year-old man has sodium 154 mEq/L, polyuria of 6 L/day, and urine osmolality 110 mOsm/kg after pituitary surgery. Which of the following is the most appropriate next diagnostic step?",
+   "options": [
+    "Water deprivation test",
+    "Hypertonic saline infusion",
+    "24-hour urine calcium",
+    "Renal biopsy",
+    "Give desmopressin and measure the urine osmolality response (with a plasma AVP or copeptin level)"
+   ],
+   "answer": 4,
+   "explain": "In hypernatremia, water deprivation is unnecessary and contraindicated. Separate central from nephrogenic DI by the urine osmolality response to DDAVP plus circulating AVP or copeptin. After pituitary surgery, central DI is likely. (A: Water deprivation is contraindicated here.) (B: Hypertonic saline–stimulated copeptin is for hypotonic polyuria without hypernatremia.) (C: Calcium is a cause of NDI but doesn't distinguish the types.) (D: Biopsy isn't indicated.) Source: Ch 0056, Diagnostic Approach (hypernatremia)"
+  },
+  {
+   "q": "A 58-year-old woman with alcohol use disorder has a potassium of 2.8 mEq/L that hasn't improved despite 3 days of oral and IV potassium chloride. Which of the following is the most likely reason?",
+   "options": [
+    "Hypercalcemia",
+    "Hypomagnesemia",
+    "Hyperphosphatemia",
+    "Metabolic acidosis",
+    "Excessive potassium in IV dextrose"
+   ],
+   "answer": 1,
+   "explain": "Magnesium depletion reduces muscle K uptake and increases distal K secretion through ROMK. Hypomagnesemic patients are refractory to K replacement until Mg is repleted. (A: Hypercalcemia doesn't explain the resistance.) (C: Hyperphosphatemia doesn't explain the resistance.) (D: Acidosis tends to raise K.) (E: Dextrose raises insulin and worsens hypokalemia; KCl should be given in saline, but that doesn't explain days of failure.) Source: Ch 0056, Magnesium Deficiency and Hypokalemia"
+  },
+  {
+   "q": "A 26-year-old man of Asian descent wakes at 3 a.m. with severe weakness of all four limbs. Potassium is 1.9 mEq/L, phosphate and magnesium are low, and TSH is suppressed with high free T4. Which treatment rapidly reverses the hypokalemia without risk of rebound hyperkalemia?",
+   "options": [
+    "IV potassium chloride 40 mEq/h",
+    "Oral levothyroxine",
+    "Spironolactone",
+    "High-dose propranolol",
+    "Acetazolamide"
+   ],
+   "answer": 3,
+   "explain": "In thyrotoxic periodic paralysis, β-adrenergic activity drives K into cells. High-dose propranolol (3 mg/kg) rapidly reverses the hypokalemia, hypophosphatemia and paralysis without rebound hyperkalemia. (A: Aggressive IV KCl risks rebound hyperkalemia.) (B: Levothyroxine worsens thyrotoxicosis.) (C: Spironolactone is for aldosterone excess.) (E: Acetazolamide isn't the source's therapy.) Source: Ch 0056, Redistribution and Hypokalemia; Treatment: Hypokalemia"
+  },
+  {
+   "q": "A 44-year-old woman has resistant hypertension and spontaneous hypokalemia (3.1 mEq/L). She takes lisinopril and hydrochlorothiazide. Which of the following is the most appropriate initial screening test, after adjusting interfering drugs?",
+   "options": [
+    "Plasma aldosterone-to-renin activity ratio",
+    "24-hour urine metanephrines",
+    "Renal artery Doppler only",
+    "Adrenal vein sampling",
+    "Genetic testing for Liddle syndrome"
+   ],
+   "answer": 0,
+   "explain": "Random plasma renin activity and aldosterone are a helpful screen. A ratio >50 suggests primary hyperaldosteronism. Drugs that modulate the RAAS should be stopped; verapamil, α-blockers, hydralazine and low-dose amiloride don't interfere. (B: Metanephrines screen for pheochromocytoma.) (C: Doppler alone doesn't screen for aldosteronism.) (D: Adrenal vein sampling follows a positive screen.) (E: Liddle syndrome has suppressed aldosterone and is a later consideration.) Source: Ch 0056, Renal Loss of Potassium (hyperaldosteronism)"
+  },
+  {
+   "q": "A 24-year-old woman has chronic hypokalemia, metabolic alkalosis, normal blood pressure and low magnesium. Urine sodium, potassium and chloride are persistently high, and urinary calcium excretion is very low. She denies diuretic use, and a urine diuretic screen is negative. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Bartter syndrome",
+    "Surreptitious vomiting",
+    "Gitelman syndrome",
+    "Primary hyperaldosteronism",
+    "Liddle syndrome"
+   ],
+   "answer": 2,
+   "explain": "Gitelman syndrome (NCC loss of function) causes hypokalemic alkalosis with hypomagnesemia and marked hypocalciuria. Urine Na, K and Cl stay elevated. Urinary calcium is the key test. (A: Bartter causes hypercalciuria and polyuria.) (B: Vomiting gives urine Cl <10.) (D: Aldosteronism causes hypertension.) (E: Liddle causes hypertension.) Source: Ch 0056, Renal Loss of Potassium; Diagnostic Approach"
+  },
+  {
+   "q": "A 67-year-old man on dialysis misses two sessions and presents with potassium 7.4 mEq/L. ECG shows peaked T waves and a widened QRS. Which of the following should be given first?",
+   "options": [
+    "Sodium polystyrene sulfonate",
+    "IV sodium bicarbonate bolus",
+    "Furosemide",
+    "Insulin without glucose",
+    "IV calcium gluconate (10 mL of 10%) over 2–3 minutes"
+   ],
+   "answer": 4,
+   "explain": "ECG changes of hyperkalemia are an emergency. IV calcium stabilizes the myocardium within 1–3 minutes (lasting 30–60 minutes) while potassium is shifted and removed. (A: SPS is slow and carries necrosis risk.) (B: Bicarbonate has no acute role, and undiluted boluses should be avoided.) (C: Diuretics don't work well in a dialysis patient and act slowly.) (D: Insulin comes after calcium, and alone it needs glucose unless glucose is ≥200–250.) Source: Ch 0056, Treatment: Hyperkalemia"
+  },
+  {
+   "q": "A 59-year-old woman with CKD has potassium 6.8 mEq/L. Blood glucose is 110 mg/dL. After IV calcium, which of the following is the most appropriate next step to shift potassium into cells?",
+   "options": [
+    "50 mL of 50% dextrose alone",
+    "10 units of IV regular insulin with 50 mL of 50% dextrose, followed by a dextrose infusion",
+    "Nebulized albuterol alone, given her CKD",
+    "Undiluted sodium bicarbonate ampules",
+    "Oral sodium polystyrene sulfonate as the only treatment"
+   ],
+   "answer": 1,
+   "explain": "Insulin 10 units IV with 50 mL of D50, then a dextrose infusion, lowers K in 10–20 minutes for 4–6 hours. Glucose is given unless the blood glucose is ≥200–250 mg/dL. (A: D50 without insulin can worsen hyperkalemia (osmotic effect).) (C: About 20% of ESRD patients don't respond to albuterol, so it shouldn't be used alone.) (D: Undiluted bicarbonate boluses risk hypernatremia and have no acute role.) (E: SPS is slow and is a removal, not a shifting, strategy.) Source: Ch 0056, Treatment: Hyperkalemia"
+  },
+  {
+   "q": "A 61-year-old woman with essential thrombocythemia (platelets 1,400,000/µL) has serum potassium of 6.3 mEq/L. She has normal renal function, a normal ECG, and takes no medications that affect potassium. Which of the following is the most likely explanation?",
+   "options": [
+    "Hyporeninemic hypoaldosteronism",
+    "Addison disease",
+    "Tumor lysis syndrome",
+    "Pseudohyperkalemia from in vitro potassium release by platelets",
+    "Pseudohypoaldosteronism type II"
+   ],
+   "answer": 3,
+   "explain": "Marked thrombocytosis (or leukocytosis or erythrocytosis) can cause in vitro K efflux and pseudohyperkalemia. A normal ECG and no risk factors support this. (A: Hyporeninemic hypoaldosteronism affects diabetics, the elderly and CKD patients.) (B: Addison disease has hypotension and hyponatremia.) (C: Tumor lysis follows chemotherapy.) (E: PHA-II includes hypertension and acidosis.) Source: Ch 0056, Pseudohyperkalemia; Table 56-5"
+  }
+ ]
+},
 ];
