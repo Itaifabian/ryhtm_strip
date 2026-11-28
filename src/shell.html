@@ -160,6 +160,19 @@ select{appearance:none;font-family:'Inter',sans-serif;font-size:13.5px;font-weig
 .modal-box textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-family:inherit;
   font-size:14px;line-height:1.5;resize:vertical;background:var(--paper-2);color:var(--ink)}
 .modal-actions{display:flex;align-items:center;gap:8px;margin-top:14px}
+.flag-reasons{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.flag-reason{font-family:inherit;font-size:12.5px;padding:6px 11px;border-radius:999px;border:1px solid var(--line);
+  background:var(--paper-2);color:var(--ink-soft);cursor:pointer}
+.flag-reason.on{border-color:var(--amber);background:var(--amber-soft);color:var(--amber);font-weight:600}
+.flag-remove-quick{width:100%;justify-content:center;margin-top:10px;border-color:#c0392b;color:#c0392b}
+.flag-remove-quick:hover{background:rgba(192,57,43,.08)}
+.flag-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+  padding:2px 7px;border-radius:999px;margin-right:6px;vertical-align:1px}
+.flag-badge.remove{background:rgba(192,57,43,.12);color:#c0392b}
+.flag-badge.review{background:var(--amber-soft);color:var(--amber)}
+.flag-badge.sent{background:var(--paper-2);color:var(--ink-faint);border:1px solid var(--line)}
+.flag-send-banner{font-size:13px;color:var(--ink-soft);background:var(--paper-2);border:1px solid var(--line);
+  border-radius:10px;padding:10px 12px;margin:0 0 12px;display:none;align-items:center;gap:10px;flex-wrap:wrap}
 
 /* ---------- Flashcard ---------- */
 .fc-stage{perspective:1600px;max-width:660px;margin:0 auto;position:relative}
@@ -613,9 +626,11 @@ footer .mono{font-size:11px}
     <section>
       <div class="sec-head">
         <div class="sec-title">Flagged for review <span class="mono" id="flagsCount" style="color:var(--ink-faint);font-weight:400"></span></div>
-        <div class="sec-note">Questions or flashcards you've tagged as wrong, unclear, or worth double-checking — with an optional note. Nothing here changes the app's content automatically; it's a queue for a future review pass.</div>
+        <div class="sec-note">Questions or flashcards you've tagged as wrong, unclear, or irrelevant. Items marked for removal are hidden from your decks on this device right away. Tap “Send to GitHub” to open a pre-filled issue with your unsent flags; the content fix then lands through a reviewed pull request.</div>
       </div>
+      <div class="flag-send-banner" id="flagSendBanner"></div>
       <div class="controls" id="flagsExportRow" style="display:none">
+        <button class="btn primary" id="flagSendBtn" onclick="sendFlagsToGitHub()">Send to GitHub</button>
         <button class="btn" onclick="exportFlagsFile()">⬇ Export flags (.json)</button>
       </div>
       <div id="flagsList"></div>
@@ -859,9 +874,16 @@ footer .mono{font-size:11px}
   <div class="modal-box">
     <div class="modal-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>Flag for review</div>
     <div class="modal-sub" id="flagExcerpt"></div>
-    <textarea id="flagNote" rows="4" placeholder="Optional note — what's wrong, unclear, or worth double-checking? Leave blank to just flag it."></textarea>
+    <div class="flag-reasons" id="flagReasons">
+      <button type="button" class="flag-reason" data-r="irrelevant" onclick="toggleFlagReason(this)">Irrelevant</button>
+      <button type="button" class="flag-reason" data-r="wrong" onclick="toggleFlagReason(this)">Wrong answer</button>
+      <button type="button" class="flag-reason" data-r="unclear" onclick="toggleFlagReason(this)">Unclear</button>
+      <button type="button" class="flag-reason" data-r="duplicate" onclick="toggleFlagReason(this)">Duplicate</button>
+    </div>
+    <textarea id="flagNote" rows="3" placeholder="Optional note — what's wrong, unclear, or worth double-checking? Leave blank to just flag it."></textarea>
+    <button class="btn flag-remove-quick" onclick="markForRemovalPanel()">🗑 Mark for removal — hide it now</button>
     <div class="modal-actions">
-      <button class="btn" id="flagRemoveBtn" onclick="removeFlagPanel()" style="display:none">Remove flag</button>
+      <button class="btn" id="flagRemoveBtn" onclick="removeFlagPanel()" style="display:none">Clear flag</button>
       <div class="spacer"></div>
       <button class="btn" onclick="closeFlagPanel()">Cancel</button>
       <button class="btn primary" onclick="saveFlagPanel()">Save flag</button>
@@ -1036,26 +1058,67 @@ function saveFlags(){try{localStorage.setItem(FLAGS_LS_KEY,JSON.stringify(flags)
 function flagKey(type,tid,idx){return type+'::'+tid+'::'+idx}
 function isFlagged(type,tid,idx){return !!flags[flagKey(type,tid,idx)]}
 var FLAG_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>';
+/* A flag with action:'remove' hides that item from decks on this device until the
+   content fix ships. Flags are keyed by position (type::topic::index), so after a
+   content update reconcileFlags() re-matches each flag to its item by text. */
+var GITHUB_REPO='Itaifabian/ryhtm_strip';
+function isHidden(type,tid,idx){var f=flags[flagKey(type,tid,idx)];return !!(f&&f.action==='remove')}
+function flagItemText(type,tid,idx){
+  var t=TOPICS.filter(function(x){return x.id===tid})[0];if(!t)return null;
+  var arr=type==='quiz'?t.quiz:t.flashcards;var it=arr&&arr[idx];if(!it)return null;
+  return type==='quiz'?it.q:it.front;
+}
+function reconcileFlags(){
+  var changed=false,next={};
+  Object.keys(flags).forEach(function(k){
+    var f=flags[k];
+    if(!f.excerpt||flagItemText(f.type,f.tid,f.idx)===f.excerpt){next[flagKey(f.type,f.tid,f.idx)]=f;return}
+    changed=true;
+    var t=TOPICS.filter(function(x){return x.id===f.tid})[0];
+    var arr=t?(f.type==='quiz'?t.quiz:t.flashcards):[];var found=-1;
+    (arr||[]).forEach(function(it,i){if(found<0&&(f.type==='quiz'?it.q:it.front)===f.excerpt)found=i});
+    if(found>=0){f.idx=found;next[flagKey(f.type,f.tid,found)]=f}
+    else if(!f.sent){f.stale=true;next[k]=f}  /* unsent but text changed: keep for the user to see */
+    /* sent and no longer present = already handled upstream; drop it */
+  });
+  if(changed){flags=next;saveFlags()}
+}
+try{reconcileFlags()}catch(e){}
 var flagCtx=null;
 function openFlagPanel(type,tid,idx,excerpt,topicName,chapter){
   flagCtx={type:type,tid:tid,idx:idx,excerpt:excerpt,topicName:topicName,chapter:chapter};
   var existing=flags[flagKey(type,tid,idx)];
   el('flagExcerpt').textContent=(topicName?topicName+' — ':'')+excerpt;
   el('flagNote').value=existing?existing.note:'';
+  var rs=(existing&&existing.reasons)||[];
+  Array.prototype.forEach.call(document.querySelectorAll('#flagReasons .flag-reason'),function(b){b.classList.toggle('on',rs.indexOf(b.getAttribute('data-r'))>=0)});
   el('flagRemoveBtn').style.display=existing?'inline-flex':'none';
   el('flagOverlay').classList.add('show');
-  setTimeout(function(){el('flagNote').focus()},50);
 }
 function closeFlagPanel(){el('flagOverlay').classList.remove('show');flagCtx=null}
-function saveFlagPanel(){
+function toggleFlagReason(b){b.classList.toggle('on')}
+function selectedFlagReasons(){
+  return Array.prototype.filter.call(document.querySelectorAll('#flagReasons .flag-reason.on'),function(){return true}).map(function(b){return b.getAttribute('data-r')});
+}
+function writeFlag(action){
   if(!flagCtx)return;
-  var note=el('flagNote').value.trim();
   flags[flagKey(flagCtx.type,flagCtx.tid,flagCtx.idx)]={
-    type:flagCtx.type,tid:flagCtx.tid,idx:flagCtx.idx,note:note,
+    type:flagCtx.type,tid:flagCtx.tid,idx:flagCtx.idx,note:el('flagNote').value.trim(),
+    reasons:selectedFlagReasons(),action:action,
     topicName:flagCtx.topicName,chapter:flagCtx.chapter,excerpt:flagCtx.excerpt,ts:Date.now()
   };
   saveFlags();closeFlagPanel();refreshFlagButtons();
   if(el('view-progress').classList.contains('active'))renderFlagsList();
+}
+function saveFlagPanel(){writeFlag('review')}
+function markForRemovalPanel(){
+  var wasQuiz=flagCtx&&flagCtx.type==='quiz',wasCard=flagCtx&&flagCtx.type==='flashcard';
+  writeFlag('remove');
+  /* move past the hidden item so it disappears immediately */
+  try{
+    if(wasQuiz&&quiz.list&&quiz.list.length){quiz.list.splice(quiz.pos,1);if(quiz.pos>=quiz.list.length)quiz.pos=Math.max(0,quiz.list.length-1);quiz.answered=false;if(quiz.list.length)renderQuestion()}
+    if(wasCard&&fc._pool&&fc._pool.length){nextCard()}
+  }catch(e){}
 }
 function removeFlagPanel(){
   if(!flagCtx)return;
@@ -1085,16 +1148,57 @@ function renderFlagsList(){
   el('flagsCount').textContent=items.length;
   el('flagsExportRow').style.display=items.length?'flex':'none';
   if(!items.length){host.innerHTML='<div class="flag-empty">No flags yet — click the flag icon on any question or flashcard to mark it for review.</div>';return}
+  var unsent=items.filter(function(f){return !f.sent}).length;
+  el('flagSendBtn').textContent=unsent?('Send to GitHub ('+unsent+' unsent)'):'All flags sent';
+  el('flagSendBtn').disabled=!unsent;
   host.innerHTML=items.map(function(f){
+    var badge=f.action==='remove'?'<span class="flag-badge remove">Remove</span>':'<span class="flag-badge review">Review</span>';
+    if(f.sent)badge+='<span class="flag-badge sent">Sent</span>';
+    var reasons=(f.reasons&&f.reasons.length)?' · '+f.reasons.join(', '):'';
     return '<div class="flag-row"><div class="flag-body">'+
-      '<div class="flag-meta">'+esc(f.chapter||'')+' · '+esc(f.topicName||f.tid)+' · '+(f.type==='quiz'?'Quiz':'Flashcard')+' · '+new Date(f.ts).toLocaleDateString()+'</div>'+
+      '<div class="flag-meta">'+badge+esc(f.chapter||'')+' · '+esc(f.topicName||f.tid)+' · '+(f.type==='quiz'?'Quiz':'Flashcard')+' · '+new Date(f.ts).toLocaleDateString()+esc(reasons)+(f.stale?' · content changed':'')+'</div>'+
       '<div class="flag-excerpt">'+esc((f.excerpt||'').slice(0,140))+((f.excerpt||'').length>140?'…':'')+'</div>'+
       (f.note?'<div class="flag-note">'+esc(f.note)+'</div>':'<div class="flag-note" style="font-style:italic">No note — just flagged</div>')+
-      '</div><div class="flag-actions"><button class="btn" onclick="removeFlagFromList(\''+f.type+'\',\''+f.tid+'\','+f.idx+')">Remove</button></div></div>';
+      '</div><div class="flag-actions"><button class="btn" onclick="removeFlagFromList(\''+f.type+'\',\''+f.tid+'\','+f.idx+')">'+(f.action==='remove'?'Restore':'Clear')+'</button></div></div>';
   }).join('');
 }
 function removeFlagFromList(type,tid,idx){
   delete flags[flagKey(type,tid,idx)];saveFlags();renderFlagsList();refreshFlagButtons();
+}
+/* Opens a pre-filled GitHub issue with unsent flags (no server, no token in the app).
+   Batches to stay under URL-length limits; tap again to send the rest. */
+var lastSentBatch=null;
+function sendFlagsToGitHub(){
+  var unsent=Object.keys(flags).map(function(k){return flags[k]}).filter(function(f){return !f.sent}).sort(function(a,b){return a.ts-b.ts});
+  if(!unsent.length)return;
+  var day=new Date().toISOString().slice(0,10);
+  function build(batch){
+    var lines=batch.map(function(f){return JSON.stringify({type:f.type,tid:f.tid,idx:f.idx,action:f.action||'review',reasons:f.reasons||[],note:f.note||'',text:(f.excerpt||'').slice(0,300)})});
+    var body='Flags sent from the app ('+batch.length+' items). Process per docs/FLAGS_WORKFLOW.md.\n\n```flags\n'+lines.join('\n')+'\n```\n';
+    var rm=batch.filter(function(f){return f.action==='remove'}).length;
+    var title='App flags '+day+' — '+batch.length+' items ('+rm+' remove)';
+    return 'https://github.com/'+GITHUB_REPO+'/issues/new?labels=flags&title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+  }
+  var batch=[];
+  for(var i=0;i<unsent.length;i++){batch.push(unsent[i]);if(build(batch).length>7000){batch.pop();break}}
+  if(!batch.length)batch=[unsent[0]];
+  var url=build(batch);
+  var now=Date.now();
+  batch.forEach(function(f){f.sent=now});
+  saveFlags();lastSentBatch=now;
+  window.open(url,'_blank');
+  var left=unsent.length-batch.length;
+  var b=el('flagSendBanner');
+  b.innerHTML='Opened GitHub with '+batch.length+' flag'+(batch.length>1?'s':'')+'. Tap “Submit new issue” there.'+
+    (left?' '+left+' more to send — tap Send again after submitting.':'')+
+    ' <button class="btn" onclick="undoLastFlagSend()">Not submitted — undo</button>';
+  b.style.display='flex';
+  renderFlagsList();
+}
+function undoLastFlagSend(){
+  if(!lastSentBatch)return;
+  Object.keys(flags).forEach(function(k){if(flags[k].sent===lastSentBatch)delete flags[k].sent});
+  saveFlags();lastSentBatch=null;el('flagSendBanner').style.display='none';renderFlagsList();
 }
 function exportFlagsFile(){
   var payload=JSON.stringify({version:1,exportedAt:new Date().toISOString(),flags:flags},null,2);
@@ -1207,7 +1311,7 @@ function fullFlashPool(){
   TOPICS.forEach(function(t){
     if(chapMode){if(t.chapter!==chap)return;}
     else if(fc.topic!=='all'&&t.id!==fc.topic)return;
-    t.flashcards.forEach(function(c,i){pool.push({tid:t.id,i:i,tname:t.name,front:c.front,back:c.back})});
+    t.flashcards.forEach(function(c,i){if(isHidden('flashcard',t.id,i))return;pool.push({tid:t.id,i:i,tname:t.name,front:c.front,back:c.back})});
   });
   return pool;
 }
@@ -1350,7 +1454,7 @@ function startMixedQuiz(){
   var pool=[];
   TOPICS.forEach(function(t){
     if(checked.indexOf(t.chapter)<0)return;
-    t.quiz.forEach(function(q,i){pool.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
+    t.quiz.forEach(function(q,i){if(isHidden('quiz',t.id,i))return;pool.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
   });
   if(!pool.length){alert('No questions available for the selected chapters.');return}
   pool=prioritizeList(pool);
@@ -1377,7 +1481,7 @@ function startQuiz(tid){
     if(idSet){if(idSet.indexOf(t.id)<0)return;}
     else if(chapMode){if(t.chapter!==chap)return;}
     else if(tid!=='all'&&t.id!==tid)return;
-    t.quiz.forEach(function(q,i){list.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
+    t.quiz.forEach(function(q,i){if(isHidden('quiz',t.id,i))return;list.push({tid:t.id,tname:t.name,qid:t.id+'::'+i,qidx:i,q:q.q,options:q.options.slice(),answer:q.answer,explain:q.explain,ref:q.ref,img:q.img,imgCaption:q.imgCaption,rtl:q.rtl})});
   });
   list=prioritizeList(list);
   quiz={list:list,pos:0,score:0,answered:false,perTopic:{}};
@@ -1933,7 +2037,7 @@ function renderProgress(){
   var fcPct=cardsTotal?Math.round(cardsKnown/cardsTotal*100):0;
   var qPct=quizTotal?Math.round(quizCorrect/quizTotal*100):null;
   var due=dueForReviewCount();
-  var cardsDue=cardDueCount(TOPICS.reduce(function(a,t){t.flashcards.forEach(function(c,i){a.push({tid:t.id,i:i})});return a},[]));
+  var cardsDue=cardDueCount(TOPICS.reduce(function(a,t){t.flashcards.forEach(function(c,i){if(!isHidden('flashcard',t.id,i))a.push({tid:t.id,i:i})});return a},[]));
   el('progStats').innerHTML=
     '<div class="stat-tile"><div class="n">'+fcPct+'%</div><div class="l">Flashcards known · '+cardsKnown+' / '+cardsTotal+'</div></div>'+
     '<div class="stat-tile"><div class="n">'+(qPct===null?'—':qPct+'%')+'</div><div class="l">Quiz accuracy · '+quizCorrect+' / '+quizTotal+' answered</div></div>'+

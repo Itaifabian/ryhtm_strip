@@ -33,10 +33,12 @@ scripts/
   validate.js    Structural integrity gate (run before every PR) — must know about every
                  topic array (TOPICS/RHEUM_TOPICS/RHEUM_EXTRA_TOPICS/PULM_TOPICS/ID_TOPICS/ALLERGY_TOPICS/GERIATRIC_TOPICS/...);
                  when adding a new chapter's topic array, add a matching countTopics(...) call here.
+  locate_flags.py  Maps flags from a GitHub "flags" issue to source locations
   serve.js       Local preview server + AI Studio's /api/generate and /api/extract-text
 docs/
   AUTHORING_GUIDE.md    Data schemas with examples
   CONTENT_WORKFLOW.md   The "drop a lecture → reviewed PR" flow
+  FLAGS_WORKFLOW.md     Phone flags → GitHub issue → reviewed PR (scripts/locate_flags.py)
   prompts/              Copy-paste prompt templates
 dist/index.html         Built output (do not hand-edit)
 ```
