@@ -5246,4 +5246,1296 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0044-approach-to-the-patient-with-a-heart-murmur",
+ "name": "Approach to the Patient with a Heart Murmur (Harrison Ch 44)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 44: Approach to the Patient with a Heart Murmur.",
+ "chapter": "Cardiology",
+ "flashcards": [
+  {
+   "front": "Murmur grade 3 vs grade 4?",
+   "back": "Grade 3: loud, no thrill. Grade 4: loud with a palpable thrill"
+  },
+  {
+   "front": "Significance of murmur grade >=3?",
+   "back": "Usually important structural heart disease with high-velocity flow"
+  },
+  {
+   "front": "Why is a small VSD loud but an ASD shunt silent?",
+   "back": "Loudness reflects velocity: restrictive VSD is high-velocity; ASD left-to-right flow is low-velocity"
+  },
+  {
+   "front": "Acute severe MR murmur?",
+   "back": "Early decrescendo systolic murmur (noncompliant left atrium)"
+  },
+  {
+   "front": "Causes of acute severe MR?",
+   "back": "Papillary muscle rupture after MI, chordal rupture (MVP), endocarditis, blunt chest trauma"
+  },
+  {
+   "front": "Papillary muscle rupture: timing, MI type, muscle?",
+   "back": "2-7 days after inferior/posterior/lateral MI; posteromedial 6-10x more often"
+  },
+  {
+   "front": "How often is the murmur absent in papillary muscle rupture?",
+   "back": "Up to 50%"
+  },
+  {
+   "front": "Post-MI VSR vs MR?",
+   "back": "VSR: holosystolic with LSB thrill in nearly all, O2 step-up. MR: tall v wave on wedge tracing"
+  },
+  {
+   "front": "New murmur after MI?",
+   "back": "Transthoracic echocardiography"
+  },
+  {
+   "front": "Carvallo sign?",
+   "back": "TR murmur increases with inspiration"
+  },
+  {
+   "front": "Gallavardin effect?",
+   "back": "AS murmur sounds higher-pitched and musical at the apex"
+  },
+  {
+   "front": "Auscultatory signs of severe AS?",
+   "back": "Soft or absent A2, paradoxical S2 split, S4, late-peaking murmur, thrill/grade >=4 with normal output"
+  },
+  {
+   "front": "Carotid pulse in severe AS vs HOCM?",
+   "back": "AS: parvus et tardus. HOCM: brisk, occasionally bisferiens"
+  },
+  {
+   "front": "Ejection click in a young patient with AS?",
+   "back": "Flexible noncalcified bicuspid valve; obstruction at valvular level"
+  },
+  {
+   "front": "Maneuvers that increase the HOCM murmur?",
+   "back": "Valsalva, standing, vasodilators, inotropes (reduced preload/afterload or increased contractility)"
+  },
+  {
+   "front": "Maneuvers that decrease the HOCM murmur?",
+   "back": "Squatting, passive leg raising, volume, vasopressors, beta-blockers"
+  },
+  {
+   "front": "MVP with standing vs squatting?",
+   "back": "Standing: click earlier, murmur longer and louder. Squatting: click later, murmur shorter and softer"
+  },
+  {
+   "front": "How to distinguish HOCM from MVP at bedside?",
+   "back": "LVH in HOCM vs nonejection click in MVP"
+  },
+  {
+   "front": "Posterior vs anterior mitral leaflet prolapse radiation?",
+   "back": "Posterior: anterior jet, radiates to base (mimics AS). Anterior: radiates to axilla/back"
+  },
+  {
+   "front": "Primum ASD clues?",
+   "back": "MR from cleft anterior mitral leaflet and left axis deviation"
+  },
+  {
+   "front": "Fixed split S2 with midsystolic LUSB murmur?",
+   "back": "Atrial septal defect"
+  },
+  {
+   "front": "Causes of reversed splitting of S2?",
+   "back": "Severe AS, HOCM, LBBB, RV pacing, acute ischemia"
+  },
+  {
+   "front": "Chronic MR murmur?",
+   "back": "Holosystolic plateau at apex radiating to axilla"
+  },
+  {
+   "front": "VSD murmur?",
+   "back": "Holosystolic at mid-lower LSB with thrill; no change with inspiration"
+  },
+  {
+   "front": "Best position to hear AR?",
+   "back": "Leaning forward at end expiration"
+  },
+  {
+   "front": "AR radiating to left vs right sternal border?",
+   "back": "Left: primary valve disease. Right: aortic root disease (Marfan, ectasia, AS spondylitis, dissection)"
+  },
+  {
+   "front": "Peripheral signs of chronic severe AR?",
+   "back": "Wide pulse pressure, Corrigan water-hammer pulse, Quincke nail-bed pulsations"
+  },
+  {
+   "front": "Austin Flint vs MS rumble with amyl nitrite?",
+   "back": "Austin Flint softer and shorter; MS unchanged or louder"
+  },
+  {
+   "front": "Acute severe AR murmur?",
+   "back": "Short, low-pitched; no peripheral signs; soft S1 from premature mitral closure"
+  },
+  {
+   "front": "Graham Steell murmur?",
+   "back": "Pulmonic regurgitation from pulmonary hypertension; LUSB, louder with inspiration"
+  },
+  {
+   "front": "MS severity clue on auscultation?",
+   "back": "Shorter S2-to-opening snap interval = higher LA pressure = more severe"
+  },
+  {
+   "front": "Presystolic accentuation in MS?",
+   "back": "Late increase in transmitral flow with atrial contraction; absent in atrial fibrillation"
+  },
+  {
+   "front": "Large PDA with Eisenmenger physiology?",
+   "back": "Differential cyanosis of the lower extremities"
+  },
+  {
+   "front": "Benign continuous murmurs?",
+   "back": "Cervical venous hum and mammary souffle of pregnancy"
+  },
+  {
+   "front": "Systolic murmur louder after a PVC?",
+   "back": "Aortic stenosis (MR unchanged)"
+  },
+  {
+   "front": "Indications for TTE in murmurs?",
+   "back": "Early, late or holosystolic; midsystolic >=3; grade 1-2 with other findings; any diastolic; continuous (not hum/souffle)"
+  },
+  {
+   "front": "Discordant clinical and echo findings in MR or AR?",
+   "back": "Cardiac MRI (has largely replaced catheterization)"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 67-year-old man is hospitalized on day 4 after an inferior-posterior myocardial infarction. He develops sudden dyspnea, hypotension and pulmonary edema. A soft early systolic murmur is heard at the apex with no thrill. Which of the following is the most appropriate next step?",
+   "options": [
+    "Urgent transthoracic echocardiography",
+    "Repeat auscultation in 24 hours",
+    "Exercise stress testing",
+    "Outpatient cardiology referral",
+    "Start a β-blocker and observe"
+   ],
+   "answer": 0,
+   "explain": "A new murmur after MI calls for TTE. Papillary muscle rupture typically follows an inferior, posterior or lateral MI 2–7 days after presentation, often with hypotension and pulmonary edema. Mechanical complications need aggressive stabilization and prompt surgical referral. (B: Delay is dangerous with a possible mechanical complication.) (C: Stress testing is contraindicated with acute decompensation.) (D: This is an emergency.) (E: Medication doesn't define the lesion, which needs surgery.) Source: Ch 0044, Early Systolic Murmurs"
+  },
+  {
+   "q": "A 22-year-old college athlete has a grade 2/6 midsystolic murmur at the left sternal border found on a preparticipation exam. He has no symptoms. The rest of the cardiac exam, including S2 splitting and carotid pulses, is normal, and there are no other signs of heart disease. Which of the following is the most appropriate next step?",
+   "options": [
+    "Transthoracic echocardiography",
+    "Cardiac MRI",
+    "Exercise stress testing",
+    "No further testing",
+    "Transesophageal echocardiography"
+   ],
+   "answer": 3,
+   "explain": "An isolated grade 1–2 midsystolic murmur without symptoms or signs of heart disease is most often benign. No further evaluation, including TTE, is needed. (A: TTE isn't recommended for this group.) (B: Advanced imaging adds nothing here.) (C: Stress testing adds nothing here.) (E: TEE adds nothing here.) Source: Ch 0044, Midsystolic Murmurs; Echocardiography"
+  },
+  {
+   "q": "A 74-year-old woman has a grade 3/6 crescendo-decrescendo midsystolic murmur at the second right intercostal space radiating to the carotids. She denies symptoms. Which of the following is the most appropriate next step?",
+   "options": [
+    "No further testing, since she is asymptomatic",
+    "Transthoracic echocardiography",
+    "Coronary angiography",
+    "Repeat examination in 5 years",
+    "Start a vasodilator"
+   ],
+   "answer": 1,
+   "explain": "Echocardiography is indicated for midsystolic murmurs of grade 3 or louder. A basal crescendo-decrescendo murmur radiating to the carotids suggests AS. (A: Grade ≥3 warrants imaging even without symptoms.) (C: Angiography isn't the initial test.) (D: Waiting 5 years is inappropriate for a grade 3 murmur.) (E: There's no indication for a vasodilator.) Source: Ch 0044, Echocardiography"
+  },
+  {
+   "q": "A 50-year-old man has a soft, high-pitched decrescendo diastolic murmur along the left sternal border, heard only with him leaning forward at end expiration. He has no symptoms. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance; soft murmurs are benign",
+    "Exercise stress testing",
+    "Chest radiograph only",
+    "Repeat auscultation in 1 year",
+    "Transthoracic echocardiography"
+   ],
+   "answer": 4,
+   "explain": "Echocardiography is indicated for any diastolic murmur. This one is typical of chronic AR. (A: Diastolic murmurs are never assumed benign.) (B: Stress testing isn't the indicated evaluation.) (C: A radiograph doesn't assess valve function.) (D: Delay isn't appropriate.) Source: Ch 0044, Early Diastolic Murmurs; Echocardiography"
+  },
+  {
+   "q": "A 19-year-old man has a systolic murmur between the left lower sternal border and the apex. ECG shows left ventricular hypertrophy, and the carotid upstroke is brisk. Which of the following maneuvers would most likely increase the intensity of this murmur?",
+   "options": [
+    "Squatting",
+    "Passive leg raising",
+    "Standing from a squatting position",
+    "Sustained handgrip",
+    "Intravenous phenylephrine"
+   ],
+   "answer": 2,
+   "explain": "A murmur with LVH and a brisk carotid upstroke suggests HOCM. Lowering preload (standing, Valsalva) increases outflow obstruction and murmur intensity. (A: Squatting raises preload and afterload, softening the murmur.) (B: Leg raising raises preload, softening the murmur.) (D: Raising afterload softens it or leaves it unchanged.) (E: A vasopressor raises afterload, softening it or leaving it unchanged.) Source: Ch 0044, Midsystolic Murmurs (HOCM); Changes in Venous Return"
+  },
+  {
+   "q": "A 24-year-old woman has a grade 3/6 systolic murmur at the left lower sternal border that gets louder with the Valsalva maneuver. ECG shows LVH. She has no click. Which of the following is the most appropriate next step to confirm the diagnosis?",
+   "options": [
+    "Cardiac catheterization",
+    "Chest radiograph",
+    "Holter monitor",
+    "Transthoracic echocardiography",
+    "Exercise stress test"
+   ],
+   "answer": 3,
+   "explain": "The HOCM murmur increases with Valsalva. LVH and no click favor HOCM over MVP, and the diagnosis is confirmed by TTE. (A: Catheterization isn't needed for diagnosis.) (B: A radiograph doesn't diagnose HOCM.) (C: Holter assesses arrhythmia, not anatomy.) (E: An exercise test doesn't confirm the structural diagnosis.) Source: Ch 0044, Midsystolic Murmurs (HOCM)"
+  },
+  {
+   "q": "A 9-year-old boy has a continuous murmur in the right supraclavicular fossa. It disappears with firm pressure over the right internal jugular vein and when he turns his head. He is well. Which of the following is the most appropriate management?",
+   "options": [
+    "Transthoracic echocardiography",
+    "Cardiac MRI",
+    "Referral for ductus closure",
+    "Reassurance",
+    "CT angiography of the neck"
+   ],
+   "answer": 3,
+   "explain": "A continuous venous hum in healthy children, heard in the right supraclavicular fossa and abolished by jugular pressure or head turning, is benign. Continuous murmurs from a venous hum don't require echocardiography. (A: Echo isn't needed for a venous hum.) (B: MRI isn't needed.) (C: A PDA murmur is heard lateral to the upper left sternal border and isn't abolished by jugular compression.) (E: Neck imaging isn't indicated.) Source: Ch 0044, Continuous Murmurs; Echocardiography"
+  },
+  {
+   "q": "A 78-year-old man has a systolic murmur heard at the base and apex. During auscultation he has a premature ventricular contraction, and the murmur is noticeably louder in the beat after it. Which of the following is the most likely cause?",
+   "options": [
+    "Chronic mitral regurgitation",
+    "Aortic stenosis",
+    "Ventricular septal defect",
+    "Tricuspid regurgitation",
+    "Mitral valve prolapse"
+   ],
+   "answer": 1,
+   "explain": "LV outflow obstruction murmurs such as AS get louder in the beat after a premature beat (more filling plus postextrasystolic potentiation). The MR murmur doesn't change. This helps when an AS murmur radiates to the apex (Gallavardin effect). (A: Chronic MR intensity stays constant after a PVC.) (C: The post-PVC behavior described is specific to outflow obstruction.) (D: TR is right-sided and louder with inspiration.) (E: MVP changes with preload maneuvers, not after a PVC.) Source: Ch 0044, Post-Premature Ventricular Contraction"
+  },
+  {
+   "q": "A 35-year-old woman has a grade 2/6 midsystolic murmur at the upper left sternal border and wide splitting of S2 that doesn't change with respiration. She reports mild exertional dyspnea. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance",
+    "Repeat examination in 1 year",
+    "Cardiac catheterization",
+    "Exercise stress test",
+    "Transthoracic echocardiography"
+   ],
+   "answer": 4,
+   "explain": "Fixed S2 splitting with a grade 2–3 midsystolic murmur at the mid or upper left sternal border indicates an ASD. TTE is indicated for a grade 2–3 murmur with other signs of heart disease. (A: Fixed splitting is abnormal.) (B: Delay isn't appropriate.) (C: Catheterization isn't the initial test.) (D: Stress testing doesn't define a shunt.) Source: Ch 0044, Midsystolic Murmurs (ASD); Dynamic Auscultation"
+  },
+  {
+   "q": "A patient develops acute severe mitral regurgitation from papillary muscle rupture after a myocardial infarction. Which of the following statements is correct?",
+   "options": [
+    "A loud holosystolic murmur with a thrill is present in nearly all cases",
+    "It usually complicates anterior MI within the first 12 hours",
+    "The posteromedial papillary muscle is involved much more often than the anterolateral",
+    "The anterolateral papillary muscle is involved 6–10 times more often",
+    "Right heart catheterization shows an oxygen step-up in the right ventricle"
+   ],
+   "answer": 2,
+   "explain": "The posteromedial papillary muscle is involved 6–10 times more often than the anterolateral. Rupture usually follows inferior, posterior or lateral MI at 2–7 days, and a murmur may be absent in up to 50%. (A: A thrill in nearly all cases describes ventricular septal rupture.) (B: Rupture typically occurs at 2–7 days, mainly after nonanterior MI.) (D: It's the posteromedial muscle that predominates.) (E: An O2 step-up indicates septal rupture; MR shows a tall v wave.) Source: Ch 0044, Early Systolic Murmurs"
+  },
+  {
+   "q": "A 61-year-old man with chronic severe aortic regurgitation has a low-pitched mid-diastolic rumble at the apex with no opening snap. Which response to inhaled amyl nitrite would support an Austin Flint murmur rather than mitral stenosis?",
+   "options": [
+    "The rumble becomes shorter and softer",
+    "The rumble becomes louder",
+    "An opening snap appears",
+    "Presystolic accentuation develops",
+    "The rumble is unchanged"
+   ],
+   "answer": 0,
+   "explain": "Lowering afterload with amyl nitrite shortens and softens the Austin Flint murmur of severe AR. The MS rumble stays the same or gets louder because of increased cardiac output and mitral flow. (B: Getting louder fits MS.) (C: Austin Flint lacks an opening snap; the drug doesn't create one.) (D: Presystolic accentuation is an MS feature in sinus rhythm.) (E: Staying unchanged fits MS.) Source: Ch 0044, Early Diastolic Murmurs; Alterations of Systemic Vascular Resistance"
+  },
+  {
+   "q": "A 58-year-old woman with chronic mitral regurgitation has symptoms out of proportion to the moderate regurgitation estimated on transthoracic echo. Which test is most appropriate to quantify regurgitant volume and fraction?",
+   "options": [
+    "Repeat transthoracic echocardiography in 1 year",
+    "Exercise ECG",
+    "Coronary CT angiography",
+    "Cardiac magnetic resonance imaging",
+    "Chest radiograph"
+   ],
+   "answer": 3,
+   "explain": "Cardiac MRI quantifies regurgitant fraction and volume. It has largely replaced catheterization when clinical and echo findings disagree in regurgitant valve disease. (A: Delay leaves the discrepancy unresolved.) (B: An exercise ECG doesn't quantify regurgitation.) (C: Coronary CTA assesses coronaries before surgery.) (E: A radiograph doesn't quantify regurgitation.) Source: Ch 0044, Other Cardiac Testing"
+  },
+  {
+   "q": "A 29-year-old woman at 30 weeks' gestation has a grade 2/6 midsystolic murmur at the left sternal border. She has no symptoms, and the rest of the exam is normal. Which of the following is the most appropriate management?",
+   "options": [
+    "Transthoracic echocardiography",
+    "Reassurance; this is likely a flow murmur from increased blood flow",
+    "Transesophageal echocardiography",
+    "Cardiac MRI",
+    "Start a β-blocker"
+   ],
+   "answer": 1,
+   "explain": "A grade 1–2 midsystolic murmur at the left sternal border is common in pregnancy from accelerated flow. Without symptoms or signs of heart disease, no echocardiography is needed. (A: TTE isn't needed for an isolated benign murmur.) (C: TEE isn't needed.) (D: MRI isn't needed.) (E: There's no indication for a β-blocker.) Source: Ch 0044, Midsystolic Murmurs; Echocardiography"
+  },
+  {
+   "q": "A 40-year-old tall man has a decrescendo diastolic murmur heard best along the right sternal border. Which of the following is the most likely mechanism of his aortic regurgitation?",
+   "options": [
+    "Rheumatic leaflet deformity",
+    "Endocarditis of a bicuspid valve",
+    "Leaflet prolapse",
+    "Congenital bicuspid valve without root dilation",
+    "Aortic root disease such as Marfan syndrome with aneurysm"
+   ],
+   "answer": 4,
+   "explain": "When AR comes from aortic root disease (Marfan syndrome with aneurysm, annuloaortic ectasia, ankylosing spondylitis, dissection), the diastolic murmur may radiate along the right sternal border. (A: Primary valve disease radiates along the left sternal border.) (B: Endocarditis is also primary valve disease.) (C: Prolapse is also primary valve disease.) (D: A bicuspid valve is also primary valve disease.) Source: Ch 0044, Early Diastolic Murmurs"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0047-dysphagia",
+ "name": "Dysphagia (Harrison Ch 47)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 47: Dysphagia.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "Aphagia?",
+   "back": "Inability to swallow; usually complete obstruction from a food bolus or foreign body"
+  },
+  {
+   "front": "Odynophagia indicates?",
+   "back": "Painful swallowing, usually mucosal ulceration (infection, pills)"
+  },
+  {
+   "front": "Globus pharyngeus?",
+   "back": "Lump sensation in the neck that doesn't interfere with swallowing and may be relieved by it"
+  },
+  {
+   "front": "Hallmarks of oropharyngeal dysphagia?",
+   "back": "Nasal regurgitation and coughing/aspiration with swallowing"
+  },
+  {
+   "front": "Cranial nerves for the oral cavity, tongue and pharynx?",
+   "back": "Oral: V, VII. Tongue: XII. Pharynx: IX, X"
+  },
+  {
+   "front": "Esophageal excitatory vs inhibitory neurotransmitters?",
+   "back": "Excitatory: acetylcholine, substance P. Inhibitory: VIP, nitric oxide"
+  },
+  {
+   "front": "Lumen diameter at which solid dysphagia becomes common?",
+   "back": "<13 mm"
+  },
+  {
+   "front": "Structural vs propulsive dysphagia?",
+   "back": "Structural: oversized bolus or narrow lumen. Propulsive: abnormal peristalsis or sphincter relaxation"
+  },
+  {
+   "front": "Most common categories of oropharyngeal dysphagia?",
+   "back": "Iatrogenic (head/neck surgery, radiation), neurologic (stroke, Parkinson, ALS), structural"
+  },
+  {
+   "front": "Zenker diverticulum features?",
+   "back": "Elderly; dysphagia, regurgitation of food debris, aspiration, halitosis"
+  },
+  {
+   "front": "Zenker diverticulum mechanism and location?",
+   "back": "Poor cricopharyngeal opening raises hypopharyngeal pressure; pulsion diverticulum above cricopharyngeus at Killian dehiscence"
+  },
+  {
+   "front": "Cricopharyngeal bar caution?",
+   "back": "Common, often asymptomatic radiographic finding; exclude other causes before treating"
+  },
+  {
+   "front": "Test of choice for oropharyngeal dysphagia?",
+   "back": "Videofluoroscopic (rapid-sequence) swallow study"
+  },
+  {
+   "front": "Most common structural causes of esophageal dysphagia?",
+   "back": "Schatzki ring, eosinophilic esophagitis, peptic stricture"
+  },
+  {
+   "front": "Achalasia defining features?",
+   "back": "Absent peristalsis and failure of deglutitive LES relaxation"
+  },
+  {
+   "front": "Distal esophageal spasm features?",
+   "back": "Disordered esophageal body motility with normal LES function"
+  },
+  {
+   "front": "Scleroderma esophageal pattern?",
+   "back": "Absent contractility with severely weak LES; peptic stricture risk; mild solid dysphagia"
+  },
+  {
+   "front": "Intermittent solids-only dysphagia suggests?",
+   "back": "Structural cause (e.g., Schatzki ring)"
+  },
+  {
+   "front": "Dysphagia to solids and liquids from onset suggests?",
+   "back": "Esophageal motor disorder"
+  },
+  {
+   "front": "Dysphagia progressive over weeks to months?",
+   "back": "Concern for neoplasm"
+  },
+  {
+   "front": "Hoarseness before vs after dysphagia?",
+   "back": "Before: laryngeal primary. After: recurrent laryngeal nerve involvement by malignancy"
+  },
+  {
+   "front": "Long heartburn history then dysphagia?",
+   "back": "Peptic stricture (rarely esophageal adenocarcinoma)"
+  },
+  {
+   "front": "Typical eosinophilic esophagitis patient?",
+   "back": "Atopic white man aged 20-40"
+  },
+  {
+   "front": "Oropharyngeal dysphagia: liquids or solids worse?",
+   "back": "Often liquids worse than solids"
+  },
+  {
+   "front": "Single most useful test for esophageal dysphagia?",
+   "back": "Upper endoscopy (visualization, biopsy, dilation)"
+  },
+  {
+   "front": "Unexplained dysphagia with normal-appearing esophagus?",
+   "back": "Obtain esophageal biopsies routinely (EoE)"
+  },
+  {
+   "front": "Why endoscopy before manometry in suspected achalasia?",
+   "back": "Neoplastic and inflammatory conditions can mimic achalasia or spasm"
+  },
+  {
+   "front": "When is cricopharyngeal myotomy helpful?",
+   "back": "Symptomatic cricopharyngeal bar, Zenker diverticulum, oculopharyngeal muscular dystrophy"
+  },
+  {
+   "front": "Limitation of gastrostomy in neurologic dysphagia?",
+   "back": "Doesn't protect against aspiration of saliva or refluxed gastric contents"
+  },
+  {
+   "front": "Treatment of most structural esophageal dysphagia?",
+   "back": "Bougie or balloon dilation"
+  },
+  {
+   "front": "Eosinophilic esophagitis treatments?",
+   "back": "Dietary allergen elimination, PPI, swallowed topical steroids, type 2 biologics; dilation for strictures"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 72-year-old man had a left hemispheric stroke 5 days ago. Since then he coughs when drinking water, and some liquid has come out of his nose during meals. Which of the following is the most appropriate test?",
+   "options": [
+    "Upper endoscopy",
+    "Esophageal manometry",
+    "Videofluoroscopic swallow study",
+    "Barium esophagram with a tablet",
+    "Chest CT"
+   ],
+   "answer": 2,
+   "explain": "Nasal regurgitation and coughing with swallowing are hallmarks of oropharyngeal dysphagia, common after stroke. A videofluoroscopic swallow study by a swallow therapist is the procedure of choice. (A: Endoscopy is for esophageal dysphagia.) (B: Manometry evaluates esophageal motor disorders.) (D: A barium tablet study evaluates esophageal strictures and motility.) (E: CT isn't a swallowing study.) Source: Ch 0047, Diagnostic Procedures; Oral and Pharyngeal Dysphagia"
+  },
+  {
+   "q": "A 28-year-old man with asthma and allergic rhinitis has had intermittent difficulty swallowing solid foods for 3 years. He once needed emergency removal of impacted meat. He has no weight loss. Which of the following is the most appropriate next step?",
+   "options": [
+    "Barium swallow only",
+    "Esophageal manometry",
+    "Empiric PPI without testing",
+    "Videofluoroscopic swallow study",
+    "Upper endoscopy with esophageal biopsies"
+   ],
+   "answer": 4,
+   "explain": "Episodic solid dysphagia over years with food impaction in a young atopic man suggests eosinophilic esophagitis. Upper endoscopy is the single most useful test, with esophageal biopsies. (A: Barium can't obtain biopsies.) (B: Manometry is for motor disorders after endoscopy.) (C: Empiric PPI skips a diagnosis that biopsies can make.) (D: This is esophageal, not oropharyngeal, dysphagia.) Source: Ch 0047, History; Diagnostic Procedures"
+  },
+  {
+   "q": "A 45-year-old woman with unexplained intermittent solid-food dysphagia undergoes upper endoscopy. The esophageal mucosa looks completely normal, with no rings, furrows or strictures. Which of the following is the most appropriate action during the procedure?",
+   "options": [
+    "End the procedure; no further action is needed",
+    "Perform empiric dilation without biopsies",
+    "Biopsy only the stomach",
+    "Plan esophageal manometry without biopsies",
+    "Obtain esophageal mucosal biopsies"
+   ],
+   "answer": 4,
+   "explain": "Because eosinophilic esophagitis is a leading cause of dysphagia, esophageal biopsies should be obtained routinely in unexplained dysphagia, even when the mucosa looks normal. (A: Ending without biopsies could miss EoE.) (B: Empiric dilation without biopsies could miss EoE.) (C: Gastric biopsy alone doesn't sample the esophagus.) (D: Manometry before excluding EoE skips the key step.) Source: Ch 0047, Diagnostic Procedures"
+  },
+  {
+   "q": "A 52-year-old woman has 8 months of dysphagia to both solids and liquids from the onset, with regurgitation of undigested food. Which of the following is the most appropriate initial test?",
+   "options": [
+    "Esophageal manometry",
+    "Upper endoscopy",
+    "Videofluoroscopic swallow study",
+    "24-hour pH monitoring",
+    "Chest radiograph"
+   ],
+   "answer": 1,
+   "explain": "Constant dysphagia to solids and liquids suggests a motor disorder such as achalasia. Endoscopy is still the right first test, because neoplastic and inflammatory conditions can mimic achalasia or spasm. (A: Manometry follows endoscopy.) (C: The swallow study is for oropharyngeal dysphagia.) (D: pH monitoring evaluates reflux.) (E: A radiograph isn't diagnostic.) Source: Ch 0047, History; Diagnostic Procedures"
+  },
+  {
+   "q": "A 49-year-old man has dysphagia to solids and liquids. Upper endoscopy with esophageal biopsies is normal, with no mass at the gastroesophageal junction. Which of the following is the most appropriate next test?",
+   "options": [
+    "Repeat endoscopy in 1 year",
+    "Videofluoroscopic swallow study",
+    "CT of the neck",
+    "High-resolution esophageal manometry",
+    "Empiric PPI trial"
+   ],
+   "answer": 3,
+   "explain": "Manometry is done when endoscopy doesn't explain the dysphagia, or to confirm a suspected esophageal motor disorder. (A: Repeating endoscopy doesn't evaluate motility.) (B: The swallow study evaluates the oropharynx.) (C: Neck CT isn't indicated.) (E: A PPI doesn't address a suspected motor disorder.) Source: Ch 0047, Diagnostic Procedures"
+  },
+  {
+   "q": "A 78-year-old man has progressive dysphagia, regurgitation of food he ate many hours earlier, chronic cough at night, and halitosis. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Achalasia",
+    "Eosinophilic esophagitis",
+    "Zenker diverticulum",
+    "Schatzki ring",
+    "Globus pharyngeus"
+   ],
+   "answer": 2,
+   "explain": "Zenker diverticulum, typically in elderly patients, causes dysphagia with regurgitation of food debris, aspiration and halitosis. It's a pulsion diverticulum above the cricopharyngeus (Killian dehiscence). (A: Achalasia causes solid and liquid dysphagia without the pharyngeal pouch.) (B: EoE affects young atopic patients.) (D: A Schatzki ring causes intermittent solid dysphagia.) (E: Globus doesn't interfere with swallowing.) Source: Ch 0047, Oral and Pharyngeal Dysphagia"
+  },
+  {
+   "q": "A 76-year-old woman has symptomatic Zenker diverticulum confirmed on barium study, with recurrent aspiration. Which of the following treatments addresses the underlying pathophysiology?",
+   "options": [
+    "Cricopharyngeal myotomy (with diverticulum management)",
+    "Proton pump inhibitor",
+    "Swallowed topical glucocorticoid",
+    "Nasogastric tube feeding",
+    "Botulinum injection of the lower esophageal sphincter"
+   ],
+   "answer": 0,
+   "explain": "Zenker diverticulum results from limited cricopharyngeal opening. Cricopharyngeal myotomy is helpful in specific disorders, including Zenker diverticulum. (B: Acid suppression doesn't address UES dysfunction.) (C: Topical steroids treat EoE.) (D: Tube feeding doesn't treat the cause.) (E: LES botulinum targets the distal esophagus.) Source: Ch 0047, Treatment"
+  },
+  {
+   "q": "A 66-year-old man with a long smoking history has 3 months of progressive dysphagia, first for solids and now for soft foods, with a 7-kg weight loss. Over the past 2 weeks he has become hoarse. Which of the following best explains the hoarseness?",
+   "options": [
+    "Primary laryngeal cancer causing the dysphagia",
+    "Laryngopharyngeal reflux",
+    "Vocal strain from coughing",
+    "Myasthenia gravis",
+    "Recurrent laryngeal nerve involvement by a malignancy"
+   ],
+   "answer": 4,
+   "explain": "Hoarseness that follows the onset of dysphagia may come from recurrent laryngeal nerve compromise by a malignancy. Progressive dysphagia over weeks to months raises concern for cancer. (A: When the primary lesion is laryngeal, hoarseness comes before dysphagia.) (B: The progression and weight loss point to malignancy.) (C: Vocal strain doesn't explain the picture.) (D: Myasthenia causes oropharyngeal dysphagia with fatigable weakness.) Source: Ch 0047, History"
+  },
+  {
+   "q": "A 34-year-old man with HIV and a CD4 count of 40/µL has severe pain with swallowing for 1 week. Which of the following is the most likely category of cause?",
+   "options": [
+    "Schatzki ring",
+    "Achalasia",
+    "Zenker diverticulum",
+    "Opportunistic infectious esophagitis (Candida, HSV, or CMV)",
+    "Cricopharyngeal bar"
+   ],
+   "answer": 3,
+   "explain": "Odynophagia usually indicates ulceration. In AIDS or other immunocompromised states, consider opportunistic esophagitis (Candida, HSV, CMV) and tumors such as Kaposi sarcoma and lymphoma. (A: Structural lesions cause dysphagia, not prominent odynophagia.) (B: Achalasia is a motor disorder without odynophagia.) (C: Zenker is structural.) (E: A cricopharyngeal bar is structural.) Source: Ch 0047, History"
+  },
+  {
+   "q": "A 55-year-old man has intermittent solid-food dysphagia for years. Upper endoscopy shows a Schatzki ring with no other findings, and biopsies are normal. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Surgical myotomy",
+    "Esophageal dilation",
+    "Swallowed topical glucocorticoids",
+    "Botulinum toxin injection",
+    "Gastrostomy"
+   ],
+   "answer": 1,
+   "explain": "Most structural causes of esophageal dysphagia are effectively managed with bougie or balloon dilation, which can be done at the time of endoscopy. (A: Myotomy treats achalasia.) (C: Topical steroids treat EoE, and biopsies are normal.) (D: Botulinum targets motor disorders.) (E: Gastrostomy is for severe oropharyngeal dysphagia.) Source: Ch 0047, Treatment; Diagnostic Procedures"
+  },
+  {
+   "q": "A 48-year-old woman with Raynaud phenomenon, sclerodactyly and heartburn has mild difficulty swallowing solid foods. Which motility pattern is most characteristic of her condition?",
+   "options": [
+    "Absent contractility with a severely weak lower esophageal sphincter",
+    "Absent peristalsis with failed LES relaxation",
+    "Disordered body contractions with normal LES function",
+    "Hypercontractile peristalsis with a hypertensive LES",
+    "Normal manometry"
+   ],
+   "answer": 0,
+   "explain": "Scleroderma typically shows absent contractility with severe LES weakness, predisposing to peptic stricture. Despite the motor disorder, dysphagia is usually mild and for solids only. (B: Absent peristalsis with failed LES relaxation defines achalasia.) (C: Disordered contractions with a normal LES define distal esophageal spasm.) (D: This isn't the scleroderma pattern.) (E: Manometry is abnormal in scleroderma.) Source: Ch 0047, Esophageal Dysphagia; History"
+  },
+  {
+   "q": "A 63-year-old man with advanced ALS has severe oropharyngeal dysphagia and weight loss, and a gastrostomy tube is planned. Which of the following should he and his family be told about this intervention?",
+   "options": [
+    "It eliminates the risk of aspiration pneumonia",
+    "It reverses the swallowing deficit",
+    "It's contraindicated in neurologic dysphagia",
+    "It supports nutrition but doesn't protect against aspiration of saliva or refluxed gastric contents",
+    "It must be combined with cricopharyngeal myotomy"
+   ],
+   "answer": 3,
+   "explain": "Nasogastric or gastrostomy feeding can support nutrition in severe neurologic oropharyngeal dysphagia but doesn't protect against aspiration of saliva or refluxed gastric contents. (A: Aspiration risk persists.) (B: The deficit isn't reversed.) (C: Gastrostomy is an accepted option.) (E: Myotomy is usually unhelpful in neurologic dysphagia.) Source: Ch 0047, Treatment"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0049-diarrhea-and-constipation",
+ "name": "Diarrhea and Constipation (Harrison Ch 49)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 49: Diarrhea and Constipation.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "Diarrhea definition by stool weight?",
+   "back": ">200 g/day"
+  },
+  {
+   "front": "Acute, persistent, chronic diarrhea durations?",
+   "back": "Acute <2 wk; persistent 2-4 wk; chronic >4 wk"
+  },
+  {
+   "front": "Pseudodiarrhea?",
+   "back": "Frequent passage of small stools with urgency or tenesmus (IBS, proctitis)"
+  },
+  {
+   "front": "Overflow diarrhea in nursing home patients?",
+   "back": "Fecal impaction detectable on rectal exam"
+  },
+  {
+   "front": "Most common cause of acute diarrhea?",
+   "back": "Infection (>90%)"
+  },
+  {
+   "front": "Most common causes of traveler's diarrhea?",
+   "back": "Enterotoxigenic and enteroaggregative E. coli"
+  },
+  {
+   "front": "Food associations: hamburger, fried rice, mayonnaise?",
+   "back": "Hamburger: EHEC O157:H7. Fried rice: B. cereus. Mayonnaise/cream: S. aureus or Salmonella"
+  },
+  {
+   "front": "Hemochromatosis and enteric infection?",
+   "back": "Prone to invasive, even fatal Vibrio and Yersinia; avoid raw fish and seawater on wounds"
+  },
+  {
+   "front": "Most common nosocomial infectious diarrhea?",
+   "back": "Clostridioides difficile"
+  },
+  {
+   "front": "Preformed toxin diarrhea features?",
+   "back": "Onset 1-8 h, prominent vomiting, little or no fever, watery"
+  },
+  {
+   "front": "Infectious diarrhea that mimics appendicitis?",
+   "back": "Yersinia (terminal ileum)"
+  },
+  {
+   "front": "Organisms causing HUS?",
+   "back": "EHEC O157:H7 and Shigella"
+  },
+  {
+   "front": "Ischemic colitis presentation?",
+   "back": "Age >50; acute lower abdominal pain then watery then bloody diarrhea; left colon, rectum spared"
+  },
+  {
+   "front": "Indications for stool testing in acute diarrhea?",
+   "back": "Dehydration, bloody stools, fever >=38.5, >48 h, recent antibiotics, outbreaks, severe pain >50, age >=70 or immunocompromised"
+  },
+  {
+   "front": "Why avoid celiac/Crohn testing during acute enteritis?",
+   "back": "False-positive results"
+  },
+  {
+   "front": "Most common cause of persistent diarrhea?",
+   "back": "Giardia"
+  },
+  {
+   "front": "When to avoid loperamide?",
+   "back": "Febrile dysentery (and caution with QT-prolonging drugs)"
+  },
+  {
+   "front": "Bismuth subsalicylate contraindications?",
+   "back": "Immunocompromise or renal impairment (bismuth encephalopathy)"
+  },
+  {
+   "front": "Empiric antibiotics for moderate-severe febrile diarrhea?",
+   "back": "Azithromycin 500 mg once or ciprofloxacin 500 mg bid x 3-5 d"
+  },
+  {
+   "front": "Who gets antibiotics regardless of pathogen?",
+   "back": "Immunocompromised, mechanical valves or recent vascular grafts, elderly"
+  },
+  {
+   "front": "Who gets traveler's diarrhea prophylaxis?",
+   "back": "Immunocompromise, IBD, hemochromatosis, gastric achlorhydria"
+  },
+  {
+   "front": "Secretory vs osmotic diarrhea with fasting?",
+   "back": "Secretory persists; osmotic stops"
+  },
+  {
+   "front": "Stool osmotic gap formula and osmotic cutoff?",
+   "back": "290 - 2 x (stool Na + K); >50 = osmotic"
+  },
+  {
+   "front": "Bile acid diarrhea prevalence and diagnosis?",
+   "back": "~40% of unexplained chronic diarrhea; radiolabeled bile acid retention test, serum 7aC4, fecal bile acids"
+  },
+  {
+   "front": "VIPoma syndrome?",
+   "back": "Watery diarrhea (often >3 L/d), hypokalemia, achlorhydria"
+  },
+  {
+   "front": "Medullary thyroid cancer diarrhea treatment?",
+   "back": "Prostaglandin inhibitor (indomethacin)"
+  },
+  {
+   "front": "ARB associated with sprue-like enteropathy?",
+   "back": "Olmesartan"
+  },
+  {
+   "front": "Fecal fat in pancreatic insufficiency vs small bowel disease?",
+   "back": "Pancreatic often >32 g/d; small bowel 15-25 g/d; rapid transit up to 14 g/d"
+  },
+  {
+   "front": "Microscopic colitis risk factors and diagnosis?",
+   "back": "Middle-aged women; NSAIDs, statins, PPIs, SSRIs; biopsy of normal-appearing colon"
+  },
+  {
+   "front": "Microscopic colitis treatment?",
+   "back": "Budesonide, bismuth, loperamide, or bile acid sequestrants"
+  },
+  {
+   "front": "Abetalipoproteinemia features?",
+   "back": "Fat malabsorption, acanthocytes, ataxia, retinitis pigmentosa"
+  },
+  {
+   "front": "Factitious diarrhea stool osmolality clues?",
+   "back": "Very low: added water. Very high: added urine"
+  },
+  {
+   "front": "Suspected IBS: test to exclude IBD/microscopic colitis?",
+   "back": "Flexible sigmoidoscopy with colorectal biopsies"
+  },
+  {
+   "front": "Eluxadoline risk?",
+   "back": "Sphincter of Oddi spasm and pancreatitis, especially post-cholecystectomy"
+  },
+  {
+   "front": "Antimotility agents in severe IBD?",
+   "back": "Avoid; may precipitate toxic megacolon"
+  },
+  {
+   "front": "Constipation with weight loss, bleeding or anemia?",
+   "back": "Colonoscopy"
+  },
+  {
+   "front": "Melanosis coli indicates?",
+   "back": "Anthraquinone laxative use (senna, cascara)"
+  },
+  {
+   "front": "Secretagogue laxatives and targets?",
+   "back": "Lubiprostone (ClC-2), linaclotide/plecanatide (GC-C agonists), tenapanor (NHE3 inhibitor)"
+  },
+  {
+   "front": "Absent rectoanal inhibitory reflex?",
+   "back": "Hirschsprung disease (also enlarged rectum)"
+  },
+  {
+   "front": "Treatment of pelvic floor dyssynergia?",
+   "back": "Biofeedback (70-80% success at 3 months)"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 34-year-old woman has 2 days of frequent bloody stools, cramping abdominal pain and a temperature of 39.1°C (102.4°F). She is mildly orthostatic. Which of the following is the most appropriate management?",
+   "options": [
+    "Loperamide and observation",
+    "Colonoscopy with biopsies today",
+    "Bismuth subsalicylate alone",
+    "Oral or IV rehydration, stool microbiologic testing, and avoidance of antimotility agents",
+    "Celiac serologies"
+   ],
+   "answer": 3,
+   "explain": "Overtly bloody stools, fever ≥38.5°C and dehydration are indications for stool microbiologic studies. Fluid and electrolyte replacement is central. Antimotility agents should be avoided in febrile dysentery, which they may prolong. (A: Loperamide is contraindicated in febrile dysentery.) (B: Endoscopy has little role in acute diarrhea except in immunocompromised patients.) (C: Bismuth alone doesn't address the evaluation.) (E: There's no indication for serologies during acute enteritis.) Source: Ch 0049, Approach to the Patient: Acute Diarrhea; Treatment: Acute Diarrhea"
+  },
+  {
+   "q": "A 26-year-old man has had watery diarrhea for 1 day, 4 stools daily, with no blood or fever. He is drinking well and is not orthostatic. He takes no medications and hasn't traveled. Which of the following is the most appropriate management?",
+   "options": [
+    "Oral fluid and electrolyte replacement without stool testing",
+    "Stool multiplex PCR panel",
+    "Empiric ciprofloxacin for 5 days",
+    "Flexible sigmoidoscopy",
+    "Stool ova and parasites ×3"
+   ],
+   "answer": 0,
+   "explain": "Most acute diarrhea is mild and self-limited and doesn't justify diagnostic or drug interventions. Fluid replacement alone may suffice. (B: None of the testing indications are present (dehydration, blood, fever ≥38.5°C, >48 h, antibiotics, age ≥70, immunocompromise).) (C: Antibiotics are for moderate–severe febrile illness.) (D: Endoscopy isn't indicated.) (E: Testing isn't indicated.) Source: Ch 0049, Approach to the Patient: Acute Diarrhea"
+  },
+  {
+   "q": "A 31-year-old woman returned from a 2-week mountain backpacking trip 3 weeks ago, where she drank stream water. She now has persistent bloating, flatulence and loose, mushy stools without blood or fever. Which of the following is a reasonable, cost-effective approach?",
+   "options": [
+    "Colonoscopy",
+    "Empiric ciprofloxacin",
+    "Empiric metronidazole for likely giardiasis",
+    "Lactose breath test",
+    "Loperamide only"
+   ],
+   "answer": 2,
+   "explain": "A therapeutic trial is often definitive and cost-effective. Bloating and diarrhea since a backpacking trip warrant metronidazole for likely giardiasis, the most common cause of persistent diarrhea. (A: Colonoscopy isn't indicated at this stage.) (B: Ciprofloxacin doesn't treat Giardia.) (D: The history points to Giardia.) (E: Loperamide alone leaves the infection untreated.) Source: Ch 0049, Approach to the Patient: Chronic Diarrhea; Acute Diarrhea (persistent)"
+  },
+  {
+   "q": "Several people develop abrupt, intense vomiting with watery diarrhea and no fever about 2 hours after a picnic where cream-filled pastries sat in the sun. Which mechanism is most likely?",
+   "options": [
+    "Invasive Shigella infection",
+    "Enterohemorrhagic E. coli cytotoxin",
+    "Giardia enteroadherence",
+    "Norovirus",
+    "Preformed Staphylococcus aureus toxin"
+   ],
+   "answer": 4,
+   "explain": "Abrupt vomiting with minimal or no fever within hours of eating suggests a preformed toxin. S. aureus comes from mayonnaise or creams (incubation 1–8 h). (A: Invasive organisms cause high fever and dysentery after a longer incubation.) (B: EHEC incubates 12–72 h with bloody diarrhea.) (C: Giardia incubates 1–8 days.) (D: Norovirus incubates 1–3 days.) Source: Ch 0049, Table 49-2; Infectious Agents"
+  },
+  {
+   "q": "Which of the following travelers to a high-risk country is the best candidate for antibiotic prophylaxis against traveler's diarrhea?",
+   "options": [
+    "A healthy 25-year-old student",
+    "A 40-year-old man with hemochromatosis",
+    "A 60-year-old woman with controlled hypertension",
+    "A 35-year-old woman on oral contraceptives",
+    "A 50-year-old man with well-controlled asthma"
+   ],
+   "answer": 1,
+   "explain": "Prophylaxis is indicated only for travelers in whom diarrhea would be especially likely or serious: immunocompromise, IBD, hemochromatosis, or gastric achlorhydria. (A: Healthy travelers don't need prophylaxis.) (C: Controlled hypertension isn't an indication.) (D: Oral contraceptives aren't an indication.) (E: Controlled asthma isn't an indication.) Source: Ch 0049, Treatment: Acute Diarrhea"
+  },
+  {
+   "q": "A 58-year-old woman taking sertraline and omeprazole has 4 months of painless watery diarrhea, including at night. Stool studies are negative, celiac serology is negative, and colonoscopy shows normal-appearing mucosa. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance and diagnosis of IBS",
+    "Capsule endoscopy",
+    "Repeat colonoscopy in 1 year",
+    "Random colonic mucosal biopsies (if not obtained)",
+    "Fecal elastase"
+   ],
+   "answer": 3,
+   "explain": "Microscopic colitis causes chronic watery diarrhea, especially in middle-aged women and those on NSAIDs, statins, PPIs and SSRIs. Biopsy of a normal-appearing colon is required. (A: Labeling it IBS misses a treatable diagnosis.) (B: The colon hasn't been sampled.) (C: Waiting misses the diagnosis.) (E: Fecal elastase tests for pancreatic insufficiency, which doesn't fit watery diarrhea.) Source: Ch 0049, Idiopathic Inflammatory Bowel Disease (microscopic colitis)"
+  },
+  {
+   "q": "A 45-year-old man had 60 cm of terminal ileum resected for Crohn disease. He now has postprandial watery diarrhea. There's no evidence of active Crohn disease. Which of the following is the most appropriate initial therapy?",
+   "options": [
+    "Bile acid sequestrant (e.g., cholestyramine)",
+    "Pancreatic enzyme replacement",
+    "Gluten-free diet",
+    "Metronidazole",
+    "Octreotide"
+   ],
+   "answer": 0,
+   "explain": "Resection of less than 100 cm of terminal ileum causes bile acid malabsorption and colonic secretion. Postprandial diarrhea after ileal resection can be treated with cholestyramine, colestipol or colesevelam. (B: Pancreatic enzymes treat pancreatic insufficiency.) (C: A gluten-free diet treats celiac disease.) (D: Metronidazole treats Giardia or bacterial overgrowth, which isn't suggested.) (E: Octreotide treats carcinoid.) Source: Ch 0049, Bowel Resection; Approach to the Patient: Chronic Diarrhea"
+  },
+  {
+   "q": "A 40-year-old woman has chronic watery diarrhea that stops when she fasts. Stool sodium is 30 mEq/L and potassium is 25 mEq/L. Assuming serum osmolality is 290 mosm/kg, which of the following best characterizes her diarrhea?",
+   "options": [
+    "Secretory, with no osmotic gap",
+    "Inflammatory",
+    "Osmotic, with an osmotic gap of 180 mosm/kg",
+    "Steatorrheal",
+    "Factitious from added urine"
+   ],
+   "answer": 2,
+   "explain": "Osmotic gap = 290 − 2 × (30 + 25) = 180. A gap >50 with cessation on fasting indicates osmotic diarrhea (e.g., magnesium or poorly absorbed carbohydrates). (A: Secretory diarrhea has no gap and persists with fasting.) (B: The data don't indicate inflammation.) (D: The data don't indicate steatorrhea.) (E: Added urine raises stool osmolality.) Source: Ch 0049, Osmotic Causes"
+  },
+  {
+   "q": "A 52-year-old man has massive watery diarrhea (4 L/d) persisting with fasting, severe hypokalemia, and low gastric acid. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Gastrinoma",
+    "Carcinoid syndrome",
+    "Lactase deficiency",
+    "Microscopic colitis",
+    "VIPoma"
+   ],
+   "answer": 4,
+   "explain": "VIPoma (pancreatic cholera) causes watery diarrhea, hypokalemia and achlorhydria, often >3 L/d, persisting with fasting. (A: Gastrinoma causes acid hypersecretion with refractory ulcers.) (B: Carcinoid features flushing and wheezing.) (C: Lactase deficiency is osmotic and stops with fasting.) (D: Microscopic colitis doesn't cause achlorhydria or massive volumes.) Source: Ch 0049, Hormones"
+  },
+  {
+   "q": "A 27-year-old woman has 1 year of crampy lower abdominal pain relieved by defecation and loose stools that never occur at night. She has no weight loss, bleeding or anemia. Basic labs and celiac serology are normal. Which of the following is recommended to exclude IBD and microscopic colitis?",
+   "options": [
+    "CT enterography",
+    "Flexible sigmoidoscopy with colorectal biopsies",
+    "Capsule endoscopy",
+    "Serum gastrin",
+    "72-hour fecal fat"
+   ],
+   "answer": 1,
+   "explain": "Patients suspected of having IBS should first have flexible sigmoidoscopy with colorectal biopsies to exclude IBD and especially microscopic colitis, which is clinically indistinguishable from IBS-D. (A: CT enterography isn't the recommended first step.) (C: Capsule endoscopy isn't the recommended first step.) (D: Gastrin isn't the recommended first step.) (E: Fecal fat isn't the recommended first step.) Source: Ch 0049, Approach to the Patient: Chronic Diarrhea"
+  },
+  {
+   "q": "A 63-year-old man has 4 months of new constipation, a 5-kg weight loss, and iron-deficiency anemia. Rectal exam shows no impaction. Which of the following is the most appropriate next step?",
+   "options": [
+    "Fiber supplementation and follow-up in 3 months",
+    "Colonic transit study",
+    "Anorectal manometry",
+    "Colonoscopy",
+    "Start linaclotide"
+   ],
+   "answer": 3,
+   "explain": "Weight loss, rectal bleeding or anemia with constipation mandate structural evaluation. Colonoscopy alone is most cost-effective because it allows biopsy and intervention. (A: Waiting delays evaluation for colorectal cancer.) (B: Transit study comes after excluding structural disease.) (C: Manometry comes after excluding structural disease.) (E: Symptomatic therapy delays evaluation.) Source: Ch 0049, Approach to the Patient: Constipation"
+  },
+  {
+   "q": "A 38-year-old woman has chronic constipation with excessive straining and a need to digitally evacuate stool. On rectal exam, the puborectalis contracts paradoxically during simulated defecation, and anorectal manometry with balloon expulsion confirms an evacuation disorder. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Subtotal colectomy with ileorectostomy",
+    "Botulinum toxin injection of the puborectalis",
+    "Internal anal sphincter division",
+    "Biofeedback pelvic floor retraining",
+    "Long-term stimulant laxatives alone"
+   ],
+   "answer": 3,
+   "explain": "Pelvic floor dysfunction usually responds to biofeedback, with 70–80% success after 3 months. (A: Colectomy shouldn't be done with an ongoing evacuation disorder.) (B: Botulinum has had mediocre success and is largely abandoned.) (C: Sphincter division has had mediocre success and is largely abandoned.) (E: Laxatives alone don't fix the dyssynergia.) Source: Ch 0049, Treatment: Constipation"
+  },
+  {
+   "q": "A 24-year-old man has had lifelong severe constipation. Anorectal manometry shows absence of the rectoanal inhibitory reflex, and his rectum isn't enlarged. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Slow-transit constipation",
+    "Irritable bowel syndrome",
+    "Hirschsprung disease",
+    "Descending perineum syndrome",
+    "Anal fissure"
+   ],
+   "answer": 2,
+   "explain": "Anorectal manometry identifies Hirschsprung disease by absence of the rectoanal inhibitory reflex. The reflex can also be absent with an enlarged rectum, which isn't present here. (A: These conditions don't explain an absent RAIR with a normal-sized rectum.) (B: Same reason.) (D: Same reason.) (E: Same reason.) Source: Ch 0049, Anorectal and Pelvic Floor Tests"
+  },
+  {
+   "q": "A 33-year-old nurse is evaluated for unexplained chronic watery diarrhea and hypokalemia. The stool osmolality submitted is very low, well below serum osmolality. Which of the following is the most likely explanation?",
+   "options": [
+    "Bile acid diarrhea",
+    "VIPoma",
+    "Lactase deficiency",
+    "Addition of urine to the stool sample",
+    "Addition of water to the stool sample"
+   ],
+   "answer": 4,
+   "explain": "In factitious diarrhea, very low stool osmolarity suggests water added to stool; very high suggests urine. These patients are often women in health care careers with hypokalemia. (A: Bile acid diarrhea doesn't produce stool osmolality far below serum.) (B: VIPoma doesn't either.) (C: Lactase deficiency doesn't either.) (D: Added urine produces high osmolality.) Source: Ch 0049, Factitial Causes"
+  },
+  {
+   "q": "A 76-year-old man with a mechanical aortic valve has 2 days of moderate acute diarrhea. Stool testing is pending. Which of the following is the most appropriate management in addition to fluid replacement?",
+   "options": [
+    "Withhold antibiotics until a pathogen is identified",
+    "Start antibiotic therapy whether or not a pathogen is found",
+    "Loperamide alone",
+    "Bismuth subsalicylate alone",
+    "Colonoscopy"
+   ],
+   "answer": 1,
+   "explain": "Antibiotics are indicated, whether or not an organism is found, in patients who are immunocompromised, have mechanical heart valves or recent vascular grafts, or are elderly. (A: Waiting is inappropriate in this high-risk host.) (C: Symptomatic therapy alone is insufficient.) (D: Symptomatic therapy alone is insufficient.) (E: Endoscopy isn't indicated.) Source: Ch 0049, Treatment: Acute Diarrhea"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0051-gastrointestinal-bleeding",
+ "name": "Gastrointestinal Bleeding (Harrison Ch 51)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 51: Gastrointestinal Bleeding.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "How long must blood be in the GI tract to cause melena?",
+   "back": ">=14 h (up to 3-5 days)"
+  },
+  {
+   "front": "Usual cause of death in GI bleeding?",
+   "back": "Decompensation of underlying illnesses, not exsanguination"
+  },
+  {
+   "front": "Best initial assessment of a GI bleed?",
+   "back": "Heart rate and blood pressure (postural changes, tachycardia, supine hypotension)"
+  },
+  {
+   "front": "Why is hemoglobin normal early in acute GIB?",
+   "back": "Whole blood is lost; equilibration with extravascular fluid takes up to 72 h"
+  },
+  {
+   "front": "Transfusion threshold in acute UGIB?",
+   "back": "Hemoglobin <7 g/dL (better than 9)"
+  },
+  {
+   "front": "Clues that hematochezia is from an upper source?",
+   "back": "Hemodynamic instability, falling hemoglobin, elevated BUN, hyperactive bowel sounds"
+  },
+  {
+   "front": "Limitations of nasogastric aspirate?",
+   "back": "Nonbloody in ~15% of UGIB with serious hematochezia; 'bile' reports wrong ~50%; don't occult-test"
+  },
+  {
+   "front": "Glasgow-Blatchford score allowing outpatient management?",
+   "back": "0-1"
+  },
+  {
+   "front": "Glasgow-Blatchford 2-point items?",
+   "back": "Syncope, hepatic disease, cardiac failure (also BUN 18.2-22.3)"
+  },
+  {
+   "front": "Most common cause of UGIB?",
+   "back": "Peptic ulcer (~50%)"
+  },
+  {
+   "front": "Ulcer stigmata needing endoscopic therapy?",
+   "back": "Active bleeding or nonbleeding visible vessel (consider for adherent clot)"
+  },
+  {
+   "front": "High-dose PPI regimen after endoscopic therapy?",
+   "back": "80 mg IV bolus + 8 mg/h (or 40 mg 2-4x/day) for 3 days"
+  },
+  {
+   "front": "Clean-based ulcer management?",
+   "back": "No endoscopic therapy; oral PPI; discharge after endoscopy if stable"
+  },
+  {
+   "front": "Ulcer rebleeding after H. pylori eradication?",
+   "back": "<5%"
+  },
+  {
+   "front": "NSAID required after a bleeding ulcer?",
+   "back": "COX-2 selective NSAID plus PPI"
+  },
+  {
+   "front": "Aspirin after bleeding ulcer: secondary vs primary prevention?",
+   "back": "Secondary: continue or restart once hemostasis confirmed. Primary: stop"
+  },
+  {
+   "front": "Ulcer not due to H. pylori or NSAIDs?",
+   "back": "PPI indefinitely (42% rebleed at 7 years)"
+  },
+  {
+   "front": "Mallory-Weiss tear history and course?",
+   "back": "Retching/vomiting then hematemesis; stops spontaneously in 80-90%"
+  },
+  {
+   "front": "Cirrhotic with UGIB: drugs at presentation?",
+   "back": "Antibiotic (ceftriaxone) and IV vasoactive drug (octreotide)"
+  },
+  {
+   "front": "Acute variceal bleeding treatment?",
+   "back": "Endoscopic band ligation plus vasoactive drug for 2-5 days"
+  },
+  {
+   "front": "Long-term prevention of variceal rebleeding?",
+   "back": "Nonselective beta-blocker plus endoscopic ligation"
+  },
+  {
+   "front": "Indications for early TIPS in variceal bleeding?",
+   "back": "Child B 8-9 with active bleeding or Child C 10-13; also persistent/recurrent bleeding"
+  },
+  {
+   "front": "Bleeding gastric varices treatment?",
+   "back": "Cyanoacrylate injection, TIPS, or retrograde transvenous obliteration"
+  },
+  {
+   "front": "Why don't erosions cause major bleeding?",
+   "back": "No arteries or veins in the mucosa"
+  },
+  {
+   "front": "Stress ulcer prophylaxis criteria?",
+   "back": "Ventilated without enteral feeding, portal HTN, cirrhosis, platelets <50k, INR >1.5, or 2 of: ventilated with feeds, AKI, sepsis, shock"
+  },
+  {
+   "front": "Dieulafoy lesion?",
+   "back": "Aberrant mucosal vessel bleeding from a pinpoint defect"
+  },
+  {
+   "front": "Erythromycin before endoscopy?",
+   "back": "250 mg IV 30-90 min before; improves visualization"
+  },
+  {
+   "front": "Timing of endoscopy in UGIB?",
+   "back": "Within 24 h; earlier (6-12 h) doesn't improve outcomes"
+  },
+  {
+   "front": "Most common cause of LGIB excluding anorectal?",
+   "back": "Diverticulosis"
+  },
+  {
+   "front": "Diverticular bleeding features?",
+   "back": "Abrupt, painless, sometimes massive, often right colon; stops spontaneously in >=90%"
+  },
+  {
+   "front": "Hematochezia with hemodynamic instability: first test?",
+   "back": "Upper endoscopy"
+  },
+  {
+   "front": "LGIB too unstable to prep?",
+   "back": "CT angiography; extravasation -> angiography with embolization"
+  },
+  {
+   "front": "Heyde syndrome and treatment?",
+   "back": "Bleeding vascular ectasias with aortic stenosis; aortic valve replacement"
+  },
+  {
+   "front": "Most common cause of significant small-bowel bleeding in children?",
+   "back": "Meckel diverticulum"
+  },
+  {
+   "front": "Next test after negative EGD and colonoscopy (not severe)?",
+   "back": "Video capsule endoscopy (yield ~55%)"
+  },
+  {
+   "front": "Recurrent small-bowel vascular ectasia bleeding despite endoscopic therapy?",
+   "back": "Thalidomide or monthly octreotide LAR"
+  },
+  {
+   "front": "Positive FOBT with negative colonoscopy?",
+   "back": "No further workup unless iron deficiency or GI symptoms"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 36-year-old man comes to the emergency department after one black stool. Heart rate is 78/min and blood pressure is 128/80 mm Hg. Hemoglobin is 14.2 g/dL and BUN is 14 mg/dL. He has no syncope, liver disease or heart failure. His Glasgow-Blatchford score is 1. Which of the following is the most appropriate management?",
+   "options": [
+    "Admission to the ICU and urgent endoscopy within 6 hours",
+    "Discharge with outpatient management",
+    "Transfuse 1 unit of packed red cells",
+    "Emergent CT angiography",
+    "Admit for 3 days of IV PPI infusion"
+   ],
+   "answer": 1,
+   "explain": "A Glasgow-Blatchford score of 0–1 identifies very low risk (~1% need transfusion, intervention or die). Discharge from the ED with outpatient management is suggested. (A: ICU admission and urgent endoscopy are for higher-risk patients.) (C: Transfusion isn't indicated with normal hemoglobin.) (D: CTA is for severe lower or small-bowel bleeding.) (E: Admission isn't needed at this risk level.) Source: Ch 0051, Initial Risk Assessment; Table 51-1"
+  },
+  {
+   "q": "A 64-year-old woman without cardiovascular disease is admitted with melena. After fluids she is hemodynamically stable. Her hemoglobin is 7.6 g/dL. Which of the following is the most appropriate transfusion approach?",
+   "options": [
+    "Transfuse to a hemoglobin target of 10 g/dL",
+    "Transfuse 2 units now",
+    "Transfuse to keep hemoglobin above 9 g/dL",
+    "Transfuse only after endoscopy",
+    "Withhold transfusion unless hemoglobin falls below 7 g/dL"
+   ],
+   "answer": 4,
+   "explain": "A restrictive threshold (transfuse below 7 g/dL) reduced rebleeding and death in acute upper GI bleeding compared with a threshold of 9 g/dL. (A: A target of 10 is liberal and worse.) (B: She's above the threshold.) (C: A threshold of 9 was inferior.) (D: The threshold applies regardless of endoscopy timing.) Source: Ch 0051, Initial Assessment"
+  },
+  {
+   "q": "A 58-year-old man with melena undergoes endoscopy, which shows a duodenal ulcer with a nonbleeding visible vessel. Which of the following is the most appropriate management?",
+   "options": [
+    "Endoscopic hemostatic therapy followed by high-dose PPI for 3 days",
+    "Once-daily oral PPI and discharge after endoscopy",
+    "High-dose PPI alone without endoscopic therapy",
+    "Immediate surgical referral",
+    "Octreotide infusion and ceftriaxone"
+   ],
+   "answer": 0,
+   "explain": "Active bleeding or a nonbleeding visible vessel warrants endoscopic therapy, followed by high-dose PPI (e.g., 80 mg bolus + 8 mg/h or intermittent dosing) for 3 days. This reduces rebleeding and mortality. (B: This is low-risk management.) (C: High-risk stigmata need endoscopic therapy.) (D: Surgery is avoided with endoscopic therapy.) (E: Octreotide and ceftriaxone are for variceal or cirrhotic bleeding.) Source: Ch 0051, Peptic Ulcers; Fig 51-1"
+  },
+  {
+   "q": "A 46-year-old woman with hematemesis is hemodynamically stable with no significant comorbidities. Endoscopy within 24 hours shows a clean-based gastric ulcer. Which of the following is the most appropriate management?",
+   "options": [
+    "Endoscopic clip placement and admission for 3 days",
+    "High-dose PPI infusion for 72 hours",
+    "Repeat endoscopy in 24 hours",
+    "Once-daily oral PPI, regular diet, and discharge after endoscopy if no other reason for admission",
+    "Interventional radiology embolization"
+   ],
+   "answer": 3,
+   "explain": "Clean-based ulcers have rebleeding rates near zero. Stable patients without another reason for admission get standard oral PPI and can be discharged after endoscopy. (A: Clean-based ulcers don't need endoscopic therapy.) (B: High-dose infusion is for high-risk stigmata.) (C: Second-look endoscopy isn't indicated.) (E: Embolization isn't indicated.) Source: Ch 0051, Peptic Ulcers; Fig 51-1"
+  },
+  {
+   "q": "A 55-year-old man with alcoholic cirrhosis presents with hematemesis. Heart rate is 112/min and blood pressure is 98/60 mm Hg. Resuscitation is under way and endoscopy is being arranged. Which medications should be given at presentation?",
+   "options": [
+    "High-dose PPI alone",
+    "Nonselective β-blocker and nitrate",
+    "IV ceftriaxone and IV octreotide",
+    "Tranexamic acid and vitamin K only",
+    "Erythromycin alone"
+   ],
+   "answer": 2,
+   "explain": "Cirrhotic patients presenting with UGIB should get an antibiotic (e.g., ceftriaxone) and an IV vasoactive drug (e.g., octreotide) at presentation. Antibiotics reduce infection, rebleeding and mortality, and vasoactive drugs improve early bleeding control. (A: A PPI doesn't treat variceal bleeding.) (B: β-blockers are for long-term secondary prevention, not the acute bleed.) (D: These aren't the recommended initial therapy.) (E: Erythromycin improves visualization but isn't the key therapy.) Source: Ch 0051, Pre-Endoscopic Medications; Esophageal Varices"
+  },
+  {
+   "q": "A 60-year-old woman with cirrhosis (Child-Pugh class C, score 11) has esophageal varices that are actively bleeding at endoscopy. Bleeding is controlled with band ligation, and she is on octreotide and antibiotics. Which of the following has been shown to reduce rebleeding and mortality in this setting?",
+   "options": [
+    "Balloon tamponade for 48 hours",
+    "Early TIPS",
+    "Discontinuing octreotide after 12 hours",
+    "Adding a high-dose PPI infusion as the only additional measure",
+    "Starting a nonselective β-blocker immediately in place of other therapy"
+   ],
+   "answer": 1,
+   "explain": "TIPS is suggested for acute variceal bleeding in advanced liver disease (Child-Pugh B 8–9 with active bleeding, or C 10–13). Trials show significant reductions in rebleeding and mortality versus standard therapy. (A: The source doesn't recommend balloon tamponade.) (C: Vasoactive therapy continues 2–5 days.) (D: A PPI doesn't address variceal bleeding.) (E: β-blockers are for long-term prevention, combined with ligation.) Source: Ch 0051, Esophageal Varices"
+  },
+  {
+   "q": "A 70-year-old man with a drug-eluting coronary stent placed 2 years ago for myocardial infarction takes low-dose aspirin. He presents with a bleeding gastric ulcer, which is treated endoscopically with secure hemostasis. Which of the following is the most appropriate plan for aspirin?",
+   "options": [
+    "Stop aspirin permanently",
+    "Hold aspirin for 8 weeks",
+    "Switch aspirin to an NSAID",
+    "Replace aspirin with clopidogrel for 1 year, then stop",
+    "Restart aspirin once hemostasis is confirmed"
+   ],
+   "answer": 4,
+   "explain": "Patients with established cardiovascular disease on aspirin for secondary prevention shouldn't stop it. If it's held, restart once hemostasis is confirmed. Immediate reinstitution lowered 8-week mortality (1% vs 13%). (A: Stopping is appropriate only for primary prevention.) (B: Delay raised mortality in the trial.) (C: NSAIDs raise ulcer risk.) (D: This isn't supported by the source.) Source: Ch 0051, Peptic Ulcers"
+  },
+  {
+   "q": "A 68-year-old man presents with large-volume maroon blood per rectum, heart rate 124/min, and blood pressure 86/52 mm Hg. After resuscitation begins, which of the following is the most appropriate first diagnostic procedure?",
+   "options": [
+    "Upper endoscopy",
+    "Colonoscopy after bowel prep",
+    "Capsule endoscopy",
+    "Flexible sigmoidoscopy",
+    "Technetium-labeled RBC scan"
+   ],
+   "answer": 0,
+   "explain": "Patients with hematochezia and hemodynamic instability should have upper endoscopy to rule out an upper GI source before evaluating the lower tract. A brisk upper bleed can present as hematochezia. (B: Colonoscopy comes after excluding an upper source.) (C: Capsule isn't for unstable patients.) (D: Sigmoidoscopy is for young patients with minor bleeding.) (E: A tagged RBC scan isn't first-line here.) Source: Ch 0051, Evaluation and Management of LGIB; Fig 51-2"
+  },
+  {
+   "q": "A 79-year-old woman has ongoing brisk hematochezia with persistent hemodynamic instability despite resuscitation. Upper endoscopy is negative, and she can't tolerate bowel preparation. Which of the following is the most appropriate next step?",
+   "options": [
+    "Unprepped colonoscopy at the bedside",
+    "Capsule endoscopy",
+    "Barium enema",
+    "CT angiography",
+    "Observation"
+   ],
+   "answer": 3,
+   "explain": "When ongoing, hemodynamically significant hematochezia prevents bowel prep and colonoscopy, CT angiography is suggested. Extravasation leads to angiography and embolization. (A: Unprepped colonoscopy is unlikely to localize the bleeding.) (B: Capsule is for stable small-bowel evaluation.) (C: Barium is contraindicated in acute bleeding.) (E: Observation is inappropriate with instability.) Source: Ch 0051, Evaluation and Management of LGIB"
+  },
+  {
+   "q": "A 72-year-old man has iron-deficiency anemia and intermittent melena. Upper endoscopy and colonoscopy are unrevealing. He is hemodynamically stable with no suspected stricture. Which of the following is generally the next test?",
+   "options": [
+    "Exploratory laparotomy",
+    "Repeat colonoscopy in 3 years",
+    "Video capsule endoscopy",
+    "Meckel scan",
+    "Barium enema"
+   ],
+   "answer": 2,
+   "explain": "For suspected small-intestinal bleeding without severe hemorrhage, video capsule endoscopy is generally the next test (yield ~55%). (A: Surgery is reserved for severe recurrent bleeding with negative tests.) (B: Repeat colonoscopy in 3 years misses the small bowel.) (D: A Meckel scan is mainly for young patients.) (E: Barium enema evaluates the colon, not the small bowel.) Source: Ch 0051, Evaluation and Management of Small-Intestinal or Obscure GIB"
+  },
+  {
+   "q": "An 80-year-old man has recurrent bleeding from small-intestinal and colonic vascular ectasias. He also has severe aortic stenosis. Which intervention appears to reduce his bleeding?",
+   "options": [
+    "Long-term high-dose PPI",
+    "Aortic valve replacement",
+    "Daily aspirin",
+    "Total colectomy",
+    "Increased dietary iron alone"
+   ],
+   "answer": 1,
+   "explain": "Patients with Heyde syndrome (bleeding vascular ectasias with aortic stenosis) appear to benefit from aortic valve replacement. (A: A PPI doesn't treat ectasias.) (C: Aspirin would worsen bleeding.) (D: Colectomy doesn't address small-bowel lesions or the underlying mechanism.) (E: Iron alone doesn't stop the bleeding.) Source: Ch 0051, Colonic Sources of Bleeding"
+  },
+  {
+   "q": "A 52-year-old man arrives 1 hour after vomiting large amounts of bright red blood. He is tachycardic and orthostatic, but his hemoglobin is 13.8 g/dL. Which of the following best explains the near-normal hemoglobin?",
+   "options": [
+    "The bleeding has stopped completely",
+    "A laboratory error",
+    "Chronic compensated anemia",
+    "Hemoconcentration from vomiting",
+    "Plasma and red cells are lost proportionately, and equilibration takes up to 72 hours"
+   ],
+   "answer": 4,
+   "explain": "Hemoglobin doesn't fall immediately in acute GI bleeding because plasma and red cells are lost together. It drops as extravascular fluid restores volume, which can take up to 72 hours. Vital signs are the best initial assessment. (A: Tachycardia and orthostasis indicate significant bleeding.) (B: A normal value is expected early.) (C: Nothing suggests chronic anemia.) (D: Equilibration is the explanation the source gives.) Source: Ch 0051, Initial Assessment"
+  },
+  {
+   "q": "A 76-year-old woman has sudden, painless, large-volume hematochezia. Colonoscopy shows extensive diverticulosis without active bleeding, and the bleeding stops. Which of the following statements about diverticular bleeding is correct?",
+   "options": [
+    "It stops spontaneously in most patients (≥90% in Western series)",
+    "It typically presents as chronic occult bleeding",
+    "It usually comes from the rectum",
+    "It is usually painful",
+    "It recurs in most patients within 1 year"
+   ],
+   "answer": 0,
+   "explain": "Diverticular bleeding is abrupt, usually painless, sometimes massive, and often from the right colon. It stops spontaneously in ≥90% of patients in US and European series, with ~15% rebleeding over 4–5 years. (B: Chronic occult bleeding isn't characteristic.) (C: It's often right-sided.) (D: It's usually painless.) (E: Rebleeding is ~15% over 4–5 years in Western series.) Source: Ch 0051, Colonic Sources of Bleeding"
+  },
+  {
+   "q": "Which of the following critically ill ICU patients meets guideline criteria for stress ulcer prophylaxis with a PPI?",
+   "options": [
+    "A patient on mechanical ventilation receiving enteral nutrition, with no other risk factors",
+    "A patient with sepsis alone",
+    "A patient with acute kidney injury alone",
+    "A patient on mechanical ventilation without enteral nutrition",
+    "A patient with a platelet count of 120,000/µL alone"
+   ],
+   "answer": 3,
+   "explain": "PPI prophylaxis is suggested for critically ill patients at high risk (≥4%): mechanical ventilation without enteral nutrition, portal hypertension, cirrhosis, platelets <50 × 10⁹/L, INR >1.5, or two of ventilation with enteral nutrition, AKI, sepsis or shock. (A: Ventilation with enteral feeding counts only alongside a second factor.) (B: Sepsis counts only alongside a second factor.) (C: AKI counts only alongside a second factor.) (E: The platelet threshold is <50,000.) Source: Ch 0051, Erosive Disease"
+  },
+  {
+   "q": "A 61-year-old man is hospitalized with hematemesis and melena. He has high-risk clinical features but stabilizes with resuscitation. When should upper endoscopy be performed?",
+   "options": [
+    "Within 2 hours of arrival in all high-risk patients",
+    "After 72 hours, once hemoglobin has equilibrated",
+    "Within 24 hours; more urgent endoscopy within 6–12 hours doesn't improve outcomes",
+    "Only if bleeding recurs",
+    "After 5 days of PPI therapy"
+   ],
+   "answer": 2,
+   "explain": "Upper endoscopy should be done within 24 hours in most hospitalized UGIB patients. More urgent endoscopy (6–12 hours) doesn't improve outcomes even in high-risk patients and may raise mortality in observational studies. (A: Ultra-urgent endoscopy isn't beneficial.) (B: Delaying beyond 24 hours isn't recommended.) (D: Endoscopy guides therapy and discharge.) (E: Delaying beyond 24 hours isn't recommended.) Source: Ch 0051, Endoscopy"
+  }
+ ]
+},
 ];
