@@ -17,7 +17,12 @@ QDIR, ADIR, NDIR = ROOT / "study/questions", ROOT / "study/anki", ROOT / "study/
 OUT = ROOT / "src/data/29-harrison.js"
 
 # Harrison chapter number -> app chapter. Anything unlisted goes to General Medicine.
-CHAPTER_MAP = {15: "Cardiology"}
+CHAPTER_MAP = {
+    15: "Cardiology",
+    16: "Gastroenterology",
+    17: "Neurology", 23: "Neurology", 24: "Neurology", 29: "Neurology",
+    20: "Infectious Diseases", 21: "Infectious Diseases", 22: "Infectious Diseases",
+}
 DEFAULT_CHAPTER = "General Medicine"
 
 Q_RE = re.compile(r"^\*\*(\d+)\.\*\*\s*(.*)")

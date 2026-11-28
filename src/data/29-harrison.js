@@ -1158,4 +1158,2718 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0016-abdominal-pain",
+ "name": "Abdominal Pain (Harrison Ch 16)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 16: Abdominal Pain.",
+ "chapter": "Gastroenterology",
+ "flashcards": [
+  {
+   "front": "Four most common causes of abdominal pain on admission?",
+   "back": "Nonspecific abdominal pain, acute appendicitis, urologic pain, intestinal obstruction"
+  },
+  {
+   "front": "Does analgesia obscure the diagnosis of acute abdominal pain?",
+   "back": "Unlikely; don't withhold analgesics while awaiting a diagnosis"
+  },
+  {
+   "front": "Which history element is more important than pain location in abdominal pain?",
+   "back": "The chronological sequence of events"
+  },
+  {
+   "front": "Classic finding of early superior mesenteric artery occlusion?",
+   "back": "Continuous diffuse pain out of proportion to exam (no tenderness or rigidity), sometimes for 2-3 days before collapse"
+  },
+  {
+   "front": "Abdominal pain radiating to the sacrum, flank, or genitalia suggests?",
+   "back": "Rupturing abdominal aortic aneurysm"
+  },
+  {
+   "front": "Only abdominal pain scenario that goes straight to the OR without workup?",
+   "back": "Exsanguinating intraabdominal hemorrhage (e.g., ruptured aneurysm), after venous access"
+  },
+  {
+   "front": "Character of biliary 'colic'?",
+   "back": "Steady, not colicky; gallbladder pain radiates to the right scapula tip"
+  },
+  {
+   "front": "Pancreatic-duct pain: positional feature?",
+   "back": "Worse lying flat, relieved by sitting upright"
+  },
+  {
+   "front": "Pain radiation in distal (intravesical) ureteral obstruction?",
+   "back": "Suprapubic and flank pain radiating to penis, scrotum, or inner upper thigh"
+  },
+  {
+   "front": "Peritonitis vs colic: patient behavior?",
+   "back": "Peritonitis: lies still. Colic: restless, thrashing"
+  },
+  {
+   "front": "Signs that abdominal pain is referred from the thorax?",
+   "back": "Splinting with respiratory lag; apparent spasm eases on inspiration; palpation doesn't worsen (may relieve) pain"
+  },
+  {
+   "front": "Pain persists after DKA is corrected: what next?",
+   "back": "Suspect an underlying organic cause (e.g., appendicitis, obstruction) that may have precipitated DKA"
+  },
+  {
+   "front": "Anticoagulated patient with abdominal wall pain and lower-quadrant mass?",
+   "back": "Rectus sheath hematoma"
+  },
+  {
+   "front": "Best way to elicit peritoneal irritation without deep rebound?",
+   "back": "Gentle percussion or asking the patient to cough"
+  },
+  {
+   "front": "Value of bowel sound auscultation in acute abdominal pain?",
+   "back": "Among the least revealing exam elements; strangulation or perforation can occur with normal sounds"
+  },
+  {
+   "front": "Does a normal WBC exclude a perforated viscus?",
+   "back": "No; and leukocytosis alone never decides surgery"
+  },
+  {
+   "front": "Why doesn't an elevated amylase confirm pancreatitis?",
+   "back": "It also rises with perforated ulcer, strangulating obstruction, and acute cholecystitis"
+  },
+  {
+   "front": "Preferred imaging for nontraumatic acute abdominal pain when the need for intervention is unclear?",
+   "back": "Low-dose CT (over plain radiographs)"
+  },
+  {
+   "front": "Suspected colonic obstruction (no perforation): which contrast study, and what to avoid?",
+   "back": "Contrast enema may be diagnostic; avoid oral barium"
+  },
+  {
+   "front": "Test that separates acute cholecystitis/biliary colic from pancreatitis?",
+   "back": "HIDA scan"
+  },
+  {
+   "front": "Fever and RLQ pain in a neutropenic chemotherapy patient?",
+   "back": "Neutropenic enterocolitis (typhlitis)"
+  },
+  {
+   "front": "Causes of acalculous cholecystitis in AIDS?",
+   "back": "Cryptosporidiosis or CMV"
+  },
+  {
+   "front": "Splenic abscess organisms to consider in the immunocompromised with LUQ pain?",
+   "back": "Candida or Salmonella"
+  },
+  {
+   "front": "Metabolic causes that mimic bowel obstruction through hyperperistalsis?",
+   "back": "Porphyria and lead colic"
+  },
+  {
+   "front": "Envenomation causing abdominal and back rigidity?",
+   "back": "Black widow spider bite"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 74-year-old man is brought to the emergency department because of 2 days of diffuse, crampy abdominal pain that has become severe over the past 6 hours. He has atrial fibrillation and does not take anticoagulation. Temperature is 37.4°C (99.3°F), pulse is 104/min and irregularly irregular, and blood pressure is 128/76 mm Hg. The abdomen is soft and nondistended, with only minimal tenderness and no guarding; bowel sounds are normal. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Acute pancreatitis",
+    "Small-bowel obstruction",
+    "Perforated peptic ulcer",
+    "Superior mesenteric artery occlusion",
+    "Irritable bowel syndrome"
+   ],
+   "answer": 3,
+   "explain": "Superior mesenteric artery occlusion often starts with mild continuous or crampy diffuse pain for 2–3 days before collapse or peritonitis. The early pain comes from hyperperistalsis, so the exam is benign: \"pain out of proportion to physical findings.\" An elderly patient with untreated atrial fibrillation is at embolic risk. (A: Nothing localizes to the pancreas; the chapter's classic clue here is the disproportion, not epigastric pain.) (B: Obstruction causes colicky periumbilical pain, usually with distention.) (C: Perforation causes chemical peritonitis with rigidity, not a soft, nontender abdomen.) (E: IBS is a diagnosis of exclusion and wouldn't present acutely in this setting.) Source: Ch 0016, Vascular Disturbances"
+  },
+  {
+   "q": "A 71-year-old man with hypertension collapses at home after sudden, severe abdominal pain radiating to the left flank and groin. In the emergency department, blood pressure is 74/40 mm Hg and pulse is 128/min. He is pale and diaphoretic. The abdomen is diffusely tender. Two large-bore IV lines are placed and fluids are started. Which of the following is the most appropriate next step?",
+   "options": [
+    "Immediate transfer to the operating room",
+    "CT angiography of the abdomen",
+    "Formal abdominal ultrasound in the radiology department",
+    "Serial abdominal examinations over the next 2 hours",
+    "Upright and supine abdominal radiographs"
+   ],
+   "answer": 0,
+   "explain": "Abdominal pain radiating to the flank, sacrum, or genitalia signals a rupturing AAA. Exsanguinating intraabdominal hemorrhage is the one situation where the patient goes straight to the operating room after venous access. These patients may die in radiology waiting for unnecessary studies. (B: CT delays definitive treatment in an unstable patient.) (C: Leaving for radiology risks death en route.) (D: Observation is for stable patients with uncertain diagnoses.) (E: Plain films add nothing here.) Source: Ch 0016, Vascular Disturbances; Approach to the Patient"
+  },
+  {
+   "q": "A 38-year-old woman comes to the emergency department with 12 hours of lower abdominal pain and two episodes of vomiting. Temperature is 37.9°C (100.2°F), pulse is 96/min, and blood pressure is 124/78 mm Hg. She has mild lower abdominal tenderness without rigidity. Pelvic examination shows mild nonspecific tenderness. Urine pregnancy test is negative. The surgeon is uncertain whether an operation is needed. Which of the following is the most appropriate imaging study?",
+   "options": [
+    "Upright and supine abdominal radiographs",
+    "Upper gastrointestinal barium study",
+    "Diagnostic peritoneal lavage",
+    "Hepatobiliary iminodiacetic acid (HIDA) scan",
+    "Low-dose CT of the abdomen and pelvis"
+   ],
+   "answer": 4,
+   "explain": "When the need for surgical or medical intervention is unclear in nontraumatic acute abdominal pain, low-dose CT is preferred over abdominal radiography. (A: Plain films have limited utility.) (B: Upper GI contrast studies are rarely appropriate.) (C: Outside trauma, lavage has been replaced by CT and laparoscopy.) (D: HIDA is for biliary questions, not undifferentiated lower abdominal pain.) Source: Ch 0016, Approach to the Patient (imaging)"
+  },
+  {
+   "q": "A 29-year-old man comes to the emergency department with 10 hours of severe right lower quadrant pain. He rates the pain 9/10. Temperature is 38.0°C (100.4°F) and pulse is 102/min. There is focal right lower quadrant tenderness. A surgical consultation has been requested and is expected within 1 hour. The nurse asks whether pain medication should be held until the surgeon examines him. Which of the following is the most appropriate next step?",
+   "options": [
+    "Withhold all analgesia until the surgeon examines him",
+    "Administer IV opioid analgesia now",
+    "Give only a low dose of acetaminophen to avoid masking signs",
+    "Withhold analgesia until a CT scan is completed",
+    "Give an antispasmodic only"
+   ],
+   "answer": 1,
+   "explain": "Analgesics should not be withheld until a definitive diagnosis or plan is made. Adequate analgesia is unlikely to obscure the diagnosis. (A, D: Withholding analgesia is not supported.) (C: Deliberately undertreating pain to \"preserve signs\" is the misconception the chapter corrects.) (E: An antispasmodic alone doesn't adequately treat severe pain.) Source: Ch 0016, Approach to the Patient"
+  },
+  {
+   "q": "A 63-year-old man with diabetes and hypertension comes to the emergency department because of 1 hour of epigastric pain with nausea and sweating. Pulse is 98/min and blood pressure is 150/90 mm Hg. The lungs are clear. The abdomen is soft with mild epigastric tenderness. Which of the following is the most appropriate next step?",
+   "options": [
+    "Upright abdominal radiograph",
+    "Serum amylase",
+    "12-lead electrocardiogram",
+    "Upper endoscopy",
+    "Trial of an oral proton pump inhibitor and discharge"
+   ],
+   "answer": 2,
+   "explain": "Intrathoracic disease must be considered in every patient with abdominal pain, especially upper abdominal pain. MI is among the intrathoracic diseases that most often masquerade as abdominal emergencies. This patient has risk factors and autonomic symptoms, so evaluate for MI first. (A: Radiographs don't address the most dangerous possibility.) (B: Amylase is nonspecific and doesn't exclude MI.) (D: Endoscopy before excluding MI is inappropriate.) (E: Discharging without evaluating for MI misses a lethal diagnosis.) Source: Ch 0016, Referred Pain in Abdominal Disease"
+  },
+  {
+   "q": "A 70-year-old woman has 3 days of progressive abdominal distention and crampy lower abdominal pain radiating to the lower back. She has not passed flatus for 24 hours. Vital signs are stable. The abdomen is distended and tympanic, without peritoneal signs. Abdominal radiographs show a dilated colon down to the sigmoid with no free air. Which of the following is the most appropriate study to confirm the diagnosis?",
+   "options": [
+    "Oral barium small-bowel follow-through",
+    "Diagnostic peritoneal lavage",
+    "HIDA scan",
+    "Upper endoscopy",
+    "Contrast enema"
+   ],
+   "answer": 4,
+   "explain": "In suspected colonic obstruction without perforation, a contrast enema may be diagnostic. Oral barium should be avoided when colonic obstruction is possible. (A: Oral barium is specifically to be avoided here.) (B: Lavage has no role in nontraumatic obstruction.) (C: HIDA evaluates the biliary tree.) (D: Upper endoscopy can't reach the colon.) Source: Ch 0016, Approach to the Patient (imaging)"
+  },
+  {
+   "q": "A 19-year-old woman with type 1 diabetes is admitted with diabetic ketoacidosis (glucose 480 mg/dL, pH 7.18, anion gap 24) and diffuse abdominal pain. After 8 hours of IV fluids and insulin, the anion gap has closed and the pH is 7.36. However, her pain is now localized to the right lower quadrant, with focal tenderness and a temperature of 38.2°C (100.8°F). Which of the following is the most appropriate next step?",
+   "options": [
+    "Imaging and surgical evaluation for an underlying intraabdominal cause",
+    "Continue the insulin infusion and reassure her that the pain will resolve",
+    "Discharge home with outpatient follow-up",
+    "Double the rate of IV fluids",
+    "Start an IV proton pump inhibitor"
+   ],
+   "answer": 0,
+   "explain": "Appendicitis or obstruction can precipitate DKA. If correcting the metabolic abnormality doesn't promptly resolve the abdominal pain, an underlying organic problem should be suspected. New localized RLQ tenderness and fever demand evaluation. (B: Reassurance ignores the persistent, now-localized pain.) (C: Discharge is unsafe.) (D: The acidosis is already corrected; more fluid won't explain the pain.) (E: A PPI doesn't address a possible surgical cause.) Source: Ch 0016, Metabolic Abdominal Crises"
+  },
+  {
+   "q": "A 34-year-old man with suspected early peritonitis is being examined by a medical student. The student plans to test for rebound tenderness by pressing deeply into the right lower quadrant and releasing suddenly. Which of the following is the most appropriate way to assess for peritoneal irritation?",
+   "options": [
+    "Deep palpation with sudden release in each quadrant",
+    "Auscultation of bowel sounds for 5 minutes",
+    "Firm palpation of all four quadrants",
+    "Gentle percussion of the abdomen or asking the patient to cough",
+    "Repeating the rebound maneuver several times to confirm consistency"
+   ],
+   "answer": 3,
+   "explain": "Gentle percussion (\"rebound on a miniature scale\") or asking the patient to cough elicits true rebound more precisely and without causing protective spasm. Forceful rebound testing is described as cruel and unnecessary, and it makes later exams unreliable. (A, E: Forceful and repeated rebound testing is what the chapter advises against.) (B: Auscultation is one of the least revealing parts of the exam.) (C: Aggressive palpation adds voluntary spasm and can hide findings.) Source: Ch 0016, Approach to the Patient (examination)"
+  },
+  {
+   "q": "A 52-year-old man with acute myeloid leukemia is on day 10 after induction chemotherapy. He develops fever to 38.9°C (102°F) and right lower quadrant abdominal pain. Absolute neutrophil count is 100/μL. The right lower quadrant is tender. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Acute calculous cholecystitis",
+    "Neutropenic enterocolitis (typhlitis)",
+    "Splenic abscess",
+    "Distal ureteral stone",
+    "Familial Mediterranean fever"
+   ],
+   "answer": 1,
+   "explain": "Neutropenic enterocolitis (typhlitis) is a recognized cause of fever and abdominal pain in patients with chemotherapy-induced marrow suppression. It appears among the RLQ causes in Table 16-3. These patients need serial exams to detect perforation. (A: The pain is in the RLQ, not the RUQ.) (C: Splenic abscess causes LUQ or left flank pain.) (D: A stone causes colic with hematuria, not neutropenic fever.) (E: FMF causes recurrent diffuse attacks and doesn't fit this setting.) Source: Ch 0016, Immunocompromise; Table 16-3"
+  },
+  {
+   "q": "A 44-year-old man has sudden severe left flank pain radiating to the left testicle and inner thigh. He cannot lie still and keeps changing position. Temperature is normal. The testes are normal and nontender. Urinalysis shows 20 red blood cells per high-power field. Which of the following is the most likely site of disease?",
+   "options": [
+    "Ureteropelvic junction",
+    "Sigmoid colon",
+    "Intravesical (distal) portion of the ureter",
+    "Left testis",
+    "Parietal peritoneum"
+   ],
+   "answer": 2,
+   "explain": "Acute obstruction of the intravesical ureter causes severe suprapubic and flank pain radiating to the penis, scrotum, or inner upper thigh. Colic makes patients restless, unlike peritonitis. (A: UPJ obstruction causes pain near the costovertebral angle.) (B: Colonic disease doesn't cause hematuria with testicular radiation.) (D: Pain from the testis is accentuated by pressure on it; his testes are nontender.) (E: Peritonitis makes patients lie still.) Source: Ch 0016, Obstruction of Hollow Viscera"
+  },
+  {
+   "q": "A 68-year-old woman has 3 days of burning, lancinating pain in a band across the left upper abdomen that wraps around from the back. Light touch over the area is painful. The pain is unrelated to meals and worsens when she twists her spine. Deep palpation of the abdomen does not increase the pain, and there is no rigidity. No rash is present. Lipase is normal. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Splenic infarct",
+    "Gastric ulcer",
+    "Acute pancreatitis",
+    "Pyelonephritis",
+    "Herpes zoster"
+   ],
+   "answer": 4,
+   "explain": "Spinal nerve root pain (e.g., herpes zoster before the rash) is lancinating and dermatomal, with common hyperesthesia. It is worse with spine movement and unrelated to food. Palpation doesn't accentuate it, and there's no rigidity. (A, B, C: These are LUQ visceral causes; they'd be expected to cause tenderness, and pancreatitis is unlikely with a normal lipase.) (D: Pyelonephritis causes CVA tenderness and fever, not cutaneous hyperesthesia.) Source: Ch 0016, Neurogenic Causes"
+  },
+  {
+   "q": "A 66-year-old woman who takes warfarin for a mechanical heart valve has had a week of coughing fits from bronchitis. She now has constant lower abdominal pain that worsens when she moves or stands. A tender mass is palpable in the left lower quadrant. INR is 4.1. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Rectus sheath hematoma",
+    "Diverticulitis",
+    "Ovarian torsion",
+    "Incarcerated inguinal hernia",
+    "Appendiceal abscess"
+   ],
+   "answer": 0,
+   "explain": "Rectus sheath hematoma, now most often seen with anticoagulation, causes constant abdominal wall pain worsened by movement and standing, sometimes with a lower-quadrant mass. Coughing fits plus a supratherapeutic INR fit. (B: Diverticulitis typically causes fever and LLQ tenderness without movement-dependent wall pain.) (C: Ovarian torsion causes acute pelvic pain, not a wall mass.) (D: An inguinal hernia sits in the groin.) (E: Appendiceal abscess is right-sided.) Source: Ch 0016, Abdominal Wall"
+  },
+  {
+   "q": "A 48-year-old woman has 1 day of epigastric and right upper quadrant pain. Serum amylase is mildly elevated. Ultrasound shows gallstones without gallbladder wall thickening or pericholecystic fluid. The team cannot tell whether she has acute cholecystitis or acute pancreatitis. Which of the following studies best distinguishes these conditions?",
+   "options": [
+    "Repeat serum amylase in 6 hours",
+    "Plain abdominal radiograph",
+    "Diagnostic peritoneal lavage",
+    "HIDA scan",
+    "Upper gastrointestinal barium study"
+   ],
+   "answer": 3,
+   "explain": "HIDA scans may help differentiate acute cholecystitis or biliary colic from acute pancreatitis. (A: Amylase rises in cholecystitis as well as pancreatitis, so repeating it won't separate them.) (B: Plain films have limited utility.) (C: Lavage has no role here.) (E: Upper GI contrast studies are rarely appropriate.) Source: Ch 0016, Approach to the Patient (imaging, laboratory)"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0017-headache",
+ "name": "Headache (Harrison Ch 17)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 17: Headache.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Primary vs secondary headache?",
+   "back": "Primary: the headache and its features are the disorder itself. Secondary: caused by an exogenous disorder"
+  },
+  {
+   "front": "Which intracranial structures are NOT pain-producing?",
+   "back": "Brain parenchyma, ventricular ependyma, choroid plexus, pial veins"
+  },
+  {
+   "front": "Most common primary and secondary headache types (Table 17-1)?",
+   "back": "Primary: tension-type (69%), then migraine (16%). Secondary: systemic infection (63%)"
+  },
+  {
+   "front": "Share of primary care headache patients who have migraine?",
+   "back": ">90%"
+  },
+  {
+   "front": "Headache red flags (Table 17-2)?",
+   "back": "Sudden onset; first or worst headache; vomiting before headache; subacute worsening; pain with bending, lifting or cough; pain disturbing sleep or on waking; systemic illness; onset >55; fever; abnormal neuro exam; local (temporal artery) tenderness"
+  },
+  {
+   "front": "Initial imaging for new-onset headache or abnormal exam: CT or MRI?",
+   "back": "Either; they're equally sensitive as an initial screen"
+  },
+  {
+   "front": "Headache features suggesting subarachnoid hemorrhage?",
+   "back": "Maximal in <5 min, lasting >5 min, stiff neck, no fever"
+  },
+  {
+   "front": "Suspected SAH with a normal head CT: next step?",
+   "back": "Lumbar puncture"
+  },
+  {
+   "front": "Headache preceded by weeks of vomiting suggests?",
+   "back": "Posterior fossa brain tumor"
+  },
+  {
+   "front": "Headache brought on abruptly by bending, lifting or coughing: causes?",
+   "back": "Posterior fossa mass, Chiari malformation, or low CSF volume"
+  },
+  {
+   "front": "New headache in a patient with known cancer suggests?",
+   "back": "Cerebral metastases or carcinomatous meningitis"
+  },
+  {
+   "front": "Giant cell arteritis: typical patient?",
+   "back": "Age >=50 (mean onset 70), 65% women"
+  },
+  {
+   "front": "Giant cell arteritis presenting features?",
+   "back": "Headache, polymyalgia rheumatica, jaw claudication, fever, weight loss, marked scalp tenderness"
+  },
+  {
+   "front": "Does a normal ESR exclude giant cell arteritis?",
+   "back": "No"
+  },
+  {
+   "front": "High suspicion of GCA: management (per Harrison 22e)?",
+   "back": "Temporal artery biopsy plus immediate prednisone 80 mg daily for the first 4-6 weeks"
+  },
+  {
+   "front": "Main feared complication of untreated GCA?",
+   "back": "Blindness from ischemic optic neuropathy (about half of untreated patients)"
+  },
+  {
+   "front": "Headache with a red eye and a fixed, moderately dilated pupil?",
+   "back": "Acute glaucoma"
+  },
+  {
+   "front": "Definition of chronic daily headache?",
+   "back": "Headache on >=15 days per month"
+  },
+  {
+   "front": "Amitriptyline for chronic daily headache: starting dose and timing?",
+   "back": "10-25 mg, about 12 h before expected waking (up to 1 mg/kg)"
+  },
+  {
+   "front": "Common cause of preventive failure in daily headache?",
+   "back": "Continued regular analgesic use (medication overuse)"
+  },
+  {
+   "front": "Outpatient analgesic withdrawal regimen for medication-overuse headache?",
+   "back": "Taper ~10% every 1-2 weeks (or stop if safe), medication diary, naproxen 500 mg bid for residual pain"
+  },
+  {
+   "front": "Inpatient medication-overuse headache: IV DHE regimen?",
+   "back": "Every 8 h for 5 days, started 3-5 days after withdrawal, with an antiemetic"
+  },
+  {
+   "front": "First priority in new daily persistent headache?",
+   "back": "Exclude subarachnoid hemorrhage"
+  },
+  {
+   "front": "Low CSF volume headache: positional pattern?",
+   "back": "Begins on sitting or standing, resolves within minutes of lying down"
+  },
+  {
+   "front": "Most common cause of low CSF volume headache, and its incidence?",
+   "back": "CSF leak after lumbar puncture; 10-30%"
+  },
+  {
+   "front": "MRI finding diagnostic of low CSF volume headache?",
+   "back": "Diffuse meningeal enhancement after gadolinium"
+  },
+  {
+   "front": "IV caffeine for low CSF volume headache: dose and pre-test?",
+   "back": "500 mg in 500 mL saline over 2 h; ECG first"
+  },
+  {
+   "front": "Treatment of post-LP headache refractory to conservative care?",
+   "back": "Autologous epidural blood patch at the LP site"
+  },
+  {
+   "front": "Incidental Chiari malformation on MRI in low CSF volume headache: decompress?",
+   "back": "No; surgery isn't indicated and usually worsens the headache"
+  },
+  {
+   "front": "Idiopathic intracranial hypertension headache pattern?",
+   "back": "Present on waking, improves during the day, worse lying down; transient visual obscurations"
+  },
+  {
+   "front": "Initial imaging for suspected IIH?",
+   "back": "MRI with MR venogram"
+  },
+  {
+   "front": "IIH treatment sequence?",
+   "back": "Acetazolamide 250-500 mg bid + weight loss, then topiramate, then ICP monitoring or shunt if refractory"
+  },
+  {
+   "front": "When should a primary care physician refer a headache patient?",
+   "back": "No clear diagnosis, a primary headache other than migraine or tension-type, or failure of >=2 standard therapies"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 44-year-old woman comes to the emergency department 3 hours after a sudden, severe headache began while she was lifting weights. The pain peaked within 1 minute and is the worst of her life. Temperature is 37.0°C (98.6°F), blood pressure is 148/88 mm Hg, and pulse is 90/min. She has neck stiffness. Neurologic examination is nonfocal. A noncontrast CT scan of the head is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Discharge with an NSAID and follow-up in 1 week",
+    "Outpatient MRI of the brain in 2 weeks",
+    "Lumbar puncture",
+    "Subcutaneous sumatriptan",
+    "Empiric IV ceftriaxone without further testing"
+   ],
+   "answer": 2,
+   "explain": "Sudden headache maximal within 5 minutes, lasting more than 5 minutes, with a stiff neck and no fever suggests subarachnoid hemorrhage. A small hemorrhage can be missed on CT, so LP is required to diagnose it definitively. (A, B: Discharge or delayed imaging risks missing SAH.) (D: Triptans treat migraine; SAH must be excluded first.) (E: She is afebrile; the presentation suggests hemorrhage, not meningitis.) Source: Ch 0017, Intracranial Hemorrhage"
+  },
+  {
+   "q": "A 73-year-old woman comes to the office because of 3 weeks of a new, dull headache. Brushing her hair is painful, and her jaw aches after chewing for a few minutes. She has morning stiffness in both shoulders. Temperature is 37.6°C (99.7°F). The left temporal artery is tender. Visual acuity and funduscopic examination are normal. ESR is 88 mm/h. Which of the following is the most appropriate next step?",
+   "options": [
+    "Begin prednisone 80 mg daily and arrange a temporal artery biopsy",
+    "Perform temporal artery biopsy and start glucocorticoids only if it is positive",
+    "Prescribe sumatriptan for acute attacks",
+    "Obtain MRI of the brain before any treatment",
+    "Start naproxen and recheck the ESR in 4 weeks"
+   ],
+   "answer": 0,
+   "explain": "When suspicion for giant cell arteritis is high (age >50, scalp tenderness, jaw claudication, PMR symptoms, raised ESR), start prednisone 80 mg daily immediately alongside the temporal artery biopsy. Untreated, about half of patients develop blindness. [verify: guideline may have changed since this edition] (B: Waiting for the biopsy risks vision loss.) (C: This isn't migraine.) (D: Brain MRI doesn't diagnose GCA and delays treatment.) (E: NSAIDs and waiting don't prevent ischemic optic neuropathy.) Source: Ch 0017, Temporal Arteritis"
+  },
+  {
+   "q": "A 70-year-old man has 2 weeks of a new bitemporal headache, pain in his jaw when chewing, and a tender, nodular right temporal artery. He has no visual symptoms. ESR is 18 mm/h. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassure him that the normal ESR excludes giant cell arteritis",
+    "Start sumatriptan for presumed migraine",
+    "Repeat the ESR in 1 month",
+    "Perform a lumbar puncture",
+    "Start glucocorticoids and arrange a temporal artery biopsy"
+   ],
+   "answer": 4,
+   "explain": "The ESR is often but not always elevated; a normal ESR does not exclude giant cell arteritis. With jaw claudication and a tender, nodular temporal artery, treat and biopsy. (A: This is exactly the trap the chapter warns about.) (B: Migraine is common in the elderly, but these features point to GCA.) (C: Waiting a month risks blindness.) (D: LP has no role in GCA.) Source: Ch 0017, Temporal Arteritis"
+  },
+  {
+   "q": "A 26-year-old woman had a lumbar puncture 3 days ago for suspected meningitis; the CSF was normal. She now has an occipitofrontal headache that begins within minutes of sitting up and resolves within minutes of lying down. Bed rest and two IV caffeine infusions have not helped. Vital signs and neurologic examination are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "MRI of the brain with gadolinium",
+    "Epidural blood patch at the site of the lumbar puncture",
+    "CT myelography",
+    "Oral acetazolamide",
+    "Repeat lumbar puncture to measure opening pressure"
+   ],
+   "answer": 1,
+   "explain": "Post-LP headache is the most common low CSF volume headache. When bed rest and IV caffeine fail, an autologous epidural blood patch is effective; for post-LP headache, it's placed empirically at the LP site. (A, C: Imaging to find the leak is unnecessary when the source is known.) (D: Acetazolamide lowers CSF production and treats raised, not low, pressure.) (E: Another LP creates a new leak.) Source: Ch 0017, Secondary NDPH — Low CSF Volume Headache"
+  },
+  {
+   "q": "A 41-year-old man has had 3 months of daily headache. It is absent on waking, begins after he has been upright for a while, and improves within minutes of lying down. It started the day he moved heavy furniture. He has had no lumbar puncture, epidural injection, or head trauma. Neurologic examination is normal. Which of the following is the most appropriate initial imaging study?",
+   "options": [
+    "Noncontrast CT of the head",
+    "CT angiography of the head and neck",
+    "Lumbar puncture with opening pressure",
+    "MRI of the brain with gadolinium",
+    "111In-DTPA radionuclide cisternography"
+   ],
+   "answer": 3,
+   "explain": "For a suspected spontaneous CSF leak, MRI with gadolinium is the initial study of choice. Diffuse meningeal enhancement is so typical that it establishes the diagnosis in context (Fig 17-1). (A: Noncontrast CT doesn't show meningeal enhancement.) (B: CTA evaluates vessels, not CSF leaks.) (C: LP could worsen a leak and isn't the initial study.) (E: Radionuclide cisternography is now rarely used.) Source: Ch 0017, Low CSF Volume Headache; Figure 17-1"
+  },
+  {
+   "q": "A 39-year-old woman has had 6 weeks of headache that appears after she has been upright and resolves within minutes of lying down. MRI of the brain with gadolinium shows diffuse meningeal enhancement. Bed rest has not helped, and IV caffeine 500 mg in 500 mL of saline over 2 hours is planned. Which of the following should be obtained before the infusion?",
+   "options": [
+    "Electrocardiogram",
+    "Serum caffeine level",
+    "Repeat MRI with spinal sequences",
+    "Urine drug screen",
+    "Transthoracic echocardiogram"
+   ],
+   "answer": 0,
+   "explain": "An ECG to screen for arrhythmia should be performed before IV caffeine. At least two infusions are reasonable before further tests to find the leak. (B: There's no baseline caffeine level requirement.) (C: Spinal imaging is for localization if caffeine fails.) (D, E: Neither is part of the pre-infusion check.) Source: Ch 0017, Low CSF Volume Headache (treatment)"
+  },
+  {
+   "q": "A 28-year-old woman comes to the office because of 2 months of generalized headache. It is present on awakening, improves as the day goes on, and is worse when she lies down. She reports brief episodes of graying of vision lasting seconds. BMI is 38 kg/m². Blood pressure is 122/78 mm Hg. Funduscopy shows bilateral papilledema. The rest of the neurologic examination is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Lumbar puncture before any imaging",
+    "Start acetazolamide without further testing",
+    "Noncontrast CT of the head, then discharge if normal",
+    "Sumatriptan for acute attacks",
+    "MRI of the brain with MR venography"
+   ],
+   "answer": 4,
+   "explain": "Suspected raised CSF pressure (an obese young woman with morning headache worse when lying down, visual obscurations and papilledema) requires brain imaging first. MRI with MR venogram is the most efficient initial study, since venous sinus obstruction occurs in some cases. (A: Image before LP.) (B: Treating without confirming the diagnosis skips the workup.) (C: Noncontrast CT doesn't assess the venous sinuses.) (D: A triptan doesn't address raised intracranial pressure.) Source: Ch 0017, Idiopathic Intracranial Hypertension"
+  },
+  {
+   "q": "A 30-year-old woman with a BMI of 36 kg/m² has 6 weeks of headache present on awakening and worse lying down, with transient visual obscurations and bilateral papilledema. MRI and MR venography are normal. Lumbar puncture performed while she has a headache shows an elevated opening pressure, and her headache improves after 25 mL of CSF is removed. CSF composition is normal. Formal visual field testing shows enlarged blind spots. Which of the following is the most appropriate initial treatment?",
+   "options": [
+    "Topiramate",
+    "Ventriculoperitoneal shunt",
+    "Acetazolamide and a weight-loss plan",
+    "Prednisone",
+    "Intracranial pressure monitoring"
+   ],
+   "answer": 2,
+   "explain": "Initial treatment of idiopathic intracranial hypertension is acetazolamide (250–500 mg bid) plus a weight-loss plan when needed. (A: Topiramate is the next choice if acetazolamide fails.) (B, E: Shunting and ICP monitoring are for severely disabled patients who don't respond to medical treatment.) (D: Glucocorticoids aren't part of the described treatment.) Source: Ch 0017, Idiopathic Intracranial Hypertension"
+  },
+  {
+   "q": "A 45-year-old woman with migraine now has headache on 25 days per month. For the past year, she has taken an over-the-counter combination analgesic almost daily. Propranolol was started 2 months ago without improvement, and she continues the daily analgesic. Neurologic examination is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Increase the propranolol dose",
+    "Reduce and eliminate the analgesic, using naproxen for residual pain",
+    "Add a butalbital-containing product",
+    "Switch the preventive to topiramate and continue the daily analgesic",
+    "MRI of the brain"
+   ],
+   "answer": 1,
+   "explain": "Analgesic overuse causes medication-overuse headache and markedly impairs preventives. Continued regular analgesic use is a common cause of a preventive \"failing.\" Reduce the analgesic (e.g., by 10% every 1–2 weeks) or stop it, with naproxen 500 mg bid for residual pain. (A, D: Changing the preventive while daily analgesics continue repeats the failure.) (C: Butalbital is another overused agent; withdrawal is harder after barbiturates.) (E: There are no red flags.) Source: Ch 0017, Medication-Related and Medication-Overuse Headache"
+  },
+  {
+   "q": "A 66-year-old woman comes to the emergency department with severe pain around the right eye followed by a prostrating headache, nausea, and vomiting. The right eye is red, and the right pupil is moderately dilated and does not react to light. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Migraine with aura",
+    "Cluster headache",
+    "Subarachnoid hemorrhage",
+    "Acute glaucoma",
+    "Giant cell arteritis"
+   ],
+   "answer": 3,
+   "explain": "Glaucoma can present with a prostrating headache, nausea and vomiting, typically starting with severe eye pain. The eye is red with a fixed, moderately dilated pupil. (A: Migraine doesn't fix and dilate the pupil.) (B: Cluster causes cranial autonomic features (tearing, rhinorrhea, ptosis), not a fixed mid-dilated pupil.) (C: SAH presents as a thunderclap headache with a stiff neck.) (E: GCA causes scalp tenderness and jaw claudication.) Source: Ch 0017, Glaucoma"
+  },
+  {
+   "q": "A 34-year-old man has had 6 weeks of vomiting on waking. For the past 2 weeks he has also had headaches that worsen with coughing, and he has become unsteady when walking. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Frontal lobe glioma",
+    "Prolactin-secreting pituitary adenoma",
+    "Idiopathic intracranial hypertension",
+    "Medication-overuse headache",
+    "Posterior fossa tumor"
+   ],
+   "answer": 4,
+   "explain": "Vomiting that precedes the headache by weeks is highly characteristic of posterior fossa brain tumors. Pain brought on by coughing or bending also points to a posterior fossa mass. (A: A frontal tumor wouldn't produce this vomiting pattern or ataxia.) (B: A prolactinoma presents with amenorrhea or galactorrhea.) (C: IIH typically affects obese women and causes visual obscurations.) (D: There's no analgesic overuse history.) Source: Ch 0017, Brain Tumor; Table 17-2"
+  },
+  {
+   "q": "A 58-year-old woman with metastatic breast cancer has had 2 weeks of a new, persistent headache. She has never had headaches before. Neurologic examination is nonfocal, and funduscopy is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "MRI of the brain",
+    "Trial of sumatriptan",
+    "Reassurance, because most headaches are benign",
+    "Temporal artery biopsy",
+    "Start amitriptyline"
+   ],
+   "answer": 0,
+   "explain": "New headache in a patient with known malignancy suggests cerebral metastases or carcinomatous meningitis. Recent-onset headache warrants CT or MRI. (B: A triptan trial skips evaluation of a red-flag headache.) (C: \"Known systemic illness\" is a red flag; reassurance is inappropriate.) (D: She lacks GCA features.) (E: Preventive therapy before excluding a secondary cause is wrong.) Source: Ch 0017, Brain Tumor; Clinical Evaluation of Acute, New-Onset Headache"
+  },
+  {
+   "q": "A 31-year-old woman has been treated by her primary care physician for headaches thought to be tension-type headache. Two standard therapies, used correctly for an adequate period, have not helped. She has no red flag features, and the neurologic examination is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start a daily opioid",
+    "Add a third agent from the same class",
+    "Refer her to a headache specialist",
+    "Reassure her and continue the current therapy",
+    "Obtain an electroencephalogram"
+   ],
+   "answer": 2,
+   "explain": "Refer patients who lack a clear diagnosis, have a primary headache other than migraine or tension-type, or haven't responded to two or more standard therapies. (A: Opioids drive medication-overuse headache.) (B: Adding more of the same doesn't address treatment failure.) (D: Continuing ineffective therapy isn't appropriate.) (E: EEG has no role in headache diagnosis here.) Source: Ch 0017, Primary Care and Headache Management"
+  },
+  {
+   "q": "A 40-year-old woman with a long history of migraine now has headaches on 18 days per month. She uses an analgesic less than twice a week. There are no red flags, and the neurologic examination is normal. She wants a preventive medication but is worried about feeling drowsy in the morning at work. Which of the following is the most appropriate regimen?",
+   "options": [
+    "Daily oral oxycodone",
+    "Amitriptyline 10 mg taken about 12 hours before her usual waking time, titrated slowly",
+    "Daily butalbital-containing analgesic",
+    "Amitriptyline 1 mg/kg taken each morning from the start",
+    "Nightly zolpidem"
+   ],
+   "answer": 1,
+   "explain": "For chronic daily headache arising from migraine, tricyclics are very useful preventives. Start low (10–25 mg) and give about 12 hours before expected waking to avoid morning sleepiness; doses go up to 1 mg/kg. (A, C: Opioids and butalbital promote medication-overuse headache.) (D: Starting at full dose in the morning maximizes daytime drowsiness.) (E: A hypnotic isn't a headache preventive.) Source: Ch 0017, Approach to the Patient: Chronic Daily Headache"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0018-low-back-pain",
+ "name": "Low Back Pain (Harrison Ch 18)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 18: Low Back Pain.",
+ "chapter": "General Medicine",
+ "flashcards": [
+  {
+   "front": "Cut-off between acute and chronic low back pain?",
+   "back": "3 months (the main prognostic factor)"
+  },
+  {
+   "front": "Most acute low back pain resolves within?",
+   "back": "6 weeks"
+  },
+  {
+   "front": "Acute low back pain without red flags: management?",
+   "back": "OTC analgesics (e.g., NSAID), education, physical therapy and activity; no imaging"
+  },
+  {
+   "front": "Is acetaminophen first line for back pain (per Harrison 22e)?",
+   "back": "No; it's unlikely to give significant analgesia"
+  },
+  {
+   "front": "Recommended drug classes for chronic low back pain?",
+   "back": "NSAIDs, nonbenzodiazepine muscle relaxants, antidepressants (duloxetine, TCAs)"
+  },
+  {
+   "front": "Evidence for gabapentinoids in back pain?",
+   "back": "Insufficient; minimal benefit relative to harms (dizziness, somnolence, gait problems)"
+  },
+  {
+   "front": "Drug combination to avoid in back pain management?",
+   "back": "Opioids with benzodiazepines (respiratory depression)"
+  },
+  {
+   "front": "Nociceptive vs neuropathic back pain: radiation pattern?",
+   "back": "Nociceptive: proximal, nondermatomal referral. Neuropathic: dermatomal"
+  },
+  {
+   "front": "Discogenic pain: aggravating factors?",
+   "back": "Sitting, bending forward, Valsalva; often bilateral"
+  },
+  {
+   "front": "Facet joint pain: features?",
+   "back": "Unilateral paraspinal pain, morning stiffness, relieved by sitting; increases with age"
+  },
+  {
+   "front": "Only way to establish facet joint pain, and treatment if positive?",
+   "back": "Diagnostic medial branch blocks; then radiofrequency ablation of those nerves"
+  },
+  {
+   "front": "Sacroiliac joint pain: location clues?",
+   "back": "Below L5, usually unilateral, may radiate to the groin (mimics hip)"
+  },
+  {
+   "front": "Reference standard for diagnosing SI joint pain?",
+   "back": "Low-volume intraarticular SI joint anesthetic injection"
+  },
+  {
+   "front": "How many positive SI provocation tests suggest SI joint pain?",
+   "back": "3 or more (sensitivity potentially >=90%, specificity >=80%)"
+  },
+  {
+   "front": "Straight leg raise: strength and weakness?",
+   "back": "~80% sensitive for L5/S1 roots; poor for roots above L4 and for stenosis"
+  },
+  {
+   "front": "Crossed straight leg raise: strength?",
+   "back": "High specificity (>85%), low sensitivity for disk herniation"
+  },
+  {
+   "front": "Femoral stretch test targets which roots?",
+   "back": "L2-L4 (about 50% sensitive)"
+  },
+  {
+   "front": "Patellar and Achilles reflexes: roots?",
+   "back": "Patellar L4 (sometimes L2-L3); Achilles S1"
+  },
+  {
+   "front": "Hallmark of lumbar spinal stenosis?",
+   "back": "Neurogenic claudication: leg pain with walking, relieved by sitting or leaning forward (shopping cart sign)"
+  },
+  {
+   "front": "Most common level of lumbar spinal stenosis?",
+   "back": "L4-L5"
+  },
+  {
+   "front": "Straight leg raise in spinal stenosis?",
+   "back": "Usually negative"
+  },
+  {
+   "front": "Back pain red flags for cauda equina syndrome?",
+   "back": "Saddle anesthesia, urinary or rectal incontinence, sexual dysfunction, rapidly progressive deficits, decreased rectal tone"
+  },
+  {
+   "front": "Suspected cauda equina syndrome: exam and test?",
+   "back": "Perianal sensation and rectal tone; urgent MRI"
+  },
+  {
+   "front": "Back pain red flag in IV drug users or the immunocompromised?",
+   "back": "Infection"
+  },
+  {
+   "front": "Back pain red flags pointing to tumor?",
+   "back": "History of cancer, weight loss, age >50, night pain or pain not relieved by rest"
+  },
+  {
+   "front": "Does the absence of red flags rule out a serious cause of back pain?",
+   "back": "No; their absence doesn't meaningfully reduce the likelihood"
+  },
+  {
+   "front": "Most common site of vertebral compression fractures?",
+   "back": "Thoracolumbar junction (T11-L2)"
+  },
+  {
+   "front": "When can vertebroplasty or kyphoplasty be considered?",
+   "back": "Severe pain or disability from an acute (<6 weeks) compression fracture; evidence conflicting"
+  },
+  {
+   "front": "Epidural steroid injections work best for?",
+   "back": "Acute radicular pain from disk herniation (weak surgery-sparing effect)"
+  },
+  {
+   "front": "Indications for lumbar nerve root decompression?",
+   "back": "Severe or progressive neurologic deficits, or severe radicular pain refractory to conservative and interventional care"
+  },
+  {
+   "front": "Lumbar fusion has the strongest evidence for?",
+   "back": "Spondylolisthesis or instability"
+  },
+  {
+   "front": "Proportion of herniated disks that retract within 2 years?",
+   "back": "Over two-thirds"
+  },
+  {
+   "front": "Schober test positive result?",
+   "back": "<5 cm increase on forward bend; nonspecific for spondyloarthritis"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 36-year-old man comes to the office because of 5 days of low back pain that began after he helped a friend move furniture. The pain does not radiate. He has no fever, weight loss, bladder or bowel changes, or history of cancer. Vital signs are normal. There is paraspinal tenderness. Straight leg raising is negative, and strength, sensation, and reflexes are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "MRI of the lumbar spine",
+    "Over-the-counter analgesic such as an NSAID, education, and staying active with physical therapy",
+    "Plain radiographs of the lumbar spine",
+    "Oxycodone for 2 weeks and bed rest",
+    "Gabapentin"
+   ],
+   "answer": 1,
+   "explain": "Most acute low back pain resolves within 6 weeks. Over-the-counter analgesics plus nonpharmacologic care (targeted physical therapy, core strengthening, education) usually suffice without imaging or prescription analgesics. In acute LBP, only red flags or serious or progressive deficits warrant imaging. (A, C: There are no red flags or neurologic deficits.) (D: Opioids show no long-term benefit; bed rest isn't recommended.) (E: Evidence for gabapentinoids in back pain is insufficient.) Source: Ch 0018, Imaging; Multimodal and Interdisciplinary Strategies"
+  },
+  {
+   "q": "A 49-year-old woman has had 5 months of nonradicular low back pain. Physical therapy and a home exercise program have helped only partially. She has no red flags, and neurologic examination is normal. She asks about a daily medication. Which of the following has the best support for her chronic low back pain?",
+   "options": [
+    "Acetaminophen as first-line therapy",
+    "Gabapentin",
+    "Long-term opioid therapy",
+    "Duloxetine",
+    "Diazepam"
+   ],
+   "answer": 3,
+   "explain": "Pharmacologic options for chronic LBP include NSAIDs, nonbenzodiazepine muscle relaxants, and antidepressants such as duloxetine (an SNRI) or tricyclics. (A: Acetaminophen is unlikely to help and is no longer recommended first line.) (B: Evidence for gabapentinoids is insufficient.) (C: Opioids haven't shown long-term benefit and carry serious harms.) (E: Benzodiazepines aren't among the recommended relaxants.) Source: Ch 0018, Pharmacotherapy"
+  },
+  {
+   "q": "A 52-year-old man has had 2 days of severe low back pain. Today he could not urinate and noticed numbness between his legs. Post-void residual is 700 mL. There is decreased sensation in the perianal area, reduced rectal tone, and bilateral ankle weakness. Which of the following is the most appropriate next step?",
+   "options": [
+    "Urgent MRI of the lumbar spine with urgent surgical consultation",
+    "Physical therapy referral",
+    "Epidural steroid injection",
+    "Outpatient electromyography",
+    "Plain radiographs of the lumbar spine"
+   ],
+   "answer": 0,
+   "explain": "Saddle anesthesia, urinary retention, reduced rectal tone and bilateral deficits are red flags for cauda equina syndrome. After checking perianal sensation and rectal tone, urgent MRI confirmation may be needed. (B, C: Conservative or interventional pain treatment delays an emergency.) (D: Electrodiagnostics don't belong in an emergency workup.) (E: Plain films don't show neural compression.) Source: Ch 0018, History and Physical Exam; Table 18-4"
+  },
+  {
+   "q": "A 74-year-old man has had 1 year of pain in both buttocks and thighs that comes on after walking two blocks and is relieved by sitting down. He can walk much farther in the grocery store when leaning on the shopping cart. Pedal pulses are normal. He walks with a wide-based gait. Straight leg raising is negative bilaterally. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Herniated lumbar disk",
+    "Peripheral arterial disease",
+    "Facet joint arthropathy",
+    "Sacroiliac joint dysfunction",
+    "Lumbar spinal stenosis"
+   ],
+   "answer": 4,
+   "explain": "Neurogenic claudication (leg pain with walking relieved by sitting) is the hallmark of spinal stenosis. So are relief with leaning forward (the shopping cart sign), a wide-based gait, and a usually negative straight leg raise. (A: A herniated disk causes dermatomal pain, usually with a positive SLR.) (B: Normal pulses and relief from sitting or flexion favor a neurogenic cause.) (C: Facet pain is axial and is improved, not provoked, by sitting.) (D: SI pain is below L5 and unilateral.) Source: Ch 0018, Spinal Stenosis; Table 18-3"
+  },
+  {
+   "q": "A 38-year-old man has 3 weeks of low back pain radiating down the back of his left leg to the foot. Which of the following examination findings is most specific for a lumbar disk herniation?",
+   "options": [
+    "Pain reproduced by raising the left leg",
+    "Anterior thigh pain on the femoral stretch test",
+    "Left leg pain reproduced by raising the right leg",
+    "Paraspinal tenderness",
+    "A positive Schober test"
+   ],
+   "answer": 2,
+   "explain": "The crossed straight leg raise (pain in the affected leg when the opposite leg is raised) has consistently high specificity (>85%) but low sensitivity. (A: The ipsilateral SLR is sensitive (~80% for L5/S1) but has variable specificity.) (B: The femoral stretch test probes mid-lumbar roots and is only moderately sensitive.) (D: Paraspinal tenderness is weakly associated with facet pain.) (E: Schober tests lumbar flexion and is nonspecific.) Source: Ch 0018, History and Physical Exam; Table 18-2"
+  },
+  {
+   "q": "A 67-year-old woman has 2 years of right-sided low back pain that is worse in the morning and when standing, and better when she sits. There is right paraspinal tenderness. She has no leg symptoms, and neurologic examination is normal. Two separate fluoroscopically guided anesthetic blocks of the right L4–L5 medial branch nerves each relieved more than half of her pain. Physical therapy and NSAIDs have not provided lasting benefit. Which of the following is the most appropriate next step?",
+   "options": [
+    "Radiofrequency ablation of the medial branch nerves",
+    "Lumbar interbody fusion",
+    "Provocative discography",
+    "Basivertebral nerve ablation",
+    "Epidural steroid injection"
+   ],
+   "answer": 0,
+   "explain": "Facet joint pain can be established only by diagnostic medial branch blocks. When the blocks give significant relief (e.g., ≥50%), the same nerves can be treated with radiofrequency ablation. (B: Fusion is for instability or spondylolisthesis, not facet pain.) (C: Discography is for suspected discogenic pain.) (D: Basivertebral ablation targets vertebrogenic (Modic) pain.) (E: ESIs treat radicular pain; she has no leg symptoms.) Source: Ch 0018, Lumbar Medial Branch Nerve Blocks and Ablation; Table 18-3"
+  },
+  {
+   "q": "A 30-year-old woman fell onto her buttocks while skiing 4 months ago. She now has left-sided pain below the L5 level that sometimes radiates to the groin. The FABER (Patrick) test, Gaenslen test, and compression test are all positive on the left. Hip range of motion is otherwise normal. Which of the following is the reference standard for confirming the source of her pain?",
+   "options": [
+    "MRI of the lumbar spine",
+    "Provocative discography",
+    "Lumbar medial branch block",
+    "Low-volume intraarticular anesthetic injection of the sacroiliac joint",
+    "Electromyography"
+   ],
+   "answer": 3,
+   "explain": "A low-volume intraarticular SI joint injection is both therapeutic and the reference standard for diagnosis. Three or more positive provocation tests, pain below L5 and groin radiation all raise the likelihood of SI pain. (A: Imaging is often unremarkable in extraarticular SI pathology and doesn't confirm the pain source.) (B: Discography is for discogenic pain.) (C: Medial branch blocks diagnose facet pain.) (E: EMG evaluates nerve roots and peripheral nerves.) Source: Ch 0018, SI Joint Interventions; Table 18-2"
+  },
+  {
+   "q": "A 78-year-old woman with osteoporosis has an acute T12 compression fracture diagnosed 3 weeks ago after she lifted a laundry basket. Despite oral analgesics and physical therapy, her pain remains severe and she cannot get out of bed without help. Neurologic examination is normal. MRI shows marrow edema at T12 without retropulsion. Which of the following is the most appropriate next step?",
+   "options": [
+    "Lumbar interbody fusion",
+    "Continue the current regimen for 6 more months",
+    "Basivertebral nerve radiofrequency ablation",
+    "Epidural steroid injection",
+    "Consider percutaneous vertebral augmentation (vertebroplasty or kyphoplasty)"
+   ],
+   "answer": 4,
+   "explain": "For severe pain or disability from an acute (<6 weeks) compression fracture, vertebroplasty or kyphoplasty can be considered, although evidence is conflicting. [verify: guideline may have changed since this edition] (A: Fusion isn't used for an uncomplicated osteoporotic fracture.) (B: Most fractures improve within 6–8 weeks, but augmentation is time-limited to acute fractures, and her disability is severe now.) (C: Basivertebral ablation is for chronic pain with Modic changes.) (D: ESI treats radicular pain.) Source: Ch 0018, Vertebral Augmentation and Basivertebral Nerve Ablation"
+  },
+  {
+   "q": "A 42-year-old man has an L4–L5 disk herniation compressing the left L5 nerve root. Over 2 weeks, his left ankle dorsiflexion strength has worsened from 4/5 to 2/5 despite NSAIDs and physical therapy. Which of the following is the most appropriate next step?",
+   "options": [
+    "Continue physical therapy for 6 more weeks",
+    "Surgical decompression",
+    "Epidural steroid injection",
+    "Start gabapentin",
+    "Repeat MRI in 3 months"
+   ],
+   "answer": 1,
+   "explain": "Lumbar nerve root decompression is indicated for severe or progressive neurologic deficits (loss of motor or sensory function or reflexes). (A, E: Waiting risks a permanent deficit.) (C: ESI is for pain, not a progressive motor deficit.) (D: Gabapentinoids have minimal benefit and don't address compression.) Source: Ch 0018, Surgery"
+  },
+  {
+   "q": "A 35-year-old woman has had 6 weeks of pain radiating from the low back down the back of her right leg to the lateral foot. MRI shows an L5–S1 disk herniation contacting the right S1 root. Strength is normal and stable. NSAIDs and 6 weeks of physical therapy have given little relief. Which of the following is the most appropriate next step?",
+   "options": [
+    "Lumbar interbody fusion",
+    "Long-term opioid therapy",
+    "Epidural steroid injection",
+    "Pregabalin, as the most effective agent for radicular pain",
+    "Provocative discography"
+   ],
+   "answer": 2,
+   "explain": "Epidural steroid injections for radicular pain from disk herniation are likely most effective in the acute phase. They may have a weak surgery-sparing effect. (A: Fusion adds complications without benefit when there's no instability.) (B: Long-term opioids lack benefit.) (D: Meta-analyses suggest gabapentinoids give minimal benefit relative to harms.) (E: Discography is for discogenic axial pain.) Source: Ch 0018, Epidural Steroid Injections; Table 18-3"
+  },
+  {
+   "q": "A 33-year-old man who injects heroin has 1 week of severe midback pain that is worse at night, with fevers and chills. Temperature is 38.6°C (101.5°F). There is focal tenderness over the lower thoracic spine. Neurologic examination is normal. Which of the following is the most likely underlying cause?",
+   "options": [
+    "Spinal infection",
+    "Cauda equina syndrome",
+    "Spondylolysis",
+    "Spinal epidural hematoma",
+    "Muscle strain"
+   ],
+   "answer": 0,
+   "explain": "IV drug use is a red flag for infection, and fever with pain worse at night points to infection or tumor. (B: Cauda equina requires saddle anesthesia, sphincter dysfunction or progressive deficits.) (C: Spondylolysis is a red flag in patients ≤18.) (D: Hematoma follows anticoagulation, trauma or a spine procedure.) (E: Strain doesn't cause fever or night pain.) Source: Ch 0018, Red Flags; Table 18-4"
+  },
+  {
+   "q": "A 45-year-old man has low back pain radiating down the back of the left leg. On examination, the left ankle (Achilles) reflex is absent and the right is normal. Which nerve root is most likely involved?",
+   "options": [
+    "L2",
+    "L3",
+    "L4",
+    "S1",
+    "T12"
+   ],
+   "answer": 3,
+   "explain": "The Achilles reflex reflects S1. The patellar reflex reflects L4, and sometimes L2 or L3. (A, B, C: These roots relate to the patellar reflex, not the Achilles.) (E: T12 doesn't contribute to lower-limb reflexes.) Source: Ch 0018, History and Physical Exam (neurologic exam)"
+  },
+  {
+   "q": "A 60-year-old man with chronic low back pain has been taking oxycodone for a recent severe flare. At an urgent care visit, he was also prescribed diazepam for back spasms. He has no red flags, and neurologic examination is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Continue both medications at the current doses",
+    "Add gabapentin",
+    "Increase the oxycodone dose",
+    "Add scheduled acetaminophen as first-line therapy",
+    "Stop the diazepam and use a nonbenzodiazepine muscle relaxant if needed"
+   ],
+   "answer": 4,
+   "explain": "Concomitant opioids and benzodiazepines should be avoided because of the increased risk of respiratory depression. Nonbenzodiazepine muscle relaxants are among the recommended agents. (A: Continuing the combination is unsafe.) (B: Evidence for gabapentinoids is insufficient.) (C: Opioids should be used at the lowest effective dose for the shortest time.) (D: Acetaminophen is no longer first line for back pain.) Source: Ch 0018, Pharmacotherapy"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0020-fever",
+ "name": "Fever (Harrison Ch 20)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 20: Fever.",
+ "chapter": "Infectious Diseases",
+ "flashcards": [
+  {
+   "front": "Oral temperature that defines fever (per Harrison 22e)?",
+   "back": ">37.7°C (>99.9°F), the 99th percentile in healthy adults"
+  },
+  {
+   "front": "Diurnal temperature variation?",
+   "back": "Lowest around 8 a.m., highest around 4 p.m."
+  },
+  {
+   "front": "Rectal vs oral temperature difference?",
+   "back": "Rectal is about 0.4°C higher"
+  },
+  {
+   "front": "Definition and most common cause of hyperpyrexia?",
+   "back": ">41.5°C; most often CNS hemorrhage"
+  },
+  {
+   "front": "Fever vs hyperthermia: hypothalamic set point?",
+   "back": "Fever: raised. Hyperthermia: unchanged"
+  },
+  {
+   "front": "Skin in heat stroke vs fever?",
+   "back": "Heat stroke (or anti-sweating drugs): hot and dry. Fever: skin can be cold from vasoconstriction"
+  },
+  {
+   "front": "Do antipyretics lower temperature in hyperthermia?",
+   "back": "No (they usually do in fever, even hyperpyrexia)"
+  },
+  {
+   "front": "Body temperature after hypothalamic damage is usually?",
+   "back": "Subnormal, not elevated"
+  },
+  {
+   "front": "Classic exogenous pyrogen?",
+   "back": "Lipopolysaccharide (endotoxin) of gram-negative bacteria"
+  },
+  {
+   "front": "Gram-positive toxins that cause fever as superantigens?",
+   "back": "TSST-1, staphylococcal enterotoxins, streptococcal pyrogenic exotoxins"
+  },
+  {
+   "front": "Main pyrogenic cytokines?",
+   "back": "IL-1, IL-6, TNF, interferon (also ciliary neurotrophic factor)"
+  },
+  {
+   "front": "Where do circulating pyrogens act to start fever?",
+   "back": "Endothelium of the circumventricular organs (OVLT) near the hypothalamus"
+  },
+  {
+   "front": "PGE2 receptor essential for fever, and the neurotransmitter it releases?",
+   "back": "EP-3; cAMP from glial cells"
+  },
+  {
+   "front": "Why does fever cause myalgias and arthralgias?",
+   "back": "Cytokine-induced PGE2 in peripheral tissues"
+  },
+  {
+   "front": "Patients who may not mount a fever despite infection?",
+   "back": "Newborns, elderly, chronic liver or kidney failure, glucocorticoid or anticytokine therapy"
+  },
+  {
+   "front": "CBC findings suggesting bacterial infection?",
+   "back": "Band forms, toxic granulations, Döhle bodies"
+  },
+  {
+   "front": "Most useful labs for low-grade fever or suspected occult disease?",
+   "back": "CRP and ESR (measuring cytokines isn't helpful)"
+  },
+  {
+   "front": "Low-grade fever in a patient on anti-TNF therapy: approach?",
+   "back": "Early, rigorous diagnostic evaluation (risk of TB dissemination; fever may be blunted)"
+  },
+  {
+   "front": "Anti-IL-17 therapy increases risk of which infection?",
+   "back": "Systemic candidiasis"
+  },
+  {
+   "front": "Causes of relative bradycardia (temperature-pulse dissociation)?",
+   "back": "Typhoid fever, brucellosis, leptospirosis, some drug fevers, factitious fever"
+  },
+  {
+   "front": "Malaria fever periodicity: P. vivax vs P. malariae?",
+   "back": "Vivax every 3rd day; malariae every 4th day"
+  },
+  {
+   "front": "Pel-Ebstein fever pattern and association?",
+   "back": "3-10 days of fever alternating with 3-10 afebrile days; Hodgkin and other lymphomas"
+  },
+  {
+   "front": "Fever every 21 days with neutropenia?",
+   "back": "Cyclic neutropenia"
+  },
+  {
+   "front": "Fevers of autoinflammatory diseases respond dramatically to?",
+   "back": "IL-1 blockade (anakinra, canakinumab)"
+  },
+  {
+   "front": "When is withholding antipyretics useful?",
+   "back": "To judge antibiotic effectiveness (esp. culture-negative infection) or to diagnose an unusual fever"
+  },
+  {
+   "front": "Preferred antipyretic in adults, and why?",
+   "back": "Acetaminophen; aspirin and NSAIDs affect platelets and the GI tract"
+  },
+  {
+   "front": "Antipyretic to avoid in children, and why?",
+   "back": "Aspirin; Reye syndrome with certain viral infections"
+  },
+  {
+   "front": "Two antipyretic mechanisms of glucocorticoids?",
+   "back": "Inhibit phospholipase A2 (less PGE2) and block transcription of pyrogenic cytokine mRNA"
+  },
+  {
+   "front": "Oxygen consumption increase per 1°C of fever?",
+   "back": "About 13% for every 1°C above 37°C"
+  },
+  {
+   "front": "Cooling blankets in hyperpyrexia: key rule?",
+   "back": "Don't use them without oral antipyretics"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "An 82-year-old woman is brought to the emergency department during a heat wave after being found confused in her apartment, which has no air conditioning. She takes an anticholinergic medication for overactive bladder. Temperature is 41.2°C (106.2°F), pulse is 124/min, and blood pressure is 102/60 mm Hg. Her skin is hot and dry. A dose of acetaminophen given by paramedics did not lower her temperature. Which of the following best explains her elevated temperature?",
+   "options": [
+    "Elevation of the hypothalamic set point by pyrogenic cytokines",
+    "Heat gain exceeding heat loss with an unchanged hypothalamic set point",
+    "Prostaglandin E2 acting on the EP-3 receptor",
+    "Endotoxin-induced release of interleukin-1",
+    "Hypothalamic damage lowering the set point"
+   ],
+   "answer": 1,
+   "explain": "Hyperthermia is an uncontrolled rise in temperature that exceeds the body's ability to lose heat. The hypothalamic set point is unchanged and no pyrogens are involved. Heat exposure, a drug that interferes with thermoregulation, hot dry skin and no response to antipyretics all distinguish it from fever. (A, C, D: These describe fever, which raises the set point and usually responds to antipyretics.) (E: Hypothalamic damage usually causes subnormal temperatures.) Source: Ch 0020, Fever Versus Hyperthermia"
+  },
+  {
+   "q": "A 30-year-old man asks whether his oral temperature of 37.4°C (99.3°F), measured at 4 p.m., means he has a fever. Based on a large study of healthy adults, which of the following oral temperatures defines fever?",
+   "options": [
+    ">37.0°C (>98.6°F)",
+    ">37.2°C (>99.0°F)",
+    ">37.5°C (>99.5°F)",
+    ">37.7°C (>99.9°F)",
+    ">38.3°C (>101.0°F)"
+   ],
+   "answer": 3,
+   "explain": "In a study of more than 35,000 adults, the mean oral temperature was 36.6°C. A temperature above 37.7°C (99.9°F), the 99th percentile for healthy people, defines fever. (A, B, C: These fall within normal daily variation (higher readings occur around 4 p.m.).) (E: 38.3°C is the temperature threshold used in the FUO definition, not the definition of fever.) Source: Ch 0020, Normal Body Temperatures"
+  },
+  {
+   "q": "A 6-year-old boy has had 2 days of fever, runny nose, and cough. Temperature is 38.9°C (102°F). He is uncomfortable but well hydrated, and examination shows only rhinorrhea and mild pharyngeal erythema. His mother asks what to give him for the fever. Which of the following is the most appropriate recommendation?",
+   "options": [
+    "Acetaminophen or ibuprofen",
+    "Aspirin",
+    "No antipyretic, because fever helps clear viral infections",
+    "Oral prednisone",
+    "Alternating aspirin and acetaminophen"
+   ],
+   "answer": 0,
+   "explain": "Treating fever with routine antipyretics does no harm and doesn't slow recovery from common infections. In children, use acetaminophen or ibuprofen; aspirin increases the risk of Reye syndrome with certain viral infections. (B, E: Aspirin is avoided in children.) (C: No evidence shows that fever speeds recovery or that antipyretics delay it.) (D: Glucocorticoids aren't used to treat simple fever.) Source: Ch 0020, Regimens for the Treatment of Fever; The Decision to Treat Fever"
+  },
+  {
+   "q": "A 68-year-old man with a history of a bleeding duodenal ulcer and chronic kidney disease has influenza with a temperature of 39.0°C (102.2°F) and diffuse myalgias. He asks for something to bring down the fever. Which of the following is the most appropriate antipyretic?",
+   "options": [
+    "High-dose aspirin",
+    "Ibuprofen",
+    "Naproxen",
+    "Celecoxib",
+    "Acetaminophen"
+   ],
+   "answer": 4,
+   "explain": "Aspirin and NSAIDs reduce fever effectively but can harm platelets and the GI tract, so acetaminophen is the preferred antipyretic. That matters especially with prior GI bleeding. (A, B, C, D: These carry GI and platelet effects (and COX-2 inhibitors are still NSAIDs) that are undesirable here.) Source: Ch 0020, Regimens for the Treatment of Fever"
+  },
+  {
+   "q": "A 45-year-old woman with rheumatoid arthritis has taken adalimumab for 2 years. She reports 5 days of fatigue and a temperature of 37.9°C (100.2°F). She has no localizing symptoms. Examination is unremarkable. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassure her that a temperature below 38.3°C is not significant",
+    "Recheck her temperature in 2 weeks",
+    "Perform an early, thorough diagnostic evaluation for infection, including tuberculosis",
+    "Increase the adalimumab dose",
+    "Start empiric oral prednisone"
+   ],
+   "answer": 2,
+   "explain": "Anticytokine therapy lowers host defenses (e.g., latent TB can disseminate on anti-TNF therapy) and may blunt the febrile response. Low-grade fever in these patients is of considerable concern and calls for an early, rigorous evaluation. (A, B: Blunted fever makes a low reading more, not less, concerning.) (D: More immunosuppression is the wrong direction.) (E: Steroids would further blunt fever and mask infection.) Source: Ch 0020, Fever in Patients Receiving Anticytokine Therapy"
+  },
+  {
+   "q": "A 27-year-old man returns from a 3-week trip to South Asia with 6 days of fever, headache, and abdominal pain. Temperature is 39.8°C (103.6°F) and pulse is 72/min. He has faint, blanching pink macules on his trunk and mild splenomegaly. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Typhoid fever",
+    "Falciparum malaria",
+    "Dengue fever",
+    "Acute HIV infection",
+    "Infectious mononucleosis"
+   ],
+   "answer": 0,
+   "explain": "Temperature–pulse dissociation (relative bradycardia) occurs in typhoid fever, brucellosis, leptospirosis, some drug fevers and factitious fever. Travel, abdominal pain, rose spots and splenomegaly fit typhoid. (B, C, D, E: These cause fever with a proportionate tachycardia and don't feature the classic temperature–pulse dissociation.) Source: Ch 0020, The Decision to Treat Fever (fever patterns); Ch 0021 Table 21-1 (rose spots)"
+  },
+  {
+   "q": "A 24-year-old woman has had recurring fevers for 3 months. Each febrile period lasts about a week and is followed by about a week without fever. She has night sweats, weight loss, and painless cervical lymphadenopathy. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Plasmodium malariae infection",
+    "Cyclic neutropenia",
+    "Familial Mediterranean fever",
+    "Hodgkin lymphoma",
+    "Tick-borne relapsing fever"
+   ],
+   "answer": 3,
+   "explain": "In the Pel-Ebstein pattern, 3–10 days of fever alternate with 3–10 days without fever, classically in Hodgkin disease and other lymphomas. Night sweats, weight loss and lymphadenopathy support this. (A: *P. malariae* causes fever every fourth day.) (B: Cyclic neutropenia causes fever every 21 days, with neutropenia.) (C: FMF attacks are brief with serositis.) (E: Relapsing fever follows tick or louse exposure and has a different rhythm.) Source: Ch 0020, The Decision to Treat Fever (fever patterns)"
+  },
+  {
+   "q": "A 58-year-old man is treated with IV antibiotics for suspected vertebral osteomyelitis. Blood cultures and a biopsy culture are negative. He has been receiving scheduled acetaminophen every 6 hours since admission, and the team wants to know whether the antibiotic regimen is working. Which of the following is the most appropriate step?",
+   "options": [
+    "Increase the acetaminophen dose",
+    "Add scheduled ibuprofen",
+    "Start dexamethasone",
+    "Stop the antibiotics and observe",
+    "Withhold antipyretics to follow the fever curve"
+   ],
+   "answer": 4,
+   "explain": "In bacterial infections, withholding antipyretics can help judge whether an antibiotic is working, especially without positive cultures. Routine antipyretics can mask undertreated infection. (A, B: More antipyretics obscure the response further.) (C: Glucocorticoids suppress fever and inflammation and mask the course.) (D: Stopping treatment for suspected osteomyelitis is premature.) Source: Ch 0020, The Decision to Treat Fever"
+  },
+  {
+   "q": "A 2-year-old girl with a history of febrile seizures has acute otitis media and a temperature of 39.4°C (102.9°F). Which of the following is the most appropriate approach to her fever?",
+   "options": [
+    "Withhold antipyretics so that the fever curve can be followed",
+    "Treat the fever aggressively with an appropriate antipyretic",
+    "Give an antipyretic only if her temperature exceeds 40.5°C",
+    "Give aspirin",
+    "Use a cooling blanket without an antipyretic"
+   ],
+   "answer": 1,
+   "explain": "Children with a history of febrile or nonfebrile seizures should be aggressively treated to reduce fever. The absolute temperature doesn't correlate with seizure onset, so waiting for a threshold isn't justified. (A: Withholding antipyretics is wrong in a seizure-prone child.) (C: A temperature threshold doesn't predict seizures.) (D: Aspirin is avoided in children (Reye syndrome).) (E: Cooling blankets shouldn't be used without antipyretics.) Source: Ch 0020, Regimens for the Treatment of Fever"
+  },
+  {
+   "q": "A 61-year-old man is admitted to the ICU with an intracerebral hemorrhage. On day 2, his temperature rises to 41.7°C (107.1°F). The nurse proposes placing a cooling blanket. Which of the following is the most appropriate management of his temperature?",
+   "options": [
+    "Cooling blanket alone",
+    "No treatment, because fever is a beneficial host response",
+    "Antipyretic plus a cooling blanket",
+    "Ice-water immersion without medication",
+    "High-dose glucocorticoids alone"
+   ],
+   "answer": 2,
+   "explain": "In hyperpyrexia, cooling blankets help but should not be used without oral antipyretics. In CNS hemorrhage or trauma, lowering core temperature mitigates the harmful effects of heat on the brain. (A, D: Cooling without an antipyretic is specifically discouraged.) (B: Hyperpyrexia after CNS hemorrhage harms the brain.) (E: Glucocorticoids are antipyretic, but the recommended approach is an antipyretic plus cooling.) Source: Ch 0020, Regimens for the Treatment of Fever"
+  },
+  {
+   "q": "A 74-year-old woman with heart failure (ejection fraction 25%) is admitted with pneumonia. Temperature is 39.5°C (103.1°F), pulse is 118/min, and respiratory rate is 26/min. Antibiotics have been started. A student suggests withholding antipyretics because fever may help fight infection. Which of the following is the best response?",
+   "options": [
+    "Withhold antipyretics; fever accelerates recovery from bacterial infection",
+    "Withhold antipyretics; they delay resolution of pneumonia",
+    "Give antipyretics only if her temperature exceeds 41°C",
+    "Use external cooling only",
+    "Treat the fever, because each 1°C rise increases oxygen consumption by about 13%"
+   ],
+   "answer": 4,
+   "explain": "Fever increases oxygen demand by about 13% for every 1°C above 37°C. It can worsen preexisting cardiac, pulmonary or CNS impairment, so treatment is highly recommended in such patients. (A, B: No evidence shows fever speeds recovery or antipyretics delay it.) (C: Waiting for 41°C ignores her cardiac strain.) (D: Antipyretics lower the set point; external cooling alone fights it.) Source: Ch 0020, Regimens for the Treatment of Fever; The Decision to Treat Fever"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0021-fever-and-rash",
+ "name": "Fever and Rash (Harrison Ch 21)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 21: Fever and Rash.",
+ "chapter": "Infectious Diseases",
+ "flashcards": [
+  {
+   "front": "Petechiae vs ecchymoses size cutoff?",
+   "back": "Petechiae <3 mm; ecchymoses >3 mm"
+  },
+  {
+   "front": "Palpable purpura indicates?",
+   "back": "Vasculitis (vessel-wall inflammation with hemorrhage)"
+  },
+  {
+   "front": "Measles rash progression?",
+   "back": "Starts at the hairline on day 2-3, moves downward, usually spares palms and soles, becomes confluent"
+  },
+  {
+   "front": "Koplik spots vs Fordyce spots?",
+   "back": "Koplik: white or blue with a red halo, pathognomonic for measles. Fordyce: ectopic sebaceous glands with no halo"
+  },
+  {
+   "front": "How does rubella's rash differ from measles?",
+   "back": "Spreads from the hairline downward but clears as it spreads; may itch"
+  },
+  {
+   "front": "Rubella features in adults?",
+   "back": "Postauricular and suboccipital adenopathy, arthritis"
+  },
+  {
+   "front": "Parvovirus B19 rash sequence?",
+   "back": "After fever: slapped cheeks, then a lacy reticular rash that waxes and wanes over 3 weeks"
+  },
+  {
+   "front": "Parvovirus B19 risk in pregnancy?",
+   "back": "Fetal hydrops"
+  },
+  {
+   "front": "Roseola: cause, age, timing of rash?",
+   "back": "HHV-6 (or HHV-7); children <3; rash after fever resolves, fades in 2 days"
+  },
+  {
+   "front": "Clues favoring a drug exanthem over a viral one?",
+   "back": "New medication, intense pruritus and redness, absence of prostration"
+  },
+  {
+   "front": "Rate of sulfa drug rash in people with HIV?",
+   "back": "50-60%"
+  },
+  {
+   "front": "Epidemic typhus vector and where the rash starts?",
+   "back": "Body lice; axillae, then trunk (spares face, palms, soles)"
+  },
+  {
+   "front": "Still disease rash?",
+   "back": "Evanescent salmon-colored rash on trunk and proximal limbs at fever spikes"
+  },
+  {
+   "front": "RMSF rash progression?",
+   "back": "Starts on wrists and ankles, spreads centripetally, palms and soles late; macules evolve to petechiae"
+  },
+  {
+   "front": "Untreated RMSF mortality?",
+   "back": "Up to 40%"
+  },
+  {
+   "front": "Secondary syphilis rash?",
+   "back": "Copper-colored, scaly papules prominent on palms and soles; never vesicular in adults"
+  },
+  {
+   "front": "Common triggers of erythema multiforme?",
+   "back": "HSV, Mycoplasma pneumoniae, drugs (sulfa, phenytoin, penicillin)"
+  },
+  {
+   "front": "Staph vs strep toxic shock: typical infection status?",
+   "back": "Staph: usually colonization only. Strep: severe GAS infection (e.g., necrotizing fasciitis)"
+  },
+  {
+   "front": "SSSS vs TEN: cleavage plane and mucosa?",
+   "back": "SSSS: superficial epidermal split, mucosa spared. TEN: full epidermis sloughs, mucosa involved"
+  },
+  {
+   "front": "SJS vs SJS/TEN overlap vs TEN by body surface area?",
+   "back": "SJS <10%; overlap 10-30%; TEN >30%"
+  },
+  {
+   "front": "Main cause of SJS/TEN?",
+   "back": "Drugs (80%): allopurinol, anticonvulsants, antibiotics"
+  },
+  {
+   "front": "DRESS features and mortality?",
+   "back": "Rash, facial edema, eosinophilia, atypical lymphocytes, organ (esp. hepatic) failure; ~10% mortality"
+  },
+  {
+   "front": "Varicella vs smallpox lesions?",
+   "back": "Varicella: different stages in one area, mostly truncal. Smallpox: same stage, mostly face and extremities"
+  },
+  {
+   "front": "Pseudomonas hot-tub folliculitis distribution and course?",
+   "back": "Areas covered by swimsuits; outbreaks; generally self-limited"
+  },
+  {
+   "front": "Hemorrhagic bullae + sepsis in cirrhosis after raw seafood?",
+   "back": "Disseminated Vibrio vulnificus (mortality ~50%)"
+  },
+  {
+   "front": "Ecthyma gangrenosum: organism and host?",
+   "back": "Pseudomonas aeruginosa (also other gram-negatives, fungi); neutropenic patients"
+  },
+  {
+   "front": "Febrile urticaria-like lesions lasting >24 h that don't fully blanch?",
+   "back": "Urticarial vasculitis (serum sickness, acute hepatitis B, connective tissue disease)"
+  },
+  {
+   "front": "Necrotic nodules in an immunocompromised host suggest?",
+   "back": "Aspergillus or Mucor"
+  },
+  {
+   "front": "Erythema nodosum: lesions and typical patient?",
+   "back": "Exquisitely tender lower-leg nodules; women 15-30"
+  },
+  {
+   "front": "Sweet syndrome malignancy association?",
+   "back": "~20% of cases, usually hematologic"
+  },
+  {
+   "front": "Who gets acute meningococcemia most often?",
+   "back": "Children, asplenic patients, terminal complement (C5-C8) deficiency"
+  },
+  {
+   "front": "Petechial rash where echovirus 9 vs meningococcemia is unclear: management?",
+   "back": "Treat as bacterial sepsis"
+  },
+  {
+   "front": "Disseminated gonococcal infection skin lesions?",
+   "back": "Few (<40) hemorrhagic pustules with gray necrotic centers near joints; with tenosynovitis"
+  },
+  {
+   "front": "TTP/HUS: coagulation studies?",
+   "back": "Normal (distinguishes from DIC)"
+  },
+  {
+   "front": "Eschar with diffuse rash in Asia-Pacific after mite exposure?",
+   "back": "Scrub typhus (Orientia tsutsugamushi)"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 4-year-old boy has had 1 day of fever and a rash that began as pink macules and is rapidly becoming petechial on his trunk and legs. Temperature is 39.6°C (103.3°F), pulse is 150/min, and blood pressure is 82/46 mm Hg. His daycare had an outbreak of echovirus 9 infection last week. Which of the following is the most appropriate next step?",
+   "options": [
+    "Supportive care for presumed enteroviral infection",
+    "Obtain enteroviral PCR and wait for the result before treating",
+    "Treat as bacterial sepsis with empiric antibiotics",
+    "Skin biopsy of a petechial lesion before any treatment",
+    "Discharge with close follow-up"
+   ],
+   "answer": 2,
+   "explain": "Echovirus 9 infection can mimic acute meningococcemia, and prompt differentiation may be impossible. Patients should be treated as if they have bacterial sepsis. (A, E: The outbreak history doesn't exclude meningococcemia, and he is hypotensive.) (B, D: Delaying treatment for testing risks death from meningococcemia.) Source: Ch 0021, Purpuric Eruptions"
+  },
+  {
+   "q": "A 34-year-old man from Virginia went hiking 6 days ago and removed a tick from his leg. He now has fever, severe headache, myalgias, and abdominal pain. Temperature is 39.4°C (102.9°F). Small erythematous macules, some becoming petechial, are present on his wrists and ankles and are beginning to spread to his arms and legs. His palms and soles are spared. Which of the following is the most appropriate next step?",
+   "options": [
+    "Begin treatment for Rocky Mountain spotted fever now",
+    "Wait for Rickettsia serology before treatment",
+    "Withhold treatment because the palms and soles are not involved",
+    "Treat for Lyme disease and reassess in 2 weeks",
+    "Observe, because tick-borne illness is unlikely without an eschar"
+   ],
+   "answer": 0,
+   "explain": "In RMSF, lesions start on the wrists and ankles, spread centripetally, and reach the palms and soles only later. Early therapy is critical because mortality is up to 40% if untreated. (B: Waiting for serology delays treatment.) (C: Palms and soles are involved late, so sparing them doesn't exclude RMSF.) (D: Erythema migrans is an annular lesion, not acral petechiae.) (E: RMSF doesn't typically produce an eschar.) Source: Ch 0021, Peripheral Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 29-year-old woman was started on trimethoprim-sulfamethoxazole for a urinary tract infection 9 days ago. She now has an intensely itchy, bright-red, symmetric eruption of macules and papules on her trunk and extremities. Temperature is 37.9°C (100.2°F). She feels otherwise well. There are no mucosal lesions, blisters, or facial swelling. Which of the following is the most appropriate next step?",
+   "options": [
+    "Continue the antibiotic and add an antihistamine",
+    "Measles serology",
+    "Skin biopsy",
+    "Discontinue trimethoprim-sulfamethoxazole",
+    "Admit to a burn unit"
+   ],
+   "answer": 3,
+   "explain": "An exanthematous drug eruption is intensely pruritic and bright red, typically 2–3 weeks after a new drug. A new medication with no prostration favors a drug cause. Stop the drug; the rash may persist up to 2 weeks afterward. (A: Continuing the culprit drug risks progression.) (B: Measles causes prostration, cough, coryza and conjunctivitis, starting at the hairline.) (C: Biopsy isn't needed for a typical presentation.) (E: There are no SJS/TEN features (mucosal lesions, blisters).) Source: Ch 0021, Centrally Distributed Maculopapular Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 41-year-old man started carbamazepine 4 weeks ago. He now has fever, a widespread maculopapular rash, marked facial swelling, and tender lymphadenopathy. Laboratory studies show eosinophils 1800/μL, atypical lymphocytes, and ALT 410 U/L. There are no mucosal erosions. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Toxic epidermal necrolysis",
+    "Infectious mononucleosis",
+    "Measles",
+    "Drug reaction with eosinophilia and systemic symptoms (DRESS)",
+    "Staphylococcal scalded-skin syndrome"
+   ],
+   "answer": 3,
+   "explain": "DRESS (DIHS) follows aromatic anticonvulsants, sulfonamides or minocycline. It causes a rash that mimics a drug exanthem, profound facial edema, lymphadenopathy, eosinophilia, atypical lymphocytes and organ failure (especially hepatic). Mortality is about 10%. (A: TEN involves mucosa and sloughing of the full epidermis.) (B: Mono doesn't cause eosinophilia after a new anticonvulsant.) (C: Measles has Koplik spots and the 3 Cs.) (E: SSSS affects young children or adults with renal failure and spares mucosa.) Source: Ch 0021, Confluent Desquamative Erythemas; Table 21-1"
+  },
+  {
+   "q": "A 58-year-old woman has 1 week of fever and multiple tender, edematous red plaques on her face, neck, and arms that look almost blistered. CBC shows a WBC of 14,000/μL with neutrophilia, a hemoglobin of 9.1 g/dL, and a platelet count of 88,000/μL. Skin biopsy shows a dense dermal neutrophilic infiltrate without infection. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance only",
+    "Evaluate for an underlying hematologic malignancy",
+    "Start empiric antifungal therapy",
+    "Patch testing for contact allergens",
+    "Treat for disseminated gonococcal infection"
+   ],
+   "answer": 1,
+   "explain": "Sweet syndrome (acute febrile neutrophilic dermatosis) causes edematous plaques that look vesicular. About 20% of cases are associated with malignancy, usually hematologic. Her anemia and thrombocytopenia make that evaluation essential. (A: Reassurance ignores the malignancy association.) (C: The biopsy shows no infection.) (D: This isn't contact dermatitis.) (E: DGI causes sparse hemorrhagic pustules near joints.) Source: Ch 0021, Nodular Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 62-year-old man with alcohol-related cirrhosis ate raw oysters 2 days ago. He now has fever and painful hemorrhagic bullae on both legs that are evolving into necrotic ulcers. Blood pressure is 78/40 mm Hg. Which of the following is the most likely cause?",
+   "options": [
+    "Group A Streptococcus",
+    "Pseudomonas aeruginosa",
+    "Staphylococcus aureus",
+    "Neisseria meningitidis",
+    "Vibrio vulnificus"
+   ],
+   "answer": 4,
+   "explain": "Disseminated *Vibrio vulnificus* infection occurs in patients with cirrhosis, diabetes or renal failure after eating contaminated seafood or exposure to saltwater. Lesions progress from erythema to hemorrhagic bullae to necrotic ulcers, with hypotension and about 50% mortality. (A: Strep TSS follows a severe GAS soft-tissue infection, not raw oysters.) (B: Ecthyma gangrenosum mainly affects neutropenic patients.) (C, D: Neither fits the seafood exposure in cirrhosis.) Source: Ch 0021, Vesiculobullous or Pustular Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 47-year-old woman receiving chemotherapy for leukemia has an absolute neutrophil count of 50/μL. She develops fever and hypotension and an indurated plaque in the groin that becomes a hemorrhagic bulla and then a black eschar with a red halo. Which organism is most likely responsible?",
+   "options": [
+    "Vibrio vulnificus",
+    "Bacillus anthracis",
+    "Pseudomonas aeruginosa",
+    "Rickettsia akari",
+    "Francisella tularensis"
+   ],
+   "answer": 2,
+   "explain": "Ecthyma gangrenosum (an indurated plaque → hemorrhagic bulla → eschar with a red halo, in the axilla, groin or perianal area) usually affects neutropenic patients. It occurs in up to 28% of patients with *Pseudomonas* bacteremia. (A: Vibrio follows seafood exposure in cirrhosis.) (B: Anthrax causes a painless ulcer with surrounding vesicles and edema after animal exposure.) (D: Rickettsialpox comes from urban mouse mites and causes a mild illness.) (E: Tularemia causes an ulceroglandular lesion after tick or animal exposure.) Source: Ch 0021, Vesiculobullous or Pustular Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 3-year-old girl has fever, irritability, and diffuse red skin that is exquisitely painful to touch. Light lateral pressure on the skin causes the upper layer to wrinkle and slough. There is crusting around the nose but no oral, ocular, or genital erosions. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Staphylococcal scalded-skin syndrome",
+    "Toxic epidermal necrolysis",
+    "Scarlet fever",
+    "Kawasaki disease",
+    "Stevens-Johnson syndrome"
+   ],
+   "answer": 0,
+   "explain": "Staphylococcal scalded-skin syndrome affects children under 10 (or adults with renal dysfunction). It causes profoundly tender erythema and a positive Nikolsky sign from a superficial epidermal split. Mucosa is spared. (B, E: SJS/TEN involve mucosal surfaces and full-thickness epidermal necrosis, usually from drugs, and are uncommon in children.) (C: Scarlet fever has a sandpaper rash and strawberry tongue without sloughing.) (D: Kawasaki causes cracked lips and conjunctivitis without Nikolsky-positive sloughing.) Source: Ch 0021, Confluent Desquamative Erythemas; Table 21-1"
+  },
+  {
+   "q": "A 22-year-old woman has a sudden fever of 39.8°C (103.6°F), vomiting, watery diarrhea, and dizziness on day 3 of her menstrual period. Blood pressure is 78/44 mm Hg. She has diffuse erythema including her palms, red conjunctivae, and a red oral mucosa. There is no wound, soft-tissue infection, or pneumonia. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Streptococcal toxic shock syndrome",
+    "Scarlet fever",
+    "Acute meningococcemia",
+    "Staphylococcal toxic shock syndrome",
+    "Rocky Mountain spotted fever"
+   ],
+   "answer": 3,
+   "explain": "Staphylococcal toxic shock syndrome causes fever above 39°C, hypotension, diffuse erythema including the palms, mucosal erythema and multiorgan dysfunction. Usually only colonization is found, not a severe infection. (A: Strep TSS typically occurs with a severe group A streptococcal infection such as necrotizing fasciitis.) (B: Scarlet fever follows pharyngitis without shock.) (C: Meningococcemia is petechial or purpuric.) (E: RMSF follows a tick bite and is petechial, starting at the wrists and ankles.) Source: Ch 0021, Confluent Desquamative Erythemas; Table 21-1"
+  },
+  {
+   "q": "A 36-year-old man has 2 weeks of fever, joint pain, and itchy, burning red wheals on his trunk and thighs. Individual lesions last 3–4 days and leave bruise-like marks; they do not fully blanch. ALT is 1200 U/L. Which of the following is the most appropriate next step?",
+   "options": [
+    "Begin a nonsedating antihistamine and reassure him",
+    "Test for acute hepatitis B",
+    "Allergen skin-prick testing",
+    "Stool ova and parasite examination only",
+    "Measure serum tryptase"
+   ],
+   "answer": 1,
+   "explain": "Urticaria-like lesions with fever that last more than 24 hours (up to 5 days) and don't fully blanch suggest urticarial vasculitis. Causes include serum sickness from infection such as acute hepatitis B, which fits his markedly raised ALT. (A: Classic urticaria lasts under 24 hours without fever; these lesions don't fit.) (C, E: These evaluate allergic urticaria, not vasculitis.) (D: Parasites are a cause, but the hepatitis picture points to hepatitis B first.) Source: Ch 0021, Urticaria-Like Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 26-year-old woman has 2 weeks of a scaly, copper-colored papular rash on her trunk, palms, and soles, with low-grade fever and malaise. She is sexually active with new partners. Her physician initially suspected pityriasis rosea. Which of the following is the most appropriate next step?",
+   "options": [
+    "Topical glucocorticoids and reassurance",
+    "Skin biopsy for fungal culture",
+    "Antinuclear antibody testing",
+    "Measles IgM",
+    "Serologic testing for syphilis"
+   ],
+   "answer": 4,
+   "explain": "Secondary syphilis causes a copper-colored, scaly papular eruption that is prominent on the palms and soles. It should be considered in the differential of pityriasis rosea, especially in sexually active patients. (A: Treating as pityriasis misses a treatable STI.) (B: Nothing suggests a fungal cause.) (C: Lupus rash is malar and photosensitive.) (D: Measles spares the palms and soles.) Source: Ch 0021, Peripheral Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 19-year-old college student is hospitalized for the second time in 3 years with meningococcal sepsis. She has no history of splenectomy. Which of the following is the most appropriate test to evaluate the underlying cause of her recurrent infection?",
+   "options": [
+    "HIV antibody test",
+    "Serum immunoglobulin levels only",
+    "Terminal complement (C5–C8) assessment",
+    "Peripheral smear for Howell-Jolly bodies only",
+    "Sweat chloride test"
+   ],
+   "answer": 2,
+   "explain": "Acute meningococcemia is most common in children, people with asplenia and those with terminal complement component deficiency (C5–C8). Recurrent neisserial disease points to complement testing. (A, B: These evaluate other immune defects that the chapter doesn't link to neisserial infection.) (D: She has no asplenia history, and a smear alone would miss complement deficiency.) (E: Sweat chloride tests for cystic fibrosis.) Source: Ch 0021, Purpuric Eruptions; Table 21-1"
+  },
+  {
+   "q": "A pregnant nurse at 10 weeks' gestation works on a unit where a 25-year-old patient has been diagnosed with rubella (fever, a rash spreading down from the hairline, postauricular adenopathy, and arthritis). Which of the following is the most appropriate recommendation for the nurse?",
+   "options": [
+    "Avoid contact with the patient",
+    "Continue routine care with a surgical mask",
+    "Terminate the pregnancy",
+    "Begin oral acyclovir prophylaxis",
+    "No precautions are needed because rubella is mild in adults"
+   ],
+   "answer": 0,
+   "explain": "Rubella causes severe congenital abnormalities, so pregnant women should avoid exposure to ill people. (B: A mask alone doesn't meet the recommendation to avoid exposure.) (C: Exposure alone isn't infection.) (D: Acyclovir has no activity against rubella.) (E: The danger is to the fetus, not the adult.) Source: Ch 0021, Centrally Distributed Maculopapular Eruptions"
+  },
+  {
+   "q": "Several members of a swim team develop itchy red follicular papules and pustules on the buttocks, hips, and lower abdomen, in the areas covered by their swimsuits, 2 days after using a hotel hot tub. A 20-year-old team member has no fever and feels well. Which of the following is the most appropriate management?",
+   "options": [
+    "Oral ciprofloxacin for 14 days",
+    "IV antibiotics",
+    "Oral acyclovir",
+    "Reassurance, because the condition is generally self-limited",
+    "Isolate him as a suspected varicella case"
+   ],
+   "answer": 3,
+   "explain": "*Pseudomonas* hot-tub folliculitis occurs in outbreaks after hot-tub or pool use. It causes pruritic follicular papules and pustules in areas covered by bathing suits and is generally self-limited. (A, B: Antibiotics aren't needed for this self-limited condition in a well patient.) (C: This isn't herpes.) (E: Varicella lesions appear in crops in all stages, mainly on the trunk, and aren't confined to the swimsuit area.) Source: Ch 0021, Vesiculobullous or Pustular Eruptions; Table 21-1"
+  },
+  {
+   "q": "A 6-year-old boy has a lacy, reticular rash on his arms and trunk that appeared after his fever resolved. Two days earlier he had bright red cheeks with pallor around the mouth. His mother is 18 weeks pregnant and has had no rash. Which of the following complications is the mother's fetus at greatest risk for if she becomes infected?",
+   "options": [
+    "Congenital cataracts",
+    "Fetal hydrops",
+    "Microcephaly",
+    "Chorioretinitis",
+    "Limb hypoplasia"
+   ],
+   "answer": 1,
+   "explain": "Erythema infectiosum (parvovirus B19) causes slapped cheeks and then a lacy rash after the fever. In pregnant women, it can be associated with fetal hydrops. (A: Cataracts are a congenital rubella defect.) (C: Microcephaly is linked to Zika.) (D: Chorioretinitis isn't the parvovirus complication described.) (E: Limb hypoplasia isn't described for parvovirus.) Source: Ch 0021, Centrally Distributed Maculopapular Eruptions; Table 21-1"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0022-fever-of-unknown-origin",
+ "name": "Fever of Unknown Origin (Harrison Ch 22)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 22: Fever of Unknown Origin.",
+ "chapter": "Infectious Diseases",
+ "flashcards": [
+  {
+   "front": "Current FUO definition: temperature and duration?",
+   "back": "Fever >=38.3°C on >=2 occasions; illness >=3 weeks"
+  },
+  {
+   "front": "Which patients are excluded from the FUO definition?",
+   "back": "Immunocompromised patients (they need a more aggressive approach)"
+  },
+  {
+   "front": "Imaging included in the FUO obligatory tests?",
+   "back": "Chest x-ray and abdominal ultrasound"
+  },
+  {
+   "front": "Microbiology included in the FUO obligatory tests?",
+   "back": "3 blood cultures, urine culture, TST or IGRA"
+  },
+  {
+   "front": "Inflammation of unknown origin (IUO)?",
+   "back": "Same as FUO but with elevated CRP/ESR and normal temperature; same causes and workup"
+  },
+  {
+   "front": "Leading cause of FUO in Western cohorts?",
+   "back": "Noninfectious inflammatory diseases (autoimmune, autoinflammatory, granulomatous, vasculitis)"
+  },
+  {
+   "front": "Leading cause of FUO in non-Western cohorts, and the top organism?",
+   "back": "Infection; TB causes up to half of infections"
+  },
+  {
+   "front": "Is FUO usually a rare disease?",
+   "back": "No; usually an atypical presentation of a common disease"
+  },
+  {
+   "front": "The 'FUO paradox'?",
+   "back": "More cases now stay undiagnosed despite better tests, because easy cases are diagnosed before 3 weeks"
+  },
+  {
+   "front": "Most common malignant cause of FUO?",
+   "back": "Lymphoma"
+  },
+  {
+   "front": "Prevalence of GCA among elderly FUO patients?",
+   "back": "Up to 17%"
+  },
+  {
+   "front": "Most important step in the FUO workup?",
+   "back": "Search for potentially diagnostic clues through complete, repeated history and exam"
+  },
+  {
+   "front": "Drugs to stop before starting FUO testing?",
+   "back": "Antibiotics and glucocorticoids (they mask disease)"
+  },
+  {
+   "front": "Drug fever: when is the stopped drug unlikely to be the cause?",
+   "back": "If fever persists >72 h after stopping it"
+  },
+  {
+   "front": "Common causes of drug fever?",
+   "back": "Allopurinol, carbamazepine, lamotrigine, phenytoin, sulfasalazine, furosemide, sulfonamides, minocycline, vancomycin, beta-lactams, isoniazid"
+  },
+  {
+   "front": "Fraudulent fever: how to detect?",
+   "back": "Simultaneous temperatures at several body sites; pulse-temperature dissociation"
+  },
+  {
+   "front": "Benign or exercise-induced hyperthermia: lab clue?",
+   "back": "Elevated temperature with normal CRP and ESR"
+  },
+  {
+   "front": "Screening tests recommended in FUO without diagnostic clues?",
+   "back": "Cryoglobulins and fundoscopy (retinal vasculitis)"
+  },
+  {
+   "front": "Maximum useful blood and urine cultures in FUO without clues?",
+   "back": "3 blood cultures and 1 urine culture"
+  },
+  {
+   "front": "FUO with headache: what to examine?",
+   "back": "CSF for HSV (esp. type 2), Cryptococcus, and M. tuberculosis"
+  },
+  {
+   "front": "When should Q fever serology be sent in FUO?",
+   "back": "Rural living, heart valve disease, aortic aneurysm, or vascular prosthesis (IFA)"
+  },
+  {
+   "front": "When should T. whipplei PCR be sent in FUO?",
+   "back": "Unexplained CNS, GI, or joint symptoms (stool and blood)"
+  },
+  {
+   "front": "Causes of culture-negative endocarditis?",
+   "back": "Nutritionally variant strep, HACEK, Coxiella, T. whipplei, Bartonella; also marantic (adenocarcinoma) and SLE/antiphospholipid"
+  },
+  {
+   "front": "Next step when clue-guided tests don't explain FUO?",
+   "back": "18F-FDG-PET/CT, ideally while CRP/ESR is elevated"
+  },
+  {
+   "front": "Diagnostic yield of FDG-PET/CT in FUO?",
+   "back": "~50% (higher than gallium or leukocyte scintigraphy)"
+  },
+  {
+   "front": "How do glucocorticoids affect FDG-PET in FUO?",
+   "back": "They quickly abolish pathologic uptake (vasculitis, lymphoma); stop or postpone them before PET"
+  },
+  {
+   "front": "Suspected GCA in FUO patient >=55: test?",
+   "back": "Temporal artery biopsy (PET may miss temporal-limited disease)"
+  },
+  {
+   "front": "Highest-yield test for suspected miliary TB?",
+   "back": "Liver biopsy for AFB smear, culture, and PCR"
+  },
+  {
+   "front": "Does a negative TST or IGRA exclude TB?",
+   "back": "No"
+  },
+  {
+   "front": "Recurrent fever workup: when to test?",
+   "back": "During a febrile episode"
+  },
+  {
+   "front": "Stable FUO, all clues evaluated, no diagnosis: approach?",
+   "back": "Watchful waiting for new clues; further testing only if the patient deteriorates"
+  },
+  {
+   "front": "Indications for empiric antibiotics in FUO?",
+   "back": "Hemodynamic instability or neutropenia"
+  },
+  {
+   "front": "Empiric anti-TB therapy without response at 6 weeks?",
+   "back": "Consider another diagnosis"
+  },
+  {
+   "front": "Why avoid empiric glucocorticoids in FUO?",
+   "back": "They mask fever and allow infection or lymphoma to progress; use only after both are excluded"
+  },
+  {
+   "front": "Anakinra trial in undiagnosed FUO: which features?",
+   "back": "Signs of IL-1-driven inflammation: serositis, high CRP, high ferritin"
+  },
+  {
+   "front": "VEXAS syndrome key features?",
+   "back": "Older men; recurrent inflammation, chondritis, skin and lung disease, VTE, MDS; marrow vacuoles; somatic UBA1 variants"
+  },
+  {
+   "front": "Schnitzler syndrome triad?",
+   "back": "Urticaria, bone pain, monoclonal gammopathy"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "Which of the following patients meets the current definition of fever of unknown origin (FUO)?",
+   "options": [
+    "A 34-year-old man with HIV (CD4 count 80/μL) with 4 weeks of fever to 38.6°C and a negative initial workup",
+    "A 52-year-old immunocompetent woman with 4 weeks of fevers to 38.5°C on several occasions whose history, examination, and the full set of obligatory investigations are unrevealing",
+    "A 40-year-old man with 10 days of fever to 39°C and a negative initial workup",
+    "A 60-year-old woman with 5 weeks of temperatures to 37.9°C and normal inflammatory markers",
+    "A 28-year-old woman with 4 weeks of fever whose chest x-ray shows a lobar consolidation"
+   ],
+   "answer": 1,
+   "explain": "FUO now requires fever of at least 38.3°C on at least two occasions, at least 3 weeks of illness, no known immunocompromised state, and an unclear diagnosis after a thorough history, examination and the obligatory investigations. (A: Immunocompromised patients are excluded; they need a more aggressive approach.) (C: Ten days is under the 3-week requirement.) (D: 37.9°C doesn't reach the 38.3°C threshold, and normal markers rule out IUO too.) (E: The chest x-ray has already identified a likely cause.) Source: Ch 0022, Definition"
+  },
+  {
+   "q": "A 66-year-old man has had 4 weeks of fevers to 38.6°C (101.5°F). He takes allopurinol, furosemide, lisinopril, and an herbal supplement. History, examination, and the obligatory laboratory and imaging studies have not revealed a cause. There are no localizing clues. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start empiric broad-spectrum antibiotics",
+    "Order a panel of serologies for uncommon infections",
+    "Perform a bone marrow biopsy",
+    "Discontinue all medications, including the supplement, and observe",
+    "Start a trial of prednisone"
+   ],
+   "answer": 3,
+   "explain": "All medications, including nonprescription drugs and supplements, should be stopped early to exclude drug fever. Allopurinol and furosemide are among the more common causes. If fever persists more than 72 hours after stopping a drug, that drug is unlikely to be the cause. (A: Empiric antibiotics aren't indicated in a stable patient and impair later cultures.) (B: Serologies without clues give more false than true positives.) (C: Marrow biopsy has very low yield without clues.) (E: Steroids mask disease and are avoided early.) Source: Ch 0022, Approach to the Patient; Differential Diagnosis"
+  },
+  {
+   "q": "A 49-year-old woman is referred for 5 weeks of unexplained fever and an elevated CRP. Her primary care physician started prednisone 30 mg daily 4 days ago. She is hemodynamically stable. An 18F-FDG-PET/CT is planned. Which of the following is the most appropriate step before the scan?",
+   "options": [
+    "Stop or postpone glucocorticoid treatment until after the PET/CT",
+    "Double the prednisone dose to control symptoms",
+    "Add empiric antibiotics",
+    "Perform the PET/CT while she continues prednisone",
+    "Replace the PET/CT with a bone marrow biopsy"
+   ],
+   "answer": 0,
+   "explain": "Pathologic FDG uptake is quickly eradicated by glucocorticoids in many diseases, including vasculitis and lymphoma. Steroids should be stopped or postponed until after the PET/CT. (B, D: Continuing or increasing steroids reduces the scan's yield and masks disease.) (C: Empiric antibiotics in a stable patient impair cultures.) (E: Marrow biopsy without clues has low yield.) Source: Ch 0022, 18F-Fluordeoxyglucose Positron Emission Tomography"
+  },
+  {
+   "q": "A 57-year-old man has had 6 weeks of fever to 38.7°C (101.7°F), sweats, and a CRP of 96 mg/L. He is immunocompetent. History and examination have been repeated, the obligatory tests are unrevealing, drugs have been stopped, cryoglobulins are negative, and fundoscopy is normal. Targeted tests for the few clues found were negative. He is stable. Which of the following is the most appropriate next step?",
+   "options": [
+    "Empiric antituberculous therapy",
+    "Repeat blood cultures daily for 1 week",
+    "Empiric prednisone trial",
+    "Liver biopsy",
+    "18F-FDG-PET/CT"
+   ],
+   "answer": 4,
+   "explain": "When clue-guided tests don't yield a diagnosis, the next step is 18F-FDG-PET/CT, preferably while the ESR or CRP is elevated. Its total diagnostic yield is about 50%. (A: Anti-TB therapy is reserved for specific indications, after cultures.) (B: More than three blood cultures without clues is useless.) (C: Empiric steroids risk masking lymphoma or infection.) (D: Liver biopsy without clues has very low yield.) Source: Ch 0022, Approach to the Patient; Figure 22-1"
+  },
+  {
+   "q": "A 45-year-old woman meets criteria for FUO. Her history, examination, and obligatory tests show no potentially diagnostic clues. Which of the following additional evaluations is recommended early in her workup?",
+   "options": [
+    "Transthoracic echocardiography",
+    "Extended autoimmune antibody panel",
+    "Fundoscopy by an ophthalmologist",
+    "Colonoscopy",
+    "Bronchoscopy with lavage"
+   ],
+   "answer": 2,
+   "explain": "In patients without clues, or with only misleading ones, fundoscopy by an ophthalmologist may be useful early to exclude retinal vasculitis. Cryoglobulins are also a valuable screening test. (A, D, E: Echocardiography, GI evaluation and bronchoscopy have very low yield without clues.) (B: Extra immunologic serologies give low yield and frequent false positives.) Source: Ch 0022, Approach to the Patient"
+  },
+  {
+   "q": "A 71-year-old woman has 7 weeks of low-grade fever, fatigue, and an ESR of 92 mm/h. 18F-FDG-PET/CT shows no increased uptake in the aorta or its major branches. She now reports new scalp tenderness. Which of the following is the most appropriate next step?",
+   "options": [
+    "Repeat the PET/CT in 2 weeks",
+    "Temporal artery biopsy",
+    "Reassure her that a normal PET/CT excludes giant cell arteritis",
+    "Lumbar puncture",
+    "Empiric antibiotics"
+   ],
+   "answer": 1,
+   "explain": "Temporal artery biopsy is still recommended for patients 55 and older with suspected GCA. PET/CT may miss vasculitis limited to the temporal arteries because the vessels are small and brain FDG uptake is high. (A: Repeating a well-timed negative PET adds little.) (C: A normal PET doesn't exclude temporal-limited GCA.) (D: LP has no role.) (E: Nothing suggests bacterial infection.) Source: Ch 0022, Approach to the Patient (giant cell arteritis)"
+  },
+  {
+   "q": "A 39-year-old man has had 3 months of intermittent fevers. Repeated history and examination, the obligatory tests, drug withdrawal, targeted testing of all clues, and an 18F-FDG-PET/CT obtained while his CRP was elevated have not revealed a cause. He remains clinically stable and is working full time. Which of the following is the most appropriate next step?",
+   "options": [
+    "Empiric prednisone trial",
+    "Repeat the PET/CT now",
+    "Empiric 6-week course of antituberculous therapy",
+    "Follow-up with periodic reassessment for new clues",
+    "Exploratory laparotomy"
+   ],
+   "answer": 3,
+   "explain": "When all clues have been evaluated without an explanation, waiting for new clues is better than ordering more screening tests. Further workup is warranted only if the patient deteriorates. Most patients with unexplained FUO do well and many recover spontaneously. (A: Empiric steroids can mask lymphoma or infection.) (B: Repeating a well-timed negative PET adds little unless new signs appear.) (C: Empiric anti-TB therapy needs specific indications.) (E: Invasive testing should be clue-driven.) Source: Ch 0022, Later-Stage Diagnostic Tests; Treatment"
+  },
+  {
+   "q": "A 63-year-old woman under evaluation for FUO becomes hypotensive (blood pressure 82/48 mm Hg) with a temperature of 39.6°C (103.3°F). Her absolute neutrophil count is 300/μL. The source of fever is still unknown. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start empiric broad-spectrum antibiotics after drawing cultures",
+    "Withhold antibiotics to preserve culture yield",
+    "Begin an anakinra trial",
+    "Start high-dose glucocorticoids",
+    "Order 18F-FDG-PET/CT before any treatment"
+   ],
+   "answer": 0,
+   "explain": "Antibiotics can impair culture yield, but hemodynamic instability or neutropenia is a good indication for empiric antibiotic therapy. (B: Preserving culture yield doesn't outweigh shock with neutropenia.) (C: Anakinra is for clinically IL-1-driven, undiagnosed FUO, not septic shock.) (D: Glucocorticoids can permit the spread of infection.) (E: Treatment shouldn't wait for imaging in an unstable patient.) Source: Ch 0022, Antibiotics and Antituberculous Therapy"
+  },
+  {
+   "q": "A 50-year-old man born in a TB-endemic country has 8 weeks of fever, weight loss, and night sweats. His interferon-γ release assay is indeterminate, and the chest x-ray shows innumerable tiny nodules. A bone marrow aspirate shows noncaseating granulomas. Miliary tuberculosis is suspected. Which of the following procedures has the highest diagnostic yield?",
+   "options": [
+    "Sputum acid-fast smear only",
+    "Repeat interferon-γ release assay",
+    "Tuberculin skin test",
+    "Serum angiotensin-converting enzyme level",
+    "Liver biopsy for acid-fast smear, culture, and PCR"
+   ],
+   "answer": 4,
+   "explain": "If miliary tuberculosis is suspected, liver biopsy for acid-fast smear, culture and PCR probably has the highest diagnostic yield. A negative or indeterminate TST or IGRA doesn't exclude TB, and granulomas should prompt reconsideration of TB. (A: Sputum smear is often negative in miliary disease.) (B, C: TST and IGRA can be indeterminate or falsely negative in miliary TB.) (D: An ACE level doesn't distinguish TB from sarcoidosis.) Source: Ch 0022, Approach to the Patient (tuberculosis)"
+  },
+  {
+   "q": "A 35-year-old woman has had recurrent episodes of fever lasting about 5 days, separated by 3–4 weeks of feeling well, for 8 months. She is currently afebrile, and her examination and laboratory results today are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Order an extensive serology panel today",
+    "Perform a PET/CT today",
+    "Ask her to return during her next febrile episode for repeat evaluation and testing",
+    "Start empiric antibiotics",
+    "Start empiric prednisone"
+   ],
+   "answer": 2,
+   "explain": "With recurrent fever, patients should return during a febrile episode so the history, examination and laboratory tests can be repeated while symptomatic. Abnormalities may be absent between episodes. (A, B: Testing between episodes may be falsely normal; PET should be timed to active inflammation.) (D, E: Empiric therapy isn't indicated in a well patient.) Source: Ch 0022, Approach to the Patient; 18F-FDG-PET (timing)"
+  },
+  {
+   "q": "A 31-year-old ICU nurse has recorded oral temperatures of 39–40°C at home for 5 weeks. In clinic, she looks well. Pulse is 72/min during a reported temperature of 39.8°C. CBC, CRP, and ESR are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "18F-FDG-PET/CT",
+    "Simultaneous temperature measurements at different body sites (oral, rectal, tympanic)",
+    "Blood cultures ×6",
+    "Empiric antibiotics",
+    "Bone marrow biopsy"
+   ],
+   "answer": 1,
+   "explain": "In fraudulent fever, the patient is normothermic but manipulates the thermometer. Simultaneous measurements at different body sites quickly identify it. Clues include pulse–temperature dissociation, normal inflammatory markers and access to medical equipment. (A, C, E: Extensive testing comes after manipulation is excluded.) (D: Antibiotics aren't indicated.) Source: Ch 0022, Differential Diagnosis; Approach to the Patient"
+  },
+  {
+   "q": "A 64-year-old farmer has had 6 weeks of fever and fatigue. He has a prosthetic aortic valve, and blood cultures are negative. Which of the following is the most appropriate next diagnostic test?",
+   "options": [
+    "Antinuclear antibody titer",
+    "Stool ova and parasites",
+    "Thick and thin blood smears",
+    "Bone marrow biopsy",
+    "Q fever serology by immunofluorescence assay"
+   ],
+   "answer": 4,
+   "explain": "Q fever serology by immunofluorescence assay should be done when the patient lives in a rural area or has heart valve disease, an aortic aneurysm or a vascular prosthesis. *Coxiella* is a cause of culture-negative endocarditis. (A: ANA is already part of the obligatory tests.) (B: Nothing suggests a parasite.) (C: There's no travel to a malaria-endemic area.) (D: Marrow biopsy without clues has low yield.) Source: Ch 0022, Differential Diagnosis"
+  },
+  {
+   "q": "A 55-year-old man has had 10 weeks of fever, migratory arthralgias, chronic diarrhea with weight loss, and new memory problems. Blood cultures, the obligatory tests, and colonoscopy with routine biopsies are unrevealing. Which of the following is the most appropriate next diagnostic test?",
+   "options": [
+    "PCR for Tropheryma whipplei on stool and blood",
+    "Serum ACE level",
+    "Repeat colonoscopy",
+    "Antinuclear antibody panel",
+    "HLA-B27 testing"
+   ],
+   "answer": 0,
+   "explain": "In unexplained symptoms localized to the CNS, GI tract or joints, PCR for *T. whipplei* on stool and blood should be performed early. Whipple disease is rare but has nonspecific presenting symptoms. (B: ACE testing addresses sarcoidosis.) (C: Repeating a routine colonoscopy doesn't target Whipple.) (D: ANA is already part of the obligatory tests.) (E: HLA-B27 doesn't explain the CNS and GI picture.) Source: Ch 0022, Differential Diagnosis"
+  },
+  {
+   "q": "A 68-year-old man has had 1 year of recurrent fevers, painful ear and nose cartilage inflammation, skin lesions, an unprovoked deep venous thrombosis, and macrocytic anemia. Bone marrow biopsy shows vacuoles in myeloid and erythroid precursors and myelodysplastic changes. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Schnitzler syndrome",
+    "Adult-onset Still disease",
+    "Familial Mediterranean fever",
+    "VEXAS syndrome",
+    "Hodgkin lymphoma"
+   ],
+   "answer": 3,
+   "explain": "VEXAS is an adult-onset autoinflammatory syndrome, mostly in middle-aged to elderly men. It features recurrent inflammation, skin lesions, chondritis, lung disease, venous thrombosis, arthritis and MDS. Vacuoles in myeloid precursors are very suspicious. It's caused by somatic *UBA1* variants. (A: Schnitzler features urticaria, bone pain and a monoclonal gammopathy.) (B: Still disease causes a salmon rash and arthritis without marrow vacuoles.) (C: FMF begins young with brief serositis attacks.) (E: Lymphoma doesn't cause chondritis or marrow vacuolization.) Source: Ch 0022, Differential Diagnosis"
+  },
+  {
+   "q": "A 27-year-old man originally from a region where familial Mediterranean fever is common has had recurrent 2-day episodes of fever with abdominal and chest pain from serositis for 2 years. Between attacks he is well. Infection and malignancy have been excluded. Which of the following is the most appropriate treatment to prevent further attacks?",
+   "options": [
+    "Long-term prednisone",
+    "Empiric antibiotics with each attack",
+    "Daily colchicine",
+    "Antituberculous therapy",
+    "Hydroxychloroquine"
+   ],
+   "answer": 2,
+   "explain": "Colchicine is highly effective in preventing FMF attacks, though not always effective once an attack is underway. Most patients improve within weeks to months of continuous treatment, so colchicine may be tried when the features fit FMF, especially in patients from high-prevalence regions. (A: Long-term steroids cause metabolic, immunologic and GI harm; IL-1 inhibition is preferred over steroids for autoinflammation.) (B: This isn't an infection.) (D: There's no TB indication.) (E: Hydroxychloroquine isn't the described FMF therapy.) Source: Ch 0022, Colchicine, Nonsteroidal Anti-Inflammatory Drugs, and Glucocorticoids"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0023-syncope",
+ "name": "Syncope (Harrison Ch 23)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 23: Syncope.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Definition of syncope?",
+   "back": "Transient, self-limited loss of consciousness from acute global cerebral hypoperfusion; rapid onset, brief, spontaneous complete recovery"
+  },
+  {
+   "front": "Three categories of syncope?",
+   "back": "Neurally mediated (reflex/vasovagal), orthostatic hypotension, cardiac"
+  },
+  {
+   "front": "Most common cause of syncope overall?",
+   "back": "Neurally mediated syncope"
+  },
+  {
+   "front": "Duration of cerebral flow cessation that causes loss of consciousness?",
+   "back": "6-8 seconds"
+  },
+  {
+   "front": "Systolic BP at which syncope usually occurs?",
+   "back": "~50 mmHg or lower"
+  },
+  {
+   "front": "Syncope ECG findings that indicate admission (Table 23-1)?",
+   "back": "QT >500 ms, bi/trifascicular block or QRS >=120 ms, sinus pauses or SA block, persistent sinus bradycardia, AF, NSVT, preexcitation, Brugada pattern, ischemia"
+  },
+  {
+   "front": "Syncope history features that indicate admission (Table 23-1)?",
+   "back": "Ischemic chest pain, CHF, moderate-severe valvular/structural disease, ventricular arrhythmia history, family history of sudden death, palpitations at syncope, syncope at rest or during exercise"
+  },
+  {
+   "front": "High-risk exam findings in syncope?",
+   "back": "Unexplained SBP <90, signs of GI bleeding, persistent HR <40, undiagnosed systolic murmur"
+  },
+  {
+   "front": "Neurally mediated syncope: tilt-table pattern?",
+   "back": "Abrupt fall in both blood pressure and heart rate"
+  },
+  {
+   "front": "Orthostatic hypotension from autonomic failure: tilt-table pattern?",
+   "back": "Gradual fall in blood pressure without a compensatory heart rate rise"
+  },
+  {
+   "front": "First-line management of vasovagal syncope?",
+   "back": "Reassurance, education, trigger avoidance, fluid and salt, isometric counterpressure maneuvers"
+  },
+  {
+   "front": "Most effective counterpressure maneuver?",
+   "back": "Abdominal and leg muscle tensing"
+  },
+  {
+   "front": "Only drug with multicenter RCT support for refractory vasovagal syncope?",
+   "back": "Midodrine"
+  },
+  {
+   "front": "Who may benefit from pacing for vasovagal syncope?",
+   "back": "Age >40, frequent recurrences, cardioinhibitory response on tilt (dual-chamber closed-loop pacing)"
+  },
+  {
+   "front": "Definition of orthostatic hypotension?",
+   "back": "SBP fall >=20 or DBP fall >=10 mmHg within 3 min of standing or head-up tilt"
+  },
+  {
+   "front": "Initial orthostatic hypotension?",
+   "back": "BP fall within 15 s of standing resolving by 45 s; not autonomic failure"
+  },
+  {
+   "front": "Coat-hanger headache?",
+   "back": "Suboccipital, posterior neck and shoulder pain from neck muscle ischemia in orthostatic hypotension"
+  },
+  {
+   "front": "Synucleinopathies causing primary autonomic failure?",
+   "back": "Parkinson disease, dementia with Lewy bodies, pure autonomic failure, multiple system atrophy"
+  },
+  {
+   "front": "Peripheral neuropathies causing orthostatic hypotension?",
+   "back": "Diabetes, hereditary and AL amyloidosis, HSAN III (familial dysautonomia), autoimmune ganglionopathy, Sjogren, paraneoplastic, HIV"
+  },
+  {
+   "front": "Drug classes causing orthostatic hypotension?",
+   "back": "Alpha-blockers, diuretics, nitrates and vasodilators, other antihypertensives, tricyclics, phenothiazines"
+  },
+  {
+   "front": "Treatment sequence for orthostatic hypotension?",
+   "back": "Remove offending drugs; nonpharmacologic measures (staged rising, counterpressure, head-of-bed elevation, fluid and salt); then fludrocortisone, midodrine or droxidopa"
+  },
+  {
+   "front": "Why raise the head of the bed in orthostatic hypotension?",
+   "back": "Reduces supine hypertension and nocturnal diuresis"
+  },
+  {
+   "front": "Stokes-Adams attack?",
+   "back": "Syncope due to bradycardia or asystole"
+  },
+  {
+   "front": "Common cause of syncope in tachycardia-bradycardia syndrome?",
+   "back": "Prolonged pause after a tachycardia ends"
+  },
+  {
+   "front": "Gene most often linked to Brugada syndrome?",
+   "back": "SCN5A (Na+ channel alpha subunit)"
+  },
+  {
+   "front": "Syncope vs seizure: recovery?",
+   "back": "Syncope: reorientation almost immediate. Seizure: prolonged postictal drowsiness and disorientation"
+  },
+  {
+   "front": "How often do myoclonic movements occur in syncope?",
+   "back": "Up to 90% of episodes; arrhythmic, <30 s"
+  },
+  {
+   "front": "Incontinence type that is very rare in syncope?",
+   "back": "Fecal incontinence"
+  },
+  {
+   "front": "Cataplexy vs syncope?",
+   "back": "Cataplexy: emotion-triggered (laughter, anger) loss of tone with consciousness preserved, 30 s-2 min"
+  },
+  {
+   "front": "ECG monitor choice by syncope frequency?",
+   "back": "Daily: Holter. >1/month: external loop recorder. Less often: implantable loop recorder"
+  },
+  {
+   "front": "Ideal duration of ECG monitoring in syncope?",
+   "back": "At least twice the interval between episodes"
+  },
+  {
+   "front": "Indications for carotid sinus massage?",
+   "back": "Suspected carotid sinus syncope, or age >40 with recurrent unexplained syncope"
+  },
+  {
+   "front": "Contraindications to carotid sinus massage?",
+   "back": "Carotid bruit, known or possible plaque, or stenosis"
+  },
+  {
+   "front": "Syncope during or after exercise: test?",
+   "back": "Treadmill exercise test with ECG and BP monitoring"
+  },
+  {
+   "front": "Yield of initial history, exam, orthostatic vitals and ECG in syncope?",
+   "back": "Identifies a cause in ~50%"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 68-year-old man is brought to the emergency department after losing consciousness while sitting at dinner. He had palpitations immediately beforehand and recovered within a minute without confusion. ECG shows sinus rhythm with right bundle branch block and left anterior fascicular block (QRS 136 ms). Blood pressure is 128/76 mm Hg with no orthostatic change. Which of the following is the most appropriate next step?",
+   "options": [
+    "Discharge with outpatient Holter monitoring",
+    "Tilt-table testing",
+    "EEG",
+    "Hospital admission with continuous ECG monitoring",
+    "Reassurance and increased salt intake"
+   ],
+   "answer": 3,
+   "explain": "Syncope while seated, with palpitations and bifascicular block (QRS ≥120 ms), carries several Table 23-1 high-risk features. It warrants hospital admission and inpatient ECG monitoring for a life-threatening arrhythmia. (A: Outpatient Holter suits frequent episodes in low-risk patients, not high-risk ones.) (B: Tilt testing evaluates reflex syncope and autonomic failure, not suspected conduction disease.) (C: The history (brief, no postictal confusion) fits syncope, not seizure.) (E: Fluid and salt are for vasovagal or orthostatic syncope.) Source: Ch 0023, Table 23-1 and Cardiac Evaluation"
+  },
+  {
+   "q": "A 17-year-old girl fainted while having blood drawn. She felt warm, nauseated and lightheaded, became pale and sweaty, and then lost consciousness for about 20 seconds with a few brief jerks of her arms. She was fully oriented immediately on waking. Examination, orthostatic vital signs and ECG are normal. She has had two similar episodes in stressful situations. Which of the following is the most appropriate management?",
+   "options": [
+    "Reassurance, education, trigger avoidance, increased fluid and salt intake, and counterpressure maneuvers",
+    "Start a β-blocker",
+    "Start levetiracetam",
+    "Refer for dual-chamber pacemaker placement",
+    "Implantable loop recorder"
+   ],
+   "answer": 0,
+   "explain": "Typical vasovagal syncope with a normal workup is managed with reassurance, education, trigger avoidance, fluid and salt expansion, and isometric counterpressure maneuvers. (B: β-blockers are used by experts for refractory cases but lack strong evidence, and they aren't first line.) (C: Brief myoclonic jerks occur in up to 90% of syncopal episodes and don't indicate epilepsy.) (D: Pacing is limited to older patients (>40) with a cardioinhibitory tilt response and frequent recurrences.) (E: Loop recorders are for suspected arrhythmia; this history is classic reflex syncope.) Source: Ch 0023, Treatment: Neurally Mediated Syncope"
+  },
+  {
+   "q": "A 59-year-old woman has had near-daily episodes of brief lightheadedness with two syncopal events over the past 3 weeks. Examination, orthostatic vital signs, echocardiogram and resting ECG are normal. She has no high-risk features. Which of the following is the most appropriate test?",
+   "options": [
+    "Implantable loop recorder",
+    "Invasive electrophysiologic study",
+    "Continuous ambulatory (Holter) ECG monitoring",
+    "Coronary angiography",
+    "Brain MRI"
+   ],
+   "answer": 2,
+   "explain": "Holter monitoring is recommended for patients with frequent (daily or near-daily) episodes. (A: Implantable loop recorders are for episodes too infrequent to capture with shorter monitoring.) (B: Electrophysiologic study has low sensitivity and specificity. It is reserved for structural disease with ECG abnormalities after a nondiagnostic noninvasive workup.) (D: There's no suggestion of ischemia.) (E: Neuroimaging doesn't evaluate arrhythmic syncope.) Source: Ch 0023, Cardiac Evaluation"
+  },
+  {
+   "q": "A 76-year-old man with benign prostatic hyperplasia started terazosin 2 weeks ago. Since then he has had lightheadedness on standing and fainted once after getting out of bed at night. Blood pressure is 138/80 mm Hg supine and 112/68 mm Hg after 3 minutes standing. ECG is normal. Which of the following is the most appropriate first step?",
+   "options": [
+    "Start fludrocortisone",
+    "Start midodrine",
+    "Order tilt-table testing",
+    "Admit for telemetry",
+    "Discontinue terazosin"
+   ],
+   "answer": 4,
+   "explain": "A 26 mm Hg systolic fall on standing after starting an α-blocker is drug-induced orthostatic hypotension. The first step is removing the reversible cause, usually a vasoactive medication. (A: Fludrocortisone is used only after removing causes and failing nonpharmacologic measures.) (B: Midodrine follows the same rule.) (C: The cause is already evident, so tilt testing adds nothing.) (D: He has no high-risk features requiring telemetry.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  },
+  {
+   "q": "A 24-year-old woman has recurrent vasovagal syncope that has continued despite reassurance, trigger avoidance, increased fluid and salt intake, and correctly performed leg-crossing and muscle-tensing maneuvers. Examination and ECG are normal. Which of the following medications has the best randomized-trial evidence for preventing her episodes?",
+   "options": [
+    "Fludrocortisone",
+    "Midodrine",
+    "Metoprolol",
+    "Sertraline",
+    "Hydrochlorothiazide"
+   ],
+   "answer": 1,
+   "explain": "Of the drugs used for refractory neurally mediated syncope, only midodrine has been shown effective in international multicenter randomized controlled trials. (A: Fludrocortisone is widely used but lacks that level of evidence.) (C: β-blockers are widely used but lack that level of evidence.) (D: SSRIs aren't among the agents the source lists for this purpose.) (E: A diuretic would worsen volume depletion.) Source: Ch 0023, Treatment: Neurally Mediated Syncope"
+  },
+  {
+   "q": "A 72-year-old man has had three episodes of unexplained syncope over a year. ECG, echocardiogram and Holter monitoring are unrevealing. Carotid sinus massage is being considered. On examination, a bruit is heard over the right carotid artery. Which of the following is the most appropriate action?",
+   "options": [
+    "Avoid carotid sinus massage",
+    "Perform carotid sinus massage on the left side only",
+    "Perform carotid sinus massage without monitoring",
+    "Perform bilateral simultaneous carotid sinus massage",
+    "Perform carotid sinus massage after a dose of atropine"
+   ],
+   "answer": 0,
+   "explain": "Carotid sinus massage should be avoided in patients with carotid bruits or known or possible plaque or stenosis. (B: A bruit on one side signals vascular disease, so massaging the other side is still unsafe.) (C: When performed, massage needs continuous ECG and blood pressure monitoring.) (D: Bilateral simultaneous massage is never appropriate.) (E: Premedication doesn't remove the embolic risk of plaque.) Source: Ch 0023, Autonomic Nervous System Testing"
+  },
+  {
+   "q": "A 19-year-old college basketball player collapsed during practice and regained consciousness within seconds. He has no prodrome and no prior episodes. A systolic murmur is heard at the left sternal border that increases with Valsalva. ECG shows left ventricular hypertrophy. Which of the following is the most appropriate next step?",
+   "options": [
+    "Tilt-table testing",
+    "Reassurance and return to play",
+    "Increase fluid and salt intake",
+    "Echocardiography",
+    "EEG"
+   ],
+   "answer": 3,
+   "explain": "Exertional syncope with a murmur that increases with Valsalva and LVH suggests hypertrophic cardiomyopathy. Echocardiography is indicated for an abnormal exam or ECG, and an exercise test with monitoring should follow exercise-related syncope. (A: Tilt testing evaluates reflex syncope, not structural heart disease.) (B: Syncope during exercise is a high-risk feature, so return to play is unsafe.) (C: Volume expansion treats reflex syncope.) (E: The event has no seizure features.) Source: Ch 0023, Cardiac Evaluation; Table 23-1"
+  },
+  {
+   "q": "A 35-year-old woman lost consciousness while standing in a hot, crowded room. A witness describes pallor and sweating beforehand, eyes open and turned upward, a few irregular jerks lasting about 10 seconds, and urinary incontinence. She was fully oriented within a minute. Which of the following features would most strongly suggest a seizure rather than syncope?",
+   "options": [
+    "Eyes open during the event",
+    "Urinary incontinence",
+    "Prolonged disorientation lasting many minutes after the event",
+    "Brief multifocal myoclonic jerks",
+    "Pallor and diaphoresis before the event"
+   ],
+   "answer": 2,
+   "explain": "Reorientation is almost immediate after syncope. Prolonged postictal drowsiness and disorientation favor a seizure. (A: Eyes typically stay open and deviate upward in neurally mediated syncope.) (B: Urinary incontinence occurs with both syncope and seizures.) (D: Brief, arrhythmic multifocal myoclonus occurs in up to 90% of syncopal episodes.) (E: Pallor and diaphoresis are premonitory autonomic features of syncope.) Source: Ch 0023, Differential Diagnosis"
+  },
+  {
+   "q": "A 64-year-old man with Parkinson disease has disabling lightheadedness on standing. Blood pressure falls from 132/80 mm Hg supine to 96/60 mm Hg after 3 minutes standing, with no change in heart rate. He has stopped all vasoactive medications, rises in stages, increased his fluid and salt intake, and uses counterpressure maneuvers, but symptoms persist. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start a β-blocker",
+    "Start hydrochlorothiazide",
+    "Implant a pacemaker",
+    "Start tamsulosin",
+    "Start midodrine"
+   ],
+   "answer": 4,
+   "explain": "Neurogenic orthostatic hypotension (Parkinson disease, no compensatory heart-rate rise) that persists after drug removal and nonpharmacologic measures is treated with fludrocortisone or vasoconstrictors such as midodrine or droxidopa. (A: A β-blocker would lower blood pressure further.) (B: A diuretic causes volume depletion and worsens orthostatic hypotension.) (C: Pacing doesn't correct vasoconstrictor failure.) (D: An α-blocker is itself a cause of orthostatic hypotension.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  },
+  {
+   "q": "A 55-year-old man has had two syncopal episodes 7 months apart, each preceded by sudden palpitations. ECG, echocardiogram, exercise test and a 48-hour Holter monitor are normal. He has no high-risk features. Which of the following is the most appropriate next step?",
+   "options": [
+    "Implantable loop recorder",
+    "Repeat 48-hour Holter monitoring",
+    "Invasive electrophysiologic study",
+    "Tilt-table testing",
+    "Reassurance without further testing"
+   ],
+   "answer": 0,
+   "explain": "Episodes months apart in a low-risk patient with suspected arrhythmia call for an implantable loop recorder. Monitoring should ideally last at least twice the interval between episodes. (B: A repeat short Holter is unlikely to capture an event that happens every few months.) (C: Electrophysiologic study needs structural disease with ECG abnormalities and has low yield.) (D: The palpitation prodrome points to arrhythmia, not reflex syncope.) (E: Palpitations before syncope are a high-risk feature and should be investigated.) Source: Ch 0023, Cardiac Evaluation"
+  },
+  {
+   "q": "A 70-year-old woman has lightheadedness on standing. Blood pressure is measured supine and after 3 minutes standing. Which of the following findings meets the definition of orthostatic hypotension?",
+   "options": [
+    "Fall in systolic blood pressure from 130 to 118 mm Hg",
+    "Fall in systolic blood pressure from 142 to 120 mm Hg",
+    "Fall in diastolic blood pressure from 80 to 74 mm Hg",
+    "Fall in systolic blood pressure that begins within 15 seconds of standing and resolves by 45 seconds",
+    "Rise in heart rate of 15/min without a change in blood pressure"
+   ],
+   "answer": 1,
+   "explain": "Orthostatic hypotension is a fall of at least 20 mm Hg systolic or at least 10 mm Hg diastolic within 3 minutes of standing. A 22 mm Hg systolic fall qualifies. (A: A 12 mm Hg systolic fall is below threshold.) (C: A 6 mm Hg diastolic fall is below threshold.) (D: Initial orthostatic hypotension (within 15 s, resolving by 45 s) reflects a transient mismatch, not autonomic failure.) (E: No blood pressure fall means no orthostatic hypotension.) Source: Ch 0023, Orthostatic Hypotension"
+  },
+  {
+   "q": "A 22-year-old man reports sudden episodes in which his knees buckle and he slumps to the floor when he laughs hard. He remains aware throughout, and each episode lasts about a minute. He also has excessive daytime sleepiness. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Vasovagal syncope",
+    "Absence seizures",
+    "Orthostatic hypotension",
+    "Cataplexy",
+    "Psychogenic pseudosyncope"
+   ],
+   "answer": 3,
+   "explain": "Cataplexy is abrupt loss of muscle tone triggered by strong emotion (laughter, anger), with consciousness preserved, lasting 30 s to 2 min. It occurs in 60–75% of patients with narcolepsy. (A: Syncope involves loss of consciousness.) (B: Absence seizures impair awareness and aren't triggered by laughter.) (C: Orthostatic hypotension is triggered by posture and causes presyncope or loss of consciousness.) (E: Psychogenic episodes involve apparent loss of consciousness and aren't tied to daytime sleepiness.) Source: Ch 0023, Differential Diagnosis"
+  },
+  {
+   "q": "A 61-year-old man has progressive orthostatic lightheadedness, erectile dysfunction, urinary urgency, reduced sweating, gait unsteadiness and slurred speech. Tilt-table testing shows a gradual fall in blood pressure with no compensatory rise in heart rate. Which of the following is the most likely cause of his orthostatic hypotension?",
+   "options": [
+    "Vasovagal syncope",
+    "Carotid sinus hypersensitivity",
+    "Multiple system atrophy",
+    "Brugada syndrome",
+    "Volume depletion"
+   ],
+   "answer": 2,
+   "explain": "Orthostatic hypotension without a compensatory heart-rate rise, plus bladder, sexual and sudomotor dysfunction and cerebellar signs, indicates primary autonomic failure. Multiple system atrophy (Shy-Drager) is a synucleinopathy causing this picture. (A: Vasovagal syncope requires an intact autonomic nervous system and causes abrupt BP and HR falls.) (B: Carotid sinus hypersensitivity is a reflex syncope triggered by neck stimulation.) (D: Brugada syndrome causes arrhythmic syncope, not progressive autonomic failure.) (E: Volume depletion doesn't explain the progressive multisystem autonomic and cerebellar findings.) Source: Ch 0023, Causes of Neurogenic Orthostatic Hypotension; Table 23-2; Fig 23-3"
+  },
+  {
+   "q": "A 66-year-old woman with pure autonomic failure is treated with fludrocortisone and midodrine for orthostatic hypotension. Her supine blood pressure at night is 182/96 mm Hg, and she reports frequent nighttime urination. Which of the following is the most appropriate nonpharmacologic measure?",
+   "options": [
+    "Sleep flat with legs elevated",
+    "Raise the head of the bed",
+    "Drink 500 mL of water at bedtime",
+    "Eat a large carbohydrate-rich meal in the evening",
+    "Stop all salt intake"
+   ],
+   "answer": 1,
+   "explain": "Raising the head of the bed reduces supine hypertension and nocturnal diuresis in patients with orthostatic hypotension. (A: Lying flat worsens supine hypertension.) (C: A water bolus gives a short-term pressor response, which is unwanted at night with supine hypertension.) (D: Large carbohydrate meals worsen postprandial hypotension.) (E: Salt and fluid expansion is part of orthostatic hypotension treatment.) Source: Ch 0023, Treatment: Orthostatic Hypotension"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0024-dizziness-and-vertigo",
+ "name": "Dizziness and Vertigo (Harrison Ch 24)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 24: Dizziness and Vertigo.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Three key questions when evaluating dizziness?",
+   "back": "Is it dangerous (arrhythmia, TIA/stroke)? Is it vestibular? If vestibular, peripheral or central?"
+  },
+  {
+   "front": "What does vertigo imply physiologically?",
+   "back": "Acute asymmetry of vestibular inputs from the two labyrinths or their central pathways"
+  },
+  {
+   "front": "Symptoms of symmetric bilateral vestibular loss?",
+   "back": "Imbalance and oscillopsia, but no vertigo"
+  },
+  {
+   "front": "Dizziness lasting seconds, positional?",
+   "back": "BPPV or orthostatic hypotension"
+  },
+  {
+   "front": "Dizziness lasting minutes?",
+   "back": "Posterior circulation TIA (also migraine)"
+  },
+  {
+   "front": "Vertigo attacks lasting hours?",
+   "back": "Vestibular migraine or Meniere disease"
+  },
+  {
+   "front": "Peripheral nystagmus characteristics?",
+   "back": "Unidirectional horizontal, fast phase away from the lesioned ear, suppressed by visual fixation"
+  },
+  {
+   "front": "Nystagmus patterns that indicate a central lesion?",
+   "back": "Direction-changing with gaze, downbeat, pure vertical or pure torsional, not suppressed by fixation"
+  },
+  {
+   "front": "Acute prolonged vertigo with a normal head impulse test suggests?",
+   "back": "A central cause (e.g., cerebellar or brainstem stroke)"
+  },
+  {
+   "front": "Head impulse test: abnormal result?",
+   "back": "Catch-up saccade after rapid head rotation toward the weak side (deficient VOR)"
+  },
+  {
+   "front": "Symptoms that suggest central vertigo?",
+   "back": "Diplopia, dysarthria, limb ataxia, numbness, weakness"
+  },
+  {
+   "front": "Dix-Hallpike finding in posterior canal BPPV?",
+   "back": "Transient upbeat-torsional nystagmus, upper poles beating toward the lower (affected) ear"
+  },
+  {
+   "front": "BPPV episode duration and triggers?",
+   "back": "<1 min (typically 15-20 s); change in head position: lying down, rising, looking up, rolling over in bed"
+  },
+  {
+   "front": "Cause of BPPV?",
+   "back": "Otoconia dislodged from the utricle into a semicircular canal, usually the posterior canal"
+  },
+  {
+   "front": "Treatment of posterior canal BPPV?",
+   "back": "Epley repositioning maneuver"
+  },
+  {
+   "front": "Vestibular neuritis: role of antivirals?",
+   "back": "No proven benefit unless herpes zoster oticus (Ramsay Hunt)"
+  },
+  {
+   "front": "Vestibular suppressants in vestibular neuritis: how long?",
+   "back": "First several days only; later they impede central compensation"
+  },
+  {
+   "front": "Acute vestibular syndrome in an older patient with vascular risk factors and no focal signs?",
+   "back": "Still evaluate for stroke"
+  },
+  {
+   "front": "Meniere disease triad plus audiogram?",
+   "back": "Vertigo attacks, ear fullness/pressure/tinnitus, low-frequency sensorineural hearing loss"
+  },
+  {
+   "front": "Pathology of Meniere disease?",
+   "back": "Endolymphatic hydrops (excess endolymph)"
+  },
+  {
+   "front": "Initial treatment of Meniere disease?",
+   "back": "Diuretics and sodium restriction; then intratympanic glucocorticoids or gentamicin"
+  },
+  {
+   "front": "Vestibular migraine features?",
+   "back": "Vertigo minutes to hours, often without headache; motion and visual-motion sensitivity, photophobia"
+  },
+  {
+   "front": "Vestibular migraine treatment?",
+   "back": "Migraine prophylactic medications; antiemetics for attacks"
+  },
+  {
+   "front": "Why does vestibular schwannoma rarely cause vertigo?",
+   "back": "Slow vestibular loss is compensated centrally"
+  },
+  {
+   "front": "Unexplained unilateral sensorineural hearing loss: imaging?",
+   "back": "MRI of the internal auditory canals with gadolinium"
+  },
+  {
+   "front": "Most common iatrogenic cause of bilateral vestibular hypofunction?",
+   "back": "Aminoglycosides, especially gentamicin"
+  },
+  {
+   "front": "Bilateral vestibular hypofunction exam findings?",
+   "back": "Reduced dynamic visual acuity, abnormal head impulse both directions, Romberg sign, reduced calorics"
+  },
+  {
+   "front": "Treatment of bilateral vestibular hypofunction?",
+   "back": "Vestibular rehabilitation; avoid suppressants"
+  },
+  {
+   "front": "Abnormal dynamic visual acuity?",
+   "back": "Drop of more than one line with 1-2 Hz head rotation"
+  },
+  {
+   "front": "PPPD definition?",
+   "back": "Fluctuating dizziness >=3 months, worse standing and in complex visual environments; normal or compensated vestibular testing"
+  },
+  {
+   "front": "PPPD treatment?",
+   "back": "SSRIs, cognitive-behavioral therapy, vestibular rehabilitation"
+  },
+  {
+   "front": "Suspected central vertigo: imaging?",
+   "back": "Brain MRI and full neurologic evaluation"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 63-year-old woman has had 2 weeks of brief spinning sensations, each lasting about 15 seconds. They occur when she rolls over in bed, lies down, or looks up at a high shelf. She has no hearing loss, tinnitus, or other neurologic symptoms, and orthostatic vital signs are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Brain MRI",
+    "Start meclizine daily",
+    "Dix-Hallpike maneuver",
+    "Audiometry",
+    "Start a diuretic and sodium restriction"
+   ],
+   "answer": 2,
+   "explain": "Brief positional vertigo triggered by rolling over in bed is typical of BPPV. All patients with positionally provoked episodic dizziness should have the Dix-Hallpike maneuver. (A: Nothing suggests a central cause.) (B: Suppressants don't treat BPPV, and treatment should target the diagnosis.) (D: She has no aural symptoms.) (E: Diuretics and sodium restriction are for Ménière disease.) Source: Ch 0024, Positioning Maneuvers; Benign Paroxysmal Positional Vertigo"
+  },
+  {
+   "q": "A 58-year-old man has brief positional vertigo. With his head turned 45 degrees to the right and lowered into the head-hanging position, he develops transient upbeating-torsional nystagmus with the upper poles of the eyes beating toward the right ear, along with vertigo. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Oral glucocorticoids",
+    "Daily vestibular suppressant medication",
+    "Valacyclovir",
+    "Referral for vestibular nerve section",
+    "Epley repositioning maneuver for the right posterior canal"
+   ],
+   "answer": 4,
+   "explain": "Upbeat-torsional nystagmus toward the lower (right) ear on Dix-Hallpike confirms right posterior canal BPPV, which is treated with the Epley maneuver. (A: Glucocorticoids have no role in BPPV.) (B: Suppressants don't remove otoconia.) (C: Antivirals are for herpes zoster oticus.) (D: Ablative surgery is seldom needed even in Ménière disease and isn't BPPV therapy.) Source: Ch 0024, Benign Paroxysmal Positional Vertigo; Fig 24-1"
+  },
+  {
+   "q": "A 71-year-old man with hypertension, diabetes and atrial fibrillation presents with 10 hours of continuous vertigo, nausea and vomiting. He has spontaneous horizontal nystagmus. The head impulse test is normal in both directions. He has no hearing loss. Which of the following is the most appropriate next step?",
+   "options": [
+    "Brain MRI",
+    "Discharge with meclizine",
+    "Epley maneuver",
+    "Oral glucocorticoids for vestibular neuritis",
+    "Outpatient audiometry"
+   ],
+   "answer": 0,
+   "explain": "In acute prolonged vertigo, a normal head impulse test argues against a peripheral lesion and suggests a central cause. An older patient with vascular risk factors needs evaluation for stroke, and suspected central lesions need brain MRI. (B: Discharging a possible cerebellar stroke is dangerous.) (C: Epley treats BPPV, not continuous vertigo.) (D: A normal head impulse test makes vestibular neuritis unlikely.) (E: Outpatient audiometry would delay evaluation of a possible stroke.) Source: Ch 0024, Acute Prolonged Vertigo; Table 24-1; Central Vestibular Disorders"
+  },
+  {
+   "q": "A 42-year-old woman was diagnosed with vestibular neuritis 9 days ago. The acute vertigo has resolved, but she still feels unsteady with head movement. She has stayed in bed and continues taking a vestibular suppressant three times daily. Neurologic examination is otherwise normal. Which of the following is the most appropriate management?",
+   "options": [
+    "Increase the suppressant dose",
+    "Add oral acyclovir",
+    "Order brain MRI",
+    "Stop the suppressant, resume normal activity and begin vestibular rehabilitation",
+    "Add a benzodiazepine at night"
+   ],
+   "answer": 3,
+   "explain": "Vestibular suppressants should be avoided after the first several days because they impede central compensation. Patients should resume activity as soon as possible, and vestibular rehabilitation may speed improvement. (A: Higher doses further delay compensation.) (B: Antivirals have no proven benefit without herpes zoster oticus.) (C: The course and normal neurologic exam fit a resolving peripheral lesion.) (E: Benzodiazepines are suppressants with the same drawback.) Source: Ch 0024, Acute Prolonged Vertigo: Treatment"
+  },
+  {
+   "q": "A 45-year-old woman has recurrent attacks of vertigo lasting several hours, with fullness and roaring tinnitus in the left ear. Audiometry during an attack shows asymmetric low-frequency sensorineural hearing loss on the left that improves between attacks. Neurologic examination is normal. Which of the following is the most appropriate initial treatment?",
+   "options": [
+    "Intratympanic gentamicin",
+    "Diuretic therapy and sodium restriction",
+    "Labyrinthectomy",
+    "Epley maneuver",
+    "Migraine prophylaxis"
+   ],
+   "answer": 1,
+   "explain": "Vertigo, aural fullness and fluctuating low-frequency hearing loss indicate Ménière disease. Diuretics and sodium restriction are the usual initial treatment, with ENT referral. (A: Intratympanic gentamicin is considered if attacks persist.) (C: Ablative procedures are seldom required.) (D: Epley treats BPPV.) (E: Migraine prophylaxis treats vestibular migraine, which lacks low-frequency hearing loss.) Source: Ch 0024, Ménière's Disease"
+  },
+  {
+   "q": "A 54-year-old man has gradually worsening hearing in his right ear over 18 months. He has no vertigo. Audiometry shows right-sided sensorineural hearing loss. The head impulse test shows a catch-up saccade when the head is turned to the right. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassurance and repeat audiometry in 1 year",
+    "Noncontrast head CT",
+    "MRI of the internal auditory canals with gadolinium",
+    "Vestibular suppressant therapy",
+    "Hearing aid fitting without further testing"
+   ],
+   "answer": 2,
+   "explain": "Unexplained unilateral sensorineural hearing loss or vestibular hypofunction requires MRI of the internal auditory canals with gadolinium to exclude vestibular schwannoma. (A: Watchful waiting would miss a tumor.) (B: Noncontrast CT doesn't adequately image the internal auditory canal.) (D: He has no vertigo to suppress.) (E: The cause must be found first.) Source: Ch 0024, Ancillary Testing; Vestibular Schwannoma"
+  },
+  {
+   "q": "A 50-year-old woman presents with acute vertigo. Which of the following examination findings most strongly indicates a central rather than peripheral cause?",
+   "options": [
+    "Horizontal nystagmus that changes direction with the direction of gaze",
+    "Unidirectional horizontal nystagmus that is suppressed by visual fixation",
+    "Catch-up saccade after head rotation toward one side",
+    "Transient upbeat-torsional nystagmus on Dix-Hallpike testing",
+    "Unilateral hearing loss with ear fullness"
+   ],
+   "answer": 0,
+   "explain": "Nystagmus that changes direction with gaze is due to a central lesion, characteristically of the cerebellar pathways. (B: Unidirectional, fixation-suppressed nystagmus is peripheral.) (C: A catch-up saccade indicates a peripheral vestibular deficit.) (D: Transient mixed vertical-torsional nystagmus on positioning is BPPV.) (E: Unilateral hearing loss suggests a peripheral cause.) Source: Ch 0024, Table 24-1; Ocular Motility"
+  },
+  {
+   "q": "A 67-year-old man treated with gentamicin for endocarditis 2 months ago now has unsteadiness, especially walking at night, and a sensation that the visual scene bounces when he walks or rides in a car. He has no vertigo. Head impulse testing shows catch-up saccades in both directions, dynamic visual acuity drops by three lines, and Romberg testing is positive. Which of the following is the most appropriate management?",
+   "options": [
+    "Daily meclizine",
+    "Epley maneuver",
+    "Oral glucocorticoids",
+    "Diuretic and sodium restriction",
+    "Vestibular rehabilitation therapy"
+   ],
+   "answer": 4,
+   "explain": "Gentamicin is the most common iatrogenic cause of bilateral vestibular hypofunction. It causes imbalance worse in the dark, oscillopsia, bilateral head-impulse abnormalities, reduced dynamic visual acuity and a Romberg sign. Treatment is vestibular rehabilitation. (A: Suppressants increase the imbalance and shouldn't be used.) (B: Epley treats BPPV.) (C: Glucocorticoids don't reverse ototoxicity.) (D: Diuretics and sodium restriction treat Ménière disease.) Source: Ch 0024, Bilateral Vestibular Hypofunction"
+  },
+  {
+   "q": "A 38-year-old woman had vestibular neuritis 8 months ago. Since then she has had fluctuating dizziness and unsteadiness that is present at rest, worse when standing, and especially bad in supermarkets and while watching action movies. Neuro-otologic examination and vestibular testing show only a compensated vestibular deficit. She is anxious about going out. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Long-term vestibular suppressant",
+    "Repeat Epley maneuvers",
+    "Intratympanic glucocorticoids",
+    "An SSRI with cognitive-behavioral therapy and vestibular rehabilitation",
+    "Vestibular nerve section"
+   ],
+   "answer": 3,
+   "explain": "Persistent postural-perceptual dizziness (≥3 months, worse standing and in complex visual environments, normal or compensated testing) is treated with SSRIs, cognitive-behavioral therapy and vestibular rehabilitation. (A: Suppressants should generally be avoided.) (B: Nothing suggests BPPV.) (C: Intratympanic therapy is for refractory Ménière disease.) (E: Vestibular testing shows no ongoing primary vestibular disorder.) Source: Ch 0024, Functional Dizziness"
+  },
+  {
+   "q": "A 36-year-old woman with a long history of migraine headaches has recurrent episodes of vertigo lasting 30 minutes to several hours, usually without headache. During episodes she has photophobia and sensitivity to visual motion. Hearing and audiometry are normal, and neurologic examination between episodes is normal. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Ménière disease",
+    "Vestibular migraine",
+    "Benign paroxysmal positional vertigo",
+    "Vestibular schwannoma",
+    "Bilateral vestibular hypofunction"
+   ],
+   "answer": 1,
+   "explain": "Vestibular migraine causes episodic vertigo lasting minutes to hours, often without headache, with photophobia and visual-motion sensitivity in someone with a migraine history. (A: Ménière disease features low-frequency hearing loss and aural symptoms.) (C: BPPV episodes last under a minute and are positional.) (D: Schwannoma causes progressive unilateral hearing loss, usually without vertigo.) (E: Bilateral loss causes imbalance and oscillopsia without vertigo.) Source: Ch 0024, Vestibular Migraine"
+  },
+  {
+   "q": "A 60-year-old man has 1 day of severe continuous vertigo with nausea. Examination shows unidirectional horizontal nystagmus suppressed by fixation, an abnormal head impulse test to the left, vesicles in the left external auditory canal, and left facial weakness. Which of the following is the most appropriate addition to his treatment?",
+   "options": [
+    "No antiviral; antivirals have no proven benefit in acute vestibular syndromes",
+    "Long-term vestibular suppressant therapy",
+    "Antiviral therapy",
+    "Epley maneuver",
+    "Diuretic and sodium restriction"
+   ],
+   "answer": 2,
+   "explain": "Antivirals aren't routinely given for vestibular neuritis but are indicated with evidence of herpes zoster oticus (Ramsay Hunt syndrome), suggested here by ear-canal vesicles and facial weakness. (A: The \"no proven benefit\" statement applies to vestibular neuritis without zoster.) (B: Suppressants should be limited to the first few days.) (D: Epley treats BPPV.) (E: Diuretics and sodium restriction are for Ménière disease.) Source: Ch 0024, Acute Prolonged Vertigo: Treatment"
+  },
+  {
+   "q": "A 49-year-old man has a slowly progressive left-sided sensorineural hearing loss due to a cerebellopontine angle tumor. Which of the following best explains why he doesn't have vertigo?",
+   "options": [
+    "The gradual vestibular deficit is compensated centrally as it develops",
+    "The tumor affects only the cochlear nerve",
+    "Vertigo occurs only with bilateral lesions",
+    "The tumor causes bilateral symmetric vestibular loss",
+    "Visual fixation permanently suppresses vertigo in all unilateral lesions"
+   ],
+   "answer": 0,
+   "explain": "Vestibular schwannomas cause slowly progressive unilateral hypofunction that is compensated centrally as it develops, so vertigo is typically absent. (B: The vestibular examination shows a deficient head impulse response toward the affected side.) (C: Vertigo comes from acute asymmetry; bilateral symmetric loss causes imbalance without vertigo.) (D: A unilateral tumor causes unilateral loss (bilateral tumors occur in NF2).) (E: Fixation suppresses peripheral nystagmus; it doesn't explain the lack of vertigo.) Source: Ch 0024, Vestibular Schwannoma"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0029-confusion-and-delirium",
+ "name": "Confusion and Delirium (Harrison Ch 29)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 29: Confusion and Delirium.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Definition of delirium?",
+   "back": "Relatively acute decline in cognition that fluctuates over hours or days"
+  },
+  {
+   "front": "Neuropsychological hallmark of delirium?",
+   "back": "Deficit of attention"
+  },
+  {
+   "front": "Hyperactive vs hypoactive delirium examples?",
+   "back": "Hyperactive: delirium tremens. Hypoactive: benzodiazepine intoxication"
+  },
+  {
+   "front": "Which delirium subtype is most often missed?",
+   "back": "Hypoactive"
+  },
+  {
+   "front": "Two strongest risk factors for delirium?",
+   "back": "Older age and baseline cognitive dysfunction"
+  },
+  {
+   "front": "In-hospital risk factors for delirium?",
+   "back": "Physical restraints, bladder catheter, sleep and sensory deprivation, >=3 new medications"
+  },
+  {
+   "front": "Delirium rate in older ICU patients?",
+   "back": "Approaches 75%"
+  },
+  {
+   "front": "Fraction of delirious inpatients not recognized?",
+   "back": "Up to one-third"
+  },
+  {
+   "front": "In-hospital mortality of delirium?",
+   "back": "25-33% (similar to sepsis)"
+  },
+  {
+   "front": "Post-discharge mortality after in-hospital delirium?",
+   "back": "Fivefold higher in the following months vs nondelirious patients"
+  },
+  {
+   "front": "Proportion of delirium in patients with underlying dementia?",
+   "back": "At least two-thirds"
+  },
+  {
+   "front": "Dementia that mimics delirium?",
+   "back": "Dementia with Lewy bodies: fluctuations, visual hallucinations, parkinsonism, attentional deficit"
+  },
+  {
+   "front": "Delirium as a 'stress test for the brain'?",
+   "back": "Delirium after a minor insult unmasks low cerebral reserve; screen for underlying neurologic disease after recovery"
+  },
+  {
+   "front": "Typical EEG in delirium?",
+   "back": "Symmetric slowing (nonspecific)"
+  },
+  {
+   "front": "Focal lesions that can cause delirium?",
+   "back": "Right (nondominant) parietal and medial dorsal thalamic"
+  },
+  {
+   "front": "Key neurotransmitter deficiency in delirium?",
+   "back": "Acetylcholine"
+  },
+  {
+   "front": "CAM criteria for delirium?",
+   "back": "Acute onset and fluctuating course AND inattention, PLUS disorganized thinking OR altered level of consciousness"
+  },
+  {
+   "front": "Three most important history items in delirium?",
+   "back": "Baseline cognitive function, time course, current medications"
+  },
+  {
+   "front": "Fraction of delirium caused by medications?",
+   "back": "Nearly one-third"
+  },
+  {
+   "front": "Drug classes most often causing delirium?",
+   "back": "Anticholinergics, narcotics, benzodiazepines"
+  },
+  {
+   "front": "Digit span forward: normal and abnormal?",
+   "back": "Normal 5-7 digits; <=4 suggests an attentional deficit"
+  },
+  {
+   "front": "Why is the MMSE unreliable in delirium?",
+   "back": "Inattention impairs tasks like serial subtraction and spelling 'world' backward"
+  },
+  {
+   "front": "Asterixis or multifocal myoclonus in delirium suggests?",
+   "back": "Metabolic or toxic etiology"
+  },
+  {
+   "front": "Initial labs for all delirium patients?",
+   "back": "CBC, electrolytes with Ca/Mg/phosphorus, liver function with albumin, renal function"
+  },
+  {
+   "front": "Delirium workup: when to do toxicology early?",
+   "back": "Younger patients"
+  },
+  {
+   "front": "Delirium in the elderly: key screen beyond basic labs?",
+   "back": "Systemic infection: UA and culture, chest x-ray, possibly blood cultures"
+  },
+  {
+   "front": "Preferred brain imaging in delirium?",
+   "back": "MRI with diffusion and gadolinium (CT finds only large masses and hemorrhage)"
+  },
+  {
+   "front": "Delirium with suspected CNS infection: sequence?",
+   "back": "Brain imaging followed immediately by lumbar puncture"
+  },
+  {
+   "front": "Delirium with unexplained cause after workup: key test?",
+   "back": "EEG (nonconvulsive status epilepticus or recurrent seizures)"
+  },
+  {
+   "front": "First principle of delirium treatment?",
+   "back": "Treat the underlying cause; blind symptomatic drugs prolong delirium"
+  },
+  {
+   "front": "Safer alternative to physical restraints in delirium?",
+   "back": "Bed alarms and personal sitters"
+  },
+  {
+   "front": "Role of antipsychotics in delirium?",
+   "back": "Very low dose as needed only for severe agitation with risk of harm; ineffective for prevention or treatment; increase mortality in elderly"
+  },
+  {
+   "front": "When are benzodiazepines appropriate in delirium?",
+   "back": "Only for alcohol or benzodiazepine withdrawal"
+  },
+  {
+   "front": "ICU strategies to reduce delirium?",
+   "back": "Dexmedetomidine instead of more deliriogenic sedatives; daily sedation interruption with reorientation"
+  },
+  {
+   "front": "Drugs proven to prevent delirium?",
+   "back": "None; cholinesterase inhibitors and antipsychotics failed; melatonin and ramelteon promising"
+  },
+  {
+   "front": "Nighttime delirium-prevention measures?",
+   "back": "Dark, quiet room; cluster nighttime tasks; eye mask and earplugs; limit caffeine; consider melatonin"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "An 82-year-old woman is hospitalized for pneumonia and is receiving appropriate antibiotics. On the second night she becomes agitated and disoriented and repeatedly tries to pull out her IV line. She has no history of alcohol or sedative use. Which of the following is the most appropriate initial measure for her safety?",
+   "options": [
+    "Wrist restraints",
+    "Scheduled haloperidol every 6 hours",
+    "Intravenous lorazepam",
+    "Prophylactic donepezil",
+    "A personal sitter or bed alarm with frequent reorientation"
+   ],
+   "answer": 4,
+   "explain": "Bed alarms and personal sitters are more effective and much less disorienting than physical restraints. Supportive reorientation is the cornerstone of delirium management. (A: Physical restraints are themselves a risk factor for delirium.) (B: Antipsychotics don't prevent or treat delirium, raise mortality in the elderly, and are a last resort given only as needed.) (C: Benzodiazepines worsen confusion and are for alcohol or sedative withdrawal.) (D: Cholinesterase inhibitors haven't been shown to prevent or treat delirium.) Source: Ch 0029, Treatment: Delirium"
+  },
+  {
+   "q": "An 85-year-old man is evaluated on hospital day 3 because the nurses say he seems different. Using the Confusion Assessment Method, which of the following combinations establishes a diagnosis of delirium?",
+   "options": [
+    "Acute onset and fluctuating course, disorganized thinking, and visual hallucinations",
+    "Acute onset and fluctuating course, inattention, and an altered level of consciousness",
+    "Inattention, disorganized thinking, and an altered level of consciousness with gradual onset over 2 years",
+    "Memory impairment and disorientation to date",
+    "Hallucinations, agitation, and insomnia"
+   ],
+   "answer": 1,
+   "explain": "The CAM requires (1) acute onset and fluctuating course and (2) inattention, plus either (3) disorganized thinking or (4) an altered level of consciousness. (A: Inattention, the required core feature, is missing.) (C: Gradual onset over years suggests dementia rather than delirium.) (D: Memory loss and disorientation alone don't meet the criteria.) (E: Hallucinations and agitation are associated features, not CAM criteria.) Source: Ch 0029, Approach to the Patient: Delirium"
+  },
+  {
+   "q": "A 79-year-old woman with mild dementia is brought from her assisted-living facility because of 2 days of new confusion and drowsiness. Her medications haven't changed. Temperature is 37.9°C (100.2°F). She has no focal neurologic deficits or meningismus. CBC, electrolytes, calcium, magnesium, phosphorus, liver and renal function have been sent. Which of the following is the most appropriate additional initial evaluation?",
+   "options": [
+    "Lumbar puncture",
+    "EEG",
+    "Paraneoplastic antibody panel",
+    "Urinalysis with urine culture and chest radiograph",
+    "Brain MRI with gadolinium as the sole next test"
+   ],
+   "answer": 3,
+   "explain": "Besides the basic labs, screening for systemic infection (urinalysis and culture, chest radiograph, possibly blood cultures) is important in elderly patients with delirium. UTI in a patient with dementia is a classic scenario. (A: LP is for suspected CNS infection or a negative workup. She has no meningismus, and LP should follow imaging.) (B: EEG is for suspected seizures or an unexplained cause after the initial workup.) (C: Autoimmune and paraneoplastic testing is reserved for an unclear diagnosis after initial testing.) (E: Imaging is often unhelpful in delirium and shouldn't replace the infection screen.) Source: Ch 0029, Table 29-2; Laboratory and Diagnostic Evaluation"
+  },
+  {
+   "q": "A 23-year-old man is brought to the emergency department by friends because he is agitated, disoriented and seeing things that are not there. He has no medical history. Vital signs show tachycardia. Which of the following is most appropriate to obtain early in his evaluation?",
+   "options": [
+    "Serum and urine toxicology screen",
+    "Cortisol level",
+    "Paraneoplastic antibody panel",
+    "Vitamin B12 level",
+    "Antinuclear antibodies"
+   ],
+   "answer": 0,
+   "explain": "Illicit drugs and toxins are common causes of delirium in younger patients, so serum and urine toxicology screening belongs earlier in their workup. (B: Endocrine tests are second-tier.) (C: Paraneoplastic testing is second-tier.) (D: Vitamin testing is second-tier.) (E: Autoimmune serologies are second-tier, reserved for an unclear diagnosis.) Source: Ch 0029, Etiology; Table 29-2"
+  },
+  {
+   "q": "A 74-year-old man has had 5 days of fluctuating confusion during hospitalization for a hip fracture. There have been periods of staring with subtle eyelid twitching. Medication review, basic laboratory studies, infection screening, and brain MRI are unrevealing. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start a scheduled antipsychotic",
+    "Repeat the brain MRI",
+    "EEG",
+    "Discharge to a nursing home",
+    "Start a cholinesterase inhibitor"
+   ],
+   "answer": 2,
+   "explain": "Nonconvulsive status epilepticus and recurrent seizures can cause fluctuating delirium. EEG is essential and should be done whenever the cause remains unclear after the initial workup, immediately if suspicion is high. (A: Antipsychotics don't treat delirium and would miss the cause.) (B: MRI was just unrevealing.) (D: A treatable cause hasn't been excluded.) (E: Cholinesterase inhibitors aren't effective for delirium.) Source: Ch 0029, Etiology (seizures); Table 29-2"
+  },
+  {
+   "q": "An 80-year-old woman becomes acutely confused and inattentive on hospital day 2. The day before, she was started on diphenhydramine at night for sleep and oxybutynin for urinary urgency. Vital signs, examination, and basic laboratory tests are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Add lorazepam at night",
+    "Order brain MRI and lumbar puncture",
+    "Start quetiapine",
+    "Add donepezil",
+    "Discontinue diphenhydramine and oxybutynin"
+   ],
+   "answer": 4,
+   "explain": "Anticholinergic drugs are common precipitants, and medications cause about one-third of delirium in the elderly. With a clear precipitant, the offending drugs should be stopped, and further testing may not be required. (A: Benzodiazepines worsen confusion.) (B: Extensive testing isn't needed when a clear precipitant explains the delirium.) (C: Antipsychotics don't treat delirium.) (D: Cholinesterase inhibitors haven't been proven for delirium.) Source: Ch 0029, Etiology; Laboratory and Diagnostic Evaluation; Treatment"
+  },
+  {
+   "q": "A 66-year-old man is admitted for elective knee replacement. On postoperative day 2 he develops tremor, diaphoresis, tachycardia, hypertension, agitation and visual hallucinations. His wife reports he drinks four glasses of wine every evening. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Low-dose haloperidol alone",
+    "A benzodiazepine",
+    "Physical restraints and observation",
+    "Dexmedetomidine as sole therapy for withdrawal",
+    "Avoid all sedating medication because benzodiazepines worsen delirium"
+   ],
+   "answer": 1,
+   "explain": "This is hyperactive delirium from alcohol withdrawal. Even a few daily drinks can cause significant withdrawal on admission. Benzodiazepine use in delirium is appropriate only when it is caused by alcohol or benzodiazepine withdrawal. (A: Antipsychotics don't treat the underlying withdrawal.) (C: Restraints don't treat the cause and worsen delirium.) (D: The source discusses dexmedetomidine as an ICU sedative less likely to cause delirium, not as withdrawal treatment.) (E: Withdrawal is the exception to the rule against benzodiazepines.) Source: Ch 0029, Etiology; Treatment: Delirium"
+  },
+  {
+   "q": "A 77-year-old man in the hospital is alert but has tangential speech and loses track of the conversation. When asked to repeat random strings of digits said at one per second, he can correctly repeat only 3 digits. His hearing and language are normal. This finding most directly indicates which of the following?",
+   "options": [
+    "Aphasia",
+    "Short-term memory loss",
+    "Executive dysfunction",
+    "An attentional deficit",
+    "Visuospatial impairment"
+   ],
+   "answer": 3,
+   "explain": "Forward digit span is a quick, fairly sensitive bedside test of attention. Healthy adults repeat 5–7 digits. A span of 4 or fewer indicates an attentional deficit, the neuropsychological hallmark of delirium. (A: Aphasia is a language disorder, and his language is normal.) (B: Digit span forward tests attention, not memory storage.) (C: Executive function isn't what this test measures.) (E: Visuospatial impairment isn't tested by digit repetition.) Source: Ch 0029, Physical Examination"
+  },
+  {
+   "q": "A hospital is designing a delirium-prevention protocol for patients aged 70 years and older admitted to medical wards. Which of the following interventions is supported?",
+   "options": [
+    "Ensure glasses and hearing aids are worn, mobilize patients out of bed for meals, and remove unnecessary catheters and monitoring tethers",
+    "Give scheduled low-dose haloperidol to all high-risk patients",
+    "Start a cholinesterase inhibitor on admission",
+    "Give nighttime benzodiazepines to protect sleep",
+    "Leave room lights on at night so patients can orient themselves"
+   ],
+   "answer": 0,
+   "explain": "Prevention protocols target sensory impairment, immobility, sleep and dehydration. Glasses and hearing aids, getting out of bed for meals, and removing unnecessary tethers (Foley, telemetry, nasal cannula, continuous oximetry) are part of the delirium-reduction checklist. (B: Antipsychotics haven't prevented delirium in trials.) (C: Cholinesterase inhibitors failed in prevention trials.) (D: Benzodiazepines worsen confusion.) (E: Nights should be dark and quiet to preserve the sleep-wake cycle.) Source: Ch 0029, Prevention; Fig 29-1"
+  },
+  {
+   "q": "A 70-year-old man is mechanically ventilated in the ICU for septic shock and needs continuous sedation. Which of the following strategies is most likely to reduce his risk of delirium?",
+   "options": [
+    "Continuous midazolam infusion without interruption",
+    "Scheduled prophylactic haloperidol",
+    "Dexmedetomidine with daily interruption of sedation and reorientation by staff",
+    "Constant lighting and 24-hour activity in the room to keep him oriented",
+    "Prophylactic rivastigmine"
+   ],
+   "answer": 2,
+   "explain": "ICU strategies include sedatives less likely to cause delirium, such as dexmedetomidine, and protocols for daily sedation interruption with reorientation. (A: Benzodiazepines promote delirium.) (B: Antipsychotics don't prevent delirium.) (D: Constant 24-hour activity commonly provokes delirium.) (E: Cholinesterase inhibitors haven't been shown to prevent delirium.) Source: Ch 0029, Prevention"
+  },
+  {
+   "q": "A 68-year-old woman is brought in with 1 day of fever to 39.2°C (102.6°F), headache and confusion. On examination she is inattentive and has neck stiffness. There is no papilledema. Which of the following is the most appropriate sequence of evaluation?",
+   "options": [
+    "EEG first, then outpatient MRI",
+    "Urinalysis only, and observe",
+    "Toxicology screen, then reassess in 24 hours",
+    "Thyroid function and cortisol levels, then lumbar puncture if abnormal",
+    "Brain imaging followed immediately by lumbar puncture"
+   ],
+   "answer": 4,
+   "explain": "When CNS infection is suspected, lumbar puncture must be done immediately after neuroimaging. (A: Delaying CSF analysis in suspected meningitis is dangerous.) (B: Meningismus and fever require CNS evaluation.) (C: Observation delays treatment of a possible CNS infection.) (D: Endocrine testing is second-tier and must not delay LP.) Source: Ch 0029, Laboratory and Diagnostic Evaluation; Table 29-2"
+  },
+  {
+   "q": "A previously healthy 64-year-old man developed delirium after an uncomplicated inguinal hernia repair. It resolved within 3 days once his pain medication was adjusted. His wife had noticed no cognitive problems before surgery. Which of the following is the most appropriate follow-up?",
+   "options": [
+    "No follow-up; postoperative delirium is benign and self-limited",
+    "Outpatient cognitive screening for an unrecognized underlying neurologic disorder",
+    "Long-term low-dose antipsychotic",
+    "Avoid all future surgery",
+    "Start a cholinesterase inhibitor indefinitely"
+   ],
+   "answer": 1,
+   "explain": "Delirium after a minor insult in a previously healthy person may unmask decreased cerebral reserve (\"stress test for the brain\"). After the episode clears, careful outpatient screening for an underlying condition should follow. (A: Delirium isn't benign; it carries morbidity and may herald neurodegeneration.) (C: Antipsychotics aren't indicated.) (D: Future surgery isn't contraindicated.) (E: There's no diagnosis to justify a cholinesterase inhibitor.) Source: Ch 0029, Pathogenesis; Risk Factors"
+  },
+  {
+   "q": "A 58-year-old man with cirrhosis is confused and lethargic. When he holds his arms outstretched with wrists extended, there are brief, irregular lapses in posture. Multifocal myoclonic jerks are also seen. These motor findings most suggest which category of delirium?",
+   "options": [
+    "Focal ischemic stroke",
+    "Primary psychiatric disorder",
+    "Nonconvulsive status epilepticus",
+    "A metabolic or toxic etiology",
+    "Dementia with Lewy bodies"
+   ],
+   "answer": 3,
+   "explain": "Asterixis and multifocal myoclonus are nonspecific but usually indicate a metabolic or toxic cause of delirium, such as hepatic encephalopathy here. (A: Focal strokes rarely cause delirium and produce focal deficits, not asterixis.) (B: Psychiatric disorders don't cause asterixis.) (C: EEG is needed to diagnose nonconvulsive status, and asterixis doesn't suggest it.) (E: Dementia with Lewy bodies features parkinsonism and visual hallucinations.) Source: Ch 0029, Physical Examination"
+  }
+ ]
+},
 ];
