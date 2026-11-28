@@ -3872,4 +3872,1378 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0031-dementia",
+ "name": "Dementia (Harrison Ch 31)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 31: Dementia.",
+ "chapter": "Neurology",
+ "flashcards": [
+  {
+   "front": "Definition of dementia?",
+   "back": "Acquired deterioration in cognitive abilities that impairs activities of daily living"
+  },
+  {
+   "front": "MCI vs dementia?",
+   "back": "MCI: objective cognitive decline with preserved daily function. Dementia: daily function impaired"
+  },
+  {
+   "front": "Predictors of progression from MCI to AD?",
+   "back": "Prominent memory deficit, family history, ApoE e4, small hippocampi, positive AD biomarkers"
+  },
+  {
+   "front": "Rapidly progressive dementia definition and causes?",
+   "back": "Dementia within 1 year of onset; CJD classic, but AD/other neurodegeneration or autoimmune encephalitis more common"
+  },
+  {
+   "front": "Most common cause of dementia before age 65?",
+   "back": "AD and FTD (FTD rivals AD)"
+  },
+  {
+   "front": "Three most common potentially reversible causes in memory clinics?",
+   "back": "Depression, normal pressure hydrocephalus, alcohol dependence (also medications)"
+  },
+  {
+   "front": "Modifiable dementia risk factors?",
+   "back": "Low education, hearing loss, social isolation, TBI, hypertension, diabetes, obesity, heavy alcohol, smoking, depression, inactivity, air pollution"
+  },
+  {
+   "front": "AD causal genes and susceptibility gene?",
+   "back": "APP (chr 21), PSEN1 (chr 14), PSEN2 (chr 1); susceptibility ApoE e4 (chr 19)"
+  },
+  {
+   "front": "Most common genetic cause of familial FTD?",
+   "back": "C9ORF72 (20-30% of familial cases)"
+  },
+  {
+   "front": "Protein aggregates by dementia?",
+   "back": "AD: Abeta + tau; DLB: alpha-synuclein; LATE: TDP-43; FTD: tau, TDP-43 or FUS; HD: huntingtin; CJD: PrPSc"
+  },
+  {
+   "front": "DLB core features?",
+   "back": "Early visual hallucinations, fluctuating cognition and arousal, parkinsonism, REM sleep behavior disorder, Capgras, delirium-prone"
+  },
+  {
+   "front": "FTD clinical features?",
+   "back": "Apathy, disinhibition, loss of empathy, compulsions, overeating; memory and drawing spared"
+  },
+  {
+   "front": "FTD imaging?",
+   "back": "Frontal, insular and/or anterior temporal atrophy; spares posterior parietal"
+  },
+  {
+   "front": "AD imaging?",
+   "back": "Entorhinal/hippocampal atrophy; FDG-PET temporoparietal, posterior cingulate and precuneus hypometabolism"
+  },
+  {
+   "front": "Cingulate island sign?",
+   "back": "DLB FDG-PET: occipital and precuneus hypometabolism with sparing of the posterior cingulate"
+  },
+  {
+   "front": "CJD diagnostic findings?",
+   "back": "DWI cortical ribboning and basal ganglia/thalamic hyperintensity; EEG periodic complexes; startle myoclonus"
+  },
+  {
+   "front": "Vascular dementia features?",
+   "back": "Stepwise decline, focal signs, executive slowing, apathy; infarcts and confluent white matter disease"
+  },
+  {
+   "front": "LATE features?",
+   "back": "Age >70-80, slowly progressive memory loss, anterior medial temporal atrophy, negative amyloid PET"
+  },
+  {
+   "front": "NPH MRI findings?",
+   "back": "Ventricular dilation with patent aqueduct, gaping Sylvian fissures, vertex crowding, minimal cortical atrophy"
+  },
+  {
+   "front": "Dementia + myelopathy + neuropathy?",
+   "back": "Vitamin B12 deficiency"
+  },
+  {
+   "front": "Causes of B12 deficiency listed for dementia workup?",
+   "back": "Pernicious anemia, veganism, bowel irradiation, gastric surgery, chronic H2 blocker therapy"
+  },
+  {
+   "front": "LGI1 encephalitis hallmark?",
+   "back": "Faciobrachial dystonic seizures"
+  },
+  {
+   "front": "NMDA receptor encephalitis features?",
+   "back": "Psychosis, insomnia, dyskinesias"
+  },
+  {
+   "front": "Routine dementia labs and imaging (AAN)?",
+   "back": "CBC, electrolytes, glucose, renal, liver, thyroid function, B12, MRI or CT"
+  },
+  {
+   "front": "Main clinical value of amyloid PET?",
+   "back": "Excluding AD when negative (positive in ~25% of normal 70-year-olds)"
+  },
+  {
+   "front": "CSF profile of AD?",
+   "back": "Low Abeta42 (or Abeta42/40 ratio), elevated total tau, elevated phosphorylated tau"
+  },
+  {
+   "front": "Cholinesterase inhibitors and their indications?",
+   "back": "Donepezil, rivastigmine, galantamine for AD; rivastigmine for PDD"
+  },
+  {
+   "front": "Memantine: indication and caution?",
+   "back": "Moderate-severe AD (eases caregiver burden); avoid or use great caution in DLB"
+  },
+  {
+   "front": "Anti-amyloid antibody candidates?",
+   "back": "MCI or mild AD dementia with amyloid confirmed by PET or CSF, without risky comorbidities or drugs"
+  },
+  {
+   "front": "Main adverse effect of anti-amyloid antibodies and its risk factor?",
+   "back": "ARIA (edema or hemorrhage); higher with ApoE e4, so genotype first"
+  },
+  {
+   "front": "Contraindicated drug class with anti-amyloid antibodies?",
+   "back": "Thrombolytics (fatal intracerebral hemorrhages)"
+  },
+  {
+   "front": "First step for agitation in dementia?",
+   "back": "Look for modifiable causes: pain, constipation, infection, hunger, electrolytes, drug toxicity"
+  },
+  {
+   "front": "First FDA-approved drug for agitation in AD?",
+   "back": "Brexpiprazole"
+  },
+  {
+   "front": "Drugs to avoid for behavioral symptoms in dementia?",
+   "back": "Anticholinergics (diphenhydramine), benzodiazepines, barbiturates, escalating antipsychotic doses"
+  },
+  {
+   "front": "Preferred anticonvulsants in dementia?",
+   "back": "Levetiracetam and lamotrigine"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 74-year-old woman is brought in by her daughter for 18 months of gradually worsening forgetfulness. She repeats questions and has missed bill payments. She takes no sedating medications. Neurologic examination is normal. Which of the following is the most appropriate initial evaluation?",
+   "options": [
+    "Amyloid PET scan",
+    "Lumbar puncture for CSF Aβ42 and tau",
+    "CBC, metabolic panel, TSH, vitamin B12 level, and brain MRI or CT",
+    "EEG",
+    "Apolipoprotein E genotyping"
+   ],
+   "answer": 2,
+   "explain": "The American Academy of Neurology recommends routine CBC, electrolytes, glucose, renal, liver and thyroid function, a B12 level, and structural neuroimaging (MRI or CT) to avoid missing reversible causes. (A: Amyloid PET is an optional focused test, not part of the initial screen.) (B: LP is indicated for suspected CNS infection or inflammation, or in place of PET for AD biomarkers.) (D: EEG is only occasionally helpful (CJD, seizures).) (E: ApoE testing is an optional focused test.) Source: Ch 0031, Laboratory Tests; Table 31-3"
+  },
+  {
+   "q": "A 72-year-old man has had 1 year of a slow, unsteady gait and progressive forgetfulness. MRI shows dilation of the lateral, third and fourth ventricles with a patent aqueduct, gaping Sylvian fissures, and crowding of the gyri at the vertex, with minimal cortical atrophy. Which of the following is the treatment most likely to improve his condition?",
+   "options": [
+    "Ventriculoperitoneal shunting",
+    "Donepezil",
+    "Memantine",
+    "Levodopa",
+    "Lecanemab"
+   ],
+   "answer": 0,
+   "explain": "Communicating hydrocephalus with vertex crowding and gaping Sylvian fissures despite minimal atrophy suggests normal-pressure hydrocephalus, which is treated with ventricular shunting. (B: Cholinesterase inhibitors treat AD and don't address NPH.) (C: Memantine treats moderate–severe AD.) (D: The gait disorder is from hydrocephalus, not parkinsonism.) (E: Anti-amyloid antibodies are for early AD with confirmed amyloid.) Source: Ch 0031, Laboratory Tests (Fig 31-3); Treatment: Dementia"
+  },
+  {
+   "q": "An 81-year-old woman with moderate Alzheimer disease in a nursing home has become newly agitated and combative over the past 4 days, especially during care. Her medications haven't changed. Which of the following is the most appropriate first step?",
+   "options": [
+    "Start haloperidol",
+    "Start lorazepam as needed",
+    "Start diphenhydramine at night",
+    "Increase her donepezil dose",
+    "Evaluate for pain, constipation, urinary or respiratory infection, and electrolyte abnormalities"
+   ],
+   "answer": 4,
+   "explain": "Before treating behavioral symptoms with drugs, look aggressively for modifiable causes: hunger, toothache or other pain, constipation, urinary or respiratory infection, electrolyte imbalance, drug toxicity. (A: Antipsychotics carry significant risk, including increased mortality in dementia.) (B: Benzodiazepines can cause sedation and paradoxical disinhibition.) (C: Anticholinergic drugs should be avoided.) (D: Raising cognitive drug doses doesn't address an acute trigger.) Source: Ch 0031, Treatment: Dementia"
+  },
+  {
+   "q": "A 70-year-old man has 1 year of fluctuating attention and alertness, well-formed visual hallucinations of children in his house, and mild bradykinesia with rigidity. His wife says that for years he has acted out his dreams, punching and kicking in his sleep. Memory is relatively preserved, but he can't copy a clock. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Alzheimer disease",
+    "Dementia with Lewy bodies",
+    "Frontotemporal dementia",
+    "Creutzfeldt-Jakob disease",
+    "Vascular dementia"
+   ],
+   "answer": 1,
+   "explain": "Fluctuating cognition, early visual hallucinations, parkinsonism and REM sleep behavior disorder, with poor drawing but spared memory, characterize DLB. (A: AD starts with memory loss and a normal motor exam.) (C: FTD presents with behavioral change or language deficits, with drawing spared.) (D: CJD is rapidly progressive with myoclonus.) (E: Vascular dementia features stepwise decline, focal signs and white matter disease.) Source: Ch 0031, Table 31-4; History"
+  },
+  {
+   "q": "A 75-year-old man with dementia with Lewy bodies has distressing visual hallucinations and apathy. Which of the following is the most appropriate pharmacologic treatment?",
+   "options": [
+    "Memantine",
+    "Haloperidol",
+    "Diphenhydramine",
+    "A cholinesterase inhibitor",
+    "Lorazepam"
+   ],
+   "answer": 3,
+   "explain": "Apathy, visual hallucinations and other psychiatric symptoms sometimes respond to cholinesterase inhibitors, especially in DLB, avoiding more toxic therapies. (A: Memantine should be used with great caution, or not at all, in DLB because it can worsen agitation and confusion.) (B: Antipsychotics have significant risks, including increased mortality in dementia.) (C: Anticholinergics should be avoided.) (E: Benzodiazepines should be avoided.) Source: Ch 0031, Treatment: Dementia"
+  },
+  {
+   "q": "A 68-year-old woman has mild cognitive impairment with prominent memory deficits. She and her physician are considering treatment with lecanemab. Which of the following should be done before starting therapy?",
+   "options": [
+    "Confirm amyloid pathology by PET or CSF biomarkers and obtain APOE genotyping",
+    "Confirm the diagnosis with an FDG-PET scan alone",
+    "Start memantine first for 6 months",
+    "Obtain a brain biopsy",
+    "No testing is needed if the clinical picture is typical"
+   ],
+   "answer": 0,
+   "explain": "Candidates for anti-Aβ antibodies need early-stage AD with amyloid confirmed by PET or CSF. APOE genotyping is recommended because ε4 carriers have a higher ARIA risk. (B: FDG-PET shows hypometabolism but doesn't confirm amyloid.) (C: Memantine is for moderate–severe AD and isn't a prerequisite.) (D: Brain biopsy is reserved for vasculitis, treatable tumors or unusual infections.) (E: Amyloid confirmation is required.) Source: Ch 0031, Treatment: Dementia"
+  },
+  {
+   "q": "A 71-year-old man receiving donanemab for early Alzheimer disease develops sudden right-sided weakness and aphasia. He arrives within 1 hour of onset, and CT shows no hemorrhage. Which of the following is contraindicated?",
+   "options": [
+    "Brain MRI",
+    "CT angiography",
+    "Intravenous thrombolysis",
+    "Admission to a stroke unit",
+    "Swallow screening before oral intake"
+   ],
+   "answer": 2,
+   "explain": "Thrombolytic agents are contraindicated in patients treated with anti-Aβ monoclonal antibodies because of reported catastrophic, fatal intracerebral hemorrhages. (A: Imaging is appropriate and not contraindicated.) (B: Vascular imaging is likewise not contraindicated.) (D: Stroke-unit care is appropriate.) (E: Swallow screening is routine supportive stroke care.) Source: Ch 0031, Treatment: Dementia"
+  },
+  {
+   "q": "A 58-year-old man's wife reports 2 years of personality change. He has become apathetic, tells crude jokes to strangers, has lost empathy for family members, compulsively eats sweets, and has gained 10 kg. Memory and drawing are relatively spared. Which of the following imaging findings is most likely?",
+   "options": [
+    "Hippocampal and posterior parietal atrophy",
+    "Cortical ribboning on diffusion-weighted MRI",
+    "Multiple lacunar infarcts and confluent white matter disease",
+    "Occipital hypometabolism with sparing of the posterior cingulate",
+    "Frontal, insular and anterior temporal atrophy"
+   ],
+   "answer": 4,
+   "explain": "Apathy, disinhibition, loss of empathy and compulsive overeating with spared memory and drawing indicate behavioral FTD, with focal frontal, insular and anterior temporal atrophy. (A: Hippocampal and posterior atrophy is the AD pattern.) (B: Cortical ribboning is CJD.) (C: Infarcts and white matter disease indicate vascular dementia.) (D: The cingulate island sign is DLB.) Source: Ch 0031, Table 31-4; Laboratory Tests"
+  },
+  {
+   "q": "A 63-year-old woman has rapidly progressive cognitive decline over 4 months. She now has startle-sensitive myoclonus and rigidity. Which of the following evaluations is most appropriate?",
+   "options": [
+    "Neuropsychological testing alone, repeated in 6 months",
+    "Diffusion-weighted brain MRI and EEG",
+    "Amyloid PET",
+    "Start donepezil and reassess in 3 months",
+    "APOE genotyping"
+   ],
+   "answer": 1,
+   "explain": "Rapid progression with startle-sensitive myoclonus and rigidity suggests CJD. Diffusion MRI shows cortical ribbon or basal ganglia restricted diffusion in most patients, and EEG may show periodic complexes. (A: Waiting 6 months is inappropriate for a rapidly progressive dementia.) (C: Amyloid PET evaluates AD.) (D: Empiric AD treatment doesn't address the differential of rapidly progressive dementia.) (E: Genotyping doesn't diagnose CJD.) Source: Ch 0031, History; Laboratory Tests"
+  },
+  {
+   "q": "A 66-year-old man has 3 months of subacute memory loss and frequent brief episodes of jerking of the face and arm on one side. MRI shows bilateral mesial temporal FLAIR hyperintensity. Which antibody is most likely?",
+   "options": [
+    "NMDA receptor",
+    "Caspr2",
+    "AMPA receptor",
+    "LGI1",
+    "Anti-GBM"
+   ],
+   "answer": 3,
+   "explain": "LGI1 antibody encephalitis causes subacute amnesia with faciobrachial dystonic seizures and mesial temporal T2/FLAIR changes. (A: NMDA receptor encephalitis features psychosis, insomnia and dyskinesias.) (B: Caspr2 causes insomnia, ataxia and myotonia.) (C: AMPA receptor causes limbic encephalitis with relapses, without the characteristic faciobrachial seizures.) (E: Anti-GBM causes pulmonary-renal syndrome.) Source: Ch 0031, History"
+  },
+  {
+   "q": "A 69-year-old man with 15 years of H2-receptor antagonist use for reflux has progressive cognitive decline, numbness in his feet, and loss of vibration and position sense with brisk knee reflexes. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start donepezil",
+    "Amyloid PET",
+    "Measure the vitamin B12 level and treat deficiency",
+    "Lumbar puncture for 14-3-3 protein",
+    "Start memantine"
+   ],
+   "answer": 2,
+   "explain": "Dementia with myelopathy (dorsal column loss, brisk reflexes) and peripheral neuropathy suggests B12 deficiency, a reversible cause. Chronic H2-blocker therapy is a listed risk factor. (A: Donepezil skips a reversible cause.) (B: Amyloid PET skips a reversible cause.) (D: Nothing suggests CJD.) (E: Memantine is for moderate–severe AD.) Source: Ch 0031, History; Physical and Neurologic Examination; Treatment"
+  },
+  {
+   "q": "A 66-year-old retired accountant reports trouble keeping track of appointments and recalling recent conversations over the past year. His wife confirms a decline, but he still manages his finances and daily activities. His MoCA score is normal. Laboratory tests and MRI are unremarkable. Which of the following is the most appropriate next step?",
+   "options": [
+    "Reassure him that memory loss is normal for age, with no further testing",
+    "Start donepezil",
+    "Comprehensive neuropsychological testing",
+    "Start lecanemab",
+    "Brain biopsy"
+   ],
+   "answer": 2,
+   "explain": "In most patients with MCI, bedside screening tests may be normal. A more comprehensive neuropsychological evaluation is needed. (A: An informant-confirmed decline deserves evaluation, not reassurance.) (B: There's no diagnosis to justify donepezil.) (D: Anti-amyloid therapy requires confirmed amyloid pathology.) (E: Brain biopsy isn't indicated.) Source: Ch 0031, Cognitive and Neuropsychiatric Examination"
+  },
+  {
+   "q": "An 88-year-old woman has 5 years of slowly progressive episodic memory loss with other cognitive domains relatively spared. MRI shows marked anterior-predominant hippocampal and medial temporal atrophy. Amyloid PET is negative. Which of the following is the most likely underlying pathology?",
+   "options": [
+    "Alzheimer disease",
+    "Creutzfeldt-Jakob disease",
+    "Frontotemporal lobar degeneration with tau",
+    "Dementia with Lewy bodies",
+    "Limbic-predominant age-related TDP-43 encephalopathy (LATE)"
+   ],
+   "answer": 4,
+   "explain": "In older patients with progressive amnestic decline and hippocampal atrophy, a negative amyloid PET strongly suggests LATE, which is anterior-predominant, memory-limited and slowly progressive. (A: A negative amyloid PET makes AD unlikely.) (B: CJD is rapidly progressive.) (C: FTD is behavioral or language-predominant with frontal and temporal atrophy.) (D: DLB has hallucinations, parkinsonism and relatively larger hippocampi.) Source: Ch 0031, Laboratory Tests; Table 31-4"
+  },
+  {
+   "q": "A 70-year-old woman's husband died 4 months ago. Since then she reports poor concentration and forgetfulness, insomnia, and a 5-kg weight loss. On testing, she gives up easily on memory tasks. Laboratory tests and MRI are normal. Which of the following is the most appropriate management?",
+   "options": [
+    "Start donepezil",
+    "Start an SSRI and reassess cognition after the mood symptoms resolve",
+    "Start quetiapine",
+    "Start lorazepam for sleep",
+    "Refer for anti-amyloid therapy"
+   ],
+   "answer": 1,
+   "explain": "Recent bereavement, insomnia and weight loss suggest depression-related cognitive impairment. Treat the psychiatric disorder vigorously, then confirm whether cognitive complaints persist. (A: A cholinesterase inhibitor doesn't treat depression.) (C: Antipsychotics aren't indicated.) (D: Benzodiazepines impair cognition.) (E: There's no evidence of AD.) Source: Ch 0031, History; Treatment: Dementia"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0039-dyspnea",
+ "name": "Dyspnea (Harrison Ch 39)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 39: Dyspnea.",
+ "chapter": "Pulmonology",
+ "flashcards": [
+  {
+   "front": "Dyspnea: symptom or sign?",
+   "back": "Subjective symptom that must be self-reported; tachypnea and accessory muscle use are signs"
+  },
+  {
+   "front": "What predicts COPD outcomes better than FEV1?",
+   "back": "Degree of dyspnea"
+  },
+  {
+   "front": "Chronic dyspnea definition and main causes?",
+   "back": ">1 month; pulmonary or cardiac causes in ~85%, one-third multifactorial"
+  },
+  {
+   "front": "Receptors producing 'air hunger'?",
+   "back": "Peripheral (carotid body, aortic arch) and central (medulla) chemoreceptors responding to hypoxemia, hypercapnia, acidemia"
+  },
+  {
+   "front": "Sensation linked to increased airway resistance?",
+   "back": "Chest tightness (asthma, COPD)"
+  },
+  {
+   "front": "Efferent-reafferent mismatch?",
+   "back": "Dyspnea from a mismatch between motor output to respiratory muscles and afferent feedback"
+  },
+  {
+   "front": "mMRC grade 3?",
+   "back": "Stops to rest after walking 100 m or a few minutes on level ground"
+  },
+  {
+   "front": "mMRC grade 4?",
+   "back": "Too breathless to leave the house or breathless with dressing"
+  },
+  {
+   "front": "Causes of orthopnea?",
+   "back": "CHF, obesity-related diaphragm impairment, asthma triggered by reflux"
+  },
+  {
+   "front": "Platypnea and its causes?",
+   "back": "Dyspnea upright relieved supine; left atrial myxoma or hepatopulmonary syndrome"
+  },
+  {
+   "front": "Acute intermittent vs chronic persistent dyspnea causes?",
+   "back": "Intermittent: ischemia, bronchospasm, PE. Persistent: COPD, ILD, chronic thromboembolic disease"
+  },
+  {
+   "front": "Pulsus paradoxus >10 mmHg in dyspnea suggests?",
+   "back": "COPD, acute asthma, or pericardial disease"
+  },
+  {
+   "front": "Inward abdominal motion on inspiration while supine?",
+   "back": "Diaphragmatic weakness"
+  },
+  {
+   "front": "ILD exam findings?",
+   "back": "Dry end-inspiratory crackles, clubbing, exertional hypoxemia"
+  },
+  {
+   "front": "CXR upper-zone vascular prominence vs enlarged central PAs?",
+   "back": "Upper zone: pulmonary venous hypertension. Central PAs: pulmonary arterial hypertension"
+  },
+  {
+   "front": "Bilateral vs unilateral pleural effusion in dyspnea?",
+   "back": "Bilateral: CHF, collagen vascular disease. Unilateral: carcinoma, PE (also HF, parapneumonic)"
+  },
+  {
+   "front": "Elevated bicarbonate in a dyspneic patient?",
+   "back": "Possible CO2 retention from chronic respiratory failure; obtain ABG"
+  },
+  {
+   "front": "Intermittent asthma-like symptoms with normal spirometry: next test?",
+   "back": "Bronchoprovocation (methacholine) or home peak flow monitoring"
+  },
+  {
+   "front": "Proportion of clinically diagnosed asthma not confirmed by testing?",
+   "back": "Up to one-third"
+  },
+  {
+   "front": "Tests for suspected neuromuscular cause of dyspnea?",
+   "back": "Lung volumes (restrictive) and maximal inspiratory/expiratory pressures (reduced)"
+  },
+  {
+   "front": "Pulmonary hypertension initial tests?",
+   "back": "DLCO (reduced), ECG, echo, right heart catheterization; CTA and V/Q for thromboembolic disease"
+  },
+  {
+   "front": "BNP limitation in dyspnea?",
+   "back": "Can also be elevated with right ventricular strain"
+  },
+  {
+   "front": "Dyspnea phase 1 tests (Fig 39-2)?",
+   "back": "Chest x-ray, spirometry, ECG, CBC, basic metabolic panel"
+  },
+  {
+   "front": "Dyspnea phase 2 tests?",
+   "back": "Chest CT (+/- angiography), lung volumes, DLCO, neuromuscular tests, echo, stress testing"
+  },
+  {
+   "front": "CPET findings of pulmonary limitation?",
+   "back": "Reaches predicted maximal ventilation, increased dead space or hypoxemia, bronchospasm"
+  },
+  {
+   "front": "CPET findings of cardiac limitation?",
+   "back": "HR >85% predicted, early anaerobic threshold, BP too high or falling, falling O2 pulse, ischemic ECG"
+  },
+  {
+   "front": "Chronic breathlessness syndrome?",
+   "back": "Breathlessness persisting despite optimal treatment of the underlying cause, causing disability"
+  },
+  {
+   "front": "Supplemental oxygen threshold?",
+   "back": "Resting SpO2 <=88% or desaturation to that level with activity or sleep"
+  },
+  {
+   "front": "Benefits of pulmonary rehabilitation in COPD?",
+   "back": "Improves dyspnea, exercise capacity, and hospitalization rates"
+  },
+  {
+   "front": "Opioids for dyspnea in COPD?",
+   "back": "Reduce air hunger, but a recent trial showed no benefit of low-dose ER morphine; individualize"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 61-year-old woman has 4 months of gradually worsening shortness of breath on exertion. History and examination don't reveal a clear cause. Walking oximetry shows no desaturation, and peak flow is normal for her. Which of the following is the most appropriate next set of tests?",
+   "options": [
+    "Cardiopulmonary exercise testing",
+    "Right heart catheterization",
+    "Chest CT angiography and DLCO",
+    "Chest radiograph, spirometry, ECG, CBC, and basic metabolic panel",
+    "Bronchoscopy"
+   ],
+   "answer": 3,
+   "explain": "After history, examination, walking oximetry and peak flow, the stepwise algorithm moves to phase 1: chest radiograph, spirometry, ECG, CBC and basic metabolic panel. (A: CPET is phase 3, after nondiagnostic earlier testing.) (B: Invasive testing isn't a first step.) (C: CT, CTA and DLCO are phase 2.) (E: Bronchoscopy isn't part of the initial dyspnea workup.) Source: Ch 0039, Fig 39-2; Laboratory Studies"
+  },
+  {
+   "q": "A 27-year-old woman has intermittent episodes of chest tightness and dyspnea, especially with exercise in cold air. Examination, chest radiograph and spirometry (including after bronchodilator) are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Start long-term inhaled corticosteroid and LABA without testing",
+    "Methacholine bronchoprovocation challenge",
+    "Chest CT",
+    "Echocardiogram",
+    "Cardiopulmonary exercise testing"
+   ],
+   "answer": 1,
+   "explain": "Bronchoprovocation testing or home peak-flow monitoring helps patients with intermittent asthma-like symptoms and a normal exam and spirometry. Up to one-third of clinically diagnosed asthma isn't confirmed on formal testing. (A: Committing to long-term therapy without objective confirmation risks misdiagnosis.) (C: Chest CT is for parenchymal disease or PE.) (D: Echo is for suspected systolic dysfunction, pulmonary hypertension or valve disease.) (E: CPET is reserved for when the limiting system is unclear after other testing.) Source: Ch 0039, Laboratory Studies"
+  },
+  {
+   "q": "A 70-year-old man with severe COPD on optimal inhaler therapy has a resting oxygen saturation of 87% on room air on two clinic visits, at baseline without an exacerbation. Which of the following interventions has been shown to improve mortality in this patient?",
+   "options": [
+    "Low-dose extended-release morphine",
+    "Daily benzodiazepine",
+    "Oral glucocorticoids",
+    "Pulmonary rehabilitation alone",
+    "Long-term supplemental oxygen"
+   ],
+   "answer": 4,
+   "explain": "Supplemental oxygen is indicated for resting saturation ≤88%. In hypoxemic COPD it improves mortality. (A: A recent trial didn't support low-dose ER morphine for dyspnea in COPD.) (B: Anxiolytics haven't shown consistent benefit.) (C: Systemic steroids aren't a dyspnea or mortality therapy here.) (D: Rehabilitation improves dyspnea, exercise capacity and hospitalizations; the mortality benefit cited is for oxygen.) Source: Ch 0039, Treatment: Dyspnea"
+  },
+  {
+   "q": "A 66-year-old man with known COPD and ischemic cardiomyopathy (LVEF 40%) has persistent exertional dyspnea despite optimal treatment of both conditions. It's unclear which system limits his exercise. Which of the following is the most appropriate test?",
+   "options": [
+    "Cardiopulmonary exercise testing",
+    "Repeat spirometry",
+    "BNP level",
+    "Chest radiograph",
+    "Bronchoprovocation testing"
+   ],
+   "answer": 0,
+   "explain": "When a patient has both pulmonary and cardiac disease and it's unclear which drives dyspnea, CPET determines which system limits exercise. (B: Spirometry doesn't separate cardiac from pulmonary limitation.) (C: BNP is mainly useful in acute dyspnea and rises with RV strain as well.) (D: A radiograph doesn't measure exercise limitation.) (E: Bronchoprovocation tests airway hyperreactivity.) Source: Ch 0039, Distinguishing Cardiovascular from Respiratory System Dyspnea"
+  },
+  {
+   "q": "A 54-year-old man with cirrhosis reports shortness of breath that worsens when he sits or stands up and improves when he lies flat. Which of the following is the most likely cause?",
+   "options": [
+    "Congestive heart failure",
+    "Asthma triggered by reflux",
+    "Hepatopulmonary syndrome",
+    "Bilateral diaphragmatic paralysis",
+    "Obesity hypoventilation"
+   ],
+   "answer": 2,
+   "explain": "Platypnea, dyspnea upright relieved supine, suggests hepatopulmonary syndrome or left atrial myxoma. (A: Heart failure causes orthopnea, worse lying flat.) (B: Reflux-triggered asthma also causes orthopnea.) (D: Diaphragmatic weakness worsens dyspnea supine.) (E: Obesity-related diaphragm restriction worsens supine.) Source: Ch 0039, History"
+  },
+  {
+   "q": "A 59-year-old man has progressive dyspnea, mild dysphagia, and fasciculations in both arms. Spirometry suggests a restrictive defect, and the chest radiograph shows low lung volumes with clear parenchyma. Which of the following tests should be obtained to evaluate the cause of his restriction?",
+   "options": [
+    "Bronchoprovocation challenge",
+    "Bronchoscopy",
+    "Echocardiogram",
+    "Maximal inspiratory and expiratory pressures",
+    "Esophageal pH monitoring"
+   ],
+   "answer": 3,
+   "explain": "In suspected chest wall or neuromuscular disease (here possible ALS), maximal inspiratory and expiratory pressures are reduced and help explain a restrictive defect. (A: Bronchoprovocation evaluates asthma.) (B: Bronchoscopy has no role in evaluating neuromuscular weakness.) (C: Echo evaluates cardiac causes.) (E: pH monitoring evaluates GERD.) Source: Ch 0039, Table 39-2"
+  },
+  {
+   "q": "A 68-year-old woman with chronic dyspnea and obesity has a basic metabolic panel showing a serum bicarbonate of 34 mEq/L. She takes no diuretics. Which of the following is the most appropriate next test?",
+   "options": [
+    "Arterial blood gas",
+    "Serum BNP",
+    "Hemoglobin A1c",
+    "Urine electrolytes",
+    "Thyroid-stimulating hormone"
+   ],
+   "answer": 0,
+   "explain": "An elevated bicarbonate may indicate CO₂ retention from chronic respiratory failure. An ABG gives the additional information. (B: BNP doesn't explain a raised bicarbonate.) (C: HbA1c doesn't explain a raised bicarbonate.) (D: Without diuretic use, the respiratory question comes first.) (E: Thyroid testing doesn't assess CO₂ retention.) Source: Ch 0039, Laboratory Studies"
+  },
+  {
+   "q": "A 72-year-old woman with moderate COPD has persistent exertional breathlessness despite optimal bronchodilator therapy. Her resting and exertional oxygen saturations are above 92%. Which of the following is the most appropriate additional intervention to improve dyspnea and exercise capacity?",
+   "options": [
+    "Supplemental oxygen at rest",
+    "Scheduled benzodiazepine",
+    "Low-dose extended-release morphine",
+    "Long-term oral glucocorticoids",
+    "Pulmonary rehabilitation"
+   ],
+   "answer": 4,
+   "explain": "Pulmonary rehabilitation (including home and community exercise such as yoga and tai chi) improves dyspnea, exercise capacity and hospitalization rates in COPD. (A: Oxygen is indicated for saturation ≤88%, and hers is normal.) (B: Anxiolytics lack consistent benefit.) (C: A trial didn't support low-dose ER morphine in COPD.) (D: Long-term steroids aren't a dyspnea therapy.) Source: Ch 0039, Treatment: Dyspnea"
+  },
+  {
+   "q": "A 64-year-old man undergoes cardiopulmonary exercise testing for unexplained dyspnea. At peak exercise his heart rate reaches 92% of predicted maximum, the anaerobic threshold occurs early, blood pressure falls, and the O₂ pulse decreases. Ventilation stays well below predicted maximum without desaturation. These findings most likely indicate which of the following?",
+   "options": [
+    "A pulmonary cause of exercise limitation",
+    "A cardiovascular cause of exercise limitation",
+    "Poor effort",
+    "Exercise-induced bronchospasm",
+    "Neuromuscular weakness"
+   ],
+   "answer": 1,
+   "explain": "Heart rate >85% of predicted, an early anaerobic threshold, falling blood pressure and a falling O₂ pulse (a stroke-volume surrogate) indicate a cardiovascular limitation. (A: Pulmonary limitation shows reaching predicted maximal ventilation, rising dead space or hypoxemia, or bronchospasm.) (C: Reaching 92% of predicted heart rate argues against poor effort.) (D: No bronchospasm is described.) (E: The cardiac pattern explains the findings.) Source: Ch 0039, Distinguishing Cardiovascular from Respiratory System Dyspnea"
+  },
+  {
+   "q": "A 57-year-old woman with dyspnea is examined supine. During inspiration, her abdomen moves inward. Which of the following is the most likely explanation?",
+   "options": [
+    "Pulmonary edema",
+    "Emphysema",
+    "Diaphragmatic weakness",
+    "Pleural effusion",
+    "Pneumothorax"
+   ],
+   "answer": 2,
+   "explain": "Paradoxical inward abdominal motion during inspiration when supine is a sign of diaphragmatic weakness. (A: Abdominal rounding during exhalation suggests pulmonary edema.) (B: Emphysema is suggested by hyperresonance.) (D: Effusion shows dullness to percussion.) (E: Pneumothorax shows hyperresonance.) Source: Ch 0039, Physical Examination"
+  },
+  {
+   "q": "A 49-year-old woman has 6 months of exertional dyspnea and exertional desaturation. Lungs are clear on auscultation, the pulmonic component of S2 is accentuated, and JVP is elevated. Spirometry and lung volumes are normal, but DLCO is reduced. Chest radiograph shows enlarged central pulmonary arteries. Which of the following is the most appropriate next test?",
+   "options": [
+    "Echocardiogram",
+    "Methacholine challenge",
+    "Maximal inspiratory pressure",
+    "Bronchoscopy",
+    "Esophageal pH monitoring"
+   ],
+   "answer": 0,
+   "explain": "Reduced DLCO with normal spirometry, a loud P₂, raised JVP and enlarged central pulmonary arteries suggest pulmonary hypertension. Echocardiography is indicated, with right heart catheterization to confirm. (B: Methacholine evaluates asthma.) (C: MIP evaluates neuromuscular weakness.) (D: Bronchoscopy doesn't evaluate pulmonary vascular disease.) (E: pH monitoring evaluates GERD.) Source: Ch 0039, Table 39-2; Chest Imaging"
+  },
+  {
+   "q": "A 75-year-old man with COPD says he has to stop to rest after walking about 100 meters on level ground but can dress and leave the house. What is his Modified Medical Research Council (mMRC) dyspnea grade?",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "answer": 3,
+   "explain": "mMRC grade 3 is stopping to rest after walking 100 m or a few minutes on level ground. (A: Grade 0 is breathless only with strenuous exercise.) (B: Grade 1 is breathless hurrying on level ground or up a slight hill.) (C: Grade 2 is walking slower than peers or stopping at one's own pace on level ground.) (E: Grade 4 is too breathless to leave the house or breathless while dressing.) Source: Ch 0039, Table 39-1"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0040-cough",
+ "name": "Cough (Harrison Ch 40)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 40: Cough.",
+ "chapter": "Pulmonology",
+ "flashcards": [
+  {
+   "front": "Afferent nerves and brainstem center of the cough reflex?",
+   "back": "Vagus and superior laryngeal nerves to the nucleus tractus solitarius"
+  },
+  {
+   "front": "Arnold nerve and cough?",
+   "back": "Auricular branch of the vagus in the external ear canal; ear canal or tympanic membrane irritation can trigger cough"
+  },
+  {
+   "front": "Intrathoracic pressure generated during cough?",
+   "back": "Up to 300 mmHg"
+  },
+  {
+   "front": "Most common causes of impaired cough?",
+   "back": "Expiratory muscle weakness or paralysis and chest wall or abdominal pain"
+  },
+  {
+   "front": "Surrogate measures of cough strength?",
+   "back": "Peak expiratory flow or maximal expiratory pressure"
+  },
+  {
+   "front": "Causes of poor secretion clearance despite normal cough flow?",
+   "back": "Abnormal secretions (CF), ciliary dysfunction (primary ciliary dyskinesia), tracheomalacia"
+  },
+  {
+   "front": "Acute, subacute, chronic cough durations?",
+   "back": "Acute <3 wk; subacute 3-8 wk; chronic >8 wk"
+  },
+  {
+   "front": "Common causes of subacute cough?",
+   "back": "Post-tracheobronchitis: pertussis, postviral tussive syndrome"
+  },
+  {
+   "front": "Most common identifiable causes of chronic cough with normal exam and CXR?",
+   "back": "Cough-variant asthma, GERD, rhinosinusitis/postnasal drainage, ACE inhibitors"
+  },
+  {
+   "front": "Productive early-morning cough in a long-time smoker?",
+   "back": "Chronic bronchitis"
+  },
+  {
+   "front": "Postbronchitic cough?",
+   "back": "Dry cough lasting >2 months after respiratory infections, especially in winter"
+  },
+  {
+   "front": "Cough hypersensitivity syndrome features?",
+   "back": "Dry cough, throat tickle, worse with talking/laughing/exertion; more common in women; diagnosis of exclusion"
+  },
+  {
+   "front": "Treatment of cough hypersensitivity syndrome?",
+   "back": "Off-label gabapentin, pregabalin, or amitriptyline; speech therapy"
+  },
+  {
+   "front": "Initial test for nearly all chronic cough?",
+   "back": "Chest radiograph"
+  },
+  {
+   "front": "Serious causes of cough with a normal exam?",
+   "back": "Sarcoidosis or Hodgkin disease in young adults, lung cancer in older adults, TB worldwide"
+  },
+  {
+   "front": "Purulent sputum in chronic cough?",
+   "back": "Bacterial culture and, in some cases, mycobacterial culture"
+  },
+  {
+   "front": "ACE inhibitor cough incidence and dose relationship?",
+   "back": "5-30% of users; not dose-dependent"
+  },
+  {
+   "front": "Mechanism of ACE inhibitor cough?",
+   "back": "Bradykinin and substance P accumulation sensitizing sensory nerves"
+  },
+  {
+   "front": "Chronic cough on an ACE inhibitor started years ago?",
+   "back": "Still trial off the drug; switch to an ARB"
+  },
+  {
+   "front": "No improvement after 1 month off an ACE inhibitor?",
+   "back": "Argues strongly against ACE inhibitor cough"
+  },
+  {
+   "front": "Upper airway cough syndrome clues?",
+   "back": "Postnasal drip sensation, throat clearing, sneezing, rhinorrhea; cobblestoned posterior pharynx, polyps"
+  },
+  {
+   "front": "Test to quantify reflux in suspected GERD cough?",
+   "back": "24-h esophageal pH probe or capsule, +/- manometry"
+  },
+  {
+   "front": "Test that excludes cough-variant asthma with certainty?",
+   "back": "Negative methacholine bronchoprovocation challenge"
+  },
+  {
+   "front": "Treatment of cough-variant asthma?",
+   "back": "Inhaled glucocorticoids plus as-needed inhaled beta2-agonist"
+  },
+  {
+   "front": "Eosinophilic bronchitis diagnosis and treatment?",
+   "back": "Sputum eosinophils >3% without obstruction or hyperresponsiveness; inhaled glucocorticoids"
+  },
+  {
+   "front": "What does elevated exhaled nitric oxide predict in chronic cough?",
+   "back": "Eosinophilic airway inflammation and a favorable response to inhaled steroids"
+  },
+  {
+   "front": "Chronic cough failing treatment of common causes: next test?",
+   "back": "Chest CT (tumors, early ILD, bronchiectasis, atypical mycobacteria)"
+  },
+  {
+   "front": "Most potent cough suppressants and their limits?",
+   "back": "Narcotics (codeine, hydrocodone, morphine); drowsiness, constipation, dependence"
+  },
+  {
+   "front": "Dextromethorphan vs narcotic suppressants?",
+   "back": "Less effective, fewer side effects, different site of action; can be combined"
+  },
+  {
+   "front": "Main risk of inhaled lidocaine for cough?",
+   "back": "Aspiration from oropharyngeal anesthesia"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 63-year-old woman has a dry cough for 4 months. She has taken lisinopril for hypertension for 3 years. She doesn't smoke, and examination and chest radiograph are normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Continue lisinopril, because ACE inhibitor cough begins within weeks of starting the drug",
+    "Stop lisinopril and switch to an angiotensin receptor blocker",
+    "Reduce the lisinopril dose",
+    "Chest CT",
+    "Start benzonatate and continue lisinopril"
+   ],
+   "answer": 1,
+   "explain": "Any patient with chronic unexplained cough taking an ACE inhibitor should have a trial off the drug, regardless of when the cough began relative to starting it. ARBs don't cause cough. (A: Onset can occur at any time; timing doesn't exclude it.) (C: ACE inhibitor cough isn't dose-dependent.) (D: Remove the likely cause before advanced imaging.) (E: Suppressing the cough leaves the cause in place.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 34-year-old man has had a nonproductive cough for 10 weeks with no other symptoms. Examination is normal. He takes no medications. Which of the following is the most appropriate initial test?",
+   "options": [
+    "Bronchoscopy",
+    "24-hour esophageal pH monitoring",
+    "Chest CT",
+    "Sputum cytology",
+    "Chest radiograph"
+   ],
+   "answer": 4,
+   "explain": "Virtually all patients with chronic cough (>8 weeks) need a chest radiograph. Silent serious causes include sarcoidosis, Hodgkin lymphoma, lung cancer and TB. (A: Bronchoscopy isn't an initial test.) (B: pH monitoring comes after the radiograph, if reflux is suspected.) (C: CT is for failed treatment of common causes or radiograph abnormalities.) (D: Cytology is for mucoid sputum in productive cough.) Source: Ch 0040, Assessment of Chronic Cough"
+  },
+  {
+   "q": "A 45-year-old woman has 4 months of chronic cough. Chest radiograph and spirometry are normal, and a methacholine challenge is negative. Induced sputum shows 9% eosinophils, and exhaled nitric oxide is elevated. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Inhaled glucocorticoid",
+    "Proton pump inhibitor",
+    "Azithromycin",
+    "Codeine",
+    "Gabapentin"
+   ],
+   "answer": 0,
+   "explain": "Eosinophilic bronchitis (sputum eosinophils >3% without obstruction or hyperresponsiveness) responds to inhaled glucocorticoids. Raised exhaled NO predicts the response. (B: There are no reflux features.) (C: Macrolides have inconsistent benefit and aren't indicated.) (D: Narcotic suppressants treat symptoms, not the cause.) (E: Gabapentin is for cough hypersensitivity after causes are excluded.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 29-year-old man has 3 months of cough that starts when he visits a friend with a cat and resolves after he leaves. He has no wheezing or dyspnea. Examination and spirometry are normal. Which of the following tests can exclude asthma with certainty?",
+   "options": [
+    "Chest radiograph",
+    "Sputum culture",
+    "Methacholine bronchoprovocation challenge",
+    "Allergy skin testing",
+    "Exhaled nitric oxide"
+   ],
+   "answer": 2,
+   "explain": "A negative bronchoprovocation challenge (e.g., methacholine) excludes asthma with certainty. Variable or reversible obstruction establishes it. (A: Radiographs don't test airway reactivity.) (B: Culture doesn't test airway reactivity.) (D: Skin tests show sensitization, not asthma.) (E: Exhaled NO detects eosinophilic inflammation but doesn't exclude asthma.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 58-year-old never-smoker has 6 months of chronic cough. Chest radiograph is normal. He completed adequate trials of therapy for postnasal drainage, reflux and asthma without improvement and takes no ACE inhibitor. Which of the following is the most appropriate next step?",
+   "options": [
+    "Long-term codeine",
+    "Repeat chest radiograph in 1 year",
+    "Empiric macrolide course",
+    "Chest CT",
+    "Reassurance without further testing"
+   ],
+   "answer": 3,
+   "explain": "Patients who don't respond to treatment of the common causes, or in whom they've been excluded, should have chest CT. It can show tumors, early ILD, bronchiectasis and atypical mycobacterial infection missed on radiograph. (A: Narcotics cause drowsiness, constipation and dependence and skip the evaluation.) (B: A one-year delay could miss a tumor.) (C: Empiric macrolides have inconsistent benefit.) (E: Reassurance is appropriate only after normal CT, lung function and oxygenation.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 40-year-old woman has 3 months of chronic cough with a constant sensation of something dripping down the back of her throat, frequent throat clearing, sneezing and rhinorrhea. The posterior pharyngeal wall has a cobblestoned appearance. Chest radiograph is normal. Which of the following is the most appropriate initial therapy?",
+   "options": [
+    "Inhaled glucocorticoid and albuterol",
+    "Proton pump inhibitor",
+    "Benzonatate",
+    "Chest CT",
+    "Intranasal glucocorticoid spray"
+   ],
+   "answer": 4,
+   "explain": "Postnasal drip sensation, throat clearing, sneezing, rhinorrhea and cobblestoned mucosa suggest upper airway cough syndrome. Treatment targets the cause and can include nasal glucocorticoid sprays. (A: Inhaled steroid plus β₂-agonist treats cough-variant asthma.) (B: There are no reflux symptoms.) (C: Benzonatate is a nonspecific suppressant.) (D: CT is for refractory cough.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 66-year-old man with a chronic dry cough stopped his ACE inhibitor and was switched to an ARB. Six weeks later the cough is unchanged. Which of the following conclusions is most appropriate?",
+   "options": [
+    "The ACE inhibitor remains the most likely cause; wait another 6 months",
+    "Failure to improve after a month off the drug argues strongly against an ACE inhibitor cause",
+    "The ARB is now causing the cough",
+    "ACE inhibitor cough is dose-dependent, so the previous dose was too low to matter",
+    "The ACE inhibitor should be restarted to confirm the diagnosis"
+   ],
+   "answer": 1,
+   "explain": "Failure to see the cough decrease after 1 month off the ACE inhibitor argues strongly against that cause. (A: One month is enough to judge.) (C: ARBs don't cause cough.) (D: ACE inhibitor cough isn't dose-dependent.) (E: Rechallenge isn't the recommended approach.) Source: Ch 0040, Chronic Cough with a Normal Chest Radiograph"
+  },
+  {
+   "q": "A 52-year-old woman has had a dry cough with a throat tickle for 3 years, worse with talking and laughing. Chest radiograph, spirometry, methacholine challenge and chest CT are normal. Adequate trials of therapy for postnasal drainage, reflux and asthma failed. She takes no ACE inhibitor. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Gabapentin",
+    "Long-term azithromycin",
+    "High-dose inhaled glucocorticoid",
+    "Long-term codeine",
+    "Inhaled lidocaine"
+   ],
+   "answer": 0,
+   "explain": "Cough hypersensitivity syndrome (dry cough with a throat tickle, worse with talking and laughing, more common in women, diagnosed by exclusion) has shown benefit from off-label gabapentin, pregabalin or amitriptyline. (B: Macrolides have inconsistent benefit in idiopathic cough.) (C: Inhaled steroids have inconsistent benefit in idiopathic cough.) (D: Narcotics are limited for long-term use by drowsiness, constipation and dependence.) (E: Inhaled lidocaine is transient and carries aspiration risk.) Source: Ch 0040, Symptom-Based Treatment of Cough"
+  },
+  {
+   "q": "A 31-year-old woman had an upper respiratory infection 5 weeks ago. Her other symptoms resolved, but she still has a cough, sometimes in paroxysms. Examination and chest radiograph are normal. Which of the following best classifies her cough and its likely causes?",
+   "options": [
+    "Acute cough due to aspiration",
+    "Chronic cough due to lung cancer",
+    "Chronic cough due to cough hypersensitivity syndrome",
+    "Subacute cough, such as pertussis or postviral tussive syndrome",
+    "Acute cough due to smoke inhalation"
+   ],
+   "answer": 3,
+   "explain": "Cough lasting 3–8 weeks is subacute, commonly a residue of tracheobronchitis such as pertussis or postviral tussive syndrome. (A: Acute cough is under 3 weeks.) (B: Chronic cough is over 8 weeks.) (C: Chronic cough is over 8 weeks.) (E: Acute cough is under 3 weeks.) Source: Ch 0040, Symptomatic Cough"
+  },
+  {
+   "q": "A patient with severe refractory cough is considered for nebulized lidocaine. Which of the following is the main safety concern?",
+   "options": [
+    "Bronchospasm",
+    "Dependence",
+    "Aspiration from oropharyngeal anesthesia",
+    "Constipation",
+    "Hypertension"
+   ],
+   "answer": 2,
+   "explain": "Inhaled lidocaine gives only transient suppression and causes oropharyngeal anesthesia, raising aspiration risk. (A: The source doesn't name bronchospasm as the concern.) (B: Dependence is a limitation of narcotics.) (D: Constipation is a limitation of narcotics.) (E: Hypertension isn't a listed concern.) Source: Ch 0040, Symptom-Based Treatment of Cough"
+  },
+  {
+   "q": "A 70-year-old man is recovering from an upper abdominal laparotomy. He has a weak, painful cough and retained secretions. Which of the following simple measures most directly improves his cough effectiveness?",
+   "options": [
+    "Cough suppressant",
+    "Inhaled lidocaine",
+    "Benzonatate",
+    "Restrict fluids",
+    "Splint the abdomen with a tightly held pillow while coughing"
+   ],
+   "answer": 4,
+   "explain": "Chest wall or abdominal pain is a common cause of impaired cough. Splinting the abdomen with a tightly held pillow reduces postoperative pain while coughing. (A: Suppressants worsen secretion clearance.) (B: Lidocaine raises aspiration risk.) (C: Benzonatate is also a suppressant.) (D: Fluid restriction doesn't improve cough mechanics.) Source: Ch 0040, Impaired Cough; Table 40-1"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0041-hemoptysis",
+ "name": "Hemoptysis (Harrison Ch 41)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 41: Hemoptysis.",
+ "chapter": "Pulmonology",
+ "flashcards": [
+  {
+   "front": "Definition of hemoptysis?",
+   "back": "Expectoration of blood from the lower respiratory tract (glottis to alveolus)"
+  },
+  {
+   "front": "Most important initial information in hemoptysis?",
+   "back": "Volume and frequency of blood expectorated"
+  },
+  {
+   "front": "Common definitions of massive hemoptysis?",
+   "back": ">150 mL in 24 h or bleeding rate >=100 mL/h"
+  },
+  {
+   "front": "Definition of life-threatening hemoptysis?",
+   "back": "Significantly abnormal gas exchange, hemodynamic compromise, or threat of airway obstruction"
+  },
+  {
+   "front": "Usual cause of death in massive hemoptysis?",
+   "back": "Asphyxiation, not exsanguination (risk with >400 mL/24 h or >150 mL at once)"
+  },
+  {
+   "front": "Proportion of hemoptysis that is life-threatening?",
+   "back": "5-15%"
+  },
+  {
+   "front": "Which circulation causes most hemoptysis and why it matters?",
+   "back": "Bronchial (systemic, from aorta, high pressure); harder to control"
+  },
+  {
+   "front": "Most common causes of hemoptysis in the US?",
+   "back": "Viral bronchitis, bronchiectasis, malignancy"
+  },
+  {
+   "front": "Most common cause of hemoptysis in endemic regions?",
+   "back": "Tuberculosis"
+  },
+  {
+   "front": "Rasmussen aneurysm?",
+   "back": "Pulmonary artery aneurysm eroding into a TB cavity, causing hemoptysis"
+  },
+  {
+   "front": "Aspergillus mycetoma and hemoptysis?",
+   "back": "Fungus ball in a preexisting cavity with neovascularization; bleeding recurs after embolization unless treated"
+  },
+  {
+   "front": "Paragonimiasis risk factors?",
+   "back": "Southeast Asia and China; raw crayfish in North America; mimics TB"
+  },
+  {
+   "front": "Does diffuse alveolar hemorrhage usually cause hemoptysis?",
+   "back": "Often not; presents with diffuse ground-glass opacities"
+  },
+  {
+   "front": "Causes of diffuse alveolar hemorrhage?",
+   "back": "SLE capillaritis, cocaine and inhalants, stem cell transplant, vaping, GPA, anti-GBM disease"
+  },
+  {
+   "front": "Lung cancers most likely to cause massive hemoptysis?",
+   "back": "Small cell and squamous cell (central, erode vessels)"
+  },
+  {
+   "front": "Carcinoid tumor and hemoptysis?",
+   "back": "Vascular proximal-airway tumor that can present with hemoptysis"
+  },
+  {
+   "front": "Aortobronchial fistula course?",
+   "back": "Small herald bleeds that can progress to massive hemoptysis; arises from aortic aneurysm/pseudoaneurysm"
+  },
+  {
+   "front": "Initial labs in hemoptysis?",
+   "back": "CBC, coagulation studies, basic metabolic panel, urinalysis"
+  },
+  {
+   "front": "Why obtain a urinalysis in hemoptysis?",
+   "back": "To evaluate for pulmonary-renal syndromes (GPA, anti-GBM)"
+  },
+  {
+   "front": "Hemoptysis without risk factors and normal CXR?",
+   "back": "Treat for bronchitis with close follow-up"
+  },
+  {
+   "front": "Who needs chest CT for hemoptysis?",
+   "back": "Age >40, malignancy risk factors, or significant hemoptysis"
+  },
+  {
+   "front": "Role of bronchoscopy in hemoptysis?",
+   "back": "Finds subtle mucosal lesions missed on CT, localizes side, allows intervention; best during active bleeding"
+  },
+  {
+   "front": "Three simultaneous goals in life-threatening hemoptysis?",
+   "back": "Protect the nonbleeding lung, localize the bleeding, control the bleeding"
+  },
+  {
+   "front": "Positioning in massive hemoptysis with known side?",
+   "back": "Bleeding side down"
+  },
+  {
+   "front": "Preferred endotracheal tube in massive hemoptysis?",
+   "back": "Large (8.5) single-lumen tube; can be advanced into the nonbleeding mainstem"
+  },
+  {
+   "front": "Limitation of double-lumen tubes in hemoptysis?",
+   "back": "Each lumen too small for suctioning and interventions"
+  },
+  {
+   "front": "Bronchoscopic temporizing measures?",
+   "back": "Balloon catheter or bronchial blocker, iced saline, epinephrine, tranexamic acid"
+  },
+  {
+   "front": "Procedure of choice for life-threatening hemoptysis?",
+   "back": "Bronchial artery embolization (>80% immediate success)"
+  },
+  {
+   "front": "Surgical resection for hemoptysis: mortality and indication?",
+   "back": "15-40%; only when other measures fail with ongoing bleeding and localized disease"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 26-year-old nonsmoker has 4 days of cough with blood-streaked sputum after an upper respiratory infection. He is afebrile with normal vital signs and oxygen saturation. Examination and chest radiograph are normal. Which of the following is the most appropriate management?",
+   "options": [
+    "Chest CT angiography",
+    "Bronchoscopy",
+    "Treat for bronchitis and arrange close follow-up",
+    "Bronchial artery embolization",
+    "ANCA and anti-GBM testing"
+   ],
+   "answer": 2,
+   "explain": "In most patients without risk factors for malignancy or abnormal initial findings and with a normal chest radiograph, treating for bronchitis with close follow-up is reasonable. Viral bronchitis causes most small-volume hemoptysis. (A: CT is for patients with risk factors or significant hemoptysis.) (B: Bronchoscopy is for patients with risk factors or significant hemoptysis.) (D: Embolization is for life-threatening bleeding.) (E: Serologies are sent when pulmonary-renal disease is suspected.) Source: Ch 0041, Diagnostic Studies; Fig 41-1"
+  },
+  {
+   "q": "A 58-year-old man with a 40-pack-year smoking history has had several episodes of coughing up small amounts of blood over 2 weeks. Vital signs are normal. Chest radiograph is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Chest CT",
+    "Reassurance and a course of antibiotics only",
+    "Repeat chest radiograph in 6 months",
+    "Sputum culture only",
+    "Surgical resection"
+   ],
+   "answer": 0,
+   "explain": "Patients with malignancy risk factors (age >40, smoking) need chest CT even with a normal radiograph. CT identifies the site and cause in most patients, and bronchoscopy can follow. (B: Treating as bronchitis is appropriate only without risk factors.) (C: Delay could miss a carcinoma.) (D: Culture alone doesn't evaluate malignancy.) (E: Surgery is for ongoing life-threatening bleeding after other measures fail.) Source: Ch 0041, Diagnostic Studies"
+  },
+  {
+   "q": "A 48-year-old woman with cystic fibrosis begins coughing up large amounts of bright red blood, about 300 mL in the past hour. She is tachycardic and her saturation is falling. Crackles and recent imaging indicate the bleeding is from the left lung. While preparing for definitive therapy, which of the following is the most appropriate immediate positioning?",
+   "options": [
+    "Supine and flat",
+    "Right lateral decubitus (right side down)",
+    "Prone",
+    "Trendelenburg",
+    "Left lateral decubitus (left side down)"
+   ],
+   "answer": 4,
+   "explain": "When the bleeding side is known, position the patient bleeding side down so gravity keeps blood out of the nonbleeding lung. (A: Lying flat doesn't protect the nonbleeding lung.) (B: Right side down puts the healthy right lung dependent and floods it.) (C: Prone positioning doesn't use the known laterality.) (D: Trendelenburg doesn't use the known laterality.) Source: Ch 0041, Interventions"
+  },
+  {
+   "q": "A 62-year-old man with life-threatening hemoptysis can't protect his airway and needs intubation. Which of the following airway strategies is preferred?",
+   "options": [
+    "Small (6.0) endotracheal tube to minimize airway trauma",
+    "Large (8.5) single-lumen endotracheal tube, which can be advanced into the mainstem of the nonbleeding lung",
+    "Laryngeal mask airway",
+    "Noninvasive positive pressure ventilation",
+    "Tracheostomy as the first airway"
+   ],
+   "answer": 1,
+   "explain": "A large (8.5) single-lumen tube allows suction and bronchoscopic interventions and can be advanced into the nonbleeding lung's mainstem bronchus for isolation. (A: Small tubes limit suctioning and bronchoscopy.) (C: An LMA doesn't protect the airway.) (D: NIV doesn't secure the airway or allow suctioning.) (E: Tracheostomy isn't the initial approach.) Source: Ch 0041, Interventions"
+  },
+  {
+   "q": "A 55-year-old woman with bronchiectasis has ongoing life-threatening hemoptysis. She has been intubated, and bronchoscopy localized bleeding to the right lower lobe. Her coagulation studies are normal. Which of the following is the procedure of choice to control the bleeding?",
+   "options": [
+    "Emergent right lower lobectomy",
+    "Intravenous vitamin K",
+    "Observation with cough suppressants",
+    "Bronchial artery embolization",
+    "Systemic thrombolysis"
+   ],
+   "answer": 3,
+   "explain": "Most life-threatening hemoptysis comes from the bronchial circulation. Bronchial artery embolization is the procedure of choice, with >80% immediate success. (A: Surgery carries 15–40% mortality and is reserved for when initial measures fail.) (B: She has no coagulopathy to correct.) (C: Observation is inadequate for life-threatening bleeding.) (E: Thrombolysis would worsen bleeding.) Source: Ch 0041, Interventions"
+  },
+  {
+   "q": "A 34-year-old man has 1 week of hemoptysis, fatigue and dark urine. Chest radiograph shows bilateral opacities. Which of the following initial studies is most important to add?",
+   "options": [
+    "Sputum cytology",
+    "Esophagogastroduodenoscopy",
+    "Echocardiogram",
+    "Bronchial artery angiography",
+    "Urinalysis, creatinine, ANCA and anti-GBM antibodies"
+   ],
+   "answer": 4,
+   "explain": "Hemoptysis with dark urine suggests a pulmonary-renal syndrome (GPA, anti-GBM disease). Initial labs should include urinalysis and creatinine, with ANCA and anti-GBM serologies. (A: Cytology targets malignancy.) (B: Upper GI bleeding isn't suggested.) (C: Echo doesn't address the renal findings.) (D: Angiography is for embolization planning in massive bleeding.) Source: Ch 0041, Vascular; Diagnostic Studies"
+  },
+  {
+   "q": "A 74-year-old woman taking warfarin for atrial fibrillation has 2 days of moderate hemoptysis. INR is 6.2. She is hemodynamically stable. In addition to protecting the airway and localizing the bleeding, which of the following should be done first?",
+   "options": [
+    "Surgical consultation for lobectomy",
+    "Bronchial artery embolization",
+    "Correct the coagulopathy",
+    "Add aspirin",
+    "Rigid bronchoscopy with argon plasma coagulation"
+   ],
+   "answer": 2,
+   "explain": "Any known bleeding diathesis should be corrected first when controlling hemoptysis. Anticoagulation lets even minor insults bleed. (A: Surgery is a last resort.) (B: Embolization is for life-threatening bleeding after initial measures.) (D: Antiplatelet therapy worsens bleeding.) (E: Rigid bronchoscopy is for central airway lesions; correct the coagulopathy first.) Source: Ch 0041, Interventions; Malignancy (coagulopathy)"
+  },
+  {
+   "q": "A 60-year-old man with bronchiectasis coughs up about 200 mL of blood at once and becomes hypoxemic. His hemoglobin is normal. Which of the following statements best explains the danger in this situation?",
+   "options": [
+    "Exsanguination is the usual cause of death, so the normal hemoglobin is reassuring",
+    "Death usually results from asphyxiation, and a normal hemoglobin doesn't exclude life-threatening hemoptysis",
+    "Bleeding from the pulmonary circulation is high-pressure and hard to control",
+    "Hemoptysis this size is almost always from the nose",
+    "Normal hemoglobin indicates pseudohemoptysis"
+   ],
+   "answer": 1,
+   "explain": "Patients rarely exsanguinate. They die of asphyxiation from blood filling the airways, which can happen with >150 mL at one time. Anemia is often absent in life-threatening hemoptysis. (A: Exsanguination is rare, so a normal hemoglobin isn't reassuring.) (C: The bronchial circulation (from the aorta) is the high-pressure source.) (D: Nothing suggests a nasal source.) (E: Hemoglobin doesn't distinguish true from pseudohemoptysis.) Source: Ch 0041, History; Diagnostic Studies"
+  },
+  {
+   "q": "A 45-year-old man with long-standing cavitary pulmonary tuberculosis has sudden massive hemoptysis. Which of the following vascular lesions is classically responsible?",
+   "options": [
+    "Pulmonary arteriovenous malformation",
+    "Pulmonary artery aneurysm eroding into a cavity (Rasmussen aneurysm)",
+    "Aortobronchial fistula",
+    "Diffuse alveolar hemorrhage",
+    "Bronchial carcinoid"
+   ],
+   "answer": 1,
+   "explain": "In tuberculosis, cavities are the usual source, but erosion of a pulmonary artery aneurysm into a preexisting cavity (Rasmussen aneurysm) is a recognized cause. (A: AVMs aren't TB complications.) (C: Aortobronchial fistulas arise from aortic aneurysm or pseudoaneurysm.) (D: DAH often lacks hemoptysis and causes diffuse ground glass.) (E: Carcinoid is a tumor, not a TB complication.) Source: Ch 0041, Infections"
+  },
+  {
+   "q": "A 38-year-old man who immigrated from Southeast Asia has chronic cough with hemoptysis and a chest radiograph resembling tuberculosis. Repeated sputum AFB smears and cultures are negative. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Kaposi sarcoma",
+    "Anti-GBM disease",
+    "Aspergilloma",
+    "Paragonimiasis",
+    "Aortobronchial fistula"
+   ],
+   "answer": 3,
+   "explain": "Paragonimiasis mimics tuberculosis, is common in Southeast Asia and China, and should be considered in recent immigrants from endemic areas. (A: Kaposi sarcoma occurs in advanced AIDS.) (B: Anti-GBM disease causes pulmonary-renal syndrome.) (C: Aspergilloma forms in a preexisting cavity, without the immigration link.) (E: Aortobronchial fistula requires aortic pathology.) Source: Ch 0041, Infections"
+  },
+  {
+   "q": "A 65-year-old man has intermittent hemoptysis. Chest CT doesn't show a source. Bronchoscopy is planned to look for subtle mucosal lesions and localize bleeding. When is bronchoscopy highest-yield?",
+   "options": [
+    "During an acute episode of active bleeding",
+    "Only after 6 weeks without bleeding",
+    "After empiric antibiotics have failed for 3 months",
+    "Only after surgical resection",
+    "Timing doesn't affect yield"
+   ],
+   "answer": 0,
+   "explain": "Bronchoscopy complements CT by finding subtle mucosal lesions and localizing bleeding. It's best done during an acute episode to increase yield. (B: Waiting reduces the chance of localizing the source.) (C: Delay isn't indicated.) (D: Bronchoscopy precedes, not follows, resection.) (E: The source specifies that timing affects yield.) Source: Ch 0041, Diagnostic Studies"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0043-edema",
+ "name": "Edema (Harrison Ch 43)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 43: Edema.",
+ "chapter": "Cardiology",
+ "flashcards": [
+  {
+   "front": "Distribution of total body water?",
+   "back": "2/3 intracellular, 1/3 extracellular; of ECF, 1/4 plasma and 3/4 interstitial"
+  },
+  {
+   "front": "Five mechanisms of edema formation?",
+   "back": "Increased capillary hydrostatic pressure, inadequate lymphatic drainage, decreased plasma oncotic pressure, endothelial damage, increased interstitial oncotic pressure"
+  },
+  {
+   "front": "Causes of reduced effective arterial volume?",
+   "back": "Low cardiac output, low systemic vascular resistance, splanchnic venous pooling (cirrhosis), hypoalbuminemia"
+  },
+  {
+   "front": "Neurohumoral response to arterial underfilling?",
+   "back": "RAAS activation, sympathetic stimulation, nonosmotic vasopressin release, causing renal Na and water retention"
+  },
+  {
+   "front": "Low-SVR states causing arterial underfilling (Fig 43-1B)?",
+   "back": "High-output HF, sepsis, cirrhosis, AV fistula, pregnancy, arterial vasodilators"
+  },
+  {
+   "front": "Why don't natriuretic peptides prevent edema in HF and cirrhosis?",
+   "back": "Not potent enough, and resistance to their action develops"
+  },
+  {
+   "front": "Anasarca?",
+   "back": "Gross generalized edema"
+  },
+  {
+   "front": "What precedes overt generalized edema?",
+   "back": "Weight gain of several kilograms"
+  },
+  {
+   "front": "Cardiac edema labs?",
+   "back": "Elevated BUN-to-creatinine ratio, low serum sodium, elevated natriuretic peptides"
+  },
+  {
+   "front": "Hepatic edema exam findings?",
+   "back": "Ascites, normal or low JVP, lower BP, stigmata of chronic liver disease"
+  },
+  {
+   "front": "Electrolyte tendencies in hepatic edema?",
+   "back": "Hypokalemia and respiratory alkalosis"
+  },
+  {
+   "front": "CKD edema labs?",
+   "back": "High creatinine and cystatin C, albuminuria, hyperkalemia, metabolic acidosis, hyperphosphatemia, hypocalcemia, normocytic anemia"
+  },
+  {
+   "front": "Nephrotic syndrome criteria?",
+   "back": "Proteinuria >=3.5 g/d, albumin <3.0 g/dL, hypercholesterolemia; periorbital edema"
+  },
+  {
+   "front": "How does acute GN edema differ from HF edema?",
+   "back": "Primary renal Na and water retention with normal or increased cardiac output"
+  },
+  {
+   "front": "Acute glomerulonephritis triad with edema?",
+   "back": "Hematuria, proteinuria, hypertension"
+  },
+  {
+   "front": "Why is aldosterone elevated in cirrhosis?",
+   "back": "Failing liver doesn't metabolize it (plus RAAS activation)"
+  },
+  {
+   "front": "Order of fluid accumulation in cirrhosis?",
+   "back": "Ascites first; peripheral edema later with severe hypoalbuminemia"
+  },
+  {
+   "front": "Refeeding edema mechanism?",
+   "back": "Increased sodium intake plus insulin increasing tubular sodium reabsorption"
+  },
+  {
+   "front": "Why is primary lymphedema intractable?",
+   "back": "Restricted lymph flow raises both capillary pressure and interstitial protein"
+  },
+  {
+   "front": "Causes of lymphatic edema?",
+   "back": "Chronic lymphangitis, lymph node resection, filariasis, primary lymphedema"
+  },
+  {
+   "front": "Nonpitting edema of the shins?",
+   "back": "Pretibial myxedema of Graves disease"
+  },
+  {
+   "front": "Mechanism of hypothyroid myxedema?",
+   "back": "Tissue deposition of hyaluronic acid"
+  },
+  {
+   "front": "Antihypertensives that cause edema (Table 43-2)?",
+   "back": "Hydralazine, minoxidil, clonidine, methyldopa, guanethidine, calcium channel blockers, alpha-blockers"
+  },
+  {
+   "front": "Non-antihypertensive drugs causing edema?",
+   "back": "NSAIDs, thiazolidinediones, glucocorticoids, anabolic steroids, estrogens, progestins, cyclosporine, growth hormone, IL-2, OKT3"
+  },
+  {
+   "front": "Mechanism of NSAID and cyclosporine edema?",
+   "back": "Renal vasoconstriction"
+  },
+  {
+   "front": "HF edema distribution?",
+   "back": "Dependent: legs, worse in the evening; presacral when bedbound"
+  },
+  {
+   "front": "Facial and eyelid edema worst in the morning?",
+   "back": "Hypoproteinemia (nephrotic syndrome); also trichinosis, allergy, myxedema"
+  },
+  {
+   "front": "Edema of face, neck and arms only?",
+   "back": "Superior vena cava obstruction"
+  },
+  {
+   "front": "Edema of one limb?",
+   "back": "Venous and/or lymphatic obstruction, or limb paralysis"
+  },
+  {
+   "front": "Approach to generalized edema?",
+   "back": "Check for albumin <3.0 (cirrhosis, malnutrition, nephrotic); if normal, evaluate for heart failure; assess urine output"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 57-year-old woman has 3 weeks of bilateral leg swelling that pits to the knees and puffiness of her face. She has no dyspnea, orthopnea or known liver disease. Which of the following is the most important initial step in determining the cause of her generalized edema?",
+   "options": [
+    "Lower-extremity venous duplex",
+    "Lymphoscintigraphy",
+    "Start furosemide and reassess",
+    "Measure serum albumin and obtain a urinalysis",
+    "Thyroid ultrasound"
+   ],
+   "answer": 3,
+   "explain": "After establishing that edema is generalized, determine whether there's serious hypoalbuminemia (<3.0 g/dL). If present, the history, exam and urinalysis point to cirrhosis, malnutrition or nephrotic syndrome. (A: Duplex addresses localized edema.) (B: Lymphoscintigraphy also addresses localized edema.) (C: Diuretics before a diagnosis skip the evaluation.) (E: Thyroid imaging isn't an initial edema test.) Source: Ch 0043, Approach to the Patient: Edema"
+  },
+  {
+   "q": "A 44-year-old man with long-standing type 1 diabetes notices swelling around his eyes that is worst on waking, along with leg edema. Blood pressure is 148/92 mm Hg. Serum albumin is 2.4 g/dL, total cholesterol is 310 mg/dL, and the urine dipstick is strongly positive for protein. JVP is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Quantify urinary protein excretion",
+    "Echocardiogram",
+    "Liver biopsy",
+    "Paracentesis",
+    "Lower-extremity venous duplex"
+   ],
+   "answer": 0,
+   "explain": "Periorbital morning edema, hypoalbuminemia (<3.0 g/dL), hypercholesterolemia and proteinuria in a diabetic patient suggest nephrotic syndrome. It's defined by proteinuria ≥3.5 g/d, so quantification is the next step. (B: Normal JVP and the lab pattern don't suggest heart failure.) (C: The labs point to the kidney.) (D: There's no ascites.) (E: Edema is generalized and periorbital, not localized.) Source: Ch 0043, Table 43-1; Nephrotic Syndrome"
+  },
+  {
+   "q": "A 68-year-old man has 2 months of progressive leg edema, exertional dyspnea, two-pillow orthopnea and paroxysmal nocturnal dyspnea. JVP is elevated, an S3 is present, and the extremities are cool. Serum sodium is 131 mEq/L and the BUN-to-creatinine ratio is elevated. Which of the following is the most appropriate next step?",
+   "options": [
+    "Serum albumin and liver biopsy",
+    "24-hour urine protein",
+    "Lymphoscintigraphy",
+    "Abdominal ultrasound for ascites",
+    "Natriuretic peptide level, ECG and echocardiogram"
+   ],
+   "answer": 4,
+   "explain": "Exertional dyspnea, orthopnea, PND, raised JVP, S3, hyponatremia and a high BUN:creatinine ratio indicate cardiac edema. Natriuretic peptides, ECG and echocardiography establish heart disease. (A: There are no liver features.) (B: Nothing suggests nephrotic syndrome.) (C: Edema is generalized.) (D: Ascites isn't the leading issue.) Source: Ch 0043, Table 43-1; Heart Failure"
+  },
+  {
+   "q": "A 61-year-old woman developed bilateral ankle edema 6 weeks after starting amlodipine for hypertension. JVP is normal, lungs are clear, and albumin, creatinine and urinalysis are normal. Which of the following is the most likely cause, and the most appropriate management?",
+   "options": [
+    "Drug-induced edema from the calcium channel blocker; reduce the dose or switch antihypertensive class",
+    "Early heart failure; add furosemide and continue amlodipine",
+    "Nephrotic syndrome; refer for renal biopsy",
+    "Deep venous thrombosis; start anticoagulation",
+    "Hypothyroidism; start levothyroxine"
+   ],
+   "answer": 0,
+   "explain": "Calcium channel blockers (arteriolar dilation) are a recognized cause of drug-induced edema. A normal JVP, lungs, albumin and urinalysis support a drug cause. (B: No heart-failure findings are present.) (C: A normal urinalysis and albumin argue against nephrotic syndrome.) (D: Bilateral ankle edema after starting a CCB doesn't suggest DVT.) (E: There are no myxedema findings.) Source: Ch 0043, Drug-Induced Edema; Table 43-2; Other Causes of Edema"
+  },
+  {
+   "q": "A 55-year-old man with heavy alcohol use has abdominal distention and later leg edema. JVP is low, blood pressure is 102/64 mm Hg, and he has spider angiomata, palmar erythema and gynecomastia. Which of the following is the most appropriate next step?",
+   "options": [
+    "Echocardiogram as the primary test",
+    "Liver function tests, serum albumin and evaluation of the ascites",
+    "24-hour urine protein as the primary test",
+    "Lower-extremity venous duplex",
+    "Lymphoscintigraphy"
+   ],
+   "answer": 1,
+   "explain": "Ascites with low JVP, lower blood pressure and stigmata of chronic liver disease indicate hepatic edema. Evaluate liver function and albumin. (A: Low JVP argues against cardiac edema.) (C: The picture is hepatic, not renal.) (D: Edema followed ascites; that's not a localized venous pattern.) (E: There's no lymphatic process.) Source: Ch 0043, Table 43-1; Hepatic Cirrhosis"
+  },
+  {
+   "q": "A 63-year-old man who smokes has 3 weeks of progressive swelling of the face, neck and both arms. His legs are not swollen. Which of the following is the most appropriate next step?",
+   "options": [
+    "Serum albumin and urinalysis only",
+    "Echocardiogram for heart failure",
+    "Lower-extremity venous duplex",
+    "Evaluate for superior vena cava obstruction",
+    "Start furosemide"
+   ],
+   "answer": 3,
+   "explain": "Edema confined to the face, neck and upper extremities, where venous pressure is higher than in the legs, indicates superior vena cava obstruction. (A: Hypoalbuminemic edema is generalized.) (B: Heart failure edema is dependent, in the legs.) (C: The legs aren't involved.) (E: Diuresis doesn't address an obstruction.) Source: Ch 0043, Distribution of Edema"
+  },
+  {
+   "q": "A 66-year-old woman with type 2 diabetes has new bilateral leg edema 2 months after a medication change. Her medications are metformin, pioglitazone (newly added), atorvastatin and lisinopril. Cardiac examination, albumin, creatinine and urinalysis are normal. Which medication is the most likely cause?",
+   "options": [
+    "Metformin",
+    "Pioglitazone",
+    "Atorvastatin",
+    "Lisinopril",
+    "None; drug-induced edema doesn't occur with these classes"
+   ],
+   "answer": 1,
+   "explain": "Thiazolidinediones are listed among the drugs associated with edema (Table 43-2). (A: Metformin isn't listed.) (C: Statins aren't listed.) (D: ACE inhibitors aren't listed.) (E: Many drug classes cause edema.) Source: Ch 0043, Table 43-2"
+  },
+  {
+   "q": "A 38-year-old woman with exophthalmos and a suppressed TSH has firm swelling over both shins. Pressing on it leaves no indentation. Which of the following is the most likely cause?",
+   "options": [
+    "Heart failure",
+    "Nephrotic syndrome",
+    "Deep venous thrombosis",
+    "Cirrhosis",
+    "Pretibial myxedema of Graves disease"
+   ],
+   "answer": 4,
+   "explain": "Pretibial myxedema of Graves disease is typically nonpitting. (A: Heart failure causes pitting edema.) (B: Nephrotic edema is pitting.) (C: DVT causes pitting edema.) (D: Cirrhotic edema is pitting.) Source: Ch 0043, Other Causes of Edema"
+  },
+  {
+   "q": "A 12-year-old boy has edema, cola-colored urine and hypertension 2 weeks after a sore throat. JVP is mildly elevated. Which of the following best explains his edema?",
+   "options": [
+    "Primary renal sodium and water retention, with normal or increased cardiac output",
+    "Low-output heart failure",
+    "Hypoalbuminemia from hepatic failure",
+    "Lymphatic obstruction",
+    "Increased capillary permeability from sepsis"
+   ],
+   "answer": 0,
+   "explain": "Edema in acute glomerulonephritis comes with hematuria, proteinuria and hypertension. It results from primary renal sodium and water retention, with normal or even increased cardiac output, unlike most heart failure. (B: Cardiac output isn't reduced in acute GN.) (C: There's no liver disease.) (D: Lymphatic obstruction causes localized edema.) (E: Sepsis isn't present.) Source: Ch 0043, Edema of Renal Disease"
+  },
+  {
+   "q": "A 30-year-old woman recovering from prolonged starvation develops worsening edema after starting an adequate diet. In addition to increased sodium intake, which hormonal mechanism directly contributes?",
+   "options": [
+    "Suppression of aldosterone",
+    "Increased atrial natriuretic peptide",
+    "Increased insulin release, which increases tubular sodium reabsorption",
+    "Decreased vasopressin",
+    "Increased thyroid hormone"
+   ],
+   "answer": 2,
+   "explain": "Refeeding edema results from increased sodium intake and increased insulin release, which directly increases tubular sodium reabsorption. (A: Aldosterone suppression would cause natriuresis.) (B: ANP promotes natriuresis.) (D: Less vasopressin would cause water loss.) (E: Thyroid hormone isn't the mechanism described.) Source: Ch 0043, Edema of Nutritional Origin"
+  },
+  {
+   "q": "A 52-year-old woman who had an axillary lymph node dissection for breast cancer 2 years ago has persistent swelling of the ipsilateral arm. Which of the following explains why this type of edema is particularly hard to treat?",
+   "options": [
+    "Hypoalbuminemia",
+    "Low cardiac output",
+    "Restricted lymphatic flow raises both capillary pressure and interstitial protein concentration",
+    "Renal sodium retention from RAAS activation",
+    "Venous valve incompetence alone"
+   ],
+   "answer": 2,
+   "explain": "Lymphedema (here after node resection) is particularly intractable because restricted lymphatic flow raises both intracapillary pressure and interstitial protein, which together worsen fluid retention. (A: Lymphedema is localized and doesn't depend on albumin.) (B: Lymphedema is localized and doesn't depend on cardiac output.) (D: RAAS-driven retention causes generalized edema.) (E: Venous valve failure is a different mechanism of localized edema.) Source: Ch 0043, Localized Edema"
+  }
+ ]
+},
 ];
