@@ -7930,4 +7930,1956 @@ const HARRISON_TOPICS = [
   }
  ]
 },
+{
+ "id": "harrison-ch0057-hypercalcemia-and-hypocalcemia",
+ "name": "Hypercalcemia and Hypocalcemia (Harrison Ch 57)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 57: Hypercalcemia and Hypocalcemia.",
+ "chapter": "Endocrinology",
+ "flashcards": [
+  {
+   "front": "Albumin-corrected calcium formula?",
+   "back": "Add 0.8 mg/dL per 1 g/dL albumin below 4.0 (subtract if above)"
+  },
+  {
+   "front": "Two most common causes of hypercalcemia?",
+   "back": "Primary hyperparathyroidism and malignancy"
+  },
+  {
+   "front": "Mechanism of hypercalcemia in sarcoidosis and lymphoma?",
+   "back": "Macrophage CYP27B1 converts 25(OH)D to 1,25(OH)2D"
+  },
+  {
+   "front": "FHH genetics and why it matters?",
+   "back": "Autosomal dominant inactivating CASR mutation; parathyroid surgery is ineffective"
+  },
+  {
+   "front": "Ca/Cr clearance ratio suggesting FHH?",
+   "back": "<0.01"
+  },
+  {
+   "front": "Lab pattern of primary hyperparathyroidism?",
+   "back": "High/inappropriately normal PTH, high Ca, low/low-normal phosphate, fractional Ca excretion >0.02"
+  },
+  {
+   "front": "CDC73 mutation significance?",
+   "back": "Hyperparathyroidism-jaw tumor syndrome; ~30% lifetime parathyroid carcinoma risk"
+  },
+  {
+   "front": "How does lithium cause hypercalcemia?",
+   "back": "Raises the CaSR set point, causing hyperparathyroidism"
+  },
+  {
+   "front": "Suppressed PTH hypercalcemia workup?",
+   "back": "PTHrP, SPEP/UPEP with immunofixation + serum free light chains, 25(OH)D, 1,25(OH)2D"
+  },
+  {
+   "front": "Why add serum free light chains in myeloma workup?",
+   "back": "~3% of myeloma missed by electrophoresis with immunofixation"
+  },
+  {
+   "front": "Chronic fluctuating mild hypercalcemia suggests?",
+   "back": "Primary hyperparathyroidism or FHH (malignancy is usually acute)"
+  },
+  {
+   "front": "Drugs causing hypercalcemia?",
+   "back": "Thiazides, vitamin A, lithium, foscarnet, teriparatide; denosumab discontinuation (rebound)"
+  },
+  {
+   "front": "Immobilization hypercalcemia caution?",
+   "back": "Look for an unrecognized contributor (pHPT, Paget, myeloma)"
+  },
+  {
+   "front": "Why does hypercalcemia cause polyuria and AKI?",
+   "back": "Downregulates collecting duct aquaporin 2 (nephrogenic DI) causing volume depletion"
+  },
+  {
+   "front": "ECG changes in hypercalcemia?",
+   "back": "Bradycardia, AV block, QRS widening, short QTc"
+  },
+  {
+   "front": "First treatment for severe hypercalcemia?",
+   "back": "IV normal saline (4-6 L in first 24 h)"
+  },
+  {
+   "front": "When to use loop diuretics in hypercalcemia?",
+   "back": "Only after volume status is restored"
+  },
+  {
+   "front": "IV bisphosphonates for hypercalcemia: doses and onset?",
+   "back": "Zoledronic acid 4 mg over 30 min or pamidronate 60-90 mg; onset 1-2 days"
+  },
+  {
+   "front": "GFR limit for IV bisphosphonates and alternative?",
+   "back": "Contraindicated GFR <35; use reduced-dose denosumab"
+  },
+  {
+   "front": "Role of calcitonin in hypercalcemia?",
+   "back": "Rapid but transient; 4-8 IU/kg IM/SC q6h for first 48 h"
+  },
+  {
+   "front": "Treatment of vitamin D-mediated hypercalcemia?",
+   "back": "Glucocorticoids (hydrocortisone IV or prednisone 40-60 mg)"
+  },
+  {
+   "front": "Cinacalcet indications?",
+   "back": "Parathyroid carcinoma; pHPT not suitable for surgery"
+  },
+  {
+   "front": "Most common cause of hypoparathyroidism in adults?",
+   "back": "Damage to parathyroids during neck surgery"
+  },
+  {
+   "front": "Magnesium and hypocalcemia?",
+   "back": "Low Mg impairs PTH secretion; severe high Mg (obstetric infusion) suppresses PTH"
+  },
+  {
+   "front": "Drugs causing hypomagnesemia-related hypocalcemia?",
+   "back": "Alcohol, cisplatin, anti-EGFR antibodies, PPIs"
+  },
+  {
+   "front": "Hypocalcemia with high PTH: causes?",
+   "back": "Vitamin D deficiency, CKD, malabsorption/Roux-en-Y, pseudohypoparathyroidism (GNAS)"
+  },
+  {
+   "front": "Why does alkalosis cause hypocalcemia?",
+   "back": "Increases calcium binding to albumin (lower ionized Ca)"
+  },
+  {
+   "front": "Chvostek vs Trousseau sign?",
+   "back": "Chvostek: facial twitch on tapping (10% of normals). Trousseau: carpal spasm with cuff, more definitive"
+  },
+  {
+   "front": "Severe hypocalcemia complications?",
+   "back": "Seizures, laryngospasm, bronchospasm, long QT with torsades"
+  },
+  {
+   "front": "Acute symptomatic hypocalcemia treatment?",
+   "back": "10 mL 10% calcium gluconate in 50 mL D5W/NS over 5-10 min with telemetry, then infusion"
+  },
+  {
+   "front": "Chronic hypoparathyroidism treatment and target?",
+   "back": "Calcium 1-3 g/day + calcitriol 0.25-1 ug; target low-normal Ca"
+  },
+  {
+   "front": "24-h urine calcium targets in hypoparathyroidism?",
+   "back": "<250 mg women, <300 mg men"
+  },
+  {
+   "front": "Calcium formulation preferred after bariatric surgery?",
+   "back": "Calcium citrate (better absorbed, raises urinary citrate)"
+  },
+  {
+   "front": "Nutritional vitamin D deficiency treatment?",
+   "back": "Ergocalciferol 50,000 IU 2-3 times weekly for months"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 61-year-old woman has a total serum calcium of 10.9 mg/dL on routine labs, with an albumin of 3.0 g/dL. She has mild fatigue and constipation. Which of the following is the most appropriate next test?",
+   "options": [
+    "PTHrP level",
+    "1,25-dihydroxyvitamin D level",
+    "Bone scan",
+    "Intact PTH level",
+    "Serum protein electrophoresis"
+   ],
+   "answer": 3,
+   "explain": "Corrected calcium = 10.9 + 0.8 × (4.0 − 3.0) = 11.7 mg/dL, so true hypercalcemia is present. After confirming it, intact PTH is the most important test. (A: PTHrP is checked when PTH is suppressed.) (B: 1,25(OH)₂D is checked when PTH is suppressed.) (C: A bone scan is premature.) (E: Myeloma workup follows a suppressed PTH.) Source: Ch 0057, Diagnostic Approach"
+  },
+  {
+   "q": "A 38-year-old man has a calcium of 10.8 mg/dL, a PTH of 58 pg/mL (upper normal) and normal phosphate. His mother and sister have mild hypercalcemia, and his uncle had an unsuccessful neck exploration. The calcium/creatinine clearance ratio is 0.004. Which of the following is the most appropriate management?",
+   "options": [
+    "Avoid parathyroidectomy; confirm with CASR genetic testing",
+    "Four-gland parathyroid exploration",
+    "Start cinacalcet immediately",
+    "IV zoledronic acid",
+    "Sestamibi scan and minimally invasive parathyroidectomy"
+   ],
+   "answer": 0,
+   "explain": "FHH causes mild hypercalcemia with high or inappropriately normal PTH and a Ca/Cr clearance ratio <0.01. A family history of mild hypercalcemia or failed surgery fits. Surgery is ineffective; sequence CASR, GNA11 and AP2S1. (B: Surgery doesn't help FHH.) (C: Treatment isn't indicated for benign FHH.) (D: A bisphosphonate isn't indicated.) (E: Surgery doesn't help FHH.) Source: Ch 0057, Diagnostic Approach"
+  },
+  {
+   "q": "A 68-year-old woman with metastatic squamous cell lung cancer is confused, with a calcium of 14.6 mg/dL. She has dry mucous membranes and orthostatic hypotension. Creatinine is 1.6 mg/dL (baseline 0.9). Which of the following is the most appropriate first step?",
+   "options": [
+    "IV furosemide",
+    "Oral prednisone",
+    "Cinacalcet",
+    "Hemodialysis",
+    "Aggressive IV normal saline"
+   ],
+   "answer": 4,
+   "explain": "Significant symptomatic hypercalcemia always causes dehydration. Start with volume expansion (4–6 L of saline in 24 hours may be needed), which improves calciuresis. (A: Loop diuretics only after euvolemia.) (B: Steroids are for vitamin D–mediated hypercalcemia.) (C: Cinacalcet is for parathyroid carcinoma or pHPT.) (D: Dialysis is for anuric AKI or HF.) Source: Ch 0057, Treatment: Hypercalcemia"
+  },
+  {
+   "q": "A 72-year-old man with multiple myeloma has a calcium of 13.8 mg/dL despite IV fluids. His estimated GFR is 24 mL/min/1.73 m². Which agent is most appropriate to inhibit bone resorption?",
+   "options": [
+    "IV zoledronic acid 4 mg",
+    "Denosumab (reduced dose)",
+    "IV pamidronate 90 mg",
+    "Cinacalcet",
+    "Thiazide diuretic"
+   ],
+   "answer": 1,
+   "explain": "IV aminobisphosphonates are contraindicated with GFR <35. Denosumab is cleared by the reticuloendothelial system and can be used at lower doses in advanced kidney disease. (A: Zoledronic acid is contraindicated at this GFR.) (C: Pamidronate is contraindicated at this GFR.) (D: Cinacalcet targets PTH.) (E: Thiazides raise calcium.) Source: Ch 0057, Treatment: Hypercalcemia"
+  },
+  {
+   "q": "A 35-year-old woman has bilateral hilar adenopathy, erythema nodosum and a calcium of 12.4 mg/dL. PTH is suppressed, and 1,25-dihydroxyvitamin D is elevated. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Parathyroidectomy",
+    "Cinacalcet",
+    "Glucocorticoids",
+    "Thiazide diuretic",
+    "Calcium supplementation"
+   ],
+   "answer": 2,
+   "explain": "In granulomatous (1,25(OH)₂D-mediated) hypercalcemia, glucocorticoids reduce intestinal calcium absorption and 1,25(OH)₂D production. (A: PTH is suppressed, so surgery doesn't apply.) (B: Cinacalcet doesn't address 1,25(OH)₂D-mediated disease.) (D: Thiazides raise calcium.) (E: Calcium supplementation worsens it.) Source: Ch 0057, Treatment: Hypercalcemia"
+  },
+  {
+   "q": "A 70-year-old man has a calcium of 12.1 mg/dL, suppressed PTH, normocytic anemia and a creatinine of 2.2 mg/dL. Serum protein electrophoresis is unremarkable. Which additional test is most important?",
+   "options": [
+    "Sestamibi scan",
+    "Calcium/creatinine clearance ratio",
+    "Thyroid ultrasound",
+    "Serum free light chains with immunofixation",
+    "24-hour urine calcium"
+   ],
+   "answer": 3,
+   "explain": "With suppressed PTH, myeloma must be evaluated, including serum free light chains, because ~3% of myeloma is missed by serum or urine electrophoresis with immunofixation. (A: Sestamibi is for PTH-dependent disease.) (B: The Ca/Cr clearance ratio is for PTH-dependent disease.) (C: Thyroid ultrasound doesn't evaluate myeloma.) (E: Urine calcium doesn't identify the cause here.) Source: Ch 0057, Diagnostic Approach"
+  },
+  {
+   "q": "A 66-year-old woman with hypercalcemia of malignancy (calcium 13.5 mg/dL) is clinically volume depleted. A resident proposes starting furosemide now to increase calciuresis. Which of the following is correct?",
+   "options": [
+    "Loop diuretics should be started only after volume status has been restored with saline",
+    "Furosemide should be started before saline to prevent fluid overload",
+    "Thiazides are preferred over loops for calciuresis",
+    "Diuretics are contraindicated in hypercalcemia at any stage",
+    "Furosemide is the main long-term therapy for hypercalcemia of malignancy"
+   ],
+   "answer": 0,
+   "explain": "Loop diuretics can transiently increase calcium excretion but shouldn't be started until volume status is restored. (B: Furosemide before saline worsens volume depletion.) (C: Thiazides cause hypercalcemia.) (D: Loops have a transient role after euvolemia.) (E: Bisphosphonates are the mainstay after hydration.) Source: Ch 0057, Treatment: Hypercalcemia"
+  },
+  {
+   "q": "A 52-year-old woman with tingling around her mouth after thyroid surgery has a blood pressure cuff inflated to 20 mm Hg above systolic for 3 minutes, producing wrist flexion and thumb adduction. What is this finding, and why is it useful?",
+   "options": [
+    "Chvostek sign; very specific for hypocalcemia",
+    "Babinski sign; indicates a CNS lesion",
+    "Phalen sign; indicates median neuropathy",
+    "Tinel sign; indicates nerve entrapment",
+    "Trousseau sign; a more definitive sign of neuromuscular irritability than Chvostek (which occurs in ~10% of normal people)"
+   ],
+   "answer": 4,
+   "explain": "Trousseau sign is carpal spasm after 3 minutes of cuff inflation above systolic pressure. It's a more definitive sign of impending tetany. Chvostek sign occurs in ~10% of normal people. (A: Chvostek is facial twitching and isn't specific.) (B: Babinski is unrelated.) (C: Phalen is unrelated.) (D: Tinel is unrelated.) Source: Ch 0057, Clinical Manifestations (hypocalcemia)"
+  },
+  {
+   "q": "A 47-year-old woman develops carpopedal spasm and perioral numbness 24 hours after total thyroidectomy. Calcium is 6.6 mg/dL and the QTc is prolonged. Which of the following is the most appropriate immediate treatment?",
+   "options": [
+    "Oral calcium carbonate 1 g",
+    "IV calcium gluconate (10 mL of 10% diluted in 50 mL) over 5–10 minutes with telemetry",
+    "Oral ergocalciferol 50,000 IU",
+    "Teriparatide",
+    "IV calcium chloride push over 30 seconds without monitoring"
+   ],
+   "answer": 1,
+   "explain": "Acute symptomatic hypocalcemia is treated with 10 mL of 10% calcium gluconate diluted in 50 mL of D5W or saline, given IV over 5–10 minutes with telemetry. Repeat as needed, then infuse. (A: Oral calcium is too slow with tetany and QT prolongation.) (C: Vitamin D is for deficiency, not acute tetany.) (D: Teriparatide is for refractory chronic hypoparathyroidism.) (E: A rapid unmonitored push is unsafe.) Source: Ch 0057, Treatment: Hypocalcemia"
+  },
+  {
+   "q": "A 56-year-old man with chronic alcohol use has hypocalcemia (7.1 mg/dL) that persists despite 2 days of IV calcium. PTH is inappropriately low-normal. Which of the following is most likely to correct his hypocalcemia?",
+   "options": [
+    "Calcitriol alone",
+    "Thiazide diuretic",
+    "Magnesium repletion",
+    "Parathyroidectomy",
+    "Bisphosphonate"
+   ],
+   "answer": 2,
+   "explain": "Hypomagnesemia (alcohol, PPIs, cisplatin) impairs PTH secretion. Hypocalcemia won't correct until magnesium is repleted. (A: Calcitriol doesn't fix the underlying defect.) (B: A thiazide doesn't fix it.) (D: Surgery has no role.) (E: A bisphosphonate lowers calcium.) Source: Ch 0057, Hypocalcemia Etiology; Treatment"
+  },
+  {
+   "q": "A 44-year-old woman has permanent postsurgical hypoparathyroidism and takes calcium carbonate and calcitriol. Her 24-hour urine calcium is 380 mg with a serum calcium of 9.9 mg/dL. Which of the following is the best adjustment?",
+   "options": [
+    "Increase calcitriol to raise serum calcium to the upper-normal range",
+    "Add a loop diuretic",
+    "Stop all calcium",
+    "Lower therapy to target a low-normal serum calcium to reduce hypercalciuria",
+    "Start a bisphosphonate"
+   ],
+   "answer": 3,
+   "explain": "Without PTH, distal tubular calcium reabsorption is impaired. Raising serum calcium above low-normal increases hypercalciuria and stone and nephrocalcinosis risk. The 24-hour urine target is <250 mg (women). (A: Raising calcium worsens hypercalciuria.) (B: Loops increase calciuria.) (C: Stopping calcium risks tetany.) (E: A bisphosphonate isn't indicated.) Source: Ch 0057, Treatment: Hypocalcemia"
+  },
+  {
+   "q": "A 63-year-old man with severe hypercalcemia has an ECG. Which finding is most characteristic?",
+   "options": [
+    "Peaked T waves",
+    "Shortened QTc interval",
+    "Prolonged QTc interval",
+    "Delta waves",
+    "Low-voltage QRS with electrical alternans"
+   ],
+   "answer": 1,
+   "explain": "Hypercalcemia can cause bradycardia, AV block, QRS widening and a short QTc. (A: Peaked T waves suggest hyperkalemia.) (C: QTc prolongation occurs in hypocalcemia.) (D: Delta waves indicate preexcitation.) (E: Alternans suggests effusion.) Source: Ch 0057, Clinical Manifestations (hypercalcemia)"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0058-acidosis-and-alkalosis",
+ "name": "Acidosis and Alkalosis (Harrison Ch 58)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 58: Acidosis and Alkalosis.",
+ "chapter": "Nephrology",
+ "flashcards": [
+  {
+   "front": "Winter formula?",
+   "back": "Expected PaCO2 = 1.5 x HCO3 + 8 +/- 2 in metabolic acidosis"
+  },
+  {
+   "front": "Expected PaCO2 rise in metabolic alkalosis?",
+   "back": "0.75 mmHg per 1 mmol/L rise in HCO3 (~6 per 10)"
+  },
+  {
+   "front": "HCO3 change in acute vs chronic respiratory acidosis?",
+   "back": "Acute +1 per 10 mmHg PaCO2; chronic +4 per 10"
+  },
+  {
+   "front": "HCO3 change in acute vs chronic respiratory alkalosis?",
+   "back": "Acute -2 per 10 mmHg; chronic -4 per 10"
+  },
+  {
+   "front": "Only compensation that can normalize pH?",
+   "back": "Prolonged chronic respiratory alkalosis"
+  },
+  {
+   "front": "PaCO2 and HCO3 moving in opposite directions means?",
+   "back": "Mixed acid-base disorder"
+  },
+  {
+   "front": "Anion gap formula and normal value?",
+   "back": "Na - (Cl + HCO3); ~10 (6-12)"
+  },
+  {
+   "front": "Albumin correction of anion gap?",
+   "back": "Add 2.5 for each g/dL albumin below 4.5"
+  },
+  {
+   "front": "Causes of a low anion gap?",
+   "back": "Lithium, cationic paraproteins (myeloma), hypoalbuminemia, severe hyperlipidemia"
+  },
+  {
+   "front": "Delta AG >> delta HCO3 indicates?",
+   "back": "Concurrent metabolic alkalosis with high-AG acidosis"
+  },
+  {
+   "front": "Delta HCO3 >> delta AG indicates?",
+   "back": "Concurrent non-AG acidosis (e.g., DKA treatment, diarrhea)"
+  },
+  {
+   "front": "Causes of high-AG metabolic acidosis?",
+   "back": "Lactic acidosis, ketoacidosis, ethylene glycol, methanol, salicylates, propylene glycol, pyroglutamic acid, kidney failure"
+  },
+  {
+   "front": "Type A vs type B lactic acidosis?",
+   "back": "A: hypoperfusion/hypoxia (shock, CO, cyanide). B: malignancy, NRTIs, metformin, liver failure, thiamine deficiency"
+  },
+  {
+   "front": "D-lactic acidosis setting?",
+   "back": "Short bowel or jejunoileal bypass (bacterial D-lactate)"
+  },
+  {
+   "front": "Bicarbonate goal in severe lactic acidosis?",
+   "back": "Only if pH <7.0; raise pH to no more than 7.2 or HCO3 <=12"
+  },
+  {
+   "front": "Euglycemic DKA cause?",
+   "back": "SGLT2 inhibitors (also starvation)"
+  },
+  {
+   "front": "Why do urine ketone dipsticks underestimate ketosis?",
+   "back": "Nitroprusside detects acetoacetate, not beta-hydroxybutyrate"
+  },
+  {
+   "front": "Bicarbonate indication in adult DKA?",
+   "back": "pH <7.00 or shock; 50 mEq in 300 mL saline over 30-45 min"
+  },
+  {
+   "front": "DKA insulin regimen?",
+   "back": "0.1 U/kg IV bolus then 0.1 U/kg/h until AG normalizes"
+  },
+  {
+   "front": "Alcoholic ketoacidosis treatment and electrolyte to watch?",
+   "back": "D5 normal saline; hypophosphatemia at 12-24 h (also K, Mg)"
+  },
+  {
+   "front": "Salicylate acid-base pattern?",
+   "back": "Respiratory alkalosis or mixed high-AG acidosis + respiratory alkalosis"
+  },
+  {
+   "front": "Salicylate urine alkalinization target?",
+   "back": "Urine pH >7.5 (raising 6.5 to 7.5 increases clearance 5-fold)"
+  },
+  {
+   "front": "Calculated serum osmolality?",
+   "back": "2Na + glucose/18 + BUN/2.8; osmolar gap >10-15 abnormal"
+  },
+  {
+   "front": "High AG + high osmolar gap?",
+   "back": "Ethylene glycol or methanol; treat before levels return"
+  },
+  {
+   "front": "Ethylene glycol clues?",
+   "back": "Antifreeze, oxalate crystals, AKI, CNS injury"
+  },
+  {
+   "front": "Methanol toxicity hallmark?",
+   "back": "Optic nerve and CNS damage (formic acid)"
+  },
+  {
+   "front": "Fomepizole dosing?",
+   "back": "15 mg/kg load, then 10 mg/kg q12h until pH normal and osmolar gap <10"
+  },
+  {
+   "front": "Dialysis indications in EG/methanol?",
+   "back": "pH <7.3 with high AG, osmolar gap >20, end-organ damage"
+  },
+  {
+   "front": "Isopropyl alcohol pattern?",
+   "back": "Osmolar gap without high AG; acetone; hypoglycemia; dialysis if >400 mg/dL or unstable"
+  },
+  {
+   "front": "Propylene glycol toxicity setting?",
+   "back": "Continuous IV lorazepam/diazepam in ICU (alcohol withdrawal); stop infusion"
+  },
+  {
+   "front": "Pyroglutamic acidosis?",
+   "back": "High-AG acidosis without osmolar gap in malnourished/critically ill on acetaminophen"
+  },
+  {
+   "front": "CKD acidosis treatment target?",
+   "back": "Oral alkali to HCO3 >22-24 (1-1.5 mmol/kg/day); slows CKD progression"
+  },
+  {
+   "front": "Urine anion gap interpretation?",
+   "back": "Negative: high NH4 (GI loss). Positive: low NH4 (RTA)"
+  },
+  {
+   "front": "Proximal (type 2) RTA features?",
+   "back": "Fanconi (glycosuria, aminoaciduria, phosphaturia); urine pH <5.5 when HCO3 low; acetazolamide, topiramate"
+  },
+  {
+   "front": "Distal (type 1) RTA features?",
+   "back": "Hypokalemia, urine pH >5.5, stones, nephrocalcinosis; amphotericin, ifosfamide"
+  },
+  {
+   "front": "Type 4 RTA features and treatment?",
+   "back": "Hyperkalemia, urine pH <5.5; diabetes/CKD; lower K (patiromer), stop K drugs, +/- fludrocortisone"
+  },
+  {
+   "front": "Saline-responsive metabolic alkalosis?",
+   "back": "Urine Cl <20-25: vomiting, NG suction, prior diuretics, posthypercapnia"
+  },
+  {
+   "front": "Metabolic alkalosis with hypertension and low renin?",
+   "back": "Primary aldosteronism, Cushing, licorice, 11b/17a-hydroxylase deficiency, Liddle"
+  },
+  {
+   "front": "Metabolic alkalosis when saline is contraindicated?",
+   "back": "Acetazolamide 125-250 mg IV (watch K)"
+  },
+  {
+   "front": "Liddle syndrome treatment?",
+   "back": "Amiloride or triamterene"
+  },
+  {
+   "front": "Correcting chronic hypercapnia?",
+   "back": "Lower PaCO2 gradually toward baseline; provide Cl and K"
+  },
+  {
+   "front": "Causes of respiratory alkalosis?",
+   "back": "Pain, anxiety, fever, hypoxemia, PE, pregnancy, salicylates, sepsis, hepatic failure, overventilation"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 58-year-old man in septic shock has arterial pH 7.41, PaCO₂ 20 mm Hg and HCO₃⁻ 12 mmol/L. Na is 140 and Cl 106 mEq/L. Which acid-base disturbance is present?",
+   "options": [
+    "Simple metabolic acidosis with appropriate compensation",
+    "Simple respiratory alkalosis",
+    "High-anion gap metabolic acidosis with a concurrent respiratory alkalosis",
+    "Metabolic acidosis with concurrent respiratory acidosis",
+    "Metabolic alkalosis with respiratory compensation"
+   ],
+   "answer": 2,
+   "explain": "AG = 140 − (106 + 12) = 22, a high-AG acidosis. Winter formula predicts PaCO₂ = 1.5 × 12 + 8 ± 2 = 24–28. A PaCO₂ of 20 is lower, so a concurrent respiratory alkalosis is present (common in sepsis). (A: The PaCO₂ is below the predicted range.) (B: HCO₃⁻ is too low for a simple respiratory alkalosis.) (D: Respiratory acidosis would put PaCO₂ above predicted.) (E: HCO₃⁻ is low, so this isn't a metabolic alkalosis.) Source: Ch 0058, Simple Acid-Base Disorders; Table 58-1; Table 58-2"
+  },
+  {
+   "q": "A 64-year-old woman with cirrhosis has Na 138, Cl 104, HCO₃⁻ 20 mEq/L and albumin 2.5 g/dL. Which statement about her anion gap is correct?",
+   "options": [
+    "Her AG of 14 is normal",
+    "Albumin doesn't affect the AG",
+    "Her corrected AG is 9",
+    "Hypoalbuminemia raises the AG",
+    "Her corrected AG is about 19, indicating a high-AG acidosis"
+   ],
+   "answer": 4,
+   "explain": "Uncorrected AG = 138 − (104 + 20) = 14. Add 2.5 for each g/dL of albumin below 4.5: 14 + 2.5 × 2 = 19, a high AG. (A: Uncorrected, it looks normal.) (B: Albumin is the main unmeasured anion.) (C: The correction adds, not subtracts.) (D: Hypoalbuminemia lowers the measured AG.) Source: Ch 0058, Evaluate the Anion Gap"
+  },
+  {
+   "q": "A 45-year-old man with alcohol use disorder has vomited for 3 days and now has abdominal pain. Na 135, Cl 81, HCO₃⁻ 24 mEq/L, pH 7.41, PaCO₂ 39 mm Hg. β-hydroxybutyrate is markedly elevated. Which disorder is present?",
+   "options": [
+    "Mixed high-AG metabolic acidosis and metabolic alkalosis",
+    "No acid-base disorder; values are normal",
+    "Simple metabolic alkalosis",
+    "Simple respiratory alkalosis",
+    "Non-AG metabolic acidosis"
+   ],
+   "answer": 0,
+   "explain": "AG = 135 − (81 + 24) = 30, so ΔAG is 20 but ΔHCO₃⁻ is 0. The incongruity reveals a high-AG ketoacidosis coexisting with metabolic alkalosis from vomiting, despite a normal pH and HCO₃⁻. (B: The high AG is meaningful even with normal pH and HCO₃⁻.) (C: The elevated AG shows an acidosis too.) (D: PaCO₂ is normal.) (E: The AG is high.) Source: Ch 0058, Approach to the Patient (Δ values); Table 58-2"
+  },
+  {
+   "q": "A 36-year-old man is found confused after drinking an unknown liquid from his garage. pH is 7.16, AG 28, measured osmolality 330 and calculated osmolality 290 mOsm/kg. Urinalysis shows envelope-shaped crystals, and creatinine is rising. Toxic alcohol levels will take 6 hours. Which of the following is the most appropriate management?",
+   "options": [
+    "Wait for ethylene glycol levels before treating",
+    "Oral activated charcoal only",
+    "IV sodium bicarbonate alone",
+    "Fomepizole now, with hemodialysis",
+    "Oral ethanol as first-line therapy"
+   ],
+   "answer": 3,
+   "explain": "A high AG plus a high osmolar gap with oxalate crystals means ethylene glycol toxicity. Treatment shouldn't wait for levels. Give fomepizole (15 mg/kg load). Dialysis is indicated for pH <7.3, osmolar gap >20, or end-organ damage. (A: Delay is the key error.) (B: Charcoal alone doesn't treat it.) (C: Bicarbonate alone doesn't block metabolism.) (E: Ethanol is used only if fomepizole is unavailable.) Source: Ch 0058, Ethylene Glycol; Treatment"
+  },
+  {
+   "q": "A 52-year-old man drank a large amount of rubbing alcohol. He is drowsy and his breath smells fruity. Osmolar gap is 40, AG is 11, glucose 62 mg/dL, and serum acetone is positive. He is hemodynamically stable, and his level is below 400 mg/dL. Which of the following is the most appropriate management?",
+   "options": [
+    "Fomepizole and hemodialysis",
+    "Supportive care with IV fluids and glucose",
+    "Sodium bicarbonate infusion",
+    "Urine alkalinization",
+    "Methylene blue"
+   ],
+   "answer": 1,
+   "explain": "Isopropyl alcohol raises the osmolar gap but not the AG (acetone is excreted), and hypoglycemia is common. Treatment is supportive, with dialysis reserved for instability, prolonged coma, or levels >400 mg/dL. (A: The parent compound, not a metabolite, is toxic, so fomepizole isn't indicated.) (C: There's no acidosis to treat.) (D: Alkalinization is for salicylates.) (E: Methylene blue is for methemoglobinemia.) Source: Ch 0058, Isopropyl Alcohol"
+  },
+  {
+   "q": "A 39-year-old woman ingested a large amount of aspirin. pH is 7.38, PaCO₂ 25 mm Hg, HCO₃⁻ 15, and AG 22. Renal function is normal. After activated charcoal, which of the following is the most appropriate therapy?",
+   "options": [
+    "Acetazolamide alone",
+    "Furosemide",
+    "IV sodium bicarbonate to alkalinize the urine to pH >7.5, with potassium and glucose",
+    "Hypotonic saline only",
+    "Immediate hemodialysis regardless of renal function"
+   ],
+   "answer": 2,
+   "explain": "Salicylate toxicity causes a high-AG acidosis with respiratory alkalosis. After charcoal, IV bicarbonate to urine pH >7.5 raises clearance about fivefold. Replace potassium and give glucose. Dialysis is for AKI. (A: Acetazolamide alone can cause systemic acidosis and reduce clearance.) (B: Furosemide isn't the therapy.) (D: Hypotonic saline isn't the therapy.) (E: Dialysis isn't automatic with normal renal function.) Source: Ch 0058, Treatment: Salicylate-Induced Acidosis"
+  },
+  {
+   "q": "A 22-year-old man with type 1 diabetes has DKA. pH is 7.15, HCO₃⁻ 7, glucose 520 mg/dL, and potassium 4.8 mEq/L. He isn't in shock. Which of the following is the most appropriate management?",
+   "options": [
+    "Isotonic saline and IV insulin (0.1 U/kg bolus, then 0.1 U/kg/h) without bicarbonate",
+    "IV sodium bicarbonate bolus to normalize pH",
+    "Insulin only after bicarbonate corrects the pH",
+    "Hypotonic saline with bicarbonate",
+    "Subcutaneous insulin and discharge"
+   ],
+   "answer": 0,
+   "explain": "Bicarbonate in adult DKA is reserved for pH <7.00 or shock. Treat with isotonic saline (avoiding overexpansion) and IV regular insulin (0.1 U/kg bolus, then 0.1 U/kg/h) until the AG closes. (B: pH 7.15 doesn't meet the threshold, and normalizing pH is never the goal.) (C: Insulin shouldn't wait.) (D: Bicarbonate isn't indicated.) (E: DKA needs IV therapy.) Source: Ch 0058, Diabetic Ketoacidosis; Treatment: Metabolic Acidosis"
+  },
+  {
+   "q": "A 31-year-old woman with Sjögren syndrome has recurrent calcium phosphate stones. Labs show non-AG metabolic acidosis, K 2.7 mEq/L, urine pH 6.6, and a positive urine anion gap. Which of the following is the most appropriate initial management?",
+   "options": [
+    "Start sodium bicarbonate before addressing potassium",
+    "Potassium-sparing diuretic",
+    "Fludrocortisone",
+    "Acetazolamide",
+    "Correct hypokalemia first, then begin alkali therapy"
+   ],
+   "answer": 4,
+   "explain": "Classic distal (type 1) RTA shows hypokalemia, non-AG acidosis, urine pH >5.5, low NH₄⁺ (positive UAG), and stones from hypocitraturia and hypercalciuria. Correct hypokalemia first, then give alkali to HCO₃⁻ 24–26. (A: Alkali before potassium risks worsening hypokalemia.) (B: Potassium-sparing diuretics aren't the therapy.) (C: Fludrocortisone is for type 4 with hypoaldosteronism.) (D: Acetazolamide causes acidosis.) Source: Ch 0058, Non–Anion Gap Metabolic Acidoses; Treatment"
+  },
+  {
+   "q": "A 70-year-old man with diabetic nephropathy (eGFR 38) taking lisinopril has K 5.9 mEq/L, non-AG metabolic acidosis (HCO₃⁻ 18) and urine pH 5.2. Which of the following is the most appropriate step to improve both abnormalities?",
+   "options": [
+    "IV calcium gluconate",
+    "Sodium bicarbonate alone",
+    "Increase lisinopril",
+    "Lower potassium (e.g., patiromer, low-K diet, review K-retaining drugs)",
+    "Start trimethoprim prophylaxis"
+   ],
+   "answer": 3,
+   "explain": "In type 4 RTA, hyperkalemia directly reduces ammoniagenesis. Restoring normokalemia (patiromer, low-K diet, stopping K-retaining drugs) improves net acid excretion and the acidosis. (A: Calcium is for emergent cardiac toxicity.) (B: Bicarbonate alone doesn't address potassium.) (C: More ACE inhibitor worsens K.) (E: Trimethoprim raises K.) Source: Ch 0058, Treatment: Non–Anion Gap Metabolic Acidoses"
+  },
+  {
+   "q": "A 27-year-old woman has 5 days of persistent vomiting. BP is 98/60 mm Hg with orthostatic tachycardia. pH 7.54, HCO₃⁻ 38, K 2.9 mEq/L, urine Cl 8 mEq/L. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Acetazolamide",
+    "IV isotonic saline with potassium chloride",
+    "Dilute hydrochloric acid infusion",
+    "Spironolactone",
+    "Amiloride"
+   ],
+   "answer": 1,
+   "explain": "Vomiting-related alkalosis is maintained by volume, chloride and potassium depletion (low urine Cl). It's saline-responsive: give isotonic NaCl and KCl. (A: Acetazolamide is for patients who can't receive saline.) (C: Dilute HCl isn't advised.) (D: Spironolactone is for mineralocorticoid excess.) (E: Amiloride is for mineralocorticoid excess or Liddle.) Source: Ch 0058, Metabolic Alkalosis: Etiology; Treatment"
+  },
+  {
+   "q": "A 74-year-old man with decompensated heart failure on high-dose furosemide has pH 7.52, HCO₃⁻ 36 and K 3.6. He has pulmonary edema, so saline can't be given. His kidney function is adequate. Which of the following is most appropriate to correct the alkalosis?",
+   "options": [
+    "IV normal saline 2 L",
+    "Stop all diuretics and give albumin",
+    "IV acetazolamide, with potassium monitoring",
+    "Dilute HCl infusion",
+    "Sodium bicarbonate"
+   ],
+   "answer": 2,
+   "explain": "When conditions like heart failure prevent saline, acetazolamide 125–250 mg IV speeds renal bicarbonate loss in patients with adequate kidney function. Monitor for hypokalemia. (A: Saline would worsen pulmonary edema.) (B: This doesn't address the alkalosis directly.) (D: HCl isn't advised.) (E: Bicarbonate worsens alkalosis.) Source: Ch 0058, Treatment: Metabolic Alkalosis"
+  },
+  {
+   "q": "A 50-year-old man has chronic watery diarrhea and non-AG metabolic acidosis. Urine Na 30, K 20 and Cl 75 mEq/L. Urine pH is 6.2. What does the urine anion gap suggest?",
+   "options": [
+    "Distal RTA",
+    "Proximal RTA",
+    "Type 4 RTA",
+    "High-AG acidosis",
+    "Appropriately high urine ammonium, consistent with GI bicarbonate loss"
+   ],
+   "answer": 4,
+   "explain": "UAG = (30 + 20) − 75 = −25. A negative UAG suggests appropriately high urine ammonium, consistent with an extrarenal (GI) cause. Urine pH can exceed 6 in diarrhea because of high NH₄⁺. (A: RTA gives a positive UAG.) (B: RTA gives a positive UAG.) (C: RTA gives a positive UAG.) (D: The AG is normal.) Source: Ch 0058, Non–Anion Gap Metabolic Acidoses"
+  },
+  {
+   "q": "A 66-year-old woman in cardiogenic shock has lactic acidosis with pH 6.95 and HCO₃⁻ 6. If sodium bicarbonate is given, what is the appropriate goal?",
+   "options": [
+    "Raise arterial pH to no more than about 7.2 (HCO₃⁻ ≤12)",
+    "Normalize pH to 7.40 quickly",
+    "Give a large undiluted bolus to HCO₃⁻ 24",
+    "Bicarbonate is never given in lactic acidosis",
+    "Target pH 7.50 to counter ongoing lactate production"
+   ],
+   "answer": 0,
+   "explain": "For acute severe acidemia (pH <7.00), give enough bicarbonate to raise pH to no more than 7.2 or HCO₃⁻ to no more than 12. Returning pH to normal is deleterious: it can worsen lactate production, cause volume overload and hypercapnia, and produce overshoot alkalosis. (B: Normalizing pH is harmful.) (C: Large boluses are harmful.) (D: Bicarbonate is used for pH <7.0.) (E: Overshoot is harmful.) Source: Ch 0058, Approach to the Patient: L-Lactic Acid Acidosis"
+  },
+  {
+   "q": "A 68-year-old man with severe COPD and chronic hypercapnia (baseline PaCO₂ 62, HCO₃⁻ 36) is intubated for pneumonia. The ventilator is set to bring his PaCO₂ down to 38 within an hour. Which of the following is the most appropriate approach?",
+   "options": [
+    "Continue; rapid normalization of PaCO₂ is ideal",
+    "Add sodium bicarbonate",
+    "Give acetazolamide immediately",
+    "Lower PaCO₂ gradually toward his baseline, providing Cl⁻ and K⁺",
+    "Increase sedation and stop ventilation"
+   ],
+   "answer": 3,
+   "explain": "Rapid correction of chronic hypercapnia can cause arrhythmias, reduced cerebral perfusion and seizures, plus posthypercapnic alkalosis. Lower PaCO₂ gradually toward baseline and give Cl⁻ and K⁺ so the kidneys can excrete HCO₃⁻. (A: Rapid normalization is harmful.) (B: Bicarbonate is inappropriate with an already high HCO₃⁻.) (C: Acetazolamide may be considered later for posthypercapnic alkalosis but isn't the first step.) (E: Withdrawing ventilation is dangerous.) Source: Ch 0058, Treatment: Respiratory Acidosis"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0066-anemia-and-polycythemia",
+ "name": "Anemia and Polycythemia (Harrison Ch 66)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 66: Anemia and Polycythemia.",
+ "chapter": "Hematology",
+ "flashcards": [
+  {
+   "front": "Source and regulation of erythropoietin?",
+   "back": "Renal peritubular cells; HIF-1a (degraded when oxygen is available)"
+  },
+  {
+   "front": "How much can marrow output increase with EPO?",
+   "back": "4-5 fold in 1-2 weeks, only with adequate iron"
+  },
+  {
+   "front": "Three compensations for anemia and their timing?",
+   "back": "Increased cardiac output (minutes), increased 2,3-DPG (hours-days), increased plasma volume (weeks)"
+  },
+  {
+   "front": "Normal MCV?",
+   "back": "85-95 fL"
+  },
+  {
+   "front": "Normal hemoglobin in pregnancy?",
+   "back": "~12 g/dL"
+  },
+  {
+   "front": "Spherocytes indicate?",
+   "back": "Membrane loss: hereditary spherocytosis or autoimmune hemolytic anemia"
+  },
+  {
+   "front": "Schistocytes indicate?",
+   "back": "Red cell fragmentation: microangiopathic hemolysis (TTP), valve hemolysis"
+  },
+  {
+   "front": "Target cells indicate?",
+   "back": "Liver disease, thalassemia, hemoglobinopathy"
+  },
+  {
+   "front": "Basophilic stippling indicates?",
+   "back": "Thalassemia or lead poisoning"
+  },
+  {
+   "front": "Howell-Jolly bodies indicate?",
+   "back": "Absent or nonfunctioning spleen"
+  },
+  {
+   "front": "Burr cells vs spur cells?",
+   "back": "Burr: uremia, liver disease, artifact. Spur: severe liver disease"
+  },
+  {
+   "front": "Myelophthisic smear?",
+   "back": "Teardrops, nucleated RBCs, immature WBCs; marrow infiltration; marrow exam mandatory"
+  },
+  {
+   "front": "Corrected reticulocyte count formula?",
+   "back": "Measured % x (patient Hct / 45)"
+  },
+  {
+   "front": "High vs low reticulocyte count in anemia?",
+   "back": "High: bleeding or hemolysis. Low: underproduction"
+  },
+  {
+   "front": "Proportion of anemia that is hypoproliferative?",
+   "back": "At least 75% (mostly iron deficiency or inflammation)"
+  },
+  {
+   "front": "Indications for bone marrow exam?",
+   "back": "Blasts, severe pancytopenia, retic <0.1%, nucleated RBCs/teardrops, lymphoma staging, unexplained severe anemia"
+  },
+  {
+   "front": "Bone marrow biopsy vs aspirate order?",
+   "back": "Biopsy before aspirate"
+  },
+  {
+   "front": "Causes of microcytic anemia?",
+   "back": "Iron deficiency, thalassemia, anemia of inflammation, sideroblastic anemia"
+  },
+  {
+   "front": "Oval vs round macrocytes?",
+   "back": "Oval: B12/folate, chemotherapy, antiseizure drugs, MDS. Round: alcohol, liver disease, hypothyroidism, reticulocytosis, smoking"
+  },
+  {
+   "front": "Laboratory signs of hemolysis?",
+   "back": "High LDH, low haptoglobin, free hemoglobin, high reticulocytes"
+  },
+  {
+   "front": "Ferritin indicating depleted iron stores?",
+   "back": "<30 ug/L; >200 means some stores present"
+  },
+  {
+   "front": "Normal transferrin saturation?",
+   "back": "25-50%"
+  },
+  {
+   "front": "RDW in iron deficiency vs thalassemia?",
+   "back": "Iron deficiency: high. Thalassemia: low"
+  },
+  {
+   "front": "Megaloblastic anemia blood and marrow findings?",
+   "back": "Macrocytosis, hypersegmented neutrophils, hypercellular marrow with large abnormal precursors"
+  },
+  {
+   "front": "Macro-ovalocytes with normal B12 and folate?",
+   "back": "Concern for myelodysplasia; bone marrow exam"
+  },
+  {
+   "front": "Mechanisms of anemia of inflammation?",
+   "back": "Low EPO for degree of anemia and high hepcidin blocking iron absorption and release"
+  },
+  {
+   "front": "GFR below which anemia is almost always present?",
+   "back": "<30 mL/min/1.73 m2"
+  },
+  {
+   "front": "Drug class that suppresses EPO production?",
+   "back": "ACE inhibitors"
+  },
+  {
+   "front": "Pure red cell aplasia causes and findings?",
+   "back": "Autoimmune, parvovirus B19; very low retic, absent erythroid precursors"
+  },
+  {
+   "front": "Clear indications for transfusion in anemia?",
+   "back": "Hypotension or cardiac compromise (angina)"
+  },
+  {
+   "front": "Hemoglobin levels prompting polycythemia concern?",
+   "back": ">17 g/dL men, >15 g/dL women"
+  },
+  {
+   "front": "Hematocrit almost always reflecting increased red cell mass?",
+   "back": ">60% men, >55% women"
+  },
+  {
+   "front": "Polycythemia vera clues?",
+   "back": "Aquagenic pruritus, splenomegaly, leukocytosis, basophilia, thrombocytosis, splanchnic thrombosis"
+  },
+  {
+   "front": "Polycythemia vera EPO and mutation?",
+   "back": "Low EPO; JAK2 V617F in 90-95% (exon 12 in many others)"
+  },
+  {
+   "front": "Polycythemia with high EPO in a smoker?",
+   "back": "Check carboxyhemoglobin; smoker's polycythemia; stop smoking"
+  },
+  {
+   "front": "EPO-secreting tumors causing polycythemia?",
+   "back": "Renal cancer/cysts, hepatoma, uterine leiomyoma, cerebellar hemangioma"
+  },
+  {
+   "front": "Drugs causing polycythemia?",
+   "back": "Testosterone, erythropoietin, SGLT2 inhibitors (also diuretics: relative)"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 60-year-old man has a hematocrit of 23%. The laboratory reports a reticulocyte count of 1.0% (manual percentage). What does this indicate?",
+   "options": [
+    "Appropriate marrow response to hemolysis",
+    "Underproduction; the corrected reticulocyte count is about 0.5%",
+    "Acute blood loss with brisk compensation",
+    "A normal reticulocyte response",
+    "The count can't be interpreted without a bone marrow"
+   ],
+   "answer": 1,
+   "explain": "The reticulocyte percentage rises artificially as the hematocrit falls. Corrected count = 1.0 × (23/45) ≈ 0.5%, which is inappropriately low and indicates impaired production. (A: Hemolysis would raise the corrected count.) (C: Brisk compensation would raise the corrected count.) (D: Low for this degree of anemia.) (E: It can be interpreted with the correction.) Source: Ch 0066, The Reticulocyte Count"
+  },
+  {
+   "q": "A 34-year-old woman with heavy menstrual periods has fatigue and craves ice. Hb is 9.2 g/dL, MCV 72 fL, reticulocyte count low. Which test should be ordered first?",
+   "options": [
+    "Hemoglobin electrophoresis",
+    "Bone marrow aspirate",
+    "Vitamin B12 level",
+    "Serum ferritin",
+    "Direct antiglobulin test"
+   ],
+   "answer": 3,
+   "explain": "For low-reticulocyte microcytic anemia, check ferritin first. Ferritin <30 µg/L indicates depleted stores. Menstrual losses make iron deficiency common. (A: Electrophoresis comes if ferritin is normal.) (B: Marrow isn't the first test.) (C: B12 is for macrocytic anemia.) (E: DAT is for hemolysis with a high retic count.) Source: Ch 0066, Evaluation of Anemia; Nutritional"
+  },
+  {
+   "q": "A 26-year-old man of Mediterranean descent has Hb 11.8 g/dL, MCV 64 fL, a normal RDW and a normal ferritin. He has no symptoms. Which of the following is the most likely diagnosis?",
+   "options": [
+    "Thalassemia",
+    "Iron deficiency",
+    "Anemia of inflammation",
+    "Sideroblastic anemia from lead",
+    "Vitamin B12 deficiency"
+   ],
+   "answer": 0,
+   "explain": "Microcytosis with normal ferritin points to thalassemia. Thalassemic cells are uniform (low RDW), while iron deficiency causes anisocytosis (high RDW). (B: Ferritin is normal.) (C: Inflammation is a diagnosis of exclusion with an inflammatory disorder.) (D: Nothing suggests lead or sideroblastic anemia.) (E: B12 deficiency is macrocytic.) Source: Ch 0066, Evaluation of Anemia"
+  },
+  {
+   "q": "A 41-year-old woman has 2 weeks of fatigue and jaundice. Hb is 7.9 g/dL, reticulocytes 9%, LDH elevated, haptoglobin undetectable, and the smear shows many spherocytes. Which test is most appropriate next?",
+   "options": [
+    "Bone marrow biopsy",
+    "Serum ferritin",
+    "Hemoglobin electrophoresis",
+    "Vitamin B12 level",
+    "Direct antiglobulin (Coombs) test"
+   ],
+   "answer": 4,
+   "explain": "High reticulocytes with ↑ LDH, ↓ haptoglobin and spherocytes indicate hemolysis. Autoimmune hemolytic anemia shows spherocytes and red cell autoantibodies on direct antiglobulin testing. (A: Marrow isn't needed.) (B: Iron studies don't address hemolysis.) (C: Electrophoresis evaluates hemoglobinopathies.) (D: B12 doesn't fit the picture.) Source: Ch 0066, Hyperproduction: Hemolysis; Evaluation of Anemia"
+  },
+  {
+   "q": "A 70-year-old woman has Hb 9.0 g/dL, MCV 118 fL, and a smear showing macro-ovalocytes and hypersegmented neutrophils. She has numbness in her feet. Which of the following is the most appropriate next step?",
+   "options": [
+    "Bone marrow biopsy first",
+    "Thyroid function only",
+    "Vitamin B12 and folate levels",
+    "Iron studies",
+    "Hemoglobin electrophoresis"
+   ],
+   "answer": 2,
+   "explain": "Megaloblastic features (macro-ovalocytes, hypersegmented neutrophils) with neuropathy call for B12 and folate levels. (A: Marrow is for normal nutrient levels.) (B: Hypothyroidism causes round macrocytes.) (D: Iron studies are for microcytosis.) (E: Electrophoresis is for microcytosis.) Source: Ch 0066, Evaluation of Anemia; Nutritional"
+  },
+  {
+   "q": "A 76-year-old man has macrocytic anemia (MCV 106 fL) with mild thrombocytopenia. The smear shows oval macrocytes. B12, folate, TSH and liver tests are normal, and he doesn't drink alcohol. Which of the following is the most appropriate next step?",
+   "options": [
+    "Empiric B12 injections",
+    "Bone marrow examination",
+    "Repeat CBC in 1 year",
+    "Abdominal ultrasound",
+    "Start erythropoietin"
+   ],
+   "answer": 1,
+   "explain": "Oval macrocytes with normal nutritional tests raise concern for myelodysplasia, so bone marrow testing is next. (A: Empiric B12 isn't appropriate with a normal level.) (C: Waiting delays diagnosis.) (D: Imaging doesn't evaluate marrow.) (E: EPO before diagnosis isn't appropriate.) Source: Ch 0066, Evaluation of Anemia; Stem Cell Defects"
+  },
+  {
+   "q": "A 68-year-old man with prostate cancer has new anemia. The smear shows teardrop cells, nucleated red cells and immature white cells. Which of the following is the most appropriate next step?",
+   "options": [
+    "Oral iron trial",
+    "Erythropoietin",
+    "Reassurance",
+    "Bone marrow examination",
+    "Hemoglobin electrophoresis"
+   ],
+   "answer": 3,
+   "explain": "A myelophthisic smear (nucleated RBCs, teardrops, immature WBCs) indicates marrow infiltration, here possibly by prostate cancer, and mandates marrow examination. (A: Iron doesn't address infiltration.) (B: EPO doesn't address infiltration.) (C: Reassurance is inappropriate.) (E: Electrophoresis is irrelevant.) Source: Ch 0066, Marrow Replacement; Bone Marrow Exam"
+  },
+  {
+   "q": "A 72-year-old man with coronary artery disease has new chest pain at rest. Hb is 6.8 g/dL from a slow GI bleed, and the workup has just begun. Which of the following is the most appropriate immediate step?",
+   "options": [
+    "Red cell transfusion",
+    "Oral iron and outpatient follow-up",
+    "Erythropoietin",
+    "Defer any treatment until the cause is known",
+    "IV vitamin B12"
+   ],
+   "answer": 0,
+   "explain": "Clear indications for transfusion include hypotension or signs of cardiac compromise such as angina, even while the workup is ongoing. (B: Too slow with ongoing ischemia.) (C: Too slow with ongoing ischemia.) (D: Supportive transfusion shouldn't wait.) (E: B12 isn't indicated.) Source: Ch 0066, Treatment: Anemia"
+  },
+  {
+   "q": "A 58-year-old man has Hb 19.2 g/dL, oxygen saturation 97%, aquagenic pruritus and a palpable spleen. Platelets and basophils are elevated. Which of the following is the most appropriate next step?",
+   "options": [
+    "Arterial blood gas only",
+    "Abdominopelvic CT for renal tumor",
+    "Carboxyhemoglobin level",
+    "Sleep study",
+    "Serum EPO level and JAK2 V617F mutation testing"
+   ],
+   "answer": 4,
+   "explain": "Polycythemia with normal oxygen saturation, aquagenic pruritus, splenomegaly, basophilia and thrombocytosis suggests polycythemia vera. Check EPO (low in PV) and JAK2 V617F (positive in 90–95%). (A: Saturation is already normal.) (B: CT is for high-EPO secondary polycythemia.) (C: Carboxyhemoglobin is for smokers with high EPO.) (D: A sleep study is for hypoxia-driven polycythemia.) Source: Ch 0066, Polycythemia; Approach to the Patient"
+  },
+  {
+   "q": "A 49-year-old man who smokes two packs daily has Hct 54%. Oxygen saturation by pulse oximetry is 96%, the spleen isn't enlarged, and serum EPO is elevated. Which of the following is the most appropriate next step?",
+   "options": [
+    "JAK2 testing and hydroxyurea",
+    "Bone marrow biopsy",
+    "Measure carboxyhemoglobin and urge smoking cessation",
+    "Start erythropoietin",
+    "Echocardiogram for congenital heart disease"
+   ],
+   "answer": 2,
+   "explain": "Smokers with normal saturation can have high EPO because carbon monoxide displaces oxygen. A high carboxyhemoglobin confirms smoker's polycythemia. Urge cessation, and phlebotomy if he can't stop. (A: High EPO argues against PV.) (B: Marrow isn't indicated.) (D: EPO is contraindicated.) (E: Nothing suggests a shunt.) Source: Ch 0066, Approach to the Patient: Polycythemia"
+  },
+  {
+   "q": "A 45-year-old nonsmoking woman has persistent Hct 55%, normal oxygen saturation, normal spleen size, negative JAK2 testing and an elevated EPO level. She doesn't live at altitude. Which of the following is the most appropriate next step?",
+   "options": [
+    "Phlebotomy and no further workup",
+    "Abdominopelvic CT",
+    "Hydroxyurea",
+    "Repeat CBC in 1 year",
+    "Chest radiograph only"
+   ],
+   "answer": 1,
+   "explain": "With elevated EPO, normal saturation and no smoking, look for autonomous EPO production. Hepatoma, uterine leiomyoma, and renal cancer or cysts are detectable with abdominopelvic CT. High-affinity hemoglobin is another consideration. (A: The cause must be found.) (C: Hydroxyurea is for PV.) (D: Delay may miss a tumor.) (E: Chest radiograph alone is insufficient.) Source: Ch 0066, Approach to the Patient: Polycythemia"
+  },
+  {
+   "q": "A 30-year-old woman has a sudden drop in hemoglobin to 5.8 g/dL with a reticulocyte count near zero. White cells and platelets are normal. Bone marrow shows absent erythroid precursors with normal other lineages. Which infection is a recognized cause?",
+   "options": [
+    "Epstein-Barr virus",
+    "Hepatitis C",
+    "Cytomegalovirus",
+    "HIV",
+    "Parvovirus B19"
+   ],
+   "answer": 4,
+   "explain": "Pure red cell aplasia (very low reticulocytes, absent erythroid precursors, other lineages spared) can be autoimmune or caused by parvovirus B19. (A: The source names parvovirus B19 as the infectious cause.) (B: The source names parvovirus B19 as the infectious cause.) (C: The source names parvovirus B19 as the infectious cause.) (D: The source names parvovirus B19 as the infectious cause.) Source: Ch 0066, Absence of Red Cell Precursors"
+  },
+  {
+   "q": "Which serum ferritin value indicates depleted body iron stores in an adult without inflammation?",
+   "options": [
+    "250 µg/L",
+    "120 µg/L",
+    "80 µg/L",
+    "18 µg/L",
+    "45 µg/L"
+   ],
+   "answer": 3,
+   "explain": "Serum ferritin <30 µg/L indicates depleted body iron stores. Ferritin is an acute-phase reactant, and >200 µg/L means there is at least some stored iron. (A: Above 30, so not depleted.) (B: Above 30, so not depleted.) (C: Above 30, so not depleted.) (E: Above 30, so not depleted.) Source: Ch 0066, Nutritional"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0069-bleeding-and-thrombosis",
+ "name": "Bleeding and Thrombosis (Harrison Ch 69)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 69: Bleeding and Thrombosis.",
+ "chapter": "Hematology",
+ "flashcards": [
+  {
+   "front": "Best predictor of bleeding risk?",
+   "back": "A personal bleeding history"
+  },
+  {
+   "front": "Mucosal bleeding suggests?",
+   "back": "Primary hemostasis disorder: platelet defects or von Willebrand disease"
+  },
+  {
+   "front": "Spontaneous hemarthroses suggest?",
+   "back": "Moderate-severe factor VIII or IX deficiency"
+  },
+  {
+   "front": "Main use of the ISTH bleeding assessment tool?",
+   "back": "Excluding a bleeding disorder; VWD screening in primary care"
+  },
+  {
+   "front": "Heavy menstrual bleeding definition and predictors?",
+   "back": ">80 mL/cycle; iron deficiency/transfusion, clots >1 inch, pad change more than hourly"
+  },
+  {
+   "front": "Heavy menses from menarche suggests?",
+   "back": "Underlying bleeding disorder (VWD, factor XI, platelet defects, hemophilia carriers)"
+  },
+  {
+   "front": "Why is postpartum hemorrhage delayed in VWD type 1 or hemophilia A carriers?",
+   "back": "VWF and factor VIII normalize during pregnancy then fall"
+  },
+  {
+   "front": "Timing of delayed bleeding after tonsillectomy or polypectomy?",
+   "back": "About 7 days (eschar loss)"
+  },
+  {
+   "front": "VWD types associated with GI angiodysplasia?",
+   "back": "Types 2 and 3"
+  },
+  {
+   "front": "Major cause of bleeding death in severe factor deficiency?",
+   "back": "CNS bleeding"
+  },
+  {
+   "front": "Duration of aspirin's antiplatelet effect clinically?",
+   "back": "Irreversible but function near-normal 2-3 days after last dose"
+  },
+  {
+   "front": "Vitamin K-dependent factors?",
+   "back": "II, VII, IX, X and proteins C, S, Z"
+  },
+  {
+   "front": "Platelet count thresholds for bleeding and procedures?",
+   "back": "Rare bleeding >50k; spontaneous <10-20k; most procedures OK >=50k"
+  },
+  {
+   "front": "Bernard-Soulier vs Glanzmann defects?",
+   "back": "Bernard-Soulier: GpIb-IX-V (adhesion). Glanzmann: GpIIb/IIIa (aggregation)"
+  },
+  {
+   "front": "Acquired causes of platelet secretion defects?",
+   "back": "Aspirin, NSAIDs, thienopyridines, uremia, paraprotein or penicillin coating"
+  },
+  {
+   "front": "Inherited venous thrombophilias?",
+   "back": "Factor V Leiden, prothrombin G20210A, antithrombin, protein C, protein S deficiency"
+  },
+  {
+   "front": "Conditions causing both venous and arterial thrombosis?",
+   "back": "APS, malignancy, hormonal therapy, PV, ET, PNH, TTP, HIT, DIC, homocystinuria"
+  },
+  {
+   "front": "Strongest predictor of VTE recurrence (no cancer)?",
+   "back": "Unprovoked (idiopathic) index event"
+  },
+  {
+   "front": "When to perform thrombophilia testing?",
+   "back": "Only if it changes care; steady state, >=3 weeks after stopping anticoagulation"
+  },
+  {
+   "front": "Effects of acute clot and anticoagulants on thrombophilia tests?",
+   "back": "Clot/heparin lower antithrombin; warfarin lowers protein C and S"
+  },
+  {
+   "front": "Is bleeding time recommended?",
+   "back": "No; doesn't predict bleeding risk"
+  },
+  {
+   "front": "Preop aPTT with negative bleeding history?",
+   "back": "Not useful"
+  },
+  {
+   "front": "Sample artifacts falsely prolonging clotting tests?",
+   "back": "Underfilled tubes (<90%) and hematocrit >55%"
+  },
+  {
+   "front": "Factors measured by the PT?",
+   "back": "I, II, V, VII, X"
+  },
+  {
+   "front": "INR limitation in liver disease?",
+   "back": "Only roughly predicts bleeding; overestimates risk when mildly elevated"
+  },
+  {
+   "front": "Isolated prolonged aPTT with no bleeding?",
+   "back": "Factor XII, prekallikrein, or HMWK deficiency"
+  },
+  {
+   "front": "Isolated prolonged PT causes?",
+   "back": "Factor VII deficiency, early vitamin K deficiency, warfarin"
+  },
+  {
+   "front": "PT and aPTT both prolonged causes?",
+   "back": "Factor II, V, X, fibrinogen deficiency; late vitamin K deficiency; direct thrombin inhibitors"
+  },
+  {
+   "front": "Thrombin time vs reptilase time with heparin?",
+   "back": "Thrombin time prolonged; reptilase normal"
+  },
+  {
+   "front": "Mixing study patterns?",
+   "back": "Deficiency: corrects. Lupus anticoagulant: no correction. Acquired VIII inhibitor: corrects then prolongs with incubation"
+  },
+  {
+   "front": "Lupus anticoagulant confirmation criteria?",
+   "back": "Prolonged phospholipid-dependent test (dRVVT), no correction on mixing, correction with added phospholipid"
+  },
+  {
+   "front": "Factor XIII deficiency test?",
+   "back": "Clot solubility (PT and aPTT normal)"
+  },
+  {
+   "front": "Test to measure apixaban or LMWH levels?",
+   "back": "Anti-factor Xa assay"
+  },
+  {
+   "front": "Gold standard for platelet function disorders?",
+   "back": "Platelet aggregometry"
+  },
+  {
+   "front": "Is the PT reliable on apixaban?",
+   "back": "No; often normal"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 19-year-old woman has had heavy menstrual periods since menarche, changing pads more than hourly and passing large clots. She had prolonged bleeding after a wisdom tooth extraction and frequent gum bleeding after dental cleanings. Platelet count and PT are normal. Which of the following is the most appropriate next evaluation?",
+   "options": [
+    "Von Willebrand factor assays (with factor VIII)",
+    "Factor XIII clot solubility test only",
+    "Bleeding time",
+    "Thrombophilia panel",
+    "Bone marrow biopsy"
+   ],
+   "answer": 0,
+   "explain": "Mucosal bleeding (heavy menses from menarche, dental bleeding, gum bleeding) suggests a primary hemostatic disorder, most commonly VWD. Evaluate with VWF assays. (B: Factor XIII deficiency doesn't explain the mucosal pattern as well.) (C: Bleeding time doesn't predict bleeding and isn't recommended.) (D: Thrombophilia testing is for clotting.) (E: Marrow isn't indicated with a normal platelet count.) Source: Ch 0069, History of Bleeding; Measures of Platelet Function"
+  },
+  {
+   "q": "A 45-year-old man is scheduled for elective hernia repair. He has had several prior surgeries and dental extractions without excess bleeding and no family history of bleeding. Which preoperative coagulation testing is supported?",
+   "options": [
+    "aPTT and PT",
+    "Bleeding time",
+    "No routine aPTT testing based on a negative bleeding history",
+    "PFA-100",
+    "Factor VIII and IX levels"
+   ],
+   "answer": 2,
+   "explain": "A bleeding history is the most important predictor of bleeding risk. Studies haven't confirmed the usefulness of a preoperative aPTT in patients with a negative bleeding history. (A: Routine aPTT isn't supported.) (B: Bleeding time isn't recommended.) (D: PFA-100 isn't validated to predict bleeding.) (E: Factor assays aren't indicated without a suspicious history.) Source: Ch 0069, Laboratory Evaluation"
+  },
+  {
+   "q": "A 52-year-old woman has an isolated prolonged aPTT found before surgery. She has never had abnormal bleeding despite childbirth and a hysterectomy, and has no history of thrombosis or pregnancy loss. Mixing corrects the aPTT. Which deficiency is most likely?",
+   "options": [
+    "Factor VIII",
+    "Factor IX",
+    "Factor VII",
+    "Fibrinogen",
+    "Factor XII"
+   ],
+   "answer": 4,
+   "explain": "An isolated prolonged aPTT that corrects with mixing, without clinical bleeding, fits deficiency of factor XII, prekallikrein or HMWK. These don't cause bleeding. (A: Factor VIII deficiency causes bleeding.) (B: Factor IX deficiency causes bleeding.) (C: Factor VII prolongs the PT.) (D: Fibrinogen deficiency prolongs both PT and aPTT.) Source: Ch 0069, Table 69-3"
+  },
+  {
+   "q": "A 31-year-old woman with three first-trimester pregnancy losses has an isolated prolonged aPTT that doesn't correct with 1:1 mixing. She has no bleeding symptoms. Which of the following is the most appropriate next step?",
+   "options": [
+    "Factor VIII inhibitor (Bethesda) titer and recombinant factor VIIa",
+    "Confirm a lupus anticoagulant (e.g., dilute Russell viper venom time with phospholipid correction) and test for antiphospholipid antibodies",
+    "Factor XII level",
+    "Vitamin K",
+    "Fresh frozen plasma"
+   ],
+   "answer": 1,
+   "explain": "A prolonged aPTT that doesn't correct on mixing, with pregnancy loss and no bleeding, suggests a lupus anticoagulant. Confirmation requires a prolonged phospholipid-dependent test, no correction on mixing, and correction with added phospholipid, plus antiphospholipid antibody testing. (A: An inhibitor work-up is for bleeding patients.) (C: Factor deficiencies correct on mixing.) (D: Vitamin K doesn't apply.) (E: FFP isn't indicated.) Source: Ch 0069, Mixing Studies; Testing for Antiphospholipid Antibodies"
+  },
+  {
+   "q": "A 74-year-old man with no prior bleeding history develops extensive bruising and a large thigh hematoma. The aPTT is prolonged. On mixing with normal plasma, the aPTT corrects immediately but becomes prolonged again after incubation at 37°C. What is the most likely diagnosis?",
+   "options": [
+    "Lupus anticoagulant",
+    "Mild hemophilia A",
+    "Factor XII deficiency",
+    "Acquired factor VIII inhibitor",
+    "Vitamin K deficiency"
+   ],
+   "answer": 3,
+   "explain": "Acquired neutralizing factor VIII antibodies may correct immediately on mixing but prolong with incubation at 37°C. Muscle and soft tissue bleeding is common in acquired factor VIII deficiency. (A: Lupus anticoagulant shows no correction and doesn't cause bleeding.) (B: Mild hemophilia A would correct and stay corrected, and would be lifelong.) (C: Factor XII deficiency causes no bleeding.) (E: Vitamin K deficiency prolongs the PT.) Source: Ch 0069, Mixing Studies; History of Bleeding"
+  },
+  {
+   "q": "A 68-year-old man with poor oral intake has received broad-spectrum antibiotics for 10 days in the ICU. His PT is prolonged and the aPTT is normal. Which of the following is the most likely explanation?",
+   "options": [
+    "Early vitamin K deficiency",
+    "Hemophilia B",
+    "Lupus anticoagulant",
+    "Factor XIII deficiency",
+    "Von Willebrand disease"
+   ],
+   "answer": 0,
+   "explain": "An isolated prolonged PT is seen with factor VII deficiency, early vitamin K deficiency, or warfarin. Poor intake plus antibiotics favors vitamin K deficiency, because factor VII has the shortest half-life. (B: Hemophilia B prolongs the aPTT.) (C: Lupus anticoagulant usually prolongs the aPTT.) (D: Factor XIII deficiency has a normal PT and aPTT.) (E: VWD has a normal PT.) Source: Ch 0069, Table 69-3; Underlying Systemic Diseases"
+  },
+  {
+   "q": "A hospitalized patient's coagulation sample, drawn from a central line kept open with heparin flushes, shows a markedly prolonged thrombin time with a normal reptilase time. Which of the following is the most appropriate next step?",
+   "options": [
+    "Fibrinogen concentrate",
+    "Diagnose dysfibrinogenemia",
+    "Redraw the sample peripherally to exclude heparin contamination",
+    "Start cryoprecipitate",
+    "Order a lupus anticoagulant panel"
+   ],
+   "answer": 2,
+   "explain": "The thrombin time, but not the reptilase time, is prolonged by heparin. A sample drawn from a heparinized line should be redrawn to exclude contamination. (A: Low fibrinogen prolongs both tests.) (B: Dysfibrinogenemia prolongs both tests.) (D: Cryoprecipitate isn't indicated.) (E: A lupus anticoagulant panel isn't indicated.) Source: Ch 0069, Other Coagulation Tests"
+  },
+  {
+   "q": "A 38-year-old man completes 6 months of anticoagulation for an unprovoked DVT. His physician is considering a thrombophilia evaluation that would influence the decision to extend therapy. When should functional assays (antithrombin, protein C, protein S) be drawn?",
+   "options": [
+    "During the acute thrombosis, before anticoagulation",
+    "While on warfarin",
+    "While on heparin",
+    "Within 24 hours of stopping a DOAC",
+    "In steady state, at least 3 weeks after stopping anticoagulation"
+   ],
+   "answer": 4,
+   "explain": "Thrombophilia testing should be done in steady state, remote from the acute event. Acute thrombosis and heparin lower antithrombin, warfarin lowers proteins C and S, and DOACs interfere with functional assays. Stop after 3–6 months of treatment and test at least 3 weeks later. (A: Acute thrombosis distorts the results.) (B: Warfarin distorts the results.) (C: Heparin distorts the results.) (D: 24 hours off a DOAC is too soon.) Source: Ch 0069, Laboratory Testing for Thrombophilia"
+  },
+  {
+   "q": "A 64-year-old woman with chronic ITP has a stable platelet count of 62,000/µL and no bleeding history. She needs an elective colonoscopy with possible polypectomy. Regarding her platelet count, which statement is most accurate?",
+   "options": [
+    "Most procedures can be performed at a platelet count of 50,000/µL or greater",
+    "Platelet transfusion to >150,000/µL is required",
+    "Spontaneous bleeding is likely at this count",
+    "The procedure must be canceled",
+    "Bleeding time should guide the decision"
+   ],
+   "answer": 0,
+   "explain": "Bleeding rarely occurs with isolated thrombocytopenia above 50,000/µL, and most procedures can be performed at ≥50,000/µL. (B: Transfusion to normal isn't needed.) (C: Spontaneous bleeding usually needs counts <10,000–20,000.) (D: The procedure doesn't need to be canceled.) (E: Bleeding time isn't predictive.) Source: Ch 0069, Underlying Systemic Diseases (platelets)"
+  },
+  {
+   "q": "A 3-year-old boy has recurrent painful swollen knees and ankles after minor falls, and a large muscle hematoma after an immunization. His maternal uncle had similar problems. The aPTT is prolonged; PT and platelets are normal. Which of the following is the most appropriate next test?",
+   "options": [
+    "Factor VII level",
+    "Platelet aggregometry",
+    "Bleeding time",
+    "Factor VIII and IX assays",
+    "Thrombin time"
+   ],
+   "answer": 3,
+   "explain": "Spontaneous hemarthroses and muscle hematomas are the hallmark of moderate–severe factor VIII or IX deficiency. With an X-linked pattern and isolated aPTT prolongation, specific factor assays are needed. (A: Factor VII prolongs the PT.) (B: Platelet defects cause mucosal bleeding.) (C: Bleeding time isn't recommended.) (E: Thrombin time tests fibrinogen.) Source: Ch 0069, History of Bleeding; Specific Factor Assays"
+  },
+  {
+   "q": "A 60-year-old man takes daily aspirin for primary prevention and is scheduled for a procedure with high bleeding risk. His surgeon asks how long the antiplatelet effect lasts. Which statement is correct?",
+   "options": [
+    "Aspirin's effect lasts only 6 hours",
+    "Aspirin irreversibly inhibits platelets, but platelet function returns to near-normal 2–3 days after the last dose",
+    "Aspirin effect lasts 30 days",
+    "Aspirin has no effect on primary hemostasis",
+    "Aspirin's effect is reversed when the drug is removed, like other NSAIDs"
+   ],
+   "answer": 1,
+   "explain": "Aspirin's effect lasts for the life of the platelet, but with typical turnover, function returns to near-normal within 2–3 days. Other NSAIDs are reversible. (A: The effect lasts much longer.) (C: The effect resolves much sooner.) (D: Aspirin impairs primary hemostasis.) (E: That reversible pattern describes other NSAIDs.) Source: Ch 0069, Prohemorrhagic Effects of Medications"
+  },
+  {
+   "q": "A 55-year-old man with polycythemia (hematocrit 63%) has a prolonged PT and aPTT on routine labs but no bleeding history. Which of the following best explains the results?",
+   "options": [
+    "Disseminated intravascular coagulation",
+    "Liver failure",
+    "Artifact from a reduced plasma-to-citrate ratio at hematocrit >55%",
+    "Factor X deficiency",
+    "Lupus anticoagulant"
+   ],
+   "answer": 2,
+   "explain": "A hematocrit above 55% lowers the plasma-to-anticoagulant ratio and can falsely prolong clotting times. Abnormal results without a bleeding history often normalize with proper sampling. (A: Nothing suggests DIC.) (B: Nothing suggests liver failure.) (D: An isolated factor deficiency isn't suggested.) (E: Lupus anticoagulant wouldn't explain this pattern as well.) Source: Ch 0069, Laboratory Evaluation"
+  },
+  {
+   "q": "A child has lifelong mucocutaneous bleeding with a normal platelet count. Platelet aggregation studies show absent aggregation to all agonists except ristocetin. Which defect is most likely?",
+   "options": [
+    "Glycoprotein Ib-IX-V deficiency (Bernard-Soulier)",
+    "Von Willebrand factor deficiency",
+    "Factor VIII deficiency",
+    "Storage pool disease from aspirin",
+    "Glycoprotein IIb/IIIa deficiency (Glanzmann thrombasthenia)"
+   ],
+   "answer": 4,
+   "explain": "Glanzmann thrombasthenia (absent or dysfunctional GpIIb/IIIa) is a platelet aggregation defect. Aggregation is absent to all agonists except ristocetin, which depends on GpIb and VWF. (A: Bernard-Soulier is an adhesion defect (GpIb-IX-V).) (B: VWD is also an adhesion defect.) (C: Factor VIII affects secondary hemostasis.) (D: Aspirin doesn't abolish aggregation to all agonists.) Source: Ch 0069, Table 69-1; Platelet Plug Formation"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0075-prevention-and-early-detection-of-cancer",
+ "name": "Prevention and Early Detection of Cancer (Harrison Ch 75)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 75: Prevention and Early Detection of Cancer.",
+ "chapter": "Oncology",
+ "flashcards": [
+  {
+   "front": "Lung cancer mortality reduction 10 years after quitting smoking?",
+   "back": "30-50% lower"
+  },
+  {
+   "front": "Are light or low-tar cigarettes safer?",
+   "back": "No; smokers inhale them more deeply and frequently"
+  },
+  {
+   "front": "Proportion of adult smokers who started before 18?",
+   "back": ">80%"
+  },
+  {
+   "front": "Pharmacologic smoking cessation aids?",
+   "back": "Nicotine replacement, bupropion, varenicline"
+  },
+  {
+   "front": "Did low-fat, high-fiber diets reduce polyps or breast/colon cancer in RCTs?",
+   "back": "No (Polyp Prevention Trial, WHI)"
+  },
+  {
+   "front": "Cancers inversely associated with high BMI?",
+   "back": "Prostate and premenopausal breast cancer"
+  },
+  {
+   "front": "Effect of sunscreen on skin cancer precursors?",
+   "back": "Decreases actinic keratoses (SCC precursor); melanoma benefit uncertain"
+  },
+  {
+   "front": "Proportion of melanomas arising de novo?",
+   "back": "70-80%"
+  },
+  {
+   "front": "Second primary risk after cured head and neck/lung SCC?",
+   "back": "Up to 5% per year"
+  },
+  {
+   "front": "Effect of beta-carotene in smokers (ATBC, CARET)?",
+   "back": "Increased lung cancer incidence and mortality"
+  },
+  {
+   "front": "Is aspirin recommended for colorectal cancer prevention?",
+   "back": "No; insufficient evidence, clear bleeding harm"
+  },
+  {
+   "front": "Tamoxifen prevention benefit and harms?",
+   "back": "49% fewer breast cancers; fewer fractures; more endometrial cancer, stroke, VTE"
+  },
+  {
+   "front": "Raloxifene vs tamoxifen for prevention?",
+   "back": "Postmenopausal only; comparable, no endometrial cancer, fewer clots, slightly less effective"
+  },
+  {
+   "front": "Gail 5-year risk threshold for SERM prevention?",
+   "back": ">=1.66%"
+  },
+  {
+   "front": "Exemestane for breast cancer prevention?",
+   "back": "65% relative reduction in invasive cancer; arthralgias, hot flashes"
+  },
+  {
+   "front": "Finasteride in PCPT?",
+   "back": "Fewer prostate cancers but more Gleason >=7; no mortality difference; not FDA-approved for prevention"
+  },
+  {
+   "front": "Vitamin E in SELECT?",
+   "back": "Trend toward increased prostate cancer"
+  },
+  {
+   "front": "HPV vaccine schedule?",
+   "back": "2 doses ages 9-14; 3 doses if started 15-26"
+  },
+  {
+   "front": "HPV types in nonavalent vaccine and cancer share of 16/18?",
+   "back": "6, 11, 16, 18, 31, 33, 45, 52, 58; 16/18 cause >70% of cervical cancer"
+  },
+  {
+   "front": "Benefit of salpingo-oophorectomy in BRCA carriers?",
+   "back": "Reduces ovarian/peritoneal cancer and breast cancer (~50%, greatest <45-50)"
+  },
+  {
+   "front": "Sensitivity and specificity formulas?",
+   "back": "Sensitivity a/(a+c); specificity d/(b+d)"
+  },
+  {
+   "front": "Which test characteristic most affects PPV in low-prevalence disease?",
+   "back": "Specificity"
+  },
+  {
+   "front": "Lead-time bias?",
+   "back": "Earlier diagnosis lengthens apparent survival without prolonging life"
+  },
+  {
+   "front": "Length-biased sampling and overdiagnosis?",
+   "back": "Screening detects slow-growing tumors; extreme form detects pseudo-disease that would never cause harm"
+  },
+  {
+   "front": "Strongest evidence for a screening test?",
+   "back": "RCT with cause-specific mortality endpoint"
+  },
+  {
+   "front": "USPSTF mammography recommendation?",
+   "back": "Biennial ages 40-74 (B); >=75 insufficient"
+  },
+  {
+   "front": "Breast MRI screening indication (ACS)?",
+   "back": "Lifetime risk >20%: annual MRI plus mammography"
+  },
+  {
+   "front": "Breast self-exam effect on mortality?",
+   "back": "None; more benign biopsies"
+  },
+  {
+   "front": "Cervical screening schedule?",
+   "back": "<21 none; 21-29 cytology q3y; 30-65 cytology q3y, HPV q5y, or co-test q5y; stop >65 if adequate negatives"
+  },
+  {
+   "front": "Colorectal screening ages (USPSTF)?",
+   "back": "45-49 (B), 50-75 (A), 76-85 selective (C)"
+  },
+  {
+   "front": "CRC screening test intervals?",
+   "back": "FIT/FOBT yearly; stool DNA q3y; sigmoidoscopy q5y; CT colonography q5y; colonoscopy q10y"
+  },
+  {
+   "front": "Fraction of positive FOBTs that are cancer?",
+   "back": "2-10%"
+  },
+  {
+   "front": "Adenoma found on sigmoidoscopy?",
+   "back": "Colonoscopy of the entire colon"
+  },
+  {
+   "front": "Lung cancer screening criteria?",
+   "back": "Annual LDCT, age 50-80, >=20 pack-years, current or quit within 15 years"
+  },
+  {
+   "front": "NLST result?",
+   "back": "~3 fewer lung cancer deaths per 1000 screened with LDCT vs CXR"
+  },
+  {
+   "front": "PSA screening recommendation?",
+   "back": "55-69 individual decision (C); >=70 recommend against (D)"
+  },
+  {
+   "front": "ERSPC number needed to invite?",
+   "back": "570 invited and 18 diagnosed to prevent 1 prostate cancer death"
+  },
+  {
+   "front": "Ovarian cancer screening in average-risk women?",
+   "back": "Not recommended (D); TVUS + CA-125 don't reduce deaths"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 22-year-old sexually active woman with no symptoms asks about cervical cancer screening. She has never been screened. Which of the following is recommended?",
+   "options": [
+    "HPV testing alone every 5 years",
+    "Co-testing with cytology and HPV every 5 years",
+    "Cervical cytology every 3 years",
+    "Annual cytology",
+    "No screening until age 30"
+   ],
+   "answer": 2,
+   "explain": "Women 21–29 should be screened with cytology alone every 3 years. HPV testing isn't used under 30. (A: No HPV testing under 30.) (B: No HPV testing under 30.) (D: More frequent screening adds harm without benefit.) (E: Screening starts at 21.) Source: Ch 0075, Cervical Cancer; Table 75-3"
+  },
+  {
+   "q": "A 67-year-old woman has had regular cervical screening with consistently normal results for decades and no history of high-grade lesions. Which of the following is the most appropriate recommendation?",
+   "options": [
+    "Stop cervical cancer screening",
+    "Continue co-testing every 5 years",
+    "Annual cytology",
+    "HPV testing every 3 years",
+    "Colposcopy"
+   ],
+   "answer": 0,
+   "explain": "Women over 65 with adequate, normal prior screening shouldn't continue screening (USPSTF D; ACS no screening). (B: Continued screening isn't recommended.) (C: Continued screening isn't recommended.) (D: Continued screening isn't recommended.) (E: Colposcopy isn't indicated.) Source: Ch 0075, Table 75-3"
+  },
+  {
+   "q": "A 62-year-old woman smoked 1.5 packs daily for 20 years and quit 8 years ago. She is healthy and would be a surgical candidate. Which lung cancer screening approach is recommended?",
+   "options": [
+    "Annual chest radiograph",
+    "Sputum cytology",
+    "No screening because she has quit",
+    "One-time low-dose CT",
+    "Annual low-dose CT"
+   ],
+   "answer": 4,
+   "explain": "USPSTF recommends annual low-dose CT for adults 50–80 with ≥20 pack-years (she has 30) who smoke or quit within the past 15 years. (A: Chest radiography didn't reduce mortality in PLCO.) (B: Sputum cytology isn't recommended.) (C: Quitting within 15 years still qualifies.) (D: Screening is annual.) Source: Ch 0075, Lung Cancer; Table 75-3"
+  },
+  {
+   "q": "A 70-year-old man has a 40 pack-year history but quit smoking 16 years ago. He asks whether he should have lung cancer screening. Which of the following is correct?",
+   "options": [
+    "Annual low-dose CT is recommended",
+    "Screening isn't recommended because he quit more than 15 years ago",
+    "Annual chest radiograph is recommended",
+    "CT every 3 years is recommended",
+    "PET-CT is recommended"
+   ],
+   "answer": 1,
+   "explain": "Screening stops once a person has gone 15 years without smoking. (A: He's past the 15-year cutoff.) (C: CXR isn't effective.) (D: That interval isn't recommended.) (E: PET-CT isn't a screening test.) Source: Ch 0075, Table 75-3"
+  },
+  {
+   "q": "A 46-year-old man at average risk for colorectal cancer has never been screened. Which of the following is the most appropriate recommendation?",
+   "options": [
+    "Wait until age 50",
+    "Annual digital rectal exam with in-office stool guaiac",
+    "Serum SEPT9 test as first-line screening",
+    "Begin colorectal cancer screening now (e.g., annual FIT or colonoscopy every 10 years)",
+    "Annual CT colonography"
+   ],
+   "answer": 3,
+   "explain": "USPSTF gives a B recommendation for screening adults 45–49 and an A for 50–75, using options such as annual FIT, colonoscopy every 10 years, sigmoidoscopy every 5 years, or CT colonography every 5 years. (A: Screening now starts at 45.) (B: Office DRE stool testing isn't an endorsed strategy.) (C: SEPT9 has lower sensitivity and specificity than FIT and isn't first-line.) (E: CT colonography is every 5 years.) Source: Ch 0075, Colorectal Cancer; Table 75-3"
+  },
+  {
+   "q": "A healthy 72-year-old man asks for a PSA test as part of his annual examination. He has no urinary symptoms or family history. Which of the following is the most appropriate response?",
+   "options": [
+    "Order PSA and digital rectal exam",
+    "Order multiparametric MRI",
+    "Recommend against PSA-based screening at this age",
+    "Order PSA every 2 years",
+    "Order PSA once, and stop if normal"
+   ],
+   "answer": 2,
+   "explain": "USPSTF recommends against PSA-based screening in men 70 and older (D). For 55–69 it's an individual decision. (A: Screening isn't recommended at this age.) (B: Screening isn't recommended at this age.) (D: Screening isn't recommended at this age.) (E: Screening isn't recommended at this age.) Source: Ch 0075, Prostate Cancer; Table 75-3"
+  },
+  {
+   "q": "A new screening test detects a cancer 3 years earlier than symptoms would, but the date of death is unchanged. Survival measured from diagnosis appears 3 years longer in screened patients. Which bias explains this?",
+   "options": [
+    "Lead-time bias",
+    "Length-biased sampling",
+    "Selection bias",
+    "Recall bias",
+    "Verification bias"
+   ],
+   "answer": 0,
+   "explain": "Lead-time bias: earlier diagnosis increases apparent survival from diagnosis even if life isn't prolonged. (B: Length bias reflects detecting slower-growing tumors.) (C: Selection bias reflects healthier volunteers.) (D: Recall bias isn't relevant here.) (E: Verification bias isn't relevant here.) Source: Ch 0075, Potential Biases of Screening Tests"
+  },
+  {
+   "q": "A cancer with a prevalence of 0.5% is screened with a test that has 95% sensitivity and 90% specificity. Which statement is most accurate?",
+   "options": [
+    "Most positive results will be true positives",
+    "Sensitivity drives the positive predictive value at low prevalence",
+    "Predictive values don't depend on prevalence",
+    "The negative predictive value will be low",
+    "Most positive results will be false positives because poor specificity strongly lowers PPV at low prevalence"
+   ],
+   "answer": 4,
+   "explain": "Predictive values depend strongly on prevalence. For low-prevalence diseases such as cancer, poor specificity dramatically lowers PPV, so only a small fraction of positives are true. Specificity is at least as important as sensitivity. (A: Most positives will be false.) (B: Specificity, not sensitivity, drives PPV here.) (C: Predictive values depend on prevalence.) (D: NPV will be high at low prevalence.) Source: Ch 0075, The Accuracy of Screening; Table 75-2"
+  },
+  {
+   "q": "A 60-year-old postmenopausal woman with an intact uterus has a 5-year Gail model breast cancer risk of 2.4%. She wants pharmacologic risk reduction but is concerned about endometrial cancer. Which agent is most appropriate?",
+   "options": [
+    "Tamoxifen",
+    "Raloxifene",
+    "Finasteride",
+    "Combined estrogen-progestin therapy",
+    "β-carotene"
+   ],
+   "answer": 1,
+   "explain": "Raloxifene (postmenopausal women only) is comparable to tamoxifen for prevention but without the endometrial cancer risk, and with fewer thromboembolic events. Both are approved for a 5-year Gail risk ≥1.66%. (A: Tamoxifen increases endometrial cancer risk.) (C: Finasteride is a prostate drug.) (D: Estrogen-progestin raises breast cancer risk.) (E: β-carotene raises lung cancer risk.) Source: Ch 0075, Chemoprevention of Breast Cancer"
+  },
+  {
+   "q": "A 58-year-old man with a 35 pack-year smoking history asks whether β-carotene supplements could lower his lung cancer risk. What should you tell him?",
+   "options": [
+    "β-carotene lowers lung cancer risk by about 30%",
+    "β-carotene is neutral and safe to take",
+    "α-tocopherol is preferred because it lowers lung cancer mortality",
+    "β-carotene increased lung cancer incidence and mortality in smokers in randomized trials",
+    "β-carotene should be combined with isotretinoin"
+   ],
+   "answer": 3,
+   "explain": "In the ATBC and CARET trials, β-carotene increased lung cancer incidence and mortality in smokers, contradicting observational studies. (A: It increased risk.) (B: It isn't safe in smokers.) (C: α-Tocopherol didn't change lung cancer mortality and increased hemorrhagic stroke.) (E: Isotretinoin isn't effective at tolerable doses.) Source: Ch 0075, Chemoprevention of Cancers of the Upper Aerodigestive Tract"
+  },
+  {
+   "q": "A 52-year-old woman with no family history of ovarian or breast cancer asks for annual CA-125 and transvaginal ultrasound screening. Which of the following is the most appropriate response?",
+   "options": [
+    "Recommend against routine ovarian cancer screening",
+    "Order both tests annually",
+    "Order CA-125 every 6 months",
+    "Order transvaginal ultrasound alone annually",
+    "Recommend annual adnexal palpation instead"
+   ],
+   "answer": 0,
+   "explain": "Annual TVUS and CA-125 don't reduce ovarian cancer deaths in average-risk women. False positives lead to surgery (~20 surgeries per screen-detected cancer). USPSTF gives a D, and the FDA advises against screening tests. (B: These tests aren't recommended.) (C: These tests aren't recommended.) (D: These tests aren't recommended.) (E: Adnexal palpation detected no additional cancers.) Source: Ch 0075, Ovarian Cancer; Table 75-3"
+  },
+  {
+   "q": "An 11-year-old girl's parents ask about HPV vaccination. Which schedule is recommended in the United States?",
+   "options": [
+    "Delay until age 15",
+    "Single dose at age 26",
+    "Three doses now",
+    "No vaccination until sexual activity begins",
+    "Two doses"
+   ],
+   "answer": 4,
+   "explain": "A two-dose schedule is recommended for those aged 9–14. Three doses are recommended if the series starts at 15–26. The vaccine works best before infection. (A: Waiting until 15 would require three doses.) (B: Waiting until 26 misses the effective window.) (C: Three doses are for ages 15–26.) (D: Vaccination should precede exposure.) Source: Ch 0075, Vaccines and Cancer Prevention"
+  },
+  {
+   "q": "A 57-year-old man undergoes screening flexible sigmoidoscopy, which finds a 7-mm tubular adenoma in the sigmoid colon. Which of the following is the most appropriate next step?",
+   "options": [
+    "Colonoscopy to evaluate the entire colon",
+    "Repeat sigmoidoscopy in 5 years",
+    "Annual FIT only",
+    "CT colonography in 10 years",
+    "No further evaluation"
+   ],
+   "answer": 0,
+   "explain": "Adenomatous polyps found on sigmoidoscopy should lead to evaluation of the entire colon with colonoscopy. (B: Synchronous proximal lesions must be excluded first.) (C: Synchronous proximal lesions must be excluded first.) (D: Synchronous proximal lesions must be excluded first.) (E: Further evaluation is needed.) Source: Ch 0075, Optical Testing"
+  },
+  {
+   "q": "Which study design and endpoint provide the strongest evidence that a cancer screening test is beneficial?",
+   "options": [
+    "Observational study showing longer 5-year survival in screened patients",
+    "Randomized controlled trial showing lower cause-specific mortality in the screened group",
+    "Case series showing a shift to earlier-stage diagnosis",
+    "Cohort study showing more cancers detected",
+    "Randomized trial showing higher detection of early-stage disease"
+   ],
+   "answer": 1,
+   "explain": "An RCT with cause-specific mortality as the endpoint gives the strongest support. Survival, stage shift and detection rates are subject to lead-time, length and overdiagnosis biases. (A: Survival is distorted by these biases.) (C: Stage shift is distorted by these biases.) (D: Detection rates are distorted by these biases.) (E: Detection rates are distorted by these biases.) Source: Ch 0075, Assessment of Screening Tests"
+  }
+ ]
+},
+{
+ "id": "harrison-ch0080-oncologic-emergencies",
+ "name": "Oncologic Emergencies (Harrison Ch 80)",
+ "blurb": "Step 2 CK review of Harrison's 22e Chapter 80: Oncologic Emergencies.",
+ "chapter": "Oncology",
+ "flashcards": [
+  {
+   "front": "Most common malignant cause of SVC syndrome?",
+   "back": "Lung cancer (small cell and squamous; ~85% of malignant cases)"
+  },
+  {
+   "front": "SVCS in a young man with mediastinal mass: differential?",
+   "back": "Lymphoma vs primary mediastinal germ cell tumor"
+  },
+  {
+   "front": "Most reliable imaging for SVCS?",
+   "back": "CT of the chest"
+  },
+  {
+   "front": "Role of glucocorticoids in SVCS?",
+   "back": "Limited, except mediastinal lymphoma"
+  },
+  {
+   "front": "SVCS treatment by tumor type?",
+   "back": "Radiation for NSCLC/solid tumors; chemotherapy for SCLC, lymphoma, germ cell; stent for rapid relief"
+  },
+  {
+   "front": "Catheter-related SVC thrombosis treatment?",
+   "back": "Remove catheter + anticoagulate; early fibrinolysis may save catheter"
+  },
+  {
+   "front": "Most helpful test for malignant pericardial effusion?",
+   "back": "Echocardiography; cytology diagnostic in most"
+  },
+  {
+   "front": "Recurrence after pericardial catheter drainage and options?",
+   "back": "~20%; sclerosis (bleomycin, tetracycline) or subxiphoid pericardiotomy"
+  },
+  {
+   "front": "Cecal diameter that is a surgical emergency?",
+   "back": ">12-14 cm"
+  },
+  {
+   "front": "Palliation of malignant bowel obstruction?",
+   "back": "NG decompression, venting gastrostomy, stents, octreotide, glucocorticoids"
+  },
+  {
+   "front": "Indications for urgent urinary diversion in malignant obstruction?",
+   "back": "Flank pain, sepsis, or fistula"
+  },
+  {
+   "front": "Indications to drain malignant biliary obstruction?",
+   "back": "Refractory pruritus, severe malabsorption, or infection"
+  },
+  {
+   "front": "Most common site of spinal cord compression?",
+   "back": "Thoracic spine (70%)"
+  },
+  {
+   "front": "Back pain feature distinguishing cord compression from disc disease?",
+   "back": "Worsens lying supine"
+  },
+  {
+   "front": "Initial management of suspected cord compression?",
+   "back": "Dexamethasone immediately + MRI of the entire spine"
+  },
+  {
+   "front": "Prognostic factor for cord compression outcome?",
+   "back": "Ambulatory with sphincter control at treatment start"
+  },
+  {
+   "front": "Cord compression with spinal instability or retropulsion?",
+   "back": "Surgical decompression and stabilization"
+  },
+  {
+   "front": "Radioresistant tumor with high-grade cord compression?",
+   "back": "Separation surgery followed by SBRT"
+  },
+  {
+   "front": "Brain metastases with high hemorrhage risk?",
+   "back": "Melanoma, germ cell tumors, renal cell carcinoma"
+  },
+  {
+   "front": "Initial treatment of symptomatic brain metastases?",
+   "back": "Dexamethasone"
+  },
+  {
+   "front": "Treatment for 1-4 brain metastases?",
+   "back": "Stereotactic radiosurgery (avoids WBRT cognitive decline)"
+  },
+  {
+   "front": "Neoplastic meningitis diagnosis pitfall?",
+   "back": "CSF cytology false negative up to 40%; repeat LP; MRI brain and spine"
+  },
+  {
+   "front": "Preferred antiseizure drug in cancer patients?",
+   "back": "Levetiracetam (also lacosamide, lamotrigine); no CYP450 interactions"
+  },
+  {
+   "front": "Prophylactic antiseizure drugs for brain metastases?",
+   "back": "Not recommended"
+  },
+  {
+   "front": "Leukostasis threshold and main leukemia?",
+   "back": "Blasts >100,000; AML (M4/M5, FLT3)"
+  },
+  {
+   "front": "First-line definitive procedure for massive hemoptysis?",
+   "back": "Bronchial artery embolization (controls 75-90%)"
+  },
+  {
+   "front": "VEGF antibodies and hemoptysis risk?",
+   "back": "Bevacizumab/ramucirumab; squamous NSCLC, cavitation, prior hemoptysis"
+  },
+  {
+   "front": "Non-islet cell tumor hypoglycemia labs?",
+   "back": "Big IGF-II; high IGF-II:IGF-I ratio; low insulin, C-peptide, beta-hydroxybutyrate"
+  },
+  {
+   "front": "Cancer drugs causing adrenal insufficiency?",
+   "back": "Megestrol, mitotane, ketoconazole; ipilimumab (hypophysitis); rapid steroid taper"
+  },
+  {
+   "front": "Tumor lysis syndrome labs?",
+   "back": "High uric acid, potassium, phosphate; low calcium; AKI"
+  },
+  {
+   "front": "Tumor lysis risk markers?",
+   "back": "Bulky rapidly proliferating tumor (Burkitt, ALL), LDH >1500, high uric acid, renal dysfunction; venetoclax"
+  },
+  {
+   "front": "Urine uric acid:creatinine ratio in uric acid nephropathy?",
+   "back": ">1"
+  },
+  {
+   "front": "Standard TLS prevention?",
+   "back": "Aggressive hydration (~3 L/m2/day) + allopurinol; febuxostat if allergic or renal failure"
+  },
+  {
+   "front": "Why is urinary alkalinization no longer recommended in TLS?",
+   "back": "High pH reduces xanthine and calcium phosphate solubility"
+  },
+  {
+   "front": "Rasburicase indication and contraindication?",
+   "back": "High-risk TLS or hyperuricemia with renal failure; contraindicated in G6PD deficiency"
+  },
+  {
+   "front": "Treatment of severe cytokine release syndrome?",
+   "back": "Tocilizumab (IL-6 receptor blockade)"
+  },
+  {
+   "front": "Most common drugs causing chemotherapy-associated HUS and timing?",
+   "back": "Mitomycin and gemcitabine; 4-8 weeks after last dose"
+  },
+  {
+   "front": "First-line therapy for atypical HUS and prerequisite?",
+   "back": "Eculizumab or ravulizumab; meningococcal vaccination first"
+  },
+  {
+   "front": "Oxygen precaution in chemotherapy lung toxicity?",
+   "back": "Use lowest FiO2 needed (O2 potentiates bleomycin/radiation injury)"
+  },
+  {
+   "front": "Radiation pneumonitis timing and treatment?",
+   "back": "2-6 months after RT, confined to field; prednisone if symptomatic"
+  },
+  {
+   "front": "Neutropenic enterocolitis treatment?",
+   "back": "Broad-spectrum antibiotics, bowel rest, NG suction, G-CSF; surgery for perforation/peritonitis/bleeding"
+  },
+  {
+   "front": "Prevention of ifosfamide/cyclophosphamide hemorrhagic cystitis?",
+   "back": "High urine flow plus mesna (acrolein)"
+  },
+  {
+   "front": "Late hemorrhagic cystitis after BMT?",
+   "back": "BK virus or adenovirus type 11"
+  },
+  {
+   "front": "Taxane vs platinum hypersensitivity timing?",
+   "back": "Taxanes: 1st-2nd dose. Platinum: after prolonged exposure"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "A 66-year-old man with metastatic prostate cancer has 3 weeks of worsening midthoracic back pain that is worse lying down. Today he has bilateral leg weakness and a sensory level at T10. Bladder function is normal. Which of the following is the most appropriate next step?",
+   "options": [
+    "Plain thoracic spine films and outpatient follow-up",
+    "Start dexamethasone immediately and obtain an MRI of the entire spine",
+    "Bone scan",
+    "Myelography",
+    "Lumbar puncture"
+   ],
+   "answer": 1,
+   "explain": "Patients with cancer and back pain need urgent evaluation. Signs of cord compression call for immediate dexamethasone and MRI of the whole spine (multiple epidural sites in 25%). Outcomes are best while patients still walk. (A: Plain films are insensitive and delay treatment.) (C: Bone scans are less specific.) (D: Myelography is only for patients who can't have MRI.) (E: LP isn't indicated.) Source: Ch 0080, Spinal Cord Compression"
+  },
+  {
+   "q": "A 58-year-old woman with metastatic breast cancer has cord compression at T8. MRI shows vertebral body collapse with retropulsed bone fragments into the canal and spinal instability. Which of the following is the most appropriate treatment?",
+   "options": [
+    "Radiation therapy alone",
+    "Glucocorticoids alone",
+    "Vertebroplasty",
+    "Surgical decompression and stabilization",
+    "Systemic chemotherapy alone"
+   ],
+   "answer": 3,
+   "explain": "With mechanical instability or bone retropulsion into the canal, surgery is the treatment of choice. (A: Radiation doesn't stabilize the spine.) (B: Steroids alone don't address instability.) (C: Vertebroplasty is for painful fractures without instability.) (E: Chemotherapy is for chemosensitive tumors in non-surgical patients.) Source: Ch 0080, Treatment: Spinal Cord Compression"
+  },
+  {
+   "q": "A 29-year-old man has 3 weeks of facial swelling worse when lying flat, distended neck veins and chest-wall collaterals. He has no history of cancer. CT shows an anterior mediastinal mass compressing the SVC. He has no stridor and is hemodynamically stable. Which of the following is the most appropriate next step?",
+   "options": [
+    "Obtain a tissue diagnosis (e.g., biopsy) before starting therapy",
+    "Empiric high-dose glucocorticoids and radiation before biopsy",
+    "Immediate thrombolysis",
+    "Observation only",
+    "Surgical resection without biopsy"
+   ],
+   "answer": 0,
+   "explain": "In a young man, a mediastinal mass with SVCS raises lymphoma vs germ cell tumor. Without known cancer, a detailed evaluation including tissue diagnosis is essential. Biopsy can be done safely. Steroids have a limited role except in lymphoma and could obscure the diagnosis. (B: Empiric therapy may compromise the diagnosis.) (C: Thrombolysis is for catheter-related thrombosis.) (D: The cause must be found.) (E: Surgery without diagnosis is inappropriate.) Source: Ch 0080, Superior Vena Cava Syndrome"
+  },
+  {
+   "q": "A 62-year-old woman with lung adenocarcinoma has dyspnea, hypotension, elevated JVP and pulsus paradoxus. Echocardiography shows a large pericardial effusion with right ventricular diastolic collapse. Which of the following is the most appropriate immediate management?",
+   "options": [
+    "IV diuretics",
+    "Systemic chemotherapy",
+    "Thoracoscopic pericardial window next week",
+    "Measure pericardial fluid tumor markers",
+    "Urgent pericardiocentesis"
+   ],
+   "answer": 4,
+   "explain": "Acute tamponade with hemodynamic instability requires immediate drainage, achieved quickly by pericardiocentesis. (A: Diuretics worsen preload.) (B: Chemotherapy is too slow.) (C: A window next week is too slow.) (D: Tumor markers in pericardial fluid aren't helpful.) Source: Ch 0080, Treatment: Pericardial Effusion/Tamponade"
+  },
+  {
+   "q": "A 19-year-old man with bulky Burkitt lymphoma (LDH 2,800 U/L, uric acid 9.8 mg/dL, creatinine 1.4 mg/dL) is about to start chemotherapy. G6PD testing is normal. Which of the following is the most appropriate prophylaxis?",
+   "options": [
+    "Oral fluids and allopurinol only",
+    "Sodium bicarbonate to alkalinize the urine",
+    "Aggressive IV hydration plus rasburicase",
+    "Furosemide without IV fluids",
+    "Delay chemotherapy until uric acid normalizes without treatment"
+   ],
+   "answer": 2,
+   "explain": "High risk (bulky Burkitt lymphoma, LDH >1500, hyperuricemia, renal dysfunction) calls for aggressive hydration plus rasburicase, which rapidly converts uric acid to soluble allantoin. G6PD status must be confirmed first. (A: Insufficient for this level of risk.) (B: Alkalinization is no longer recommended.) (D: Fluids are essential.) (E: Delay is inappropriate.) Source: Ch 0080, Tumor Lysis Syndrome; Treatment"
+  },
+  {
+   "q": "A 54-year-old man of Mediterranean descent with high-risk tumor lysis features has known G6PD deficiency. Which of the following agents is contraindicated?",
+   "options": [
+    "Allopurinol",
+    "Rasburicase",
+    "Febuxostat",
+    "IV normal saline",
+    "Calcium gluconate for symptomatic hypocalcemia"
+   ],
+   "answer": 1,
+   "explain": "Rasburicase is contraindicated in G6PD deficiency because hydrogen peroxide from the urate oxidase reaction can't be detoxified. (A: Allopurinol is safe in G6PD deficiency.) (C: Febuxostat is safe.) (D: Saline is safe.) (E: Calcium is safe for symptomatic hypocalcemia.) Source: Ch 0080, Treatment: Tumor Lysis Syndrome"
+  },
+  {
+   "q": "A resident plans to add sodium bicarbonate to IV fluids to alkalinize the urine for tumor lysis prophylaxis. Which of the following is the best reason to avoid this?",
+   "options": [
+    "Alkalinization lowers uric acid solubility",
+    "It causes hyperkalemia",
+    "It is required only with rasburicase",
+    "High urine pH lowers the solubility of xanthine, hypoxanthine and calcium phosphate, promoting intratubular crystals",
+    "It increases phosphate excretion too much"
+   ],
+   "answer": 3,
+   "explain": "Urinary alkalinization is no longer recommended. It increases uric acid solubility, but high pH decreases the solubility of xanthine, hypoxanthine and calcium phosphate, raising intratubular crystallization risk. (A: Alkalinization increases uric acid solubility.) (B: Hyperkalemia isn't the rationale.) (C: It isn't required with rasburicase.) (E: Phosphate excretion isn't the rationale.) Source: Ch 0080, Treatment: Tumor Lysis Syndrome"
+  },
+  {
+   "q": "A 57-year-old woman with metastatic melanoma has a generalized seizure. MRI shows two cortical brain metastases. She is starting a tyrosine kinase inhibitor. Which antiseizure drug is preferred?",
+   "options": [
+    "Levetiracetam",
+    "Phenytoin",
+    "Carbamazepine",
+    "Phenobarbital",
+    "No antiseizure drug"
+   ],
+   "answer": 0,
+   "explain": "Seizures from brain metastases should be treated with levetiracetam (preferred), lacosamide or lamotrigine, which don't induce CYP450 and won't alter TKI or chemotherapy metabolism. (B: Phenytoin induces CYP450.) (C: Carbamazepine is also an enzyme inducer.) (D: Phenobarbital is also an enzyme inducer.) (E: A seizure has occurred, so treatment is indicated.) Source: Ch 0080, Treatment: Seizures"
+  },
+  {
+   "q": "A 63-year-old man with lung cancer has a newly diagnosed solitary brain metastasis and no history of seizures. Which of the following is recommended regarding antiseizure medication?",
+   "options": [
+    "Start levetiracetam prophylactically for life",
+    "Start phenytoin prophylactically",
+    "Start valproate prophylactically",
+    "Start lacosamide prophylactically",
+    "Don't give prophylactic antiseizure medication"
+   ],
+   "answer": 4,
+   "explain": "Prophylactic anticonvulsant therapy isn't recommended for brain metastases without seizures. (A: Prophylaxis isn't recommended.) (B: Prophylaxis isn't recommended.) (C: Prophylaxis isn't recommended.) (D: Prophylaxis isn't recommended.) Source: Ch 0080, Treatment: Seizures"
+  },
+  {
+   "q": "A 34-year-old man receiving induction chemotherapy for AML has fever, an ANC of 80/µL, right lower quadrant pain with rebound, and watery diarrhea. CT shows marked cecal wall thickening with mesenteric stranding and no perforation. Which of the following is the most appropriate management?",
+   "options": [
+    "Immediate right hemicolectomy",
+    "Oral vancomycin alone",
+    "Broad-spectrum antibiotics, bowel rest, nasogastric suction and myeloid growth factors",
+    "Colonoscopy with biopsy",
+    "Loperamide and observation"
+   ],
+   "answer": 2,
+   "explain": "Neutropenic enterocolitis (fever, neutropenia, RLQ pain, cecal thickening) is treated with prompt broad-spectrum antibiotics, bowel rest and NG suction. Myeloid growth factors improve outcome. Surgery is reserved for perforation, peritonitis, gangrene or refractory bleeding. (A: Surgery isn't indicated without those complications.) (B: C. difficile coverage is added only if it can't be excluded; it isn't sole therapy.) (D: Colonoscopy is dangerous here.) (E: Loperamide and observation are inappropriate.) Source: Ch 0080, Neutropenic Enterocolitis"
+  },
+  {
+   "q": "A 61-year-old woman finished gemcitabine for pancreatic cancer 6 weeks ago. She now has anemia with schistocytes, platelets of 52,000/µL, rising creatinine and hypertension. Coombs test and coagulation studies are normal. Eculizumab is planned. Which of the following must be done first?",
+   "options": [
+    "Bone marrow biopsy",
+    "Meningococcal vaccination",
+    "Restart gemcitabine at a lower dose",
+    "Platelet transfusion",
+    "Start warfarin"
+   ],
+   "answer": 1,
+   "explain": "Chemotherapy-associated HUS (mitomycin, gemcitabine) presents 4–8 weeks after the last dose with MAHA, thrombocytopenia and renal failure. Eculizumab is first-line for atypical HUS, and meningococcal vaccination is mandatory before giving it. (A: Marrow biopsy isn't needed.) (C: The offending drug shouldn't be restarted.) (D: Transfusion can worsen HUS.) (E: Warfarin isn't indicated.) Source: Ch 0080, Hemolytic-Uremic Syndrome"
+  },
+  {
+   "q": "A 45-year-old man received CAR T-cell therapy 4 days ago. He now has a temperature of 40°C, hypotension requiring fluids and a vasopressor, and new hypoxemia. Cultures are pending. Which of the following is the most appropriate targeted therapy?",
+   "options": [
+    "Rituximab",
+    "Infliximab",
+    "Interferon-γ",
+    "Granulocyte colony-stimulating factor",
+    "Tocilizumab"
+   ],
+   "answer": 4,
+   "explain": "Cytokine release syndrome is the most common acute toxicity of CAR T cells. Tocilizumab, an IL-6 receptor blocker, is effective for severe or life-threatening CRS, alongside supportive care. (A: Rituximab isn't CRS therapy.) (B: Infliximab isn't the source's therapy.) (C: Interferon-γ is one of the cytokines driving CRS.) (D: G-CSF isn't indicated.) Source: Ch 0080, Human Antibody Infusion Reactions (CRS)"
+  },
+  {
+   "q": "A 40-year-old woman will receive high-dose ifosfamide for sarcoma. Which measure best prevents hemorrhagic cystitis?",
+   "options": [
+    "Mesna with high urine flow",
+    "Prophylactic cystoscopy",
+    "Alum bladder irrigation before each dose",
+    "Cidofovir",
+    "Fluid restriction"
+   ],
+   "answer": 0,
+   "explain": "Ifosfamide and cyclophosphamide produce acrolein. Prevention is best: high urine flow and mesna (typically three doses, each 20% of the ifosfamide dose). (B: Not preventive.) (C: Irrigation treats established bleeding.) (D: Cidofovir has been tried for BK virus cystitis.) (E: Fluid restriction concentrates acrolein.) Source: Ch 0080, Hemorrhagic Cystitis"
+  },
+  {
+   "q": "A 66-year-old man with a large retroperitoneal sarcoma has recurrent fasting confusion. Glucose during an episode is 38 mg/dL, with suppressed insulin and C-peptide and a low β-hydroxybutyrate. Which mechanism is most likely?",
+   "options": [
+    "Insulinoma",
+    "Sulfonylurea ingestion",
+    "Adrenal insufficiency",
+    "Tumor secretion of incompletely processed (big) IGF-II",
+    "Pseudohypoglycemia from leukocytosis"
+   ],
+   "answer": 3,
+   "explain": "Large mesenchymal tumors can secrete incompletely processed big IGF-II. It activates insulin receptors, with suppressed insulin and C-peptide, a high IGF-II:IGF-I ratio and low β-hydroxybutyrate. (A: Insulinoma has high insulin.) (B: Sulfonylureas raise insulin and C-peptide.) (C: Adrenal insufficiency doesn't fit the suppressed insulin with a large tumor.) (E: Pseudohypoglycemia requires hyperleukocytosis.) Source: Ch 0080, Hypoglycemia"
+  },
+  {
+   "q": "A 59-year-old man completed thoracic radiation for lung cancer 3 months ago. He now has dyspnea, dry cough and low-grade fever, with a hazy infiltrate confined to the radiation field. Infection has been excluded. Which of the following is the most appropriate treatment?",
+   "options": [
+    "No treatment",
+    "Broad-spectrum antibiotics for 14 days",
+    "Prednisone",
+    "Immediate lung biopsy in all cases",
+    "High-flow oxygen targeting 100% saturation"
+   ],
+   "answer": 2,
+   "explain": "Radiation pneumonitis usually develops 2–6 months after radiotherapy with dyspnea, cough, low-grade fever and an infiltrate confined to the field. Prednisone is given to symptomatic patients. Asymptomatic infiltrates don't need treatment. (A: He's symptomatic, so treatment is indicated.) (B: Infection has been excluded.) (D: Biopsy is needed only if the diagnosis is unclear.) (E: High oxygen can potentiate radiation and drug lung injury; use the lowest adequate FiO₂.) Source: Ch 0080, Pulmonary Infiltrates"
+  }
+ ]
+},
 ];
