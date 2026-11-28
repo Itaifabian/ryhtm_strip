@@ -24,6 +24,7 @@ CHAPTER_MAP = {
     39: "Pulmonology", 40: "Pulmonology", 41: "Pulmonology", 43: "Cardiology", 44: "Cardiology",
     47: "Gastroenterology", 49: "Gastroenterology", 51: "Gastroenterology",
     52: "Gastroenterology", 53: "Gastroenterology", 55: "Nephrology", 56: "Nephrology",
+    57: "Endocrinology", 58: "Nephrology", 66: "Hematology", 69: "Hematology", 75: "Oncology", 80: "Oncology",
     20: "Infectious Diseases", 21: "Infectious Diseases", 22: "Infectious Diseases",
 }
 DEFAULT_CHAPTER = "General Medicine"
